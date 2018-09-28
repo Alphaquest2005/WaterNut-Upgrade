@@ -1,0 +1,131 @@
+C:\Prism Projects\Payroll\HR Manager T4\Core.Common.Data\bin\Debug\T4\Repository.tt
+C:\Prism Projects\Payroll\HR Manager T4\Core.Common.Data\bin\Debug\Core.Common.Data.dll.config
+C:\Prism Projects\Payroll\HR Manager T4\Core.Common.Data\bin\Debug\Core.Common.Data.dll
+C:\Prism Projects\Payroll\HR Manager T4\Core.Common.Data\bin\Debug\Core.Common.Data.pdb
+C:\Prism Projects\Payroll\HR Manager T4\Core.Common.Data\bin\Debug\EntityFramework.dll
+C:\Prism Projects\Payroll\HR Manager T4\Core.Common.Data\bin\Debug\EntityFramework.SqlServer.dll
+C:\Prism Projects\Payroll\HR Manager T4\Core.Common.Data\bin\Debug\EntityFramework.xml
+C:\Prism Projects\Payroll\HR Manager T4\Core.Common.Data\bin\Debug\EntityFramework.SqlServer.xml
+C:\Prism Projects\Payroll\HR Manager T4\Core.Common.Data\obj\Debug\Core.Common.Data.dll
+C:\Prism Projects\Payroll\HR Manager T4\Core.Common.Data\obj\Debug\Core.Common.Data.pdb
+C:\Prism Projects\Payroll\HR Manager T4\Core.Common.Data\obj\Debug\Core.Common.Data.csprojResolveAssemblyReference.cache
+C:\Prism Projects\Quick Inventory Manager\Core.Common.Data\bin\Debug\T4\Repositories\--BusinessRepository.tt
+C:\Prism Projects\Quick Inventory Manager\Core.Common.Data\bin\Debug\T4\Repositories\ClientRepository.tt
+C:\Prism Projects\Quick Inventory Manager\Core.Common.Data\bin\Debug\T4\DbContextMappings.tt
+C:\Prism Projects\Quick Inventory Manager\Core.Common.Data\bin\Debug\T4\Copy of ObjectContexts.tt
+C:\Prism Projects\Quick Inventory Manager\Core.Common.Data\bin\Debug\T4\ObjectContexts.tt
+C:\Prism Projects\Quick Inventory Manager\Core.Common.Data\bin\Debug\T4\Repository.tt
+C:\Prism Projects\Quick Inventory Manager\Core.Common.Data\bin\Debug\Core.Common.Data.dll.config
+C:\Prism Projects\Quick Inventory Manager\Core.Common.Data\bin\Debug\Core.Common.Data.dll
+C:\Prism Projects\Quick Inventory Manager\Core.Common.Data\bin\Debug\Core.Common.Data.pdb
+C:\Prism Projects\Quick Inventory Manager\Core.Common.Data\bin\Debug\EntityFramework.dll
+C:\Prism Projects\Quick Inventory Manager\Core.Common.Data\bin\Debug\EntityFramework.SqlServer.dll
+C:\Prism Projects\Quick Inventory Manager\Core.Common.Data\bin\Debug\TrackableEntities.Common.dll
+C:\Prism Projects\Quick Inventory Manager\Core.Common.Data\bin\Debug\TrackableEntities.EF.6.dll
+C:\Prism Projects\Quick Inventory Manager\Core.Common.Data\bin\Debug\EntityFramework.xml
+C:\Prism Projects\Quick Inventory Manager\Core.Common.Data\bin\Debug\EntityFramework.SqlServer.xml
+C:\Prism Projects\Quick Inventory Manager\Core.Common.Data\bin\Debug\TrackableEntities.Common.pdb
+C:\Prism Projects\Quick Inventory Manager\Core.Common.Data\bin\Debug\TrackableEntities.Common.xml
+C:\Prism Projects\Quick Inventory Manager\Core.Common.Data\bin\Debug\TrackableEntities.EF.6.pdb
+C:\Prism Projects\Quick Inventory Manager\Core.Common.Data\bin\Debug\TrackableEntities.EF.6.xml
+C:\Prism Projects\Quick Inventory Manager\Core.Common.Data\obj\Debug\Core.Common.Data.dll
+C:\Prism Projects\Quick Inventory Manager\Core.Common.Data\obj\Debug\Core.Common.Data.pdb
+C:\Prism Projects\Quick Inventory Manager\Core.Common.Data\obj\Debug\Core.Common.Data.csprojResolveAssemblyReference.cache
+C:\Prism Projects\Core.Common\New folder\Core.Common.Data\bin\Debug\T4\Repositories\--BusinessRepository.tt
+C:\Prism Projects\Core.Common\New folder\Core.Common.Data\bin\Debug\T4\Repositories\ClientRepository.tt
+C:\Prism Projects\Core.Common\New folder\Core.Common.Data\bin\Debug\T4\DbContextMappings.tt
+C:\Prism Projects\Core.Common\New folder\Core.Common.Data\bin\Debug\T4\Copy of ObjectContexts.tt
+C:\Prism Projects\Core.Common\New folder\Core.Common.Data\bin\Debug\T4\ObjectContexts.tt
+C:\Prism Projects\Core.Common\New folder\Core.Common.Data\bin\Debug\T4\Repository.tt
+C:\Prism Projects\Core.Common\New folder\Core.Common.Data\bin\Debug\Core.Common.Data.dll.config
+C:\Prism Projects\Core.Common\New folder\Core.Common.Data\bin\Debug\Core.Common.Data.dll
+C:\Prism Projects\Core.Common\New folder\Core.Common.Data\bin\Debug\Core.Common.Data.pdb
+C:\Prism Projects\Core.Common\New folder\Core.Common.Data\bin\Debug\EntityFramework.xml
+C:\Prism Projects\Core.Common\New folder\Core.Common.Data\bin\Debug\EntityFramework.SqlServer.xml
+C:\Prism Projects\Core.Common\New folder\Core.Common.Data\bin\Debug\TrackableEntities.Common.pdb
+C:\Prism Projects\Core.Common\New folder\Core.Common.Data\bin\Debug\TrackableEntities.Common.xml
+C:\Prism Projects\Core.Common\New folder\Core.Common.Data\bin\Debug\TrackableEntities.EF.6.pdb
+C:\Prism Projects\Core.Common\New folder\Core.Common.Data\bin\Debug\TrackableEntities.EF.6.xml
+C:\Prism Projects\Core.Common\New folder\Core.Common.Data\obj\Debug\Core.Common.Data.csprojResolveAssemblyReference.cache
+C:\Prism Projects\Core.Common\New folder\Core.Common.Data\obj\Debug\Core.Common.Data.dll
+C:\Prism Projects\Core.Common\New folder\Core.Common.Data\obj\Debug\Core.Common.Data.pdb
+C:\Prism Projects\Core.Common\Core.Common.Data\bin\Debug\Core.Common.Data.dll.config
+C:\Prism Projects\Core.Common\Core.Common.Data\bin\Debug\Core.Common.Data.dll
+C:\Prism Projects\Core.Common\Core.Common.Data\bin\Debug\Core.Common.Data.pdb
+C:\Prism Projects\Core.Common\Core.Common.Data\bin\Debug\Newtonsoft.Json.dll
+C:\Prism Projects\Core.Common\Core.Common.Data\bin\Debug\TrackableEntities.Common.dll
+C:\Prism Projects\Core.Common\Core.Common.Data\bin\Debug\TrackableEntities.EF.6.dll
+C:\Prism Projects\Core.Common\Core.Common.Data\bin\Debug\Newtonsoft.Json.xml
+C:\Prism Projects\Core.Common\Core.Common.Data\bin\Debug\TrackableEntities.Common.pdb
+C:\Prism Projects\Core.Common\Core.Common.Data\bin\Debug\TrackableEntities.Common.xml
+C:\Prism Projects\Core.Common\Core.Common.Data\bin\Debug\TrackableEntities.EF.6.pdb
+C:\Prism Projects\Core.Common\Core.Common.Data\bin\Debug\TrackableEntities.EF.6.xml
+C:\Prism Projects\Core.Common\Core.Common.Data\obj\Debug\Core.Common.Data.dll
+C:\Prism Projects\Core.Common\Core.Common.Data\obj\Debug\Core.Common.Data.pdb
+C:\Prism Projects\Core.Common\Core.Common.Data\bin\Debug\EntityFramework.dll
+C:\Prism Projects\Core.Common\Core.Common.Data\bin\Debug\EntityFramework.SqlServer.dll
+C:\Prism Projects\Core.Common\Core.Common.Data\bin\Debug\EntityFramework.xml
+C:\Prism Projects\Core.Common\Core.Common.Data\bin\Debug\EntityFramework.SqlServer.xml
+C:\Prism Projects\Core.Common\Core.Common.Data\obj\Debug\Core.Common.Data.csprojResolveAssemblyReference.cache
+C:\prism\Core.Common\Core.Common.Data\obj\Debug\Core.Common.Data.dll
+C:\prism\Core.Common\Core.Common.Data\bin\Debug\Core.Common.Data.dll.config
+C:\prism\Core.Common\Core.Common.Data\bin\Debug\Core.Common.Data.dll
+C:\prism\Core.Common\Core.Common.Data\bin\Debug\Core.Common.Data.pdb
+C:\prism\Core.Common\Core.Common.Data\bin\Debug\EntityFramework.dll
+C:\prism\Core.Common\Core.Common.Data\bin\Debug\Omu.ValueInjecter.dll
+C:\prism\Core.Common\Core.Common.Data\bin\Debug\TrackableEntities.Client.dll
+C:\prism\Core.Common\Core.Common.Data\bin\Debug\TrackableEntities.Common.dll
+C:\prism\Core.Common\Core.Common.Data\bin\Debug\TrackableEntities.EF.6.dll
+C:\prism\Core.Common\Core.Common.Data\bin\Debug\TrackableEntities.Common.pdb
+C:\prism\Core.Common\Core.Common.Data\bin\Debug\TrackableEntities.Common.xml
+C:\prism\Core.Common\Core.Common.Data\bin\Debug\TrackableEntities.EF.6.pdb
+C:\prism\Core.Common\Core.Common.Data\bin\Debug\EntityFramework.xml
+C:\prism\Core.Common\Core.Common.Data\bin\Debug\Omu.ValueInjecter.pdb
+C:\prism\Core.Common\Core.Common.Data\bin\Debug\Omu.ValueInjecter.xml
+C:\prism\Core.Common\Core.Common.Data\obj\Debug\Core.Common.Data.pdb
+C:\prism\Core.Common\Core.Common.Data\obj\Debug\Core.Common.Data.csprojResolveAssemblyReference.cache
+C:\Prism\Core.Common - Copy\Core.Common.Data\obj\Debug\Core.Common.Data.csprojResolveAssemblyReference.cache
+C:\Prism\Core.Common - Copy\Core.Common.Data\obj\Debug\Core.Common.Data.dll
+C:\Prism\Core.Common - Copy\Core.Common.Data\obj\Debug\Core.Common.Data.pdb
+C:\Prism\Core.Common - Copy\Core.Common.Data\bin\Debug\Core.Common.Data.dll.config
+C:\Prism\Core.Common - Copy\Core.Common.Data\bin\Debug\Core.Common.Data.dll
+C:\Prism\Core.Common - Copy\Core.Common.Data\bin\Debug\Core.Common.Data.pdb
+C:\Prism\Core.Common - Copy\Core.Common.Data\bin\Debug\EntityFramework.dll
+C:\Prism\Core.Common - Copy\Core.Common.Data\bin\Debug\Omu.ValueInjecter.dll
+C:\Prism\Core.Common - Copy\Core.Common.Data\bin\Debug\TrackableEntities.Client.dll
+C:\Prism\Core.Common - Copy\Core.Common.Data\bin\Debug\TrackableEntities.Common.dll
+C:\Prism\Core.Common - Copy\Core.Common.Data\bin\Debug\TrackableEntities.EF.6.dll
+C:\Prism\Core.Common - Copy\Core.Common.Data\bin\Debug\Newtonsoft.Json.dll
+C:\Prism\Core.Common - Copy\Core.Common.Data\bin\Debug\EntityFramework.xml
+C:\Prism\Core.Common - Copy\Core.Common.Data\bin\Debug\Omu.ValueInjecter.pdb
+C:\Prism\Core.Common - Copy\Core.Common.Data\bin\Debug\Omu.ValueInjecter.xml
+C:\Prism\Core.Common - Copy\Core.Common.Data\bin\Debug\TrackableEntities.Client.pdb
+C:\Prism\Core.Common - Copy\Core.Common.Data\bin\Debug\TrackableEntities.Client.xml
+C:\Prism\Core.Common - Copy\Core.Common.Data\bin\Debug\TrackableEntities.Common.pdb
+C:\Prism\Core.Common - Copy\Core.Common.Data\bin\Debug\TrackableEntities.Common.xml
+C:\Prism\Core.Common - Copy\Core.Common.Data\bin\Debug\TrackableEntities.EF.6.pdb
+C:\Prism\Core.Common - Copy\Core.Common.Data\bin\Debug\Newtonsoft.Json.xml
+C:\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\Core.Common\Core.Common.Data\bin\Debug\Core.Common.Data.dll.config
+C:\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\Core.Common\Core.Common.Data\bin\Debug\Core.Common.Data.dll
+C:\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\Core.Common\Core.Common.Data\bin\Debug\Core.Common.Data.pdb
+C:\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\Core.Common\Core.Common.Data\bin\Debug\Omu.ValueInjecter.dll
+C:\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\Core.Common\Core.Common.Data\bin\Debug\ParallelExtensionsExtras.dll
+C:\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\Core.Common\Core.Common.Data\bin\Debug\Omu.ValueInjecter.xml
+C:\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\Core.Common\Core.Common.Data\bin\Debug\ParallelExtensionsExtras.pdb
+C:\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\Core.Common\Core.Common.Data\obj\Debug\Core.Common.Data.csproj.CoreCompileInputs.cache
+C:\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\Core.Common\Core.Common.Data\obj\Debug\Core.Common.Data.csproj.CopyComplete
+C:\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\Core.Common\Core.Common.Data\obj\Debug\Core.Common.Data.dll
+C:\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\Core.Common\Core.Common.Data\obj\Debug\Core.Common.Data.pdb
+\\VBOXSVR\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\Core.Common\Core.Common.Data\bin\Debug\Core.Common.Data.dll.config
+\\VBOXSVR\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\Core.Common\Core.Common.Data\bin\Debug\Core.Common.Data.dll
+\\VBOXSVR\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\Core.Common\Core.Common.Data\bin\Debug\Core.Common.Data.pdb
+\\VBOXSVR\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\Core.Common\Core.Common.Data\bin\Debug\Omu.ValueInjecter.dll
+\\VBOXSVR\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\Core.Common\Core.Common.Data\bin\Debug\ParallelExtensionsExtras.dll
+\\VBOXSVR\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\Core.Common\Core.Common.Data\bin\Debug\Omu.ValueInjecter.xml
+\\VBOXSVR\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\Core.Common\Core.Common.Data\bin\Debug\ParallelExtensionsExtras.pdb
+\\VBOXSVR\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\Core.Common\Core.Common.Data\obj\Debug\Core.Common.Data.csprojAssemblyReference.cache
+\\VBOXSVR\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\Core.Common\Core.Common.Data\obj\Debug\Core.Common.Data.csproj.CoreCompileInputs.cache
+\\VBOXSVR\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\Core.Common\Core.Common.Data\obj\Debug\Core.Common.Data.csproj.CopyComplete
+\\VBOXSVR\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\Core.Common\Core.Common.Data\obj\Debug\Core.Common.Data.dll
+\\VBOXSVR\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\Core.Common\Core.Common.Data\obj\Debug\Core.Common.Data.pdb
+C:\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\Core.Common\Core.Common.Data\obj\Debug\Core.Common.Data.csprojAssemblyReference.cache

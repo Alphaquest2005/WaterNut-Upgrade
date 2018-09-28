@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Model1" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="AsycudaDocumentSet">
+    <Key>
+      <PropertyRef Name="AsycudaDocumentSetId" />
+    </Key>
+    <Property Name="AsycudaDocumentSetId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Declarant_Reference_Number" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Exchange_Rate" Type="Double" Nullable="false" />
+    <Property Name="Customs_ProcedureId" Type="Int32" />
+    <Property Name="Country_of_origin_code" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Currency_Code" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Document_TypeId" Type="Int32" />
+    <Property Name="Description" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Manifest_Number" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="BLNumber" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="EntryTimeStamp" Type="DateTime" Precision="3" />
+    <Property Name="StartingFileCount" Type="Int32" />
+    <Property Name="ApportionMethod" Type="Int32" />
+    <Property Name="TotalWeight" Type="Double" />
+    <Property Name="TotalFreight" Type="Double" />
+    <Property Name="TotalInternalFreight" Type="Double" />
+    <Property Name="TotalPackages" Type="Int32" />
+  </EntityType>
+  <EntityContainer Name="Entities1" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="AsycudaDocumentSets" EntityType="Self.AsycudaDocumentSet" />
+  </EntityContainer>
+</Schema>

@@ -1,0 +1,96 @@
+﻿<#@ template language="C#" debug="false" hostspecific="true"#>
+<#@ output extension=".cs"#>
+<#@ include file="T4Toolbox.tt" #>
+<#@ include file="C:\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\Core.Common\T4 Library\T4\ClientEntities.tt" #>
+<#
+
+    CreateClientEntities("WaterNut", @"C:\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\AllocationQS\AllocationQS.edmx",  
+					 @"C:\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\AllocationQS\AllocationQS.edmx",  
+                      @"C:\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\WaterNut.Client.Entities\WaterNut.Client.Entities.csproj",
+                     @"C:\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\WaterNut.Client.DTO\WaterNut.Client.DTO.csproj" ); 
+
+	CreateClientEntities("WaterNut", @"C:\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\CounterPointQS\CounterPointQS.edmx",  
+			@"C:\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\CoreEntities\CoreEntities.edmx",          
+             @"C:\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\WaterNut.Client.Entities\WaterNut.Client.Entities.csproj",
+                     @"C:\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\WaterNut.Client.DTO\WaterNut.Client.DTO.csproj" );   
+
+	CreateClientEntities("WaterNut",@"C:\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\CoreEntities\CoreEntities.edmx",   
+					@"C:\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\CoreEntities\CoreEntities.edmx",                
+                     @"C:\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\WaterNut.Client.Entities\WaterNut.Client.Entities.csproj",
+                     @"C:\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\WaterNut.Client.DTO\WaterNut.Client.DTO.csproj" );   
+
+	CreateClientEntities("WaterNut",
+					 @"C:\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\EntryDataQS\EntryDataQS.edmx",    
+					 @"C:\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\CoreEntities\CoreEntities.edmx",                 
+                      @"C:\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\WaterNut.Client.Entities\WaterNut.Client.Entities.csproj",
+                     @"C:\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\WaterNut.Client.DTO\WaterNut.Client.DTO.csproj" );   
+
+	CreateClientEntities("WaterNut",
+					 @"C:\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\InventoryQS\InventoryQS.edmx",
+					@"C:\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\CoreEntities\CoreEntities.edmx",                    
+                      @"C:\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\WaterNut.Client.Entities\WaterNut.Client.Entities.csproj",
+                     @"C:\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\WaterNut.Client.DTO\WaterNut.Client.DTO.csproj" );   
+
+	CreateClientEntities("WaterNut",
+					 @"C:\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\PreviousDocumentQS\PreviousDocumentQS.edmx", 
+					@"C:\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\CoreEntities\CoreEntities.edmx",                   
+                      @"C:\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\WaterNut.Client.Entities\WaterNut.Client.Entities.csproj",
+                     @"C:\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\WaterNut.Client.DTO\WaterNut.Client.DTO.csproj" );     
+
+   CreateClientEntities("WaterNut",
+				     @"C:\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\SalesDataQS\SalesDataQS.edmx", 
+					@"C:\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\CoreEntities\CoreEntities.edmx",                    
+                      @"C:\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\WaterNut.Client.Entities\WaterNut.Client.Entities.csproj",
+                     @"C:\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\WaterNut.Client.DTO\WaterNut.Client.DTO.csproj" );
+
+    CreateClientEntities("WaterNut",
+				     @"C:\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\OversShortQS\OversShortQS.edmx", 
+					@"C:\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\OversShortQS\OversShortQS.edmx",                    
+                      @"C:\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\WaterNut.Client.Entities\WaterNut.Client.Entities.csproj",
+                     @"C:\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\WaterNut.Client.DTO\WaterNut.Client.DTO.csproj" );
+
+//////////////////////////////////////////Data space///////////////////////////////////////
+
+
+	//CreateClientEntities("WaterNut",
+                     //@"C:\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\AllocationDS\AllocationDS.edmx",
+					//@"C:\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\AllocationDS\AllocationDS.edmx",
+                      //@"C:\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\WaterNut.Client.Entities\WaterNut.Client.Entities.csproj",
+                     //@"C:\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\WaterNut.Client.DTO\WaterNut.Client.DTO.csproj" );   
+//
+	//CreateClientEntities("WaterNut",
+                     //@"C:\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\DocumentDS\DocumentDS.edmx",
+					 //@"C:\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\DocumentDS\DocumentDS.edmx",
+                      //@"C:\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\WaterNut.Client.Entities\WaterNut.Client.Entities.csproj",
+                     //@"C:\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\WaterNut.Client.DTO\WaterNut.Client.DTO.csproj" );   
+//
+	//CreateClientEntities("WaterNut",
+                     //@"C:\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\DocumentItemDS\DocumentItemDS.edmx",
+					 //@"C:\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\DocumentItemDS\DocumentItemDS.edmx",
+                     //@"C:\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\WaterNut.Client.Entities\WaterNut.Client.Entities.csproj",
+                     //@"C:\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\WaterNut.Client.DTO\WaterNut.Client.DTO.csproj" );   
+//
+	//CreateClientEntities("WaterNut",
+                     //@"C:\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\EntryDataDS\EntryDataDS.edmx",
+					//@"C:\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\EntryDataDS\EntryDataDS.edmx",
+                      //@"C:\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\WaterNut.Client.Entities\WaterNut.Client.Entities.csproj",
+                     //@"C:\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\WaterNut.Client.DTO\WaterNut.Client.DTO.csproj" );   
+//
+	//CreateClientEntities("WaterNut",
+                     //@"C:\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\InventoryDS\InventoryDS.edmx",
+					//@"C:\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\InventoryDS\InventoryDS.edmx",
+                      //@"C:\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\WaterNut.Client.Entities\WaterNut.Client.Entities.csproj",
+                     //@"C:\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\WaterNut.Client.DTO\WaterNut.Client.DTO.csproj" );   
+//
+	//CreateClientEntities("WaterNut",
+                     //@"C:\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\PreviousDocumentDS\PreviousDocumentDS.edmx",
+					//@"C:\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\PreviousDocumentDS\PreviousDocumentDS.edmx",
+                      //@"C:\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\WaterNut.Client.Entities\WaterNut.Client.Entities.csproj",
+                     //@"C:\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\WaterNut.Client.DTO\WaterNut.Client.DTO.csproj" );     
+//
+    //CreateClientEntities("WaterNut",
+                     //@"C:\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\QuickBooksDS\QuickBooksDS.edmx",
+					//@"C:\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\QuickBooksDS\QuickBooksDS.edmx",
+                      //@"C:\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\WaterNut.Client.Entities\WaterNut.Client.Entities.csproj",
+                     //@"C:\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\WaterNut.Client.DTO\WaterNut.Client.DTO.csproj" );  
+#>

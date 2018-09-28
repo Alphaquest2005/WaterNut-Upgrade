@@ -1,0 +1,8 @@
+C:\prism\WaterNut - Enterprise\OverShortsQS\bin\Debug\OverShortsQS.dll.config
+C:\prism\WaterNut - Enterprise\OverShortsQS\bin\Debug\OverShortsQS.dll
+C:\prism\WaterNut - Enterprise\OverShortsQS\bin\Debug\OverShortsQS.pdb
+C:\prism\WaterNut - Enterprise\OverShortsQS\bin\Debug\EntityFramework.dll
+C:\prism\WaterNut - Enterprise\OverShortsQS\bin\Debug\EntityFramework.xml
+C:\prism\WaterNut - Enterprise\OverShortsQS\obj\Debug\OverShortsQS.csprojResolveAssemblyReference.cache
+C:\prism\WaterNut - Enterprise\OverShortsQS\obj\Debug\OverShortsQS.dll
+C:\prism\WaterNut - Enterprise\OverShortsQS\obj\Debug\OverShortsQS.pdb

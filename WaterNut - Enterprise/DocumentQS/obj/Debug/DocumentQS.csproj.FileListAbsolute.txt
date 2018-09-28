@@ -1,0 +1,8 @@
+C:\prism\WaterNut - Enterprise\DocumentQS\bin\Debug\DocumentQS.dll.config
+C:\prism\WaterNut - Enterprise\DocumentQS\bin\Debug\DocumentQS.dll
+C:\prism\WaterNut - Enterprise\DocumentQS\bin\Debug\DocumentQS.pdb
+C:\prism\WaterNut - Enterprise\DocumentQS\bin\Debug\EntityFramework.dll
+C:\prism\WaterNut - Enterprise\DocumentQS\bin\Debug\EntityFramework.xml
+C:\prism\WaterNut - Enterprise\DocumentQS\obj\Debug\DocumentQS.dll
+C:\prism\WaterNut - Enterprise\DocumentQS\obj\Debug\DocumentQS.pdb
+C:\prism\WaterNut - Enterprise\DocumentQS\obj\Debug\DocumentQS.csprojResolveAssemblyReference.cache

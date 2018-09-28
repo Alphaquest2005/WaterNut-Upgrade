@@ -1,0 +1,153 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="WaterNutDBModel" Alias="Self" p1:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:p1="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="PreviousDocumentQS" p1:LazyLoadingEnabled="true">
+    <EntitySet Name="PreviousDocuments" EntityType="WaterNutDBModel.PreviousDocument" />
+    <EntitySet Name="PreviousDocumentItems" EntityType="WaterNutDBModel.PreviousDocumentItem" />
+    <AssociationSet Name="PreviousDocumentPreviousDocumentItem" Association="WaterNutDBModel.PreviousDocumentPreviousDocumentItem">
+      <End Role="PreviousDocument" EntitySet="PreviousDocuments" />
+      <End Role="PreviousDocumentItem" EntitySet="PreviousDocumentItems" />
+    </AssociationSet>
+    <EntitySet Name="PreviousItemsExes" EntityType="WaterNutDBModel.PreviousItemsEx" />
+    <AssociationSet Name="PreviousDocumentItemPreviousItemsEx" Association="WaterNutDBModel.PreviousDocumentItemPreviousItemsEx">
+      <End Role="PreviousDocumentItem" EntitySet="PreviousDocumentItems" />
+      <End Role="PreviousItemsEx" EntitySet="PreviousItemsExes" />
+    </AssociationSet>
+    <AssociationSet Name="PreviousDocumentItemPreviousItemsEx1" Association="WaterNutDBModel.PreviousDocumentItemPreviousItemsEx1">
+      <End Role="PreviousDocumentItem" EntitySet="PreviousDocumentItems" />
+      <End Role="PreviousItemsEx" EntitySet="PreviousItemsExes" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="PreviousDocument">
+    <Key>
+      <PropertyRef Name="ASYCUDA_Id" />
+    </Key>
+    <Property Type="Int32" Name="ASYCUDA_Id" Nullable="false" />
+    <Property Type="String" Name="id" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="CNumber" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="RegistrationDate" Precision="3" />
+    <Property Type="Boolean" Name="IsManuallyAssessed" />
+    <Property Type="String" Name="ReferenceNumber" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="DateTime" Name="EffectiveRegistrationDate" Precision="3" />
+    <Property Type="Double" Name="TotalValue" />
+    <Property Type="Double" Name="AllocatedValue" />
+    <Property Type="Double" Name="PiValue" />
+    <Property Type="Int32" Name="AsycudaDocumentSetId" />
+    <Property Type="Boolean" Name="DoNotAllocate" />
+    <Property Type="String" Name="Description" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="BLNumber" MaxLength="50" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="PreviousDocumentItems" Relationship="WaterNutDBModel.PreviousDocumentPreviousDocumentItem" FromRole="PreviousDocument" ToRole="PreviousDocumentItem" />
+    <Property Type="Int32" Name="Lines" />
+    <Property Name="DocumentType" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="PreviousDocumentItem">
+    <Key>
+      <PropertyRef Name="Item_Id" />
+    </Key>
+    <Property Type="String" Name="Amount_deducted_from_licence" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="Item_Id" Nullable="false" />
+    <Property Type="Int32" Name="ASYCUDA_Id" Nullable="false" />
+    <Property Type="String" Name="Licence_number" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Free_text_1" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Free_text_2" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="EntryDataDetailsId" />
+    <Property Type="Int32" Name="LineNumber" Nullable="false" />
+    <Property Type="Boolean" Name="IsAssessed" />
+    <Property Type="Double" Name="DPQtyAllocated" Nullable="false" />
+    <Property Type="Double" Name="DFQtyAllocated" Nullable="false" />
+    <Property Type="DateTime" Name="EntryTimeStamp" Precision="3" />
+    <Property Type="Boolean" Name="AttributeOnlyAllocation" />
+    <Property Type="Boolean" Name="DoNotAllocate" />
+    <Property Type="Boolean" Name="DoNotEX" />
+    <Property Type="Double" Name="Item_price" />
+    <Property Type="String" Name="ItemNumber" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="TariffCode" MaxLength="8" FixedLength="false" Unicode="false" />
+    <Property Type="Double" Name="DutyLiability" />
+    <Property Type="Double" Name="Total_CIF_itm" />
+    <Property Type="Double" Name="Freight" />
+    <Property Type="Double" Name="Statistical_value" />
+    <Property Type="Double" Name="PiQuantity" />
+    <NavigationProperty Name="PreviousDocument" Relationship="WaterNutDBModel.PreviousDocumentPreviousDocumentItem" FromRole="PreviousDocumentItem" ToRole="PreviousDocument" />
+    <Property Type="String" Name="Description_of_goods" MaxLength="Max" FixedLength="false" Unicode="false">
+      <a:DisplayNameProperty xmlns:a="http://schemas.tempuri.com/DisplayNameProperty">ItemDescription</a:DisplayNameProperty>
+    </Property>
+    <Property Type="String" Name="Commercial_Description" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Suppplementary_unit_code" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="Double" Name="ItemQuantity" />
+    <Property Name="Number" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="DocumentType" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="PreviousItemsExes" Relationship="WaterNutDBModel.PreviousDocumentItemPreviousItemsEx" FromRole="PreviousDocumentItem" ToRole="PreviousItemsEx" />
+    <NavigationProperty Name="PreviousItemEx" Relationship="WaterNutDBModel.PreviousDocumentItemPreviousItemsEx1" FromRole="PreviousDocumentItem" ToRole="PreviousItemsEx" />
+  </EntityType>
+  <Association Name="PreviousDocumentPreviousDocumentItem">
+    <End Type="WaterNutDBModel.PreviousDocument" Role="PreviousDocument" Multiplicity="1" />
+    <End Type="WaterNutDBModel.PreviousDocumentItem" Role="PreviousDocumentItem" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PreviousDocument">
+        <PropertyRef Name="ASYCUDA_Id" />
+      </Principal>
+      <Dependent Role="PreviousDocumentItem">
+        <PropertyRef Name="ASYCUDA_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="PreviousItemsEx">
+    <Key>
+      <PropertyRef Name="PreviousItem_Id" />
+    </Key>
+    <Property Name="Packages_number" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Previous_Packages_number" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Hs_code" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Commodity_code" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Previous_item_number" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Goods_origin" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Net_weight" Type="Double" Nullable="false" />
+    <Property Name="Prev_net_weight" Type="Double" Nullable="false" />
+    <Property Name="Prev_reg_ser" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Prev_reg_nbr" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Prev_reg_dat" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Prev_reg_cuo" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Suplementary_Quantity" Type="Double" Nullable="false" />
+    <Property Name="Preveious_suplementary_quantity" Type="Double" Nullable="false" />
+    <Property Name="Current_value" Type="Double" Nullable="false" />
+    <Property Name="Previous_value" Type="Double" Nullable="false" />
+    <Property Name="Current_item_number" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="PreviousItem_Id" Type="Int32" Nullable="false" />
+    <Property Name="ASYCUDA_Id" Type="Int32" />
+    <Property Name="QtyAllocated" Type="Double" Nullable="false" />
+    <Property Name="RndCurrent_Value" Type="Double" Nullable="false" />
+    <Property Name="CNumber" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="RegistrationDate" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="PreviousDocumentItem" Relationship="WaterNutDBModel.PreviousDocumentItemPreviousItemsEx" FromRole="PreviousItemsEx" ToRole="PreviousDocumentItem" />
+    <Property Name="PreviousDocumentItemId" Type="Int32" />
+    <Property Name="AsycudaDocumentItemId" Type="Int32" />
+    <NavigationProperty Name="AsycudaDocumentItem" Relationship="WaterNutDBModel.PreviousDocumentItemPreviousItemsEx1" FromRole="PreviousItemsEx" ToRole="PreviousDocumentItem" />
+    <Property Name="ReferenceNumber" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="AssessmentDate" Type="DateTime" Precision="3" />
+    <Property Name="ItemNumber" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="SalesFactor" Type="Double" />
+  </EntityType>
+  <Association Name="PreviousDocumentItemPreviousItemsEx">
+    <End Type="WaterNutDBModel.PreviousDocumentItem" Role="PreviousDocumentItem" Multiplicity="0..1" />
+    <End Type="WaterNutDBModel.PreviousItemsEx" Role="PreviousItemsEx" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PreviousDocumentItem">
+        <PropertyRef Name="Item_Id" />
+      </Principal>
+      <Dependent Role="PreviousItemsEx">
+        <PropertyRef Name="PreviousDocumentItemId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="PreviousDocumentItemPreviousItemsEx1">
+    <End Type="WaterNutDBModel.PreviousDocumentItem" Role="PreviousDocumentItem" Multiplicity="0..1" />
+    <End Type="WaterNutDBModel.PreviousItemsEx" Role="PreviousItemsEx" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PreviousDocumentItem">
+        <PropertyRef Name="Item_Id" />
+      </Principal>
+      <Dependent Role="PreviousItemsEx">
+        <PropertyRef Name="AsycudaDocumentItemId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

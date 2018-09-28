@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="WaterNutDBModelStoreContainer" CdmEntityContainer="PreviousDocumentQS">
+    <EntitySetMapping Name="PreviousDocuments">
+      <EntityTypeMapping TypeName="WaterNutDBModel.PreviousDocument">
+        <MappingFragment StoreEntitySet="PreviousDocument">
+          <ScalarProperty Name="DocumentType" ColumnName="DocumentType" />
+          <ScalarProperty Name="Lines" ColumnName="Lines" />
+          <ScalarProperty Name="BLNumber" ColumnName="BLNumber" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="DoNotAllocate" ColumnName="DoNotAllocate" />
+          <ScalarProperty Name="AsycudaDocumentSetId" ColumnName="AsycudaDocumentSetId" />
+          <ScalarProperty Name="PiValue" ColumnName="PiValue" />
+          <ScalarProperty Name="AllocatedValue" ColumnName="AllocatedValue" />
+          <ScalarProperty Name="TotalValue" ColumnName="TotalValue" />
+          <ScalarProperty Name="EffectiveRegistrationDate" ColumnName="EffectiveRegistrationDate" />
+          <ScalarProperty Name="ReferenceNumber" ColumnName="ReferenceNumber" />
+          <ScalarProperty Name="IsManuallyAssessed" ColumnName="IsManuallyAssessed" />
+          <ScalarProperty Name="RegistrationDate" ColumnName="RegistrationDate" />
+          <ScalarProperty Name="CNumber" ColumnName="CNumber" />
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="ASYCUDA_Id" ColumnName="ASYCUDA_Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PreviousDocumentItems">
+      <EntityTypeMapping TypeName="WaterNutDBModel.PreviousDocumentItem">
+        <MappingFragment StoreEntitySet="PreviousDocumentItem">
+          <ScalarProperty Name="DocumentType" ColumnName="DocumentType" />
+          <ScalarProperty Name="Number" ColumnName="Number" />
+          <ScalarProperty Name="ItemQuantity" ColumnName="ItemQuantity" />
+          <ScalarProperty Name="Suppplementary_unit_code" ColumnName="Suppplementary_unit_code" />
+          <ScalarProperty Name="Commercial_Description" ColumnName="Commercial_Description" />
+          <ScalarProperty Name="Description_of_goods" ColumnName="Description_of_goods" />
+          <ScalarProperty Name="PiQuantity" ColumnName="PiQuantity" />
+          <ScalarProperty Name="Statistical_value" ColumnName="Statistical_value" />
+          <ScalarProperty Name="Freight" ColumnName="Freight" />
+          <ScalarProperty Name="Total_CIF_itm" ColumnName="Total_CIF_itm" />
+          <ScalarProperty Name="DutyLiability" ColumnName="DutyLiability" />
+          <ScalarProperty Name="TariffCode" ColumnName="TariffCode" />
+          <ScalarProperty Name="ItemNumber" ColumnName="ItemNumber" />
+          <ScalarProperty Name="Item_price" ColumnName="Item_price" />
+          <ScalarProperty Name="DoNotEX" ColumnName="DoNotEX" />
+          <ScalarProperty Name="DoNotAllocate" ColumnName="DoNotAllocate" />
+          <ScalarProperty Name="AttributeOnlyAllocation" ColumnName="AttributeOnlyAllocation" />
+          <ScalarProperty Name="EntryTimeStamp" ColumnName="EntryTimeStamp" />
+          <ScalarProperty Name="DFQtyAllocated" ColumnName="DFQtyAllocated" />
+          <ScalarProperty Name="DPQtyAllocated" ColumnName="DPQtyAllocated" />
+          <ScalarProperty Name="IsAssessed" ColumnName="IsAssessed" />
+          <ScalarProperty Name="LineNumber" ColumnName="LineNumber" />
+          <ScalarProperty Name="EntryDataDetailsId" ColumnName="EntryDataDetailsId" />
+          <ScalarProperty Name="Free_text_2" ColumnName="Free_text_2" />
+          <ScalarProperty Name="Free_text_1" ColumnName="Free_text_1" />
+          <ScalarProperty Name="Licence_number" ColumnName="Licence_number" />
+          <ScalarProperty Name="ASYCUDA_Id" ColumnName="ASYCUDA_Id" />
+          <ScalarProperty Name="Item_Id" ColumnName="Item_Id" />
+          <ScalarProperty Name="Amount_deducted_from_licence" ColumnName="Amount_deducted_from_licence" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PreviousItemsExes">
+      <EntityTypeMapping TypeName="WaterNutDBModel.PreviousItemsEx">
+        <MappingFragment StoreEntitySet="PreviousItemsEx">
+          <ScalarProperty Name="SalesFactor" ColumnName="SalesFactor" />
+          <ScalarProperty Name="ItemNumber" ColumnName="ItemNumber" />
+          <ScalarProperty Name="AssessmentDate" ColumnName="AssessmentDate" />
+          <ScalarProperty Name="ReferenceNumber" ColumnName="ReferenceNumber" />
+          <ScalarProperty Name="AsycudaDocumentItemId" ColumnName="AsycudaDocumentItemId" />
+          <ScalarProperty Name="PreviousDocumentItemId" ColumnName="PreviousDocumentItemId" />
+          <ScalarProperty Name="RegistrationDate" ColumnName="RegistrationDate" />
+          <ScalarProperty Name="CNumber" ColumnName="CNumber" />
+          <ScalarProperty Name="RndCurrent_Value" ColumnName="RndCurrent_Value" />
+          <ScalarProperty Name="QtyAllocated" ColumnName="QtyAllocated" />
+          <ScalarProperty Name="ASYCUDA_Id" ColumnName="ASYCUDA_Id" />
+          <ScalarProperty Name="PreviousItem_Id" ColumnName="PreviousItem_Id" />
+          <ScalarProperty Name="Current_item_number" ColumnName="Current_item_number" />
+          <ScalarProperty Name="Previous_value" ColumnName="Previous_value" />
+          <ScalarProperty Name="Current_value" ColumnName="Current_value" />
+          <ScalarProperty Name="Preveious_suplementary_quantity" ColumnName="Preveious_suplementary_quantity" />
+          <ScalarProperty Name="Suplementary_Quantity" ColumnName="Suplementary_Quantity" />
+          <ScalarProperty Name="Prev_reg_cuo" ColumnName="Prev_reg_cuo" />
+          <ScalarProperty Name="Prev_reg_dat" ColumnName="Prev_reg_dat" />
+          <ScalarProperty Name="Prev_reg_nbr" ColumnName="Prev_reg_nbr" />
+          <ScalarProperty Name="Prev_reg_ser" ColumnName="Prev_reg_ser" />
+          <ScalarProperty Name="Prev_net_weight" ColumnName="Prev_net_weight" />
+          <ScalarProperty Name="Net_weight" ColumnName="Net_weight" />
+          <ScalarProperty Name="Goods_origin" ColumnName="Goods_origin" />
+          <ScalarProperty Name="Previous_item_number" ColumnName="Previous_item_number" />
+          <ScalarProperty Name="Commodity_code" ColumnName="Commodity_code" />
+          <ScalarProperty Name="Hs_code" ColumnName="Hs_code" />
+          <ScalarProperty Name="Previous_Packages_number" ColumnName="Previous_Packages_number" />
+          <ScalarProperty Name="Packages_number" ColumnName="Packages_number" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

@@ -1,0 +1,16 @@
+C:\prism\Core.Common\Core.Common.UI\WpfSchduleControl\WPFScheduleDemo\bin\Debug\WPFScheduleDemo.exe.config
+C:\prism\Core.Common\Core.Common.UI\WpfSchduleControl\WPFScheduleDemo\bin\Debug\WPFScheduleDemo.exe
+C:\prism\Core.Common\Core.Common.UI\WpfSchduleControl\WPFScheduleDemo\bin\Debug\WPFScheduleDemo.pdb
+C:\prism\Core.Common\Core.Common.UI\WpfSchduleControl\WPFScheduleDemo\bin\Debug\WpfSchduleControl.dll
+C:\prism\Core.Common\Core.Common.UI\WpfSchduleControl\WPFScheduleDemo\bin\Debug\WpfSchduleControl.pdb
+C:\prism\Core.Common\Core.Common.UI\WpfSchduleControl\WPFScheduleDemo\obj\Debug\WPFScheduleDemo.csprojResolveAssemblyReference.cache
+C:\prism\Core.Common\Core.Common.UI\WpfSchduleControl\WPFScheduleDemo\obj\Debug\MainWindow.g.cs
+C:\prism\Core.Common\Core.Common.UI\WpfSchduleControl\WPFScheduleDemo\obj\Debug\App.g.cs
+C:\prism\Core.Common\Core.Common.UI\WpfSchduleControl\WPFScheduleDemo\obj\Debug\WPFScheduleDemo_MarkupCompile.cache
+C:\prism\Core.Common\Core.Common.UI\WpfSchduleControl\WPFScheduleDemo\obj\Debug\WPFScheduleDemo_MarkupCompile.lref
+C:\prism\Core.Common\Core.Common.UI\WpfSchduleControl\WPFScheduleDemo\obj\Debug\MainWindow.baml
+C:\prism\Core.Common\Core.Common.UI\WpfSchduleControl\WPFScheduleDemo\obj\Debug\WPFScheduleDemo.g.resources
+C:\prism\Core.Common\Core.Common.UI\WpfSchduleControl\WPFScheduleDemo\obj\Debug\WPFScheduleDemo.Properties.Resources.resources
+C:\prism\Core.Common\Core.Common.UI\WpfSchduleControl\WPFScheduleDemo\obj\Debug\WPFScheduleDemo.csproj.GenerateResource.Cache
+C:\prism\Core.Common\Core.Common.UI\WpfSchduleControl\WPFScheduleDemo\obj\Debug\WPFScheduleDemo.exe
+C:\prism\Core.Common\Core.Common.UI\WpfSchduleControl\WPFScheduleDemo\obj\Debug\WPFScheduleDemo.pdb

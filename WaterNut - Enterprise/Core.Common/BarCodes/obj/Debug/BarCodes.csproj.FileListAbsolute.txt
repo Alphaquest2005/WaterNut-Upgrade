@@ -1,0 +1,34 @@
+D:\Prism Projects\PrismApplication1\BarCodes\bin\Debug\BarCodes.dll
+D:\Prism Projects\PrismApplication1\BarCodes\bin\Debug\BarCodes.pdb
+D:\Prism Projects\PrismApplication1\BarCodes\obj\Debug\BarCodes.dll
+D:\Prism Projects\PrismApplication1\BarCodes\obj\Debug\BarCodes.pdb
+D:\Prism Projects\PrismApplication1\BarCodes\obj\Debug\BarCodes.csprojResolveAssemblyReference.cache
+C:\prism\PrismApplication1\BarCodes\bin\Debug\BarCodes.dll
+C:\prism\PrismApplication1\BarCodes\bin\Debug\BarCodes.pdb
+C:\prism\PrismApplication1\BarCodes\obj\Debug\BarCodes.csprojResolveAssemblyReference.cache
+C:\prism\PrismApplication1\BarCodes\obj\Debug\BarCodes.dll
+C:\prism\PrismApplication1\BarCodes\obj\Debug\BarCodes.pdb
+C:\Insight\PrismApplication1\BarCodes\bin\Debug\BarCodes.dll
+C:\Insight\PrismApplication1\BarCodes\bin\Debug\BarCodes.pdb
+C:\Insight\PrismApplication1\BarCodes\obj\Debug\BarCodes.csprojResolveAssemblyReference.cache
+C:\Insight\PrismApplication1\BarCodes\obj\Debug\BarCodes.dll
+C:\Insight\PrismApplication1\BarCodes\obj\Debug\BarCodes.pdb
+C:\Shared Folder\Insight\PrismApplication1 - Copy\BarCodes\bin\Debug\BarCodes.dll
+C:\Shared Folder\Insight\PrismApplication1 - Copy\BarCodes\bin\Debug\BarCodes.pdb
+C:\Shared Folder\Insight\PrismApplication1 - Copy\BarCodes\obj\Debug\BarCodes.csprojResolveAssemblyReference.cache
+C:\Shared Folder\Insight\PrismApplication1 - Copy\BarCodes\obj\Debug\BarCodes.dll
+C:\Shared Folder\Insight\PrismApplication1 - Copy\BarCodes\obj\Debug\BarCodes.pdb
+C:\Prism Projects\live\PrismApplication1\BarCodes\bin\Debug\BarCodes.dll
+C:\Prism Projects\live\PrismApplication1\BarCodes\bin\Debug\BarCodes.pdb
+C:\Prism Projects\live\PrismApplication1\BarCodes\obj\Debug\BarCodes.dll
+C:\Prism Projects\live\PrismApplication1\BarCodes\obj\Debug\BarCodes.pdb
+C:\prism\live\PrismApplication1\BarCodes\bin\Debug\BarCodes.dll
+C:\prism\live\PrismApplication1\BarCodes\bin\Debug\BarCodes.pdb
+C:\prism\live\PrismApplication1\BarCodes\obj\Debug\BarCodes.csprojResolveAssemblyReference.cache
+C:\prism\live\PrismApplication1\BarCodes\obj\Debug\BarCodes.dll
+C:\prism\live\PrismApplication1\BarCodes\obj\Debug\BarCodes.pdb
+C:\prism\Core.Common\BarCodes\bin\Debug\BarCodes.dll
+C:\prism\Core.Common\BarCodes\bin\Debug\BarCodes.pdb
+C:\prism\Core.Common\BarCodes\obj\Debug\BarCodes.csprojResolveAssemblyReference.cache
+C:\prism\Core.Common\BarCodes\obj\Debug\BarCodes.dll
+C:\prism\Core.Common\BarCodes\obj\Debug\BarCodes.pdb

@@ -1,0 +1,161 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="ModelStoreContainer" CdmEntityContainer="OverShortQS">
+    <EntitySetMapping Name="InventoryItems">
+      <EntityTypeMapping TypeName="Model.InventoryItem">
+        <MappingFragment StoreEntitySet="InventoryItems">
+          <ScalarProperty Name="ItemNumber" ColumnName="ItemNumber" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Category" ColumnName="Category" />
+          <ScalarProperty Name="TariffCode" ColumnName="TariffCode" />
+          <ScalarProperty Name="EntryTimeStamp" ColumnName="EntryTimeStamp" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="OverShortDetailAllocations">
+      <EntityTypeMapping TypeName="Model.OverShortDetailAllocation">
+        <MappingFragment StoreEntitySet="OverShortDetailAllocations">
+          <ScalarProperty Name="OverShortAllocationId" ColumnName="OverShortAllocationId" />
+          <ScalarProperty Name="OverShortDetailId" ColumnName="OverShortDetailId" />
+          <ScalarProperty Name="Item_Id" ColumnName="Item_Id" />
+          <ScalarProperty Name="QtyAllocated" ColumnName="QtyAllocated" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="OverShortDetails">
+      <EntityTypeMapping TypeName="IsTypeOf(Model.OverShortDetail)">
+        <MappingFragment StoreEntitySet="OverShortDetails">
+          <ScalarProperty Name="OverShortDetailId" ColumnName="OverShortDetailId" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="InvoiceQty" ColumnName="InvoiceQty" />
+          <ScalarProperty Name="Cost" ColumnName="Cost" />
+          <ScalarProperty Name="ItemDescription" ColumnName="ItemDescription" />
+          <ScalarProperty Name="ItemNumber" ColumnName="ItemNumber" />
+          <ScalarProperty Name="ReceivedQty" ColumnName="ReceivedQty" />
+          <ScalarProperty Name="OversShortsId" ColumnName="OversShortsId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+      <EntityTypeMapping TypeName="IsTypeOf(Model.OverShortDetailsEX)">
+        <MappingFragment StoreEntitySet="OverShortDetailsEX">
+          <ScalarProperty Name="ReceivedValue" ColumnName="ReceivedValue" />
+          <ScalarProperty Name="InvoiceValue" ColumnName="InvoiceValue" />
+          <ScalarProperty Name="OverShortDetailId" ColumnName="OverShortDetailId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="OversShorts">
+      <EntityTypeMapping TypeName="IsTypeOf(Model.OversShort)">
+        <MappingFragment StoreEntitySet="OversShorts">
+          <ScalarProperty Name="OversShortsId" ColumnName="OversShortsId" />
+          <ScalarProperty Name="InvoiceDate" ColumnName="InvoiceDate" />
+          <ScalarProperty Name="InvoiceNo" ColumnName="InvoiceNo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+      <EntityTypeMapping TypeName="IsTypeOf(Model.OversShortEX)">
+        <MappingFragment StoreEntitySet="OversShortEX">
+          <ScalarProperty Name="OversShortsId" ColumnName="OversShortsId" />
+          <ScalarProperty Name="ReceivedValue" ColumnName="ReceivedValue" />
+          <ScalarProperty Name="InvoiceValue" ColumnName="InvoiceValue" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="OverShortAllocationsEXes">
+      <EntityTypeMapping TypeName="Model.OverShortAllocationsEX">
+        <MappingFragment StoreEntitySet="OverShortAllocationsEX">
+          <ScalarProperty Name="InvoiceValue" ColumnName="InvoiceValue" />
+          <ScalarProperty Name="ReceivedValue" ColumnName="ReceivedValue" />
+          <ScalarProperty Name="AllocatedValue" ColumnName="AllocatedValue" />
+          <ScalarProperty Name="AsycudaMonth" ColumnName="AsycudaMonth" />
+          <ScalarProperty Name="InvoiceMonth" ColumnName="InvoiceMonth" />
+          <ScalarProperty Name="Duration" ColumnName="Duration" />
+          <ScalarProperty Name="OverShortAllocationId" ColumnName="OverShortAllocationId" />
+          <ScalarProperty Name="RegistrationDate" ColumnName="RegistrationDate" />
+          <ScalarProperty Name="CNumber" ColumnName="CNumber" />
+          <ScalarProperty Name="InvoiceDate" ColumnName="InvoiceDate" />
+          <ScalarProperty Name="InvoiceNo" ColumnName="InvoiceNo" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="InvoiceQty" ColumnName="InvoiceQty" />
+          <ScalarProperty Name="Cost" ColumnName="Cost" />
+          <ScalarProperty Name="ItemDescription" ColumnName="ItemDescription" />
+          <ScalarProperty Name="ItemNumber" ColumnName="ItemNumber" />
+          <ScalarProperty Name="ReceivedQty" ColumnName="ReceivedQty" />
+          <ScalarProperty Name="OversShortsId" ColumnName="OversShortsId" />
+          <ScalarProperty Name="OverShortDetailId" ColumnName="OverShortDetailId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AsycudaDocumentItems">
+      <EntityTypeMapping TypeName="Model.AsycudaDocumentItem">
+        <MappingFragment StoreEntitySet="AsycudaDocumentItem">
+          <ScalarProperty Name="PiQuantity" ColumnName="PiQuantity" />
+          <ScalarProperty Name="DFQtyAllocated" ColumnName="DFQtyAllocated" />
+          <ScalarProperty Name="DPQtyAllocated" ColumnName="DPQtyAllocated" />
+          <ScalarProperty Name="Statistical_value" ColumnName="Statistical_value" />
+          <ScalarProperty Name="Freight" ColumnName="Freight" />
+          <ScalarProperty Name="Total_CIF_itm" ColumnName="Total_CIF_itm" />
+          <ScalarProperty Name="DutyLiability" ColumnName="DutyLiability" />
+          <ScalarProperty Name="TariffCodeDescription" ColumnName="TariffCodeDescription" />
+          <ScalarProperty Name="TariffCategoryLicenseRequired" ColumnName="TariffCategoryLicenseRequired" />
+          <ScalarProperty Name="TariffCodeLicenseRequired" ColumnName="TariffCodeLicenseRequired" />
+          <ScalarProperty Name="TariffCode" ColumnName="TariffCode" />
+          <ScalarProperty Name="ItemNumber" ColumnName="ItemNumber" />
+          <ScalarProperty Name="Suppplementary_unit_code" ColumnName="Suppplementary_unit_code" />
+          <ScalarProperty Name="ItemQuantity" ColumnName="ItemQuantity" />
+          <ScalarProperty Name="Item_price" ColumnName="Item_price" />
+          <ScalarProperty Name="Net_weight_itm" ColumnName="Net_weight_itm" />
+          <ScalarProperty Name="Gross_weight_itm" ColumnName="Gross_weight_itm" />
+          <ScalarProperty Name="Commercial_Description" ColumnName="Commercial_Description" />
+          <ScalarProperty Name="Description_of_goods" ColumnName="Description_of_goods" />
+          <ScalarProperty Name="AttributeOnlyAllocation" ColumnName="AttributeOnlyAllocation" />
+          <ScalarProperty Name="DoNotEX" ColumnName="DoNotEX" />
+          <ScalarProperty Name="DoNotAllocate" ColumnName="DoNotAllocate" />
+          <ScalarProperty Name="IsAssessed" ColumnName="IsAssessed" />
+          <ScalarProperty Name="LineNumber" ColumnName="LineNumber" />
+          <ScalarProperty Name="EntryDataDetailsId" ColumnName="EntryDataDetailsId" />
+          <ScalarProperty Name="AsycudaDocumentId" ColumnName="AsycudaDocumentId" />
+          <ScalarProperty Name="Item_Id" ColumnName="Item_Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AsycudaDocuments">
+      <EntityTypeMapping TypeName="Model.AsycudaDocument">
+        <MappingFragment StoreEntitySet="AsycudaDocument">
+          <ScalarProperty Name="Lines" ColumnName="Lines" />
+          <ScalarProperty Name="Customs_clearance_office_code" ColumnName="Customs_clearance_office_code" />
+          <ScalarProperty Name="Manifest_reference_number" ColumnName="Manifest_reference_number" />
+          <ScalarProperty Name="Currency_rate" ColumnName="Currency_rate" />
+          <ScalarProperty Name="Currency_code" ColumnName="Currency_code" />
+          <ScalarProperty Name="Country_first_destination" ColumnName="Country_first_destination" />
+          <ScalarProperty Name="Customs_ProcedureId" ColumnName="Customs_ProcedureId" />
+          <ScalarProperty Name="Document_TypeId" ColumnName="Document_TypeId" />
+          <ScalarProperty Name="DocumentType" ColumnName="DocumentType" />
+          <ScalarProperty Name="Extended_customs_procedure" ColumnName="Extended_customs_procedure" />
+          <ScalarProperty Name="Declaration_gen_procedure_code" ColumnName="Declaration_gen_procedure_code" />
+          <ScalarProperty Name="Type_of_declaration" ColumnName="Type_of_declaration" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="BLNumber" ColumnName="BLNumber" />
+          <ScalarProperty Name="AutoUpdate" ColumnName="AutoUpdate" />
+          <ScalarProperty Name="DoNotAllocate" ColumnName="DoNotAllocate" />
+          <ScalarProperty Name="AsycudaDocumentSetId" ColumnName="AsycudaDocumentSetId" />
+          <ScalarProperty Name="EffectiveRegistrationDate" ColumnName="EffectiveRegistrationDate" />
+          <ScalarProperty Name="ReferenceNumber" ColumnName="ReferenceNumber" />
+          <ScalarProperty Name="IsManuallyAssessed" ColumnName="IsManuallyAssessed" />
+          <ScalarProperty Name="RegistrationDate" ColumnName="RegistrationDate" />
+          <ScalarProperty Name="CNumber" ColumnName="CNumber" />
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="ASYCUDA_Id" ColumnName="ASYCUDA_Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="OverShortSuggestedDocuments">
+      <EntityTypeMapping TypeName="Model.OverShortSuggestedDocument">
+        <MappingFragment StoreEntitySet="OverShortSuggestedDocuments">
+          <ScalarProperty Name="ReferenceNumber" ColumnName="ReferenceNumber" />
+          <ScalarProperty Name="CNumber" ColumnName="CNumber" />
+          <ScalarProperty Name="OversShortsId" ColumnName="OversShortsId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

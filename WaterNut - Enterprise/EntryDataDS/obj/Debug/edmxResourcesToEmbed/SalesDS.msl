@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="WaterNutDBModelStoreContainer" CdmEntityContainer="SalesDS">
+    <EntitySetMapping Name="EntryData_Sales">
+      <EntityTypeMapping TypeName="WaterNutDBModel.EntryData_Sales">
+        <MappingFragment StoreEntitySet="EntryData_Sales">
+          <ScalarProperty Name="INVNumber" ColumnName="INVNumber" />
+          <ScalarProperty Name="EntryDataId" ColumnName="EntryDataId" />
+          <ScalarProperty Name="TaxAmount" ColumnName="TaxAmount" />
+          <ScalarProperty Name="CustomerName" ColumnName="CustomerName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

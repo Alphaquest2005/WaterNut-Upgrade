@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="WaterNutDBModelStoreContainer" CdmEntityContainer="QuickBooksDS">
+    <EntitySetMapping Name="InventoryItems">
+      <EntityTypeMapping TypeName="WaterNutDBModel.InventoryItems">
+        <MappingFragment StoreEntitySet="InventoryItems">
+          <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+          <ScalarProperty Name="ItemNumber" ColumnName="ItemNumber" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Category" ColumnName="Category" />
+          <ScalarProperty Name="TariffCode" ColumnName="TariffCode" />
+          <ScalarProperty Name="EntryTimeStamp" ColumnName="EntryTimeStamp" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

@@ -1,0 +1,8 @@
+C:\prism\WaterNut - Enterprise\DataLayer\bin\Release\DataLayer.dll.config
+C:\prism\WaterNut - Enterprise\DataLayer\bin\Release\DataLayer.dll
+C:\prism\WaterNut - Enterprise\DataLayer\bin\Release\DataLayer.pdb
+C:\prism\WaterNut - Enterprise\DataLayer\bin\Release\EntityFramework.dll
+C:\prism\WaterNut - Enterprise\DataLayer\bin\Release\EntityFramework.xml
+C:\prism\WaterNut - Enterprise\DataLayer\obj\Release\DataLayer.csprojResolveAssemblyReference.cache
+C:\prism\WaterNut - Enterprise\DataLayer\obj\Release\DataLayer.dll
+C:\prism\WaterNut - Enterprise\DataLayer\obj\Release\DataLayer.pdb

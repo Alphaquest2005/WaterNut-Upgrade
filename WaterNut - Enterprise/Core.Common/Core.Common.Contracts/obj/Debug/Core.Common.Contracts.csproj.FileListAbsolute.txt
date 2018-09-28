@@ -1,0 +1,19 @@
+C:\prism\Core.Common\Core.Common.Contracts\obj\Debug\Core.Common.Contracts.dll
+C:\prism\Core.Common\Core.Common.Contracts\bin\Debug\Core.Common.Contracts.dll.config
+C:\prism\Core.Common\Core.Common.Contracts\bin\Debug\Core.Common.Contracts.dll
+C:\prism\Core.Common\Core.Common.Contracts\bin\Debug\Core.Common.Contracts.pdb
+C:\prism\Core.Common\Core.Common.Contracts\obj\Debug\Core.Common.Contracts.pdb
+C:\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\Core.Common\Core.Common.Contracts\bin\Debug\Core.Common.Contracts.dll.config
+C:\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\Core.Common\Core.Common.Contracts\bin\Debug\Core.Common.Contracts.dll
+C:\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\Core.Common\Core.Common.Contracts\bin\Debug\Core.Common.Contracts.pdb
+C:\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\Core.Common\Core.Common.Contracts\obj\Debug\Core.Common.Contracts.csproj.CoreCompileInputs.cache
+C:\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\Core.Common\Core.Common.Contracts\obj\Debug\Core.Common.Contracts.dll
+C:\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\Core.Common\Core.Common.Contracts\obj\Debug\Core.Common.Contracts.pdb
+\\VBOXSVR\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\Core.Common\Core.Common.Contracts\bin\Debug\Core.Common.Contracts.dll.config
+\\VBOXSVR\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\Core.Common\Core.Common.Contracts\bin\Debug\Core.Common.Contracts.dll
+\\VBOXSVR\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\Core.Common\Core.Common.Contracts\bin\Debug\Core.Common.Contracts.pdb
+\\VBOXSVR\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\Core.Common\Core.Common.Contracts\obj\Debug\Core.Common.Contracts.csprojAssemblyReference.cache
+\\VBOXSVR\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\Core.Common\Core.Common.Contracts\obj\Debug\Core.Common.Contracts.csproj.CoreCompileInputs.cache
+\\VBOXSVR\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\Core.Common\Core.Common.Contracts\obj\Debug\Core.Common.Contracts.dll
+\\VBOXSVR\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\Core.Common\Core.Common.Contracts\obj\Debug\Core.Common.Contracts.pdb
+C:\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\Core.Common\Core.Common.Contracts\obj\Debug\Core.Common.Contracts.csprojAssemblyReference.cache

@@ -1,0 +1,50 @@
+C:\Prism Projects\WaterNut - Enterprise\WCFConsoleHost\bin\Debug\WCFConsoleHost.exe.config
+C:\Prism Projects\WaterNut - Enterprise\WCFConsoleHost\bin\Debug\WCFConsoleHost.exe
+C:\Prism Projects\WaterNut - Enterprise\WCFConsoleHost\bin\Debug\WCFConsoleHost.pdb
+C:\Prism Projects\WaterNut - Enterprise\WCFConsoleHost\obj\Debug\WCFConsoleHost.exe
+C:\Prism Projects\WaterNut - Enterprise\WCFConsoleHost\obj\Debug\WCFConsoleHost.pdb
+C:\prism\WaterNut - Enterprise\WCFConsoleHost\bin\Debug\WCFConsoleHost.exe.config
+C:\prism\WaterNut - Enterprise\WCFConsoleHost\bin\Debug\WCFConsoleHost.exe
+C:\prism\WaterNut - Enterprise\WCFConsoleHost\bin\Debug\WCFConsoleHost.pdb
+C:\prism\WaterNut - Enterprise\WCFConsoleHost\obj\Debug\WCFConsoleHost.exe
+C:\prism\WaterNut - Enterprise\WCFConsoleHost\obj\Debug\WCFConsoleHost.pdb
+C:\prism\WaterNut - Enterprise\WCFConsoleHost\obj\Debug\WCFConsoleHost.csprojResolveAssemblyReference.cache
+C:\prism\WaterNut - Enterprise\WCFConsoleHost\bin\Debug\Core.Common.Contracts.dll
+C:\prism\WaterNut - Enterprise\WCFConsoleHost\bin\Debug\Core.Common.Data.dll
+C:\prism\WaterNut - Enterprise\WCFConsoleHost\bin\Debug\Core.Common.dll
+C:\prism\WaterNut - Enterprise\WCFConsoleHost\bin\Debug\Core.Common.UI.dll
+C:\prism\WaterNut - Enterprise\WCFConsoleHost\bin\Debug\WaterNut.Business.Bootstraper.dll
+C:\prism\WaterNut - Enterprise\WCFConsoleHost\bin\Debug\EntityFramework.dll
+C:\prism\WaterNut - Enterprise\WCFConsoleHost\bin\Debug\TrackableEntities.Common.dll
+C:\prism\WaterNut - Enterprise\WCFConsoleHost\bin\Debug\TrackableEntities.EF.6.dll
+C:\prism\WaterNut - Enterprise\WCFConsoleHost\bin\Debug\SimpleMvvmToolkit-WPF.dll
+C:\prism\WaterNut - Enterprise\WCFConsoleHost\bin\Debug\SimpleMvvmToolkit-Common.dll
+C:\prism\WaterNut - Enterprise\WCFConsoleHost\bin\Debug\WaterNut.Business.Services.dll
+C:\prism\WaterNut - Enterprise\WCFConsoleHost\bin\Debug\WaterNut.Business.Entities.dll
+C:\prism\WaterNut - Enterprise\WCFConsoleHost\bin\Debug\WaterNut.Data.dll
+C:\prism\WaterNut - Enterprise\WCFConsoleHost\bin\Debug\Newtonsoft.Json.dll
+C:\prism\WaterNut - Enterprise\WCFConsoleHost\bin\Debug\EntityFramework.SqlServer.dll
+C:\prism\WaterNut - Enterprise\WCFConsoleHost\bin\Debug\Core.Common.Contracts.pdb
+C:\prism\WaterNut - Enterprise\WCFConsoleHost\bin\Debug\Core.Common.Data.pdb
+C:\prism\WaterNut - Enterprise\WCFConsoleHost\bin\Debug\Core.Common.UI.pdb
+C:\prism\WaterNut - Enterprise\WCFConsoleHost\bin\Debug\Core.Common.pdb
+C:\prism\WaterNut - Enterprise\WCFConsoleHost\bin\Debug\WaterNut.Business.Bootstraper.pdb
+C:\prism\WaterNut - Enterprise\WCFConsoleHost\bin\Debug\EntityFramework.xml
+C:\prism\WaterNut - Enterprise\WCFConsoleHost\bin\Debug\TrackableEntities.Common.pdb
+C:\prism\WaterNut - Enterprise\WCFConsoleHost\bin\Debug\TrackableEntities.Common.xml
+C:\prism\WaterNut - Enterprise\WCFConsoleHost\bin\Debug\TrackableEntities.EF.6.pdb
+C:\prism\WaterNut - Enterprise\WCFConsoleHost\bin\Debug\TrackableEntities.EF.6.xml
+C:\prism\WaterNut - Enterprise\WCFConsoleHost\bin\Debug\SimpleMvvmToolkit-WPF.pdb
+C:\prism\WaterNut - Enterprise\WCFConsoleHost\bin\Debug\SimpleMvvmToolkit-WPF.xml
+C:\prism\WaterNut - Enterprise\WCFConsoleHost\bin\Debug\SimpleMvvmToolkit-Common.pdb
+C:\prism\WaterNut - Enterprise\WCFConsoleHost\bin\Debug\SimpleMvvmToolkit-Common.xml
+C:\prism\WaterNut - Enterprise\WCFConsoleHost\bin\Debug\WaterNut.Business.Services.pdb
+C:\prism\WaterNut - Enterprise\WCFConsoleHost\bin\Debug\WaterNut.Business.Entities.pdb
+C:\prism\WaterNut - Enterprise\WCFConsoleHost\bin\Debug\WaterNut.Data.pdb
+C:\prism\WaterNut - Enterprise\WCFConsoleHost\bin\Debug\Newtonsoft.Json.xml
+C:\prism\WaterNut - Enterprise\WCFConsoleHost\bin\Debug\EntityFramework.SqlServer.xml
+C:\prism\WaterNut - Enterprise\WCFConsoleHost\bin\Debug\System.Linq.Dynamic.dll
+C:\prism\WaterNut - Enterprise\WCFConsoleHost\bin\Debug\Serialize.Linq.dll
+C:\prism\WaterNut - Enterprise\WCFConsoleHost\bin\Debug\Serialize.Linq.pdb
+C:\prism\WaterNut - Enterprise\WCFConsoleHost\bin\Debug\ProLinq.dll
+C:\prism\WaterNut - Enterprise\WCFConsoleHost\bin\Debug\ProLinq.Wcf.dll

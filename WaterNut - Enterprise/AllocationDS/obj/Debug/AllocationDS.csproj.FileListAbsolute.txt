@@ -1,0 +1,55 @@
+C:\Prism Projects\WaterNut - Enterprise\AllocationDS\obj\Debug\AllocationDS.csprojResolveAssemblyReference.cache
+C:\Prism Projects\WaterNut - Enterprise\AllocationDS\bin\Debug\AllocationDS.dll.config
+C:\Prism Projects\WaterNut - Enterprise\AllocationDS\bin\Debug\AllocationDS.dll
+C:\Prism Projects\WaterNut - Enterprise\AllocationDS\bin\Debug\AllocationDS.pdb
+C:\Prism Projects\WaterNut - Enterprise\AllocationDS\bin\Debug\EntityFramework.dll
+C:\Prism Projects\WaterNut - Enterprise\AllocationDS\bin\Debug\EntityFramework.SqlServer.dll
+C:\Prism Projects\WaterNut - Enterprise\AllocationDS\bin\Debug\Microsoft.Data.Edm.dll
+C:\Prism Projects\WaterNut - Enterprise\AllocationDS\bin\Debug\Microsoft.Data.Entity.Design.DatabaseGeneration.dll
+C:\Prism Projects\WaterNut - Enterprise\AllocationDS\bin\Debug\Microsoft.Data.Entity.Design.VersioningFacade.dll
+C:\Prism Projects\WaterNut - Enterprise\AllocationDS\bin\Debug\EntityFramework.xml
+C:\Prism Projects\WaterNut - Enterprise\AllocationDS\bin\Debug\EntityFramework.SqlServer.xml
+C:\Prism Projects\WaterNut - Enterprise\AllocationDS\bin\Debug\Microsoft.Data.Edm.xml
+C:\Prism Projects\WaterNut - Enterprise\AllocationDS\bin\Debug\de\Microsoft.Data.Entity.Design.DatabaseGeneration.resources.dll
+C:\Prism Projects\WaterNut - Enterprise\AllocationDS\bin\Debug\es\Microsoft.Data.Entity.Design.DatabaseGeneration.resources.dll
+C:\Prism Projects\WaterNut - Enterprise\AllocationDS\bin\Debug\fr\Microsoft.Data.Entity.Design.DatabaseGeneration.resources.dll
+C:\Prism Projects\WaterNut - Enterprise\AllocationDS\bin\Debug\it\Microsoft.Data.Entity.Design.DatabaseGeneration.resources.dll
+C:\Prism Projects\WaterNut - Enterprise\AllocationDS\bin\Debug\ja\Microsoft.Data.Entity.Design.DatabaseGeneration.resources.dll
+C:\Prism Projects\WaterNut - Enterprise\AllocationDS\bin\Debug\ko\Microsoft.Data.Entity.Design.DatabaseGeneration.resources.dll
+C:\Prism Projects\WaterNut - Enterprise\AllocationDS\bin\Debug\ru\Microsoft.Data.Entity.Design.DatabaseGeneration.resources.dll
+C:\Prism Projects\WaterNut - Enterprise\AllocationDS\bin\Debug\zh-Hans\Microsoft.Data.Entity.Design.DatabaseGeneration.resources.dll
+C:\Prism Projects\WaterNut - Enterprise\AllocationDS\bin\Debug\zh-Hant\Microsoft.Data.Entity.Design.DatabaseGeneration.resources.dll
+C:\Prism Projects\WaterNut - Enterprise\AllocationDS\bin\Debug\de\Microsoft.Data.Entity.Design.VersioningFacade.resources.dll
+C:\Prism Projects\WaterNut - Enterprise\AllocationDS\bin\Debug\es\Microsoft.Data.Entity.Design.VersioningFacade.resources.dll
+C:\Prism Projects\WaterNut - Enterprise\AllocationDS\bin\Debug\fr\Microsoft.Data.Entity.Design.VersioningFacade.resources.dll
+C:\Prism Projects\WaterNut - Enterprise\AllocationDS\bin\Debug\it\Microsoft.Data.Entity.Design.VersioningFacade.resources.dll
+C:\Prism Projects\WaterNut - Enterprise\AllocationDS\bin\Debug\ja\Microsoft.Data.Entity.Design.VersioningFacade.resources.dll
+C:\Prism Projects\WaterNut - Enterprise\AllocationDS\bin\Debug\ko\Microsoft.Data.Entity.Design.VersioningFacade.resources.dll
+C:\Prism Projects\WaterNut - Enterprise\AllocationDS\bin\Debug\ru\Microsoft.Data.Entity.Design.VersioningFacade.resources.dll
+C:\Prism Projects\WaterNut - Enterprise\AllocationDS\bin\Debug\zh-Hans\Microsoft.Data.Entity.Design.VersioningFacade.resources.dll
+C:\Prism Projects\WaterNut - Enterprise\AllocationDS\bin\Debug\zh-Hant\Microsoft.Data.Entity.Design.VersioningFacade.resources.dll
+C:\Prism Projects\WaterNut - Enterprise\AllocationDS\obj\Debug\AllocationDS.dll
+C:\Prism Projects\WaterNut - Enterprise\AllocationDS\obj\Debug\AllocationDS.pdb
+C:\prism\WaterNut - Enterprise\AllocationDS\bin\Debug\AllocationDS.dll.config
+C:\prism\WaterNut - Enterprise\AllocationDS\bin\Debug\AllocationDS.dll
+C:\prism\WaterNut - Enterprise\AllocationDS\bin\Debug\AllocationDS.pdb
+C:\prism\WaterNut - Enterprise\AllocationDS\obj\Debug\AllocationDS.dll
+C:\prism\WaterNut - Enterprise\AllocationDS\obj\Debug\AllocationDS.pdb
+D:\prism\WaterNut - Enterprise\AllocationDS\bin\Debug\AllocationDS.dll.config
+D:\prism\WaterNut - Enterprise\AllocationDS\bin\Debug\AllocationDS.dll
+D:\prism\WaterNut - Enterprise\AllocationDS\bin\Debug\AllocationDS.pdb
+D:\prism\WaterNut - Enterprise\AllocationDS\obj\Debug\AllocationDS.dll
+D:\prism\WaterNut - Enterprise\AllocationDS\obj\Debug\AllocationDS.pdb
+C:\Prism\GitRepositiory\WaterNut\WaterNut - Enterprise\AllocationDS\bin\Debug\AllocationDS.dll.config
+C:\Prism\GitRepositiory\WaterNut\WaterNut - Enterprise\AllocationDS\bin\Debug\AllocationDS.dll
+C:\Prism\GitRepositiory\WaterNut\WaterNut - Enterprise\AllocationDS\bin\Debug\AllocationDS.pdb
+C:\Prism\GitRepositiory\WaterNut\WaterNut - Enterprise\AllocationDS\obj\Debug\AllocationDS.dll
+C:\Prism\GitRepositiory\WaterNut\WaterNut - Enterprise\AllocationDS\obj\Debug\AllocationDS.pdb
+C:\Prism\GitRepositiory\WaterNut\WaterNut - Enterprise\AllocationDS\obj\Debug\AllocationDS.csprojResolveAssemblyReference.cache
+C:\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\AllocationDS\bin\Debug\AllocationDS.dll.config
+C:\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\AllocationDS\bin\Debug\AllocationDS.dll
+C:\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\AllocationDS\bin\Debug\AllocationDS.pdb
+C:\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\AllocationDS\obj\Debug\AllocationDS.csproj.CoreCompileInputs.cache
+C:\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\AllocationDS\obj\Debug\AllocationDS.dll
+C:\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\AllocationDS\obj\Debug\AllocationDS.pdb
+C:\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\AllocationDS\obj\Debug\AllocationDS.csprojAssemblyReference.cache

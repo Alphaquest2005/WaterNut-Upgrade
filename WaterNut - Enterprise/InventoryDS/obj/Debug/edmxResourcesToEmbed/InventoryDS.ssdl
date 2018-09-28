@@ -1,0 +1,187 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Model.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="InventoryAsycudaMapping">
+    <Key>
+      <PropertyRef Name="InventoryAsycudaMappingId" />
+    </Key>
+    <Property Name="ItemNumber" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Item_Id" Type="int" Nullable="false" />
+    <Property Name="InventoryAsycudaMappingId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+  </EntityType>
+  <EntityType Name="InventoryItemAlias">
+    <Key>
+      <PropertyRef Name="AliasId" />
+    </Key>
+    <Property Name="AliasId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ItemNumber" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="AliasName" Type="varchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="InventoryItems">
+    <Key>
+      <PropertyRef Name="ItemNumber" />
+    </Key>
+    <Property Name="ItemNumber" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Description" Type="varchar(max)" Nullable="false" />
+    <Property Name="Category" Type="nvarchar" MaxLength="60" />
+    <Property Name="TariffCode" Type="varchar" MaxLength="8" />
+    <Property Name="EntryTimeStamp" Type="datetime" />
+    <Property Name="Quantity" Type="int" />
+  </EntityType>
+  <EntityType Name="TariffCategory">
+    <Key>
+      <PropertyRef Name="TariffCategoryCode" />
+    </Key>
+    <Property Name="TariffCategoryCode" Type="varchar" MaxLength="8" Nullable="false" />
+    <Property Name="Description" Type="varchar" MaxLength="999" />
+    <Property Name="ParentTariffCategoryCode" Type="varchar" MaxLength="5" />
+    <Property Name="LicenseRequired" Type="bit" />
+  </EntityType>
+  <EntityType Name="TariffCategoryCodeSuppUnit">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="TariffCategoryCode" Type="varchar" MaxLength="8" Nullable="false" />
+    <Property Name="TariffSupUnitId" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TariffCodes">
+    <Key>
+      <PropertyRef Name="TariffCode" />
+    </Key>
+    <Property Name="TariffCode" Type="varchar" MaxLength="8" Nullable="false" />
+    <Property Name="Description" Type="varchar" MaxLength="999" />
+    <Property Name="RateofDuty" Type="varchar" MaxLength="50" />
+    <Property Name="EnvironmentalLevy" Type="varchar" MaxLength="50" />
+    <Property Name="CustomsServiceCharge" Type="varchar" MaxLength="50" />
+    <Property Name="ExciseTax" Type="varchar" MaxLength="50" />
+    <Property Name="VatRate" Type="varchar" MaxLength="50" />
+    <Property Name="PetrolTax" Type="varchar" MaxLength="50" />
+    <Property Name="Units" Type="nvarchar" MaxLength="999" />
+    <Property Name="SiteRev3" Type="varchar" MaxLength="50" />
+    <Property Name="TariffCategoryCode" Type="varchar" MaxLength="8" />
+    <Property Name="LicenseRequired" Type="bit" />
+    <Property Name="Invalid" Type="bit" />
+  </EntityType>
+  <EntityType Name="TariffSupUnitLkps">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="SuppUnitCode2" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="SuppUnitName2" Type="nvarchar" MaxLength="50" />
+    <Property Name="SuppQty" Type="float" Nullable="false" />
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+  </EntityType>
+  <Association Name="FK_InventoryAsycudaMapping_InventoryItems">
+    <End Role="InventoryItems" Type="Self.InventoryItems" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="InventoryAsycudaMapping" Type="Self.InventoryAsycudaMapping" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="InventoryItems">
+        <PropertyRef Name="ItemNumber" />
+      </Principal>
+      <Dependent Role="InventoryAsycudaMapping">
+        <PropertyRef Name="ItemNumber" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_InventoryItemAlias_InventoryItems">
+    <End Role="InventoryItems" Type="Self.InventoryItems" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="InventoryItemAlias" Type="Self.InventoryItemAlias" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="InventoryItems">
+        <PropertyRef Name="ItemNumber" />
+      </Principal>
+      <Dependent Role="InventoryItemAlias">
+        <PropertyRef Name="ItemNumber" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_InventoryItems_TariffCodes">
+    <End Role="TariffCodes" Type="Self.TariffCodes" Multiplicity="0..1" />
+    <End Role="InventoryItems" Type="Self.InventoryItems" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TariffCodes">
+        <PropertyRef Name="TariffCode" />
+      </Principal>
+      <Dependent Role="InventoryItems">
+        <PropertyRef Name="TariffCode" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TariffCategoryCodeSuppUnit_TariffCategory">
+    <End Role="TariffCategory" Type="Self.TariffCategory" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="TariffCategoryCodeSuppUnit" Type="Self.TariffCategoryCodeSuppUnit" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TariffCategory">
+        <PropertyRef Name="TariffCategoryCode" />
+      </Principal>
+      <Dependent Role="TariffCategoryCodeSuppUnit">
+        <PropertyRef Name="TariffCategoryCode" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TariffCategoryCodeSuppUnit_TariffSupUnitLkps">
+    <End Role="TariffSupUnitLkps" Type="Self.TariffSupUnitLkps" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="TariffCategoryCodeSuppUnit" Type="Self.TariffCategoryCodeSuppUnit" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TariffSupUnitLkps">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="TariffCategoryCodeSuppUnit">
+        <PropertyRef Name="TariffSupUnitId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TariffCodes_TariffCategory">
+    <End Role="TariffCategory" Type="Self.TariffCategory" Multiplicity="0..1" />
+    <End Role="TariffCodes" Type="Self.TariffCodes" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TariffCategory">
+        <PropertyRef Name="TariffCategoryCode" />
+      </Principal>
+      <Dependent Role="TariffCodes">
+        <PropertyRef Name="TariffCategoryCode" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="ModelStoreContainer">
+    <EntitySet Name="InventoryAsycudaMapping" EntityType="Self.InventoryAsycudaMapping" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="InventoryItemAlias" EntityType="Self.InventoryItemAlias" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="InventoryItems" EntityType="Self.InventoryItems" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TariffCategory" EntityType="Self.TariffCategory" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TariffCategoryCodeSuppUnit" EntityType="Self.TariffCategoryCodeSuppUnit" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TariffCodes" EntityType="Self.TariffCodes" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TariffSupUnitLkps" EntityType="Self.TariffSupUnitLkps" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_InventoryAsycudaMapping_InventoryItems" Association="Self.FK_InventoryAsycudaMapping_InventoryItems">
+      <End Role="InventoryItems" EntitySet="InventoryItems" />
+      <End Role="InventoryAsycudaMapping" EntitySet="InventoryAsycudaMapping" />
+    </AssociationSet>
+    <AssociationSet Name="FK_InventoryItemAlias_InventoryItems" Association="Self.FK_InventoryItemAlias_InventoryItems">
+      <End Role="InventoryItems" EntitySet="InventoryItems" />
+      <End Role="InventoryItemAlias" EntitySet="InventoryItemAlias" />
+    </AssociationSet>
+    <AssociationSet Name="FK_InventoryItems_TariffCodes" Association="Self.FK_InventoryItems_TariffCodes">
+      <End Role="TariffCodes" EntitySet="TariffCodes" />
+      <End Role="InventoryItems" EntitySet="InventoryItems" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TariffCategoryCodeSuppUnit_TariffCategory" Association="Self.FK_TariffCategoryCodeSuppUnit_TariffCategory">
+      <End Role="TariffCategory" EntitySet="TariffCategory" />
+      <End Role="TariffCategoryCodeSuppUnit" EntitySet="TariffCategoryCodeSuppUnit" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TariffCategoryCodeSuppUnit_TariffSupUnitLkps" Association="Self.FK_TariffCategoryCodeSuppUnit_TariffSupUnitLkps">
+      <End Role="TariffSupUnitLkps" EntitySet="TariffSupUnitLkps" />
+      <End Role="TariffCategoryCodeSuppUnit" EntitySet="TariffCategoryCodeSuppUnit" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TariffCodes_TariffCategory" Association="Self.FK_TariffCodes_TariffCategory">
+      <End Role="TariffCategory" EntitySet="TariffCategory" />
+      <End Role="TariffCodes" EntitySet="TariffCodes" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

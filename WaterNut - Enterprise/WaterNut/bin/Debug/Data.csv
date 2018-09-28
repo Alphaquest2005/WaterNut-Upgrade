@@ -1,0 +1,3 @@
+DocumentType,CNumber,RegistrationDate,LineNumber,ItemNumber,Description_of_goods,Commercial_Description,ItemQuantity,PiQuantity,SalesFactor,DPQtyAllocated,DFQtyAllocated,Gross_weight_itm,Net_weight_itm,Item_price,Total_CIF_itm,DutyLiability,Suppplementary_unit_code,TariffCode,TariffCodeLicenseRequired,TariffCategoryLicenseRequired,TariffCodeDescription,Freight,Statistical_value,ImportComplete,Number_of_packages,Country_of_origin_code,PiWeight,Currency_rate,Currency_code,InvalidHSCode,IsAssessed,DoNotAllocate,DoNotEX,AttributeOnlyAllocation,WarehouseError
+"IM7","36188","9/24/2018 12:00:00 AM","1","TEST","MARINE PAINTS",,"10","10","1","0","0","1","1","0","0.100000001490116","0.04","NMB","32082030",,"True","Enamels","0","0","True","1",,"0","1",,,"True",,,,
+

@@ -1,0 +1,17 @@
+C:\prism\TrackableEntities-Source 2.5\Source\TrackableEntities.Common\bin\Debug\TrackableEntities.Common.dll.config
+C:\prism\TrackableEntities-Source 2.5\Source\TrackableEntities.Common\bin\Debug\TrackableEntities.Common.xml
+C:\prism\TrackableEntities-Source 2.5\Source\TrackableEntities.Common\bin\Debug\TrackableEntities.Common.dll
+C:\prism\TrackableEntities-Source 2.5\Source\TrackableEntities.Common\bin\Debug\TrackableEntities.Common.pdb
+C:\prism\TrackableEntities-Source 2.5\Source\TrackableEntities.Common\obj\Debug\TrackableEntities.Common.dll
+C:\prism\TrackableEntities-Source 2.5\Source\TrackableEntities.Common\obj\Debug\TrackableEntities.Common.pdb
+C:\prism\TrackableEntities-Source 2.5\Source\TrackableEntities.Common\obj\Debug\TrackableEntities.Common.csprojResolveAssemblyReference.cache
+D:\prism\TrackableEntities-Source 2.5\Source\TrackableEntities.Common\bin\Debug\TrackableEntities.Common.dll.config
+D:\prism\TrackableEntities-Source 2.5\Source\TrackableEntities.Common\bin\Debug\TrackableEntities.Common.xml
+D:\prism\TrackableEntities-Source 2.5\Source\TrackableEntities.Common\bin\Debug\TrackableEntities.Common.dll
+D:\prism\TrackableEntities-Source 2.5\Source\TrackableEntities.Common\bin\Debug\TrackableEntities.Common.pdb
+D:\prism\TrackableEntities-Source 2.5\Source\TrackableEntities.Common\obj\Debug\TrackableEntities.Common.csprojResolveAssemblyReference.cache
+D:\prism\TrackableEntities-Source 2.5\Source\TrackableEntities.Common\obj\Debug\TrackableEntities.Common.dll
+D:\prism\TrackableEntities-Source 2.5\Source\TrackableEntities.Common\obj\Debug\TrackableEntities.Common.pdb
+C:\Prism\GitRepositiory\WaterNut\WaterNut - Enterprise\TrackableEntities.Common\obj\Debug\TrackableEntities.Common.csprojResolveAssemblyReference.cache
+C:\Prism\GitRepositiory\WaterNut\WaterNut - Enterprise\TrackableEntities.Common\obj\Debug\TrackableEntities.Common.dll
+C:\Prism\GitRepositiory\WaterNut\WaterNut - Enterprise\TrackableEntities.Common\obj\Debug\TrackableEntities.Common.pdb

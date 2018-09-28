@@ -1,0 +1,21 @@
+C:\prism\DynamicLinq\DynamicLinq\System.Linq.Dynamic\bin\Debug\System.Linq.Dynamic.dll
+C:\prism\DynamicLinq\DynamicLinq\System.Linq.Dynamic\bin\Debug\System.Linq.Dynamic.pdb
+C:\prism\DynamicLinq\DynamicLinq\System.Linq.Dynamic\obj\Debug\System.Linq.Dynamic.dll
+C:\prism\DynamicLinq\DynamicLinq\System.Linq.Dynamic\obj\Debug\System.Linq.Dynamic.pdb
+C:\prism\DynamicLinq\DynamicLinq\System.Linq.Dynamic\obj\Debug\System.Linq.Dynamic.csprojResolveAssemblyReference.cache
+C:\Prism\GitRepositiory\WaterNut\WaterNut - Enterprise\System.Linq.Dynamic\bin\Debug\System.Linq.Dynamic.dll
+C:\Prism\GitRepositiory\WaterNut\WaterNut - Enterprise\System.Linq.Dynamic\bin\Debug\System.Linq.Dynamic.pdb
+C:\Prism\GitRepositiory\WaterNut\WaterNut - Enterprise\System.Linq.Dynamic\obj\Debug\System.Linq.Dynamic.dll
+C:\Prism\GitRepositiory\WaterNut\WaterNut - Enterprise\System.Linq.Dynamic\obj\Debug\System.Linq.Dynamic.pdb
+C:\Prism\GitRepositiory\WaterNut\WaterNut - Enterprise\System.Linq.Dynamic\obj\Debug\System.Linq.Dynamic.csprojResolveAssemblyReference.cache
+C:\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\System.Linq.Dynamic\bin\Debug\System.Linq.Dynamic.dll
+C:\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\System.Linq.Dynamic\bin\Debug\System.Linq.Dynamic.pdb
+C:\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\System.Linq.Dynamic\obj\Debug\System.Linq.Dynamic.csproj.CoreCompileInputs.cache
+C:\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\System.Linq.Dynamic\obj\Debug\System.Linq.Dynamic.dll
+C:\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\System.Linq.Dynamic\obj\Debug\System.Linq.Dynamic.pdb
+\\VBOXSVR\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\System.Linq.Dynamic\bin\Debug\System.Linq.Dynamic.dll
+\\VBOXSVR\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\System.Linq.Dynamic\bin\Debug\System.Linq.Dynamic.pdb
+\\VBOXSVR\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\System.Linq.Dynamic\obj\Debug\System.Linq.Dynamic.csproj.CoreCompileInputs.cache
+\\VBOXSVR\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\System.Linq.Dynamic\obj\Debug\System.Linq.Dynamic.dll
+\\VBOXSVR\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\System.Linq.Dynamic\obj\Debug\System.Linq.Dynamic.pdb
+C:\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\System.Linq.Dynamic\obj\Debug\System.Linq.Dynamic.csprojAssemblyReference.cache

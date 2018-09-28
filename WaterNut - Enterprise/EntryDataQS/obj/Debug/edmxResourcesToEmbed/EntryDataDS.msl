@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="WaterNutDBModelStoreContainer" CdmEntityContainer="WaterNutDBEntities">
+    <EntitySetMapping Name="EntryDataDetailsEX">
+      <EntityTypeMapping TypeName="WaterNutDBModel.EntryDataDetailsEX">
+        <MappingFragment StoreEntitySet="EntryDataDetailsEX">
+          <ScalarProperty Name="EntryDataDetailsId" ColumnName="EntryDataDetailsId" />
+          <ScalarProperty Name="TariffCode" ColumnName="TariffCode" />
+          <ScalarProperty Name="CNumber" ColumnName="CNumber" />
+          <ScalarProperty Name="CLineNumber" ColumnName="CLineNumber" />
+          <ScalarProperty Name="Downloaded" ColumnName="Downloaded" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EntryDataEx">
+      <EntityTypeMapping TypeName="WaterNutDBModel.EntryDataEx">
+        <MappingFragment StoreEntitySet="EntryDataEx">
+          <ScalarProperty Name="EntryDataDetailsId" ColumnName="EntryDataDetailsId" />
+          <ScalarProperty Name="EntryDataId" ColumnName="EntryDataId" />
+          <ScalarProperty Name="CNumber" ColumnName="CNumber" />
+          <ScalarProperty Name="RegistrationDate" ColumnName="RegistrationDate" />
+          <ScalarProperty Name="EntryDataDate" ColumnName="EntryDataDate" />
+          <ScalarProperty Name="AsycudaDocumentSetId" ColumnName="AsycudaDocumentSetId" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

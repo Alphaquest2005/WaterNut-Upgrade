@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="WaterNutDBModel" Alias="Self" p1:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:p1="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="CounterPointDS" p1:LazyLoadingEnabled="true">
+    <EntitySet Name="CounterPointPODetails" EntityType="WaterNutDBModel.CounterPointPODetails" />
+    <EntitySet Name="CounterPointPOs" EntityType="WaterNutDBModel.CounterPointPOs" />
+    <EntitySet Name="CounterPointSales" EntityType="WaterNutDBModel.CounterPointSales" />
+    <EntitySet Name="CounterPointSalesDetails" EntityType="WaterNutDBModel.CounterPointSalesDetails" />
+  </EntityContainer>
+  <EntityType Name="CounterPointPODetails">
+    <Key>
+      <PropertyRef Name="PO_NO" />
+      <PropertyRef Name="SEQ_NO" />
+      <PropertyRef Name="ITEM_NO" />
+      <PropertyRef Name="ORD_QTY" />
+      <PropertyRef Name="ITEM_DESCR" />
+      <PropertyRef Name="ORD_COST" />
+    </Key>
+    <Property Name="PO_NO" Type="String" Nullable="false" MaxLength="20" Unicode="false" FixedLength="false" />
+    <Property Name="SEQ_NO" Type="Int32" Nullable="false" />
+    <Property Name="ITEM_NO" Type="String" Nullable="false" MaxLength="20" Unicode="false" FixedLength="false" />
+    <Property Name="ORD_QTY" Type="Decimal" Nullable="false" Precision="15" Scale="4" />
+    <Property Name="ORD_UNIT" Type="String" MaxLength="15" Unicode="false" FixedLength="false" />
+    <Property Name="ITEM_DESCR" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="ORD_COST" Type="Decimal" Nullable="false" Precision="15" Scale="4" />
+    <Property Name="UNIT_WEIGHT" Type="Decimal" Precision="15" Scale="4" />
+  </EntityType>
+  <EntityType Name="CounterPointPOs">
+    <Key>
+      <PropertyRef Name="PO_NO" />
+      <PropertyRef Name="DATE" />
+      <PropertyRef Name="LIN_CNT" />
+    </Key>
+    <Property Name="PO_NO" Type="String" Nullable="false" MaxLength="20" Unicode="false" FixedLength="false" />
+    <Property Name="DATE" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="LIN_CNT" Type="Int32" Nullable="false" />
+    <Property Name="Downloaded" Type="Boolean" />
+  </EntityType>
+  <EntityType Name="CounterPointSales">
+    <Key>
+      <PropertyRef Name="INVNO" />
+    </Key>
+    <Property Name="INVNO" Type="String" Nullable="false" MaxLength="15" Unicode="false" FixedLength="false" />
+    <Property Name="DATE" Type="DateTime" Precision="3" />
+    <Property Name="TAX_AMT" Type="Decimal" Nullable="false" Precision="15" Scale="2" />
+    <Property Name="CUSTOMER_NAME" Type="String" MaxLength="81" Unicode="false" FixedLength="false" />
+    <Property Name="LIN_CNT" Type="Int32" />
+    <Property Name="Downloaded" Type="Boolean" />
+  </EntityType>
+  <EntityType Name="CounterPointSalesDetails">
+    <Key>
+      <PropertyRef Name="INVNO" />
+      <PropertyRef Name="TAX_AMT" />
+    </Key>
+    <Property Name="INVNO" Type="String" Nullable="false" MaxLength="15" Unicode="false" FixedLength="false" />
+    <Property Name="SEQ_NO" Type="Int32" />
+    <Property Name="ITEM_NO" Type="String" MaxLength="20" Unicode="false" FixedLength="false" />
+    <Property Name="ITEM_DESCR" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="QUANTITY" Type="Decimal" Precision="15" Scale="4" />
+    <Property Name="COST" Type="Decimal" Precision="19" Scale="4" />
+    <Property Name="ACCT_NO" Type="String" MaxLength="15" Unicode="false" FixedLength="false" />
+    <Property Name="CUSTOMER_NAME" Type="String" MaxLength="81" Unicode="false" FixedLength="false" />
+    <Property Name="DATE" Type="DateTime" Precision="3" />
+    <Property Name="TAX_AMT" Type="Decimal" Nullable="false" Precision="15" Scale="2" />
+    <Property Name="UNIT_WEIGHT" Type="Decimal" Precision="15" Scale="4" />
+    <Property Name="QTY_UNIT" Type="String" MaxLength="15" Unicode="false" FixedLength="false" />
+  </EntityType>
+</Schema>

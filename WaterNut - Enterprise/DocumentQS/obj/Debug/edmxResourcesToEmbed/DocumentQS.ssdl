@@ -1,0 +1,151 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="WaterNutDBModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityContainer Name="WaterNutDBModelStoreContainer">
+    <EntitySet Name="AsycudaDocumentSet" EntityType="WaterNutDBModel.Store.AsycudaDocumentSet" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="AsycudaDocument" EntityType="WaterNutDBModel.Store.AsycudaDocument" store:Type="Views" store:Schema="dbo" store:Name="AsycudaDocument">
+      <DefiningQuery>SELECT 
+      [AsycudaDocument].[ASYCUDA_Id] AS [ASYCUDA_Id], 
+      [AsycudaDocument].[id] AS [id], 
+      [AsycudaDocument].[CNumber] AS [CNumber], 
+      [AsycudaDocument].[RegistrationDate] AS [RegistrationDate], 
+      [AsycudaDocument].[IsManuallyAssessed] AS [IsManuallyAssessed], 
+      [AsycudaDocument].[ReferenceNumber] AS [ReferenceNumber], 
+      [AsycudaDocument].[EffectiveRegistrationDate] AS [EffectiveRegistrationDate], 
+      [AsycudaDocument].[AsycudaDocumentSetId] AS [AsycudaDocumentSetId], 
+      [AsycudaDocument].[DoNotAllocate] AS [DoNotAllocate], 
+      [AsycudaDocument].[AutoUpdate] AS [AutoUpdate], 
+      [AsycudaDocument].[BLNumber] AS [BLNumber], 
+      [AsycudaDocument].[Description] AS [Description], 
+      [AsycudaDocument].[Type_of_declaration] AS [Type_of_declaration], 
+      [AsycudaDocument].[Declaration_gen_procedure_code] AS [Declaration_gen_procedure_code], 
+      [AsycudaDocument].[Extended_customs_procedure] AS [Extended_customs_procedure], 
+      [AsycudaDocument].[Type] AS [Type], 
+      [AsycudaDocument].[Document_Type_Id] AS [Document_Type_Id], 
+      [AsycudaDocument].[Customs_ProcedureId] AS [Customs_ProcedureId], 
+      [AsycudaDocument].[Country_first_destination] AS [Country_first_destination], 
+      [AsycudaDocument].[Currency_code] AS [Currency_code], 
+      [AsycudaDocument].[Currency_rate] AS [Currency_rate], 
+      [AsycudaDocument].[Manifest_reference_number] AS [Manifest_reference_number], 
+      [AsycudaDocument].[Customs_clearance_office_code] AS [Customs_clearance_office_code]
+      FROM [dbo].[AsycudaDocument] AS [AsycudaDocument]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="AsycudaDocumentItem" EntityType="WaterNutDBModel.Store.AsycudaDocumentItem" store:Type="Views" store:Schema="dbo" store:Name="AsycudaDocumentItem">
+      <DefiningQuery>SELECT 
+      [AsycudaDocumentItem].[Item_Id] AS [Item_Id], 
+      [AsycudaDocumentItem].[ASYCUDA_Id] AS [ASYCUDA_Id], 
+      [AsycudaDocumentItem].[EntryDataDetailsId] AS [EntryDataDetailsId], 
+      [AsycudaDocumentItem].[LineNumber] AS [LineNumber], 
+      [AsycudaDocumentItem].[IsAssessed] AS [IsAssessed], 
+      [AsycudaDocumentItem].[DoNotAllocate] AS [DoNotAllocate], 
+      [AsycudaDocumentItem].[DoNotEX] AS [DoNotEX], 
+      [AsycudaDocumentItem].[AttributeOnlyAllocation] AS [AttributeOnlyAllocation], 
+      [AsycudaDocumentItem].[Description_of_goods] AS [Description_of_goods], 
+      [AsycudaDocumentItem].[Commercial_Description] AS [Commercial_Description], 
+      [AsycudaDocumentItem].[Gross_weight_itm] AS [Gross_weight_itm], 
+      [AsycudaDocumentItem].[Net_weight_itm] AS [Net_weight_itm], 
+      [AsycudaDocumentItem].[Item_price] AS [Item_price], 
+      [AsycudaDocumentItem].[ItemQuantity] AS [ItemQuantity], 
+      [AsycudaDocumentItem].[Suppplementary_unit_code] AS [Suppplementary_unit_code], 
+      [AsycudaDocumentItem].[ItemNumber] AS [ItemNumber], 
+      [AsycudaDocumentItem].[TariffCode] AS [TariffCode], 
+      [AsycudaDocumentItem].[TariffCodeLicenseRequired] AS [TariffCodeLicenseRequired], 
+      [AsycudaDocumentItem].[TariffCategoryLicenseRequired] AS [TariffCategoryLicenseRequired], 
+      [AsycudaDocumentItem].[TariffCodeDescription] AS [TariffCodeDescription], 
+      [AsycudaDocumentItem].[DutyLiability] AS [DutyLiability], 
+      [AsycudaDocumentItem].[Total_CIF_itm] AS [Total_CIF_itm], 
+      [AsycudaDocumentItem].[Freight] AS [Freight], 
+      [AsycudaDocumentItem].[Statistical_value] AS [Statistical_value], 
+      [AsycudaDocumentItem].[DPQtyAllocated] AS [DPQtyAllocated], 
+      [AsycudaDocumentItem].[DFQtyAllocated] AS [DFQtyAllocated]
+      FROM [dbo].[AsycudaDocumentItem] AS [AsycudaDocumentItem]</DefiningQuery>
+    </EntitySet>
+  </EntityContainer>
+  <EntityType Name="AsycudaDocumentSet">
+    <Key>
+      <PropertyRef Name="AsycudaDocumentSetId" />
+    </Key>
+    <Property Name="AsycudaDocumentSetId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Declarant_Reference_Number" Type="varchar" MaxLength="50" />
+    <Property Name="Exchange_Rate" Type="float" />
+    <Property Name="Customs_ProcedureId" Type="int" />
+    <Property Name="Country_of_origin_code" Type="varchar" MaxLength="50" />
+    <Property Name="Currency_Code" Type="varchar" MaxLength="50" />
+    <Property Name="Document_Type_Id" Type="int" />
+    <Property Name="Description" Type="nvarchar(max)" />
+    <Property Name="ExportTemplate_Id" Type="int" />
+    <Property Name="Manifest_Number" Type="varchar" MaxLength="50" />
+    <Property Name="BLNumber" Type="varchar" MaxLength="50" />
+    <Property Name="EntryTimeStamp" Type="datetime" />
+    <Property Name="StartingFileCount" Type="int" />
+    <Property Name="WeightApportionMethod" Type="int" />
+    <Property Name="FreightApportionMethod" Type="int" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'WaterNutDB-Enterprise.dbo.AsycudaDocument' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="AsycudaDocument">
+    <Key>
+      <PropertyRef Name="ASYCUDA_Id" />
+    </Key>
+    <Property Name="ASYCUDA_Id" Type="int" Nullable="false" />
+    <Property Name="id" Type="varchar(max)" />
+    <Property Name="CNumber" Type="varchar(max)" />
+    <Property Name="RegistrationDate" Type="datetime" />
+    <Property Name="IsManuallyAssessed" Type="bit" />
+    <Property Name="ReferenceNumber" Type="nvarchar(max)" />
+    <Property Name="EffectiveRegistrationDate" Type="datetime" />
+    <Property Name="AsycudaDocumentSetId" Type="int" />
+    <Property Name="DoNotAllocate" Type="bit" />
+    <Property Name="AutoUpdate" Type="bit" />
+    <Property Name="BLNumber" Type="varchar" MaxLength="50" />
+    <Property Name="Description" Type="nvarchar(max)" />
+    <Property Name="Type_of_declaration" Type="varchar(max)" />
+    <Property Name="Declaration_gen_procedure_code" Type="varchar(max)" />
+    <Property Name="Extended_customs_procedure" Type="varchar(max)" />
+    <Property Name="Type" Type="varchar(max)" />
+    <Property Name="Document_Type_Id" Type="int" />
+    <Property Name="Customs_ProcedureId" Type="int" />
+    <Property Name="Country_first_destination" Type="varchar(max)" />
+    <Property Name="Currency_code" Type="varchar" MaxLength="50" />
+    <Property Name="Currency_rate" Type="real" />
+    <Property Name="Manifest_reference_number" Type="varchar" MaxLength="50" />
+    <Property Name="Customs_clearance_office_code" Type="varchar(max)" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'WaterNutDB-Enterprise.dbo.AsycudaDocumentItem' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="AsycudaDocumentItem">
+    <Key>
+      <PropertyRef Name="Item_Id" />
+      <PropertyRef Name="TariffCode" />
+      <PropertyRef Name="Total_CIF_itm" />
+      <PropertyRef Name="Statistical_value" />
+    </Key>
+    <Property Name="Item_Id" Type="int" Nullable="false" />
+    <Property Name="ASYCUDA_Id" Type="int" Nullable="false" />
+    <Property Name="EntryDataDetailsId" Type="int" />
+    <Property Name="LineNumber" Type="int" Nullable="false" />
+    <Property Name="IsAssessed" Type="bit" />
+    <Property Name="DoNotAllocate" Type="bit" />
+    <Property Name="DoNotEX" Type="bit" />
+    <Property Name="AttributeOnlyAllocation" Type="bit" />
+    <Property Name="Description_of_goods" Type="varchar(max)" />
+    <Property Name="Commercial_Description" Type="varchar(max)" />
+    <Property Name="Gross_weight_itm" Type="real" Nullable="false" />
+    <Property Name="Net_weight_itm" Type="real" Nullable="false" />
+    <Property Name="Item_price" Type="real" Nullable="false" />
+    <Property Name="ItemQuantity" Type="numeric" />
+    <Property Name="Suppplementary_unit_code" Type="nvarchar(max)" />
+    <Property Name="ItemNumber" Type="varchar" MaxLength="50" />
+    <Property Name="TariffCode" Type="varchar" Nullable="false" MaxLength="8" />
+    <Property Name="TariffCodeLicenseRequired" Type="bit" />
+    <Property Name="TariffCategoryLicenseRequired" Type="bit" />
+    <Property Name="TariffCodeDescription" Type="varchar" MaxLength="999" />
+    <Property Name="DutyLiability" Type="float" />
+    <Property Name="Total_CIF_itm" Type="real" Nullable="false" />
+    <Property Name="Freight" Type="real" />
+    <Property Name="Statistical_value" Type="real" Nullable="false" />
+    <Property Name="DPQtyAllocated" Type="float" />
+    <Property Name="DFQtyAllocated" Type="float" />
+  </EntityType>
+</Schema>

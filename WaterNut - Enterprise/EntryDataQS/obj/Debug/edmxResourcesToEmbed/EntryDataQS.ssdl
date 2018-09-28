@@ -1,0 +1,216 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Model1.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="AsycudaDocumentEntryData">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="AsycudaDocumentId" Type="int" Nullable="false" />
+    <Property Name="EntryDataId" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+  </EntityType>
+  <EntityType Name="AsycudaDocumentSetEntryData">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="AsycudaDocumentSetId" Type="int" Nullable="false" />
+    <Property Name="EntryDataId" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ContainerEntryData">
+    <Key>
+      <PropertyRef Name="ContainerEntryData" />
+    </Key>
+    <Property Name="Container_Id" Type="int" Nullable="false" />
+    <Property Name="EntryDataId" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="ContainerEntryData" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ContainerTypes">
+    <Key>
+      <PropertyRef Name="ContainerCode" />
+    </Key>
+    <Property Name="ContainerCode" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="ContainerTypeDescription" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="EmptyFullCodes">
+    <Key>
+      <PropertyRef Name="EmptyFullCodeId" />
+    </Key>
+    <Property Name="EmptyFullCode" Type="varchar" MaxLength="10" />
+    <Property Name="EmptyFullDescription" Type="varchar" MaxLength="50" />
+    <Property Name="EmptyFullCodeId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+  </EntityType>
+  <EntityType Name="PackageTypes">
+    <Key>
+      <PropertyRef Name="PackageType" />
+    </Key>
+    <Property Name="PackageType" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="PackageDescription" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'WATERNUT-ENTERPRISEDB.dbo.AsycudaDocumentSetEntryDataDetails' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="AsycudaDocumentSetEntryDataDetails">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="AsycudaDocumentSetId" Type="int" Nullable="false" />
+    <Property Name="EntryDataDetailsId" Type="int" Nullable="false" />
+    <Property Name="Id" Type="bigint" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'WATERNUT-ENTERPRISEDB.dbo.ContainerEx' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="ContainerEx">
+    <Key>
+      <PropertyRef Name="Container_Id" />
+    </Key>
+    <Property Name="Container_identity" Type="varchar(max)" />
+    <Property Name="Container_type" Type="varchar" MaxLength="10" />
+    <Property Name="Empty_full_indicator" Type="varchar(max)" />
+    <Property Name="Gross_weight" Type="float" Nullable="false" />
+    <Property Name="Goods_description" Type="varchar(max)" />
+    <Property Name="Packages_number" Type="varchar(max)" />
+    <Property Name="Packages_type" Type="varchar" MaxLength="10" />
+    <Property Name="Packages_weight" Type="float" Nullable="false" />
+    <Property Name="Container_Id" Type="int" Nullable="false" />
+    <Property Name="TotalValue" Type="float" />
+    <Property Name="ShipDate" Type="date" />
+    <Property Name="DeliveryDate" Type="date" />
+    <Property Name="Seal" Type="varchar" MaxLength="50" />
+    <Property Name="AsycudaDocumentSetId" Type="int" />
+    <Property Name="EntryDataId" Type="varchar" MaxLength="50" />
+    <Property Name="PackageDescription" Type="varchar" MaxLength="50" />
+    <Property Name="ContainerTypeDescription" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'WATERNUT-ENTERPRISEDB.dbo.EntryDataDetailsEx' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="EntryDataDetailsEx">
+    <Key>
+      <PropertyRef Name="EntryDataDetailsId" />
+    </Key>
+    <Property Name="EntryDataDetailsId" Type="int" Nullable="false" />
+    <Property Name="EntryDataId" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="LineNumber" Type="int" />
+    <Property Name="ItemNumber" Type="varchar" MaxLength="255" Nullable="false" />
+    <Property Name="Quantity" Type="float" Nullable="false" />
+    <Property Name="Units" Type="varchar" MaxLength="15" />
+    <Property Name="ItemDescription" Type="varchar(max)" Nullable="false" />
+    <Property Name="Cost" Type="float" Nullable="false" />
+    <Property Name="QtyAllocated" Type="float" Nullable="false" />
+    <Property Name="UnitWeight" Type="float" Nullable="false" />
+    <Property Name="DoNotAllocate" Type="bit" />
+    <Property Name="TariffCode" Type="varchar" MaxLength="8" />
+    <Property Name="CNumber" Type="varchar(max)" />
+    <Property Name="CLineNumber" Type="int" />
+    <Property Name="Downloaded" Type="bit" />
+    <Property Name="DutyFreePaid" Type="varchar" MaxLength="9" />
+    <Property Name="Total" Type="float" />
+    <Property Name="AsycudaDocumentSetId" Type="int" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'WATERNUT-ENTERPRISEDB.dbo.EntryDataEx' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="EntryDataEx">
+    <Key>
+      <PropertyRef Name="InvoiceNo" />
+    </Key>
+    <Property Name="InvoiceDate" Type="datetime" Nullable="false" />
+    <Property Name="Type" Type="varchar" MaxLength="5" />
+    <Property Name="DutyFreePaid" Type="varchar" MaxLength="9" Nullable="false" />
+    <Property Name="Total" Type="float" />
+    <Property Name="InvoiceNo" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="ImportedTotal" Type="float" />
+    <Property Name="ImportedLines" Type="int" />
+    <Property Name="TotalLines" Type="int" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'WATERNUT-ENTERPRISEDB.dbo.InventoryItemsEx' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="InventoryItemsEx">
+    <Key>
+      <PropertyRef Name="ItemNumber" />
+    </Key>
+    <Property Name="ItemNumber" Type="varchar" MaxLength="255" Nullable="false" />
+    <Property Name="Description" Type="varchar(max)" Nullable="false" />
+    <Property Name="Category" Type="nvarchar" MaxLength="60" />
+    <Property Name="TariffCode" Type="varchar" MaxLength="8" />
+    <Property Name="SuppUnitCode2" Type="nvarchar" MaxLength="50" />
+    <Property Name="SuppQty" Type="float" />
+  </EntityType>
+  <EntityContainer Name="Model1StoreContainer">
+    <EntitySet Name="AsycudaDocumentEntryData" EntityType="Self.AsycudaDocumentEntryData" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="AsycudaDocumentSetEntryData" EntityType="Self.AsycudaDocumentSetEntryData" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ContainerEntryData" EntityType="Self.ContainerEntryData" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ContainerTypes" EntityType="Self.ContainerTypes" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="EmptyFullCodes" EntityType="Self.EmptyFullCodes" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PackageTypes" EntityType="Self.PackageTypes" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="AsycudaDocumentSetEntryDataDetails" EntityType="Self.AsycudaDocumentSetEntryDataDetails" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+[AsycudaDocumentSetEntryDataDetails].[AsycudaDocumentSetId] AS [AsycudaDocumentSetId], 
+[AsycudaDocumentSetEntryDataDetails].[EntryDataDetailsId] AS [EntryDataDetailsId], 
+[AsycudaDocumentSetEntryDataDetails].[Id] AS [Id]
+FROM [dbo].[AsycudaDocumentSetEntryDataDetails] AS [AsycudaDocumentSetEntryDataDetails]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="ContainerEx" EntityType="Self.ContainerEx" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+[ContainerEx].[Container_identity] AS [Container_identity], 
+[ContainerEx].[Container_type] AS [Container_type], 
+[ContainerEx].[Empty_full_indicator] AS [Empty_full_indicator], 
+[ContainerEx].[Gross_weight] AS [Gross_weight], 
+[ContainerEx].[Goods_description] AS [Goods_description], 
+[ContainerEx].[Packages_number] AS [Packages_number], 
+[ContainerEx].[Packages_type] AS [Packages_type], 
+[ContainerEx].[Packages_weight] AS [Packages_weight], 
+[ContainerEx].[Container_Id] AS [Container_Id], 
+[ContainerEx].[TotalValue] AS [TotalValue], 
+[ContainerEx].[ShipDate] AS [ShipDate], 
+[ContainerEx].[DeliveryDate] AS [DeliveryDate], 
+[ContainerEx].[Seal] AS [Seal], 
+[ContainerEx].[AsycudaDocumentSetId] AS [AsycudaDocumentSetId], 
+[ContainerEx].[EntryDataId] AS [EntryDataId], 
+[ContainerEx].[PackageDescription] AS [PackageDescription], 
+[ContainerEx].[ContainerTypeDescription] AS [ContainerTypeDescription]
+FROM [dbo].[ContainerEx] AS [ContainerEx]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="EntryDataDetailsEx" EntityType="Self.EntryDataDetailsEx" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+[EntryDataDetailsEx].[EntryDataDetailsId] AS [EntryDataDetailsId], 
+[EntryDataDetailsEx].[EntryDataId] AS [EntryDataId], 
+[EntryDataDetailsEx].[LineNumber] AS [LineNumber], 
+[EntryDataDetailsEx].[ItemNumber] AS [ItemNumber], 
+[EntryDataDetailsEx].[Quantity] AS [Quantity], 
+[EntryDataDetailsEx].[Units] AS [Units], 
+[EntryDataDetailsEx].[ItemDescription] AS [ItemDescription], 
+[EntryDataDetailsEx].[Cost] AS [Cost], 
+[EntryDataDetailsEx].[QtyAllocated] AS [QtyAllocated], 
+[EntryDataDetailsEx].[UnitWeight] AS [UnitWeight], 
+[EntryDataDetailsEx].[DoNotAllocate] AS [DoNotAllocate], 
+[EntryDataDetailsEx].[TariffCode] AS [TariffCode], 
+[EntryDataDetailsEx].[CNumber] AS [CNumber], 
+[EntryDataDetailsEx].[CLineNumber] AS [CLineNumber], 
+[EntryDataDetailsEx].[Downloaded] AS [Downloaded], 
+[EntryDataDetailsEx].[DutyFreePaid] AS [DutyFreePaid], 
+[EntryDataDetailsEx].[Total] AS [Total], 
+[EntryDataDetailsEx].[AsycudaDocumentSetId] AS [AsycudaDocumentSetId]
+FROM [dbo].[EntryDataDetailsEx] AS [EntryDataDetailsEx]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="EntryDataEx" EntityType="Self.EntryDataEx" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+[EntryDataEx].[InvoiceDate] AS [InvoiceDate], 
+[EntryDataEx].[Type] AS [Type], 
+[EntryDataEx].[DutyFreePaid] AS [DutyFreePaid], 
+[EntryDataEx].[Total] AS [Total], 
+[EntryDataEx].[InvoiceNo] AS [InvoiceNo], 
+[EntryDataEx].[ImportedTotal] AS [ImportedTotal], 
+[EntryDataEx].[ImportedLines] AS [ImportedLines], 
+[EntryDataEx].[TotalLines] AS [TotalLines]
+FROM [dbo].[EntryDataEx] AS [EntryDataEx]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="InventoryItemsEx" EntityType="Self.InventoryItemsEx" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+[InventoryItemsEx].[ItemNumber] AS [ItemNumber], 
+[InventoryItemsEx].[Description] AS [Description], 
+[InventoryItemsEx].[Category] AS [Category], 
+[InventoryItemsEx].[TariffCode] AS [TariffCode], 
+[InventoryItemsEx].[SuppUnitCode2] AS [SuppUnitCode2], 
+[InventoryItemsEx].[SuppQty] AS [SuppQty]
+FROM [dbo].[InventoryItemsEx] AS [InventoryItemsEx]</DefiningQuery>
+    </EntitySet>
+  </EntityContainer>
+</Schema>

@@ -1,0 +1,83 @@
+C:\Prism Projects\WaterNut\QuickBooks\bin\Debug\QuickBooks.dll
+C:\Prism Projects\WaterNut\QuickBooks\bin\Debug\QuickBooks.pdb
+C:\Prism Projects\WaterNut\QuickBooks\bin\Debug\Common.exe
+C:\Prism Projects\WaterNut\QuickBooks\bin\Debug\DataLayer.dll
+C:\Prism Projects\WaterNut\QuickBooks\bin\Debug\EFAutoRefresh.dll
+C:\Prism Projects\WaterNut\QuickBooks\bin\Debug\EntityFramework.dll
+C:\Prism Projects\WaterNut\QuickBooks\bin\Debug\Common.pdb
+C:\Prism Projects\WaterNut\QuickBooks\bin\Debug\DataLayer.pdb
+C:\Prism Projects\WaterNut\QuickBooks\bin\Debug\EFAutoRefresh.pdb
+C:\Prism Projects\WaterNut\QuickBooks\bin\Debug\EntityFramework.xml
+C:\Prism Projects\WaterNut\QuickBooks\obj\Debug\QuickBooks.csprojResolveAssemblyReference.cache
+C:\Prism Projects\WaterNut\QuickBooks\obj\Debug\Interop.QBPOSFC3Lib.dll
+C:\Prism Projects\WaterNut\QuickBooks\obj\Debug\QuickBooks.csproj.ResolveComReference.cache
+C:\Prism Projects\WaterNut\QuickBooks\obj\Debug\QuickBooks.dll
+C:\Prism Projects\WaterNut\QuickBooks\obj\Debug\QuickBooks.pdb
+C:\Prism Projects\WaterNut - Enterprise\QuickBooks\bin\Debug\QuickBooks.dll
+C:\Prism Projects\WaterNut - Enterprise\QuickBooks\bin\Debug\QuickBooks.pdb
+C:\Prism Projects\WaterNut - Enterprise\QuickBooks\bin\Debug\Common.exe
+C:\Prism Projects\WaterNut - Enterprise\QuickBooks\bin\Debug\DataLayer.dll
+C:\Prism Projects\WaterNut - Enterprise\QuickBooks\bin\Debug\EntityFramework.dll
+C:\Prism Projects\WaterNut - Enterprise\QuickBooks\bin\Debug\Common.pdb
+C:\Prism Projects\WaterNut - Enterprise\QuickBooks\bin\Debug\DataLayer.pdb
+C:\Prism Projects\WaterNut - Enterprise\QuickBooks\bin\Debug\EntityFramework.xml
+C:\Prism Projects\WaterNut - Enterprise\QuickBooks\obj\Debug\QuickBooks.csprojResolveAssemblyReference.cache
+C:\Prism Projects\WaterNut - Enterprise\QuickBooks\obj\Debug\Interop.QBPOSFC3Lib.dll
+C:\Prism Projects\WaterNut - Enterprise\QuickBooks\obj\Debug\QuickBooks.csproj.ResolveComReference.cache
+C:\Prism Projects\WaterNut - Enterprise\QuickBooks\obj\Debug\QuickBooks.dll
+C:\Prism Projects\WaterNut - Enterprise\QuickBooks\obj\Debug\QuickBooks.pdb
+C:\prism\WaterNut - Enterprise\QuickBooks\bin\Debug\QuickBooks.dll.config
+C:\prism\WaterNut - Enterprise\QuickBooks\bin\Debug\QuickBooks.dll
+C:\prism\WaterNut - Enterprise\QuickBooks\bin\Debug\QuickBooks.pdb
+C:\prism\WaterNut - Enterprise\QuickBooks\bin\Debug\Core.Common.Data.dll
+C:\prism\WaterNut - Enterprise\QuickBooks\bin\Debug\Core.Common.UI.dll
+C:\prism\WaterNut - Enterprise\QuickBooks\bin\Debug\DomainInterfaces.dll
+C:\prism\WaterNut - Enterprise\QuickBooks\bin\Debug\Newtonsoft.Json.dll
+C:\prism\WaterNut - Enterprise\QuickBooks\bin\Debug\SimpleMvvmToolkit-Common.dll
+C:\prism\WaterNut - Enterprise\QuickBooks\bin\Debug\SimpleMvvmToolkit-WPF.dll
+C:\prism\WaterNut - Enterprise\QuickBooks\bin\Debug\TrackableEntities.Client.dll
+C:\prism\WaterNut - Enterprise\QuickBooks\bin\Debug\TrackableEntities.Common.dll
+C:\prism\WaterNut - Enterprise\QuickBooks\bin\Debug\WaterNut.Client.Entities.dll
+C:\prism\WaterNut - Enterprise\QuickBooks\bin\Debug\WaterNut.Client.Repositories.dll
+C:\prism\WaterNut - Enterprise\QuickBooks\bin\Debug\EntityFramework.dll
+C:\prism\WaterNut - Enterprise\QuickBooks\bin\Debug\TrackableEntities.EF.6.dll
+C:\prism\WaterNut - Enterprise\QuickBooks\bin\Debug\Core.Common.dll
+C:\prism\WaterNut - Enterprise\QuickBooks\bin\Debug\WaterNut.Client.DTO.dll
+C:\prism\WaterNut - Enterprise\QuickBooks\bin\Debug\WaterNut.Client.Services.dll
+C:\prism\WaterNut - Enterprise\QuickBooks\bin\Debug\Core.Common.Contracts.dll
+C:\prism\WaterNut - Enterprise\QuickBooks\bin\Debug\WaterNut.Business.Services.dll
+C:\prism\WaterNut - Enterprise\QuickBooks\bin\Debug\WaterNut.Client.Contracts.dll
+C:\prism\WaterNut - Enterprise\QuickBooks\bin\Debug\WaterNut.Business.Entities.dll
+C:\prism\WaterNut - Enterprise\QuickBooks\bin\Debug\WaterNut.Data.dll
+C:\prism\WaterNut - Enterprise\QuickBooks\bin\Debug\System.Linq.Dynamic.dll
+C:\prism\WaterNut - Enterprise\QuickBooks\bin\Debug\EntityFramework.SqlServer.dll
+C:\prism\WaterNut - Enterprise\QuickBooks\bin\Debug\Core.Common.Data.pdb
+C:\prism\WaterNut - Enterprise\QuickBooks\bin\Debug\Core.Common.UI.pdb
+C:\prism\WaterNut - Enterprise\QuickBooks\bin\Debug\TrackableEntities.Client.pdb
+C:\prism\WaterNut - Enterprise\QuickBooks\bin\Debug\TrackableEntities.Common.pdb
+C:\prism\WaterNut - Enterprise\QuickBooks\bin\Debug\TrackableEntities.Common.xml
+C:\prism\WaterNut - Enterprise\QuickBooks\bin\Debug\DomainInterfaces.pdb
+C:\prism\WaterNut - Enterprise\QuickBooks\bin\Debug\WaterNut.Client.Entities.pdb
+C:\prism\WaterNut - Enterprise\QuickBooks\bin\Debug\WaterNut.Client.Repositories.pdb
+C:\prism\WaterNut - Enterprise\QuickBooks\bin\Debug\Newtonsoft.Json.xml
+C:\prism\WaterNut - Enterprise\QuickBooks\bin\Debug\SimpleMvvmToolkit-Common.pdb
+C:\prism\WaterNut - Enterprise\QuickBooks\bin\Debug\SimpleMvvmToolkit-Common.xml
+C:\prism\WaterNut - Enterprise\QuickBooks\bin\Debug\SimpleMvvmToolkit-WPF.pdb
+C:\prism\WaterNut - Enterprise\QuickBooks\bin\Debug\SimpleMvvmToolkit-WPF.xml
+C:\prism\WaterNut - Enterprise\QuickBooks\bin\Debug\EntityFramework.xml
+C:\prism\WaterNut - Enterprise\QuickBooks\bin\Debug\TrackableEntities.EF.6.pdb
+C:\prism\WaterNut - Enterprise\QuickBooks\bin\Debug\Core.Common.pdb
+C:\prism\WaterNut - Enterprise\QuickBooks\bin\Debug\WaterNut.Client.DTO.pdb
+C:\prism\WaterNut - Enterprise\QuickBooks\bin\Debug\WaterNut.Client.Services.pdb
+C:\prism\WaterNut - Enterprise\QuickBooks\bin\Debug\Core.Common.Contracts.pdb
+C:\prism\WaterNut - Enterprise\QuickBooks\bin\Debug\WaterNut.Business.Services.pdb
+C:\prism\WaterNut - Enterprise\QuickBooks\bin\Debug\WaterNut.Client.Contracts.pdb
+C:\prism\WaterNut - Enterprise\QuickBooks\bin\Debug\WaterNut.Business.Entities.pdb
+C:\prism\WaterNut - Enterprise\QuickBooks\bin\Debug\WaterNut.Data.pdb
+C:\prism\WaterNut - Enterprise\QuickBooks\bin\Debug\System.Linq.Dynamic.pdb
+C:\prism\WaterNut - Enterprise\QuickBooks\bin\Debug\EntityFramework.SqlServer.xml
+C:\prism\WaterNut - Enterprise\QuickBooks\obj\Debug\QuickBooks.csprojResolveAssemblyReference.cache
+C:\prism\WaterNut - Enterprise\QuickBooks\obj\Debug\Interop.QBPOSFC3Lib.dll
+C:\prism\WaterNut - Enterprise\QuickBooks\obj\Debug\QuickBooks.csproj.ResolveComReference.cache
+C:\prism\WaterNut - Enterprise\QuickBooks\obj\Debug\QuickBooks.dll
+C:\prism\WaterNut - Enterprise\QuickBooks\obj\Debug\QuickBooks.pdb

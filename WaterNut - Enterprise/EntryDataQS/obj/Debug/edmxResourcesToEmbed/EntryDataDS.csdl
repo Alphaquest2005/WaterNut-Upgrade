@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="WaterNutDBModel" Alias="Self" p1:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:p1="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="WaterNutDBEntities" p1:LazyLoadingEnabled="true">
+    <EntitySet Name="EntryDataDetailsEX" EntityType="WaterNutDBModel.EntryDataDetailsEX" />
+    <EntitySet Name="EntryDataEx" EntityType="WaterNutDBModel.EntryDataEx" />
+  </EntityContainer>
+  <EntityType Name="EntryDataDetailsEX">
+    <Key>
+      <PropertyRef Name="EntryDataDetailsId" />
+    </Key>
+    <Property Name="EntryDataDetailsId" Type="Int32" Nullable="false" />
+    <Property Name="TariffCode" Type="String" MaxLength="8" Unicode="false" FixedLength="false" />
+    <Property Name="CNumber" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <Property Name="CLineNumber" Type="Int32" />
+    <Property Name="Downloaded" Type="Boolean" />
+  </EntityType>
+  <EntityType Name="EntryDataEx">
+    <Key>
+      <PropertyRef Name="EntryDataDetailsId" />
+      <PropertyRef Name="EntryDataId" />
+      <PropertyRef Name="EntryDataDate" />
+      <PropertyRef Name="AsycudaDocumentSetId" />
+    </Key>
+    <Property Name="EntryDataDetailsId" Type="Int32" Nullable="false" />
+    <Property Name="EntryDataId" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="CNumber" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <Property Name="RegistrationDate" Type="DateTime" Precision="3" />
+    <Property Name="EntryDataDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="AsycudaDocumentSetId" Type="Int32" Nullable="false" />
+    <Property Name="Type" Type="String" MaxLength="5" Unicode="false" FixedLength="false" />
+  </EntityType>
+</Schema>

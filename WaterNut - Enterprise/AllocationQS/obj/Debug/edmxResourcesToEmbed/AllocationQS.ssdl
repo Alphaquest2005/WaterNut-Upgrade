@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="WaterNutDBModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'WaterNutDB-Enterprise.dbo.AsycudaSalesAllocationsEx' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="AsycudaSalesAllocationsEx">
+    <Key>
+      <PropertyRef Name="AllocationId" />
+    </Key>
+    <Property Name="AllocationId" Type="int" Nullable="false" />
+    <Property Name="TotalValue" Type="float" />
+    <Property Name="AllocatedValue" Type="float" />
+    <Property Name="Status" Type="varchar(max)" />
+    <Property Name="QtyAllocated" Type="float" />
+    <Property Name="xLineNumber" Type="int" />
+    <Property Name="PreviousItem_Id" Type="int" Nullable="false" />
+    <Property Name="InvoiceDate" Type="datetime" />
+    <Property Name="CustomerName" Type="varchar(max)" />
+    <Property Name="SalesQuantity" Type="float" />
+    <Property Name="SalesQtyAllocated" Type="float" />
+    <Property Name="InvoiceNo" Type="varchar" MaxLength="50" />
+    <Property Name="ItemNumber" Type="varchar" MaxLength="255" />
+    <Property Name="ItemDescription" Type="varchar(max)" />
+    <Property Name="EntryDataDetailsId" Type="int" />
+    <Property Name="xBond_Item_Id" Type="int" Nullable="false" />
+    <Property Name="DutyFreePaid" Type="varchar" MaxLength="9" Nullable="false" />
+    <Property Name="pCNumber" Type="varchar(max)" />
+    <Property Name="pRegistrationDate" Type="datetime" />
+    <Property Name="pQuantity" Type="float" />
+    <Property Name="pQtyAllocated" Type="float" />
+    <Property Name="PiQuantity" Type="float" />
+    <Property Name="SalesFactor" Type="float" />
+    <Property Name="xCNumber" Type="varchar(max)" />
+    <Property Name="xRegistrationDate" Type="datetime" />
+    <Property Name="xQuantity" Type="float" />
+    <Property Name="pReferenceNumber" Type="nvarchar(max)" />
+    <Property Name="pLineNumber" Type="int" />
+    <Property Name="xASYCUDA_Id" Type="int" />
+    <Property Name="pASYCUDA_Id" Type="int" />
+    <Property Name="Cost" Type="float" />
+    <Property Name="Total_CIF_itm" Type="float" />
+    <Property Name="DutyLiability" Type="float" />
+    <Property Name="TaxAmount" Type="float" />
+    <Property Name="pIsAssessed" Type="bit" />
+    <Property Name="DoNotAllocateSales" Type="bit" />
+    <Property Name="DoNotAllocatePreviousEntry" Type="bit" />
+    <Property Name="SANumber" Type="int" />
+    <Property Name="xReferenceNumber" Type="nvarchar(max)" />
+    <Property Name="TariffCode" Type="varchar" MaxLength="8" />
+    <Property Name="Invalid" Type="bit" />
+    <Property Name="pExpiryDate" Type="datetime" />
+    <Property Name="pTariffCode" Type="varchar" MaxLength="8" />
+    <Property Name="pItemNumber" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityContainer Name="WaterNutDBModelStoreContainer">
+    <EntitySet Name="AsycudaSalesAllocationsEx" EntityType="Self.AsycudaSalesAllocationsEx" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+[AsycudaSalesAllocationsEx].[AllocationId] AS [AllocationId], 
+[AsycudaSalesAllocationsEx].[TotalValue] AS [TotalValue], 
+[AsycudaSalesAllocationsEx].[AllocatedValue] AS [AllocatedValue], 
+[AsycudaSalesAllocationsEx].[Status] AS [Status], 
+[AsycudaSalesAllocationsEx].[QtyAllocated] AS [QtyAllocated], 
+[AsycudaSalesAllocationsEx].[xLineNumber] AS [xLineNumber], 
+[AsycudaSalesAllocationsEx].[PreviousItem_Id] AS [PreviousItem_Id], 
+[AsycudaSalesAllocationsEx].[InvoiceDate] AS [InvoiceDate], 
+[AsycudaSalesAllocationsEx].[CustomerName] AS [CustomerName], 
+[AsycudaSalesAllocationsEx].[SalesQuantity] AS [SalesQuantity], 
+[AsycudaSalesAllocationsEx].[SalesQtyAllocated] AS [SalesQtyAllocated], 
+[AsycudaSalesAllocationsEx].[InvoiceNo] AS [InvoiceNo], 
+[AsycudaSalesAllocationsEx].[ItemNumber] AS [ItemNumber], 
+[AsycudaSalesAllocationsEx].[ItemDescription] AS [ItemDescription], 
+[AsycudaSalesAllocationsEx].[EntryDataDetailsId] AS [EntryDataDetailsId], 
+[AsycudaSalesAllocationsEx].[xBond_Item_Id] AS [xBond_Item_Id], 
+[AsycudaSalesAllocationsEx].[DutyFreePaid] AS [DutyFreePaid], 
+[AsycudaSalesAllocationsEx].[pCNumber] AS [pCNumber], 
+[AsycudaSalesAllocationsEx].[pRegistrationDate] AS [pRegistrationDate], 
+[AsycudaSalesAllocationsEx].[pQuantity] AS [pQuantity], 
+[AsycudaSalesAllocationsEx].[pQtyAllocated] AS [pQtyAllocated], 
+[AsycudaSalesAllocationsEx].[PiQuantity] AS [PiQuantity], 
+[AsycudaSalesAllocationsEx].[SalesFactor] AS [SalesFactor], 
+[AsycudaSalesAllocationsEx].[xCNumber] AS [xCNumber], 
+[AsycudaSalesAllocationsEx].[xRegistrationDate] AS [xRegistrationDate], 
+[AsycudaSalesAllocationsEx].[xQuantity] AS [xQuantity], 
+[AsycudaSalesAllocationsEx].[pReferenceNumber] AS [pReferenceNumber], 
+[AsycudaSalesAllocationsEx].[pLineNumber] AS [pLineNumber], 
+[AsycudaSalesAllocationsEx].[xASYCUDA_Id] AS [xASYCUDA_Id], 
+[AsycudaSalesAllocationsEx].[pASYCUDA_Id] AS [pASYCUDA_Id], 
+[AsycudaSalesAllocationsEx].[Cost] AS [Cost], 
+[AsycudaSalesAllocationsEx].[Total_CIF_itm] AS [Total_CIF_itm], 
+[AsycudaSalesAllocationsEx].[DutyLiability] AS [DutyLiability], 
+[AsycudaSalesAllocationsEx].[TaxAmount] AS [TaxAmount], 
+[AsycudaSalesAllocationsEx].[pIsAssessed] AS [pIsAssessed], 
+[AsycudaSalesAllocationsEx].[DoNotAllocateSales] AS [DoNotAllocateSales], 
+[AsycudaSalesAllocationsEx].[DoNotAllocatePreviousEntry] AS [DoNotAllocatePreviousEntry], 
+[AsycudaSalesAllocationsEx].[SANumber] AS [SANumber], 
+[AsycudaSalesAllocationsEx].[xReferenceNumber] AS [xReferenceNumber], 
+[AsycudaSalesAllocationsEx].[TariffCode] AS [TariffCode], 
+[AsycudaSalesAllocationsEx].[Invalid] AS [Invalid], 
+[AsycudaSalesAllocationsEx].[pExpiryDate] AS [pExpiryDate], 
+[AsycudaSalesAllocationsEx].[pTariffCode] AS [pTariffCode], 
+[AsycudaSalesAllocationsEx].[pItemNumber] AS [pItemNumber]
+FROM [dbo].[AsycudaSalesAllocationsEx] AS [AsycudaSalesAllocationsEx]</DefiningQuery>
+    </EntitySet>
+  </EntityContainer>
+</Schema>

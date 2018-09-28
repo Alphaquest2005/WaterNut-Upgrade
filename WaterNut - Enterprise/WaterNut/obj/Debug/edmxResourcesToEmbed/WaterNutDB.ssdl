@@ -1,0 +1,182 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="WaterNutDB.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityContainer Name="WaterNutDBStoreContainer">
+    <EntitySet Name="AsycudaDocuments" EntityType="WaterNutDB.Store.AsycudaDocuments" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="AsycudaItemEntries" EntityType="WaterNutDB.Store.AsycudaItemEntries" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Sales" EntityType="WaterNutDB.Store.Sales" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="TariffCategory" EntityType="WaterNutDB.Store.TariffCategory" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="TariffCodes" EntityType="WaterNutDB.Store.TariffCodes" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Licences" EntityType="WaterNutDB.Store.Licences" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="TariffSupUnitLkps" EntityType="WaterNutDB.Store.TariffSupUnitLkps" store:Type="Tables" Schema="dbo" />
+    <AssociationSet Name="FK_AsycudaDocumentAsycudaItemEntry" Association="WaterNutDB.Store.FK_AsycudaDocumentAsycudaItemEntry">
+      <End Role="AsycudaDocument" EntitySet="AsycudaDocuments" />
+      <End Role="AsycudaItemEntry" EntitySet="AsycudaItemEntries" />
+    </AssociationSet>
+    <AssociationSet Name="TariffCategoryTariffCodes" Association="WaterNutDB.Store.TariffCategoryTariffCodes">
+      <End Role="TariffCategory" EntitySet="TariffCategory" />
+      <End Role="TariffCodes" EntitySet="TariffCodes" />
+    </AssociationSet>
+    <AssociationSet Name="TariffCategoryLicence" Association="WaterNutDB.Store.TariffCategoryLicence">
+      <End Role="TariffCategory" EntitySet="TariffCategory" />
+      <End Role="Licence" EntitySet="Licences" />
+    </AssociationSet>
+    <AssociationSet Name="TariffCategoryTariffSupUnitLkp" Association="WaterNutDB.Store.TariffCategoryTariffSupUnitLkp">
+      <End Role="TariffCategory" EntitySet="TariffCategory" />
+      <End Role="TariffSupUnitLkp" EntitySet="TariffSupUnitLkps" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="AsycudaDocuments">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="AsycudaID" Type="int" Nullable="false" />
+    <Property Name="CNumber" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="RegistrationDate" Type="datetime" Nullable="false" />
+    <Property Name="TotalItems" Type="int" Nullable="false" />
+    <Property Name="Lumped" Type="bit" Nullable="true" />
+    <Property Name="Customs_clearance_office_code" Type="nvarchar" Nullable="true" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="AsycudaItemEntries">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="AsycudaDocumentId" Type="int" Nullable="false" />
+    <Property Name="TariffCode" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="TariffKey" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="CIF" Type="decimal" Nullable="false" Precision="15" Scale="8" />
+    <Property Name="ItemPrice" Type="decimal" Nullable="false" Precision="15" Scale="8" />
+    <Property Name="StatisticalValue" Type="decimal" Nullable="false" Precision="15" Scale="8" />
+    <Property Name="LineNumber" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="DutyLiability" Type="decimal" Nullable="false" Precision="15" Scale="8" />
+    <Property Name="ItemQuantity" Type="decimal" Nullable="false" Precision="15" Scale="8" />
+    <Property Name="DutyFreeQtyAllocated" Type="decimal" Nullable="true" Precision="18" Scale="0" />
+    <Property Name="DutyPaidQtyAllocated" Type="decimal" Nullable="true" Precision="18" Scale="0" />
+    <Property Name="Net_weight_itm" Type="decimal" Nullable="true" Precision="18" Scale="4" />
+    <Property Name="Gross_weight_itm" Type="decimal" Nullable="true" Precision="18" Scale="4" />
+    <Property Name="Country_of_origin_code" Type="nvarchar" Nullable="true" MaxLength="50" />
+    <Property Name="Commercial_Description" Type="nvarchar(max)" Nullable="true" />
+    <Property Name="Total_cost_itm" Type="decimal" Nullable="true" Precision="18" Scale="2" />
+    <Property Name="Total_CIF_itm" Type="decimal" Nullable="true" Precision="18" Scale="2" />
+    <Property Name="SuppUnitCode2" Type="nvarchar" Nullable="true" MaxLength="50" />
+    <Property Name="SuppUnitName2" Type="nvarchar" Nullable="true" MaxLength="50" />
+    <Property Name="SuppUnitQty2" Type="decimal" Nullable="true" Precision="18" Scale="4" />
+  </EntityType>
+  <EntityType Name="Sales">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="INVNO" Type="varchar" Nullable="true" MaxLength="50" />
+    <Property Name="SEQ" Type="smallint" Nullable="true" />
+    <Property Name="ITEMNUMBER" Type="varchar" Nullable="true" MaxLength="50" />
+    <Property Name="DESCRIPTION" Type="varchar" Nullable="true" MaxLength="1000" />
+    <Property Name="QUANTITY" Type="decimal" Nullable="true" Precision="18" Scale="0" />
+    <Property Name="PRICE" Type="decimal" Nullable="true" Precision="18" Scale="4" />
+    <Property Name="AMOUNT" Type="decimal" Nullable="true" Precision="18" Scale="4" />
+    <Property Name="ACCTNO" Type="varchar" Nullable="true" MaxLength="50" />
+    <Property Name="CUSTOMERNAME" Type="varchar" Nullable="true" MaxLength="999" />
+    <Property Name="BOATNAME" Type="varchar" Nullable="true" MaxLength="999" />
+    <Property Name="DATE" Type="datetime" Nullable="true" />
+    <Property Name="TYPE" Type="varchar" Nullable="true" MaxLength="50" />
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="QtyAllocated" Type="decimal" Nullable="true" Precision="18" Scale="0" />
+    <Property Name="AsycudaStatus" Type="nvarchar(max)" Nullable="true" />
+  </EntityType>
+  <EntityType Name="TariffCategory">
+    <Key>
+      <PropertyRef Name="TariffCategoryCode" />
+    </Key>
+    <Property Name="TariffCategoryCode" Type="varchar" Nullable="false" MaxLength="8" />
+    <Property Name="Description" Type="varchar" Nullable="true" MaxLength="999" />
+    <Property Name="ParentTariffCategoryCode" Type="varchar" Nullable="true" MaxLength="5" />
+    <Property Name="LicenceRequired" Type="nvarchar(max)" Nullable="true" />
+  </EntityType>
+  <EntityType Name="TariffCodes">
+    <Key>
+      <PropertyRef Name="TariffCode" />
+    </Key>
+    <Property Name="TariffCode" Type="varchar" Nullable="false" MaxLength="8" />
+    <Property Name="Description" Type="varchar" Nullable="true" MaxLength="999" />
+    <Property Name="RateofDuty" Type="varchar" Nullable="true" MaxLength="50" />
+    <Property Name="EnvironmentalLevy" Type="varchar" Nullable="true" MaxLength="50" />
+    <Property Name="CustomsServiceCharge" Type="varchar" Nullable="true" MaxLength="50" />
+    <Property Name="ExciseTax" Type="varchar" Nullable="true" MaxLength="50" />
+    <Property Name="VatRate" Type="varchar" Nullable="true" MaxLength="50" />
+    <Property Name="PetrolTax" Type="varchar" Nullable="true" MaxLength="50" />
+    <Property Name="Units" Type="nvarchar" Nullable="true" MaxLength="999" />
+    <Property Name="SiteRev3" Type="varchar" Nullable="true" MaxLength="50" />
+    <Property Name="TariffCategoryCode" Type="varchar" Nullable="true" MaxLength="8" />
+  </EntityType>
+  <EntityType Name="Licences">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Year" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="LicenceNumber" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Quantity" Type="int" Nullable="false" />
+    <Property Name="TariffCateoryCode" Type="varchar" Nullable="true" MaxLength="8" />
+    <Property Name="TariffCategory_TariffCategoryCode" Type="varchar" MaxLength="8" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TariffSupUnitLkps">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="TariffCategoryCode" Type="varchar" Nullable="false" MaxLength="8" />
+    <Property Name="SuppUnitCode2" Type="nvarchar" Nullable="true" MaxLength="50" />
+    <Property Name="SuppUnitName2" Type="nvarchar" Nullable="true" MaxLength="50" />
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="TariffCategory_TariffCategoryCode" Type="varchar" MaxLength="8" Nullable="false" />
+  </EntityType>
+  <Association Name="FK_AsycudaDocumentAsycudaItemEntry">
+    <End Role="AsycudaDocument" Type="WaterNutDB.Store.AsycudaDocuments" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="AsycudaItemEntry" Type="WaterNutDB.Store.AsycudaItemEntries" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AsycudaDocument">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="AsycudaItemEntry">
+        <PropertyRef Name="AsycudaDocumentId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="TariffCategoryTariffCodes">
+    <End Role="TariffCategory" Type="WaterNutDB.Store.TariffCategory" Multiplicity="0..1" />
+    <End Role="TariffCodes" Type="WaterNutDB.Store.TariffCodes" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TariffCategory">
+        <PropertyRef Name="TariffCategoryCode" />
+      </Principal>
+      <Dependent Role="TariffCodes">
+        <PropertyRef Name="TariffCategoryCode" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="TariffCategoryLicence">
+    <End Role="TariffCategory" Type="WaterNutDB.Store.TariffCategory" Multiplicity="1" />
+    <End Role="Licence" Type="WaterNutDB.Store.Licences" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TariffCategory">
+        <PropertyRef Name="TariffCategoryCode" />
+      </Principal>
+      <Dependent Role="Licence">
+        <PropertyRef Name="TariffCategory_TariffCategoryCode" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="TariffCategoryTariffSupUnitLkp">
+    <End Role="TariffCategory" Type="WaterNutDB.Store.TariffCategory" Multiplicity="1" />
+    <End Role="TariffSupUnitLkp" Type="WaterNutDB.Store.TariffSupUnitLkps" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TariffCategory">
+        <PropertyRef Name="TariffCategoryCode" />
+      </Principal>
+      <Dependent Role="TariffSupUnitLkp">
+        <PropertyRef Name="TariffCategory_TariffCategoryCode" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

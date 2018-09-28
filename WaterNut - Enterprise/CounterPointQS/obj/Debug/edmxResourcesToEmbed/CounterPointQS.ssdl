@@ -1,0 +1,109 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="WaterNutDBModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'WaterNutDB-Enterprise.dbo.CounterPointPODetails' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="CounterPointPODetails">
+    <Key>
+      <PropertyRef Name="PO_NO" />
+    </Key>
+    <Property Name="PO_NO" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="SEQ_NO" Type="int" Nullable="false" />
+    <Property Name="ITEM_NO" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="ORD_QTY" Type="numeric" Precision="15" Scale="4" Nullable="false" />
+    <Property Name="ORD_UNIT" Type="varchar" MaxLength="15" />
+    <Property Name="ITEM_DESCR" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="ORD_COST" Type="numeric" Precision="15" Scale="4" Nullable="false" />
+    <Property Name="UNIT_WEIGHT" Type="numeric" Precision="15" Scale="4" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'WaterNutDB-Enterprise.dbo.CounterPointPOs' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="CounterPointPOs">
+    <Key>
+      <PropertyRef Name="PO_NO" />
+    </Key>
+    <Property Name="PO_NO" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="DATE" Type="datetime" Nullable="false" />
+    <Property Name="LIN_CNT" Type="int" Nullable="false" />
+    <Property Name="Downloaded" Type="bit" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'WaterNutDB-Enterprise.dbo.CounterPointSales' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="CounterPointSales">
+    <Key>
+      <PropertyRef Name="INVNO" />
+    </Key>
+    <Property Name="INVNO" Type="varchar" MaxLength="66" Nullable="false" />
+    <Property Name="DATE" Type="datetime" />
+    <Property Name="TAX_AMT" Type="numeric" Precision="15" Scale="2" Nullable="false" />
+    <Property Name="CUSTOMER NAME" Type="varchar" MaxLength="81" />
+    <Property Name="LIN_CNT" Type="int" />
+    <Property Name="Downloaded" Type="bit" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'WaterNutDB-Enterprise.dbo.CounterPointSalesDetails' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="CounterPointSalesDetails">
+    <Key>
+      <PropertyRef Name="INVNO" />
+    </Key>
+    <Property Name="INVNO" Type="varchar" MaxLength="66" Nullable="false" />
+    <Property Name="SEQ_NO" Type="int" />
+    <Property Name="ITEM_NO" Type="varchar" MaxLength="20" />
+    <Property Name="ITEM_DESCR" Type="varchar" MaxLength="50" />
+    <Property Name="QUANTITY" Type="numeric" Precision="15" Scale="4" />
+    <Property Name="COST" Type="money" />
+    <Property Name="ACCT NO" Type="varchar" MaxLength="15" />
+    <Property Name="CUSTOMER NAME" Type="varchar" MaxLength="81" />
+    <Property Name="DATE" Type="datetime" />
+    <Property Name="TAX_AMT" Type="numeric" Precision="15" Scale="2" Nullable="false" />
+    <Property Name="UNIT_WEIGHT" Type="numeric" Precision="15" Scale="4" />
+    <Property Name="QTY_UNIT" Type="varchar" MaxLength="15" />
+  </EntityType>
+  <EntityContainer Name="WaterNutDBModelStoreContainer">
+    <EntitySet Name="CounterPointPODetails" EntityType="Self.CounterPointPODetails" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+[CounterPointPODetails].[PO_NO] AS [PO_NO], 
+[CounterPointPODetails].[SEQ_NO] AS [SEQ_NO], 
+[CounterPointPODetails].[ITEM_NO] AS [ITEM_NO], 
+[CounterPointPODetails].[ORD_QTY] AS [ORD_QTY], 
+[CounterPointPODetails].[ORD_UNIT] AS [ORD_UNIT], 
+[CounterPointPODetails].[ITEM_DESCR] AS [ITEM_DESCR], 
+[CounterPointPODetails].[ORD_COST] AS [ORD_COST], 
+[CounterPointPODetails].[UNIT_WEIGHT] AS [UNIT_WEIGHT]
+FROM [dbo].[CounterPointPODetails] AS [CounterPointPODetails]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="CounterPointPOs" EntityType="Self.CounterPointPOs" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+[CounterPointPOs].[PO_NO] AS [PO_NO], 
+[CounterPointPOs].[DATE] AS [DATE], 
+[CounterPointPOs].[LIN_CNT] AS [LIN_CNT], 
+[CounterPointPOs].[Downloaded] AS [Downloaded]
+FROM [dbo].[CounterPointPOs] AS [CounterPointPOs]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="CounterPointSales" EntityType="Self.CounterPointSales" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+[CounterPointSales].[INVNO] AS [INVNO], 
+[CounterPointSales].[DATE] AS [DATE], 
+[CounterPointSales].[TAX_AMT] AS [TAX_AMT], 
+[CounterPointSales].[CUSTOMER NAME] AS [CUSTOMER NAME], 
+[CounterPointSales].[LIN_CNT] AS [LIN_CNT], 
+[CounterPointSales].[Downloaded] AS [Downloaded]
+FROM [dbo].[CounterPointSales] AS [CounterPointSales]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="CounterPointSalesDetails" EntityType="Self.CounterPointSalesDetails" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+[CounterPointSalesDetails].[INVNO] AS [INVNO], 
+[CounterPointSalesDetails].[SEQ_NO] AS [SEQ_NO], 
+[CounterPointSalesDetails].[ITEM_NO] AS [ITEM_NO], 
+[CounterPointSalesDetails].[ITEM_DESCR] AS [ITEM_DESCR], 
+[CounterPointSalesDetails].[QUANTITY] AS [QUANTITY], 
+[CounterPointSalesDetails].[COST] AS [COST], 
+[CounterPointSalesDetails].[ACCT NO] AS [ACCT NO], 
+[CounterPointSalesDetails].[CUSTOMER NAME] AS [CUSTOMER NAME], 
+[CounterPointSalesDetails].[DATE] AS [DATE], 
+[CounterPointSalesDetails].[TAX_AMT] AS [TAX_AMT], 
+[CounterPointSalesDetails].[UNIT_WEIGHT] AS [UNIT_WEIGHT], 
+[CounterPointSalesDetails].[QTY_UNIT] AS [QTY_UNIT]
+FROM [dbo].[CounterPointSalesDetails] AS [CounterPointSalesDetails]</DefiningQuery>
+    </EntitySet>
+  </EntityContainer>
+</Schema>

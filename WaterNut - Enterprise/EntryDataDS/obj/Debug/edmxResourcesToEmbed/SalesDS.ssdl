@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="WaterNutDBModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityContainer Name="WaterNutDBModelStoreContainer">
+    <EntitySet Name="EntryData_Sales" EntityType="WaterNutDBModel.Store.EntryData_Sales" store:Type="Tables" Schema="dbo" />
+  </EntityContainer>
+  <EntityType Name="EntryData_Sales">
+    <Key>
+      <PropertyRef Name="EntryDataId" />
+    </Key>
+    <Property Name="INVNumber" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="EntryDataId" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="TaxAmount" Type="float" />
+    <Property Name="CustomerName" Type="varchar(max)" />
+  </EntityType>
+</Schema>

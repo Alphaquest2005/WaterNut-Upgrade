@@ -1,0 +1,6 @@
+C:\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\Ez-Asycuda-Toolkit\bin\Debug\Ez_Asycuda_Toolkit.msi
+C:\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\Ez-Asycuda-Toolkit\bin\Debug\Ez_Asycuda_Toolkit.wixpdb
+obj\Debug\Product.wixobj
+obj\Debug\Ez-Asycuda-Toolkit.wixproj.BindContentsFileListnull.txt
+obj\Debug\Ez-Asycuda-Toolkit.wixproj.BindOutputsFileListnull.txt
+obj\Debug\Ez-Asycuda-Toolkit.wixproj.BindBuiltOutputsFileListnull.txt

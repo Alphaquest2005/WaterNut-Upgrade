@@ -1,0 +1,15 @@
+C:\Prism Projects\WaterNut\Common\bin\Release\Common.exe.config
+C:\Prism Projects\WaterNut\Common\bin\Release\Common.exe
+C:\Prism Projects\WaterNut\Common\bin\Release\Common.pdb
+C:\Prism Projects\WaterNut\Common\bin\Release\EntityFramework.dll
+C:\Prism Projects\WaterNut\Common\bin\Release\EntityFramework.xml
+C:\Prism Projects\WaterNut\Common\obj\Release\InsightPresentationLayer.csprojResolveAssemblyReference.cache
+C:\Prism Projects\WaterNut\Common\obj\Release\MainWindow.baml
+C:\Prism Projects\WaterNut\Common\obj\Release\MainWindow.g.cs
+C:\Prism Projects\WaterNut\Common\obj\Release\App.g.cs
+C:\Prism Projects\WaterNut\Common\obj\Release\Common_MarkupCompile.cache
+C:\Prism Projects\WaterNut\Common\obj\Release\Common.g.resources
+C:\Prism Projects\WaterNut\Common\obj\Release\InsightPresentationLayer.Properties.Resources.resources
+C:\Prism Projects\WaterNut\Common\obj\Release\InsightPresentationLayer.csproj.GenerateResource.Cache
+C:\Prism Projects\WaterNut\Common\obj\Release\Common.exe
+C:\Prism Projects\WaterNut\Common\obj\Release\Common.pdb

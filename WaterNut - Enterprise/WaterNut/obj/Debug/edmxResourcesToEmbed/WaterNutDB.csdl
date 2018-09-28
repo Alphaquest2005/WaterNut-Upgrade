@@ -1,0 +1,172 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema xmlns="http://schemas.microsoft.com/ado/2009/11/edm" xmlns:cg="http://schemas.microsoft.com/ado/2006/04/codegeneration" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" Namespace="WaterNutDB.DataLayer" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" annotation:UseStrongSpatialTypes="false">
+  <EntityContainer Name="WaterNutDBEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="AsycudaDocuments" EntityType="WaterNutDB.DataLayer.AsycudaDocument" />
+    <EntitySet Name="AsycudaItemEntries" EntityType="WaterNutDB.DataLayer.AsycudaItemEntry" />
+    <EntitySet Name="Sales" EntityType="WaterNutDB.DataLayer.Sale" />
+    <AssociationSet Name="FK_AsycudaDocumentAsycudaItemEntry" Association="WaterNutDB.DataLayer.FK_AsycudaDocumentAsycudaItemEntry">
+      <End Role="AsycudaDocument" EntitySet="AsycudaDocuments" />
+      <End Role="AsycudaItemEntry" EntitySet="AsycudaItemEntries" />
+    </AssociationSet>
+    <EntitySet Name="TariffCategory" EntityType="WaterNutDB.DataLayer.TariffCategory" />
+    <EntitySet Name="TariffCodes" EntityType="WaterNutDB.DataLayer.TariffCodes" />
+    <AssociationSet Name="TariffCategoryTariffCodes" Association="WaterNutDB.DataLayer.TariffCategoryTariffCodes">
+      <End Role="TariffCategory" EntitySet="TariffCategory" />
+      <End Role="TariffCodes" EntitySet="TariffCodes" />
+    </AssociationSet>
+    <EntitySet Name="Licences" EntityType="WaterNutDB.DataLayer.Licence" />
+    <EntitySet Name="TariffSupUnitLkps" EntityType="WaterNutDB.DataLayer.TariffSupUnitLkp" />
+    <AssociationSet Name="TariffCategoryLicence" Association="WaterNutDB.DataLayer.TariffCategoryLicence">
+      <End Role="TariffCategory" EntitySet="TariffCategory" />
+      <End Role="Licence" EntitySet="Licences" />
+    </AssociationSet>
+    <AssociationSet Name="TariffCategoryTariffSupUnitLkp" Association="WaterNutDB.DataLayer.TariffCategoryTariffSupUnitLkp">
+      <End Role="TariffCategory" EntitySet="TariffCategory" />
+      <End Role="TariffSupUnitLkp" EntitySet="TariffSupUnitLkps" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="AsycudaDocument">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Type="Int32" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int32" Name="AsycudaID" Nullable="false" />
+    <Property Type="String" Name="CNumber" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="DateTime" Name="RegistrationDate" Nullable="false" Precision="3" />
+    <Property Type="Int32" Name="TotalItems" Nullable="false" />
+    <Property Type="Boolean" Name="Lumped" />
+    <Property Type="String" Name="Customs_clearance_office_code" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="AsycudaItemEntries" Relationship="WaterNutDB.DataLayer.FK_AsycudaDocumentAsycudaItemEntry" FromRole="AsycudaDocument" ToRole="AsycudaItemEntry" />
+  </EntityType>
+  <EntityType Name="AsycudaItemEntry">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Type="Int32" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int32" Name="AsycudaDocumentId" Nullable="false" />
+    <Property Type="String" Name="TariffCode" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="TariffKey" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="Decimal" Name="CIF" Nullable="false" Precision="15" Scale="8" />
+    <Property Type="Decimal" Name="ItemPrice" Nullable="false" Precision="15" Scale="8" />
+    <Property Type="Decimal" Name="StatisticalValue" Nullable="false" Precision="15" Scale="8" />
+    <Property Type="String" Name="LineNumber" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="Decimal" Name="DutyLiability" Nullable="false" Precision="15" Scale="8" />
+    <Property Type="Decimal" Name="ItemQuantity" Nullable="false" Precision="15" Scale="8" />
+    <Property Type="Decimal" Name="DutyFreeQtyAllocated" Precision="18" Scale="0" />
+    <Property Type="Decimal" Name="DutyPaidQtyAllocated" Precision="18" Scale="0" />
+    <Property Type="Decimal" Name="Net_weight_itm" Precision="18" Scale="4" />
+    <Property Type="Decimal" Name="Gross_weight_itm" Precision="18" Scale="4" />
+    <Property Type="String" Name="Country_of_origin_code" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Commercial_Description" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="Decimal" Name="Total_cost_itm" Precision="18" Scale="2" />
+    <Property Type="Decimal" Name="Total_CIF_itm" Precision="18" Scale="2" />
+    <Property Type="String" Name="SuppUnitCode2" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="SuppUnitName2" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="Decimal" Name="SuppUnitQty2" Precision="18" Scale="4" />
+    <NavigationProperty Name="AsycudaDocument" Relationship="WaterNutDB.DataLayer.FK_AsycudaDocumentAsycudaItemEntry" FromRole="AsycudaItemEntry" ToRole="AsycudaDocument" />
+  </EntityType>
+  <EntityType Name="Sale">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Type="String" Name="INVNO" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="Int16" Name="SEQ" />
+    <Property Type="String" Name="ITEMNUMBER" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="DESCRIPTION" MaxLength="1000" FixedLength="false" Unicode="false" />
+    <Property Type="Decimal" Name="QUANTITY" Precision="18" Scale="0" />
+    <Property Type="Decimal" Name="PRICE" Precision="18" Scale="4" />
+    <Property Type="Decimal" Name="AMOUNT" Precision="18" Scale="4" />
+    <Property Type="String" Name="ACCTNO" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="CUSTOMERNAME" MaxLength="999" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="BOATNAME" MaxLength="999" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="DATE" Precision="3" />
+    <Property Type="String" Name="TYPE" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="ID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Decimal" Name="QtyAllocated" Precision="18" Scale="0" />
+    <Property Type="String" Name="AsycudaStatus" MaxLength="Max" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <Association Name="FK_AsycudaDocumentAsycudaItemEntry">
+    <End Type="WaterNutDB.DataLayer.AsycudaDocument" Role="AsycudaDocument" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Type="WaterNutDB.DataLayer.AsycudaItemEntry" Role="AsycudaItemEntry" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AsycudaDocument">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="AsycudaItemEntry">
+        <PropertyRef Name="AsycudaDocumentId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="TariffCategory">
+    <Key>
+      <PropertyRef Name="TariffCategoryCode" />
+    </Key>
+    <Property Type="String" Name="TariffCategoryCode" Nullable="false" MaxLength="8" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Description" MaxLength="999" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="ParentTariffCategoryCode" MaxLength="5" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="LicenceRequired" Nullable="true" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <NavigationProperty Name="TariffCodes" Relationship="WaterNutDB.DataLayer.TariffCategoryTariffCodes" FromRole="TariffCategory" ToRole="TariffCodes" />
+    <NavigationProperty Name="Licences" Relationship="WaterNutDB.DataLayer.TariffCategoryLicence" FromRole="TariffCategory" ToRole="Licence" />
+    <NavigationProperty Name="TariffSupUnitLkps" Relationship="WaterNutDB.DataLayer.TariffCategoryTariffSupUnitLkp" FromRole="TariffCategory" ToRole="TariffSupUnitLkp" />
+  </EntityType>
+  <EntityType Name="TariffCodes">
+    <Key>
+      <PropertyRef Name="TariffCode" />
+    </Key>
+    <Property Type="String" Name="TariffCode" Nullable="false" MaxLength="8" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Description" MaxLength="999" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="RateofDuty" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="EnvironmentalLevy" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="CustomsServiceCharge" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="ExciseTax" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="VatRate" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="PetrolTax" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Units" MaxLength="999" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="SiteRev3" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="TariffCategoryCode" MaxLength="8" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="TariffCategory" Relationship="WaterNutDB.DataLayer.TariffCategoryTariffCodes" FromRole="TariffCodes" ToRole="TariffCategory" />
+  </EntityType>
+  <Association Name="TariffCategoryTariffCodes">
+    <End Type="WaterNutDB.DataLayer.TariffCategory" Role="TariffCategory" Multiplicity="0..1" />
+    <End Type="WaterNutDB.DataLayer.TariffCodes" Role="TariffCodes" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TariffCategory">
+        <PropertyRef Name="TariffCategoryCode" />
+      </Principal>
+      <Dependent Role="TariffCodes">
+        <PropertyRef Name="TariffCategoryCode" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="Licence">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Type="Int32" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="Year" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="LicenceNumber" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="Quantity" Nullable="false" />
+    <Property Type="String" Name="TariffCateoryCode" MaxLength="8" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="TariffCategory" Relationship="WaterNutDB.DataLayer.TariffCategoryLicence" FromRole="Licence" ToRole="TariffCategory" />
+  </EntityType>
+  <EntityType Name="TariffSupUnitLkp">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Type="String" Name="TariffCategoryCode" Nullable="false" MaxLength="8" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="SuppUnitCode2" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="SuppUnitName2" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <NavigationProperty Name="TariffCategory" Relationship="WaterNutDB.DataLayer.TariffCategoryTariffSupUnitLkp" FromRole="TariffSupUnitLkp" ToRole="TariffCategory" />
+  </EntityType>
+  <Association Name="TariffCategoryLicence">
+    <End Type="WaterNutDB.DataLayer.TariffCategory" Role="TariffCategory" Multiplicity="1" />
+    <End Type="WaterNutDB.DataLayer.Licence" Role="Licence" Multiplicity="*" />
+  </Association>
+  <Association Name="TariffCategoryTariffSupUnitLkp">
+    <End Type="WaterNutDB.DataLayer.TariffCategory" Role="TariffCategory" Multiplicity="1" />
+    <End Type="WaterNutDB.DataLayer.TariffSupUnitLkp" Role="TariffSupUnitLkp" Multiplicity="*" />
+  </Association>
+</Schema>

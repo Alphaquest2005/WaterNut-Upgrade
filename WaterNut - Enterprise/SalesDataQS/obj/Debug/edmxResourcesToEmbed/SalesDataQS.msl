@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="WaterNutDBModelStoreContainer" CdmEntityContainer="SalesDataQS">
+    <EntitySetMapping Name="SalesDataDetails">
+      <EntityTypeMapping TypeName="WaterNutDBModel.SalesDataDetail">
+        <MappingFragment StoreEntitySet="SalesDataDetails">
+          <ScalarProperty Name="EntryDataDate" ColumnName="EntryDataDate" />
+          <ScalarProperty Name="SalesValue" ColumnName="SalesValue" />
+          <ScalarProperty Name="ASYCUDA_Id" ColumnName="ASYCUDA_Id" />
+          <ScalarProperty Name="Downloaded" ColumnName="Downloaded" />
+          <ScalarProperty Name="CLineNumber" ColumnName="CLineNumber" />
+          <ScalarProperty Name="CNumber" ColumnName="CNumber" />
+          <ScalarProperty Name="TariffCode" ColumnName="TariffCode" />
+          <ScalarProperty Name="DoNotAllocate" ColumnName="DoNotAllocate" />
+          <ScalarProperty Name="UnitWeight" ColumnName="UnitWeight" />
+          <ScalarProperty Name="QtyAllocated" ColumnName="QtyAllocated" />
+          <ScalarProperty Name="Cost" ColumnName="Cost" />
+          <ScalarProperty Name="ItemDescription" ColumnName="ItemDescription" />
+          <ScalarProperty Name="Units" ColumnName="Units" />
+          <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+          <ScalarProperty Name="ItemNumber" ColumnName="ItemNumber" />
+          <ScalarProperty Name="LineNumber" ColumnName="LineNumber" />
+          <ScalarProperty Name="EntryDataId" ColumnName="EntryDataId" />
+          <ScalarProperty Name="EntryDataDetailsId" ColumnName="EntryDataDetailsId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AsycudaDocumentEntryData">
+      <EntityTypeMapping TypeName="WaterNutDBModel.AsycudaDocumentEntryData">
+        <MappingFragment StoreEntitySet="AsycudaDocumentEntryData">
+          <ScalarProperty Name="AsycudaDocumentId" ColumnName="AsycudaDocumentId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="EntryDataId" ColumnName="EntryDataId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AsycudaDocumentSetEntryData">
+      <EntityTypeMapping TypeName="WaterNutDBModel.AsycudaDocumentSetEntryData">
+        <MappingFragment StoreEntitySet="AsycudaDocumentSetEntryData">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="EntryDataId" ColumnName="EntryDataId" />
+          <ScalarProperty Name="AsycudaDocumentSetId" ColumnName="AsycudaDocumentSetId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SalesDataAllocations">
+      <EntityTypeMapping TypeName="WaterNutDBModel.SalesDataAllocations">
+        <MappingFragment StoreEntitySet="SalesDataAllocations">
+          <ScalarProperty Name="EntryDataId" ColumnName="EntryDataId" />
+          <ScalarProperty Name="AllocationId" ColumnName="AllocationId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AsycudaDocumentSetEntryDataDetails">
+      <EntityTypeMapping TypeName="WaterNutDBModel.AsycudaDocumentSetEntryDataDetails">
+        <MappingFragment StoreEntitySet="AsycudaDocumentSetEntryDataDetails">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="EntryDataDetailsId" ColumnName="EntryDataDetailsId" />
+          <ScalarProperty Name="AsycudaDocumentSetId" ColumnName="AsycudaDocumentSetId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SalesDatas">
+      <EntityTypeMapping TypeName="WaterNutDBModel.SalesData">
+        <MappingFragment StoreEntitySet="SalesData">
+          <ScalarProperty Name="AsycudaDocumentId" ColumnName="AsycudaDocumentId" />
+          <ScalarProperty Name="AsycudaDocumentSetId" ColumnName="AsycudaDocumentSetId" />
+          <ScalarProperty Name="AllocatedTotal" ColumnName="AllocatedTotal" />
+          <ScalarProperty Name="Total" ColumnName="Total" />
+          <ScalarProperty Name="CustomerName" ColumnName="CustomerName" />
+          <ScalarProperty Name="TaxAmount" ColumnName="TaxAmount" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="EntryDataDate" ColumnName="EntryDataDate" />
+          <ScalarProperty Name="EntryDataId" ColumnName="EntryDataId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

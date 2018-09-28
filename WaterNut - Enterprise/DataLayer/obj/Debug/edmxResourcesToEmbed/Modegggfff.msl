@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Model1StoreContainer" CdmEntityContainer="Entities1">
+    <EntitySetMapping Name="AsycudaDocumentSets">
+      <EntityTypeMapping TypeName="Model1.AsycudaDocumentSet">
+        <MappingFragment StoreEntitySet="AsycudaDocumentSet">
+          <ScalarProperty Name="AsycudaDocumentSetId" ColumnName="AsycudaDocumentSetId" />
+          <ScalarProperty Name="Declarant_Reference_Number" ColumnName="Declarant_Reference_Number" />
+          <ScalarProperty Name="Exchange_Rate" ColumnName="Exchange_Rate" />
+          <ScalarProperty Name="Customs_ProcedureId" ColumnName="Customs_ProcedureId" />
+          <ScalarProperty Name="Country_of_origin_code" ColumnName="Country_of_origin_code" />
+          <ScalarProperty Name="Currency_Code" ColumnName="Currency_Code" />
+          <ScalarProperty Name="Document_TypeId" ColumnName="Document_TypeId" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Manifest_Number" ColumnName="Manifest_Number" />
+          <ScalarProperty Name="BLNumber" ColumnName="BLNumber" />
+          <ScalarProperty Name="EntryTimeStamp" ColumnName="EntryTimeStamp" />
+          <ScalarProperty Name="StartingFileCount" ColumnName="StartingFileCount" />
+          <ScalarProperty Name="ApportionMethod" ColumnName="ApportionMethod" />
+          <ScalarProperty Name="TotalWeight" ColumnName="TotalWeight" />
+          <ScalarProperty Name="TotalFreight" ColumnName="TotalFreight" />
+          <ScalarProperty Name="TotalInternalFreight" ColumnName="TotalInternalFreight" />
+          <ScalarProperty Name="TotalPackages" ColumnName="TotalPackages" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

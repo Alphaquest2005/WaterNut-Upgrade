@@ -1,0 +1,169 @@
+C:\Prism Projects\WaterNut - Enterprise\WaterNut.Data\obj\Debug\WaterNut.Data.csprojResolveAssemblyReference.cache
+C:\Prism Projects\WaterNut - Enterprise\WaterNut.Data\bin\Debug\WaterNut.Data.dll.config
+C:\Prism Projects\WaterNut - Enterprise\WaterNut.Data\bin\Debug\WaterNut.Data.dll
+C:\Prism Projects\WaterNut - Enterprise\WaterNut.Data\bin\Debug\WaterNut.Data.pdb
+C:\Prism Projects\WaterNut - Enterprise\WaterNut.Data\bin\Debug\Core.Common.Contracts.dll
+C:\Prism Projects\WaterNut - Enterprise\WaterNut.Data\bin\Debug\Core.Common.Data.dll
+C:\Prism Projects\WaterNut - Enterprise\WaterNut.Data\bin\Debug\Core.Common.dll
+C:\Prism Projects\WaterNut - Enterprise\WaterNut.Data\bin\Debug\EntityFramework.dll
+C:\Prism Projects\WaterNut - Enterprise\WaterNut.Data\bin\Debug\EntityFramework.SqlServer.dll
+C:\Prism Projects\WaterNut - Enterprise\WaterNut.Data\bin\Debug\TrackableEntities.Common.dll
+C:\Prism Projects\WaterNut - Enterprise\WaterNut.Data\bin\Debug\WaterNut.Business.Entities.dll
+C:\Prism Projects\WaterNut - Enterprise\WaterNut.Data\bin\Debug\TrackableEntities.EF.6.dll
+C:\Prism Projects\WaterNut - Enterprise\WaterNut.Data\bin\Debug\Newtonsoft.Json.dll
+C:\Prism Projects\WaterNut - Enterprise\WaterNut.Data\bin\Debug\Core.Common.Contracts.pdb
+C:\Prism Projects\WaterNut - Enterprise\WaterNut.Data\bin\Debug\Core.Common.Data.pdb
+C:\Prism Projects\WaterNut - Enterprise\WaterNut.Data\bin\Debug\Core.Common.pdb
+C:\Prism Projects\WaterNut - Enterprise\WaterNut.Data\bin\Debug\WaterNut.Business.Entities.pdb
+C:\Prism Projects\WaterNut - Enterprise\WaterNut.Data\bin\Debug\EntityFramework.xml
+C:\Prism Projects\WaterNut - Enterprise\WaterNut.Data\bin\Debug\EntityFramework.SqlServer.xml
+C:\Prism Projects\WaterNut - Enterprise\WaterNut.Data\bin\Debug\TrackableEntities.Common.pdb
+C:\Prism Projects\WaterNut - Enterprise\WaterNut.Data\bin\Debug\TrackableEntities.Common.xml
+C:\Prism Projects\WaterNut - Enterprise\WaterNut.Data\bin\Debug\TrackableEntities.EF.6.pdb
+C:\Prism Projects\WaterNut - Enterprise\WaterNut.Data\bin\Debug\TrackableEntities.EF.6.xml
+C:\Prism Projects\WaterNut - Enterprise\WaterNut.Data\bin\Debug\Newtonsoft.Json.xml
+C:\Prism Projects\WaterNut - Enterprise\WaterNut.Data\obj\Debug\WaterNut.Data.dll
+C:\Prism Projects\WaterNut - Enterprise\WaterNut.Data\obj\Debug\WaterNut.Data.pdb
+C:\prism\WaterNut - Enterprise\WaterNut.Data\bin\Debug\WaterNut.Data.dll.config
+C:\prism\WaterNut - Enterprise\WaterNut.Data\bin\Debug\WaterNut.Data.dll
+C:\prism\WaterNut - Enterprise\WaterNut.Data\bin\Debug\WaterNut.Data.pdb
+C:\prism\WaterNut - Enterprise\WaterNut.Data\bin\Debug\EntityFramework.dll
+C:\prism\WaterNut - Enterprise\WaterNut.Data\bin\Debug\EntityFramework.SqlServer.dll
+C:\prism\WaterNut - Enterprise\WaterNut.Data\bin\Debug\Newtonsoft.Json.dll
+C:\prism\WaterNut - Enterprise\WaterNut.Data\bin\Debug\Omu.ValueInjecter.dll
+C:\prism\WaterNut - Enterprise\WaterNut.Data\bin\Debug\TrackableEntities.Client.dll
+C:\prism\WaterNut - Enterprise\WaterNut.Data\bin\Debug\TrackableEntities.Common.dll
+C:\prism\WaterNut - Enterprise\WaterNut.Data\bin\Debug\TrackableEntities.EF.6.dll
+C:\prism\WaterNut - Enterprise\WaterNut.Data\bin\Debug\WaterNut.Interfaces.dll
+C:\prism\WaterNut - Enterprise\WaterNut.Data\bin\Debug\TrackableEntities.Client.pdb
+C:\prism\WaterNut - Enterprise\WaterNut.Data\bin\Debug\TrackableEntities.Client.xml
+C:\prism\WaterNut - Enterprise\WaterNut.Data\bin\Debug\TrackableEntities.Common.pdb
+C:\prism\WaterNut - Enterprise\WaterNut.Data\bin\Debug\TrackableEntities.Common.xml
+C:\prism\WaterNut - Enterprise\WaterNut.Data\bin\Debug\TrackableEntities.EF.6.pdb
+C:\prism\WaterNut - Enterprise\WaterNut.Data\bin\Debug\WaterNut.Interfaces.pdb
+C:\prism\WaterNut - Enterprise\WaterNut.Data\bin\Debug\EntityFramework.xml
+C:\prism\WaterNut - Enterprise\WaterNut.Data\bin\Debug\EntityFramework.SqlServer.xml
+C:\prism\WaterNut - Enterprise\WaterNut.Data\bin\Debug\Newtonsoft.Json.xml
+C:\prism\WaterNut - Enterprise\WaterNut.Data\bin\Debug\Omu.ValueInjecter.xml
+C:\prism\WaterNut - Enterprise\WaterNut.Data\obj\Debug\WaterNut.Data.csprojResolveAssemblyReference.cache
+C:\prism\WaterNut - Enterprise\WaterNut.Data\obj\Debug\WaterNut.Data.dll
+C:\prism\WaterNut - Enterprise\WaterNut.Data\obj\Debug\WaterNut.Data.pdb
+C:\prism\WaterNut - Enterprise\WaterNut.Data\bin\Debug\Omu.ValueInjecter.pdb
+C:\prism\WaterNut - Enterprise\WaterNut.Data\bin\Debug\System.Linq.Dynamic.dll
+C:\prism\WaterNut - Enterprise\WaterNut.Data\bin\Debug\FluentValidationNA.dll
+C:\prism\WaterNut - Enterprise\WaterNut.Data\bin\Debug\System.Linq.Dynamic.pdb
+C:\prism\WaterNut - Enterprise\WaterNut.Data\bin\Debug\System.Linq.Dynamic.xml
+C:\prism\WaterNut - Enterprise\WaterNut.Data\bin\Debug\FluentValidationNA.xml
+C:\prism\WaterNut - Enterprise\WaterNut.Data\bin\Debug\WaterNut.Business.Entities.dll
+C:\prism\WaterNut - Enterprise\WaterNut.Data\bin\Debug\Core.Common.Data.dll
+C:\prism\WaterNut - Enterprise\WaterNut.Data\bin\Debug\WaterNut.Business.Entities.pdb
+D:\prism\WaterNut - Enterprise\WaterNut.Data\bin\Debug\WaterNut.Data.dll.config
+D:\prism\WaterNut - Enterprise\WaterNut.Data\bin\Debug\WaterNut.Data.dll
+D:\prism\WaterNut - Enterprise\WaterNut.Data\bin\Debug\WaterNut.Data.pdb
+D:\prism\WaterNut - Enterprise\WaterNut.Data\bin\Debug\Core.Common.Data.dll
+D:\prism\WaterNut - Enterprise\WaterNut.Data\bin\Debug\EntityFramework.dll
+D:\prism\WaterNut - Enterprise\WaterNut.Data\bin\Debug\EntityFramework.SqlServer.dll
+D:\prism\WaterNut - Enterprise\WaterNut.Data\bin\Debug\Newtonsoft.Json.dll
+D:\prism\WaterNut - Enterprise\WaterNut.Data\bin\Debug\Omu.ValueInjecter.dll
+D:\prism\WaterNut - Enterprise\WaterNut.Data\bin\Debug\System.ComponentModel.DataAnnotations.dll
+D:\prism\WaterNut - Enterprise\WaterNut.Data\bin\Debug\System.Linq.Dynamic.dll
+D:\prism\WaterNut - Enterprise\WaterNut.Data\bin\Debug\TrackableEntities.Client.dll
+D:\prism\WaterNut - Enterprise\WaterNut.Data\bin\Debug\TrackableEntities.Common.dll
+D:\prism\WaterNut - Enterprise\WaterNut.Data\bin\Debug\TrackableEntities.EF.6.dll
+D:\prism\WaterNut - Enterprise\WaterNut.Data\bin\Debug\WaterNut.Business.Entities.dll
+D:\prism\WaterNut - Enterprise\WaterNut.Data\bin\Debug\WaterNut.Interfaces.dll
+D:\prism\WaterNut - Enterprise\WaterNut.Data\bin\Debug\FluentValidationNA.dll
+D:\prism\WaterNut - Enterprise\WaterNut.Data\bin\Debug\System.Linq.Dynamic.pdb
+D:\prism\WaterNut - Enterprise\WaterNut.Data\bin\Debug\System.Linq.Dynamic.xml
+D:\prism\WaterNut - Enterprise\WaterNut.Data\bin\Debug\TrackableEntities.Client.pdb
+D:\prism\WaterNut - Enterprise\WaterNut.Data\bin\Debug\TrackableEntities.Client.xml
+D:\prism\WaterNut - Enterprise\WaterNut.Data\bin\Debug\TrackableEntities.Common.pdb
+D:\prism\WaterNut - Enterprise\WaterNut.Data\bin\Debug\TrackableEntities.Common.xml
+D:\prism\WaterNut - Enterprise\WaterNut.Data\bin\Debug\TrackableEntities.EF.6.pdb
+D:\prism\WaterNut - Enterprise\WaterNut.Data\bin\Debug\WaterNut.Interfaces.pdb
+D:\prism\WaterNut - Enterprise\WaterNut.Data\bin\Debug\WaterNut.Business.Entities.pdb
+D:\prism\WaterNut - Enterprise\WaterNut.Data\bin\Debug\EntityFramework.xml
+D:\prism\WaterNut - Enterprise\WaterNut.Data\bin\Debug\EntityFramework.SqlServer.xml
+D:\prism\WaterNut - Enterprise\WaterNut.Data\bin\Debug\Newtonsoft.Json.xml
+D:\prism\WaterNut - Enterprise\WaterNut.Data\bin\Debug\Omu.ValueInjecter.pdb
+D:\prism\WaterNut - Enterprise\WaterNut.Data\bin\Debug\Omu.ValueInjecter.xml
+D:\prism\WaterNut - Enterprise\WaterNut.Data\bin\Debug\System.ComponentModel.DataAnnotations.xml
+D:\prism\WaterNut - Enterprise\WaterNut.Data\bin\Debug\FluentValidationNA.xml
+D:\prism\WaterNut - Enterprise\WaterNut.Data\obj\Debug\WaterNut.Data.csprojResolveAssemblyReference.cache
+D:\prism\WaterNut - Enterprise\WaterNut.Data\obj\Debug\WaterNut.Data.dll
+D:\prism\WaterNut - Enterprise\WaterNut.Data\obj\Debug\WaterNut.Data.pdb
+C:\Prism\GitRepositiory\WaterNut\WaterNut - Enterprise\WaterNut.Data\obj\Debug\WaterNut.Data.csprojResolveAssemblyReference.cache
+C:\Prism\GitRepositiory\WaterNut\WaterNut - Enterprise\WaterNut.Data\obj\Debug\WaterNut.Data.dll
+C:\Prism\GitRepositiory\WaterNut\WaterNut - Enterprise\WaterNut.Data\obj\Debug\WaterNut.Data.pdb
+C:\Prism\GitRepositiory\WaterNut\WaterNut - Enterprise\WaterNut.Data\bin\Debug\WaterNut.Data.dll.config
+C:\Prism\GitRepositiory\WaterNut\WaterNut - Enterprise\WaterNut.Data\bin\Debug\WaterNut.Data.dll
+C:\Prism\GitRepositiory\WaterNut\WaterNut - Enterprise\WaterNut.Data\bin\Debug\WaterNut.Data.pdb
+C:\Prism\GitRepositiory\WaterNut\WaterNut - Enterprise\WaterNut.Data\bin\Debug\Core.Common.Data.dll
+C:\Prism\GitRepositiory\WaterNut\WaterNut - Enterprise\WaterNut.Data\bin\Debug\EntityFramework.dll
+C:\Prism\GitRepositiory\WaterNut\WaterNut - Enterprise\WaterNut.Data\bin\Debug\EntityFramework.SqlServer.dll
+C:\Prism\GitRepositiory\WaterNut\WaterNut - Enterprise\WaterNut.Data\bin\Debug\Newtonsoft.Json.dll
+C:\Prism\GitRepositiory\WaterNut\WaterNut - Enterprise\WaterNut.Data\bin\Debug\Omu.ValueInjecter.dll
+C:\Prism\GitRepositiory\WaterNut\WaterNut - Enterprise\WaterNut.Data\bin\Debug\TrackableEntities.Client.dll
+C:\Prism\GitRepositiory\WaterNut\WaterNut - Enterprise\WaterNut.Data\bin\Debug\TrackableEntities.Common.dll
+C:\Prism\GitRepositiory\WaterNut\WaterNut - Enterprise\WaterNut.Data\bin\Debug\TrackableEntities.EF.6.dll
+C:\Prism\GitRepositiory\WaterNut\WaterNut - Enterprise\WaterNut.Data\bin\Debug\WaterNut.Business.Entities.dll
+C:\Prism\GitRepositiory\WaterNut\WaterNut - Enterprise\WaterNut.Data\bin\Debug\WaterNut.Interfaces.dll
+C:\Prism\GitRepositiory\WaterNut\WaterNut - Enterprise\WaterNut.Data\bin\Debug\WaterNut.Interfaces.pdb
+C:\Prism\GitRepositiory\WaterNut\WaterNut - Enterprise\WaterNut.Data\bin\Debug\WaterNut.Business.Entities.pdb
+C:\Prism\GitRepositiory\WaterNut\WaterNut - Enterprise\WaterNut.Data\bin\Debug\EntityFramework.xml
+C:\Prism\GitRepositiory\WaterNut\WaterNut - Enterprise\WaterNut.Data\bin\Debug\EntityFramework.SqlServer.xml
+C:\Prism\GitRepositiory\WaterNut\WaterNut - Enterprise\WaterNut.Data\bin\Debug\Newtonsoft.Json.xml
+C:\Prism\GitRepositiory\WaterNut\WaterNut - Enterprise\WaterNut.Data\bin\Debug\Omu.ValueInjecter.pdb
+C:\Prism\GitRepositiory\WaterNut\WaterNut - Enterprise\WaterNut.Data\bin\Debug\Omu.ValueInjecter.xml
+C:\Prism\GitRepositiory\WaterNut\WaterNut - Enterprise\WaterNut.Data\bin\Debug\TrackableEntities.Client.pdb
+C:\Prism\GitRepositiory\WaterNut\WaterNut - Enterprise\WaterNut.Data\bin\Debug\TrackableEntities.Client.xml
+C:\Prism\GitRepositiory\WaterNut\WaterNut - Enterprise\WaterNut.Data\bin\Debug\TrackableEntities.Common.pdb
+C:\Prism\GitRepositiory\WaterNut\WaterNut - Enterprise\WaterNut.Data\bin\Debug\TrackableEntities.Common.xml
+C:\Prism\GitRepositiory\WaterNut\WaterNut - Enterprise\WaterNut.Data\bin\Debug\TrackableEntities.EF.6.pdb
+C:\Prism\GitRepositiory\WaterNut\WaterNut - Enterprise\WaterNut.Data\bin\Debug\Core.Common.Data.pdb
+C:\Prism\GitRepositiory\WaterNut\WaterNut - Enterprise\WaterNut.Data\bin\Debug\WaterNut.Business.Entities.dll.config
+C:\Prism\GitRepositiory\WaterNut\WaterNut - Enterprise\WaterNut.Data\bin\Debug\Core.Common.Data.dll.config
+C:\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\WaterNut.Data\bin\Debug\WaterNut.Data.dll.config
+C:\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\WaterNut.Data\bin\Debug\WaterNut.Data.dll
+C:\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\WaterNut.Data\bin\Debug\WaterNut.Data.pdb
+C:\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\WaterNut.Data\bin\Debug\Newtonsoft.Json.dll
+C:\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\WaterNut.Data\bin\Debug\Omu.ValueInjecter.dll
+C:\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\WaterNut.Data\bin\Debug\WaterNut.Business.Entities.dll
+C:\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\WaterNut.Data\bin\Debug\WaterNut.Interfaces.dll
+C:\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\WaterNut.Data\bin\Debug\Core.Common.Data.dll
+C:\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\WaterNut.Data\bin\Debug\ParallelExtensionsExtras.dll
+C:\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\WaterNut.Data\bin\Debug\WaterNut.Interfaces.pdb
+C:\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\WaterNut.Data\bin\Debug\WaterNut.Business.Entities.pdb
+C:\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\WaterNut.Data\bin\Debug\WaterNut.Business.Entities.dll.config
+C:\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\WaterNut.Data\bin\Debug\Newtonsoft.Json.xml
+C:\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\WaterNut.Data\bin\Debug\Omu.ValueInjecter.xml
+C:\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\WaterNut.Data\bin\Debug\Core.Common.Data.pdb
+C:\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\WaterNut.Data\bin\Debug\Core.Common.Data.dll.config
+C:\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\WaterNut.Data\bin\Debug\ParallelExtensionsExtras.pdb
+C:\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\WaterNut.Data\obj\Debug\WaterNut.Data.csprojAssemblyReference.cache
+C:\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\WaterNut.Data\obj\Debug\WaterNut.Data.csproj.CoreCompileInputs.cache
+C:\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\WaterNut.Data\obj\Debug\WaterNut.Data.csproj.CopyComplete
+C:\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\WaterNut.Data\obj\Debug\WaterNut.Data.dll
+C:\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\WaterNut.Data\obj\Debug\WaterNut.Data.pdb
+\\VBOXSVR\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\WaterNut.Data\bin\Debug\WaterNut.Data.dll.config
+\\VBOXSVR\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\WaterNut.Data\bin\Debug\WaterNut.Data.dll
+\\VBOXSVR\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\WaterNut.Data\bin\Debug\WaterNut.Data.pdb
+\\VBOXSVR\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\WaterNut.Data\bin\Debug\Newtonsoft.Json.dll
+\\VBOXSVR\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\WaterNut.Data\bin\Debug\Omu.ValueInjecter.dll
+\\VBOXSVR\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\WaterNut.Data\bin\Debug\WaterNut.Business.Entities.dll
+\\VBOXSVR\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\WaterNut.Data\bin\Debug\WaterNut.Interfaces.dll
+\\VBOXSVR\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\WaterNut.Data\bin\Debug\Core.Common.Data.dll
+\\VBOXSVR\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\WaterNut.Data\bin\Debug\ParallelExtensionsExtras.dll
+\\VBOXSVR\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\WaterNut.Data\bin\Debug\WaterNut.Interfaces.pdb
+\\VBOXSVR\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\WaterNut.Data\bin\Debug\WaterNut.Business.Entities.pdb
+\\VBOXSVR\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\WaterNut.Data\bin\Debug\WaterNut.Business.Entities.dll.config
+\\VBOXSVR\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\WaterNut.Data\bin\Debug\Newtonsoft.Json.xml
+\\VBOXSVR\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\WaterNut.Data\bin\Debug\Omu.ValueInjecter.xml
+\\VBOXSVR\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\WaterNut.Data\bin\Debug\Core.Common.Data.pdb
+\\VBOXSVR\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\WaterNut.Data\bin\Debug\Core.Common.Data.dll.config
+\\VBOXSVR\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\WaterNut.Data\bin\Debug\ParallelExtensionsExtras.pdb
+\\VBOXSVR\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\WaterNut.Data\obj\Debug\WaterNut.Data.csprojAssemblyReference.cache
+\\VBOXSVR\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\WaterNut.Data\obj\Debug\WaterNut.Data.csproj.CoreCompileInputs.cache
+\\VBOXSVR\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\WaterNut.Data\obj\Debug\WaterNut.Data.csproj.CopyComplete
+\\VBOXSVR\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\WaterNut.Data\obj\Debug\WaterNut.Data.dll
+\\VBOXSVR\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\WaterNut.Data\obj\Debug\WaterNut.Data.pdb

@@ -1,0 +1,64 @@
+C:\Prism Projects\Quick Inventory Manager\Core.Common\bin\Debug\Core.Common.dll
+C:\Prism Projects\Quick Inventory Manager\Core.Common\bin\Debug\Core.Common.pdb
+C:\Prism Projects\Quick Inventory Manager\Core.Common\bin\Debug\Core.Common.Contracts.dll
+C:\Prism Projects\Quick Inventory Manager\Core.Common\bin\Debug\System.Composition.AttributedModel.dll
+C:\Prism Projects\Quick Inventory Manager\Core.Common\bin\Debug\System.Composition.Convention.dll
+C:\Prism Projects\Quick Inventory Manager\Core.Common\bin\Debug\System.Composition.Hosting.dll
+C:\Prism Projects\Quick Inventory Manager\Core.Common\bin\Debug\System.Composition.Runtime.dll
+C:\Prism Projects\Quick Inventory Manager\Core.Common\bin\Debug\System.Composition.TypedParts.dll
+C:\Prism Projects\Quick Inventory Manager\Core.Common\bin\Debug\Core.Common.Contracts.pdb
+C:\Prism Projects\Quick Inventory Manager\Core.Common\bin\Debug\System.Composition.AttributedModel.xml
+C:\Prism Projects\Quick Inventory Manager\Core.Common\bin\Debug\System.Composition.Convention.xml
+C:\Prism Projects\Quick Inventory Manager\Core.Common\bin\Debug\System.Composition.Hosting.xml
+C:\Prism Projects\Quick Inventory Manager\Core.Common\bin\Debug\System.Composition.Runtime.xml
+C:\Prism Projects\Quick Inventory Manager\Core.Common\bin\Debug\System.Composition.TypedParts.xml
+C:\Prism Projects\Quick Inventory Manager\Core.Common\obj\Debug\Core.Common.csprojResolveAssemblyReference.cache
+C:\Prism Projects\Quick Inventory Manager\Core.Common\obj\Debug\Core.Common.dll
+C:\Prism Projects\Quick Inventory Manager\Core.Common\obj\Debug\Core.Common.pdb
+C:\Prism Projects\Core.Common\Core.Common\bin\Debug\Core.Common.dll
+C:\Prism Projects\Core.Common\Core.Common\bin\Debug\Core.Common.pdb
+C:\Prism Projects\Core.Common\Core.Common\bin\Debug\Core.Common.Contracts.dll
+C:\Prism Projects\Core.Common\Core.Common\bin\Debug\Core.Common.Contracts.pdb
+C:\Prism Projects\Core.Common\Core.Common\obj\Debug\Core.Common.csprojResolveAssemblyReference.cache
+C:\Prism Projects\Core.Common\Core.Common\obj\Debug\Core.Common.dll
+C:\Prism Projects\Core.Common\Core.Common\obj\Debug\Core.Common.pdb
+C:\prism\Core.Common\Core.Common\obj\Debug\Core.Common.dll
+C:\prism\Core.Common\Core.Common\obj\Debug\Core.Common.csprojResolveAssemblyReference.cache
+C:\prism\Core.Common\Core.Common\bin\Debug\Core.Common.dll
+C:\prism\Core.Common\Core.Common\bin\Debug\Core.Common.pdb
+C:\prism\Core.Common\Core.Common\bin\Debug\Core.Common.Contracts.dll
+C:\prism\Core.Common\Core.Common\bin\Debug\System.ComponentModel.Composition.dll
+C:\prism\Core.Common\Core.Common\bin\Debug\System.Composition.AttributedModel.dll
+C:\prism\Core.Common\Core.Common\bin\Debug\System.Composition.Convention.dll
+C:\prism\Core.Common\Core.Common\bin\Debug\System.Composition.Hosting.dll
+C:\prism\Core.Common\Core.Common\bin\Debug\System.Composition.Runtime.dll
+C:\prism\Core.Common\Core.Common\bin\Debug\System.Composition.TypedParts.dll
+C:\prism\Core.Common\Core.Common\bin\Debug\Core.Common.Contracts.pdb
+C:\prism\Core.Common\Core.Common\bin\Debug\System.Composition.AttributedModel.xml
+C:\prism\Core.Common\Core.Common\bin\Debug\System.Composition.Convention.xml
+C:\prism\Core.Common\Core.Common\bin\Debug\System.Composition.Hosting.xml
+C:\prism\Core.Common\Core.Common\bin\Debug\System.Composition.Runtime.xml
+C:\prism\Core.Common\Core.Common\bin\Debug\System.Composition.TypedParts.xml
+C:\prism\Core.Common\Core.Common\obj\Debug\Core.Common.pdb
+C:\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\Core.Common\Core.Common\bin\Debug\Core.Common.dll
+C:\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\Core.Common\Core.Common\bin\Debug\Core.Common.pdb
+C:\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\Core.Common\Core.Common\bin\Debug\Core.Common.Contracts.dll
+C:\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\Core.Common\Core.Common\bin\Debug\System.ComponentModel.Composition.dll
+C:\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\Core.Common\Core.Common\bin\Debug\System.Composition.AttributedModel.dll
+C:\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\Core.Common\Core.Common\bin\Debug\System.Composition.Convention.dll
+C:\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\Core.Common\Core.Common\bin\Debug\System.Composition.Hosting.dll
+C:\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\Core.Common\Core.Common\bin\Debug\System.Composition.Runtime.dll
+C:\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\Core.Common\Core.Common\bin\Debug\System.Composition.TypedParts.dll
+C:\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\Core.Common\Core.Common\bin\Debug\Core.Common.Contracts.pdb
+C:\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\Core.Common\Core.Common\bin\Debug\Core.Common.Contracts.dll.config
+C:\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\Core.Common\Core.Common\obj\Debug\Core.Common.csprojAssemblyReference.cache
+C:\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\Core.Common\Core.Common\obj\Debug\Core.Common.csproj.ResolveComReference.cache
+C:\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\Core.Common\Core.Common\obj\Debug\Core.Common.csproj.CoreCompileInputs.cache
+C:\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\Core.Common\Core.Common\obj\Debug\Core.Common.csproj.CopyComplete
+C:\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\Core.Common\Core.Common\obj\Debug\Core.Common.dll
+C:\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\Core.Common\Core.Common\obj\Debug\Core.Common.pdb
+\\VBOXSVR\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\Core.Common\Core.Common\obj\Debug\Core.Common.csprojAssemblyReference.cache
+\\VBOXSVR\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\Core.Common\Core.Common\obj\Debug\Core.Common.csproj.ResolveComReference.cache
+\\VBOXSVR\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\Core.Common\Core.Common\obj\Debug\Core.Common.csproj.CoreCompileInputs.cache
+\\VBOXSVR\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\Core.Common\Core.Common\obj\Debug\Core.Common.dll
+\\VBOXSVR\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\Core.Common\Core.Common\obj\Debug\Core.Common.pdb

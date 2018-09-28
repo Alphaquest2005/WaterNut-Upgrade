@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="WaterNutDBModelStoreContainer" CdmEntityContainer="CounterPointQS">
+    <EntitySetMapping Name="CounterPointPODetails">
+      <EntityTypeMapping TypeName="WaterNutDBModel.CounterPointPODetails">
+        <MappingFragment StoreEntitySet="CounterPointPODetails">
+          <ScalarProperty Name="PO_NO" ColumnName="PO_NO" />
+          <ScalarProperty Name="SEQ_NO" ColumnName="SEQ_NO" />
+          <ScalarProperty Name="ITEM_NO" ColumnName="ITEM_NO" />
+          <ScalarProperty Name="ORD_QTY" ColumnName="ORD_QTY" />
+          <ScalarProperty Name="ORD_UNIT" ColumnName="ORD_UNIT" />
+          <ScalarProperty Name="ITEM_DESCR" ColumnName="ITEM_DESCR" />
+          <ScalarProperty Name="ORD_COST" ColumnName="ORD_COST" />
+          <ScalarProperty Name="UNIT_WEIGHT" ColumnName="UNIT_WEIGHT" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CounterPointPOs">
+      <EntityTypeMapping TypeName="WaterNutDBModel.CounterPointPOs">
+        <MappingFragment StoreEntitySet="CounterPointPOs">
+          <ScalarProperty Name="Downloaded" ColumnName="Downloaded" />
+          <ScalarProperty Name="PurchaseOrderNo" ColumnName="PO_NO" />
+          <ScalarProperty Name="Date" ColumnName="DATE" />
+          <ScalarProperty Name="LineNumber" ColumnName="LIN_CNT" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CounterPointSales">
+      <EntityTypeMapping TypeName="WaterNutDBModel.CounterPointSales">
+        <MappingFragment StoreEntitySet="CounterPointSales">
+          <ScalarProperty Name="Downloaded" ColumnName="Downloaded" />
+          <ScalarProperty Name="InvoiceNo" ColumnName="INVNO" />
+          <ScalarProperty Name="Date" ColumnName="DATE" />
+          <ScalarProperty Name="TAX_AMT" ColumnName="TAX_AMT" />
+          <ScalarProperty Name="CustomerName" ColumnName="CUSTOMER NAME" />
+          <ScalarProperty Name="LineNumber" ColumnName="LIN_CNT" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CounterPointSalesDetails">
+      <EntityTypeMapping TypeName="WaterNutDBModel.CounterPointSalesDetails">
+        <MappingFragment StoreEntitySet="CounterPointSalesDetails">
+          <ScalarProperty Name="INVNO" ColumnName="INVNO" />
+          <ScalarProperty Name="SEQ_NO" ColumnName="SEQ_NO" />
+          <ScalarProperty Name="ITEM_NO" ColumnName="ITEM_NO" />
+          <ScalarProperty Name="ITEM_DESCR" ColumnName="ITEM_DESCR" />
+          <ScalarProperty Name="QUANTITY" ColumnName="QUANTITY" />
+          <ScalarProperty Name="COST" ColumnName="COST" />
+          <ScalarProperty Name="ACCT_NO" ColumnName="ACCT NO" />
+          <ScalarProperty Name="CUSTOMER_NAME" ColumnName="CUSTOMER NAME" />
+          <ScalarProperty Name="DATE" ColumnName="DATE" />
+          <ScalarProperty Name="TAX_AMT" ColumnName="TAX_AMT" />
+          <ScalarProperty Name="UNIT_WEIGHT" ColumnName="UNIT_WEIGHT" />
+          <ScalarProperty Name="QTY_UNIT" ColumnName="QTY_UNIT" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

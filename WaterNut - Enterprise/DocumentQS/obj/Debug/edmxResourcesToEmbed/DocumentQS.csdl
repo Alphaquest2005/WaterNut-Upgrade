@@ -1,0 +1,126 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="WaterNutDBModel" Alias="Self" p1:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:p1="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="DocumentQS" p1:LazyLoadingEnabled="true">
+    <EntitySet Name="AsycudaDocumentSet" EntityType="WaterNutDBModel.AsycudaDocumentSet" />
+    <EntitySet Name="AsycudaDocument" EntityType="WaterNutDBModel.AsycudaDocument" />
+    <EntitySet Name="AsycudaDocumentItem" EntityType="WaterNutDBModel.AsycudaDocumentItem" />
+    <AssociationSet Name="AsycudaDocumentAsycudaDocumentItem" Association="WaterNutDBModel.AsycudaDocumentAsycudaDocumentItem">
+      <End Role="AsycudaDocument" EntitySet="AsycudaDocument" />
+      <End Role="AsycudaDocumentItem" EntitySet="AsycudaDocumentItem" />
+    </AssociationSet>
+    <AssociationSet Name="AsycudaDocumentSetAsycudaDocument" Association="WaterNutDBModel.AsycudaDocumentSetAsycudaDocument">
+      <End Role="AsycudaDocumentSet" EntitySet="AsycudaDocumentSet" />
+      <End Role="AsycudaDocument" EntitySet="AsycudaDocument" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="AsycudaDocumentSet">
+    <Key>
+      <PropertyRef Name="AsycudaDocumentSetId" />
+    </Key>
+    <Property Type="Int32" Name="AsycudaDocumentSetId" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="Declarant_Reference_Number" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="Double" Name="Exchange_Rate" />
+    <Property Type="Int32" Name="Customs_ProcedureId" />
+    <Property Type="String" Name="Country_of_origin_code" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Currency_Code" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="Document_Type_Id" />
+    <Property Type="String" Name="Description" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="ExportTemplate_Id" />
+    <Property Type="String" Name="Manifest_Number" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="BLNumber" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="EntryTimeStamp" Precision="3" />
+    <Property Type="Int32" Name="StartingFileCount" />
+    <Property Type="Int32" Name="WeightApportionMethod" />
+    <Property Type="Int32" Name="FreightApportionMethod" />
+    <NavigationProperty Name="AsycudaDocuments" Relationship="WaterNutDBModel.AsycudaDocumentSetAsycudaDocument" FromRole="AsycudaDocumentSet" ToRole="AsycudaDocument" />
+  </EntityType>
+  <EntityType Name="AsycudaDocument">
+    <Key>
+      <PropertyRef Name="ASYCUDA_Id" />
+    </Key>
+    <Property Type="Int32" Name="ASYCUDA_Id" Nullable="false" />
+    <Property Type="String" Name="id" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="CNumber" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="RegistrationDate" Precision="3" />
+    <Property Type="Boolean" Name="IsManuallyAssessed" />
+    <Property Type="String" Name="ReferenceNumber" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="DateTime" Name="EffectiveRegistrationDate" Precision="3" />
+    <Property Type="Int32" Name="AsycudaDocumentSetId" />
+    <Property Type="Boolean" Name="DoNotAllocate" />
+    <Property Type="Boolean" Name="AutoUpdate" />
+    <Property Type="String" Name="BLNumber" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Description" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Type_of_declaration" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Declaration_gen_procedure_code" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Extended_customs_procedure" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="AsycudaDocumentItems" Relationship="WaterNutDBModel.AsycudaDocumentAsycudaDocumentItem" FromRole="AsycudaDocument" ToRole="AsycudaDocumentItem" />
+    <NavigationProperty Name="AsycudaDocumentSet" Relationship="WaterNutDBModel.AsycudaDocumentSetAsycudaDocument" FromRole="AsycudaDocument" ToRole="AsycudaDocumentSet" />
+    <Property Type="String" Name="Type" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="Document_Type_Id" />
+    <Property Type="Int32" Name="Customs_ProcedureId" />
+    <Property Type="String" Name="Country_first_destination" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Currency_code" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="Single" Name="Currency_rate" />
+    <Property Type="String" Name="Manifest_reference_number" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Customs_clearance_office_code" MaxLength="Max" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="AsycudaDocumentItem">
+    <Key>
+      <PropertyRef Name="Item_Id" />
+      <PropertyRef Name="TariffCode" />
+      <PropertyRef Name="Total_CIF_itm" />
+      <PropertyRef Name="Statistical_value" />
+    </Key>
+    <Property Type="Int32" Name="Item_Id" Nullable="false" />
+    <Property Type="Int32" Name="ASYCUDA_Id" Nullable="false" />
+    <Property Type="Int32" Name="EntryDataDetailsId" />
+    <Property Type="Int32" Name="LineNumber" Nullable="false" />
+    <Property Type="Boolean" Name="IsAssessed" />
+    <Property Type="Boolean" Name="DoNotAllocate" />
+    <Property Type="Boolean" Name="DoNotEX" />
+    <Property Type="Boolean" Name="AttributeOnlyAllocation" />
+    <Property Type="String" Name="Description_of_goods" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Commercial_Description" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Type="Single" Name="Gross_weight_itm" Nullable="false" />
+    <Property Type="Single" Name="Net_weight_itm" Nullable="false" />
+    <Property Type="Single" Name="Item_price" Nullable="false" />
+    <Property Type="String" Name="Suppplementary_unit_code" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="AsycudaDocument" Relationship="WaterNutDBModel.AsycudaDocumentAsycudaDocumentItem" FromRole="AsycudaDocumentItem" ToRole="AsycudaDocument" />
+    <Property Type="String" Name="ItemNumber" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="TariffCode" Nullable="false" MaxLength="8" FixedLength="false" Unicode="false" />
+    <Property Type="Boolean" Name="TariffCodeLicenseRequired" />
+    <Property Type="Boolean" Name="TariffCategoryLicenseRequired" />
+    <Property Type="String" Name="TariffCodeDescription" MaxLength="999" FixedLength="false" Unicode="false" />
+    <Property Type="Decimal" Name="ItemQuantity" Precision="18" Scale="0" />
+    <Property Type="Double" Name="DutyLiability" />
+    <Property Type="Single" Name="Total_CIF_itm" Nullable="false" />
+    <Property Type="Single" Name="Freight" />
+    <Property Type="Single" Name="Statistical_value" Nullable="false" />
+    <Property Type="Double" Name="DPQtyAllocated" />
+    <Property Type="Double" Name="DFQtyAllocated" />
+  </EntityType>
+  <Association Name="AsycudaDocumentAsycudaDocumentItem">
+    <End Type="WaterNutDBModel.AsycudaDocument" Role="AsycudaDocument" Multiplicity="1" />
+    <End Type="WaterNutDBModel.AsycudaDocumentItem" Role="AsycudaDocumentItem" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AsycudaDocument">
+        <PropertyRef Name="ASYCUDA_Id" />
+      </Principal>
+      <Dependent Role="AsycudaDocumentItem">
+        <PropertyRef Name="ASYCUDA_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="AsycudaDocumentSetAsycudaDocument">
+    <End Type="WaterNutDBModel.AsycudaDocumentSet" Role="AsycudaDocumentSet" Multiplicity="0..1" />
+    <End Type="WaterNutDBModel.AsycudaDocument" Role="AsycudaDocument" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AsycudaDocumentSet">
+        <PropertyRef Name="AsycudaDocumentSetId" />
+      </Principal>
+      <Dependent Role="AsycudaDocument">
+        <PropertyRef Name="AsycudaDocumentSetId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

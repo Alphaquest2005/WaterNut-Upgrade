@@ -1,0 +1,60 @@
+C:\Prism Projects\Core.Common\Core.Common.UI\bin\Release\Core.Common.UI.dll
+C:\Prism Projects\Core.Common\Core.Common.UI\bin\Release\Core.Common.UI.pdb
+C:\Prism Projects\Core.Common\Core.Common.UI\bin\Release\Microsoft.Expression.Controls.dll
+C:\Prism Projects\Core.Common\Core.Common.UI\bin\Release\Microsoft.Expression.Interactions.dll
+C:\Prism Projects\Core.Common\Core.Common.UI\bin\Release\SimpleMvvmToolkit-Common.dll
+C:\Prism Projects\Core.Common\Core.Common.UI\bin\Release\SimpleMvvmToolkit-WPF.dll
+C:\Prism Projects\Core.Common\Core.Common.UI\bin\Release\System.Windows.Interactivity.dll
+C:\Prism Projects\Core.Common\Core.Common.UI\bin\Release\Microsoft.Expression.Drawing.dll
+C:\Prism Projects\Core.Common\Core.Common.UI\bin\Release\Microsoft.Expression.Interactions.xml
+C:\Prism Projects\Core.Common\Core.Common.UI\bin\Release\SimpleMvvmToolkit-Common.pdb
+C:\Prism Projects\Core.Common\Core.Common.UI\bin\Release\SimpleMvvmToolkit-Common.xml
+C:\Prism Projects\Core.Common\Core.Common.UI\bin\Release\SimpleMvvmToolkit-WPF.pdb
+C:\Prism Projects\Core.Common\Core.Common.UI\bin\Release\SimpleMvvmToolkit-WPF.xml
+C:\Prism Projects\Core.Common\Core.Common.UI\bin\Release\System.Windows.Interactivity.xml
+C:\Prism Projects\Core.Common\Core.Common.UI\bin\Release\de\Microsoft.Expression.Controls.resources.dll
+C:\Prism Projects\Core.Common\Core.Common.UI\bin\Release\es\Microsoft.Expression.Controls.resources.dll
+C:\Prism Projects\Core.Common\Core.Common.UI\bin\Release\fr\Microsoft.Expression.Controls.resources.dll
+C:\Prism Projects\Core.Common\Core.Common.UI\bin\Release\it\Microsoft.Expression.Controls.resources.dll
+C:\Prism Projects\Core.Common\Core.Common.UI\bin\Release\ja\Microsoft.Expression.Controls.resources.dll
+C:\Prism Projects\Core.Common\Core.Common.UI\bin\Release\ko\Microsoft.Expression.Controls.resources.dll
+C:\Prism Projects\Core.Common\Core.Common.UI\bin\Release\ru\Microsoft.Expression.Controls.resources.dll
+C:\Prism Projects\Core.Common\Core.Common.UI\bin\Release\zh-Hans\Microsoft.Expression.Controls.resources.dll
+C:\Prism Projects\Core.Common\Core.Common.UI\bin\Release\zh-Hant\Microsoft.Expression.Controls.resources.dll
+C:\Prism Projects\Core.Common\Core.Common.UI\bin\Release\de\Microsoft.Expression.Drawing.resources.dll
+C:\Prism Projects\Core.Common\Core.Common.UI\bin\Release\es\Microsoft.Expression.Drawing.resources.dll
+C:\Prism Projects\Core.Common\Core.Common.UI\bin\Release\fr\Microsoft.Expression.Drawing.resources.dll
+C:\Prism Projects\Core.Common\Core.Common.UI\bin\Release\it\Microsoft.Expression.Drawing.resources.dll
+C:\Prism Projects\Core.Common\Core.Common.UI\bin\Release\ja\Microsoft.Expression.Drawing.resources.dll
+C:\Prism Projects\Core.Common\Core.Common.UI\bin\Release\ko\Microsoft.Expression.Drawing.resources.dll
+C:\Prism Projects\Core.Common\Core.Common.UI\bin\Release\ru\Microsoft.Expression.Drawing.resources.dll
+C:\Prism Projects\Core.Common\Core.Common.UI\bin\Release\zh-Hans\Microsoft.Expression.Drawing.resources.dll
+C:\Prism Projects\Core.Common\Core.Common.UI\bin\Release\zh-Hant\Microsoft.Expression.Drawing.resources.dll
+C:\Prism Projects\Core.Common\Core.Common.UI\obj\Release\Core.Common.UI.csprojResolveAssemblyReference.cache
+C:\Prism Projects\Core.Common\Core.Common.UI\obj\Release\Core.Common.UI.dll
+C:\Prism Projects\Core.Common\Core.Common.UI\obj\Release\Core.Common.UI.pdb
+C:\prism\Core.Common\Core.Common.UI\bin\Release\Core.Common.UI.dll
+C:\prism\Core.Common\Core.Common.UI\bin\Release\Core.Common.UI.pdb
+C:\prism\Core.Common\Core.Common.UI\bin\Release\Core.Common.dll
+C:\prism\Core.Common\Core.Common.UI\bin\Release\SimpleMvvmToolkit-Common.dll
+C:\prism\Core.Common\Core.Common.UI\bin\Release\SimpleMvvmToolkit-WPF.dll
+C:\prism\Core.Common\Core.Common.UI\bin\Release\Core.Common.Contracts.dll
+C:\prism\Core.Common\Core.Common.UI\bin\Release\Core.Common.pdb
+C:\prism\Core.Common\Core.Common.UI\bin\Release\SimpleMvvmToolkit-Common.pdb
+C:\prism\Core.Common\Core.Common.UI\bin\Release\SimpleMvvmToolkit-Common.xml
+C:\prism\Core.Common\Core.Common.UI\bin\Release\SimpleMvvmToolkit-WPF.pdb
+C:\prism\Core.Common\Core.Common.UI\bin\Release\SimpleMvvmToolkit-WPF.xml
+C:\prism\Core.Common\Core.Common.UI\bin\Release\Core.Common.Contracts.pdb
+C:\prism\Core.Common\Core.Common.UI\obj\Release\Core.Common.UI.csprojResolveAssemblyReference.cache
+C:\prism\Core.Common\Core.Common.UI\obj\Release\Virtualization\LoadingAnimationBlock.baml
+C:\prism\Core.Common\Core.Common.UI\obj\Release\Virtualization\LoadingAnimation.g.cs
+C:\prism\Core.Common\Core.Common.UI\obj\Release\Virtualization\LoadingAnimationBlock.g.cs
+C:\prism\Core.Common\Core.Common.UI\obj\Release\GeneratedInternalTypeHelper.g.cs
+C:\prism\Core.Common\Core.Common.UI\obj\Release\Core.Common.UI_MarkupCompile.cache
+C:\prism\Core.Common\Core.Common.UI\obj\Release\Core.Common.UI_MarkupCompile.lref
+C:\prism\Core.Common\Core.Common.UI\obj\Release\Virtualization\LoadingAnimation.baml
+C:\prism\Core.Common\Core.Common.UI\obj\Release\Core.Common.UI.g.resources
+C:\prism\Core.Common\Core.Common.UI\obj\Release\Core.Common.UI.UIResources.resources
+C:\prism\Core.Common\Core.Common.UI\obj\Release\Core.Common.UI.csproj.GenerateResource.Cache
+C:\prism\Core.Common\Core.Common.UI\obj\Release\Core.Common.UI.dll
+C:\prism\Core.Common\Core.Common.UI\obj\Release\Core.Common.UI.pdb

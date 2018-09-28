@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="WaterNutDBModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityContainer Name="WaterNutDBModelStoreContainer">
+    <EntitySet Name="EntryDataDetailsEX" EntityType="WaterNutDBModel.Store.EntryDataDetailsEX" store:Type="Views" store:Schema="dbo" store:Name="EntryDataDetailsEX">
+      <DefiningQuery>SELECT 
+      [EntryDataDetailsEX].[EntryDataDetailsId] AS [EntryDataDetailsId], 
+      [EntryDataDetailsEX].[TariffCode] AS [TariffCode], 
+      [EntryDataDetailsEX].[CNumber] AS [CNumber], 
+      [EntryDataDetailsEX].[CLineNumber] AS [CLineNumber], 
+      [EntryDataDetailsEX].[Downloaded] AS [Downloaded]
+      FROM [dbo].[EntryDataDetailsEX] AS [EntryDataDetailsEX]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="EntryDataEx" EntityType="WaterNutDBModel.Store.EntryDataEx" store:Type="Views" store:Schema="dbo" store:Name="EntryDataEx">
+      <DefiningQuery>SELECT 
+      [EntryDataEx].[EntryDataDetailsId] AS [EntryDataDetailsId], 
+      [EntryDataEx].[EntryDataId] AS [EntryDataId], 
+      [EntryDataEx].[CNumber] AS [CNumber], 
+      [EntryDataEx].[RegistrationDate] AS [RegistrationDate], 
+      [EntryDataEx].[EntryDataDate] AS [EntryDataDate], 
+      [EntryDataEx].[AsycudaDocumentSetId] AS [AsycudaDocumentSetId], 
+      [EntryDataEx].[Type] AS [Type]
+      FROM [dbo].[EntryDataEx] AS [EntryDataEx]</DefiningQuery>
+    </EntitySet>
+  </EntityContainer>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'WaterNutDB-Enterprise.dbo.EntryDataDetailsEX' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="EntryDataDetailsEX">
+    <Key>
+      <PropertyRef Name="EntryDataDetailsId" />
+    </Key>
+    <Property Name="EntryDataDetailsId" Type="int" Nullable="false" />
+    <Property Name="TariffCode" Type="varchar" MaxLength="8" />
+    <Property Name="CNumber" Type="varchar(max)" />
+    <Property Name="CLineNumber" Type="int" />
+    <Property Name="Downloaded" Type="bit" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'WaterNutDB-Enterprise.dbo.EntryDataEx' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="EntryDataEx">
+    <Key>
+      <PropertyRef Name="EntryDataDetailsId" />
+      <PropertyRef Name="EntryDataId" />
+      <PropertyRef Name="EntryDataDate" />
+      <PropertyRef Name="AsycudaDocumentSetId" />
+    </Key>
+    <Property Name="EntryDataDetailsId" Type="int" Nullable="false" />
+    <Property Name="EntryDataId" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="CNumber" Type="varchar(max)" />
+    <Property Name="RegistrationDate" Type="datetime" />
+    <Property Name="EntryDataDate" Type="datetime" Nullable="false" />
+    <Property Name="AsycudaDocumentSetId" Type="int" Nullable="false" />
+    <Property Name="Type" Type="varchar" MaxLength="5" />
+  </EntityType>
+</Schema>

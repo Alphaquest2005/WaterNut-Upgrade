@@ -1,0 +1,10 @@
+D:\Users\joeseph\Downloads\EFAutoRefresh2012\EFAutoRefresh2012\EFAutoRefresh\bin\Debug\EFAutoRefresh.dll.config
+D:\Users\joeseph\Downloads\EFAutoRefresh2012\EFAutoRefresh2012\EFAutoRefresh\bin\Debug\EFAutoRefresh.dll
+D:\Users\joeseph\Downloads\EFAutoRefresh2012\EFAutoRefresh2012\EFAutoRefresh\bin\Debug\EFAutoRefresh.pdb
+D:\Users\joeseph\Downloads\EFAutoRefresh2012\EFAutoRefresh2012\EFAutoRefresh\bin\Debug\EntityFramework.dll
+D:\Users\joeseph\Downloads\EFAutoRefresh2012\EFAutoRefresh2012\EFAutoRefresh\bin\Debug\EntityFramework.xml
+D:\Users\joeseph\Downloads\EFAutoRefresh2012\EFAutoRefresh2012\EFAutoRefresh\obj\Debug\EFAutoRefresh2012.csprojResolveAssemblyReference.cache
+D:\Users\joeseph\Downloads\EFAutoRefresh2012\EFAutoRefresh2012\EFAutoRefresh\obj\Debug\EFAutoRefresh.Properties.Resources.resources
+D:\Users\joeseph\Downloads\EFAutoRefresh2012\EFAutoRefresh2012\EFAutoRefresh\obj\Debug\EFAutoRefresh2012.csproj.GenerateResource.Cache
+D:\Users\joeseph\Downloads\EFAutoRefresh2012\EFAutoRefresh2012\EFAutoRefresh\obj\Debug\EFAutoRefresh.dll
+D:\Users\joeseph\Downloads\EFAutoRefresh2012\EFAutoRefresh2012\EFAutoRefresh\obj\Debug\EFAutoRefresh.pdb

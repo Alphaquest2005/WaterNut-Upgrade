@@ -1,0 +1,45 @@
+C:\Prism Projects\Water World POSAI\WaterNut\Common\bin\Debug\Common.exe.config
+C:\Prism Projects\Water World POSAI\WaterNut\Common\bin\Debug\Common.exe
+C:\Prism Projects\Water World POSAI\WaterNut\Common\bin\Debug\Common.pdb
+C:\Prism Projects\Water World POSAI\WaterNut\Common\obj\Debug\MainWindow.baml
+C:\Prism Projects\Water World POSAI\WaterNut\Common\obj\Debug\MainWindow.g.cs
+C:\Prism Projects\Water World POSAI\WaterNut\Common\obj\Debug\App.g.cs
+C:\Prism Projects\Water World POSAI\WaterNut\Common\obj\Debug\Common_MarkupCompile.cache
+C:\Prism Projects\Water World POSAI\WaterNut\Common\obj\Debug\Common.g.resources
+C:\Prism Projects\Water World POSAI\WaterNut\Common\obj\Debug\InsightPresentationLayer.Properties.Resources.resources
+C:\Prism Projects\Water World POSAI\WaterNut\Common\obj\Debug\InsightPresentationLayer.csproj.GenerateResource.Cache
+C:\Prism Projects\Water World POSAI\WaterNut\Common\obj\Debug\Common.exe
+C:\Prism Projects\Water World POSAI\WaterNut\Common\obj\Debug\Common.pdb
+C:\Prism Projects\Water World POSAI\WaterNut\Common\obj\Debug\InsightPresentationLayer.csprojResolveAssemblyReference.cache
+C:\Prism Projects\WaterNut\Common\bin\Debug\Common.exe.config
+C:\Prism Projects\WaterNut\Common\bin\Debug\Common.exe
+C:\Prism Projects\WaterNut\Common\bin\Debug\Common.pdb
+C:\Prism Projects\WaterNut\Common\bin\Debug\EntityFramework.dll
+C:\Prism Projects\WaterNut\Common\bin\Debug\EntityFramework.xml
+C:\Prism Projects\WaterNut\Common\obj\Debug\MainWindow.baml
+C:\Prism Projects\WaterNut\Common\obj\Debug\MainWindow.g.cs
+C:\Prism Projects\WaterNut\Common\obj\Debug\App.g.cs
+C:\Prism Projects\WaterNut\Common\obj\Debug\Common_MarkupCompile.cache
+C:\Prism Projects\WaterNut\Common\obj\Debug\Common.g.resources
+C:\Prism Projects\WaterNut\Common\obj\Debug\InsightPresentationLayer.Properties.Resources.resources
+C:\Prism Projects\WaterNut\Common\obj\Debug\InsightPresentationLayer.csproj.GenerateResource.Cache
+C:\Prism Projects\WaterNut\Common\obj\Debug\Common.exe
+C:\Prism Projects\WaterNut\Common\obj\Debug\Common.pdb
+C:\Prism Projects\WaterNut\Common\obj\Debug\InsightPresentationLayer.csprojResolveAssemblyReference.cache
+C:\Prism Projects\WaterNut - Enterprise\Common\bin\Debug\Common.exe.config
+C:\Prism Projects\WaterNut - Enterprise\Common\bin\Debug\Common.exe
+C:\Prism Projects\WaterNut - Enterprise\Common\bin\Debug\Common.pdb
+C:\Prism Projects\WaterNut - Enterprise\Common\bin\Debug\EntityFramework.dll
+C:\Prism Projects\WaterNut - Enterprise\Common\bin\Debug\EntityFramework.xml
+C:\Prism Projects\WaterNut - Enterprise\Common\obj\Debug\MainWindow.baml
+C:\Prism Projects\WaterNut - Enterprise\Common\obj\Debug\MainWindow.g.cs
+C:\Prism Projects\WaterNut - Enterprise\Common\obj\Debug\App.g.cs
+C:\Prism Projects\WaterNut - Enterprise\Common\obj\Debug\Common_MarkupCompile.cache
+C:\Prism Projects\WaterNut - Enterprise\Common\obj\Debug\Common.g.resources
+C:\Prism Projects\WaterNut - Enterprise\Common\obj\Debug\InsightPresentationLayer.Properties.Resources.resources
+C:\Prism Projects\WaterNut - Enterprise\Common\obj\Debug\InsightPresentationLayer.csproj.GenerateResource.Cache
+C:\Prism Projects\WaterNut - Enterprise\Common\obj\Debug\Common.exe
+C:\Prism Projects\WaterNut - Enterprise\Common\obj\Debug\Common.pdb
+C:\Prism Projects\WaterNut - Enterprise\Common\bin\Debug\EntityFramework.SqlServer.dll
+C:\Prism Projects\WaterNut - Enterprise\Common\bin\Debug\EntityFramework.SqlServer.xml
+C:\Prism Projects\WaterNut - Enterprise\Common\obj\Debug\InsightPresentationLayer.csprojResolveAssemblyReference.cache

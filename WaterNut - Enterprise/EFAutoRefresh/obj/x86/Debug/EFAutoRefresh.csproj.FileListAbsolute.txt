@@ -1,0 +1,7 @@
+C:\Prism Projects\WaterNut\EFAutoRefresh\bin\Debug\EFAutoRefresh.dll
+C:\Prism Projects\WaterNut\EFAutoRefresh\bin\Debug\EFAutoRefresh.pdb
+C:\Prism Projects\WaterNut\EFAutoRefresh\obj\x86\Debug\EFAutoRefresh.csprojResolveAssemblyReference.cache
+C:\Prism Projects\WaterNut\EFAutoRefresh\obj\x86\Debug\EFAutoRefresh.Properties.Resources.resources
+C:\Prism Projects\WaterNut\EFAutoRefresh\obj\x86\Debug\EFAutoRefresh.csproj.GenerateResource.Cache
+C:\Prism Projects\WaterNut\EFAutoRefresh\obj\x86\Debug\EFAutoRefresh.dll
+C:\Prism Projects\WaterNut\EFAutoRefresh\obj\x86\Debug\EFAutoRefresh.pdb

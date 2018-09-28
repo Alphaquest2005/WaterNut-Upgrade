@@ -1,0 +1,6 @@
+C:\prism\Core.Common\ExpressionSerialization\bin\Debug\ExpressionSerialization.dll.config
+C:\prism\Core.Common\ExpressionSerialization\bin\Debug\ExpressionSerialization.dll
+C:\prism\Core.Common\ExpressionSerialization\bin\Debug\ExpressionSerialization.pdb
+C:\prism\Core.Common\ExpressionSerialization\obj\Debug\ExpressionSerialization.csprojResolveAssemblyReference.cache
+C:\prism\Core.Common\ExpressionSerialization\obj\Debug\ExpressionSerialization.dll
+C:\prism\Core.Common\ExpressionSerialization\obj\Debug\ExpressionSerialization.pdb

@@ -1,0 +1,33 @@
+C:\Prism Projects\WaterNut - Enterprise\InventoryDS\bin\Debug\InventoryDS.dll.config
+C:\Prism Projects\WaterNut - Enterprise\InventoryDS\bin\Debug\InventoryDS.dll
+C:\Prism Projects\WaterNut - Enterprise\InventoryDS\bin\Debug\InventoryDS.pdb
+C:\Prism Projects\WaterNut - Enterprise\InventoryDS\bin\Debug\EntityFramework.dll
+C:\Prism Projects\WaterNut - Enterprise\InventoryDS\bin\Debug\EntityFramework.xml
+C:\Prism Projects\WaterNut - Enterprise\InventoryDS\obj\Debug\InventoryDS.dll
+C:\Prism Projects\WaterNut - Enterprise\InventoryDS\obj\Debug\InventoryDS.pdb
+C:\Prism Projects\WaterNut - Enterprise\InventoryDS\obj\Debug\InventoryDS.csprojResolveAssemblyReference.cache
+C:\prism\WaterNut - Enterprise\InventoryDS\bin\Debug\InventoryDS.dll.config
+C:\prism\WaterNut - Enterprise\InventoryDS\bin\Debug\InventoryDS.dll
+C:\prism\WaterNut - Enterprise\InventoryDS\bin\Debug\InventoryDS.pdb
+C:\prism\WaterNut - Enterprise\InventoryDS\obj\Debug\InventoryDS.dll
+C:\prism\WaterNut - Enterprise\InventoryDS\obj\Debug\InventoryDS.pdb
+C:\prism\WaterNut - Enterprise\InventoryDS\obj\Debug\InventoryDS.csprojResolveAssemblyReference.cache
+D:\prism\WaterNut - Enterprise\InventoryDS\bin\Debug\InventoryDS.dll.config
+D:\prism\WaterNut - Enterprise\InventoryDS\bin\Debug\InventoryDS.dll
+D:\prism\WaterNut - Enterprise\InventoryDS\bin\Debug\InventoryDS.pdb
+D:\prism\WaterNut - Enterprise\InventoryDS\obj\Debug\InventoryDS.csprojResolveAssemblyReference.cache
+D:\prism\WaterNut - Enterprise\InventoryDS\obj\Debug\InventoryDS.dll
+D:\prism\WaterNut - Enterprise\InventoryDS\obj\Debug\InventoryDS.pdb
+C:\Prism\GitRepositiory\WaterNut\WaterNut - Enterprise\InventoryDS\bin\Debug\InventoryDS.dll.config
+C:\Prism\GitRepositiory\WaterNut\WaterNut - Enterprise\InventoryDS\bin\Debug\InventoryDS.dll
+C:\Prism\GitRepositiory\WaterNut\WaterNut - Enterprise\InventoryDS\bin\Debug\InventoryDS.pdb
+C:\Prism\GitRepositiory\WaterNut\WaterNut - Enterprise\InventoryDS\obj\Debug\InventoryDS.csprojResolveAssemblyReference.cache
+C:\Prism\GitRepositiory\WaterNut\WaterNut - Enterprise\InventoryDS\obj\Debug\InventoryDS.dll
+C:\Prism\GitRepositiory\WaterNut\WaterNut - Enterprise\InventoryDS\obj\Debug\InventoryDS.pdb
+C:\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\InventoryDS\bin\Debug\InventoryDS.dll.config
+C:\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\InventoryDS\bin\Debug\InventoryDS.dll
+C:\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\InventoryDS\bin\Debug\InventoryDS.pdb
+C:\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\InventoryDS\obj\Debug\InventoryDS.csproj.CoreCompileInputs.cache
+C:\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\InventoryDS\obj\Debug\InventoryDS.dll
+C:\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\InventoryDS\obj\Debug\InventoryDS.pdb
+C:\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\InventoryDS\obj\Debug\InventoryDS.csprojAssemblyReference.cache

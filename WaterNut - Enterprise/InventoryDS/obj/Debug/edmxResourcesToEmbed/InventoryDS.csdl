@@ -1,0 +1,218 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Model" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="InventoryItem">
+    <Key>
+      <PropertyRef Name="ItemNumber" />
+    </Key>
+    <Property Name="ItemNumber" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false">
+      <a:ImplementsProperty xmlns:a="http://schemas.tempuri.com/ImplementsProperty">IInventoryItem.ItemNumber</a:ImplementsProperty>
+    </Property>
+    <Property Name="Description" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false">
+      <a:ImplementsProperty xmlns:a="http://schemas.tempuri.com/ImplementsProperty">IInventoryItem.Description</a:ImplementsProperty>
+    </Property>
+    <Property Name="Category" Type="String" MaxLength="60" FixedLength="false" Unicode="true" />
+    <Property Name="TariffCode" Type="String" MaxLength="8" FixedLength="false" Unicode="false">
+      <a:ImplementsProperty xmlns:a="http://schemas.tempuri.com/ImplementsProperty">IInventoryItem.TariffCode</a:ImplementsProperty>
+    </Property>
+    <Property Name="EntryTimeStamp" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="TariffCodes" Relationship="Self.FK_InventoryItems_TariffCodes" FromRole="InventoryItems" ToRole="TariffCodes">
+      <a:ImplementsNavigationProperty xmlns:a="http://schemas.tempuri.com/ImplementsNavigationProperty" />
+    </NavigationProperty>
+    <NavigationProperty Name="InventoryItemAlias" Relationship="Model.FK_InventoryItemAlias_InventoryItems" FromRole="InventoryItem" ToRole="InventoryItemAlia" />
+    <Property Name="Quantity" Type="Int32" />
+    <NavigationProperty Name="InventoryAsycudaMappings" Relationship="Model.FK_InventoryAsycudaMapping_InventoryItems" FromRole="InventoryItem" ToRole="InventoryAsycudaMapping" />
+    <a:MainEntityProperty xmlns:a="http://schemas.tempuri.com/MainEntityProperty">True</a:MainEntityProperty>
+    <a:DomainInterfaceProperty xmlns:a="http://schemas.tempuri.com/DomainInterfaceProperty">IInventoryItem,ITariffUnit</a:DomainInterfaceProperty>
+  </EntityType>
+  <EntityType Name="TariffCategory">
+    <Key>
+      <PropertyRef Name="TariffCategoryCode" />
+    </Key>
+    <Property Name="TariffCategoryCode" Type="String" MaxLength="8" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Description" Type="String" MaxLength="999" FixedLength="false" Unicode="false" />
+    <Property Name="ParentTariffCategoryCode" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+    <Property Name="LicenseRequired" Type="Boolean" />
+    <NavigationProperty Name="TariffCodes" Relationship="Self.FK_TariffCodes_TariffCategory" FromRole="TariffCategory" ToRole="TariffCodes" />
+    <NavigationProperty Name="TariffCategoryCodeSuppUnits" Relationship="Model.FK_TariffCategoryCodeSuppUnit_TariffCategory" FromRole="TariffCategory" ToRole="TariffCategoryCodeSuppUnit" />
+    <a:DomainInterfaceProperty xmlns:a="http://schemas.tempuri.com/DomainInterfaceProperty" />
+  </EntityType>
+  <EntityType Name="TariffCode">
+    <Key>
+      <PropertyRef Name="TariffCodeName" />
+    </Key>
+    <Property Name="TariffCodeName" Type="String" MaxLength="8" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Description" Type="String" MaxLength="999" FixedLength="false" Unicode="false" />
+    <Property Name="RateofDuty" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="EnvironmentalLevy" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="CustomsServiceCharge" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="ExciseTax" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="VatRate" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="PetrolTax" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Units" Type="String" MaxLength="999" FixedLength="false" Unicode="true" />
+    <Property Name="SiteRev3" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="TariffCategoryCode" Type="String" MaxLength="8" FixedLength="false" Unicode="false" />
+    <Property Name="LicenseRequired" Type="Boolean" />
+    <NavigationProperty Name="InventoryItems" Relationship="Self.FK_InventoryItems_TariffCodes" FromRole="TariffCodes" ToRole="InventoryItems" />
+    <NavigationProperty Name="TariffCategory" Relationship="Self.FK_TariffCodes_TariffCategory" FromRole="TariffCodes" ToRole="TariffCategory">
+      <a:ImplementsNavigationProperty xmlns:a="http://schemas.tempuri.com/ImplementsNavigationProperty" />
+    </NavigationProperty>
+    <Property Name="Invalid" Type="Boolean" />
+    <a:DomainInterfaceProperty xmlns:a="http://schemas.tempuri.com/DomainInterfaceProperty" />
+  </EntityType>
+  <EntityType Name="TariffSupUnitLkp">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="SuppUnitCode2" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false">
+      <a:ImplementsProperty xmlns:a="http://schemas.tempuri.com/ImplementsProperty">ITariffSupUnitLkp.SuppUnitCode2</a:ImplementsProperty>
+    </Property>
+    <Property Name="SuppUnitName2" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="SuppQty" Type="Double" Nullable="false">
+      <a:ImplementsProperty xmlns:a="http://schemas.tempuri.com/ImplementsProperty">ITariffSupUnitLkp.SuppQty</a:ImplementsProperty>
+    </Property>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <NavigationProperty Name="TariffCategoryCodeSuppUnits" Relationship="Model.FK_TariffCategoryCodeSuppUnit_TariffSupUnitLkps" FromRole="TariffSupUnitLkp" ToRole="TariffCategoryCodeSuppUnit" />
+    <a:DomainInterfaceProperty xmlns:a="http://schemas.tempuri.com/DomainInterfaceProperty">ITariffSupUnitLkp</a:DomainInterfaceProperty>
+  </EntityType>
+  <Association Name="FK_InventoryItems_TariffCodes">
+    <End Role="TariffCodes" Type="Self.TariffCode" Multiplicity="0..1" />
+    <End Role="InventoryItems" Type="Self.InventoryItem" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TariffCodes">
+        <PropertyRef Name="TariffCodeName" />
+      </Principal>
+      <Dependent Role="InventoryItems">
+        <PropertyRef Name="TariffCode" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TariffCodes_TariffCategory">
+    <End Role="TariffCategory" Type="Self.TariffCategory" Multiplicity="0..1" />
+    <End Role="TariffCodes" Type="Self.TariffCode" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TariffCategory">
+        <PropertyRef Name="TariffCategoryCode" />
+      </Principal>
+      <Dependent Role="TariffCodes">
+        <PropertyRef Name="TariffCategoryCode" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="InventoryDS" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="InventoryItems" EntityType="Self.InventoryItem" />
+    <EntitySet Name="TariffCategories" EntityType="Self.TariffCategory" />
+    <EntitySet Name="TariffCodes" EntityType="Self.TariffCode" />
+    <EntitySet Name="TariffSupUnitLkps" EntityType="Self.TariffSupUnitLkp" />
+    <AssociationSet Name="FK_InventoryItems_TariffCodes" Association="Self.FK_InventoryItems_TariffCodes">
+      <End Role="TariffCodes" EntitySet="TariffCodes" />
+      <End Role="InventoryItems" EntitySet="InventoryItems" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TariffCodes_TariffCategory" Association="Self.FK_TariffCodes_TariffCategory">
+      <End Role="TariffCategory" EntitySet="TariffCategories" />
+      <End Role="TariffCodes" EntitySet="TariffCodes" />
+    </AssociationSet>
+    <EntitySet Name="InventoryItemAlias" EntityType="Model.InventoryItemAlia" />
+    <AssociationSet Name="FK_InventoryItemAlias_InventoryItems" Association="Model.FK_InventoryItemAlias_InventoryItems">
+      <End Role="InventoryItem" EntitySet="InventoryItems" />
+      <End Role="InventoryItemAlia" EntitySet="InventoryItemAlias" />
+    </AssociationSet>
+    <EntitySet Name="InventoryAsycudaMappings" EntityType="Model.InventoryAsycudaMapping" />
+    <AssociationSet Name="FK_InventoryAsycudaMapping_InventoryItems" Association="Model.FK_InventoryAsycudaMapping_InventoryItems">
+      <End Role="InventoryItem" EntitySet="InventoryItems" />
+      <End Role="InventoryAsycudaMapping" EntitySet="InventoryAsycudaMappings" />
+    </AssociationSet>
+    <EntitySet Name="TariffCategoryCodeSuppUnits" EntityType="Model.TariffCategoryCodeSuppUnit" />
+    <AssociationSet Name="FK_TariffCategoryCodeSuppUnit_TariffCategory" Association="Model.FK_TariffCategoryCodeSuppUnit_TariffCategory">
+      <End Role="TariffCategory" EntitySet="TariffCategories" />
+      <End Role="TariffCategoryCodeSuppUnit" EntitySet="TariffCategoryCodeSuppUnits" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TariffCategoryCodeSuppUnit_TariffSupUnitLkps" Association="Model.FK_TariffCategoryCodeSuppUnit_TariffSupUnitLkps">
+      <End Role="TariffSupUnitLkp" EntitySet="TariffSupUnitLkps" />
+      <End Role="TariffCategoryCodeSuppUnit" EntitySet="TariffCategoryCodeSuppUnits" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="InventoryItemAlia">
+    <Key>
+      <PropertyRef Name="AliasId" />
+    </Key>
+    <Property Name="AliasId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ItemNumber" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="AliasName" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="InventoryItem" Relationship="Model.FK_InventoryItemAlias_InventoryItems" FromRole="InventoryItemAlia" ToRole="InventoryItem" />
+  </EntityType>
+  <Association Name="FK_InventoryItemAlias_InventoryItems">
+    <End Type="Model.InventoryItem" Role="InventoryItem" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Type="Model.InventoryItemAlia" Role="InventoryItemAlia" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="InventoryItem">
+        <PropertyRef Name="ItemNumber" />
+      </Principal>
+      <Dependent Role="InventoryItemAlia">
+        <PropertyRef Name="ItemNumber" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="InventoryAsycudaMapping">
+    <Key>
+      <PropertyRef Name="InventoryAsycudaMappingId" />
+    </Key>
+    <Property Name="ItemNumber" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Item_Id" Type="Int32" Nullable="false" />
+    <Property Name="InventoryAsycudaMappingId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <NavigationProperty Name="InventoryItem" Relationship="Model.FK_InventoryAsycudaMapping_InventoryItems" FromRole="InventoryAsycudaMapping" ToRole="InventoryItem" />
+  </EntityType>
+  <Association Name="FK_InventoryAsycudaMapping_InventoryItems">
+    <End Type="Model.InventoryItem" Role="InventoryItem" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Type="Model.InventoryAsycudaMapping" Role="InventoryAsycudaMapping" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="InventoryItem">
+        <PropertyRef Name="ItemNumber" />
+      </Principal>
+      <Dependent Role="InventoryAsycudaMapping">
+        <PropertyRef Name="ItemNumber" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="TariffCategoryCodeSuppUnit">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="TariffCategoryCode" Type="String" Nullable="false" MaxLength="8" FixedLength="false" Unicode="false" />
+    <Property Name="TariffSupUnitId" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="TariffCategory" Relationship="Model.FK_TariffCategoryCodeSuppUnit_TariffCategory" FromRole="TariffCategoryCodeSuppUnit" ToRole="TariffCategory" />
+    <NavigationProperty Name="TariffSupUnitLkp" Relationship="Model.FK_TariffCategoryCodeSuppUnit_TariffSupUnitLkps" FromRole="TariffCategoryCodeSuppUnit" ToRole="TariffSupUnitLkp" />
+  </EntityType>
+  <Association Name="FK_TariffCategoryCodeSuppUnit_TariffCategory">
+    <End Type="Model.TariffCategory" Role="TariffCategory" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Type="Model.TariffCategoryCodeSuppUnit" Role="TariffCategoryCodeSuppUnit" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TariffCategory">
+        <PropertyRef Name="TariffCategoryCode" />
+      </Principal>
+      <Dependent Role="TariffCategoryCodeSuppUnit">
+        <PropertyRef Name="TariffCategoryCode" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TariffCategoryCodeSuppUnit_TariffSupUnitLkps">
+    <End Type="Model.TariffSupUnitLkp" Role="TariffSupUnitLkp" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Type="Model.TariffCategoryCodeSuppUnit" Role="TariffCategoryCodeSuppUnit" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TariffSupUnitLkp">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="TariffCategoryCodeSuppUnit">
+        <PropertyRef Name="TariffSupUnitId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

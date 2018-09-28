@@ -1,0 +1,437 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="WaterNutDBModelStoreContainer" CdmEntityContainer="AllocationDS">
+    <EntitySetMapping Name="AsycudaSalesAllocations">
+      <EntityTypeMapping TypeName="WaterNutDBModel.AsycudaSalesAllocations">
+        <MappingFragment StoreEntitySet="AsycudaSalesAllocations">
+          <ScalarProperty Name="AllocationId" ColumnName="AllocationId" />
+          <ScalarProperty Name="EntryDataDetailsId" ColumnName="EntryDataDetailsId" />
+          <ScalarProperty Name="PreviousItem_Id" ColumnName="PreviousItem_Id" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="QtyAllocated" ColumnName="QtyAllocated" />
+          <ScalarProperty Name="EntryTimeStamp" ColumnName="EntryTimeStamp" />
+          <ScalarProperty Name="EANumber" ColumnName="EANumber" />
+          <ScalarProperty Name="SANumber" ColumnName="SANumber" />
+          <ScalarProperty Name="xEntryItem_Id" ColumnName="xEntryItem_Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EntryDataDetails">
+      <EntityTypeMapping TypeName="WaterNutDBModel.EntryDataDetails">
+        <MappingFragment StoreEntitySet="EntryDataDetails">
+          <ScalarProperty Name="InternalFreight" ColumnName="InternalFreight" />
+          <ScalarProperty Name="Weight" ColumnName="Weight" />
+          <ScalarProperty Name="Freight" ColumnName="Freight" />
+          <ScalarProperty Name="DoNotAllocate" ColumnName="DoNotAllocate" />
+          <ScalarProperty Name="UnitWeight" ColumnName="UnitWeight" />
+          <ScalarProperty Name="QtyAllocated" ColumnName="QtyAllocated" />
+          <ScalarProperty Name="Cost" ColumnName="Cost" />
+          <ScalarProperty Name="ItemDescription" ColumnName="ItemDescription" />
+          <ScalarProperty Name="Units" ColumnName="Units" />
+          <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+          <ScalarProperty Name="ItemNumber" ColumnName="ItemNumber" />
+          <ScalarProperty Name="LineNumber" ColumnName="LineNumber" />
+          <ScalarProperty Name="EntryDataId" ColumnName="EntryDataId" />
+          <ScalarProperty Name="EntryDataDetailsId" ColumnName="EntryDataDetailsId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="xcuda_Item">
+      <EntityTypeMapping TypeName="WaterNutDBModel.xcuda_Item">
+        <MappingFragment StoreEntitySet="xcuda_Item">
+          <ScalarProperty Name="SalesFactor" ColumnName="SalesFactor" />
+          <ScalarProperty Name="WarehouseError" ColumnName="WarehouseError" />
+          <ScalarProperty Name="ImportComplete" ColumnName="ImportComplete" />
+          <ScalarProperty Name="Free_text_2" ColumnName="Free_text_2" />
+          <ScalarProperty Name="Free_text_1" ColumnName="Free_text_1" />
+          <ScalarProperty Name="DoNotEX" ColumnName="DoNotEX" />
+          <ScalarProperty Name="DoNotAllocate" ColumnName="DoNotAllocate" />
+          <ScalarProperty Name="AttributeOnlyAllocation" ColumnName="AttributeOnlyAllocation" />
+          <ScalarProperty Name="EntryTimeStamp" ColumnName="EntryTimeStamp" />
+          <ScalarProperty Name="DFQtyAllocated" ColumnName="DFQtyAllocated" />
+          <ScalarProperty Name="DPQtyAllocated" ColumnName="DPQtyAllocated" />
+          <ScalarProperty Name="IsAssessed" ColumnName="IsAssessed" />
+          <ScalarProperty Name="LineNumber" ColumnName="LineNumber" />
+          <ScalarProperty Name="EntryDataDetailsId" ColumnName="EntryDataDetailsId" />
+          <ScalarProperty Name="Licence_number" ColumnName="Licence_number" />
+          <ScalarProperty Name="ASYCUDA_Id" ColumnName="ASYCUDA_Id" />
+          <ScalarProperty Name="Item_Id" ColumnName="Item_Id" />
+          <ScalarProperty Name="Quantity_deducted_from_licence" ColumnName="Quantity_deducted_from_licence" />
+          <ScalarProperty Name="Amount_deducted_from_licence" ColumnName="Amount_deducted_from_licence" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EntryDataDetailsEx">
+      <EntityTypeMapping TypeName="WaterNutDBModel.EntryDataDetailsEx">
+        <MappingFragment StoreEntitySet="EntryDataDetailsEx">
+          <ScalarProperty Name="AsycudaDocumentSetId" ColumnName="AsycudaDocumentSetId" />
+          <ScalarProperty Name="Total" ColumnName="Total" />
+          <ScalarProperty Name="DutyFreePaid" ColumnName="DutyFreePaid" />
+          <ScalarProperty Name="Downloaded" ColumnName="Downloaded" />
+          <ScalarProperty Name="CLineNumber" ColumnName="CLineNumber" />
+          <ScalarProperty Name="CNumber" ColumnName="CNumber" />
+          <ScalarProperty Name="TariffCode" ColumnName="TariffCode" />
+          <ScalarProperty Name="DoNotAllocate" ColumnName="DoNotAllocate" />
+          <ScalarProperty Name="UnitWeight" ColumnName="UnitWeight" />
+          <ScalarProperty Name="QtyAllocated" ColumnName="QtyAllocated" />
+          <ScalarProperty Name="Cost" ColumnName="Cost" />
+          <ScalarProperty Name="ItemDescription" ColumnName="ItemDescription" />
+          <ScalarProperty Name="Units" ColumnName="Units" />
+          <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+          <ScalarProperty Name="ItemNumber" ColumnName="ItemNumber" />
+          <ScalarProperty Name="LineNumber" ColumnName="LineNumber" />
+          <ScalarProperty Name="EntryDataId" ColumnName="EntryDataId" />
+          <ScalarProperty Name="EntryDataDetailsId" ColumnName="EntryDataDetailsId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EntryData">
+      <EntityTypeMapping TypeName="IsTypeOf(WaterNutDBModel.EntryData)">
+        <MappingFragment StoreEntitySet="EntryData">
+          <ScalarProperty Name="TotalWeight" ColumnName="TotalWeight" />
+          <ScalarProperty Name="TotalInternalFreight" ColumnName="TotalInternalFreight" />
+          <ScalarProperty Name="TotalFreight" ColumnName="TotalFreight" />
+          <ScalarProperty Name="SupplierId" ColumnName="SupplierId" />
+          <ScalarProperty Name="ImportedLines" ColumnName="ImportedLines" />
+          <ScalarProperty Name="ImportedTotal" ColumnName="ImportedTotal" />
+          <ScalarProperty Name="EntryDataId" ColumnName="EntryDataId" />
+          <ScalarProperty Name="EntryDataDate" ColumnName="EntryDataDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+      <EntityTypeMapping TypeName="IsTypeOf(WaterNutDBModel.Sales)">
+        <MappingFragment StoreEntitySet="EntryData_Sales">
+          <ScalarProperty Name="INVNumber" ColumnName="INVNumber" />
+          <ScalarProperty Name="EntryDataId" ColumnName="EntryDataId" />
+          <ScalarProperty Name="TaxAmount" ColumnName="TaxAmount" />
+          <ScalarProperty Name="CustomerName" ColumnName="CustomerName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="xcuda_PreviousItem">
+      <EntityTypeMapping TypeName="WaterNutDBModel.xcuda_PreviousItem">
+        <MappingFragment StoreEntitySet="xcuda_PreviousItem">
+          <ScalarProperty Name="QtyAllocated" ColumnName="QtyAllocated" />
+          <ScalarProperty Name="ASYCUDA_Id" ColumnName="ASYCUDA_Id" />
+          <ScalarProperty Name="PreviousItem_Id" ColumnName="PreviousItem_Id" />
+          <ScalarProperty Name="Current_item_number" ColumnName="Current_item_number" />
+          <ScalarProperty Name="Previous_value" ColumnName="Previous_value" />
+          <ScalarProperty Name="Current_value" ColumnName="Current_value" />
+          <ScalarProperty Name="Preveious_suplementary_quantity" ColumnName="Preveious_suplementary_quantity" />
+          <ScalarProperty Name="Suplementary_Quantity" ColumnName="Suplementary_Quantity" />
+          <ScalarProperty Name="Prev_reg_cuo" ColumnName="Prev_reg_cuo" />
+          <ScalarProperty Name="Prev_reg_dat" ColumnName="Prev_reg_dat" />
+          <ScalarProperty Name="Prev_reg_nbr" ColumnName="Prev_reg_nbr" />
+          <ScalarProperty Name="Prev_reg_ser" ColumnName="Prev_reg_ser" />
+          <ScalarProperty Name="Prev_net_weight" ColumnName="Prev_net_weight" />
+          <ScalarProperty Name="Net_weight" ColumnName="Net_weight" />
+          <ScalarProperty Name="Goods_origin" ColumnName="Goods_origin" />
+          <ScalarProperty Name="Previous_item_number" ColumnName="Previous_item_number" />
+          <ScalarProperty Name="Commodity_code" ColumnName="Commodity_code" />
+          <ScalarProperty Name="Hs_code" ColumnName="Hs_code" />
+          <ScalarProperty Name="Previous_Packages_number" ColumnName="Previous_Packages_number" />
+          <ScalarProperty Name="Packages_number" ColumnName="Packages_number" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AsycudaDocument">
+      <EntityTypeMapping TypeName="WaterNutDBModel.AsycudaDocument">
+        <MappingFragment StoreEntitySet="AsycudaDocument">
+          <ScalarProperty Name="TotalFreight" ColumnName="TotalFreight" />
+          <ScalarProperty Name="AssessmentDate" ColumnName="AssessmentDate" />
+          <ScalarProperty Name="TotalGrossWeight" ColumnName="TotalGrossWeight" />
+          <ScalarProperty Name="TotalCIF" ColumnName="TotalCIF" />
+          <ScalarProperty Name="Cancelled" ColumnName="Cancelled" />
+          <ScalarProperty Name="ImportComplete" ColumnName="ImportComplete" />
+          <ScalarProperty Name="Lines" ColumnName="Lines" />
+          <ScalarProperty Name="Document_TypeId" ColumnName="Document_TypeId" />
+          <ScalarProperty Name="DocumentType" ColumnName="DocumentType" />
+          <ScalarProperty Name="Customs_clearance_office_code" ColumnName="Customs_clearance_office_code" />
+          <ScalarProperty Name="Manifest_reference_number" ColumnName="Manifest_reference_number" />
+          <ScalarProperty Name="Currency_rate" ColumnName="Currency_rate" />
+          <ScalarProperty Name="Currency_code" ColumnName="Currency_code" />
+          <ScalarProperty Name="Country_first_destination" ColumnName="Country_first_destination" />
+          <ScalarProperty Name="Customs_ProcedureId" ColumnName="Customs_ProcedureId" />
+          <ScalarProperty Name="Extended_customs_procedure" ColumnName="Extended_customs_procedure" />
+          <ScalarProperty Name="Declaration_gen_procedure_code" ColumnName="Declaration_gen_procedure_code" />
+          <ScalarProperty Name="Type_of_declaration" ColumnName="Type_of_declaration" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="BLNumber" ColumnName="BLNumber" />
+          <ScalarProperty Name="AutoUpdate" ColumnName="AutoUpdate" />
+          <ScalarProperty Name="DoNotAllocate" ColumnName="DoNotAllocate" />
+          <ScalarProperty Name="AsycudaDocumentSetId" ColumnName="AsycudaDocumentSetId" />
+          <ScalarProperty Name="EffectiveRegistrationDate" ColumnName="EffectiveRegistrationDate" />
+          <ScalarProperty Name="ReferenceNumber" ColumnName="ReferenceNumber" />
+          <ScalarProperty Name="IsManuallyAssessed" ColumnName="IsManuallyAssessed" />
+          <ScalarProperty Name="RegistrationDate" ColumnName="RegistrationDate" />
+          <ScalarProperty Name="CNumber" ColumnName="CNumber" />
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="ASYCUDA_Id" ColumnName="ASYCUDA_Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SubItems">
+      <EntityTypeMapping TypeName="WaterNutDBModel.SubItems">
+        <MappingFragment StoreEntitySet="SubItems">
+          <ScalarProperty Name="QtyAllocated" ColumnName="QtyAllocated" />
+          <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+          <ScalarProperty Name="ItemDescription" ColumnName="ItemDescription" />
+          <ScalarProperty Name="ItemNumber" ColumnName="ItemNumber" />
+          <ScalarProperty Name="Item_Id" ColumnName="Item_Id" />
+          <ScalarProperty Name="SubItem_Id" ColumnName="SubItem_Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="InventoryItems">
+      <EntityTypeMapping TypeName="WaterNutDBModel.InventoryItems">
+        <MappingFragment StoreEntitySet="InventoryItems">
+          <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+          <ScalarProperty Name="EntryTimeStamp" ColumnName="EntryTimeStamp" />
+          <ScalarProperty Name="TariffCode" ColumnName="TariffCode" />
+          <ScalarProperty Name="Category" ColumnName="Category" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="ItemNumber" ColumnName="ItemNumber" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TariffCategory">
+      <EntityTypeMapping TypeName="WaterNutDBModel.TariffCategory">
+        <MappingFragment StoreEntitySet="TariffCategory">
+          <ScalarProperty Name="LicenseRequired" ColumnName="LicenseRequired" />
+          <ScalarProperty Name="ParentTariffCategoryCode" ColumnName="ParentTariffCategoryCode" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="TariffCategoryCode" ColumnName="TariffCategoryCode" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TariffCodes">
+      <EntityTypeMapping TypeName="WaterNutDBModel.TariffCodes">
+        <MappingFragment StoreEntitySet="TariffCodes">
+          <ScalarProperty Name="Invalid" ColumnName="Invalid" />
+          <ScalarProperty Name="LicenseRequired" ColumnName="LicenseRequired" />
+          <ScalarProperty Name="TariffCategoryCode" ColumnName="TariffCategoryCode" />
+          <ScalarProperty Name="SiteRev3" ColumnName="SiteRev3" />
+          <ScalarProperty Name="Units" ColumnName="Units" />
+          <ScalarProperty Name="PetrolTax" ColumnName="PetrolTax" />
+          <ScalarProperty Name="VatRate" ColumnName="VatRate" />
+          <ScalarProperty Name="ExciseTax" ColumnName="ExciseTax" />
+          <ScalarProperty Name="CustomsServiceCharge" ColumnName="CustomsServiceCharge" />
+          <ScalarProperty Name="EnvironmentalLevy" ColumnName="EnvironmentalLevy" />
+          <ScalarProperty Name="RateofDuty" ColumnName="RateofDuty" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="TariffCode" ColumnName="TariffCode" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TariffSupUnitLkps">
+      <EntityTypeMapping TypeName="WaterNutDBModel.TariffSupUnitLkps">
+        <MappingFragment StoreEntitySet="TariffSupUnitLkps">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="SuppQty" ColumnName="SuppQty" />
+          <ScalarProperty Name="SuppUnitName2" ColumnName="SuppUnitName2" />
+          <ScalarProperty Name="SuppUnitCode2" ColumnName="SuppUnitCode2" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="xcuda_Goods_description">
+      <EntityTypeMapping TypeName="WaterNutDBModel.xcuda_Goods_description">
+        <MappingFragment StoreEntitySet="xcuda_Goods_description">
+          <ScalarProperty Name="Item_Id" ColumnName="Item_Id" />
+          <ScalarProperty Name="Commercial_Description" ColumnName="Commercial_Description" />
+          <ScalarProperty Name="Description_of_goods" ColumnName="Description_of_goods" />
+          <ScalarProperty Name="Country_of_origin_code" ColumnName="Country_of_origin_code" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="xcuda_HScode">
+      <EntityTypeMapping TypeName="WaterNutDBModel.xcuda_HScode">
+        <MappingFragment StoreEntitySet="xcuda_HScode">
+          <ScalarProperty Name="Item_Id" ColumnName="Item_Id" />
+          <ScalarProperty Name="Precision_4" ColumnName="Precision_4" />
+          <ScalarProperty Name="Precision_1" ColumnName="Precision_1" />
+          <ScalarProperty Name="Commodity_code" ColumnName="Commodity_code" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="xcuda_Item_Invoice">
+      <EntityTypeMapping TypeName="WaterNutDBModel.xcuda_Item_Invoice">
+        <MappingFragment StoreEntitySet="xcuda_Item_Invoice">
+          <ScalarProperty Name="Valuation_item_Id" ColumnName="Valuation_item_Id" />
+          <ScalarProperty Name="Currency_rate" ColumnName="Currency_rate" />
+          <ScalarProperty Name="Currency_code" ColumnName="Currency_code" />
+          <ScalarProperty Name="Amount_foreign_currency" ColumnName="Amount_foreign_currency" />
+          <ScalarProperty Name="Amount_national_currency" ColumnName="Amount_national_currency" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="xcuda_Supplementary_unit">
+      <EntityTypeMapping TypeName="WaterNutDBModel.xcuda_Supplementary_unit">
+        <MappingFragment StoreEntitySet="xcuda_Supplementary_unit">
+          <ScalarProperty Name="IsFirstRow" ColumnName="IsFirstRow" />
+          <ScalarProperty Name="Suppplementary_unit_name" ColumnName="Suppplementary_unit_name" />
+          <ScalarProperty Name="Suppplementary_unit_code" ColumnName="Suppplementary_unit_code" />
+          <ScalarProperty Name="Tarification_Id" ColumnName="Tarification_Id" />
+          <ScalarProperty Name="Supplementary_unit_Id" ColumnName="Supplementary_unit_Id" />
+          <ScalarProperty Name="Suppplementary_unit_quantity" ColumnName="Suppplementary_unit_quantity" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="xcuda_Tarification">
+      <EntityTypeMapping TypeName="WaterNutDBModel.xcuda_Tarification">
+        <MappingFragment StoreEntitySet="xcuda_Tarification">
+          <ScalarProperty Name="Attached_doc_item" ColumnName="Attached_doc_item" />
+          <ScalarProperty Name="Value_item" ColumnName="Value_item" />
+          <ScalarProperty Name="Item_Id" ColumnName="Item_Id" />
+          <ScalarProperty Name="Item_price" ColumnName="Item_price" />
+          <ScalarProperty Name="National_customs_procedure" ColumnName="National_customs_procedure" />
+          <ScalarProperty Name="Extended_customs_procedure" ColumnName="Extended_customs_procedure" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="xcuda_Taxation">
+      <EntityTypeMapping TypeName="WaterNutDBModel.xcuda_Taxation">
+        <MappingFragment StoreEntitySet="xcuda_Taxation">
+          <ScalarProperty Name="Item_taxes_mode_of_payment" ColumnName="Item_taxes_mode_of_payment" />
+          <ScalarProperty Name="Item_Id" ColumnName="Item_Id" />
+          <ScalarProperty Name="Taxation_Id" ColumnName="Taxation_Id" />
+          <ScalarProperty Name="Displayed_item_taxes_amount" ColumnName="Displayed_item_taxes_amount" />
+          <ScalarProperty Name="Counter_of_normal_mode_of_payment" ColumnName="Counter_of_normal_mode_of_payment" />
+          <ScalarProperty Name="Item_taxes_guaranted_amount" ColumnName="Item_taxes_guaranted_amount" />
+          <ScalarProperty Name="Item_taxes_amount" ColumnName="Item_taxes_amount" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="xcuda_Taxation_line">
+      <EntityTypeMapping TypeName="WaterNutDBModel.xcuda_Taxation_line">
+        <MappingFragment StoreEntitySet="xcuda_Taxation_line">
+          <ScalarProperty Name="Duty_tax_MP" ColumnName="Duty_tax_MP" />
+          <ScalarProperty Name="Duty_tax_code" ColumnName="Duty_tax_code" />
+          <ScalarProperty Name="Taxation_Id" ColumnName="Taxation_Id" />
+          <ScalarProperty Name="Taxation_line_Id" ColumnName="Taxation_line_Id" />
+          <ScalarProperty Name="Duty_tax_amount" ColumnName="Duty_tax_amount" />
+          <ScalarProperty Name="Duty_tax_rate" ColumnName="Duty_tax_rate" />
+          <ScalarProperty Name="Duty_tax_Base" ColumnName="Duty_tax_Base" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="xcuda_Valuation_item">
+      <EntityTypeMapping TypeName="WaterNutDBModel.xcuda_Valuation_item">
+        <MappingFragment StoreEntitySet="xcuda_Valuation_item">
+          <ScalarProperty Name="Item_Id" ColumnName="Item_Id" />
+          <ScalarProperty Name="Alpha_coeficient_of_apportionment" ColumnName="Alpha_coeficient_of_apportionment" />
+          <ScalarProperty Name="Statistical_value" ColumnName="Statistical_value" />
+          <ScalarProperty Name="Rate_of_adjustement" ColumnName="Rate_of_adjustement" />
+          <ScalarProperty Name="Total_CIF_itm" ColumnName="Total_CIF_itm" />
+          <ScalarProperty Name="Total_cost_itm" ColumnName="Total_cost_itm" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="xcuda_Weight">
+      <EntityTypeMapping TypeName="WaterNutDBModel.xcuda_Weight">
+        <MappingFragment StoreEntitySet="xcuda_Weight">
+          <ScalarProperty Name="Valuation_Id" ColumnName="Valuation_Id" />
+          <ScalarProperty Name="Gross_weight" ColumnName="Gross_weight" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="xcuda_Weight_itm">
+      <EntityTypeMapping TypeName="WaterNutDBModel.xcuda_Weight_itm">
+        <MappingFragment StoreEntitySet="xcuda_Weight_itm">
+          <ScalarProperty Name="Valuation_item_Id" ColumnName="Valuation_item_Id" />
+          <ScalarProperty Name="Net_weight_itm" ColumnName="Net_weight_itm" />
+          <ScalarProperty Name="Gross_weight_itm" ColumnName="Gross_weight_itm" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AsycudaLkpLst">
+      <EntityTypeMapping TypeName="WaterNutDBModel.AsycudaLkpLst">
+        <MappingFragment StoreEntitySet="AsycudaLkpLst">
+          <ScalarProperty Name="ASYCUDA_Id" ColumnName="ASYCUDA_Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="xBondAllocations">
+      <EntityTypeMapping TypeName="WaterNutDBModel.xBondAllocations">
+        <MappingFragment StoreEntitySet="xBondAllocations">
+          <ScalarProperty Name="xBondAllocationId" ColumnName="xBondAllocationId" />
+          <ScalarProperty Name="AllocationId" ColumnName="AllocationId" />
+          <ScalarProperty Name="xEntryItem_Id" ColumnName="xEntryItem_Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="InventoryItemAlias">
+      <EntityTypeMapping TypeName="WaterNutDBModel.InventoryItemAlias">
+        <MappingFragment StoreEntitySet="InventoryItemAlias">
+          <ScalarProperty Name="AliasName" ColumnName="AliasName" />
+          <ScalarProperty Name="ItemNumber" ColumnName="ItemNumber" />
+          <ScalarProperty Name="AliasId" ColumnName="AliasId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EX9AsycudaSalesAllocations">
+      <EntityTypeMapping TypeName="WaterNutDBModel.EX9AsycudaSalesAllocations">
+        <MappingFragment StoreEntitySet="EX9AsycudaSalesAllocations">
+          <ScalarProperty Name="xBond_Item_Id" ColumnName="xBond_Item_Id" />
+          <ScalarProperty Name="pExpiryDate" ColumnName="pExpiryDate" />
+          <ScalarProperty Name="Invalid" ColumnName="Invalid" />
+          <ScalarProperty Name="TariffCode" ColumnName="TariffCode" />
+          <ScalarProperty Name="pItemNumber" ColumnName="pItemNumber" />
+          <ScalarProperty Name="pTariffCode" ColumnName="pTariffCode" />
+          <ScalarProperty Name="pItemCost" ColumnName="pItemCost" />
+          <ScalarProperty Name="Customs_clearance_office_code" ColumnName="Customs_clearance_office_code" />
+          <ScalarProperty Name="Net_weight_itm" ColumnName="Net_weight_itm" />
+          <ScalarProperty Name="Gross_weight_itm" ColumnName="Gross_weight_itm" />
+          <ScalarProperty Name="Country_of_origin_code" ColumnName="Country_of_origin_code" />
+          <ScalarProperty Name="Commercial_Description" ColumnName="Commercial_Description" />
+          <ScalarProperty Name="SANumber" ColumnName="SANumber" />
+          <ScalarProperty Name="DoNotAllocatePreviousEntry" ColumnName="DoNotAllocatePreviousEntry" />
+          <ScalarProperty Name="DoNotAllocateSales" ColumnName="DoNotAllocateSales" />
+          <ScalarProperty Name="pIsAssessed" ColumnName="pIsAssessed" />
+          <ScalarProperty Name="TaxAmount" ColumnName="TaxAmount" />
+          <ScalarProperty Name="DutyLiability" ColumnName="DutyLiability" />
+          <ScalarProperty Name="Total_CIF_itm" ColumnName="Total_CIF_itm" />
+          <ScalarProperty Name="Cost" ColumnName="Cost" />
+          <ScalarProperty Name="pASYCUDA_Id" ColumnName="pASYCUDA_Id" />
+          <ScalarProperty Name="pLineNumber" ColumnName="pLineNumber" />
+          <ScalarProperty Name="pReferenceNumber" ColumnName="pReferenceNumber" />
+          <ScalarProperty Name="PiQuantity" ColumnName="PiQuantity" />
+          <ScalarProperty Name="pQtyAllocated" ColumnName="pQtyAllocated" />
+          <ScalarProperty Name="pQuantity" ColumnName="pQuantity" />
+          <ScalarProperty Name="pRegistrationDate" ColumnName="pRegistrationDate" />
+          <ScalarProperty Name="pCNumber" ColumnName="pCNumber" />
+          <ScalarProperty Name="DutyFreePaid" ColumnName="DutyFreePaid" />
+          <ScalarProperty Name="EntryDataDetailsId" ColumnName="EntryDataDetailsId" />
+          <ScalarProperty Name="ItemDescription" ColumnName="ItemDescription" />
+          <ScalarProperty Name="ItemNumber" ColumnName="ItemNumber" />
+          <ScalarProperty Name="InvoiceNo" ColumnName="InvoiceNo" />
+          <ScalarProperty Name="SalesQtyAllocated" ColumnName="SalesQtyAllocated" />
+          <ScalarProperty Name="SalesQuantity" ColumnName="SalesQuantity" />
+          <ScalarProperty Name="InvoiceDate" ColumnName="InvoiceDate" />
+          <ScalarProperty Name="PreviousItem_Id" ColumnName="PreviousItem_Id" />
+          <ScalarProperty Name="QtyAllocated" ColumnName="QtyAllocated" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="AllocatedValue" ColumnName="AllocatedValue" />
+          <ScalarProperty Name="TotalValue" ColumnName="TotalValue" />
+          <ScalarProperty Name="AllocationId" ColumnName="AllocationId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EntryPreviousItems">
+      <EntityTypeMapping TypeName="WaterNutDBModel.EntryPreviousItems">
+        <MappingFragment StoreEntitySet="EntryPreviousItems">
+          <ScalarProperty Name="EntryPreviousItemId" ColumnName="EntryPreviousItemId" />
+          <ScalarProperty Name="Item_Id" ColumnName="Item_Id" />
+          <ScalarProperty Name="PreviousItem_Id" ColumnName="PreviousItem_Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TariffCategoryCodeSuppUnit">
+      <EntityTypeMapping TypeName="WaterNutDBModel.TariffCategoryCodeSuppUnit">
+        <MappingFragment StoreEntitySet="TariffCategoryCodeSuppUnit">
+          <ScalarProperty Name="TariffSupUnitId" ColumnName="TariffSupUnitId" />
+          <ScalarProperty Name="TariffCategoryCode" ColumnName="TariffCategoryCode" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

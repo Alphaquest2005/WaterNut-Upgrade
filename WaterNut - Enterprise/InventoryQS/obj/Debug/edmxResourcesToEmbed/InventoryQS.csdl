@@ -1,0 +1,186 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="WaterNutDBModel" Alias="Self" p1:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:p1="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="InventoryQS" p1:LazyLoadingEnabled="true">
+    <EntitySet Name="TariffCategory" EntityType="WaterNutDBModel.TariffCategory" />
+    <EntitySet Name="TariffCodes" EntityType="WaterNutDBModel.TariffCodes" />
+    <EntitySet Name="TariffSupUnitLkps" EntityType="WaterNutDBModel.TariffSupUnitLkps" />
+    <AssociationSet Name="FK_TariffCodes_TariffCategory" Association="WaterNutDBModel.FK_TariffCodes_TariffCategory">
+      <End Role="TariffCategory" EntitySet="TariffCategory" />
+      <End Role="TariffCodes" EntitySet="TariffCodes" />
+    </AssociationSet>
+    <EntitySet Name="InventoryItemsEx" EntityType="WaterNutDBModel.InventoryItemsEx" />
+    <AssociationSet Name="TariffCodesInventoryItemsEx" Association="WaterNutDBModel.TariffCodesInventoryItemsEx">
+      <End Role="TariffCodes" EntitySet="TariffCodes" />
+      <End Role="InventoryItemsEx" EntitySet="InventoryItemsEx" />
+    </AssociationSet>
+    <EntitySet Name="EntryDataDetailsEx" EntityType="WaterNutDBModel.EntryDataDetailsEx" />
+    <AssociationSet Name="InventoryItemsExEntryDataDetailsEx" Association="WaterNutDBModel.InventoryItemsExEntryDataDetailsEx">
+      <End Role="InventoryItemsEx" EntitySet="InventoryItemsEx" />
+      <End Role="EntryDataDetailsEx" EntitySet="EntryDataDetailsEx" />
+    </AssociationSet>
+    <EntitySet Name="TariffCategoryCodeSuppUnit" EntityType="WaterNutDBModel.TariffCategoryCodeSuppUnit" />
+    <AssociationSet Name="FK_TariffCategoryCodeSuppUnit_TariffCategory" Association="WaterNutDBModel.FK_TariffCategoryCodeSuppUnit_TariffCategory">
+      <End Role="TariffCategory" EntitySet="TariffCategory" />
+      <End Role="TariffCategoryCodeSuppUnit" EntitySet="TariffCategoryCodeSuppUnit" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TariffCategoryCodeSuppUnit_TariffSupUnitLkps" Association="WaterNutDBModel.FK_TariffCategoryCodeSuppUnit_TariffSupUnitLkps">
+      <End Role="TariffSupUnitLkps" EntitySet="TariffSupUnitLkps" />
+      <End Role="TariffCategoryCodeSuppUnit" EntitySet="TariffCategoryCodeSuppUnit" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="TariffCategory">
+    <Key>
+      <PropertyRef Name="TariffCategoryCode" />
+    </Key>
+    <Property Type="String" Name="TariffCategoryCode" Nullable="false" MaxLength="8" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Description" MaxLength="999" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="ParentTariffCategoryCode" MaxLength="5" FixedLength="false" Unicode="false" />
+    <Property Type="Boolean" Name="LicenseRequired" />
+    <NavigationProperty Name="TariffCodes" Relationship="WaterNutDBModel.FK_TariffCodes_TariffCategory" FromRole="TariffCategory" ToRole="TariffCodes" />
+    <NavigationProperty Name="TariffCategoryCodeSuppUnit" Relationship="WaterNutDBModel.FK_TariffCategoryCodeSuppUnit_TariffCategory" FromRole="TariffCategory" ToRole="TariffCategoryCodeSuppUnit" />
+    <a:MainEntityProperty xmlns:a="http://schemas.tempuri.com/MainEntityProperty">True</a:MainEntityProperty>
+  </EntityType>
+  <EntityType Name="TariffCodes">
+    <Key>
+      <PropertyRef Name="TariffCode" />
+    </Key>
+    <Property Type="String" Name="TariffCode" Nullable="false" MaxLength="8" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Description" MaxLength="999" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="RateofDuty" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="EnvironmentalLevy" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="CustomsServiceCharge" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="ExciseTax" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="VatRate" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="PetrolTax" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Units" MaxLength="999" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="SiteRev3" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="TariffCategoryCode" MaxLength="8" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="TariffCategory" Relationship="WaterNutDBModel.FK_TariffCodes_TariffCategory" FromRole="TariffCodes" ToRole="TariffCategory" />
+    <Property Type="Boolean" Name="LicenseRequired" />
+    <NavigationProperty Name="InventoryItemsEx" Relationship="WaterNutDBModel.TariffCodesInventoryItemsEx" FromRole="TariffCodes" ToRole="InventoryItemsEx" />
+    <Property Name="Invalid" Type="Boolean" />
+  </EntityType>
+  <EntityType Name="TariffSupUnitLkps">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Type="String" Name="SuppUnitCode2" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Type="String" Name="SuppUnitName2" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="Double" Name="SuppQty" Nullable="false" />
+    <Property Type="Int32" Name="Id" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <NavigationProperty Name="TariffCategoryCodeSuppUnit" Relationship="WaterNutDBModel.FK_TariffCategoryCodeSuppUnit_TariffSupUnitLkps" FromRole="TariffSupUnitLkps" ToRole="TariffCategoryCodeSuppUnit" />
+  </EntityType>
+  <Association Name="FK_TariffCodes_TariffCategory">
+    <End Type="WaterNutDBModel.TariffCategory" Role="TariffCategory" Multiplicity="0..1" />
+    <End Type="WaterNutDBModel.TariffCodes" Role="TariffCodes" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TariffCategory">
+        <PropertyRef Name="TariffCategoryCode" />
+      </Principal>
+      <Dependent Role="TariffCodes">
+        <PropertyRef Name="TariffCategoryCode" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="InventoryItemsEx">
+    <Key>
+      <PropertyRef Name="ItemNumber" />
+    </Key>
+    <Property Type="String" Name="ItemNumber" Nullable="false" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Description" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Category" MaxLength="60" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="TariffCode" MaxLength="8" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="TariffCodes" Relationship="WaterNutDBModel.TariffCodesInventoryItemsEx" FromRole="InventoryItemsEx" ToRole="TariffCodes" />
+    <NavigationProperty Name="EntryDataDetailsEx" Relationship="WaterNutDBModel.InventoryItemsExEntryDataDetailsEx" FromRole="InventoryItemsEx" ToRole="EntryDataDetailsEx" />
+    <Property Name="SuppUnitCode2" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="SuppQty" Type="Double" />
+    <Property Name="EntryTimeStamp" Type="DateTime" Precision="3" />
+    <a:MainEntityProperty xmlns:a="http://schemas.tempuri.com/MainEntityProperty">True</a:MainEntityProperty>
+  </EntityType>
+  <Association Name="TariffCodesInventoryItemsEx">
+    <End Type="WaterNutDBModel.TariffCodes" Role="TariffCodes" Multiplicity="0..1" />
+    <End Type="WaterNutDBModel.InventoryItemsEx" Role="InventoryItemsEx" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TariffCodes">
+        <PropertyRef Name="TariffCode" />
+      </Principal>
+      <Dependent Role="InventoryItemsEx">
+        <PropertyRef Name="TariffCode" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="EntryDataDetailsEx">
+    <Key>
+      <PropertyRef Name="EntryDataDetailsId" />
+    </Key>
+    <Property Name="EntryDataDetailsId" Type="Int32" Nullable="false" />
+    <Property Name="EntryDataId" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="LineNumber" Type="Int32" />
+    <Property Name="ItemNumber" Type="String" Nullable="false" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="Quantity" Type="Single" Nullable="false" />
+    <Property Name="Units" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="ItemDescription" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Cost" Type="Single" Nullable="false" />
+    <Property Name="QtyAllocated" Type="Double" Nullable="false" />
+    <Property Name="UnitWeight" Type="Single" Nullable="false" />
+    <Property Name="DoNotAllocate" Type="Boolean" />
+    <Property Name="TariffCode" Type="String" MaxLength="8" FixedLength="false" Unicode="false" />
+    <Property Name="CNumber" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="CLineNumber" Type="Int32" />
+    <Property Name="Downloaded" Type="Boolean" />
+    <Property Name="DutyFreePaid" Type="String" MaxLength="9" FixedLength="false" Unicode="false" />
+    <Property Name="Total" Type="Single" />
+    <NavigationProperty Name="InventoryItemsEx" Relationship="WaterNutDBModel.InventoryItemsExEntryDataDetailsEx" FromRole="EntryDataDetailsEx" ToRole="InventoryItemsEx" />
+    <Property Name="AsycudaDocumentSetId" Type="Int32" />
+  </EntityType>
+  <Association Name="InventoryItemsExEntryDataDetailsEx">
+    <End Type="WaterNutDBModel.InventoryItemsEx" Role="InventoryItemsEx" Multiplicity="1" />
+    <End Type="WaterNutDBModel.EntryDataDetailsEx" Role="EntryDataDetailsEx" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="InventoryItemsEx">
+        <PropertyRef Name="ItemNumber" />
+      </Principal>
+      <Dependent Role="EntryDataDetailsEx">
+        <PropertyRef Name="ItemNumber" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="TariffCategoryCodeSuppUnit">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="TariffCategoryCode" Type="String" Nullable="false" MaxLength="8" FixedLength="false" Unicode="false" />
+    <Property Name="TariffSupUnitId" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="TariffCategory" Relationship="WaterNutDBModel.FK_TariffCategoryCodeSuppUnit_TariffCategory" FromRole="TariffCategoryCodeSuppUnit" ToRole="TariffCategory" />
+    <NavigationProperty Name="TariffSupUnitLkps" Relationship="WaterNutDBModel.FK_TariffCategoryCodeSuppUnit_TariffSupUnitLkps" FromRole="TariffCategoryCodeSuppUnit" ToRole="TariffSupUnitLkps" />
+  </EntityType>
+  <Association Name="FK_TariffCategoryCodeSuppUnit_TariffCategory">
+    <End Type="WaterNutDBModel.TariffCategory" Role="TariffCategory" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Type="WaterNutDBModel.TariffCategoryCodeSuppUnit" Role="TariffCategoryCodeSuppUnit" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TariffCategory">
+        <PropertyRef Name="TariffCategoryCode" />
+      </Principal>
+      <Dependent Role="TariffCategoryCodeSuppUnit">
+        <PropertyRef Name="TariffCategoryCode" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TariffCategoryCodeSuppUnit_TariffSupUnitLkps">
+    <End Type="WaterNutDBModel.TariffSupUnitLkps" Role="TariffSupUnitLkps" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Type="WaterNutDBModel.TariffCategoryCodeSuppUnit" Role="TariffCategoryCodeSuppUnit" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TariffSupUnitLkps">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="TariffCategoryCodeSuppUnit">
+        <PropertyRef Name="TariffSupUnitId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

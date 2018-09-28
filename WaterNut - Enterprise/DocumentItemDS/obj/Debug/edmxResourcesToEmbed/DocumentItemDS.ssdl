@@ -1,0 +1,797 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="WaterNutDBModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="EntryPreviousItems">
+    <Key>
+      <PropertyRef Name="EntryPreviousItemId" />
+    </Key>
+    <Property Name="PreviousItem_Id" Type="int" Nullable="false" />
+    <Property Name="Item_Id" Type="int" Nullable="false" />
+    <Property Name="EntryPreviousItemId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+  </EntityType>
+  <EntityType Name="SubItems">
+    <Key>
+      <PropertyRef Name="SubItem_Id" />
+    </Key>
+    <Property Name="SubItem_Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Item_Id" Type="int" Nullable="false" />
+    <Property Name="ItemNumber" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="ItemDescription" Type="varchar(max)" />
+    <Property Name="Quantity" Type="float" Nullable="false" />
+    <Property Name="QtyAllocated" Type="float" Nullable="false" />
+  </EntityType>
+  <EntityType Name="xBondAllocations">
+    <Key>
+      <PropertyRef Name="xBondAllocationId" />
+    </Key>
+    <Property Name="xEntryItem_Id" Type="int" Nullable="false" />
+    <Property Name="AllocationId" Type="int" Nullable="false" />
+    <Property Name="xBondAllocationId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+  </EntityType>
+  <EntityType Name="xcuda_Attached_documents">
+    <Key>
+      <PropertyRef Name="Attached_documents_Id" />
+    </Key>
+    <Property Name="Attached_document_date" Type="nvarchar(max)" />
+    <Property Name="Attached_documents_Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Item_Id" Type="int" />
+    <Property Name="Attached_document_code" Type="varchar" MaxLength="50" />
+    <Property Name="Attached_document_name" Type="varchar" MaxLength="50" />
+    <Property Name="Attached_document_reference" Type="varchar" MaxLength="50" />
+    <Property Name="Attached_document_from_rule" Type="int" />
+  </EntityType>
+  <EntityType Name="xcuda_Goods_description">
+    <Key>
+      <PropertyRef Name="Item_Id" />
+    </Key>
+    <Property Name="Country_of_origin_code" Type="varchar(max)" />
+    <Property Name="Description_of_goods" Type="varchar(max)" />
+    <Property Name="Commercial_Description" Type="varchar(max)" />
+    <Property Name="Item_Id" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="xcuda_HScode">
+    <Key>
+      <PropertyRef Name="Item_Id" />
+    </Key>
+    <Property Name="Commodity_code" Type="varchar" MaxLength="8" Nullable="false" />
+    <Property Name="Precision_1" Type="varchar(max)" />
+    <Property Name="Precision_4" Type="varchar" MaxLength="50" />
+    <Property Name="Item_Id" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="xcuda_Inventory_Item">
+    <Key>
+      <PropertyRef Name="ItemNumber" />
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="ItemNumber" Type="varchar" MaxLength="255" Nullable="false" />
+    <Property Name="Id" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="xcuda_Item">
+    <Key>
+      <PropertyRef Name="Item_Id" />
+    </Key>
+    <Property Name="Amount_deducted_from_licence" Type="varchar(max)" />
+    <Property Name="Quantity_deducted_from_licence" Type="varchar(max)" />
+    <Property Name="Item_Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ASYCUDA_Id" Type="int" Nullable="false" />
+    <Property Name="Licence_number" Type="nvarchar(max)" />
+    <Property Name="Free_text_1" Type="nvarchar(max)" />
+    <Property Name="Free_text_2" Type="nvarchar(max)" />
+    <Property Name="EntryDataDetailsId" Type="int" />
+    <Property Name="LineNumber" Type="int" Nullable="false" />
+    <Property Name="IsAssessed" Type="bit" />
+    <Property Name="DPQtyAllocated" Type="float" Nullable="false" />
+    <Property Name="DFQtyAllocated" Type="float" Nullable="false" />
+    <Property Name="EntryTimeStamp" Type="datetime" />
+    <Property Name="AttributeOnlyAllocation" Type="bit" />
+    <Property Name="DoNotAllocate" Type="bit" />
+    <Property Name="DoNotEX" Type="bit" />
+    <Property Name="ImportComplete" Type="bit" Nullable="false" />
+    <Property Name="WarehouseError" Type="varchar" MaxLength="50" />
+    <Property Name="SalesFactor" Type="float" Nullable="false" />
+  </EntityType>
+  <EntityType Name="xcuda_item_deduction">
+    <Key>
+      <PropertyRef Name="Valuation_item_Id" />
+    </Key>
+    <Property Name="Amount_national_currency" Type="float" Nullable="false" />
+    <Property Name="Amount_foreign_currency" Type="float" Nullable="false" />
+    <Property Name="Currency_name" Type="varchar(max)" />
+    <Property Name="Currency_rate" Type="float" />
+    <Property Name="Valuation_item_Id" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="xcuda_item_external_freight">
+    <Key>
+      <PropertyRef Name="Valuation_item_Id" />
+    </Key>
+    <Property Name="Amount_national_currency" Type="float" Nullable="false" />
+    <Property Name="Amount_foreign_currency" Type="float" Nullable="false" />
+    <Property Name="Currency_rate" Type="float" Nullable="false" />
+    <Property Name="Currency_code" Type="varchar(max)" />
+    <Property Name="Valuation_item_Id" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="xcuda_item_insurance">
+    <Key>
+      <PropertyRef Name="Valuation_item_Id" />
+    </Key>
+    <Property Name="Amount_national_currency" Type="float" Nullable="false" />
+    <Property Name="Amount_foreign_currency" Type="float" Nullable="false" />
+    <Property Name="Currency_name" Type="varchar(max)" />
+    <Property Name="Currency_rate" Type="float" />
+    <Property Name="Valuation_item_Id" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="xcuda_item_internal_freight">
+    <Key>
+      <PropertyRef Name="Valuation_item_Id" />
+    </Key>
+    <Property Name="Amount_national_currency" Type="float" Nullable="false" />
+    <Property Name="Amount_foreign_currency" Type="float" Nullable="false" />
+    <Property Name="Currency_name" Type="varchar(max)" />
+    <Property Name="Currency_rate" Type="float" />
+    <Property Name="Valuation_item_Id" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="xcuda_Item_Invoice">
+    <Key>
+      <PropertyRef Name="Valuation_item_Id" />
+    </Key>
+    <Property Name="Amount_national_currency" Type="float" Nullable="false" />
+    <Property Name="Amount_foreign_currency" Type="float" Nullable="false" />
+    <Property Name="Currency_code" Type="varchar(max)" />
+    <Property Name="Currency_rate" Type="float" Nullable="false" />
+    <Property Name="Valuation_item_Id" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="xcuda_item_other_cost">
+    <Key>
+      <PropertyRef Name="Valuation_item_Id" />
+    </Key>
+    <Property Name="Amount_national_currency" Type="float" Nullable="false" />
+    <Property Name="Amount_foreign_currency" Type="float" Nullable="false" />
+    <Property Name="Currency_name" Type="varchar(max)" />
+    <Property Name="Currency_rate" Type="float" />
+    <Property Name="Valuation_item_Id" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="xcuda_ItemEntryDataDetails">
+    <Key>
+      <PropertyRef Name="ItemEntryDataDetailId" />
+    </Key>
+    <Property Name="Item_Id" Type="int" Nullable="false" />
+    <Property Name="EntryDataDetailsId" Type="int" Nullable="false" />
+    <Property Name="ItemEntryDataDetailId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+  </EntityType>
+  <EntityType Name="xcuda_Packages">
+    <Key>
+      <PropertyRef Name="Packages_Id" />
+    </Key>
+    <Property Name="Number_of_packages" Type="float" Nullable="false" />
+    <Property Name="Kind_of_packages_code" Type="varchar(max)" />
+    <Property Name="Kind_of_packages_name" Type="varchar(max)" />
+    <Property Name="Packages_Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Item_Id" Type="int" />
+    <Property Name="Marks1_of_packages" Type="nvarchar(max)" />
+    <Property Name="Marks2_of_packages" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="xcuda_Previous_doc">
+    <Key>
+      <PropertyRef Name="Item_Id" />
+    </Key>
+    <Property Name="Summary_declaration" Type="varchar(max)" />
+    <Property Name="Item_Id" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="xcuda_PreviousItem">
+    <Key>
+      <PropertyRef Name="PreviousItem_Id" />
+    </Key>
+    <Property Name="Packages_number" Type="varchar(max)" />
+    <Property Name="Previous_Packages_number" Type="varchar(max)" />
+    <Property Name="Hs_code" Type="varchar(max)" />
+    <Property Name="Commodity_code" Type="varchar(max)" />
+    <Property Name="Previous_item_number" Type="varchar(max)" />
+    <Property Name="Goods_origin" Type="varchar(max)" />
+    <Property Name="Net_weight" Type="float" Nullable="false" />
+    <Property Name="Prev_net_weight" Type="float" Nullable="false" />
+    <Property Name="Prev_reg_ser" Type="varchar(max)" />
+    <Property Name="Prev_reg_nbr" Type="varchar(max)" />
+    <Property Name="Prev_reg_dat" Type="varchar(max)" />
+    <Property Name="Prev_reg_cuo" Type="varchar(max)" />
+    <Property Name="Suplementary_Quantity" Type="float" Nullable="false" />
+    <Property Name="Preveious_suplementary_quantity" Type="float" Nullable="false" />
+    <Property Name="Current_value" Type="float" Nullable="false" />
+    <Property Name="Previous_value" Type="float" Nullable="false" />
+    <Property Name="Current_item_number" Type="varchar(max)" />
+    <Property Name="PreviousItem_Id" Type="int" Nullable="false" />
+    <Property Name="ASYCUDA_Id" Type="int" />
+    <Property Name="QtyAllocated" Type="float" Nullable="false" />
+  </EntityType>
+  <EntityType Name="xcuda_Supplementary_unit">
+    <Key>
+      <PropertyRef Name="Supplementary_unit_Id" />
+    </Key>
+    <Property Name="Suppplementary_unit_quantity" Type="float" />
+    <Property Name="Supplementary_unit_Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Tarification_Id" Type="int" Nullable="false" />
+    <Property Name="Suppplementary_unit_code" Type="nvarchar(max)" />
+    <Property Name="Suppplementary_unit_name" Type="nvarchar(max)" />
+    <Property Name="IsFirstRow" Type="bit" />
+  </EntityType>
+  <EntityType Name="xcuda_Suppliers_link">
+    <Key>
+      <PropertyRef Name="Suppliers_link_Id" />
+    </Key>
+    <Property Name="Suppliers_link_code" Type="varchar" MaxLength="50" />
+    <Property Name="Item_Id" Type="int" />
+    <Property Name="Suppliers_link_Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+  </EntityType>
+  <EntityType Name="xcuda_Tarification">
+    <Key>
+      <PropertyRef Name="Item_Id" />
+    </Key>
+    <Property Name="Extended_customs_procedure" Type="varchar(max)" />
+    <Property Name="National_customs_procedure" Type="varchar(max)" />
+    <Property Name="Item_price" Type="float" Nullable="false" />
+    <Property Name="Item_Id" Type="int" Nullable="false" />
+    <Property Name="Value_item" Type="nvarchar(max)" />
+    <Property Name="Attached_doc_item" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="xcuda_Taxation">
+    <Key>
+      <PropertyRef Name="Taxation_Id" />
+    </Key>
+    <Property Name="Item_taxes_amount" Type="float" Nullable="false" />
+    <Property Name="Item_taxes_guaranted_amount" Type="float" />
+    <Property Name="Counter_of_normal_mode_of_payment" Type="varchar(max)" />
+    <Property Name="Displayed_item_taxes_amount" Type="varchar(max)" />
+    <Property Name="Taxation_Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Item_Id" Type="int" />
+    <Property Name="Item_taxes_mode_of_payment" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="xcuda_Taxation_line">
+    <Key>
+      <PropertyRef Name="Taxation_line_Id" />
+    </Key>
+    <Property Name="Duty_tax_Base" Type="varchar(max)" />
+    <Property Name="Duty_tax_rate" Type="float" Nullable="false" />
+    <Property Name="Duty_tax_amount" Type="float" Nullable="false" />
+    <Property Name="Taxation_line_Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Taxation_Id" Type="int" />
+    <Property Name="Duty_tax_code" Type="nvarchar(max)" />
+    <Property Name="Duty_tax_MP" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="xcuda_Valuation_item">
+    <Key>
+      <PropertyRef Name="Item_Id" />
+    </Key>
+    <Property Name="Total_cost_itm" Type="float" Nullable="false" />
+    <Property Name="Total_CIF_itm" Type="float" Nullable="false" />
+    <Property Name="Rate_of_adjustement" Type="float" />
+    <Property Name="Statistical_value" Type="float" Nullable="false" />
+    <Property Name="Alpha_coeficient_of_apportionment" Type="varchar(max)" />
+    <Property Name="Item_Id" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="xcuda_Weight_itm">
+    <Key>
+      <PropertyRef Name="Valuation_item_Id" />
+    </Key>
+    <Property Name="Gross_weight_itm" Type="float" Nullable="false" />
+    <Property Name="Net_weight_itm" Type="float" Nullable="false" />
+    <Property Name="Valuation_item_Id" Type="int" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'WaterNutDB-Enterprise.dbo.PreviousItemsEx' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="PreviousItemsEx">
+    <Key>
+      <PropertyRef Name="PreviousItem_Id" />
+    </Key>
+    <Property Name="Packages_number" Type="varchar(max)" />
+    <Property Name="Previous_Packages_number" Type="varchar(max)" />
+    <Property Name="Hs_code" Type="varchar(max)" />
+    <Property Name="Commodity_code" Type="varchar(max)" />
+    <Property Name="Previous_item_number" Type="varchar(max)" />
+    <Property Name="Goods_origin" Type="varchar(max)" />
+    <Property Name="Net_weight" Type="float" Nullable="false" />
+    <Property Name="Prev_net_weight" Type="float" Nullable="false" />
+    <Property Name="Prev_reg_ser" Type="varchar(max)" />
+    <Property Name="Prev_reg_nbr" Type="varchar(max)" />
+    <Property Name="Prev_reg_dat" Type="varchar(max)" />
+    <Property Name="Prev_reg_cuo" Type="varchar(max)" />
+    <Property Name="Suplementary_Quantity" Type="float" Nullable="false" />
+    <Property Name="Preveious_suplementary_quantity" Type="float" Nullable="false" />
+    <Property Name="Current_value" Type="float" Nullable="false" />
+    <Property Name="Previous_value" Type="float" Nullable="false" />
+    <Property Name="Current_item_number" Type="varchar(max)" />
+    <Property Name="PreviousItem_Id" Type="int" Nullable="false" />
+    <Property Name="ASYCUDA_Id" Type="int" />
+    <Property Name="QtyAllocated" Type="float" Nullable="false" />
+    <Property Name="PreviousDocumentItemId" Type="int" />
+    <Property Name="RndCurrent_Value" Type="float" Nullable="false" />
+    <Property Name="CNumber" Type="varchar(max)" />
+    <Property Name="RegistrationDate" Type="datetime" />
+    <Property Name="AsycudaDocumentItemId" Type="int" />
+  </EntityType>
+  <Association Name="FK_EntryPreviousItems_xcuda_Item">
+    <End Role="xcuda_Item" Type="Self.xcuda_Item" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="EntryPreviousItems" Type="Self.EntryPreviousItems" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="xcuda_Item">
+        <PropertyRef Name="Item_Id" />
+      </Principal>
+      <Dependent Role="EntryPreviousItems">
+        <PropertyRef Name="Item_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Item_Attached_documents">
+    <End Role="xcuda_Item" Type="Self.xcuda_Item" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="xcuda_Attached_documents" Type="Self.xcuda_Attached_documents" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="xcuda_Item">
+        <PropertyRef Name="Item_Id" />
+      </Principal>
+      <Dependent Role="xcuda_Attached_documents">
+        <PropertyRef Name="Item_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Item_Goods_description">
+    <End Role="xcuda_Item" Type="Self.xcuda_Item" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="xcuda_Goods_description" Type="Self.xcuda_Goods_description" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="xcuda_Item">
+        <PropertyRef Name="Item_Id" />
+      </Principal>
+      <Dependent Role="xcuda_Goods_description">
+        <PropertyRef Name="Item_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Item_Packages">
+    <End Role="xcuda_Item" Type="Self.xcuda_Item" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="xcuda_Packages" Type="Self.xcuda_Packages" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="xcuda_Item">
+        <PropertyRef Name="Item_Id" />
+      </Principal>
+      <Dependent Role="xcuda_Packages">
+        <PropertyRef Name="Item_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Item_Previous_doc">
+    <End Role="xcuda_Item" Type="Self.xcuda_Item" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="xcuda_Previous_doc" Type="Self.xcuda_Previous_doc" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="xcuda_Item">
+        <PropertyRef Name="Item_Id" />
+      </Principal>
+      <Dependent Role="xcuda_Previous_doc">
+        <PropertyRef Name="Item_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Item_Suppliers_link">
+    <End Role="xcuda_Item" Type="Self.xcuda_Item" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="xcuda_Suppliers_link" Type="Self.xcuda_Suppliers_link" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="xcuda_Item">
+        <PropertyRef Name="Item_Id" />
+      </Principal>
+      <Dependent Role="xcuda_Suppliers_link">
+        <PropertyRef Name="Item_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Item_Tarification">
+    <End Role="xcuda_Item" Type="Self.xcuda_Item" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="xcuda_Tarification" Type="Self.xcuda_Tarification" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="xcuda_Item">
+        <PropertyRef Name="Item_Id" />
+      </Principal>
+      <Dependent Role="xcuda_Tarification">
+        <PropertyRef Name="Item_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Item_Taxation">
+    <End Role="xcuda_Item" Type="Self.xcuda_Item" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="xcuda_Taxation" Type="Self.xcuda_Taxation" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="xcuda_Item">
+        <PropertyRef Name="Item_Id" />
+      </Principal>
+      <Dependent Role="xcuda_Taxation">
+        <PropertyRef Name="Item_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Item_Valuation_item">
+    <End Role="xcuda_Item" Type="Self.xcuda_Item" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="xcuda_Valuation_item" Type="Self.xcuda_Valuation_item" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="xcuda_Item">
+        <PropertyRef Name="Item_Id" />
+      </Principal>
+      <Dependent Role="xcuda_Valuation_item">
+        <PropertyRef Name="Item_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SubItems_xcuda_Item">
+    <End Role="xcuda_Item" Type="Self.xcuda_Item" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="SubItems" Type="Self.SubItems" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="xcuda_Item">
+        <PropertyRef Name="Item_Id" />
+      </Principal>
+      <Dependent Role="SubItems">
+        <PropertyRef Name="Item_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Tarification_HScode">
+    <End Role="xcuda_Tarification" Type="Self.xcuda_Tarification" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="xcuda_HScode" Type="Self.xcuda_HScode" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="xcuda_Tarification">
+        <PropertyRef Name="Item_Id" />
+      </Principal>
+      <Dependent Role="xcuda_HScode">
+        <PropertyRef Name="Item_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Tarification_Supplementary_unit">
+    <End Role="xcuda_Tarification" Type="Self.xcuda_Tarification" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="xcuda_Supplementary_unit" Type="Self.xcuda_Supplementary_unit" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="xcuda_Tarification">
+        <PropertyRef Name="Item_Id" />
+      </Principal>
+      <Dependent Role="xcuda_Supplementary_unit">
+        <PropertyRef Name="Tarification_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Taxation_Taxation_line">
+    <End Role="xcuda_Taxation" Type="Self.xcuda_Taxation" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="xcuda_Taxation_line" Type="Self.xcuda_Taxation_line" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="xcuda_Taxation">
+        <PropertyRef Name="Taxation_Id" />
+      </Principal>
+      <Dependent Role="xcuda_Taxation_line">
+        <PropertyRef Name="Taxation_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Valuation_item_item_deduction">
+    <End Role="xcuda_Valuation_item" Type="Self.xcuda_Valuation_item" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="xcuda_item_deduction" Type="Self.xcuda_item_deduction" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="xcuda_Valuation_item">
+        <PropertyRef Name="Item_Id" />
+      </Principal>
+      <Dependent Role="xcuda_item_deduction">
+        <PropertyRef Name="Valuation_item_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Valuation_item_item_external_freight">
+    <End Role="xcuda_Valuation_item" Type="Self.xcuda_Valuation_item" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="xcuda_item_external_freight" Type="Self.xcuda_item_external_freight" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="xcuda_Valuation_item">
+        <PropertyRef Name="Item_Id" />
+      </Principal>
+      <Dependent Role="xcuda_item_external_freight">
+        <PropertyRef Name="Valuation_item_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Valuation_item_item_insurance">
+    <End Role="xcuda_Valuation_item" Type="Self.xcuda_Valuation_item" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="xcuda_item_insurance" Type="Self.xcuda_item_insurance" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="xcuda_Valuation_item">
+        <PropertyRef Name="Item_Id" />
+      </Principal>
+      <Dependent Role="xcuda_item_insurance">
+        <PropertyRef Name="Valuation_item_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Valuation_item_item_internal_freight">
+    <End Role="xcuda_Valuation_item" Type="Self.xcuda_Valuation_item" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="xcuda_item_internal_freight" Type="Self.xcuda_item_internal_freight" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="xcuda_Valuation_item">
+        <PropertyRef Name="Item_Id" />
+      </Principal>
+      <Dependent Role="xcuda_item_internal_freight">
+        <PropertyRef Name="Valuation_item_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Valuation_item_Item_Invoice">
+    <End Role="xcuda_Valuation_item" Type="Self.xcuda_Valuation_item" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="xcuda_Item_Invoice" Type="Self.xcuda_Item_Invoice" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="xcuda_Valuation_item">
+        <PropertyRef Name="Item_Id" />
+      </Principal>
+      <Dependent Role="xcuda_Item_Invoice">
+        <PropertyRef Name="Valuation_item_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Valuation_item_item_other_cost">
+    <End Role="xcuda_Valuation_item" Type="Self.xcuda_Valuation_item" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="xcuda_item_other_cost" Type="Self.xcuda_item_other_cost" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="xcuda_Valuation_item">
+        <PropertyRef Name="Item_Id" />
+      </Principal>
+      <Dependent Role="xcuda_item_other_cost">
+        <PropertyRef Name="Valuation_item_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Valuation_item_Weight_itm">
+    <End Role="xcuda_Valuation_item" Type="Self.xcuda_Valuation_item" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="xcuda_Weight_itm" Type="Self.xcuda_Weight_itm" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="xcuda_Valuation_item">
+        <PropertyRef Name="Item_Id" />
+      </Principal>
+      <Dependent Role="xcuda_Weight_itm">
+        <PropertyRef Name="Valuation_item_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_xBondAllocations_xcuda_Item">
+    <End Role="xcuda_Item" Type="Self.xcuda_Item" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="xBondAllocations" Type="Self.xBondAllocations" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="xcuda_Item">
+        <PropertyRef Name="Item_Id" />
+      </Principal>
+      <Dependent Role="xBondAllocations">
+        <PropertyRef Name="xEntryItem_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_xcuda_Inventory_Item_xcuda_HScode">
+    <End Role="xcuda_HScode" Type="Self.xcuda_HScode" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="xcuda_Inventory_Item" Type="Self.xcuda_Inventory_Item" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="xcuda_HScode">
+        <PropertyRef Name="Item_Id" />
+      </Principal>
+      <Dependent Role="xcuda_Inventory_Item">
+        <PropertyRef Name="Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_xcuda_ItemEntryDataDetails_xcuda_Item">
+    <End Role="xcuda_Item" Type="Self.xcuda_Item" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="xcuda_ItemEntryDataDetails" Type="Self.xcuda_ItemEntryDataDetails" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="xcuda_Item">
+        <PropertyRef Name="Item_Id" />
+      </Principal>
+      <Dependent Role="xcuda_ItemEntryDataDetails">
+        <PropertyRef Name="Item_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_xcuda_PreviousItem_xcuda_Item">
+    <End Role="xcuda_Item" Type="Self.xcuda_Item" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="xcuda_PreviousItem" Type="Self.xcuda_PreviousItem" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="xcuda_Item">
+        <PropertyRef Name="Item_Id" />
+      </Principal>
+      <Dependent Role="xcuda_PreviousItem">
+        <PropertyRef Name="PreviousItem_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="WaterNutDBModelStoreContainer">
+    <EntitySet Name="EntryPreviousItems" EntityType="Self.EntryPreviousItems" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="SubItems" EntityType="Self.SubItems" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="xBondAllocations" EntityType="Self.xBondAllocations" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="xcuda_Attached_documents" EntityType="Self.xcuda_Attached_documents" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="xcuda_Goods_description" EntityType="Self.xcuda_Goods_description" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="xcuda_HScode" EntityType="Self.xcuda_HScode" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="xcuda_Inventory_Item" EntityType="Self.xcuda_Inventory_Item" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="xcuda_Item" EntityType="Self.xcuda_Item" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="xcuda_item_deduction" EntityType="Self.xcuda_item_deduction" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="xcuda_item_external_freight" EntityType="Self.xcuda_item_external_freight" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="xcuda_item_insurance" EntityType="Self.xcuda_item_insurance" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="xcuda_item_internal_freight" EntityType="Self.xcuda_item_internal_freight" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="xcuda_Item_Invoice" EntityType="Self.xcuda_Item_Invoice" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="xcuda_item_other_cost" EntityType="Self.xcuda_item_other_cost" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="xcuda_ItemEntryDataDetails" EntityType="Self.xcuda_ItemEntryDataDetails" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="xcuda_Packages" EntityType="Self.xcuda_Packages" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="xcuda_Previous_doc" EntityType="Self.xcuda_Previous_doc" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="xcuda_PreviousItem" EntityType="Self.xcuda_PreviousItem" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="xcuda_Supplementary_unit" EntityType="Self.xcuda_Supplementary_unit" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="xcuda_Suppliers_link" EntityType="Self.xcuda_Suppliers_link" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="xcuda_Tarification" EntityType="Self.xcuda_Tarification" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="xcuda_Taxation" EntityType="Self.xcuda_Taxation" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="xcuda_Taxation_line" EntityType="Self.xcuda_Taxation_line" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="xcuda_Valuation_item" EntityType="Self.xcuda_Valuation_item" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="xcuda_Weight_itm" EntityType="Self.xcuda_Weight_itm" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PreviousItemsEx" EntityType="Self.PreviousItemsEx" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+[PreviousItemsEx].[Packages_number] AS [Packages_number], 
+[PreviousItemsEx].[Previous_Packages_number] AS [Previous_Packages_number], 
+[PreviousItemsEx].[Hs_code] AS [Hs_code], 
+[PreviousItemsEx].[Commodity_code] AS [Commodity_code], 
+[PreviousItemsEx].[Previous_item_number] AS [Previous_item_number], 
+[PreviousItemsEx].[Goods_origin] AS [Goods_origin], 
+[PreviousItemsEx].[Net_weight] AS [Net_weight], 
+[PreviousItemsEx].[Prev_net_weight] AS [Prev_net_weight], 
+[PreviousItemsEx].[Prev_reg_ser] AS [Prev_reg_ser], 
+[PreviousItemsEx].[Prev_reg_nbr] AS [Prev_reg_nbr], 
+[PreviousItemsEx].[Prev_reg_dat] AS [Prev_reg_dat], 
+[PreviousItemsEx].[Prev_reg_cuo] AS [Prev_reg_cuo], 
+[PreviousItemsEx].[Suplementary_Quantity] AS [Suplementary_Quantity], 
+[PreviousItemsEx].[Preveious_suplementary_quantity] AS [Preveious_suplementary_quantity], 
+[PreviousItemsEx].[Current_value] AS [Current_value], 
+[PreviousItemsEx].[Previous_value] AS [Previous_value], 
+[PreviousItemsEx].[Current_item_number] AS [Current_item_number], 
+[PreviousItemsEx].[PreviousItem_Id] AS [PreviousItem_Id], 
+[PreviousItemsEx].[ASYCUDA_Id] AS [ASYCUDA_Id], 
+[PreviousItemsEx].[QtyAllocated] AS [QtyAllocated], 
+[PreviousItemsEx].[PreviousDocumentItemId] AS [PreviousDocumentItemId], 
+[PreviousItemsEx].[RndCurrent_Value] AS [RndCurrent_Value], 
+[PreviousItemsEx].[CNumber] AS [CNumber], 
+[PreviousItemsEx].[RegistrationDate] AS [RegistrationDate], 
+[PreviousItemsEx].[AsycudaDocumentItemId] AS [AsycudaDocumentItemId]
+FROM [dbo].[PreviousItemsEx] AS [PreviousItemsEx]</DefiningQuery>
+    </EntitySet>
+    <AssociationSet Name="FK_EntryPreviousItems_xcuda_Item" Association="Self.FK_EntryPreviousItems_xcuda_Item">
+      <End Role="xcuda_Item" EntitySet="xcuda_Item" />
+      <End Role="EntryPreviousItems" EntitySet="EntryPreviousItems" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Item_Attached_documents" Association="Self.FK_Item_Attached_documents">
+      <End Role="xcuda_Item" EntitySet="xcuda_Item" />
+      <End Role="xcuda_Attached_documents" EntitySet="xcuda_Attached_documents" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Item_Goods_description" Association="Self.FK_Item_Goods_description">
+      <End Role="xcuda_Item" EntitySet="xcuda_Item" />
+      <End Role="xcuda_Goods_description" EntitySet="xcuda_Goods_description" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Item_Packages" Association="Self.FK_Item_Packages">
+      <End Role="xcuda_Item" EntitySet="xcuda_Item" />
+      <End Role="xcuda_Packages" EntitySet="xcuda_Packages" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Item_Previous_doc" Association="Self.FK_Item_Previous_doc">
+      <End Role="xcuda_Item" EntitySet="xcuda_Item" />
+      <End Role="xcuda_Previous_doc" EntitySet="xcuda_Previous_doc" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Item_Suppliers_link" Association="Self.FK_Item_Suppliers_link">
+      <End Role="xcuda_Item" EntitySet="xcuda_Item" />
+      <End Role="xcuda_Suppliers_link" EntitySet="xcuda_Suppliers_link" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Item_Tarification" Association="Self.FK_Item_Tarification">
+      <End Role="xcuda_Item" EntitySet="xcuda_Item" />
+      <End Role="xcuda_Tarification" EntitySet="xcuda_Tarification" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Item_Taxation" Association="Self.FK_Item_Taxation">
+      <End Role="xcuda_Item" EntitySet="xcuda_Item" />
+      <End Role="xcuda_Taxation" EntitySet="xcuda_Taxation" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Item_Valuation_item" Association="Self.FK_Item_Valuation_item">
+      <End Role="xcuda_Item" EntitySet="xcuda_Item" />
+      <End Role="xcuda_Valuation_item" EntitySet="xcuda_Valuation_item" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SubItems_xcuda_Item" Association="Self.FK_SubItems_xcuda_Item">
+      <End Role="xcuda_Item" EntitySet="xcuda_Item" />
+      <End Role="SubItems" EntitySet="SubItems" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Tarification_HScode" Association="Self.FK_Tarification_HScode">
+      <End Role="xcuda_Tarification" EntitySet="xcuda_Tarification" />
+      <End Role="xcuda_HScode" EntitySet="xcuda_HScode" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Tarification_Supplementary_unit" Association="Self.FK_Tarification_Supplementary_unit">
+      <End Role="xcuda_Tarification" EntitySet="xcuda_Tarification" />
+      <End Role="xcuda_Supplementary_unit" EntitySet="xcuda_Supplementary_unit" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Taxation_Taxation_line" Association="Self.FK_Taxation_Taxation_line">
+      <End Role="xcuda_Taxation" EntitySet="xcuda_Taxation" />
+      <End Role="xcuda_Taxation_line" EntitySet="xcuda_Taxation_line" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Valuation_item_item_deduction" Association="Self.FK_Valuation_item_item_deduction">
+      <End Role="xcuda_Valuation_item" EntitySet="xcuda_Valuation_item" />
+      <End Role="xcuda_item_deduction" EntitySet="xcuda_item_deduction" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Valuation_item_item_external_freight" Association="Self.FK_Valuation_item_item_external_freight">
+      <End Role="xcuda_Valuation_item" EntitySet="xcuda_Valuation_item" />
+      <End Role="xcuda_item_external_freight" EntitySet="xcuda_item_external_freight" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Valuation_item_item_insurance" Association="Self.FK_Valuation_item_item_insurance">
+      <End Role="xcuda_Valuation_item" EntitySet="xcuda_Valuation_item" />
+      <End Role="xcuda_item_insurance" EntitySet="xcuda_item_insurance" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Valuation_item_item_internal_freight" Association="Self.FK_Valuation_item_item_internal_freight">
+      <End Role="xcuda_Valuation_item" EntitySet="xcuda_Valuation_item" />
+      <End Role="xcuda_item_internal_freight" EntitySet="xcuda_item_internal_freight" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Valuation_item_Item_Invoice" Association="Self.FK_Valuation_item_Item_Invoice">
+      <End Role="xcuda_Valuation_item" EntitySet="xcuda_Valuation_item" />
+      <End Role="xcuda_Item_Invoice" EntitySet="xcuda_Item_Invoice" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Valuation_item_item_other_cost" Association="Self.FK_Valuation_item_item_other_cost">
+      <End Role="xcuda_Valuation_item" EntitySet="xcuda_Valuation_item" />
+      <End Role="xcuda_item_other_cost" EntitySet="xcuda_item_other_cost" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Valuation_item_Weight_itm" Association="Self.FK_Valuation_item_Weight_itm">
+      <End Role="xcuda_Valuation_item" EntitySet="xcuda_Valuation_item" />
+      <End Role="xcuda_Weight_itm" EntitySet="xcuda_Weight_itm" />
+    </AssociationSet>
+    <AssociationSet Name="FK_xBondAllocations_xcuda_Item" Association="Self.FK_xBondAllocations_xcuda_Item">
+      <End Role="xcuda_Item" EntitySet="xcuda_Item" />
+      <End Role="xBondAllocations" EntitySet="xBondAllocations" />
+    </AssociationSet>
+    <AssociationSet Name="FK_xcuda_Inventory_Item_xcuda_HScode" Association="Self.FK_xcuda_Inventory_Item_xcuda_HScode">
+      <End Role="xcuda_HScode" EntitySet="xcuda_HScode" />
+      <End Role="xcuda_Inventory_Item" EntitySet="xcuda_Inventory_Item" />
+    </AssociationSet>
+    <AssociationSet Name="FK_xcuda_ItemEntryDataDetails_xcuda_Item" Association="Self.FK_xcuda_ItemEntryDataDetails_xcuda_Item">
+      <End Role="xcuda_Item" EntitySet="xcuda_Item" />
+      <End Role="xcuda_ItemEntryDataDetails" EntitySet="xcuda_ItemEntryDataDetails" />
+    </AssociationSet>
+    <AssociationSet Name="FK_xcuda_PreviousItem_xcuda_Item" Association="Self.FK_xcuda_PreviousItem_xcuda_Item">
+      <End Role="xcuda_Item" EntitySet="xcuda_Item" />
+      <End Role="xcuda_PreviousItem" EntitySet="xcuda_PreviousItem" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

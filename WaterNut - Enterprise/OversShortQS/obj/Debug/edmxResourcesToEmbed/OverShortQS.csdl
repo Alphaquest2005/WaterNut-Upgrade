@@ -1,0 +1,311 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Model" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="InventoryItem">
+    <Key>
+      <PropertyRef Name="ItemNumber" />
+    </Key>
+    <Property Name="ItemNumber" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false">
+      <a:ImplementsProperty xmlns:a="http://schemas.tempuri.com/ImplementsProperty">IInventoryItem.ItemNumber</a:ImplementsProperty>
+    </Property>
+    <Property Name="Description" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false">
+      <a:ImplementsProperty xmlns:a="http://schemas.tempuri.com/ImplementsProperty">IInventoryItem.Description</a:ImplementsProperty>
+    </Property>
+    <Property Name="Category" Type="String" MaxLength="60" FixedLength="false" Unicode="true" />
+    <Property Name="TariffCode" Type="String" MaxLength="8" FixedLength="false" Unicode="false">
+      <a:ImplementsProperty xmlns:a="http://schemas.tempuri.com/ImplementsProperty">IInventoryItem.TariffCode</a:ImplementsProperty>
+    </Property>
+    <Property Name="EntryTimeStamp" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="OverShortDetails" Relationship="Self.FK_OverShortDetails_InventoryItems" FromRole="InventoryItems" ToRole="OverShortDetails" />
+    <a:DomainInterfaceProperty xmlns:a="http://schemas.tempuri.com/DomainInterfaceProperty">IInventoryItem</a:DomainInterfaceProperty>
+  </EntityType>
+  <EntityType Name="OverShortDetailAllocation">
+    <Key>
+      <PropertyRef Name="OverShortAllocationId" />
+    </Key>
+    <Property Name="OverShortDetailId" Type="Int32" Nullable="false" />
+    <Property Name="Item_Id" Type="Int32" Nullable="false" />
+    <Property Name="QtyAllocated" Type="Double" Nullable="false" />
+    <Property Name="Status" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="OverShortDetail" Relationship="Self.FK_OverShortDetailAllocations_OverShortDetails" FromRole="OverShortDetailAllocations" ToRole="OverShortDetails" />
+    <Property Name="OverShortAllocationId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <NavigationProperty Name="EX" Relationship="Model.OverShortDetailAllocationOverShortAllocationsEX" FromRole="OverShortDetailAllocation" ToRole="OverShortAllocationsEX" />
+    <NavigationProperty Name="AsycudaDocumentItem" Relationship="Model.AsycudaDocumentItemOverShortDetailAllocation" FromRole="OverShortDetailAllocation" ToRole="AsycudaDocumentItem" />
+  </EntityType>
+  <EntityType Name="OverShortDetail">
+    <Key>
+      <PropertyRef Name="OverShortDetailId" />
+    </Key>
+    <Property Name="OverShortDetailId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="OversShortsId" Type="Int32" Nullable="false" />
+    <Property Name="ReceivedQty" Type="Double" />
+    <Property Name="ItemNumber" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="ItemDescription" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Cost" Type="Double" />
+    <Property Name="InvoiceQty" Type="Double" />
+    <Property Name="Status" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="InventoryItem" Relationship="Self.FK_OverShortDetails_InventoryItems" FromRole="OverShortDetails" ToRole="InventoryItems" />
+    <NavigationProperty Name="OverShortDetailAllocations" Relationship="Self.FK_OverShortDetailAllocations_OverShortDetails" FromRole="OverShortDetails" ToRole="OverShortDetailAllocations" />
+    <NavigationProperty Name="OversShort" Relationship="Self.FK_OverShortDetails_OversShorts" FromRole="OverShortDetails" ToRole="OversShorts" />
+  </EntityType>
+  <EntityType Name="OversShort">
+    <Key>
+      <PropertyRef Name="OversShortsId" />
+    </Key>
+    <Property Name="OversShortsId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="InvoiceNo" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="InvoiceDate" Type="DateTime" Nullable="false" Precision="0" />
+    <NavigationProperty Name="OverShortDetails" Relationship="Self.FK_OverShortDetails_OversShorts" FromRole="OversShorts" ToRole="OverShortDetails" />
+    <NavigationProperty Name="OverShortSuggestedDocument" Relationship="Model.FK_OverShortSuggestedDocuments_OversShorts" FromRole="OversShort" ToRole="OverShortSuggestedDocument" />
+    <a:MainEntityProperty xmlns:a="http://schemas.tempuri.com/MainEntityProperty">True</a:MainEntityProperty>
+  </EntityType>
+  <Association Name="FK_OverShortDetails_InventoryItems">
+    <End Role="InventoryItems" Type="Self.InventoryItem" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="OverShortDetails" Type="Self.OverShortDetail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="InventoryItems">
+        <PropertyRef Name="ItemNumber" />
+      </Principal>
+      <Dependent Role="OverShortDetails">
+        <PropertyRef Name="ItemNumber" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_OverShortDetailAllocations_OverShortDetails">
+    <End Role="OverShortDetails" Type="Self.OverShortDetail" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="OverShortDetailAllocations" Type="Self.OverShortDetailAllocation" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="OverShortDetails">
+        <PropertyRef Name="OverShortDetailId" />
+      </Principal>
+      <Dependent Role="OverShortDetailAllocations">
+        <PropertyRef Name="OverShortDetailId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_OverShortDetails_OversShorts">
+    <End Role="OversShorts" Type="Self.OversShort" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="OverShortDetails" Type="Self.OverShortDetail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="OversShorts">
+        <PropertyRef Name="OversShortsId" />
+      </Principal>
+      <Dependent Role="OverShortDetails">
+        <PropertyRef Name="OversShortsId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="OverShortQS" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="InventoryItems" EntityType="Self.InventoryItem" />
+    <EntitySet Name="OverShortDetailAllocations" EntityType="Self.OverShortDetailAllocation" />
+    <EntitySet Name="OverShortDetails" EntityType="Self.OverShortDetail" />
+    <EntitySet Name="OversShorts" EntityType="Self.OversShort" />
+    <AssociationSet Name="FK_OverShortDetails_InventoryItems" Association="Self.FK_OverShortDetails_InventoryItems">
+      <End Role="InventoryItems" EntitySet="InventoryItems" />
+      <End Role="OverShortDetails" EntitySet="OverShortDetails" />
+    </AssociationSet>
+    <AssociationSet Name="FK_OverShortDetailAllocations_OverShortDetails" Association="Self.FK_OverShortDetailAllocations_OverShortDetails">
+      <End Role="OverShortDetails" EntitySet="OverShortDetails" />
+      <End Role="OverShortDetailAllocations" EntitySet="OverShortDetailAllocations" />
+    </AssociationSet>
+    <AssociationSet Name="FK_OverShortDetails_OversShorts" Association="Self.FK_OverShortDetails_OversShorts">
+      <End Role="OversShorts" EntitySet="OversShorts" />
+      <End Role="OverShortDetails" EntitySet="OverShortDetails" />
+    </AssociationSet>
+    <EntitySet Name="OverShortAllocationsEXes" EntityType="Model.OverShortAllocationsEX" />
+    <AssociationSet Name="OverShortDetailAllocationOverShortAllocationsEX" Association="Model.OverShortDetailAllocationOverShortAllocationsEX">
+      <End Role="OverShortDetailAllocation" EntitySet="OverShortDetailAllocations" />
+      <End Role="OverShortAllocationsEX" EntitySet="OverShortAllocationsEXes" />
+    </AssociationSet>
+    <EntitySet Name="AsycudaDocumentItems" EntityType="Model.AsycudaDocumentItem" />
+    <AssociationSet Name="AsycudaDocumentItemOverShortDetailAllocation" Association="Model.AsycudaDocumentItemOverShortDetailAllocation">
+      <End Role="AsycudaDocumentItem" EntitySet="AsycudaDocumentItems" />
+      <End Role="OverShortDetailAllocation" EntitySet="OverShortDetailAllocations" />
+    </AssociationSet>
+    <EntitySet Name="AsycudaDocuments" EntityType="Model.AsycudaDocument" />
+    <AssociationSet Name="AsycudaDocumentAsycudaDocumentItem" Association="Model.AsycudaDocumentAsycudaDocumentItem">
+      <End Role="AsycudaDocument" EntitySet="AsycudaDocuments" />
+      <End Role="AsycudaDocumentItem" EntitySet="AsycudaDocumentItems" />
+    </AssociationSet>
+    <EntitySet Name="OverShortSuggestedDocuments" EntityType="Model.OverShortSuggestedDocument" />
+    <AssociationSet Name="FK_OverShortSuggestedDocuments_OversShorts" Association="Model.FK_OverShortSuggestedDocuments_OversShorts">
+      <End Role="OversShort" EntitySet="OversShorts" />
+      <End Role="OverShortSuggestedDocument" EntitySet="OverShortSuggestedDocuments" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="OverShortAllocationsEX">
+    <Key>
+      <PropertyRef Name="OverShortAllocationId" />
+    </Key>
+    <Property Name="OverShortDetailId" Type="Int32" Nullable="false" />
+    <Property Name="OversShortsId" Type="Int32" Nullable="false" />
+    <Property Name="ReceivedQty" Type="Double" />
+    <Property Name="ItemNumber" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="ItemDescription" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Cost" Type="Double" />
+    <Property Name="InvoiceQty" Type="Double" />
+    <Property Name="Status" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="InvoiceNo" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="InvoiceDate" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="CNumber" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="RegistrationDate" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="OverShortAllocationId" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="OverShortDetailAllocation" Relationship="Model.OverShortDetailAllocationOverShortAllocationsEX" FromRole="OverShortAllocationsEX" ToRole="OverShortDetailAllocation" />
+    <Property Name="Duration" Type="Int32" />
+    <Property Name="InvoiceMonth" Type="Int32" />
+    <Property Name="AsycudaMonth" Type="Int32" />
+    <Property Name="AllocatedValue" Type="Double">
+      <a:DisplayTotalsProperty xmlns:a="http://schemas.tempuri.com/DisplayTotalsProperty">True</a:DisplayTotalsProperty>
+    </Property>
+    <Property Name="ReceivedValue" Type="Double">
+      <a:DisplayTotalsProperty xmlns:a="http://schemas.tempuri.com/DisplayTotalsProperty">True</a:DisplayTotalsProperty>
+    </Property>
+    <Property Name="InvoiceValue" Type="Double">
+      <a:DisplayTotalsProperty xmlns:a="http://schemas.tempuri.com/DisplayTotalsProperty">True</a:DisplayTotalsProperty>
+    </Property>
+  </EntityType>
+  <Association Name="OverShortDetailAllocationOverShortAllocationsEX">
+    <End Type="Model.OverShortDetailAllocation" Role="OverShortDetailAllocation" Multiplicity="1" />
+    <End Type="Model.OverShortAllocationsEX" Role="OverShortAllocationsEX" Multiplicity="1" />
+    <ReferentialConstraint>
+      <Principal Role="OverShortDetailAllocation">
+        <PropertyRef Name="OverShortAllocationId" />
+      </Principal>
+      <Dependent Role="OverShortAllocationsEX">
+        <PropertyRef Name="OverShortAllocationId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="AsycudaDocumentItem">
+    <Key>
+      <PropertyRef Name="Item_Id" />
+    </Key>
+    <Property Name="Item_Id" Type="Int32" Nullable="false" />
+    <Property Name="AsycudaDocumentId" Type="Int32" Nullable="false" />
+    <Property Name="EntryDataDetailsId" Type="Int32" />
+    <Property Name="LineNumber" Type="Int32" Nullable="false" />
+    <Property Name="IsAssessed" Type="Boolean" />
+    <Property Name="DoNotAllocate" Type="Boolean" />
+    <Property Name="DoNotEX" Type="Boolean" />
+    <Property Name="AttributeOnlyAllocation" Type="Boolean" />
+    <Property Name="Description_of_goods" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Commercial_Description" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Gross_weight_itm" Type="Double" Nullable="false" />
+    <Property Name="Net_weight_itm" Type="Double" />
+    <Property Name="Item_price" Type="Double" />
+    <Property Name="ItemQuantity" Type="Double" />
+    <Property Name="Suppplementary_unit_code" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="ItemNumber" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="TariffCode" Type="String" MaxLength="8" FixedLength="false" Unicode="false" />
+    <Property Name="TariffCodeLicenseRequired" Type="Boolean" />
+    <Property Name="TariffCategoryLicenseRequired" Type="Boolean" />
+    <Property Name="TariffCodeDescription" Type="String" MaxLength="999" FixedLength="false" Unicode="false" />
+    <Property Name="DutyLiability" Type="Double" />
+    <Property Name="Total_CIF_itm" Type="Double" />
+    <Property Name="Freight" Type="Double" />
+    <Property Name="Statistical_value" Type="Double" />
+    <Property Name="DPQtyAllocated" Type="Double" Nullable="false" />
+    <Property Name="DFQtyAllocated" Type="Double" Nullable="false" />
+    <Property Name="PiQuantity" Type="Double" />
+    <NavigationProperty Name="OverShortDetailAllocations" Relationship="Model.AsycudaDocumentItemOverShortDetailAllocation" FromRole="AsycudaDocumentItem" ToRole="OverShortDetailAllocation" />
+    <NavigationProperty Name="AsycudaDocument" Relationship="Model.AsycudaDocumentAsycudaDocumentItem" FromRole="AsycudaDocumentItem" ToRole="AsycudaDocument" />
+  </EntityType>
+  <Association Name="AsycudaDocumentItemOverShortDetailAllocation">
+    <End Type="Model.AsycudaDocumentItem" Role="AsycudaDocumentItem" Multiplicity="1" />
+    <End Type="Model.OverShortDetailAllocation" Role="OverShortDetailAllocation" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AsycudaDocumentItem">
+        <PropertyRef Name="Item_Id" />
+      </Principal>
+      <Dependent Role="OverShortDetailAllocation">
+        <PropertyRef Name="Item_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="AsycudaDocument">
+    <Key>
+      <PropertyRef Name="ASYCUDA_Id" />
+    </Key>
+    <Property Name="ASYCUDA_Id" Type="Int32" Nullable="false" />
+    <Property Name="id" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="CNumber" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="RegistrationDate" Type="DateTime" Precision="3" />
+    <Property Name="IsManuallyAssessed" Type="Boolean" />
+    <Property Name="ReferenceNumber" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="EffectiveRegistrationDate" Type="DateTime" Precision="3" />
+    <Property Name="AsycudaDocumentSetId" Type="Int32" />
+    <Property Name="DoNotAllocate" Type="Boolean" />
+    <Property Name="AutoUpdate" Type="Boolean" />
+    <Property Name="BLNumber" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Description" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Type_of_declaration" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Declaration_gen_procedure_code" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Extended_customs_procedure" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="DocumentType" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Document_TypeId" Type="Int32" />
+    <Property Name="Customs_ProcedureId" Type="Int32" />
+    <Property Name="Country_first_destination" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Currency_code" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Currency_rate" Type="Double" />
+    <Property Name="Manifest_reference_number" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Customs_clearance_office_code" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Lines" Type="Int32" />
+    <NavigationProperty Name="AsycudaDocumentItems" Relationship="Model.AsycudaDocumentAsycudaDocumentItem" FromRole="AsycudaDocument" ToRole="AsycudaDocumentItem" />
+  </EntityType>
+  <Association Name="AsycudaDocumentAsycudaDocumentItem">
+    <End Type="Model.AsycudaDocument" Role="AsycudaDocument" Multiplicity="1" />
+    <End Type="Model.AsycudaDocumentItem" Role="AsycudaDocumentItem" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AsycudaDocument">
+        <PropertyRef Name="ASYCUDA_Id" />
+      </Principal>
+      <Dependent Role="AsycudaDocumentItem">
+        <PropertyRef Name="AsycudaDocumentId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="OverShortSuggestedDocument">
+    <Key>
+      <PropertyRef Name="OversShortsId" />
+    </Key>
+    <Property Name="OversShortsId" Type="Int32" Nullable="false" />
+    <Property Name="CNumber" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="ReferenceNumber" Type="String" MaxLength="19" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="OversShort" Relationship="Model.FK_OverShortSuggestedDocuments_OversShorts" FromRole="OverShortSuggestedDocument" ToRole="OversShort" />
+  </EntityType>
+  <Association Name="FK_OverShortSuggestedDocuments_OversShorts">
+    <End Type="Model.OversShort" Role="OversShort" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Type="Model.OverShortSuggestedDocument" Role="OverShortSuggestedDocument" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="OversShort">
+        <PropertyRef Name="OversShortsId" />
+      </Principal>
+      <Dependent Role="OverShortSuggestedDocument">
+        <PropertyRef Name="OversShortsId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="OverShortDetailsEX" BaseType="Model.OverShortDetail">
+    <Property Name="ReceivedValue" Type="Double">
+      <a:DisplayTotalsProperty xmlns:a="http://schemas.tempuri.com/DisplayTotalsProperty">True</a:DisplayTotalsProperty>
+    </Property>
+    <Property Name="InvoiceValue" Type="Double">
+      <a:DisplayTotalsProperty xmlns:a="http://schemas.tempuri.com/DisplayTotalsProperty">True</a:DisplayTotalsProperty>
+    </Property>
+  </EntityType>
+  <EntityType Name="OversShortEX" BaseType="Model.OversShort">
+    <Property Name="ReceivedValue" Type="Double">
+      <a:DisplayTotalsProperty xmlns:a="http://schemas.tempuri.com/DisplayTotalsProperty">True</a:DisplayTotalsProperty>
+    </Property>
+    <Property Name="InvoiceValue" Type="Double">
+      <a:DisplayTotalsProperty xmlns:a="http://schemas.tempuri.com/DisplayTotalsProperty">True</a:DisplayTotalsProperty>
+    </Property>
+  </EntityType>
+</Schema>

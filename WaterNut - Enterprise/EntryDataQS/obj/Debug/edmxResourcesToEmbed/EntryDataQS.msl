@@ -1,0 +1,141 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs" Space="C-S">
+  <Alias Key="Model" Value="Model1" />
+  <Alias Key="Target" Value="Model1.Store" />
+  <EntityContainerMapping CdmEntityContainer="EntryDataQS" StorageEntityContainer="Model1StoreContainer">
+    <EntitySetMapping Name="AsycudaDocumentEntryDatas">
+      <EntityTypeMapping TypeName="IsTypeOf(WaterNutEntities.AsycudaDocumentEntryData)">
+        <MappingFragment StoreEntitySet="AsycudaDocumentEntryData">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="EntryDataId" ColumnName="EntryDataId" />
+          <ScalarProperty Name="AsycudaDocumentId" ColumnName="AsycudaDocumentId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="InventoryItemsEx">
+      <EntityTypeMapping TypeName="IsTypeOf(WaterNutEntities.InventoryItemsEx)">
+        <MappingFragment StoreEntitySet="InventoryItemsEx">
+          <ScalarProperty Name="SuppQty" ColumnName="SuppQty" />
+          <ScalarProperty Name="SuppUnitCode2" ColumnName="SuppUnitCode2" />
+          <ScalarProperty Name="TariffCode" ColumnName="TariffCode" />
+          <ScalarProperty Name="Category" ColumnName="Category" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="ItemNumber" ColumnName="ItemNumber" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AsycudaDocumentSetEntryDataDetails">
+      <EntityTypeMapping TypeName="IsTypeOf(WaterNutEntities.AsycudaDocumentSetEntryDataDetail)">
+        <MappingFragment StoreEntitySet="AsycudaDocumentSetEntryDataDetails">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="EntryDataDetailsId" ColumnName="EntryDataDetailsId" />
+          <ScalarProperty Name="AsycudaDocumentSetId" ColumnName="AsycudaDocumentSetId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EntryDataDetailsExes">
+      <EntityTypeMapping TypeName="IsTypeOf(WaterNutEntities.EntryDataDetailsEx)">
+        <MappingFragment StoreEntitySet="EntryDataDetailsEx">
+          <ScalarProperty Name="AsycudaDocumentSetId" ColumnName="AsycudaDocumentSetId" />
+          <ScalarProperty Name="Total" ColumnName="Total" />
+          <ScalarProperty Name="DutyFreePaid" ColumnName="DutyFreePaid" />
+          <ScalarProperty Name="Downloaded" ColumnName="Downloaded" />
+          <ScalarProperty Name="CLineNumber" ColumnName="CLineNumber" />
+          <ScalarProperty Name="CNumber" ColumnName="CNumber" />
+          <ScalarProperty Name="TariffCode" ColumnName="TariffCode" />
+          <ScalarProperty Name="DoNotAllocate" ColumnName="DoNotAllocate" />
+          <ScalarProperty Name="UnitWeight" ColumnName="UnitWeight" />
+          <ScalarProperty Name="QtyAllocated" ColumnName="QtyAllocated" />
+          <ScalarProperty Name="Cost" ColumnName="Cost" />
+          <ScalarProperty Name="ItemDescription" ColumnName="ItemDescription" />
+          <ScalarProperty Name="Units" ColumnName="Units" />
+          <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+          <ScalarProperty Name="ItemNumber" ColumnName="ItemNumber" />
+          <ScalarProperty Name="LineNumber" ColumnName="LineNumber" />
+          <ScalarProperty Name="EntryDataId" ColumnName="EntryDataId" />
+          <ScalarProperty Name="EntryDataDetailsId" ColumnName="EntryDataDetailsId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AsycudaDocumentSetEntryDatas">
+      <EntityTypeMapping TypeName="IsTypeOf(WaterNutEntities.AsycudaDocumentSetEntryData)">
+        <MappingFragment StoreEntitySet="AsycudaDocumentSetEntryData">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="EntryDataId" ColumnName="EntryDataId" />
+          <ScalarProperty Name="AsycudaDocumentSetId" ColumnName="AsycudaDocumentSetId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EntryDataEx">
+      <EntityTypeMapping TypeName="IsTypeOf(WaterNutEntities.EntryDataEx)">
+        <MappingFragment StoreEntitySet="EntryDataEx">
+          <ScalarProperty Name="TotalLines" ColumnName="TotalLines" />
+          <ScalarProperty Name="ImportedLines" ColumnName="ImportedLines" />
+          <ScalarProperty Name="ImportedTotal" ColumnName="ImportedTotal" />
+          <ScalarProperty Name="InvoiceNo" ColumnName="InvoiceNo" />
+          <ScalarProperty Name="Total" ColumnName="Total" />
+          <ScalarProperty Name="DutyFreePaid" ColumnName="DutyFreePaid" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="InvoiceDate" ColumnName="InvoiceDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ContainerEntryDatas">
+      <EntityTypeMapping TypeName="WaterNutEntities.ContainerEntryData">
+        <MappingFragment StoreEntitySet="ContainerEntryData">
+          <ScalarProperty Name="ContainerEntryData1" ColumnName="ContainerEntryData" />
+          <ScalarProperty Name="EntryDataId" ColumnName="EntryDataId" />
+          <ScalarProperty Name="Container_Id" ColumnName="Container_Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ContainerExes">
+      <EntityTypeMapping TypeName="WaterNutEntities.ContainerEx">
+        <MappingFragment StoreEntitySet="ContainerEx">
+          <ScalarProperty Name="ContainerTypeDescription" ColumnName="ContainerTypeDescription" />
+          <ScalarProperty Name="PackageDescription" ColumnName="PackageDescription" />
+          <ScalarProperty Name="EntryDataId" ColumnName="EntryDataId" />
+          <ScalarProperty Name="AsycudaDocumentSetId" ColumnName="AsycudaDocumentSetId" />
+          <ScalarProperty Name="Seal" ColumnName="Seal" />
+          <ScalarProperty Name="DeliveryDate" ColumnName="DeliveryDate" />
+          <ScalarProperty Name="ShipDate" ColumnName="ShipDate" />
+          <ScalarProperty Name="TotalValue" ColumnName="TotalValue" />
+          <ScalarProperty Name="Container_Id" ColumnName="Container_Id" />
+          <ScalarProperty Name="Packages_weight" ColumnName="Packages_weight" />
+          <ScalarProperty Name="Packages_type" ColumnName="Packages_type" />
+          <ScalarProperty Name="Packages_number" ColumnName="Packages_number" />
+          <ScalarProperty Name="Goods_description" ColumnName="Goods_description" />
+          <ScalarProperty Name="Gross_weight" ColumnName="Gross_weight" />
+          <ScalarProperty Name="Empty_full_indicator" ColumnName="Empty_full_indicator" />
+          <ScalarProperty Name="Container_type" ColumnName="Container_type" />
+          <ScalarProperty Name="Container_identity" ColumnName="Container_identity" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ContainerTypes">
+      <EntityTypeMapping TypeName="WaterNutEntities.ContainerType">
+        <MappingFragment StoreEntitySet="ContainerTypes">
+          <ScalarProperty Name="ContainerTypeDescription" ColumnName="ContainerTypeDescription" />
+          <ScalarProperty Name="ContainerCode" ColumnName="ContainerCode" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PackageTypes">
+      <EntityTypeMapping TypeName="WaterNutEntities.PackageType">
+        <MappingFragment StoreEntitySet="PackageTypes">
+          <ScalarProperty Name="PackageDescription" ColumnName="PackageDescription" />
+          <ScalarProperty Name="PackageCode" ColumnName="PackageType" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EmptyFullCodes">
+      <EntityTypeMapping TypeName="WaterNutEntities.EmptyFullCode">
+        <MappingFragment StoreEntitySet="EmptyFullCodes">
+          <ScalarProperty Name="EmptyFullCodeId" ColumnName="EmptyFullCodeId" />
+          <ScalarProperty Name="EmptyFullDescription" ColumnName="EmptyFullDescription" />
+          <ScalarProperty Name="EmptyFullCodeName" ColumnName="EmptyFullCode" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

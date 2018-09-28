@@ -1,0 +1,342 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Model.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="InventoryItems">
+    <Key>
+      <PropertyRef Name="ItemNumber" />
+    </Key>
+    <Property Name="ItemNumber" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Description" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Category" Type="nvarchar" MaxLength="60" />
+    <Property Name="TariffCode" Type="varchar" MaxLength="8" />
+    <Property Name="EntryTimeStamp" Type="datetime" />
+  </EntityType>
+  <EntityType Name="OverShortDetailAllocations">
+    <Key>
+      <PropertyRef Name="OverShortAllocationId" />
+    </Key>
+    <Property Name="OverShortAllocationId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="OverShortDetailId" Type="int" Nullable="false" />
+    <Property Name="Item_Id" Type="int" Nullable="false" />
+    <Property Name="QtyAllocated" Type="float" Nullable="false" />
+    <Property Name="Status" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="OverShortDetails">
+    <Key>
+      <PropertyRef Name="OverShortDetailId" />
+    </Key>
+    <Property Name="OverShortDetailId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="OversShortsId" Type="int" Nullable="false" />
+    <Property Name="ReceivedQty" Type="float" />
+    <Property Name="ItemNumber" Type="varchar" MaxLength="50" />
+    <Property Name="ItemDescription" Type="varchar(max)" />
+    <Property Name="Cost" Type="float" />
+    <Property Name="InvoiceQty" Type="float" />
+    <Property Name="Status" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="OverShortSuggestedDocuments">
+    <Key>
+      <PropertyRef Name="OversShortsId" />
+    </Key>
+    <Property Name="OversShortsId" Type="int" Nullable="false" />
+    <Property Name="CNumber" Type="varchar" MaxLength="50" />
+    <Property Name="ReferenceNumber" Type="varchar" MaxLength="19" />
+  </EntityType>
+  <EntityType Name="OversShorts">
+    <Key>
+      <PropertyRef Name="OversShortsId" />
+    </Key>
+    <Property Name="OversShortsId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="InvoiceNo" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="InvoiceDate" Type="date" Nullable="false" />
+    <Property Name="ReferenceNumber" Type="varchar" MaxLength="50" />
+    <Property Name="CNumber" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'WaterNutDB-Enterprise.dbo.AsycudaDocument' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="AsycudaDocument">
+    <Key>
+      <PropertyRef Name="ASYCUDA_Id" />
+    </Key>
+    <Property Name="ASYCUDA_Id" Type="int" Nullable="false" />
+    <Property Name="id" Type="varchar(max)" />
+    <Property Name="CNumber" Type="varchar(max)" />
+    <Property Name="RegistrationDate" Type="datetime" />
+    <Property Name="IsManuallyAssessed" Type="bit" />
+    <Property Name="ReferenceNumber" Type="nvarchar(max)" />
+    <Property Name="EffectiveRegistrationDate" Type="datetime" />
+    <Property Name="AsycudaDocumentSetId" Type="int" />
+    <Property Name="DoNotAllocate" Type="bit" />
+    <Property Name="AutoUpdate" Type="bit" />
+    <Property Name="BLNumber" Type="varchar" MaxLength="50" />
+    <Property Name="Description" Type="nvarchar(max)" />
+    <Property Name="Type_of_declaration" Type="varchar(max)" />
+    <Property Name="Declaration_gen_procedure_code" Type="varchar(max)" />
+    <Property Name="Extended_customs_procedure" Type="varchar(max)" />
+    <Property Name="DocumentType" Type="varchar(max)" />
+    <Property Name="Document_TypeId" Type="int" />
+    <Property Name="Customs_ProcedureId" Type="int" />
+    <Property Name="Country_first_destination" Type="varchar(max)" />
+    <Property Name="Currency_code" Type="varchar" MaxLength="50" />
+    <Property Name="Currency_rate" Type="float" />
+    <Property Name="Manifest_reference_number" Type="varchar" MaxLength="50" />
+    <Property Name="Customs_clearance_office_code" Type="varchar(max)" />
+    <Property Name="Lines" Type="int" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'WaterNutDB-Enterprise.dbo.AsycudaDocumentItem' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="AsycudaDocumentItem">
+    <Key>
+      <PropertyRef Name="Item_Id" />
+    </Key>
+    <Property Name="Item_Id" Type="int" Nullable="false" />
+    <Property Name="AsycudaDocumentId" Type="int" Nullable="false" />
+    <Property Name="EntryDataDetailsId" Type="int" />
+    <Property Name="LineNumber" Type="int" Nullable="false" />
+    <Property Name="IsAssessed" Type="bit" />
+    <Property Name="DoNotAllocate" Type="bit" />
+    <Property Name="DoNotEX" Type="bit" />
+    <Property Name="AttributeOnlyAllocation" Type="bit" />
+    <Property Name="Description_of_goods" Type="varchar(max)" />
+    <Property Name="Commercial_Description" Type="varchar(max)" />
+    <Property Name="Gross_weight_itm" Type="float" Nullable="false" />
+    <Property Name="Net_weight_itm" Type="float" />
+    <Property Name="Item_price" Type="float" />
+    <Property Name="ItemQuantity" Type="float" />
+    <Property Name="Suppplementary_unit_code" Type="nvarchar(max)" />
+    <Property Name="ItemNumber" Type="varchar" MaxLength="50" />
+    <Property Name="TariffCode" Type="varchar" MaxLength="8" />
+    <Property Name="TariffCodeLicenseRequired" Type="bit" />
+    <Property Name="TariffCategoryLicenseRequired" Type="bit" />
+    <Property Name="TariffCodeDescription" Type="varchar" MaxLength="999" />
+    <Property Name="DutyLiability" Type="float" />
+    <Property Name="Total_CIF_itm" Type="float" />
+    <Property Name="Freight" Type="float" />
+    <Property Name="Statistical_value" Type="float" />
+    <Property Name="DPQtyAllocated" Type="float" Nullable="false" />
+    <Property Name="DFQtyAllocated" Type="float" Nullable="false" />
+    <Property Name="PiQuantity" Type="float" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'WaterNutDB-Enterprise.dbo.OverShortAllocationsEX' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="OverShortAllocationsEX">
+    <Key>
+      <PropertyRef Name="OverShortAllocationId" />
+    </Key>
+    <Property Name="OverShortAllocationId" Type="int" Nullable="false" />
+    <Property Name="OverShortDetailId" Type="int" Nullable="false" />
+    <Property Name="OversShortsId" Type="int" Nullable="false" />
+    <Property Name="ReceivedQty" Type="float" />
+    <Property Name="ItemNumber" Type="varchar" MaxLength="50" />
+    <Property Name="ItemDescription" Type="varchar(max)" />
+    <Property Name="Cost" Type="float" />
+    <Property Name="InvoiceQty" Type="float" />
+    <Property Name="Status" Type="varchar(max)" />
+    <Property Name="InvoiceNo" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="InvoiceDate" Type="date" Nullable="false" />
+    <Property Name="CNumber" Type="varchar(max)" />
+    <Property Name="RegistrationDate" Type="varchar(max)" />
+    <Property Name="Duration" Type="int" />
+    <Property Name="InvoiceMonth" Type="int" />
+    <Property Name="AsycudaMonth" Type="int" />
+    <Property Name="AllocatedValue" Type="float" />
+    <Property Name="ReceivedValue" Type="float" />
+    <Property Name="InvoiceValue" Type="float" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'WaterNutDB-Enterprise.dbo.OverShortDetailsEX' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="OverShortDetailsEX">
+    <Key>
+      <PropertyRef Name="OverShortDetailId" />
+    </Key>
+    <Property Name="ReceivedValue" Type="float" />
+    <Property Name="InvoiceValue" Type="float" />
+    <Property Name="OverShortDetailId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="OversShortsId" Type="int" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'WaterNutDB-Enterprise.dbo.OversShortEX' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="OversShortEX">
+    <Key>
+      <PropertyRef Name="OversShortsId" />
+    </Key>
+    <Property Name="OversShortsId" Type="int" Nullable="false" />
+    <Property Name="ReceivedValue" Type="float" />
+    <Property Name="InvoiceValue" Type="float" />
+  </EntityType>
+  <Association Name="FK_OverShortDetailAllocations_OverShortDetails">
+    <End Role="OverShortDetails" Type="Self.OverShortDetails" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="OverShortDetailAllocations" Type="Self.OverShortDetailAllocations" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="OverShortDetails">
+        <PropertyRef Name="OverShortDetailId" />
+      </Principal>
+      <Dependent Role="OverShortDetailAllocations">
+        <PropertyRef Name="OverShortDetailId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_OverShortDetails_InventoryItems">
+    <End Role="InventoryItems" Type="Self.InventoryItems" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="OverShortDetails" Type="Self.OverShortDetails" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="InventoryItems">
+        <PropertyRef Name="ItemNumber" />
+      </Principal>
+      <Dependent Role="OverShortDetails">
+        <PropertyRef Name="ItemNumber" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_OverShortDetails_OversShorts">
+    <End Role="OversShorts" Type="Self.OversShorts" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="OverShortDetails" Type="Self.OverShortDetails" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="OversShorts">
+        <PropertyRef Name="OversShortsId" />
+      </Principal>
+      <Dependent Role="OverShortDetails">
+        <PropertyRef Name="OversShortsId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_OverShortSuggestedDocuments_OversShorts">
+    <End Role="OversShorts" Type="Self.OversShorts" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="OverShortSuggestedDocuments" Type="Self.OverShortSuggestedDocuments" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="OversShorts">
+        <PropertyRef Name="OversShortsId" />
+      </Principal>
+      <Dependent Role="OverShortSuggestedDocuments">
+        <PropertyRef Name="OversShortsId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="ModelStoreContainer">
+    <EntitySet Name="InventoryItems" EntityType="Self.InventoryItems" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="OverShortDetailAllocations" EntityType="Self.OverShortDetailAllocations" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="OverShortDetails" EntityType="Self.OverShortDetails" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="OverShortSuggestedDocuments" EntityType="Self.OverShortSuggestedDocuments" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="OversShorts" EntityType="Self.OversShorts" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="AsycudaDocument" EntityType="Self.AsycudaDocument" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+[AsycudaDocument].[ASYCUDA_Id] AS [ASYCUDA_Id], 
+[AsycudaDocument].[id] AS [id], 
+[AsycudaDocument].[CNumber] AS [CNumber], 
+[AsycudaDocument].[RegistrationDate] AS [RegistrationDate], 
+[AsycudaDocument].[IsManuallyAssessed] AS [IsManuallyAssessed], 
+[AsycudaDocument].[ReferenceNumber] AS [ReferenceNumber], 
+[AsycudaDocument].[EffectiveRegistrationDate] AS [EffectiveRegistrationDate], 
+[AsycudaDocument].[AsycudaDocumentSetId] AS [AsycudaDocumentSetId], 
+[AsycudaDocument].[DoNotAllocate] AS [DoNotAllocate], 
+[AsycudaDocument].[AutoUpdate] AS [AutoUpdate], 
+[AsycudaDocument].[BLNumber] AS [BLNumber], 
+[AsycudaDocument].[Description] AS [Description], 
+[AsycudaDocument].[Type_of_declaration] AS [Type_of_declaration], 
+[AsycudaDocument].[Declaration_gen_procedure_code] AS [Declaration_gen_procedure_code], 
+[AsycudaDocument].[Extended_customs_procedure] AS [Extended_customs_procedure], 
+[AsycudaDocument].[DocumentType] AS [DocumentType], 
+[AsycudaDocument].[Document_TypeId] AS [Document_TypeId], 
+[AsycudaDocument].[Customs_ProcedureId] AS [Customs_ProcedureId], 
+[AsycudaDocument].[Country_first_destination] AS [Country_first_destination], 
+[AsycudaDocument].[Currency_code] AS [Currency_code], 
+[AsycudaDocument].[Currency_rate] AS [Currency_rate], 
+[AsycudaDocument].[Manifest_reference_number] AS [Manifest_reference_number], 
+[AsycudaDocument].[Customs_clearance_office_code] AS [Customs_clearance_office_code], 
+[AsycudaDocument].[Lines] AS [Lines]
+FROM [dbo].[AsycudaDocument] AS [AsycudaDocument]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="AsycudaDocumentItem" EntityType="Self.AsycudaDocumentItem" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+[AsycudaDocumentItem].[Item_Id] AS [Item_Id], 
+[AsycudaDocumentItem].[AsycudaDocumentId] AS [AsycudaDocumentId], 
+[AsycudaDocumentItem].[EntryDataDetailsId] AS [EntryDataDetailsId], 
+[AsycudaDocumentItem].[LineNumber] AS [LineNumber], 
+[AsycudaDocumentItem].[IsAssessed] AS [IsAssessed], 
+[AsycudaDocumentItem].[DoNotAllocate] AS [DoNotAllocate], 
+[AsycudaDocumentItem].[DoNotEX] AS [DoNotEX], 
+[AsycudaDocumentItem].[AttributeOnlyAllocation] AS [AttributeOnlyAllocation], 
+[AsycudaDocumentItem].[Description_of_goods] AS [Description_of_goods], 
+[AsycudaDocumentItem].[Commercial_Description] AS [Commercial_Description], 
+[AsycudaDocumentItem].[Gross_weight_itm] AS [Gross_weight_itm], 
+[AsycudaDocumentItem].[Net_weight_itm] AS [Net_weight_itm], 
+[AsycudaDocumentItem].[Item_price] AS [Item_price], 
+[AsycudaDocumentItem].[ItemQuantity] AS [ItemQuantity], 
+[AsycudaDocumentItem].[Suppplementary_unit_code] AS [Suppplementary_unit_code], 
+[AsycudaDocumentItem].[ItemNumber] AS [ItemNumber], 
+[AsycudaDocumentItem].[TariffCode] AS [TariffCode], 
+[AsycudaDocumentItem].[TariffCodeLicenseRequired] AS [TariffCodeLicenseRequired], 
+[AsycudaDocumentItem].[TariffCategoryLicenseRequired] AS [TariffCategoryLicenseRequired], 
+[AsycudaDocumentItem].[TariffCodeDescription] AS [TariffCodeDescription], 
+[AsycudaDocumentItem].[DutyLiability] AS [DutyLiability], 
+[AsycudaDocumentItem].[Total_CIF_itm] AS [Total_CIF_itm], 
+[AsycudaDocumentItem].[Freight] AS [Freight], 
+[AsycudaDocumentItem].[Statistical_value] AS [Statistical_value], 
+[AsycudaDocumentItem].[DPQtyAllocated] AS [DPQtyAllocated], 
+[AsycudaDocumentItem].[DFQtyAllocated] AS [DFQtyAllocated], 
+[AsycudaDocumentItem].[PiQuantity] AS [PiQuantity]
+FROM [dbo].[AsycudaDocumentItem] AS [AsycudaDocumentItem]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="OverShortAllocationsEX" EntityType="Self.OverShortAllocationsEX" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+[OverShortAllocationsEX].[OverShortAllocationId] AS [OverShortAllocationId], 
+[OverShortAllocationsEX].[OverShortDetailId] AS [OverShortDetailId], 
+[OverShortAllocationsEX].[OversShortsId] AS [OversShortsId], 
+[OverShortAllocationsEX].[ReceivedQty] AS [ReceivedQty], 
+[OverShortAllocationsEX].[ItemNumber] AS [ItemNumber], 
+[OverShortAllocationsEX].[ItemDescription] AS [ItemDescription], 
+[OverShortAllocationsEX].[Cost] AS [Cost], 
+[OverShortAllocationsEX].[InvoiceQty] AS [InvoiceQty], 
+[OverShortAllocationsEX].[Status] AS [Status], 
+[OverShortAllocationsEX].[InvoiceNo] AS [InvoiceNo], 
+[OverShortAllocationsEX].[InvoiceDate] AS [InvoiceDate], 
+[OverShortAllocationsEX].[CNumber] AS [CNumber], 
+[OverShortAllocationsEX].[RegistrationDate] AS [RegistrationDate], 
+[OverShortAllocationsEX].[Duration] AS [Duration], 
+[OverShortAllocationsEX].[InvoiceMonth] AS [InvoiceMonth], 
+[OverShortAllocationsEX].[AsycudaMonth] AS [AsycudaMonth], 
+[OverShortAllocationsEX].[AllocatedValue] AS [AllocatedValue], 
+[OverShortAllocationsEX].[ReceivedValue] AS [ReceivedValue], 
+[OverShortAllocationsEX].[InvoiceValue] AS [InvoiceValue]
+FROM [dbo].[OverShortAllocationsEX] AS [OverShortAllocationsEX]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="OverShortDetailsEX" EntityType="Self.OverShortDetailsEX" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+[OverShortDetailsEX].[ReceivedValue] AS [ReceivedValue], 
+[OverShortDetailsEX].[InvoiceValue] AS [InvoiceValue], 
+[OverShortDetailsEX].[OverShortDetailId] AS [OverShortDetailId], 
+[OverShortDetailsEX].[OversShortsId] AS [OversShortsId]
+FROM [dbo].[OverShortDetailsEX] AS [OverShortDetailsEX]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="OversShortEX" EntityType="Self.OversShortEX" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+[OversShortEX].[OversShortsId] AS [OversShortsId], 
+[OversShortEX].[ReceivedValue] AS [ReceivedValue], 
+[OversShortEX].[InvoiceValue] AS [InvoiceValue]
+FROM [dbo].[OversShortEX] AS [OversShortEX]</DefiningQuery>
+    </EntitySet>
+    <AssociationSet Name="FK_OverShortDetailAllocations_OverShortDetails" Association="Self.FK_OverShortDetailAllocations_OverShortDetails">
+      <End Role="OverShortDetails" EntitySet="OverShortDetails" />
+      <End Role="OverShortDetailAllocations" EntitySet="OverShortDetailAllocations" />
+    </AssociationSet>
+    <AssociationSet Name="FK_OverShortDetails_InventoryItems" Association="Self.FK_OverShortDetails_InventoryItems">
+      <End Role="InventoryItems" EntitySet="InventoryItems" />
+      <End Role="OverShortDetails" EntitySet="OverShortDetails" />
+    </AssociationSet>
+    <AssociationSet Name="FK_OverShortDetails_OversShorts" Association="Self.FK_OverShortDetails_OversShorts">
+      <End Role="OversShorts" EntitySet="OversShorts" />
+      <End Role="OverShortDetails" EntitySet="OverShortDetails" />
+    </AssociationSet>
+    <AssociationSet Name="FK_OverShortSuggestedDocuments_OversShorts" Association="Self.FK_OverShortSuggestedDocuments_OversShorts">
+      <End Role="OversShorts" EntitySet="OversShorts" />
+      <End Role="OverShortSuggestedDocuments" EntitySet="OverShortSuggestedDocuments" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

@@ -1,0 +1,177 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="WaterNutDBModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="TariffCategory">
+    <Key>
+      <PropertyRef Name="TariffCategoryCode" />
+    </Key>
+    <Property Name="TariffCategoryCode" Type="varchar" MaxLength="8" Nullable="false" />
+    <Property Name="Description" Type="varchar" MaxLength="999" />
+    <Property Name="ParentTariffCategoryCode" Type="varchar" MaxLength="5" />
+    <Property Name="LicenseRequired" Type="bit" />
+  </EntityType>
+  <EntityType Name="TariffCategoryCodeSuppUnit">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="TariffCategoryCode" Type="varchar" MaxLength="8" Nullable="false" />
+    <Property Name="TariffSupUnitId" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TariffCodes">
+    <Key>
+      <PropertyRef Name="TariffCode" />
+    </Key>
+    <Property Name="TariffCode" Type="varchar" MaxLength="8" Nullable="false" />
+    <Property Name="Description" Type="varchar" MaxLength="999" />
+    <Property Name="RateofDuty" Type="varchar" MaxLength="50" />
+    <Property Name="EnvironmentalLevy" Type="varchar" MaxLength="50" />
+    <Property Name="CustomsServiceCharge" Type="varchar" MaxLength="50" />
+    <Property Name="ExciseTax" Type="varchar" MaxLength="50" />
+    <Property Name="VatRate" Type="varchar" MaxLength="50" />
+    <Property Name="PetrolTax" Type="varchar" MaxLength="50" />
+    <Property Name="Units" Type="nvarchar" MaxLength="999" />
+    <Property Name="SiteRev3" Type="varchar" MaxLength="50" />
+    <Property Name="TariffCategoryCode" Type="varchar" MaxLength="8" />
+    <Property Name="LicenseRequired" Type="bit" />
+    <Property Name="Invalid" Type="bit" />
+  </EntityType>
+  <EntityType Name="TariffSupUnitLkps">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="SuppUnitCode2" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="SuppUnitName2" Type="nvarchar" MaxLength="50" />
+    <Property Name="SuppQty" Type="float" Nullable="false" />
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'C:\PRISM\GITREPOSITIORY\WATERNUT\WATERNUT\WATERNUT - ENTERPRISE\WCFCONSOLEHOST\WATERNUT-ENTERPRISEDB.MDF.dbo.EntryDataDetailsEx' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="EntryDataDetailsEx">
+    <Key>
+      <PropertyRef Name="EntryDataDetailsId" />
+    </Key>
+    <Property Name="EntryDataDetailsId" Type="int" Nullable="false" />
+    <Property Name="EntryDataId" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="LineNumber" Type="int" />
+    <Property Name="ItemNumber" Type="varchar" MaxLength="255" Nullable="false" />
+    <Property Name="Quantity" Type="float" Nullable="false" />
+    <Property Name="Units" Type="varchar" MaxLength="15" />
+    <Property Name="ItemDescription" Type="varchar(max)" Nullable="false" />
+    <Property Name="Cost" Type="float" Nullable="false" />
+    <Property Name="QtyAllocated" Type="float" Nullable="false" />
+    <Property Name="UnitWeight" Type="float" Nullable="false" />
+    <Property Name="DoNotAllocate" Type="bit" />
+    <Property Name="TariffCode" Type="varchar" MaxLength="8" />
+    <Property Name="CNumber" Type="varchar(max)" />
+    <Property Name="CLineNumber" Type="int" />
+    <Property Name="Downloaded" Type="bit" />
+    <Property Name="DutyFreePaid" Type="varchar" MaxLength="9" />
+    <Property Name="Total" Type="float" />
+    <Property Name="AsycudaDocumentSetId" Type="int" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'C:\PRISM\GITREPOSITIORY\WATERNUT\WATERNUT\WATERNUT - ENTERPRISE\WCFCONSOLEHOST\WATERNUT-ENTERPRISEDB.MDF.dbo.InventoryItemsEx' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="InventoryItemsEx">
+    <Key>
+      <PropertyRef Name="ItemNumber" />
+    </Key>
+    <Property Name="ItemNumber" Type="varchar" MaxLength="255" Nullable="false" />
+    <Property Name="Description" Type="varchar(max)" Nullable="false" />
+    <Property Name="Category" Type="nvarchar" MaxLength="60" />
+    <Property Name="TariffCode" Type="varchar" MaxLength="8" />
+    <Property Name="SuppUnitCode2" Type="nvarchar" MaxLength="50" />
+    <Property Name="SuppQty" Type="float" />
+    <Property Name="EntryTimeStamp" Type="datetime" />
+  </EntityType>
+  <Association Name="FK_TariffCategoryCodeSuppUnit_TariffCategory">
+    <End Role="TariffCategory" Type="Self.TariffCategory" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="TariffCategoryCodeSuppUnit" Type="Self.TariffCategoryCodeSuppUnit" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TariffCategory">
+        <PropertyRef Name="TariffCategoryCode" />
+      </Principal>
+      <Dependent Role="TariffCategoryCodeSuppUnit">
+        <PropertyRef Name="TariffCategoryCode" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TariffCategoryCodeSuppUnit_TariffSupUnitLkps">
+    <End Role="TariffSupUnitLkps" Type="Self.TariffSupUnitLkps" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="TariffCategoryCodeSuppUnit" Type="Self.TariffCategoryCodeSuppUnit" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TariffSupUnitLkps">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="TariffCategoryCodeSuppUnit">
+        <PropertyRef Name="TariffSupUnitId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TariffCodes_TariffCategory">
+    <End Role="TariffCategory" Type="Self.TariffCategory" Multiplicity="0..1" />
+    <End Role="TariffCodes" Type="Self.TariffCodes" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TariffCategory">
+        <PropertyRef Name="TariffCategoryCode" />
+      </Principal>
+      <Dependent Role="TariffCodes">
+        <PropertyRef Name="TariffCategoryCode" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="WaterNutDBModelStoreContainer">
+    <EntitySet Name="TariffCategory" EntityType="Self.TariffCategory" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TariffCategoryCodeSuppUnit" EntityType="Self.TariffCategoryCodeSuppUnit" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TariffCodes" EntityType="Self.TariffCodes" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TariffSupUnitLkps" EntityType="Self.TariffSupUnitLkps" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="EntryDataDetailsEx" EntityType="Self.EntryDataDetailsEx" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+[EntryDataDetailsEx].[EntryDataDetailsId] AS [EntryDataDetailsId], 
+[EntryDataDetailsEx].[EntryDataId] AS [EntryDataId], 
+[EntryDataDetailsEx].[LineNumber] AS [LineNumber], 
+[EntryDataDetailsEx].[ItemNumber] AS [ItemNumber], 
+[EntryDataDetailsEx].[Quantity] AS [Quantity], 
+[EntryDataDetailsEx].[Units] AS [Units], 
+[EntryDataDetailsEx].[ItemDescription] AS [ItemDescription], 
+[EntryDataDetailsEx].[Cost] AS [Cost], 
+[EntryDataDetailsEx].[QtyAllocated] AS [QtyAllocated], 
+[EntryDataDetailsEx].[UnitWeight] AS [UnitWeight], 
+[EntryDataDetailsEx].[DoNotAllocate] AS [DoNotAllocate], 
+[EntryDataDetailsEx].[TariffCode] AS [TariffCode], 
+[EntryDataDetailsEx].[CNumber] AS [CNumber], 
+[EntryDataDetailsEx].[CLineNumber] AS [CLineNumber], 
+[EntryDataDetailsEx].[Downloaded] AS [Downloaded], 
+[EntryDataDetailsEx].[DutyFreePaid] AS [DutyFreePaid], 
+[EntryDataDetailsEx].[Total] AS [Total], 
+[EntryDataDetailsEx].[AsycudaDocumentSetId] AS [AsycudaDocumentSetId]
+FROM [dbo].[EntryDataDetailsEx] AS [EntryDataDetailsEx]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="InventoryItemsEx" EntityType="Self.InventoryItemsEx" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+[InventoryItemsEx].[ItemNumber] AS [ItemNumber], 
+[InventoryItemsEx].[Description] AS [Description], 
+[InventoryItemsEx].[Category] AS [Category], 
+[InventoryItemsEx].[TariffCode] AS [TariffCode], 
+[InventoryItemsEx].[SuppUnitCode2] AS [SuppUnitCode2], 
+[InventoryItemsEx].[SuppQty] AS [SuppQty], 
+[InventoryItemsEx].[EntryTimeStamp] AS [EntryTimeStamp]
+FROM [dbo].[InventoryItemsEx] AS [InventoryItemsEx]</DefiningQuery>
+    </EntitySet>
+    <AssociationSet Name="FK_TariffCategoryCodeSuppUnit_TariffCategory" Association="Self.FK_TariffCategoryCodeSuppUnit_TariffCategory">
+      <End Role="TariffCategory" EntitySet="TariffCategory" />
+      <End Role="TariffCategoryCodeSuppUnit" EntitySet="TariffCategoryCodeSuppUnit" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TariffCategoryCodeSuppUnit_TariffSupUnitLkps" Association="Self.FK_TariffCategoryCodeSuppUnit_TariffSupUnitLkps">
+      <End Role="TariffSupUnitLkps" EntitySet="TariffSupUnitLkps" />
+      <End Role="TariffCategoryCodeSuppUnit" EntitySet="TariffCategoryCodeSuppUnit" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TariffCodes_TariffCategory" Association="Self.FK_TariffCodes_TariffCategory">
+      <End Role="TariffCategory" EntitySet="TariffCategory" />
+      <End Role="TariffCodes" EntitySet="TariffCodes" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

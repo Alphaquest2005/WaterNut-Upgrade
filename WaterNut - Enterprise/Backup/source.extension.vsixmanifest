@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
+	<Metadata>
+		<Identity Id="EFDesignerExtensions..25f6e9df-4c1f-4d0b-8b06-55df1c4724ca" Version="1.0" Language="en-US" Publisher="joseph" />
+		<DisplayName>EFDesignerExtensions</DisplayName>
+		<Description xml:space="preserve">EF Designer Extentions</Description>
+	</Metadata>
+	<Installation>
+		<InstallationTarget Id="Microsoft.VisualStudio.Pro" Version="11.0" />
+		<InstallationTarget Version="12.0" Id="Microsoft.VisualStudio.Pro" />
+	</Installation>
+	<Dependencies>
+		<Dependency Id="Microsoft.Framework.NDP" DisplayName="Microsoft .NET Framework" d:Source="Manual" Version="4.5" />
+	</Dependencies>
+	<Assets>
+		<Asset Type="Microsoft.VisualStudio.MefComponent" d:Source="Project" d:ProjectName="DesignerExtentions" Path="|DesignerExtentions|" />
+	</Assets>
+</PackageManifest>

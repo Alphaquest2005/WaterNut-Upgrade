@@ -1,0 +1,126 @@
+C:\Prism Projects\Core.Common\Core.Common.UI\bin\Debug\Core.Common.UI.dll
+C:\Prism Projects\Core.Common\Core.Common.UI\bin\Debug\Core.Common.UI.pdb
+C:\Prism Projects\Core.Common\Core.Common.UI\bin\Debug\Microsoft.Expression.Controls.dll
+C:\Prism Projects\Core.Common\Core.Common.UI\bin\Debug\Microsoft.Expression.Interactions.dll
+C:\Prism Projects\Core.Common\Core.Common.UI\bin\Debug\SimpleMvvmToolkit-Common.dll
+C:\Prism Projects\Core.Common\Core.Common.UI\bin\Debug\SimpleMvvmToolkit-WPF.dll
+C:\Prism Projects\Core.Common\Core.Common.UI\bin\Debug\System.Windows.Interactivity.dll
+C:\Prism Projects\Core.Common\Core.Common.UI\bin\Debug\Microsoft.Expression.Drawing.dll
+C:\Prism Projects\Core.Common\Core.Common.UI\bin\Debug\Microsoft.Expression.Interactions.xml
+C:\Prism Projects\Core.Common\Core.Common.UI\bin\Debug\SimpleMvvmToolkit-Common.pdb
+C:\Prism Projects\Core.Common\Core.Common.UI\bin\Debug\SimpleMvvmToolkit-Common.xml
+C:\Prism Projects\Core.Common\Core.Common.UI\bin\Debug\SimpleMvvmToolkit-WPF.pdb
+C:\Prism Projects\Core.Common\Core.Common.UI\bin\Debug\SimpleMvvmToolkit-WPF.xml
+C:\Prism Projects\Core.Common\Core.Common.UI\bin\Debug\System.Windows.Interactivity.xml
+C:\Prism Projects\Core.Common\Core.Common.UI\bin\Debug\de\Microsoft.Expression.Controls.resources.dll
+C:\Prism Projects\Core.Common\Core.Common.UI\bin\Debug\es\Microsoft.Expression.Controls.resources.dll
+C:\Prism Projects\Core.Common\Core.Common.UI\bin\Debug\fr\Microsoft.Expression.Controls.resources.dll
+C:\Prism Projects\Core.Common\Core.Common.UI\bin\Debug\it\Microsoft.Expression.Controls.resources.dll
+C:\Prism Projects\Core.Common\Core.Common.UI\bin\Debug\ja\Microsoft.Expression.Controls.resources.dll
+C:\Prism Projects\Core.Common\Core.Common.UI\bin\Debug\ko\Microsoft.Expression.Controls.resources.dll
+C:\Prism Projects\Core.Common\Core.Common.UI\bin\Debug\ru\Microsoft.Expression.Controls.resources.dll
+C:\Prism Projects\Core.Common\Core.Common.UI\bin\Debug\zh-Hans\Microsoft.Expression.Controls.resources.dll
+C:\Prism Projects\Core.Common\Core.Common.UI\bin\Debug\zh-Hant\Microsoft.Expression.Controls.resources.dll
+C:\Prism Projects\Core.Common\Core.Common.UI\bin\Debug\de\Microsoft.Expression.Drawing.resources.dll
+C:\Prism Projects\Core.Common\Core.Common.UI\bin\Debug\es\Microsoft.Expression.Drawing.resources.dll
+C:\Prism Projects\Core.Common\Core.Common.UI\bin\Debug\fr\Microsoft.Expression.Drawing.resources.dll
+C:\Prism Projects\Core.Common\Core.Common.UI\bin\Debug\it\Microsoft.Expression.Drawing.resources.dll
+C:\Prism Projects\Core.Common\Core.Common.UI\bin\Debug\ja\Microsoft.Expression.Drawing.resources.dll
+C:\Prism Projects\Core.Common\Core.Common.UI\bin\Debug\ko\Microsoft.Expression.Drawing.resources.dll
+C:\Prism Projects\Core.Common\Core.Common.UI\bin\Debug\ru\Microsoft.Expression.Drawing.resources.dll
+C:\Prism Projects\Core.Common\Core.Common.UI\bin\Debug\zh-Hans\Microsoft.Expression.Drawing.resources.dll
+C:\Prism Projects\Core.Common\Core.Common.UI\bin\Debug\zh-Hant\Microsoft.Expression.Drawing.resources.dll
+C:\Prism Projects\Core.Common\Core.Common.UI\obj\Debug\Core.Common.UI.dll
+C:\Prism Projects\Core.Common\Core.Common.UI\obj\Debug\Core.Common.UI.pdb
+C:\Prism Projects\Core.Common\Core.Common.UI\obj\Debug\Core.Common.UI.csprojResolveAssemblyReference.cache
+C:\Prism Projects\Core.Common\Core.Common.UI\obj\Debug\Core.Common.UI.csproj.GenerateResource.Cache
+C:\Prism Projects\Core.Common\Core.Common.UI\obj\Debug\Core.Common.UI.UIResources.resources
+C:\Prism Projects\Core.Common\Core.Common.UI\bin\Debug\Core.Common.dll
+C:\Prism Projects\Core.Common\Core.Common.UI\bin\Debug\Core.Common.Contracts.dll
+C:\Prism Projects\Core.Common\Core.Common.UI\bin\Debug\Core.Common.pdb
+C:\Prism Projects\Core.Common\Core.Common.UI\bin\Debug\Core.Common.Contracts.pdb
+C:\prism\Core.Common\Core.Common.UI\obj\Debug\Core.Common.UI.dll
+C:\prism\Core.Common\Core.Common.UI\obj\Debug\Core.Common.UI.csprojResolveAssemblyReference.cache
+C:\prism\Core.Common\Core.Common.UI\obj\Debug\Virtualization\LoadingAnimationBlock.baml
+C:\prism\Core.Common\Core.Common.UI\obj\Debug\Virtualization\LoadingAnimation.g.cs
+C:\prism\Core.Common\Core.Common.UI\obj\Debug\Virtualization\LoadingAnimationBlock.g.cs
+C:\prism\Core.Common\Core.Common.UI\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\prism\Core.Common\Core.Common.UI\obj\Debug\Core.Common.UI_MarkupCompile.cache
+C:\prism\Core.Common\Core.Common.UI\obj\Debug\Core.Common.UI_MarkupCompile.lref
+C:\prism\Core.Common\Core.Common.UI\bin\Debug\Core.Common.UI.dll.config
+C:\prism\Core.Common\Core.Common.UI\bin\Debug\Core.Common.UI.dll
+C:\prism\Core.Common\Core.Common.UI\bin\Debug\Core.Common.UI.pdb
+C:\prism\Core.Common\Core.Common.UI\bin\Debug\Core.Common.dll
+C:\prism\Core.Common\Core.Common.UI\bin\Debug\Microsoft.Expression.Interactions.dll
+C:\prism\Core.Common\Core.Common.UI\bin\Debug\Newtonsoft.Json.dll
+C:\prism\Core.Common\Core.Common.UI\bin\Debug\PresentationCore.dll
+C:\prism\Core.Common\Core.Common.UI\bin\Debug\SimpleMvvmToolkit-Common.dll
+C:\prism\Core.Common\Core.Common.UI\bin\Debug\SimpleMvvmToolkit-WPF.dll
+C:\prism\Core.Common\Core.Common.UI\bin\Debug\System.Windows.Interactivity.dll
+C:\prism\Core.Common\Core.Common.UI\bin\Debug\Core.Common.Contracts.dll
+C:\prism\Core.Common\Core.Common.UI\bin\Debug\Core.Common.pdb
+C:\prism\Core.Common\Core.Common.UI\bin\Debug\Microsoft.Expression.Interactions.xml
+C:\prism\Core.Common\Core.Common.UI\bin\Debug\Newtonsoft.Json.xml
+C:\prism\Core.Common\Core.Common.UI\bin\Debug\SimpleMvvmToolkit-Common.pdb
+C:\prism\Core.Common\Core.Common.UI\bin\Debug\SimpleMvvmToolkit-Common.xml
+C:\prism\Core.Common\Core.Common.UI\bin\Debug\SimpleMvvmToolkit-WPF.pdb
+C:\prism\Core.Common\Core.Common.UI\bin\Debug\SimpleMvvmToolkit-WPF.xml
+C:\prism\Core.Common\Core.Common.UI\bin\Debug\System.Windows.Interactivity.xml
+C:\prism\Core.Common\Core.Common.UI\bin\Debug\Core.Common.Contracts.pdb
+C:\prism\Core.Common\Core.Common.UI\obj\Debug\Virtualization\LoadingAnimation.baml
+C:\prism\Core.Common\Core.Common.UI\obj\Debug\Core.Common.UI.g.resources
+C:\prism\Core.Common\Core.Common.UI\obj\Debug\Core.Common.UI.UIResources.resources
+C:\prism\Core.Common\Core.Common.UI\obj\Debug\Core.Common.UI.csproj.GenerateResource.Cache
+C:\prism\Core.Common\Core.Common.UI\obj\Debug\Core.Common.UI.pdb
+C:\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\Core.Common\Core.Common.UI\bin\Debug\Core.Common.UI.dll.config
+C:\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\Core.Common\Core.Common.UI\bin\Debug\Core.Common.UI.dll
+C:\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\Core.Common\Core.Common.UI\bin\Debug\Core.Common.UI.pdb
+C:\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\Core.Common\Core.Common.UI\bin\Debug\Core.Common.dll
+C:\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\Core.Common\Core.Common.UI\bin\Debug\Newtonsoft.Json.dll
+C:\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\Core.Common\Core.Common.UI\bin\Debug\PresentationCore.dll
+C:\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\Core.Common\Core.Common.UI\bin\Debug\Core.Common.Contracts.dll
+C:\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\Core.Common\Core.Common.UI\bin\Debug\Core.Common.pdb
+C:\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\Core.Common\Core.Common.UI\bin\Debug\Newtonsoft.Json.xml
+C:\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\Core.Common\Core.Common.UI\bin\Debug\Core.Common.Contracts.pdb
+C:\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\Core.Common\Core.Common.UI\bin\Debug\Core.Common.Contracts.dll.config
+C:\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\Core.Common\Core.Common.UI\obj\Debug\Core.Common.UI.csprojAssemblyReference.cache
+C:\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\Core.Common\Core.Common.UI\obj\Debug\Virtualization\LoadingAnimationBlock.baml
+C:\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\Core.Common\Core.Common.UI\obj\Debug\Virtualization\LoadingAnimation.g.cs
+C:\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\Core.Common\Core.Common.UI\obj\Debug\Virtualization\LoadingAnimationBlock.g.cs
+C:\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\Core.Common\Core.Common.UI\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\Core.Common\Core.Common.UI\obj\Debug\Core.Common.UI_MarkupCompile.cache
+C:\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\Core.Common\Core.Common.UI\obj\Debug\Core.Common.UI_MarkupCompile.lref
+C:\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\Core.Common\Core.Common.UI\obj\Debug\Virtualization\LoadingAnimation.baml
+C:\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\Core.Common\Core.Common.UI\obj\Debug\Core.Common.UI.g.resources
+C:\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\Core.Common\Core.Common.UI\obj\Debug\Core.Common.UI.UIResources.resources
+C:\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\Core.Common\Core.Common.UI\obj\Debug\Core.Common.UI.csproj.GenerateResource.cache
+C:\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\Core.Common\Core.Common.UI\obj\Debug\Core.Common.UI.csproj.CoreCompileInputs.cache
+C:\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\Core.Common\Core.Common.UI\obj\Debug\Core.Common.UI.csproj.CopyComplete
+C:\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\Core.Common\Core.Common.UI\obj\Debug\Core.Common.UI.dll
+C:\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\Core.Common\Core.Common.UI\obj\Debug\Core.Common.UI.pdb
+\\VBOXSVR\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\Core.Common\Core.Common.UI\bin\Debug\Core.Common.UI.dll.config
+\\VBOXSVR\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\Core.Common\Core.Common.UI\bin\Debug\Core.Common.UI.dll
+\\VBOXSVR\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\Core.Common\Core.Common.UI\bin\Debug\Core.Common.UI.pdb
+\\VBOXSVR\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\Core.Common\Core.Common.UI\bin\Debug\Core.Common.dll
+\\VBOXSVR\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\Core.Common\Core.Common.UI\bin\Debug\Newtonsoft.Json.dll
+\\VBOXSVR\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\Core.Common\Core.Common.UI\bin\Debug\PresentationCore.dll
+\\VBOXSVR\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\Core.Common\Core.Common.UI\bin\Debug\Core.Common.Contracts.dll
+\\VBOXSVR\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\Core.Common\Core.Common.UI\bin\Debug\Core.Common.pdb
+\\VBOXSVR\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\Core.Common\Core.Common.UI\bin\Debug\Newtonsoft.Json.xml
+\\VBOXSVR\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\Core.Common\Core.Common.UI\bin\Debug\Core.Common.Contracts.pdb
+\\VBOXSVR\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\Core.Common\Core.Common.UI\bin\Debug\Core.Common.Contracts.dll.config
+\\VBOXSVR\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\Core.Common\Core.Common.UI\obj\Debug\Core.Common.UI.csprojAssemblyReference.cache
+\\VBOXSVR\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\Core.Common\Core.Common.UI\obj\Debug\Virtualization\LoadingAnimationBlock.baml
+\\VBOXSVR\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\Core.Common\Core.Common.UI\obj\Debug\Virtualization\LoadingAnimation.g.cs
+\\VBOXSVR\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\Core.Common\Core.Common.UI\obj\Debug\Virtualization\LoadingAnimationBlock.g.cs
+\\VBOXSVR\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\Core.Common\Core.Common.UI\obj\Debug\GeneratedInternalTypeHelper.g.cs
+\\VBOXSVR\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\Core.Common\Core.Common.UI\obj\Debug\Core.Common.UI_MarkupCompile.cache
+\\VBOXSVR\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\Core.Common\Core.Common.UI\obj\Debug\Core.Common.UI_MarkupCompile.lref
+\\VBOXSVR\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\Core.Common\Core.Common.UI\obj\Debug\Virtualization\LoadingAnimation.baml
+\\VBOXSVR\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\Core.Common\Core.Common.UI\obj\Debug\Core.Common.UI.g.resources
+\\VBOXSVR\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\Core.Common\Core.Common.UI\obj\Debug\Core.Common.UI.UIResources.resources
+\\VBOXSVR\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\Core.Common\Core.Common.UI\obj\Debug\Core.Common.UI.csproj.GenerateResource.cache
+\\VBOXSVR\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\Core.Common\Core.Common.UI\obj\Debug\Core.Common.UI.csproj.CoreCompileInputs.cache
+\\VBOXSVR\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\Core.Common\Core.Common.UI\obj\Debug\Core.Common.UI.csproj.CopyComplete
+\\VBOXSVR\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\Core.Common\Core.Common.UI\obj\Debug\Core.Common.UI.dll
+\\VBOXSVR\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\Core.Common\Core.Common.UI\obj\Debug\Core.Common.UI.pdb

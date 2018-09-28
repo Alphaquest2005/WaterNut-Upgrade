@@ -1,0 +1,32 @@
+C:\Prism Projects\WaterNut - Enterprise\CoreEntities\bin\Debug\CoreEntities.dll.config
+C:\Prism Projects\WaterNut - Enterprise\CoreEntities\bin\Debug\CoreEntities.dll
+C:\Prism Projects\WaterNut - Enterprise\CoreEntities\bin\Debug\CoreEntities.pdb
+C:\Prism Projects\WaterNut - Enterprise\CoreEntities\bin\Debug\EntityFramework.dll
+C:\Prism Projects\WaterNut - Enterprise\CoreEntities\bin\Debug\EntityFramework.xml
+C:\Prism Projects\WaterNut - Enterprise\CoreEntities\obj\Debug\CoreEntities.dll
+C:\Prism Projects\WaterNut - Enterprise\CoreEntities\obj\Debug\CoreEntities.pdb
+C:\Prism Projects\WaterNut - Enterprise\CoreEntities\obj\Debug\CoreEntities.csprojResolveAssemblyReference.cache
+C:\prism\WaterNut - Enterprise\CoreEntities\bin\Debug\CoreEntities.dll.config
+C:\prism\WaterNut - Enterprise\CoreEntities\bin\Debug\CoreEntities.dll
+C:\prism\WaterNut - Enterprise\CoreEntities\bin\Debug\CoreEntities.pdb
+C:\prism\WaterNut - Enterprise\CoreEntities\obj\Debug\CoreEntities.dll
+C:\prism\WaterNut - Enterprise\CoreEntities\obj\Debug\CoreEntities.pdb
+D:\prism\WaterNut - Enterprise\CoreEntities\bin\Debug\CoreEntities.dll.config
+D:\prism\WaterNut - Enterprise\CoreEntities\bin\Debug\CoreEntities.dll
+D:\prism\WaterNut - Enterprise\CoreEntities\bin\Debug\CoreEntities.pdb
+D:\prism\WaterNut - Enterprise\CoreEntities\obj\Debug\CoreEntities.csprojResolveAssemblyReference.cache
+D:\prism\WaterNut - Enterprise\CoreEntities\obj\Debug\CoreEntities.dll
+D:\prism\WaterNut - Enterprise\CoreEntities\obj\Debug\CoreEntities.pdb
+C:\Prism\WaterNut - Enterprise\CoreEntities\obj\Debug\CoreEntities.csprojResolveAssemblyReference.cache
+C:\Prism\GitRepositiory\WaterNut\WaterNut - Enterprise\CoreEntities\bin\Debug\CoreEntities.dll.config
+C:\Prism\GitRepositiory\WaterNut\WaterNut - Enterprise\CoreEntities\bin\Debug\CoreEntities.dll
+C:\Prism\GitRepositiory\WaterNut\WaterNut - Enterprise\CoreEntities\bin\Debug\CoreEntities.pdb
+C:\Prism\GitRepositiory\WaterNut\WaterNut - Enterprise\CoreEntities\obj\Debug\CoreEntities.dll
+C:\Prism\GitRepositiory\WaterNut\WaterNut - Enterprise\CoreEntities\obj\Debug\CoreEntities.pdb
+C:\Prism\GitRepositiory\WaterNut\WaterNut - Enterprise\CoreEntities\obj\Debug\CoreEntities.csprojResolveAssemblyReference.cache
+C:\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\CoreEntities\bin\Debug\CoreEntities.dll.config
+C:\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\CoreEntities\bin\Debug\CoreEntities.dll
+C:\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\CoreEntities\bin\Debug\CoreEntities.pdb
+C:\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\CoreEntities\obj\Debug\CoreEntities.csproj.CoreCompileInputs.cache
+C:\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\CoreEntities\obj\Debug\CoreEntities.dll
+C:\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\CoreEntities\obj\Debug\CoreEntities.pdb

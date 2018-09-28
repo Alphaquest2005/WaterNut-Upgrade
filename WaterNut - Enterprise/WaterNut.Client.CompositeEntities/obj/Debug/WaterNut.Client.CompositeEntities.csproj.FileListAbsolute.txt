@@ -1,0 +1,34 @@
+C:\Prism Projects\WaterNut - Enterprise\WaterNut.Client.CompositeEntities\bin\Debug\WaterNut.Client.CompositeEntities.dll
+C:\Prism Projects\WaterNut - Enterprise\WaterNut.Client.CompositeEntities\bin\Debug\WaterNut.Client.CompositeEntities.pdb
+C:\Prism Projects\WaterNut - Enterprise\WaterNut.Client.CompositeEntities\obj\Debug\WaterNut.Client.CompositeEntities.dll
+C:\Prism Projects\WaterNut - Enterprise\WaterNut.Client.CompositeEntities\obj\Debug\WaterNut.Client.CompositeEntities.pdb
+C:\prism\WaterNut - Enterprise\WaterNut.Client.CompositeEntities\bin\Debug\WaterNut.Client.CompositeEntities.dll
+C:\prism\WaterNut - Enterprise\WaterNut.Client.CompositeEntities\bin\Debug\WaterNut.Client.CompositeEntities.pdb
+C:\prism\WaterNut - Enterprise\WaterNut.Client.CompositeEntities\bin\Debug\Newtonsoft.Json.dll
+C:\prism\WaterNut - Enterprise\WaterNut.Client.CompositeEntities\bin\Debug\Newtonsoft.Json.xml
+C:\prism\WaterNut - Enterprise\WaterNut.Client.CompositeEntities\obj\Debug\WaterNut.Client.CompositeEntities.dll
+C:\prism\WaterNut - Enterprise\WaterNut.Client.CompositeEntities\obj\Debug\WaterNut.Client.CompositeEntities.pdb
+D:\prism\WaterNut - Enterprise\WaterNut.Client.CompositeEntities\bin\Debug\WaterNut.Client.CompositeEntities.dll
+D:\prism\WaterNut - Enterprise\WaterNut.Client.CompositeEntities\bin\Debug\WaterNut.Client.CompositeEntities.pdb
+D:\prism\WaterNut - Enterprise\WaterNut.Client.CompositeEntities\bin\Debug\Newtonsoft.Json.dll
+D:\prism\WaterNut - Enterprise\WaterNut.Client.CompositeEntities\bin\Debug\Newtonsoft.Json.xml
+D:\prism\WaterNut - Enterprise\WaterNut.Client.CompositeEntities\obj\Debug\WaterNut.Client.CompositeEntities.csprojResolveAssemblyReference.cache
+D:\prism\WaterNut - Enterprise\WaterNut.Client.CompositeEntities\obj\Debug\WaterNut.Client.CompositeEntities.dll
+D:\prism\WaterNut - Enterprise\WaterNut.Client.CompositeEntities\obj\Debug\WaterNut.Client.CompositeEntities.pdb
+C:\Prism\WaterNut - Enterprise\WaterNut.Client.CompositeEntities\obj\Debug\WaterNut.Client.CompositeEntities.csprojResolveAssemblyReference.cache
+C:\Prism\GitRepositiory\WaterNut\WaterNut - Enterprise\WaterNut.Client.CompositeEntities\bin\Debug\WaterNut.Client.CompositeEntities.dll
+C:\Prism\GitRepositiory\WaterNut\WaterNut - Enterprise\WaterNut.Client.CompositeEntities\bin\Debug\WaterNut.Client.CompositeEntities.pdb
+C:\Prism\GitRepositiory\WaterNut\WaterNut - Enterprise\WaterNut.Client.CompositeEntities\bin\Debug\Newtonsoft.Json.dll
+C:\Prism\GitRepositiory\WaterNut\WaterNut - Enterprise\WaterNut.Client.CompositeEntities\bin\Debug\Newtonsoft.Json.xml
+C:\Prism\GitRepositiory\WaterNut\WaterNut - Enterprise\WaterNut.Client.CompositeEntities\obj\Debug\WaterNut.Client.CompositeEntities.dll
+C:\Prism\GitRepositiory\WaterNut\WaterNut - Enterprise\WaterNut.Client.CompositeEntities\obj\Debug\WaterNut.Client.CompositeEntities.pdb
+C:\Prism\GitRepositiory\WaterNut\WaterNut - Enterprise\WaterNut.Client.CompositeEntities\obj\Debug\WaterNut.Client.CompositeEntities.csprojResolveAssemblyReference.cache
+C:\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\WaterNut.Client.CompositeEntities\bin\Debug\WaterNut.Client.CompositeEntities.dll
+C:\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\WaterNut.Client.CompositeEntities\bin\Debug\WaterNut.Client.CompositeEntities.pdb
+C:\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\WaterNut.Client.CompositeEntities\bin\Debug\Newtonsoft.Json.dll
+C:\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\WaterNut.Client.CompositeEntities\bin\Debug\Newtonsoft.Json.xml
+C:\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\WaterNut.Client.CompositeEntities\obj\Debug\WaterNut.Client.CompositeEntities.csproj.CoreCompileInputs.cache
+C:\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\WaterNut.Client.CompositeEntities\obj\Debug\WaterNut.Client.CompositeEntities.csproj.CopyComplete
+C:\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\WaterNut.Client.CompositeEntities\obj\Debug\WaterNut.Client.CompositeEntities.dll
+C:\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\WaterNut.Client.CompositeEntities\obj\Debug\WaterNut.Client.CompositeEntities.pdb
+C:\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\WaterNut.Client.CompositeEntities\obj\Debug\WaterNut.Client.CompositeEntities.csprojAssemblyReference.cache

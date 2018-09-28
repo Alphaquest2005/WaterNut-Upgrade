@@ -1,0 +1,5 @@
+C:\prism\Core.Common\BarCodes\bin\Release\BarCodes.dll
+C:\prism\Core.Common\BarCodes\bin\Release\BarCodes.pdb
+C:\prism\Core.Common\BarCodes\obj\Release\BarCodes.csprojResolveAssemblyReference.cache
+C:\prism\Core.Common\BarCodes\obj\Release\BarCodes.dll
+C:\prism\Core.Common\BarCodes\obj\Release\BarCodes.pdb

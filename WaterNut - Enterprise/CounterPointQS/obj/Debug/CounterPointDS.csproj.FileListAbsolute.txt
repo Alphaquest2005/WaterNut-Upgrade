@@ -1,0 +1,16 @@
+C:\Prism Projects\WaterNut - Enterprise\CounterPointDS\bin\Debug\CounterPointDS.dll.config
+C:\Prism Projects\WaterNut - Enterprise\CounterPointDS\bin\Debug\CounterPointDS.dll
+C:\Prism Projects\WaterNut - Enterprise\CounterPointDS\bin\Debug\CounterPointDS.pdb
+C:\Prism Projects\WaterNut - Enterprise\CounterPointDS\bin\Debug\EntityFramework.dll
+C:\Prism Projects\WaterNut - Enterprise\CounterPointDS\bin\Debug\EntityFramework.xml
+C:\Prism Projects\WaterNut - Enterprise\CounterPointDS\obj\Debug\CounterPointDS.dll
+C:\Prism Projects\WaterNut - Enterprise\CounterPointDS\obj\Debug\CounterPointDS.pdb
+C:\Prism Projects\WaterNut - Enterprise\CounterPointDS\obj\Debug\CounterPointDS.csprojResolveAssemblyReference.cache
+C:\prism\WaterNut - Enterprise\CounterPointDS\bin\Debug\CounterPointDS.dll.config
+C:\prism\WaterNut - Enterprise\CounterPointDS\bin\Debug\CounterPointDS.dll
+C:\prism\WaterNut - Enterprise\CounterPointDS\bin\Debug\CounterPointDS.pdb
+C:\prism\WaterNut - Enterprise\CounterPointDS\bin\Debug\EntityFramework.dll
+C:\prism\WaterNut - Enterprise\CounterPointDS\bin\Debug\EntityFramework.xml
+C:\prism\WaterNut - Enterprise\CounterPointDS\obj\Debug\CounterPointDS.dll
+C:\prism\WaterNut - Enterprise\CounterPointDS\obj\Debug\CounterPointDS.pdb
+C:\prism\WaterNut - Enterprise\CounterPointDS\obj\Debug\CounterPointDS.csprojResolveAssemblyReference.cache

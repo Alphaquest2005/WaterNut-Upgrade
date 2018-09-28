@@ -1,0 +1,446 @@
+C:\Prism Projects\WaterNut Before EF6\WaterNut\bin\Release\WaterNut.exe.config
+C:\Prism Projects\WaterNut Before EF6\WaterNut\obj\Release\WaterNut.csprojResolveAssemblyReference.cache
+C:\Prism Projects\WaterNut Before EF6\WaterNut\obj\Release\Styles\DataGridCustomizations.baml
+C:\Prism Projects\WaterNut Before EF6\WaterNut\obj\Release\ViewModels\DataGridCustomizations.baml
+C:\Prism Projects\WaterNut Before EF6\WaterNut\obj\Release\Styles\Theme.baml
+C:\Prism Projects\WaterNut Before EF6\WaterNut\obj\Release\Views\ScratchPad.baml
+C:\Prism Projects\WaterNut Before EF6\WaterNut\obj\Release\App.baml
+C:\Prism Projects\WaterNut Before EF6\WaterNut\obj\Release\MainWindow.g.cs
+C:\Prism Projects\WaterNut Before EF6\WaterNut\obj\Release\Views\Allocations.g.cs
+C:\Prism Projects\WaterNut Before EF6\WaterNut\obj\Release\Views\AsycudaDocumentDetails.g.cs
+C:\Prism Projects\WaterNut Before EF6\WaterNut\obj\Release\Views\AsycudaDocuments.g.cs
+C:\Prism Projects\WaterNut Before EF6\WaterNut\obj\Release\Views\AsycudaDocumentSummaryList.g.cs
+C:\Prism Projects\WaterNut Before EF6\WaterNut\obj\Release\Views\AsycudaEntryDetails.g.cs
+C:\Prism Projects\WaterNut Before EF6\WaterNut\obj\Release\Views\AsycudaEntrySummaryList.g.cs
+C:\Prism Projects\WaterNut Before EF6\WaterNut\obj\Release\Views\CPPurchaseOrders.g.cs
+C:\Prism Projects\WaterNut Before EF6\WaterNut\obj\Release\Views\CPSales.g.cs
+C:\Prism Projects\WaterNut Before EF6\WaterNut\obj\Release\Views\CreateAsycudaDocument.g.cs
+C:\Prism Projects\WaterNut Before EF6\WaterNut\obj\Release\Views\EX9SalesData.g.cs
+C:\Prism Projects\WaterNut Before EF6\WaterNut\obj\Release\Views\EX9SalesDataDetails.g.cs
+C:\Prism Projects\WaterNut Before EF6\WaterNut\obj\Release\Views\Licences.g.cs
+C:\Prism Projects\WaterNut Before EF6\WaterNut\obj\Release\Views\NullTarifInventoryItems.g.cs
+C:\Prism Projects\WaterNut Before EF6\WaterNut\obj\Release\Views\EntryDataDetails.g.cs
+C:\Prism Projects\WaterNut Before EF6\WaterNut\obj\Release\Views\EntryData.g.cs
+C:\Prism Projects\WaterNut Before EF6\WaterNut\obj\Release\Views\PreviousDocuments.g.cs
+C:\Prism Projects\WaterNut Before EF6\WaterNut\obj\Release\Views\PreviousEntries.g.cs
+C:\Prism Projects\WaterNut Before EF6\WaterNut\obj\Release\Views\ScratchPad.g.cs
+C:\Prism Projects\WaterNut Before EF6\WaterNut\obj\Release\Views\TariffCategory.g.cs
+C:\Prism Projects\WaterNut Before EF6\WaterNut\obj\Release\Views\TariffCodes.g.cs
+C:\Prism Projects\WaterNut Before EF6\WaterNut\obj\Release\Views\TariffSuppUnit.g.cs
+C:\Prism Projects\WaterNut Before EF6\WaterNut\obj\Release\Views\MainView.g.cs
+C:\Prism Projects\WaterNut Before EF6\WaterNut\obj\Release\App.g.cs
+C:\Prism Projects\WaterNut Before EF6\WaterNut\obj\Release\WaterNut_Content.g.cs
+C:\Prism Projects\WaterNut Before EF6\WaterNut\obj\Release\GeneratedInternalTypeHelper.g.cs
+C:\Prism Projects\WaterNut Before EF6\WaterNut\obj\Release\WaterNut_MarkupCompile.cache
+C:\Prism Projects\WaterNut Before EF6\WaterNut\obj\Release\WaterNut_MarkupCompile.lref
+C:\Prism Projects\WaterNut Before EF6\WaterNut\bin\Release\WaterNut.exe
+C:\Prism Projects\WaterNut Before EF6\WaterNut\bin\Release\WaterNut.pdb
+C:\Prism Projects\WaterNut Before EF6\WaterNut\bin\Release\Common.exe
+C:\Prism Projects\WaterNut Before EF6\WaterNut\bin\Release\EntityFramework.dll
+C:\Prism Projects\WaterNut Before EF6\WaterNut\bin\Release\GalaSoft.MvvmLight.Extras.WPF45.dll
+C:\Prism Projects\WaterNut Before EF6\WaterNut\bin\Release\GalaSoft.MvvmLight.WPF45.dll
+C:\Prism Projects\WaterNut Before EF6\WaterNut\bin\Release\HibernatingRhinos.Profiler.Appender.dll
+C:\Prism Projects\WaterNut Before EF6\WaterNut\bin\Release\Microsoft.Expression.Interactions.dll
+C:\Prism Projects\WaterNut Before EF6\WaterNut\bin\Release\Microsoft.Web.Infrastructure.dll
+C:\Prism Projects\WaterNut Before EF6\WaterNut\bin\Release\System.Windows.Interactivity.dll
+C:\Prism Projects\WaterNut Before EF6\WaterNut\bin\Release\WebActivator.dll
+C:\Prism Projects\WaterNut Before EF6\WaterNut\bin\Release\Microsoft.Practices.ServiceLocation.dll
+C:\Prism Projects\WaterNut Before EF6\WaterNut\bin\Release\Common.pdb
+C:\Prism Projects\WaterNut Before EF6\WaterNut\bin\Release\EntityFramework.xml
+C:\Prism Projects\WaterNut Before EF6\WaterNut\bin\Release\GalaSoft.MvvmLight.Extras.WPF45.xml
+C:\Prism Projects\WaterNut Before EF6\WaterNut\bin\Release\GalaSoft.MvvmLight.WPF45.xml
+C:\Prism Projects\WaterNut Before EF6\WaterNut\bin\Release\System.Windows.Interactivity.xml
+C:\Prism Projects\WaterNut Before EF6\WaterNut\bin\Release\Microsoft.Practices.ServiceLocation.xml
+C:\Prism Projects\WaterNut Before EF6\WaterNut\bin\Release\de\Microsoft.Expression.Interactions.resources.dll
+C:\Prism Projects\WaterNut Before EF6\WaterNut\bin\Release\en\Microsoft.Expression.Interactions.resources.dll
+C:\Prism Projects\WaterNut Before EF6\WaterNut\bin\Release\es\Microsoft.Expression.Interactions.resources.dll
+C:\Prism Projects\WaterNut Before EF6\WaterNut\bin\Release\fr\Microsoft.Expression.Interactions.resources.dll
+C:\Prism Projects\WaterNut Before EF6\WaterNut\bin\Release\it\Microsoft.Expression.Interactions.resources.dll
+C:\Prism Projects\WaterNut Before EF6\WaterNut\bin\Release\ja\Microsoft.Expression.Interactions.resources.dll
+C:\Prism Projects\WaterNut Before EF6\WaterNut\bin\Release\ko\Microsoft.Expression.Interactions.resources.dll
+C:\Prism Projects\WaterNut Before EF6\WaterNut\bin\Release\ru\Microsoft.Expression.Interactions.resources.dll
+C:\Prism Projects\WaterNut Before EF6\WaterNut\bin\Release\zh-Hans\Microsoft.Expression.Interactions.resources.dll
+C:\Prism Projects\WaterNut Before EF6\WaterNut\bin\Release\zh-Hant\Microsoft.Expression.Interactions.resources.dll
+C:\Prism Projects\WaterNut Before EF6\WaterNut\obj\Release\MainWindow.baml
+C:\Prism Projects\WaterNut Before EF6\WaterNut\obj\Release\Views\Allocations.baml
+C:\Prism Projects\WaterNut Before EF6\WaterNut\obj\Release\Views\AsycudaDocumentDetails.baml
+C:\Prism Projects\WaterNut Before EF6\WaterNut\obj\Release\Views\AsycudaDocuments.baml
+C:\Prism Projects\WaterNut Before EF6\WaterNut\obj\Release\Views\AsycudaDocumentSummaryList.baml
+C:\Prism Projects\WaterNut Before EF6\WaterNut\obj\Release\Views\AsycudaEntryDetails.baml
+C:\Prism Projects\WaterNut Before EF6\WaterNut\obj\Release\Views\AsycudaEntrySummaryList.baml
+C:\Prism Projects\WaterNut Before EF6\WaterNut\obj\Release\Views\CPPurchaseOrders.baml
+C:\Prism Projects\WaterNut Before EF6\WaterNut\obj\Release\Views\CPSales.baml
+C:\Prism Projects\WaterNut Before EF6\WaterNut\obj\Release\Views\CreateAsycudaDocument.baml
+C:\Prism Projects\WaterNut Before EF6\WaterNut\obj\Release\Views\EX9SalesData.baml
+C:\Prism Projects\WaterNut Before EF6\WaterNut\obj\Release\Views\EX9SalesDataDetails.baml
+C:\Prism Projects\WaterNut Before EF6\WaterNut\obj\Release\Views\Licences.baml
+C:\Prism Projects\WaterNut Before EF6\WaterNut\obj\Release\Views\NullTarifInventoryItems.baml
+C:\Prism Projects\WaterNut Before EF6\WaterNut\obj\Release\Views\EntryDataDetails.baml
+C:\Prism Projects\WaterNut Before EF6\WaterNut\obj\Release\Views\EntryData.baml
+C:\Prism Projects\WaterNut Before EF6\WaterNut\obj\Release\Views\PreviousDocuments.baml
+C:\Prism Projects\WaterNut Before EF6\WaterNut\obj\Release\Views\PreviousEntries.baml
+C:\Prism Projects\WaterNut Before EF6\WaterNut\obj\Release\Views\TariffCategory.baml
+C:\Prism Projects\WaterNut Before EF6\WaterNut\obj\Release\Views\TariffCodes.baml
+C:\Prism Projects\WaterNut Before EF6\WaterNut\obj\Release\Views\TariffSuppUnit.baml
+C:\Prism Projects\WaterNut Before EF6\WaterNut\obj\Release\Views\MainView.baml
+C:\Prism Projects\WaterNut Before EF6\WaterNut\obj\Release\WaterNut.g.resources
+C:\Prism Projects\WaterNut Before EF6\WaterNut\obj\Release\WaterNut.Properties.Resources.resources
+C:\Prism Projects\WaterNut Before EF6\WaterNut\obj\Release\WaterNut.csproj.GenerateResource.Cache
+C:\Prism Projects\WaterNut Before EF6\WaterNut\obj\Release\WaterNut.exe
+C:\Prism Projects\WaterNut Before EF6\WaterNut\obj\Release\WaterNut.pdb
+C:\Prism Projects\WaterNut\WaterNut\bin\Release\WaterNut.exe.config
+C:\Prism Projects\WaterNut\WaterNut\obj\Release\WaterNut.exe
+C:\Prism Projects\WaterNut\WaterNut\obj\Release\WaterNut.pdb
+C:\Prism Projects\WaterNut\WaterNut\obj\Release\WaterNut.csprojResolveAssemblyReference.cache
+C:\Prism Projects\WaterNut\WaterNut\obj\Release\Styles\DataGridCustomizations.baml
+C:\Prism Projects\WaterNut\WaterNut\obj\Release\ViewModels\DataGridCustomizations.baml
+C:\Prism Projects\WaterNut\WaterNut\obj\Release\Styles\Theme.baml
+C:\Prism Projects\WaterNut\WaterNut\obj\Release\Views\ScratchPad.baml
+C:\Prism Projects\WaterNut\WaterNut\obj\Release\App.baml
+C:\Prism Projects\WaterNut\WaterNut\obj\Release\MainWindow.g.cs
+C:\Prism Projects\WaterNut\WaterNut\obj\Release\Views\Allocations.g.cs
+C:\Prism Projects\WaterNut\WaterNut\obj\Release\Views\AsycudaDocumentDetails.g.cs
+C:\Prism Projects\WaterNut\WaterNut\obj\Release\Views\AsycudaDocuments.g.cs
+C:\Prism Projects\WaterNut\WaterNut\obj\Release\Views\AsycudaDocumentSummaryList.g.cs
+C:\Prism Projects\WaterNut\WaterNut\obj\Release\Views\AsycudaEntryDetails.g.cs
+C:\Prism Projects\WaterNut\WaterNut\obj\Release\Views\AsycudaEntrySummaryList.g.cs
+C:\Prism Projects\WaterNut\WaterNut\obj\Release\Views\CPPurchaseOrders.g.cs
+C:\Prism Projects\WaterNut\WaterNut\obj\Release\Views\CPSales.g.cs
+C:\Prism Projects\WaterNut\WaterNut\obj\Release\Views\CreateAsycudaDocument.g.cs
+C:\Prism Projects\WaterNut\WaterNut\obj\Release\Views\EX9SalesData.g.cs
+C:\Prism Projects\WaterNut\WaterNut\obj\Release\Views\EX9SalesDataDetails.g.cs
+C:\Prism Projects\WaterNut\WaterNut\obj\Release\Views\Licences.g.cs
+C:\Prism Projects\WaterNut\WaterNut\obj\Release\Views\LicenceSummary.g.cs
+C:\Prism Projects\WaterNut\WaterNut\obj\Release\Views\NullTarifInventoryItems.g.cs
+C:\Prism Projects\WaterNut\WaterNut\obj\Release\Views\EntryDataDetails.g.cs
+C:\Prism Projects\WaterNut\WaterNut\obj\Release\Views\EntryData.g.cs
+C:\Prism Projects\WaterNut\WaterNut\obj\Release\Views\PreviousDocuments.g.cs
+C:\Prism Projects\WaterNut\WaterNut\obj\Release\Views\PreviousEntries.g.cs
+C:\Prism Projects\WaterNut\WaterNut\obj\Release\Views\ScratchPad.g.cs
+C:\Prism Projects\WaterNut\WaterNut\obj\Release\Views\TariffCategory.g.cs
+C:\Prism Projects\WaterNut\WaterNut\obj\Release\Views\TariffCodes.g.cs
+C:\Prism Projects\WaterNut\WaterNut\obj\Release\Views\TariffSuppUnit.g.cs
+C:\Prism Projects\WaterNut\WaterNut\obj\Release\Views\MainView.g.cs
+C:\Prism Projects\WaterNut\WaterNut\obj\Release\App.g.cs
+C:\Prism Projects\WaterNut\WaterNut\obj\Release\WaterNut_Content.g.cs
+C:\Prism Projects\WaterNut\WaterNut\obj\Release\GeneratedInternalTypeHelper.g.cs
+C:\Prism Projects\WaterNut\WaterNut\obj\Release\WaterNut_MarkupCompile.cache
+C:\Prism Projects\WaterNut\WaterNut\obj\Release\WaterNut_MarkupCompile.lref
+C:\Prism Projects\WaterNut\WaterNut\bin\Release\WaterNut.exe
+C:\Prism Projects\WaterNut\WaterNut\bin\Release\WaterNut.pdb
+C:\Prism Projects\WaterNut\WaterNut\bin\Release\Common.exe
+C:\Prism Projects\WaterNut\WaterNut\bin\Release\EntityFramework.dll
+C:\Prism Projects\WaterNut\WaterNut\bin\Release\Microsoft.Expression.Interactions.dll
+C:\Prism Projects\WaterNut\WaterNut\bin\Release\Microsoft.Web.Infrastructure.dll
+C:\Prism Projects\WaterNut\WaterNut\bin\Release\System.Windows.Interactivity.dll
+C:\Prism Projects\WaterNut\WaterNut\bin\Release\Microsoft.Practices.ServiceLocation.dll
+C:\Prism Projects\WaterNut\WaterNut\bin\Release\Common.pdb
+C:\Prism Projects\WaterNut\WaterNut\bin\Release\EntityFramework.xml
+C:\Prism Projects\WaterNut\WaterNut\bin\Release\GalaSoft.MvvmLight.Extras.WPF45.xml
+C:\Prism Projects\WaterNut\WaterNut\bin\Release\GalaSoft.MvvmLight.WPF45.xml
+C:\Prism Projects\WaterNut\WaterNut\bin\Release\Microsoft.Web.Infrastructure.xml
+C:\Prism Projects\WaterNut\WaterNut\bin\Release\Microsoft.Practices.ServiceLocation.xml
+C:\Prism Projects\WaterNut\WaterNut\bin\Release\de\Microsoft.Expression.Interactions.resources.dll
+C:\Prism Projects\WaterNut\WaterNut\bin\Release\en\Microsoft.Expression.Interactions.resources.dll
+C:\Prism Projects\WaterNut\WaterNut\bin\Release\es\Microsoft.Expression.Interactions.resources.dll
+C:\Prism Projects\WaterNut\WaterNut\bin\Release\fr\Microsoft.Expression.Interactions.resources.dll
+C:\Prism Projects\WaterNut\WaterNut\bin\Release\it\Microsoft.Expression.Interactions.resources.dll
+C:\Prism Projects\WaterNut\WaterNut\bin\Release\ja\Microsoft.Expression.Interactions.resources.dll
+C:\Prism Projects\WaterNut\WaterNut\bin\Release\ko\Microsoft.Expression.Interactions.resources.dll
+C:\Prism Projects\WaterNut\WaterNut\bin\Release\ru\Microsoft.Expression.Interactions.resources.dll
+C:\Prism Projects\WaterNut\WaterNut\bin\Release\zh-Hans\Microsoft.Expression.Interactions.resources.dll
+C:\Prism Projects\WaterNut\WaterNut\bin\Release\zh-Hant\Microsoft.Expression.Interactions.resources.dll
+C:\Prism Projects\WaterNut\WaterNut\bin\Release\de\System.Windows.Interactivity.resources.dll
+C:\Prism Projects\WaterNut\WaterNut\bin\Release\en\System.Windows.Interactivity.resources.dll
+C:\Prism Projects\WaterNut\WaterNut\bin\Release\es\System.Windows.Interactivity.resources.dll
+C:\Prism Projects\WaterNut\WaterNut\bin\Release\fr\System.Windows.Interactivity.resources.dll
+C:\Prism Projects\WaterNut\WaterNut\bin\Release\it\System.Windows.Interactivity.resources.dll
+C:\Prism Projects\WaterNut\WaterNut\bin\Release\ja\System.Windows.Interactivity.resources.dll
+C:\Prism Projects\WaterNut\WaterNut\bin\Release\ko\System.Windows.Interactivity.resources.dll
+C:\Prism Projects\WaterNut\WaterNut\bin\Release\ru\System.Windows.Interactivity.resources.dll
+C:\Prism Projects\WaterNut\WaterNut\bin\Release\zh-Hans\System.Windows.Interactivity.resources.dll
+C:\Prism Projects\WaterNut\WaterNut\bin\Release\zh-Hant\System.Windows.Interactivity.resources.dll
+C:\Prism Projects\WaterNut\WaterNut\obj\Release\MainWindow.baml
+C:\Prism Projects\WaterNut\WaterNut\obj\Release\Views\Allocations.baml
+C:\Prism Projects\WaterNut\WaterNut\obj\Release\Views\AsycudaDocumentDetails.baml
+C:\Prism Projects\WaterNut\WaterNut\obj\Release\Views\AsycudaDocuments.baml
+C:\Prism Projects\WaterNut\WaterNut\obj\Release\Views\AsycudaDocumentSummaryList.baml
+C:\Prism Projects\WaterNut\WaterNut\obj\Release\Views\AsycudaEntryDetails.baml
+C:\Prism Projects\WaterNut\WaterNut\obj\Release\Views\AsycudaEntrySummaryList.baml
+C:\Prism Projects\WaterNut\WaterNut\obj\Release\Views\CPPurchaseOrders.baml
+C:\Prism Projects\WaterNut\WaterNut\obj\Release\Views\CPSales.baml
+C:\Prism Projects\WaterNut\WaterNut\obj\Release\Views\CreateAsycudaDocument.baml
+C:\Prism Projects\WaterNut\WaterNut\obj\Release\Views\EX9SalesData.baml
+C:\Prism Projects\WaterNut\WaterNut\obj\Release\Views\EX9SalesDataDetails.baml
+C:\Prism Projects\WaterNut\WaterNut\obj\Release\Views\Licences.baml
+C:\Prism Projects\WaterNut\WaterNut\obj\Release\Views\LicenceSummary.baml
+C:\Prism Projects\WaterNut\WaterNut\obj\Release\Views\NullTarifInventoryItems.baml
+C:\Prism Projects\WaterNut\WaterNut\obj\Release\Views\EntryDataDetails.baml
+C:\Prism Projects\WaterNut\WaterNut\obj\Release\Views\EntryData.baml
+C:\Prism Projects\WaterNut\WaterNut\obj\Release\Views\PreviousDocuments.baml
+C:\Prism Projects\WaterNut\WaterNut\obj\Release\Views\PreviousEntries.baml
+C:\Prism Projects\WaterNut\WaterNut\obj\Release\Views\TariffCategory.baml
+C:\Prism Projects\WaterNut\WaterNut\obj\Release\Views\TariffCodes.baml
+C:\Prism Projects\WaterNut\WaterNut\obj\Release\Views\TariffSuppUnit.baml
+C:\Prism Projects\WaterNut\WaterNut\obj\Release\Views\MainView.baml
+C:\Prism Projects\WaterNut\WaterNut\obj\Release\WaterNut.g.resources
+C:\Prism Projects\WaterNut\WaterNut\obj\Release\WaterNut.Properties.Resources.resources
+C:\Prism Projects\WaterNut\WaterNut\obj\Release\WaterNut.csproj.GenerateResource.Cache
+C:\prism\WaterNut - Enterprise\WaterNut\bin\Release\WaterNut.exe.config
+C:\prism\WaterNut - Enterprise\WaterNut\obj\Release\WaterNut.exe
+C:\prism\WaterNut - Enterprise\WaterNut\obj\Release\WaterNut.pdb
+C:\prism\WaterNut - Enterprise\WaterNut\bin\Release\WaterNut.exe
+C:\prism\WaterNut - Enterprise\WaterNut\bin\Release\WaterNut.pdb
+C:\prism\WaterNut - Enterprise\WaterNut\bin\Release\Core.Common.Contracts.dll
+C:\prism\WaterNut - Enterprise\WaterNut\bin\Release\Core.Common.Data.dll
+C:\prism\WaterNut - Enterprise\WaterNut\bin\Release\Core.Common.dll
+C:\prism\WaterNut - Enterprise\WaterNut\bin\Release\Core.Common.UI.dll
+C:\prism\WaterNut - Enterprise\WaterNut\bin\Release\DataLayer.dll
+C:\prism\WaterNut - Enterprise\WaterNut\bin\Release\DomainInterfaces.dll
+C:\prism\WaterNut - Enterprise\WaterNut\bin\Release\EntityFramework.dll
+C:\prism\WaterNut - Enterprise\WaterNut\bin\Release\Microsoft.Expression.Interactions.dll
+C:\prism\WaterNut - Enterprise\WaterNut\bin\Release\Newtonsoft.Json.dll
+C:\prism\WaterNut - Enterprise\WaterNut\bin\Release\Omu.ValueInjecter.dll
+C:\prism\WaterNut - Enterprise\WaterNut\bin\Release\ParallelExtensionsExtras.dll
+C:\prism\WaterNut - Enterprise\WaterNut\bin\Release\PresentationCore.dll
+C:\prism\WaterNut - Enterprise\WaterNut\bin\Release\PresentationFramework.dll
+C:\prism\WaterNut - Enterprise\WaterNut\bin\Release\QuickBooks.dll
+C:\prism\WaterNut - Enterprise\WaterNut\bin\Release\Serialize.Linq.dll
+C:\prism\WaterNut - Enterprise\WaterNut\bin\Release\SimpleMvvmToolkit-Common.dll
+C:\prism\WaterNut - Enterprise\WaterNut\bin\Release\SimpleMvvmToolkit-WPF.dll
+C:\prism\WaterNut - Enterprise\WaterNut\bin\Release\System.ComponentModel.Composition.dll
+C:\prism\WaterNut - Enterprise\WaterNut\bin\Release\System.Data.DataSetExtensions.dll
+C:\prism\WaterNut - Enterprise\WaterNut\bin\Release\System.Data.dll
+C:\prism\WaterNut - Enterprise\WaterNut\bin\Release\System.dll
+C:\prism\WaterNut - Enterprise\WaterNut\bin\Release\System.Runtime.Serialization.dll
+C:\prism\WaterNut - Enterprise\WaterNut\bin\Release\System.Windows.Interactivity.dll
+C:\prism\WaterNut - Enterprise\WaterNut\bin\Release\System.Xaml.dll
+C:\prism\WaterNut - Enterprise\WaterNut\bin\Release\System.Xml.dll
+C:\prism\WaterNut - Enterprise\WaterNut\bin\Release\TrackableEntities.Client.dll
+C:\prism\WaterNut - Enterprise\WaterNut\bin\Release\TrackableEntities.Common.dll
+C:\prism\WaterNut - Enterprise\WaterNut\bin\Release\WaterNut.Client.Bootstraper.dll
+C:\prism\WaterNut - Enterprise\WaterNut\bin\Release\WaterNut.Client.Contracts.dll
+C:\prism\WaterNut - Enterprise\WaterNut\bin\Release\WaterNut.Client.DTO.dll
+C:\prism\WaterNut - Enterprise\WaterNut\bin\Release\WaterNut.Client.Entities.dll
+C:\prism\WaterNut - Enterprise\WaterNut\bin\Release\WaterNut.Client.Repositories.dll
+C:\prism\WaterNut - Enterprise\WaterNut\bin\Release\WaterNut.Client.Services.dll
+C:\prism\WaterNut - Enterprise\WaterNut\bin\Release\WaterNut.Data.dll
+C:\prism\WaterNut - Enterprise\WaterNut\bin\Release\WindowsBase.dll
+C:\prism\WaterNut - Enterprise\WaterNut\bin\Release\TrackableEntities.EF.6.dll
+C:\prism\WaterNut - Enterprise\WaterNut\bin\Release\WaterNut.Business.Services.dll
+C:\prism\WaterNut - Enterprise\WaterNut\bin\Release\WaterNut.Business.Entities.dll
+C:\prism\WaterNut - Enterprise\WaterNut\bin\Release\System.Linq.Dynamic.dll
+C:\prism\WaterNut - Enterprise\WaterNut\bin\Release\Core.Common.Contracts.pdb
+C:\prism\WaterNut - Enterprise\WaterNut\bin\Release\Core.Common.Data.pdb
+C:\prism\WaterNut - Enterprise\WaterNut\bin\Release\Core.Common.UI.pdb
+C:\prism\WaterNut - Enterprise\WaterNut\bin\Release\Core.Common.pdb
+C:\prism\WaterNut - Enterprise\WaterNut\bin\Release\TrackableEntities.Client.pdb
+C:\prism\WaterNut - Enterprise\WaterNut\bin\Release\TrackableEntities.Client.xml
+C:\prism\WaterNut - Enterprise\WaterNut\bin\Release\TrackableEntities.Common.pdb
+C:\prism\WaterNut - Enterprise\WaterNut\bin\Release\TrackableEntities.Common.xml
+C:\prism\WaterNut - Enterprise\WaterNut\bin\Release\DataLayer.pdb
+C:\prism\WaterNut - Enterprise\WaterNut\bin\Release\DomainInterfaces.pdb
+C:\prism\WaterNut - Enterprise\WaterNut\bin\Release\QuickBooks.pdb
+C:\prism\WaterNut - Enterprise\WaterNut\bin\Release\WaterNut.Client.Bootstraper.pdb
+C:\prism\WaterNut - Enterprise\WaterNut\bin\Release\WaterNut.Client.Contracts.pdb
+C:\prism\WaterNut - Enterprise\WaterNut\bin\Release\WaterNut.Client.DTO.pdb
+C:\prism\WaterNut - Enterprise\WaterNut\bin\Release\WaterNut.Client.Entities.pdb
+C:\prism\WaterNut - Enterprise\WaterNut\bin\Release\WaterNut.Client.Repositories.pdb
+C:\prism\WaterNut - Enterprise\WaterNut\bin\Release\WaterNut.Client.Services.pdb
+C:\prism\WaterNut - Enterprise\WaterNut\bin\Release\WaterNut.Data.pdb
+C:\prism\WaterNut - Enterprise\WaterNut\bin\Release\EntityFramework.xml
+C:\prism\WaterNut - Enterprise\WaterNut\bin\Release\Microsoft.Expression.Interactions.xml
+C:\prism\WaterNut - Enterprise\WaterNut\bin\Release\Newtonsoft.Json.xml
+C:\prism\WaterNut - Enterprise\WaterNut\bin\Release\Omu.ValueInjecter.xml
+C:\prism\WaterNut - Enterprise\WaterNut\bin\Release\ParallelExtensionsExtras.pdb
+C:\prism\WaterNut - Enterprise\WaterNut\bin\Release\SimpleMvvmToolkit-Common.pdb
+C:\prism\WaterNut - Enterprise\WaterNut\bin\Release\SimpleMvvmToolkit-Common.xml
+C:\prism\WaterNut - Enterprise\WaterNut\bin\Release\SimpleMvvmToolkit-WPF.pdb
+C:\prism\WaterNut - Enterprise\WaterNut\bin\Release\SimpleMvvmToolkit-WPF.xml
+C:\prism\WaterNut - Enterprise\WaterNut\bin\Release\System.Windows.Interactivity.xml
+C:\prism\WaterNut - Enterprise\WaterNut\bin\Release\TrackableEntities.EF.6.pdb
+C:\prism\WaterNut - Enterprise\WaterNut\bin\Release\TrackableEntities.EF.6.xml
+C:\prism\WaterNut - Enterprise\WaterNut\bin\Release\WaterNut.Business.Services.pdb
+C:\prism\WaterNut - Enterprise\WaterNut\bin\Release\WaterNut.Business.Entities.pdb
+C:\prism\WaterNut - Enterprise\WaterNut\bin\Release\System.Linq.Dynamic.pdb
+C:\prism\WaterNut - Enterprise\WaterNut\obj\Release\WaterNut.csprojResolveAssemblyReference.cache
+C:\prism\WaterNut - Enterprise\WaterNut\obj\Release\Styles\Copy of Theme.baml
+C:\prism\WaterNut - Enterprise\WaterNut\obj\Release\Styles\DataGridCustomizations.baml
+C:\prism\WaterNut - Enterprise\WaterNut\obj\Release\Styles\Theme.baml
+C:\prism\WaterNut - Enterprise\WaterNut\obj\Release\ViewModels\DataGridCustomizations.baml
+C:\prism\WaterNut - Enterprise\WaterNut\obj\Release\App.baml
+C:\prism\WaterNut - Enterprise\WaterNut\obj\Release\MainWindow.g.cs
+C:\prism\WaterNut - Enterprise\WaterNut\obj\Release\Views\Allocations.g.cs
+C:\prism\WaterNut - Enterprise\WaterNut\obj\Release\Views\AsycudaDocumentDetails.g.cs
+C:\prism\WaterNut - Enterprise\WaterNut\obj\Release\Views\AsycudaDocuments.g.cs
+C:\prism\WaterNut - Enterprise\WaterNut\obj\Release\Views\AsycudaDocumentSummaryList.g.cs
+C:\prism\WaterNut - Enterprise\WaterNut\obj\Release\Views\AsycudaEntryDetails.g.cs
+C:\prism\WaterNut - Enterprise\WaterNut\obj\Release\Views\AsycudaEntrySummaryList.g.cs
+C:\prism\WaterNut - Enterprise\WaterNut\obj\Release\Views\CPPurchaseOrders.g.cs
+C:\prism\WaterNut - Enterprise\WaterNut\obj\Release\Views\CPSales.g.cs
+C:\prism\WaterNut - Enterprise\WaterNut\obj\Release\Views\CreateAsycudaDocument.g.cs
+C:\prism\WaterNut - Enterprise\WaterNut\obj\Release\Views\EX9SalesData.g.cs
+C:\prism\WaterNut - Enterprise\WaterNut\obj\Release\Views\EX9SalesDataDetails.g.cs
+C:\prism\WaterNut - Enterprise\WaterNut\obj\Release\Views\Generated Views\QuerySpace\AllocationQS\AllocationQSSummaryView.g.cs
+C:\prism\WaterNut - Enterprise\WaterNut\obj\Release\Views\Generated Views\QuerySpace\AllocationQS\AsycudaSalesAllocationsExGridListView.g.cs
+C:\prism\WaterNut - Enterprise\WaterNut\obj\Release\Views\Generated Views\QuerySpace\CoreEntities\ApplicationSettingsGridListView.g.cs
+C:\prism\WaterNut - Enterprise\WaterNut\obj\Release\Views\Generated Views\QuerySpace\CoreEntities\AsycudaDocumentGridListView.g.cs
+C:\prism\WaterNut - Enterprise\WaterNut\obj\Release\Views\Generated Views\QuerySpace\CoreEntities\AsycudaDocumentItemGridListView.g.cs
+C:\prism\WaterNut - Enterprise\WaterNut\obj\Release\Views\Generated Views\QuerySpace\CoreEntities\AsycudaDocumentSetExGridListView.g.cs
+C:\prism\WaterNut - Enterprise\WaterNut\obj\Release\Views\Generated Views\QuerySpace\CoreEntities\CoreEntitiesSummaryView.g.cs
+C:\prism\WaterNut - Enterprise\WaterNut\obj\Release\Views\Generated Views\QuerySpace\CoreEntities\Customs_ProcedureGridListView.g.cs
+C:\prism\WaterNut - Enterprise\WaterNut\obj\Release\Views\Generated Views\QuerySpace\CoreEntities\Document_TypeGridListView.g.cs
+C:\prism\WaterNut - Enterprise\WaterNut\obj\Release\Views\Generated Views\QuerySpace\CoreEntities\LicenceSummaryGridListView.g.cs
+C:\prism\WaterNut - Enterprise\WaterNut\obj\Release\Views\Generated Views\QuerySpace\CoreEntities\SubItemsGridListView.g.cs
+C:\prism\WaterNut - Enterprise\WaterNut\obj\Release\Views\Generated Views\QuerySpace\CounterPointQS\CounterPointPODetailsGridListView.g.cs
+C:\prism\WaterNut - Enterprise\WaterNut\obj\Release\Views\Generated Views\QuerySpace\CounterPointQS\CounterPointPOsGridListView.g.cs
+C:\prism\WaterNut - Enterprise\WaterNut\obj\Release\Views\Generated Views\QuerySpace\CounterPointQS\CounterPointQSSummaryView.g.cs
+C:\prism\WaterNut - Enterprise\WaterNut\obj\Release\Views\Generated Views\QuerySpace\CounterPointQS\CounterPointSalesDetailsGridListView.g.cs
+C:\prism\WaterNut - Enterprise\WaterNut\obj\Release\Views\Generated Views\QuerySpace\CounterPointQS\CounterPointSalesGridListView.g.cs
+C:\prism\WaterNut - Enterprise\WaterNut\obj\Release\Views\Generated Views\QuerySpace\EntryDataQS\AsycudaDocumentEntryDataGridListView.g.cs
+C:\prism\WaterNut - Enterprise\WaterNut\obj\Release\Views\Generated Views\QuerySpace\EntryDataQS\AsycudaDocumentSetEntryDataDetailGridListView.g.cs
+C:\prism\WaterNut - Enterprise\WaterNut\obj\Release\Views\Generated Views\QuerySpace\EntryDataQS\AsycudaDocumentSetEntryDataGridListView.g.cs
+C:\prism\WaterNut - Enterprise\WaterNut\obj\Release\Views\Generated Views\QuerySpace\EntryDataQS\EntryDataDetailsExGridListView.g.cs
+C:\prism\WaterNut - Enterprise\WaterNut\obj\Release\Views\Generated Views\QuerySpace\EntryDataQS\EntryDataExGridListView.g.cs
+C:\prism\WaterNut - Enterprise\WaterNut\obj\Release\Views\Generated Views\QuerySpace\EntryDataQS\EntryDataQSSummaryView.g.cs
+C:\prism\WaterNut - Enterprise\WaterNut\obj\Release\Views\Generated Views\QuerySpace\EntryDataQS\InventoryItemsExGridListView.g.cs
+C:\prism\WaterNut - Enterprise\WaterNut\obj\Release\Views\Generated Views\QuerySpace\InventoryQS\EntryDataDetailsExGridListView.g.cs
+C:\prism\WaterNut - Enterprise\WaterNut\obj\Release\Views\Generated Views\QuerySpace\InventoryQS\InventoryItemsExGridListView.g.cs
+C:\prism\WaterNut - Enterprise\WaterNut\obj\Release\Views\Generated Views\QuerySpace\InventoryQS\InventoryQSSummaryView.g.cs
+C:\prism\WaterNut - Enterprise\WaterNut\obj\Release\Views\Generated Views\QuerySpace\InventoryQS\TariffCategoryGridListView.g.cs
+C:\prism\WaterNut - Enterprise\WaterNut\obj\Release\Views\Generated Views\QuerySpace\InventoryQS\TariffCodesGridListView.g.cs
+C:\prism\WaterNut - Enterprise\WaterNut\obj\Release\Views\Generated Views\QuerySpace\InventoryQS\TariffSupUnitLkpsGridListView.g.cs
+C:\prism\WaterNut - Enterprise\WaterNut\obj\Release\Views\Generated Views\QuerySpace\MainView_AutoGen.g.cs
+C:\prism\WaterNut - Enterprise\WaterNut\obj\Release\Views\Generated Views\QuerySpace\MainWindow_AutoGen.g.cs
+C:\prism\WaterNut - Enterprise\WaterNut\obj\Release\Views\Generated Views\QuerySpace\OversShortQS\AsycudaDocumentGridListView.g.cs
+C:\prism\WaterNut - Enterprise\WaterNut\obj\Release\Views\Generated Views\QuerySpace\OversShortQS\AsycudaDocumentItemGridListView.g.cs
+C:\prism\WaterNut - Enterprise\WaterNut\obj\Release\Views\Generated Views\QuerySpace\OversShortQS\InventoryItemGridListView.g.cs
+C:\prism\WaterNut - Enterprise\WaterNut\obj\Release\Views\Generated Views\QuerySpace\OversShortQS\OverShortAllocationsEXGridListView.g.cs
+C:\prism\WaterNut - Enterprise\WaterNut\obj\Release\Views\Generated Views\QuerySpace\OversShortQS\OverShortDetailAllocationGridListView.g.cs
+C:\prism\WaterNut - Enterprise\WaterNut\obj\Release\Views\Generated Views\QuerySpace\OversShortQS\OverShortDetailGridListView.g.cs
+C:\prism\WaterNut - Enterprise\WaterNut\obj\Release\Views\Generated Views\QuerySpace\OversShortQS\OverShortDetailsEXGridListView.g.cs
+C:\prism\WaterNut - Enterprise\WaterNut\obj\Release\Views\Generated Views\QuerySpace\OversShortQS\OverShortSuggestedDocumentGridListView.g.cs
+C:\prism\WaterNut - Enterprise\WaterNut\obj\Release\Views\Generated Views\QuerySpace\OversShortQS\OversShortEXGridListView.g.cs
+C:\prism\WaterNut - Enterprise\WaterNut\obj\Release\Views\Generated Views\QuerySpace\OversShortQS\OversShortGridListView.g.cs
+C:\prism\WaterNut - Enterprise\WaterNut\obj\Release\Views\Generated Views\QuerySpace\OversShortQS\OversShortQSSummaryView.g.cs
+C:\prism\WaterNut - Enterprise\WaterNut\obj\Release\Views\Generated Views\QuerySpace\PreviousDocumentQS\PreviousDocumentGridListView.g.cs
+C:\prism\WaterNut - Enterprise\WaterNut\obj\Release\Views\Generated Views\QuerySpace\PreviousDocumentQS\PreviousDocumentItemGridListView.g.cs
+C:\prism\WaterNut - Enterprise\WaterNut\obj\Release\Views\Generated Views\QuerySpace\PreviousDocumentQS\PreviousDocumentQSSummaryView.g.cs
+C:\prism\WaterNut - Enterprise\WaterNut\obj\Release\Views\Generated Views\QuerySpace\PreviousDocumentQS\PreviousItemsExGridListView.g.cs
+C:\prism\WaterNut - Enterprise\WaterNut\obj\Release\Views\Generated Views\QuerySpace\SalesDataQS\AsycudaDocumentEntryDataGridListView.g.cs
+C:\prism\WaterNut - Enterprise\WaterNut\obj\Release\Views\Generated Views\QuerySpace\SalesDataQS\AsycudaDocumentSetEntryDataDetailsGridListView.g.cs
+C:\prism\WaterNut - Enterprise\WaterNut\obj\Release\Views\Generated Views\QuerySpace\SalesDataQS\AsycudaDocumentSetEntryDataGridListView.g.cs
+C:\prism\WaterNut - Enterprise\WaterNut\obj\Release\Views\Generated Views\QuerySpace\SalesDataQS\SalesDataAllocationsGridListView.g.cs
+C:\prism\WaterNut - Enterprise\WaterNut\obj\Release\Views\Generated Views\QuerySpace\SalesDataQS\SalesDataDetailGridListView.g.cs
+C:\prism\WaterNut - Enterprise\WaterNut\obj\Release\Views\Generated Views\QuerySpace\SalesDataQS\SalesDataGridListView.g.cs
+C:\prism\WaterNut - Enterprise\WaterNut\obj\Release\Views\Generated Views\QuerySpace\SalesDataQS\SalesDataQSSummaryView.g.cs
+C:\prism\WaterNut - Enterprise\WaterNut\obj\Release\Views\Licences.g.cs
+C:\prism\WaterNut - Enterprise\WaterNut\obj\Release\Views\LicenceSummary.g.cs
+C:\prism\WaterNut - Enterprise\WaterNut\obj\Release\Views\NullTarifInventoryItems.g.cs
+C:\prism\WaterNut - Enterprise\WaterNut\obj\Release\Views\EntryDataDetails.g.cs
+C:\prism\WaterNut - Enterprise\WaterNut\obj\Release\Views\EntryData.g.cs
+C:\prism\WaterNut - Enterprise\WaterNut\obj\Release\Views\OverShortDetailAllocations.g.cs
+C:\prism\WaterNut - Enterprise\WaterNut\obj\Release\Views\OverShortDetails.g.cs
+C:\prism\WaterNut - Enterprise\WaterNut\obj\Release\Views\OversShorts.g.cs
+C:\prism\WaterNut - Enterprise\WaterNut\obj\Release\Views\PreviousDocuments.g.cs
+C:\prism\WaterNut - Enterprise\WaterNut\obj\Release\Views\PreviousEntries.g.cs
+C:\prism\WaterNut - Enterprise\WaterNut\obj\Release\Views\PreviousItems.g.cs
+C:\prism\WaterNut - Enterprise\WaterNut\obj\Release\Views\QBSales.g.cs
+C:\prism\WaterNut - Enterprise\WaterNut\obj\Release\Views\SalesReport.g.cs
+C:\prism\WaterNut - Enterprise\WaterNut\obj\Release\Views\ScratchPad.g.cs
+C:\prism\WaterNut - Enterprise\WaterNut\obj\Release\Views\Status.g.cs
+C:\prism\WaterNut - Enterprise\WaterNut\obj\Release\Views\SubItemsView.g.cs
+C:\prism\WaterNut - Enterprise\WaterNut\obj\Release\Views\TariffCategory.g.cs
+C:\prism\WaterNut - Enterprise\WaterNut\obj\Release\Views\TariffCodes.g.cs
+C:\prism\WaterNut - Enterprise\WaterNut\obj\Release\Views\TariffSuppUnit.g.cs
+C:\prism\WaterNut - Enterprise\WaterNut\obj\Release\Views\MainView.g.cs
+C:\prism\WaterNut - Enterprise\WaterNut\obj\Release\App.g.cs
+C:\prism\WaterNut - Enterprise\WaterNut\obj\Release\GeneratedInternalTypeHelper.g.cs
+C:\prism\WaterNut - Enterprise\WaterNut\obj\Release\WaterNut_MarkupCompile.cache
+C:\prism\WaterNut - Enterprise\WaterNut\obj\Release\WaterNut_MarkupCompile.lref
+C:\prism\WaterNut - Enterprise\WaterNut\obj\Release\MainWindow.baml
+C:\prism\WaterNut - Enterprise\WaterNut\obj\Release\Views\Allocations.baml
+C:\prism\WaterNut - Enterprise\WaterNut\obj\Release\Views\AsycudaDocumentDetails.baml
+C:\prism\WaterNut - Enterprise\WaterNut\obj\Release\Views\AsycudaDocuments.baml
+C:\prism\WaterNut - Enterprise\WaterNut\obj\Release\Views\AsycudaDocumentSummaryList.baml
+C:\prism\WaterNut - Enterprise\WaterNut\obj\Release\Views\AsycudaEntryDetails.baml
+C:\prism\WaterNut - Enterprise\WaterNut\obj\Release\Views\AsycudaEntrySummaryList.baml
+C:\prism\WaterNut - Enterprise\WaterNut\obj\Release\Views\CPPurchaseOrders.baml
+C:\prism\WaterNut - Enterprise\WaterNut\obj\Release\Views\CPSales.baml
+C:\prism\WaterNut - Enterprise\WaterNut\obj\Release\Views\CreateAsycudaDocument.baml
+C:\prism\WaterNut - Enterprise\WaterNut\obj\Release\Views\EX9SalesData.baml
+C:\prism\WaterNut - Enterprise\WaterNut\obj\Release\Views\EX9SalesDataDetails.baml
+C:\prism\WaterNut - Enterprise\WaterNut\obj\Release\Views\Generated Views\QuerySpace\AllocationQS\AllocationQSSummaryView.baml
+C:\prism\WaterNut - Enterprise\WaterNut\obj\Release\Views\Generated Views\QuerySpace\AllocationQS\AsycudaSalesAllocationsExGridListView.baml
+C:\prism\WaterNut - Enterprise\WaterNut\obj\Release\Views\Generated Views\QuerySpace\CoreEntities\ApplicationSettingsGridListView.baml
+C:\prism\WaterNut - Enterprise\WaterNut\obj\Release\Views\Generated Views\QuerySpace\CoreEntities\AsycudaDocumentGridListView.baml
+C:\prism\WaterNut - Enterprise\WaterNut\obj\Release\Views\Generated Views\QuerySpace\CoreEntities\AsycudaDocumentItemGridListView.baml
+C:\prism\WaterNut - Enterprise\WaterNut\obj\Release\Views\Generated Views\QuerySpace\CoreEntities\AsycudaDocumentSetExGridListView.baml
+C:\prism\WaterNut - Enterprise\WaterNut\obj\Release\Views\Generated Views\QuerySpace\CoreEntities\CoreEntitiesSummaryView.baml
+C:\prism\WaterNut - Enterprise\WaterNut\obj\Release\Views\Generated Views\QuerySpace\CoreEntities\Customs_ProcedureGridListView.baml
+C:\prism\WaterNut - Enterprise\WaterNut\obj\Release\Views\Generated Views\QuerySpace\CoreEntities\Document_TypeGridListView.baml
+C:\prism\WaterNut - Enterprise\WaterNut\obj\Release\Views\Generated Views\QuerySpace\CoreEntities\LicenceSummaryGridListView.baml
+C:\prism\WaterNut - Enterprise\WaterNut\obj\Release\Views\Generated Views\QuerySpace\CoreEntities\SubItemsGridListView.baml
+C:\prism\WaterNut - Enterprise\WaterNut\obj\Release\Views\Generated Views\QuerySpace\CounterPointQS\CounterPointPODetailsGridListView.baml
+C:\prism\WaterNut - Enterprise\WaterNut\obj\Release\Views\Generated Views\QuerySpace\CounterPointQS\CounterPointPOsGridListView.baml
+C:\prism\WaterNut - Enterprise\WaterNut\obj\Release\Views\Generated Views\QuerySpace\CounterPointQS\CounterPointQSSummaryView.baml
+C:\prism\WaterNut - Enterprise\WaterNut\obj\Release\Views\Generated Views\QuerySpace\CounterPointQS\CounterPointSalesDetailsGridListView.baml
+C:\prism\WaterNut - Enterprise\WaterNut\obj\Release\Views\Generated Views\QuerySpace\CounterPointQS\CounterPointSalesGridListView.baml
+C:\prism\WaterNut - Enterprise\WaterNut\obj\Release\Views\Generated Views\QuerySpace\EntryDataQS\AsycudaDocumentEntryDataGridListView.baml
+C:\prism\WaterNut - Enterprise\WaterNut\obj\Release\Views\Generated Views\QuerySpace\EntryDataQS\AsycudaDocumentSetEntryDataDetailGridListView.baml
+C:\prism\WaterNut - Enterprise\WaterNut\obj\Release\Views\Generated Views\QuerySpace\EntryDataQS\AsycudaDocumentSetEntryDataGridListView.baml
+C:\prism\WaterNut - Enterprise\WaterNut\obj\Release\Views\Generated Views\QuerySpace\EntryDataQS\EntryDataDetailsExGridListView.baml
+C:\prism\WaterNut - Enterprise\WaterNut\obj\Release\Views\Generated Views\QuerySpace\EntryDataQS\EntryDataExGridListView.baml
+C:\prism\WaterNut - Enterprise\WaterNut\obj\Release\Views\Generated Views\QuerySpace\EntryDataQS\EntryDataQSSummaryView.baml
+C:\prism\WaterNut - Enterprise\WaterNut\obj\Release\Views\Generated Views\QuerySpace\EntryDataQS\InventoryItemsExGridListView.baml
+C:\prism\WaterNut - Enterprise\WaterNut\obj\Release\Views\Generated Views\QuerySpace\InventoryQS\EntryDataDetailsExGridListView.baml
+C:\prism\WaterNut - Enterprise\WaterNut\obj\Release\Views\Generated Views\QuerySpace\InventoryQS\InventoryItemsExGridListView.baml
+C:\prism\WaterNut - Enterprise\WaterNut\obj\Release\Views\Generated Views\QuerySpace\InventoryQS\InventoryQSSummaryView.baml
+C:\prism\WaterNut - Enterprise\WaterNut\obj\Release\Views\Generated Views\QuerySpace\InventoryQS\TariffCategoryGridListView.baml
+C:\prism\WaterNut - Enterprise\WaterNut\obj\Release\Views\Generated Views\QuerySpace\InventoryQS\TariffCodesGridListView.baml
+C:\prism\WaterNut - Enterprise\WaterNut\obj\Release\Views\Generated Views\QuerySpace\InventoryQS\TariffSupUnitLkpsGridListView.baml
+C:\prism\WaterNut - Enterprise\WaterNut\obj\Release\Views\Generated Views\QuerySpace\MainView_AutoGen.baml
+C:\prism\WaterNut - Enterprise\WaterNut\obj\Release\Views\Generated Views\QuerySpace\MainWindow_AutoGen.baml
+C:\prism\WaterNut - Enterprise\WaterNut\obj\Release\Views\Generated Views\QuerySpace\OversShortQS\AsycudaDocumentGridListView.baml
+C:\prism\WaterNut - Enterprise\WaterNut\obj\Release\Views\Generated Views\QuerySpace\OversShortQS\AsycudaDocumentItemGridListView.baml
+C:\prism\WaterNut - Enterprise\WaterNut\obj\Release\Views\Generated Views\QuerySpace\OversShortQS\InventoryItemGridListView.baml
+C:\prism\WaterNut - Enterprise\WaterNut\obj\Release\Views\Generated Views\QuerySpace\OversShortQS\OverShortAllocationsEXGridListView.baml
+C:\prism\WaterNut - Enterprise\WaterNut\obj\Release\Views\Generated Views\QuerySpace\OversShortQS\OverShortDetailAllocationGridListView.baml
+C:\prism\WaterNut - Enterprise\WaterNut\obj\Release\Views\Generated Views\QuerySpace\OversShortQS\OverShortDetailGridListView.baml
+C:\prism\WaterNut - Enterprise\WaterNut\obj\Release\Views\Generated Views\QuerySpace\OversShortQS\OverShortDetailsEXGridListView.baml
+C:\prism\WaterNut - Enterprise\WaterNut\obj\Release\Views\Generated Views\QuerySpace\OversShortQS\OverShortSuggestedDocumentGridListView.baml
+C:\prism\WaterNut - Enterprise\WaterNut\obj\Release\Views\Generated Views\QuerySpace\OversShortQS\OversShortEXGridListView.baml
+C:\prism\WaterNut - Enterprise\WaterNut\obj\Release\Views\Generated Views\QuerySpace\OversShortQS\OversShortGridListView.baml
+C:\prism\WaterNut - Enterprise\WaterNut\obj\Release\Views\Generated Views\QuerySpace\OversShortQS\OversShortQSSummaryView.baml
+C:\prism\WaterNut - Enterprise\WaterNut\obj\Release\Views\Generated Views\QuerySpace\PreviousDocumentQS\PreviousDocumentGridListView.baml
+C:\prism\WaterNut - Enterprise\WaterNut\obj\Release\Views\Generated Views\QuerySpace\PreviousDocumentQS\PreviousDocumentItemGridListView.baml
+C:\prism\WaterNut - Enterprise\WaterNut\obj\Release\Views\Generated Views\QuerySpace\PreviousDocumentQS\PreviousDocumentQSSummaryView.baml
+C:\prism\WaterNut - Enterprise\WaterNut\obj\Release\Views\Generated Views\QuerySpace\PreviousDocumentQS\PreviousItemsExGridListView.baml
+C:\prism\WaterNut - Enterprise\WaterNut\obj\Release\Views\Generated Views\QuerySpace\SalesDataQS\AsycudaDocumentEntryDataGridListView.baml
+C:\prism\WaterNut - Enterprise\WaterNut\obj\Release\Views\Generated Views\QuerySpace\SalesDataQS\AsycudaDocumentSetEntryDataDetailsGridListView.baml
+C:\prism\WaterNut - Enterprise\WaterNut\obj\Release\Views\Generated Views\QuerySpace\SalesDataQS\AsycudaDocumentSetEntryDataGridListView.baml
+C:\prism\WaterNut - Enterprise\WaterNut\obj\Release\Views\Generated Views\QuerySpace\SalesDataQS\SalesDataAllocationsGridListView.baml
+C:\prism\WaterNut - Enterprise\WaterNut\obj\Release\Views\Generated Views\QuerySpace\SalesDataQS\SalesDataDetailGridListView.baml
+C:\prism\WaterNut - Enterprise\WaterNut\obj\Release\Views\Generated Views\QuerySpace\SalesDataQS\SalesDataGridListView.baml
+C:\prism\WaterNut - Enterprise\WaterNut\obj\Release\Views\Generated Views\QuerySpace\SalesDataQS\SalesDataQSSummaryView.baml
+C:\prism\WaterNut - Enterprise\WaterNut\obj\Release\Views\Licences.baml
+C:\prism\WaterNut - Enterprise\WaterNut\obj\Release\Views\LicenceSummary.baml
+C:\prism\WaterNut - Enterprise\WaterNut\obj\Release\Views\NullTarifInventoryItems.baml
+C:\prism\WaterNut - Enterprise\WaterNut\obj\Release\Views\EntryDataDetails.baml
+C:\prism\WaterNut - Enterprise\WaterNut\obj\Release\Views\EntryData.baml
+C:\prism\WaterNut - Enterprise\WaterNut\obj\Release\Views\OverShortDetailAllocations.baml
+C:\prism\WaterNut - Enterprise\WaterNut\obj\Release\Views\OverShortDetails.baml
+C:\prism\WaterNut - Enterprise\WaterNut\obj\Release\Views\OversShorts.baml
+C:\prism\WaterNut - Enterprise\WaterNut\obj\Release\Views\PreviousDocuments.baml
+C:\prism\WaterNut - Enterprise\WaterNut\obj\Release\Views\PreviousEntries.baml
+C:\prism\WaterNut - Enterprise\WaterNut\obj\Release\Views\PreviousItems.baml
+C:\prism\WaterNut - Enterprise\WaterNut\obj\Release\Views\QBSales.baml
+C:\prism\WaterNut - Enterprise\WaterNut\obj\Release\Views\SalesReport.baml
+C:\prism\WaterNut - Enterprise\WaterNut\obj\Release\Views\ScratchPad.baml
+C:\prism\WaterNut - Enterprise\WaterNut\obj\Release\Views\Status.baml
+C:\prism\WaterNut - Enterprise\WaterNut\obj\Release\Views\SubItemsView.baml
+C:\prism\WaterNut - Enterprise\WaterNut\obj\Release\Views\TariffCategory.baml
+C:\prism\WaterNut - Enterprise\WaterNut\obj\Release\Views\TariffCodes.baml
+C:\prism\WaterNut - Enterprise\WaterNut\obj\Release\Views\TariffSuppUnit.baml
+C:\prism\WaterNut - Enterprise\WaterNut\obj\Release\Views\MainView.baml
+C:\prism\WaterNut - Enterprise\WaterNut\obj\Release\WaterNut.g.resources

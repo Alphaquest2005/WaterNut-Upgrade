@@ -1,0 +1,12 @@
+C:\prism\Core.Common\Core.Common.UI\WpfSchduleControl\WpfSchduleControl\bin\Debug\WpfSchduleControl.dll
+C:\prism\Core.Common\Core.Common.UI\WpfSchduleControl\WpfSchduleControl\bin\Debug\WpfSchduleControl.pdb
+C:\prism\Core.Common\Core.Common.UI\WpfSchduleControl\WpfSchduleControl\obj\Debug\WpfSchduleControl.csprojResolveAssemblyReference.cache
+C:\prism\Core.Common\Core.Common.UI\WpfSchduleControl\WpfSchduleControl\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\prism\Core.Common\Core.Common.UI\WpfSchduleControl\WpfSchduleControl\obj\Debug\WpfSchduleControl_MarkupCompile.cache
+C:\prism\Core.Common\Core.Common.UI\WpfSchduleControl\WpfSchduleControl\obj\Debug\WpfSchduleControl_MarkupCompile.lref
+C:\prism\Core.Common\Core.Common.UI\WpfSchduleControl\WpfSchduleControl\obj\Debug\Themes\Generic.baml
+C:\prism\Core.Common\Core.Common.UI\WpfSchduleControl\WpfSchduleControl\obj\Debug\WpfSchduleControl.g.resources
+C:\prism\Core.Common\Core.Common.UI\WpfSchduleControl\WpfSchduleControl\obj\Debug\WpfSchduleControl.Properties.Resources.resources
+C:\prism\Core.Common\Core.Common.UI\WpfSchduleControl\WpfSchduleControl\obj\Debug\WpfSchduleControl.csproj.GenerateResource.Cache
+C:\prism\Core.Common\Core.Common.UI\WpfSchduleControl\WpfSchduleControl\obj\Debug\WpfSchduleControl.dll
+C:\prism\Core.Common\Core.Common.UI\WpfSchduleControl\WpfSchduleControl\obj\Debug\WpfSchduleControl.pdb

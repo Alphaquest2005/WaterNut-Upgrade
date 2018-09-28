@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="ModelStoreContainer" CdmEntityContainer="InventoryDS">
+    <EntitySetMapping Name="InventoryItems">
+      <EntityTypeMapping TypeName="Model.InventoryItem">
+        <MappingFragment StoreEntitySet="InventoryItems">
+          <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+          <ScalarProperty Name="ItemNumber" ColumnName="ItemNumber" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Category" ColumnName="Category" />
+          <ScalarProperty Name="TariffCode" ColumnName="TariffCode" />
+          <ScalarProperty Name="EntryTimeStamp" ColumnName="EntryTimeStamp" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TariffCategories">
+      <EntityTypeMapping TypeName="Model.TariffCategory">
+        <MappingFragment StoreEntitySet="TariffCategory">
+          <ScalarProperty Name="TariffCategoryCode" ColumnName="TariffCategoryCode" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="ParentTariffCategoryCode" ColumnName="ParentTariffCategoryCode" />
+          <ScalarProperty Name="LicenseRequired" ColumnName="LicenseRequired" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TariffCodes">
+      <EntityTypeMapping TypeName="Model.TariffCode">
+        <MappingFragment StoreEntitySet="TariffCodes">
+          <ScalarProperty Name="Invalid" ColumnName="Invalid" />
+          <ScalarProperty Name="TariffCodeName" ColumnName="TariffCode" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="RateofDuty" ColumnName="RateofDuty" />
+          <ScalarProperty Name="EnvironmentalLevy" ColumnName="EnvironmentalLevy" />
+          <ScalarProperty Name="CustomsServiceCharge" ColumnName="CustomsServiceCharge" />
+          <ScalarProperty Name="ExciseTax" ColumnName="ExciseTax" />
+          <ScalarProperty Name="VatRate" ColumnName="VatRate" />
+          <ScalarProperty Name="PetrolTax" ColumnName="PetrolTax" />
+          <ScalarProperty Name="Units" ColumnName="Units" />
+          <ScalarProperty Name="SiteRev3" ColumnName="SiteRev3" />
+          <ScalarProperty Name="TariffCategoryCode" ColumnName="TariffCategoryCode" />
+          <ScalarProperty Name="LicenseRequired" ColumnName="LicenseRequired" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TariffSupUnitLkps">
+      <EntityTypeMapping TypeName="Model.TariffSupUnitLkp">
+        <MappingFragment StoreEntitySet="TariffSupUnitLkps">
+          <ScalarProperty Name="SuppUnitCode2" ColumnName="SuppUnitCode2" />
+          <ScalarProperty Name="SuppUnitName2" ColumnName="SuppUnitName2" />
+          <ScalarProperty Name="SuppQty" ColumnName="SuppQty" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="InventoryItemAlias">
+      <EntityTypeMapping TypeName="Model.InventoryItemAlia">
+        <MappingFragment StoreEntitySet="InventoryItemAlias">
+          <ScalarProperty Name="AliasName" ColumnName="AliasName" />
+          <ScalarProperty Name="ItemNumber" ColumnName="ItemNumber" />
+          <ScalarProperty Name="AliasId" ColumnName="AliasId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="InventoryAsycudaMappings">
+      <EntityTypeMapping TypeName="Model.InventoryAsycudaMapping">
+        <MappingFragment StoreEntitySet="InventoryAsycudaMapping">
+          <ScalarProperty Name="InventoryAsycudaMappingId" ColumnName="InventoryAsycudaMappingId" />
+          <ScalarProperty Name="Item_Id" ColumnName="Item_Id" />
+          <ScalarProperty Name="ItemNumber" ColumnName="ItemNumber" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TariffCategoryCodeSuppUnits">
+      <EntityTypeMapping TypeName="Model.TariffCategoryCodeSuppUnit">
+        <MappingFragment StoreEntitySet="TariffCategoryCodeSuppUnit">
+          <ScalarProperty Name="TariffSupUnitId" ColumnName="TariffSupUnitId" />
+          <ScalarProperty Name="TariffCategoryCode" ColumnName="TariffCategoryCode" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

@@ -1,0 +1,3 @@
+
+C:\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\Ez-Asycuda-Toolkit-Setup\SqlLocalDB.msi
+C:\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\Ez-Asycuda-Toolkit\bin\Debug\Ez_Asycuda_Toolkit.msi

@@ -1,0 +1,5 @@
+C:\prism\DynamicLinq\DynamicLinq\System.Linq.Dynamic\bin\Release\System.Linq.Dynamic.dll
+C:\prism\DynamicLinq\DynamicLinq\System.Linq.Dynamic\bin\Release\System.Linq.Dynamic.pdb
+C:\prism\DynamicLinq\DynamicLinq\System.Linq.Dynamic\obj\Release\System.Linq.Dynamic.csprojResolveAssemblyReference.cache
+C:\prism\DynamicLinq\DynamicLinq\System.Linq.Dynamic\obj\Release\System.Linq.Dynamic.dll
+C:\prism\DynamicLinq\DynamicLinq\System.Linq.Dynamic\obj\Release\System.Linq.Dynamic.pdb

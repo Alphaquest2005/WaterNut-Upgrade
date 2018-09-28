@@ -1,0 +1,31 @@
+C:\Prism Projects\Core.Common\T4 Library\bin\Debug\T4\DbContextMappings.tt
+C:\Prism Projects\Core.Common\T4 Library\bin\Debug\T4\ObjectContexts.tt
+C:\Prism Projects\Core.Common\T4 Library\bin\Debug\T4\Repositories\--BusinessRepository.tt
+C:\Prism Projects\Core.Common\T4 Library\bin\Debug\T4\Repositories\ClientRepository.tt
+C:\Prism Projects\Core.Common\T4 Library\bin\Debug\T4\Repository.tt
+C:\Prism Projects\Core.Common\T4 Library\bin\Debug\T4 Library.dll
+C:\Prism Projects\Core.Common\T4 Library\bin\Debug\T4 Library.pdb
+C:\Prism Projects\Core.Common\T4 Library\obj\Debug\T4 Library.dll
+C:\Prism Projects\Core.Common\T4 Library\obj\Debug\T4 Library.pdb
+C:\Prism Projects\Core.Common\T4 Library\bin\Debug\T4 Library.dll.config
+C:\Prism Projects\Core.Common\T4 Library\bin\Debug\EntityFramework.dll
+C:\Prism Projects\Core.Common\T4 Library\bin\Debug\EntityFramework.SqlServer.dll
+C:\Prism Projects\Core.Common\T4 Library\bin\Debug\EntityFramework.xml
+C:\Prism Projects\Core.Common\T4 Library\bin\Debug\EntityFramework.SqlServer.xml
+C:\Prism Projects\Core.Common\T4 Library\obj\Debug\T4 Library.csprojResolveAssemblyReference.cache
+C:\prism\Core.Common\T4 Library\obj\Debug\T4 Library.csprojResolveAssemblyReference.cache
+C:\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\Core.Common\T4 Library\obj\Debug\T4 Library.csproj.CoreCompileInputs.cache
+C:\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\Core.Common\T4 Library\obj\Debug\T4 Library.csprojAssemblyReference.cache
+C:\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\Core.Common\T4 Library\bin\Debug\T4\DbContextMappings.tt
+C:\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\Core.Common\T4 Library\bin\Debug\T4\ObjectContexts.tt
+C:\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\Core.Common\T4 Library\bin\Debug\T4\Repositories\--BusinessRepository.tt
+C:\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\Core.Common\T4 Library\bin\Debug\T4\Repositories\ClientRepository.tt
+C:\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\Core.Common\T4 Library\bin\Debug\T4\Repository.tt
+C:\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\Core.Common\T4 Library\bin\Debug\T4 Library.dll.config
+C:\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\Core.Common\T4 Library\bin\Debug\T4 Library.dll
+C:\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\Core.Common\T4 Library\bin\Debug\T4 Library.pdb
+C:\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\Core.Common\T4 Library\bin\Debug\EntityFramework.dll
+C:\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\Core.Common\T4 Library\bin\Debug\EntityFramework.xml
+C:\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\Core.Common\T4 Library\obj\Debug\T4 Library.csproj.CopyComplete
+C:\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\Core.Common\T4 Library\obj\Debug\T4 Library.dll
+C:\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\Core.Common\T4 Library\obj\Debug\T4 Library.pdb

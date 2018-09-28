@@ -1,0 +1,186 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="WaterNutDBModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'WaterNutDB-Enterprise.dbo.PreviousDocument' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="PreviousDocument">
+    <Key>
+      <PropertyRef Name="ASYCUDA_Id" />
+    </Key>
+    <Property Name="ASYCUDA_Id" Type="int" Nullable="false" />
+    <Property Name="id" Type="varchar(max)" />
+    <Property Name="CNumber" Type="varchar(max)" />
+    <Property Name="RegistrationDate" Type="datetime" />
+    <Property Name="IsManuallyAssessed" Type="bit" />
+    <Property Name="ReferenceNumber" Type="nvarchar(max)" />
+    <Property Name="EffectiveRegistrationDate" Type="datetime" />
+    <Property Name="TotalValue" Type="float" />
+    <Property Name="AllocatedValue" Type="float" />
+    <Property Name="PiValue" Type="float" />
+    <Property Name="AsycudaDocumentSetId" Type="int" />
+    <Property Name="DoNotAllocate" Type="bit" />
+    <Property Name="Description" Type="nvarchar(max)" />
+    <Property Name="BLNumber" Type="varchar" MaxLength="50" />
+    <Property Name="DocumentType" Type="varchar(max)" />
+    <Property Name="Lines" Type="int" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'WaterNutDB-Enterprise.dbo.PreviousDocumentItem' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="PreviousDocumentItem">
+    <Key>
+      <PropertyRef Name="Item_Id" />
+    </Key>
+    <Property Name="Amount_deducted_from_licence" Type="varchar(max)" />
+    <Property Name="Item_Id" Type="int" Nullable="false" />
+    <Property Name="ASYCUDA_Id" Type="int" Nullable="false" />
+    <Property Name="Licence_number" Type="nvarchar(max)" />
+    <Property Name="Free_text_1" Type="nvarchar(max)" />
+    <Property Name="Free_text_2" Type="nvarchar(max)" />
+    <Property Name="EntryDataDetailsId" Type="int" />
+    <Property Name="LineNumber" Type="int" Nullable="false" />
+    <Property Name="IsAssessed" Type="bit" />
+    <Property Name="DPQtyAllocated" Type="float" Nullable="false" />
+    <Property Name="DFQtyAllocated" Type="float" Nullable="false" />
+    <Property Name="EntryTimeStamp" Type="datetime" />
+    <Property Name="AttributeOnlyAllocation" Type="bit" />
+    <Property Name="DoNotAllocate" Type="bit" />
+    <Property Name="DoNotEX" Type="bit" />
+    <Property Name="Item_price" Type="float" />
+    <Property Name="ItemNumber" Type="varchar" MaxLength="50" />
+    <Property Name="TariffCode" Type="varchar" MaxLength="8" />
+    <Property Name="DutyLiability" Type="float" />
+    <Property Name="Total_CIF_itm" Type="float" />
+    <Property Name="Freight" Type="float" />
+    <Property Name="Statistical_value" Type="float" />
+    <Property Name="PiQuantity" Type="float" />
+    <Property Name="Description_of_goods" Type="varchar(max)" />
+    <Property Name="Commercial_Description" Type="varchar(max)" />
+    <Property Name="ItemQuantity" Type="float" />
+    <Property Name="Suppplementary_unit_code" Type="nvarchar(max)" />
+    <Property Name="Number" Type="varchar(max)" />
+    <Property Name="DocumentType" Type="varchar(max)" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'WaterNutDB-Enterprise.dbo.PreviousItemsEx' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="PreviousItemsEx">
+    <Key>
+      <PropertyRef Name="PreviousItem_Id" />
+    </Key>
+    <Property Name="Packages_number" Type="varchar(max)" />
+    <Property Name="Previous_Packages_number" Type="varchar(max)" />
+    <Property Name="Hs_code" Type="varchar(max)" />
+    <Property Name="Commodity_code" Type="varchar(max)" />
+    <Property Name="Previous_item_number" Type="varchar(max)" />
+    <Property Name="Goods_origin" Type="varchar(max)" />
+    <Property Name="Net_weight" Type="float" Nullable="false" />
+    <Property Name="Prev_net_weight" Type="float" Nullable="false" />
+    <Property Name="Prev_reg_ser" Type="varchar(max)" />
+    <Property Name="Prev_reg_nbr" Type="varchar(max)" />
+    <Property Name="Prev_reg_dat" Type="varchar(max)" />
+    <Property Name="Prev_reg_cuo" Type="varchar(max)" />
+    <Property Name="Suplementary_Quantity" Type="float" Nullable="false" />
+    <Property Name="Preveious_suplementary_quantity" Type="float" Nullable="false" />
+    <Property Name="Current_value" Type="float" Nullable="false" />
+    <Property Name="Previous_value" Type="float" Nullable="false" />
+    <Property Name="Current_item_number" Type="varchar(max)" />
+    <Property Name="PreviousItem_Id" Type="int" Nullable="false" />
+    <Property Name="ASYCUDA_Id" Type="int" />
+    <Property Name="QtyAllocated" Type="float" Nullable="false" />
+    <Property Name="PreviousDocumentItemId" Type="int" />
+    <Property Name="RndCurrent_Value" Type="float" Nullable="false" />
+    <Property Name="ReferenceNumber" Type="nvarchar(max)" />
+    <Property Name="CNumber" Type="varchar(max)" />
+    <Property Name="RegistrationDate" Type="datetime" />
+    <Property Name="AsycudaDocumentItemId" Type="int" />
+    <Property Name="AssessmentDate" Type="datetime" />
+    <Property Name="ItemNumber" Type="varchar" MaxLength="50" />
+    <Property Name="SalesFactor" Type="float" />
+  </EntityType>
+  <EntityContainer Name="WaterNutDBModelStoreContainer">
+    <EntitySet Name="PreviousDocument" EntityType="Self.PreviousDocument" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+[PreviousDocument].[ASYCUDA_Id] AS [ASYCUDA_Id], 
+[PreviousDocument].[id] AS [id], 
+[PreviousDocument].[CNumber] AS [CNumber], 
+[PreviousDocument].[RegistrationDate] AS [RegistrationDate], 
+[PreviousDocument].[IsManuallyAssessed] AS [IsManuallyAssessed], 
+[PreviousDocument].[ReferenceNumber] AS [ReferenceNumber], 
+[PreviousDocument].[EffectiveRegistrationDate] AS [EffectiveRegistrationDate], 
+[PreviousDocument].[TotalValue] AS [TotalValue], 
+[PreviousDocument].[AllocatedValue] AS [AllocatedValue], 
+[PreviousDocument].[PiValue] AS [PiValue], 
+[PreviousDocument].[AsycudaDocumentSetId] AS [AsycudaDocumentSetId], 
+[PreviousDocument].[DoNotAllocate] AS [DoNotAllocate], 
+[PreviousDocument].[Description] AS [Description], 
+[PreviousDocument].[BLNumber] AS [BLNumber], 
+[PreviousDocument].[DocumentType] AS [DocumentType], 
+[PreviousDocument].[Lines] AS [Lines]
+FROM [dbo].[PreviousDocument] AS [PreviousDocument]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="PreviousDocumentItem" EntityType="Self.PreviousDocumentItem" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+[PreviousDocumentItem].[Amount_deducted_from_licence] AS [Amount_deducted_from_licence], 
+[PreviousDocumentItem].[Item_Id] AS [Item_Id], 
+[PreviousDocumentItem].[ASYCUDA_Id] AS [ASYCUDA_Id], 
+[PreviousDocumentItem].[Licence_number] AS [Licence_number], 
+[PreviousDocumentItem].[Free_text_1] AS [Free_text_1], 
+[PreviousDocumentItem].[Free_text_2] AS [Free_text_2], 
+[PreviousDocumentItem].[EntryDataDetailsId] AS [EntryDataDetailsId], 
+[PreviousDocumentItem].[LineNumber] AS [LineNumber], 
+[PreviousDocumentItem].[IsAssessed] AS [IsAssessed], 
+[PreviousDocumentItem].[DPQtyAllocated] AS [DPQtyAllocated], 
+[PreviousDocumentItem].[DFQtyAllocated] AS [DFQtyAllocated], 
+[PreviousDocumentItem].[EntryTimeStamp] AS [EntryTimeStamp], 
+[PreviousDocumentItem].[AttributeOnlyAllocation] AS [AttributeOnlyAllocation], 
+[PreviousDocumentItem].[DoNotAllocate] AS [DoNotAllocate], 
+[PreviousDocumentItem].[DoNotEX] AS [DoNotEX], 
+[PreviousDocumentItem].[Item_price] AS [Item_price], 
+[PreviousDocumentItem].[ItemNumber] AS [ItemNumber], 
+[PreviousDocumentItem].[TariffCode] AS [TariffCode], 
+[PreviousDocumentItem].[DutyLiability] AS [DutyLiability], 
+[PreviousDocumentItem].[Total_CIF_itm] AS [Total_CIF_itm], 
+[PreviousDocumentItem].[Freight] AS [Freight], 
+[PreviousDocumentItem].[Statistical_value] AS [Statistical_value], 
+[PreviousDocumentItem].[PiQuantity] AS [PiQuantity], 
+[PreviousDocumentItem].[Description_of_goods] AS [Description_of_goods], 
+[PreviousDocumentItem].[Commercial_Description] AS [Commercial_Description], 
+[PreviousDocumentItem].[ItemQuantity] AS [ItemQuantity], 
+[PreviousDocumentItem].[Suppplementary_unit_code] AS [Suppplementary_unit_code], 
+[PreviousDocumentItem].[Number] AS [Number], 
+[PreviousDocumentItem].[DocumentType] AS [DocumentType]
+FROM [dbo].[PreviousDocumentItem] AS [PreviousDocumentItem]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="PreviousItemsEx" EntityType="Self.PreviousItemsEx" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+[PreviousItemsEx].[Packages_number] AS [Packages_number], 
+[PreviousItemsEx].[Previous_Packages_number] AS [Previous_Packages_number], 
+[PreviousItemsEx].[Hs_code] AS [Hs_code], 
+[PreviousItemsEx].[Commodity_code] AS [Commodity_code], 
+[PreviousItemsEx].[Previous_item_number] AS [Previous_item_number], 
+[PreviousItemsEx].[Goods_origin] AS [Goods_origin], 
+[PreviousItemsEx].[Net_weight] AS [Net_weight], 
+[PreviousItemsEx].[Prev_net_weight] AS [Prev_net_weight], 
+[PreviousItemsEx].[Prev_reg_ser] AS [Prev_reg_ser], 
+[PreviousItemsEx].[Prev_reg_nbr] AS [Prev_reg_nbr], 
+[PreviousItemsEx].[Prev_reg_dat] AS [Prev_reg_dat], 
+[PreviousItemsEx].[Prev_reg_cuo] AS [Prev_reg_cuo], 
+[PreviousItemsEx].[Suplementary_Quantity] AS [Suplementary_Quantity], 
+[PreviousItemsEx].[Preveious_suplementary_quantity] AS [Preveious_suplementary_quantity], 
+[PreviousItemsEx].[Current_value] AS [Current_value], 
+[PreviousItemsEx].[Previous_value] AS [Previous_value], 
+[PreviousItemsEx].[Current_item_number] AS [Current_item_number], 
+[PreviousItemsEx].[PreviousItem_Id] AS [PreviousItem_Id], 
+[PreviousItemsEx].[ASYCUDA_Id] AS [ASYCUDA_Id], 
+[PreviousItemsEx].[QtyAllocated] AS [QtyAllocated], 
+[PreviousItemsEx].[PreviousDocumentItemId] AS [PreviousDocumentItemId], 
+[PreviousItemsEx].[RndCurrent_Value] AS [RndCurrent_Value], 
+[PreviousItemsEx].[ReferenceNumber] AS [ReferenceNumber], 
+[PreviousItemsEx].[CNumber] AS [CNumber], 
+[PreviousItemsEx].[RegistrationDate] AS [RegistrationDate], 
+[PreviousItemsEx].[AsycudaDocumentItemId] AS [AsycudaDocumentItemId], 
+[PreviousItemsEx].[AssessmentDate] AS [AssessmentDate], 
+[PreviousItemsEx].[ItemNumber] AS [ItemNumber], 
+[PreviousItemsEx].[SalesFactor] AS [SalesFactor]
+FROM [dbo].[PreviousItemsEx] AS [PreviousItemsEx]</DefiningQuery>
+    </EntitySet>
+  </EntityContainer>
+</Schema>

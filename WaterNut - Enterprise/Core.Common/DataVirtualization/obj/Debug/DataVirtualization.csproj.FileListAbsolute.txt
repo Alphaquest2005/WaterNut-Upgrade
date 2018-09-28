@@ -1,0 +1,14 @@
+C:\Users\Alphaquest\Downloads\DataVirtualization_Src\Src\DataVirtualization\bin\Debug\DevZest.DataVirtualization.dll
+C:\Users\Alphaquest\Downloads\DataVirtualization_Src\Src\DataVirtualization\bin\Debug\DevZest.DataVirtualization.pdb
+C:\Users\Alphaquest\Downloads\DataVirtualization_Src\Src\DataVirtualization\obj\Debug\DataVirtualization.csprojResolveAssemblyReference.cache
+C:\Users\Alphaquest\Downloads\DataVirtualization_Src\Src\DataVirtualization\obj\Debug\LoadingAnimationBlock.baml
+C:\Users\Alphaquest\Downloads\DataVirtualization_Src\Src\DataVirtualization\obj\Debug\LoadingAnimation.g.cs
+C:\Users\Alphaquest\Downloads\DataVirtualization_Src\Src\DataVirtualization\obj\Debug\LoadingAnimationBlock.g.cs
+C:\Users\Alphaquest\Downloads\DataVirtualization_Src\Src\DataVirtualization\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\Alphaquest\Downloads\DataVirtualization_Src\Src\DataVirtualization\obj\Debug\DevZest.DataVirtualization_MarkupCompile.cache
+C:\Users\Alphaquest\Downloads\DataVirtualization_Src\Src\DataVirtualization\obj\Debug\DevZest.DataVirtualization_MarkupCompile.lref
+C:\Users\Alphaquest\Downloads\DataVirtualization_Src\Src\DataVirtualization\obj\Debug\LoadingAnimation.baml
+C:\Users\Alphaquest\Downloads\DataVirtualization_Src\Src\DataVirtualization\obj\Debug\Themes\Generic.baml
+C:\Users\Alphaquest\Downloads\DataVirtualization_Src\Src\DataVirtualization\obj\Debug\DevZest.DataVirtualization.g.resources
+C:\Users\Alphaquest\Downloads\DataVirtualization_Src\Src\DataVirtualization\obj\Debug\DevZest.DataVirtualization.dll
+C:\Users\Alphaquest\Downloads\DataVirtualization_Src\Src\DataVirtualization\obj\Debug\DevZest.DataVirtualization.pdb

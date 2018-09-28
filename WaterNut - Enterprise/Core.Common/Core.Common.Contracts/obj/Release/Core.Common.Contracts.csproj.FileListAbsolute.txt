@@ -1,0 +1,5 @@
+C:\prism\Core.Common\Core.Common.Contracts\bin\Release\Core.Common.Contracts.dll.config
+C:\prism\Core.Common\Core.Common.Contracts\bin\Release\Core.Common.Contracts.dll
+C:\prism\Core.Common\Core.Common.Contracts\bin\Release\Core.Common.Contracts.pdb
+C:\prism\Core.Common\Core.Common.Contracts\obj\Release\Core.Common.Contracts.dll
+C:\prism\Core.Common\Core.Common.Contracts\obj\Release\Core.Common.Contracts.pdb

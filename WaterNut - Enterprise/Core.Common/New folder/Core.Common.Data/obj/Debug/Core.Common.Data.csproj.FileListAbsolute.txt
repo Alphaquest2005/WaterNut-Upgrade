@@ -1,0 +1,51 @@
+C:\Prism Projects\Payroll\HR Manager T4\Core.Common.Data\bin\Debug\T4\Repository.tt
+C:\Prism Projects\Payroll\HR Manager T4\Core.Common.Data\bin\Debug\Core.Common.Data.dll.config
+C:\Prism Projects\Payroll\HR Manager T4\Core.Common.Data\bin\Debug\Core.Common.Data.dll
+C:\Prism Projects\Payroll\HR Manager T4\Core.Common.Data\bin\Debug\Core.Common.Data.pdb
+C:\Prism Projects\Payroll\HR Manager T4\Core.Common.Data\bin\Debug\EntityFramework.dll
+C:\Prism Projects\Payroll\HR Manager T4\Core.Common.Data\bin\Debug\EntityFramework.SqlServer.dll
+C:\Prism Projects\Payroll\HR Manager T4\Core.Common.Data\bin\Debug\EntityFramework.xml
+C:\Prism Projects\Payroll\HR Manager T4\Core.Common.Data\bin\Debug\EntityFramework.SqlServer.xml
+C:\Prism Projects\Payroll\HR Manager T4\Core.Common.Data\obj\Debug\Core.Common.Data.dll
+C:\Prism Projects\Payroll\HR Manager T4\Core.Common.Data\obj\Debug\Core.Common.Data.pdb
+C:\Prism Projects\Payroll\HR Manager T4\Core.Common.Data\obj\Debug\Core.Common.Data.csprojResolveAssemblyReference.cache
+C:\Prism Projects\Quick Inventory Manager\Core.Common.Data\bin\Debug\T4\Repositories\--BusinessRepository.tt
+C:\Prism Projects\Quick Inventory Manager\Core.Common.Data\bin\Debug\T4\Repositories\ClientRepository.tt
+C:\Prism Projects\Quick Inventory Manager\Core.Common.Data\bin\Debug\T4\DbContextMappings.tt
+C:\Prism Projects\Quick Inventory Manager\Core.Common.Data\bin\Debug\T4\Copy of ObjectContexts.tt
+C:\Prism Projects\Quick Inventory Manager\Core.Common.Data\bin\Debug\T4\ObjectContexts.tt
+C:\Prism Projects\Quick Inventory Manager\Core.Common.Data\bin\Debug\T4\Repository.tt
+C:\Prism Projects\Quick Inventory Manager\Core.Common.Data\bin\Debug\Core.Common.Data.dll.config
+C:\Prism Projects\Quick Inventory Manager\Core.Common.Data\bin\Debug\Core.Common.Data.dll
+C:\Prism Projects\Quick Inventory Manager\Core.Common.Data\bin\Debug\Core.Common.Data.pdb
+C:\Prism Projects\Quick Inventory Manager\Core.Common.Data\bin\Debug\EntityFramework.dll
+C:\Prism Projects\Quick Inventory Manager\Core.Common.Data\bin\Debug\EntityFramework.SqlServer.dll
+C:\Prism Projects\Quick Inventory Manager\Core.Common.Data\bin\Debug\TrackableEntities.Common.dll
+C:\Prism Projects\Quick Inventory Manager\Core.Common.Data\bin\Debug\TrackableEntities.EF.6.dll
+C:\Prism Projects\Quick Inventory Manager\Core.Common.Data\bin\Debug\EntityFramework.xml
+C:\Prism Projects\Quick Inventory Manager\Core.Common.Data\bin\Debug\EntityFramework.SqlServer.xml
+C:\Prism Projects\Quick Inventory Manager\Core.Common.Data\bin\Debug\TrackableEntities.Common.pdb
+C:\Prism Projects\Quick Inventory Manager\Core.Common.Data\bin\Debug\TrackableEntities.Common.xml
+C:\Prism Projects\Quick Inventory Manager\Core.Common.Data\bin\Debug\TrackableEntities.EF.6.pdb
+C:\Prism Projects\Quick Inventory Manager\Core.Common.Data\bin\Debug\TrackableEntities.EF.6.xml
+C:\Prism Projects\Quick Inventory Manager\Core.Common.Data\obj\Debug\Core.Common.Data.dll
+C:\Prism Projects\Quick Inventory Manager\Core.Common.Data\obj\Debug\Core.Common.Data.pdb
+C:\Prism Projects\Quick Inventory Manager\Core.Common.Data\obj\Debug\Core.Common.Data.csprojResolveAssemblyReference.cache
+C:\Prism Projects\Core.Common\New folder\Core.Common.Data\bin\Debug\T4\Repositories\--BusinessRepository.tt
+C:\Prism Projects\Core.Common\New folder\Core.Common.Data\bin\Debug\T4\Repositories\ClientRepository.tt
+C:\Prism Projects\Core.Common\New folder\Core.Common.Data\bin\Debug\T4\DbContextMappings.tt
+C:\Prism Projects\Core.Common\New folder\Core.Common.Data\bin\Debug\T4\Copy of ObjectContexts.tt
+C:\Prism Projects\Core.Common\New folder\Core.Common.Data\bin\Debug\T4\ObjectContexts.tt
+C:\Prism Projects\Core.Common\New folder\Core.Common.Data\bin\Debug\T4\Repository.tt
+C:\Prism Projects\Core.Common\New folder\Core.Common.Data\bin\Debug\Core.Common.Data.dll.config
+C:\Prism Projects\Core.Common\New folder\Core.Common.Data\bin\Debug\Core.Common.Data.dll
+C:\Prism Projects\Core.Common\New folder\Core.Common.Data\bin\Debug\Core.Common.Data.pdb
+C:\Prism Projects\Core.Common\New folder\Core.Common.Data\bin\Debug\EntityFramework.xml
+C:\Prism Projects\Core.Common\New folder\Core.Common.Data\bin\Debug\EntityFramework.SqlServer.xml
+C:\Prism Projects\Core.Common\New folder\Core.Common.Data\bin\Debug\TrackableEntities.Common.pdb
+C:\Prism Projects\Core.Common\New folder\Core.Common.Data\bin\Debug\TrackableEntities.Common.xml
+C:\Prism Projects\Core.Common\New folder\Core.Common.Data\bin\Debug\TrackableEntities.EF.6.pdb
+C:\Prism Projects\Core.Common\New folder\Core.Common.Data\bin\Debug\TrackableEntities.EF.6.xml
+C:\Prism Projects\Core.Common\New folder\Core.Common.Data\obj\Debug\Core.Common.Data.csprojResolveAssemblyReference.cache
+C:\Prism Projects\Core.Common\New folder\Core.Common.Data\obj\Debug\Core.Common.Data.dll
+C:\Prism Projects\Core.Common\New folder\Core.Common.Data\obj\Debug\Core.Common.Data.pdb

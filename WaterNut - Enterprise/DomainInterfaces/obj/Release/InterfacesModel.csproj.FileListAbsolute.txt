@@ -1,0 +1,5 @@
+C:\prism\WaterNut - Enterprise\DomainInterfaces\bin\Release\DomainInterfaces.dll
+C:\prism\WaterNut - Enterprise\DomainInterfaces\bin\Release\DomainInterfaces.pdb
+C:\prism\WaterNut - Enterprise\DomainInterfaces\obj\Release\InterfacesModel.csprojResolveAssemblyReference.cache
+C:\prism\WaterNut - Enterprise\DomainInterfaces\obj\Release\DomainInterfaces.dll
+C:\prism\WaterNut - Enterprise\DomainInterfaces\obj\Release\DomainInterfaces.pdb
