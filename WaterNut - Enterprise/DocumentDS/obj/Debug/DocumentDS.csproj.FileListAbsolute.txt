@@ -41,3 +41,15 @@ C:\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\DocumentDS\obj\D
 C:\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\DocumentDS\obj\Debug\DocumentDS.csproj.CopyComplete
 C:\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\DocumentDS\obj\Debug\DocumentDS.dll
 C:\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\DocumentDS\obj\Debug\DocumentDS.pdb
+C:\Users\josep\OneDrive\WaterNut-Upgrade\WaterNut-Upgrade\WaterNut - Enterprise\DocumentDS\bin\Debug\DocumentDS.dll.config
+C:\Users\josep\OneDrive\WaterNut-Upgrade\WaterNut-Upgrade\WaterNut - Enterprise\DocumentDS\bin\Debug\DocumentDS.dll
+C:\Users\josep\OneDrive\WaterNut-Upgrade\WaterNut-Upgrade\WaterNut - Enterprise\DocumentDS\bin\Debug\DocumentDS.pdb
+C:\Users\josep\OneDrive\WaterNut-Upgrade\WaterNut-Upgrade\WaterNut - Enterprise\DocumentDS\bin\Debug\EntityFramework.dll
+C:\Users\josep\OneDrive\WaterNut-Upgrade\WaterNut-Upgrade\WaterNut - Enterprise\DocumentDS\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\josep\OneDrive\WaterNut-Upgrade\WaterNut-Upgrade\WaterNut - Enterprise\DocumentDS\bin\Debug\EntityFramework.xml
+C:\Users\josep\OneDrive\WaterNut-Upgrade\WaterNut-Upgrade\WaterNut - Enterprise\DocumentDS\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\josep\OneDrive\WaterNut-Upgrade\WaterNut-Upgrade\WaterNut - Enterprise\DocumentDS\obj\Debug\DocumentDS.csprojAssemblyReference.cache
+C:\Users\josep\OneDrive\WaterNut-Upgrade\WaterNut-Upgrade\WaterNut - Enterprise\DocumentDS\obj\Debug\DocumentDS.csproj.CoreCompileInputs.cache
+C:\Users\josep\OneDrive\WaterNut-Upgrade\WaterNut-Upgrade\WaterNut - Enterprise\DocumentDS\obj\Debug\DocumentDS.csproj.CopyComplete
+C:\Users\josep\OneDrive\WaterNut-Upgrade\WaterNut-Upgrade\WaterNut - Enterprise\DocumentDS\obj\Debug\DocumentDS.dll
+C:\Users\josep\OneDrive\WaterNut-Upgrade\WaterNut-Upgrade\WaterNut - Enterprise\DocumentDS\obj\Debug\DocumentDS.pdb

@@ -114,7 +114,7 @@ namespace WaterNut.DataSpace
 
         private bool GetDocumentType(out Document_Type dt)
         {
-            dt = BaseDataModel.Instance.Document_Types.AsEnumerable().FirstOrDefault(x => x.DisplayName == "IM7");
+            dt = BaseDataModel.Instance.Document_Types.AsEnumerable().FirstOrDefault(x => x.DisplayName == "IM7" || x.DisplayName == "OS7");
 
             if (dt == null)
             {

@@ -21,3 +21,9 @@ C:\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\SalesDataQS\bin\
 C:\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\SalesDataQS\obj\Debug\SalesDataQS.csproj.CoreCompileInputs.cache
 C:\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\SalesDataQS\obj\Debug\SalesDataQS.dll
 C:\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\SalesDataQS\obj\Debug\SalesDataQS.pdb
+C:\Users\josep\OneDrive\WaterNut-Upgrade\WaterNut-Upgrade\WaterNut - Enterprise\SalesDataQS\bin\Debug\SalesDataQS.dll.config
+C:\Users\josep\OneDrive\WaterNut-Upgrade\WaterNut-Upgrade\WaterNut - Enterprise\SalesDataQS\bin\Debug\SalesDataQS.dll
+C:\Users\josep\OneDrive\WaterNut-Upgrade\WaterNut-Upgrade\WaterNut - Enterprise\SalesDataQS\bin\Debug\SalesDataQS.pdb
+C:\Users\josep\OneDrive\WaterNut-Upgrade\WaterNut-Upgrade\WaterNut - Enterprise\SalesDataQS\obj\Debug\SalesDataQS.csproj.CoreCompileInputs.cache
+C:\Users\josep\OneDrive\WaterNut-Upgrade\WaterNut-Upgrade\WaterNut - Enterprise\SalesDataQS\obj\Debug\SalesDataQS.dll
+C:\Users\josep\OneDrive\WaterNut-Upgrade\WaterNut-Upgrade\WaterNut - Enterprise\SalesDataQS\obj\Debug\SalesDataQS.pdb

@@ -28,3 +28,10 @@ C:\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\AllocationQS\obj
 \\VBOXSVR\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\AllocationQS\obj\Debug\AllocationQS.dll
 \\VBOXSVR\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\AllocationQS\obj\Debug\AllocationQS.pdb
 C:\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\AllocationQS\obj\Debug\AllocationQS.csprojAssemblyReference.cache
+C:\Users\josep\OneDrive\WaterNut-Upgrade\WaterNut-Upgrade\WaterNut - Enterprise\AllocationQS\bin\Debug\AllocationQS.dll.config
+C:\Users\josep\OneDrive\WaterNut-Upgrade\WaterNut-Upgrade\WaterNut - Enterprise\AllocationQS\bin\Debug\AllocationQS.dll
+C:\Users\josep\OneDrive\WaterNut-Upgrade\WaterNut-Upgrade\WaterNut - Enterprise\AllocationQS\bin\Debug\AllocationQS.pdb
+C:\Users\josep\OneDrive\WaterNut-Upgrade\WaterNut-Upgrade\WaterNut - Enterprise\AllocationQS\obj\Debug\AllocationQS.csprojAssemblyReference.cache
+C:\Users\josep\OneDrive\WaterNut-Upgrade\WaterNut-Upgrade\WaterNut - Enterprise\AllocationQS\obj\Debug\AllocationQS.csproj.CoreCompileInputs.cache
+C:\Users\josep\OneDrive\WaterNut-Upgrade\WaterNut-Upgrade\WaterNut - Enterprise\AllocationQS\obj\Debug\AllocationQS.dll
+C:\Users\josep\OneDrive\WaterNut-Upgrade\WaterNut-Upgrade\WaterNut - Enterprise\AllocationQS\obj\Debug\AllocationQS.pdb

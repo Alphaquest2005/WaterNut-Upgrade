@@ -105,7 +105,7 @@ namespace WaterNut.DataSpace
 
                 foreach (var dfp in dutylst)
                 {
-                    var exPro = " && PreviousDocumentItem.AsycudaDocument.Extended_customs_procedure == \"7000\"";
+                    var exPro = " && (PreviousDocumentItem.AsycudaDocument.Extended_customs_procedure == \"7000\" || PreviousDocumentItem.AsycudaDocument.Extended_customs_procedure == \"7400\")";
                     var slst =
                         (await CreateAllocationDataBlocks(currentFilter + exPro).ConfigureAwait(false)).Where(
                             x => x.Allocations.Count > 0);
@@ -674,7 +674,7 @@ GROUP BY AllocationsItemNameMapping.ItemNumber, SIM.QtySold, ISNULL(SEX.PiQuanti
             FilterExpression =
                 FilterExpression.Replace("&& (pExpiryDate >= \"" + DateTime.Now.Date.ToShortDateString() + "\")", "");
 
-            FilterExpression += "&& PreviousDocumentItem.DoNotAllocate != true && PreviousDocumentItem.DoNotEX != true && PreviousDocumentItem.WarehouseError == null && PreviousDocumentItem.AsycudaDocument.DocumentType == \"IM7\"";
+            FilterExpression += "&& PreviousDocumentItem.DoNotAllocate != true && PreviousDocumentItem.DoNotEX != true && PreviousDocumentItem.WarehouseError == null && (PreviousDocumentItem.AsycudaDocument.DocumentType == \"IM7\" || PreviousDocumentItem.AsycudaDocument.DocumentType == \"OS7\")";
 
            
 
@@ -1550,7 +1550,7 @@ GROUP BY AllocationsItemNameMapping.ItemNumber, SIM.QtySold, ISNULL(SEX.PiQuanti
 
                 /////////////// QtyAllocated >= piQuantity cap
                 /// 
-                if(im7Type == "7000")
+                if(im7Type == "7000" || im7Type == "7400")
                     if (mypod.EntlnData.pDocumentItem.QtyAllocated < mypod.EntlnData.pDocumentItem.previousItems
                             .Select(x => x.Suplementary_Quantity).DefaultIfEmpty(0).Sum())
                     {
@@ -1724,7 +1724,7 @@ GROUP BY AllocationsItemNameMapping.ItemNumber, SIM.QtySold, ISNULL(SEX.PiQuanti
                     }
 
 
-                    if (im7Type == "7000")
+                    if (im7Type == "7000" || im7Type == "7400")
                     {
                         itm.xcuda_PreviousItem = pitm;
                         pitm.xcuda_Item = itm;
@@ -2090,7 +2090,7 @@ GROUP BY AllocationsItemNameMapping.ItemNumber, SIM.QtySold, ISNULL(SEX.PiQuanti
                         cdoc.Document.xcuda_ASYCUDA_ExtendedProperties.Description = "Duty Free Entries";
                         var df =
                             BaseDataModel.Instance.Customs_Procedures.AsEnumerable()
-                                .FirstOrDefault(x => x.DisplayName == (im7Type == "7000" ? "9070-DIS" : "9071-000"));
+                                .FirstOrDefault(x => x.DisplayName == (im7Type == "7000" ? "9070-DIS" : "9071-000") || x.DisplayName == (im7Type == "7400" ? "9074-000" : "9074-000"));
                                         //((Exp == null || string.IsNullOrEmpty(Exp.Customs_Procedure))
                                         //    ? "9070-000"
                                         //    : Exp.Customs_Procedure));
@@ -2109,7 +2109,7 @@ GROUP BY AllocationsItemNameMapping.ItemNumber, SIM.QtySold, ISNULL(SEX.PiQuanti
                             BaseDataModel.Instance.Customs_Procedures.AsEnumerable()
                                 .FirstOrDefault(
                                     x =>
-                                        x.DisplayName == (im7Type == "7000" ? "4070-000" : "4071-000"));
+                                        x.DisplayName == (im7Type == "7000" ? "4070-000" : "4071-000") || x.DisplayName == (im7Type == "7400" ? "4074-000" : "4074-000"));
                         //((Exp1 == null || string.IsNullOrEmpty(Exp1.Customs_Procedure))
                         //    ? "4070-000"
                         //    : Exp1.Customs_Procedure));

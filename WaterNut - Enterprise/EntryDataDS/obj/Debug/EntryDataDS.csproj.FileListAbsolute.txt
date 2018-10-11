@@ -30,3 +30,10 @@ C:\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\EntryDataDS\obj\
 C:\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\EntryDataDS\obj\Debug\EntryDataDS.dll
 C:\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\EntryDataDS\obj\Debug\EntryDataDS.pdb
 C:\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\EntryDataDS\obj\Debug\EntryDataDS.csprojAssemblyReference.cache
+C:\Users\josep\OneDrive\WaterNut-Upgrade\WaterNut-Upgrade\WaterNut - Enterprise\EntryDataDS\bin\Debug\EntryDataDS.dll.config
+C:\Users\josep\OneDrive\WaterNut-Upgrade\WaterNut-Upgrade\WaterNut - Enterprise\EntryDataDS\bin\Debug\EntryDataDS.dll
+C:\Users\josep\OneDrive\WaterNut-Upgrade\WaterNut-Upgrade\WaterNut - Enterprise\EntryDataDS\bin\Debug\EntryDataDS.pdb
+C:\Users\josep\OneDrive\WaterNut-Upgrade\WaterNut-Upgrade\WaterNut - Enterprise\EntryDataDS\obj\Debug\EntryDataDS.csproj.CoreCompileInputs.cache
+C:\Users\josep\OneDrive\WaterNut-Upgrade\WaterNut-Upgrade\WaterNut - Enterprise\EntryDataDS\obj\Debug\EntryDataDS.dll
+C:\Users\josep\OneDrive\WaterNut-Upgrade\WaterNut-Upgrade\WaterNut - Enterprise\EntryDataDS\obj\Debug\EntryDataDS.pdb
+C:\Users\josep\OneDrive\WaterNut-Upgrade\WaterNut-Upgrade\WaterNut - Enterprise\EntryDataDS\obj\Debug\EntryDataDS.csprojAssemblyReference.cache

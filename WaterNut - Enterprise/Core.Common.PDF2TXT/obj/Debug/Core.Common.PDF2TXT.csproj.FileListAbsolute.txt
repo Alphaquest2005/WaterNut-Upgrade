@@ -37,3 +37,12 @@ C:\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\Core.Common.PDF2
 \\VBOXSVR\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\Core.Common.PDF2TXT\obj\Debug\Core.Common.PDF2TXT.dll
 \\VBOXSVR\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\Core.Common.PDF2TXT\obj\Debug\Core.Common.PDF2TXT.pdb
 C:\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\Core.Common.PDF2TXT\obj\Debug\Core.Common.PDF2TXT.csprojAssemblyReference.cache
+C:\Users\josep\OneDrive\WaterNut-Upgrade\WaterNut-Upgrade\WaterNut - Enterprise\Core.Common.PDF2TXT\bin\Debug\Core.Common.PDF2TXT.dll
+C:\Users\josep\OneDrive\WaterNut-Upgrade\WaterNut-Upgrade\WaterNut - Enterprise\Core.Common.PDF2TXT\bin\Debug\Core.Common.PDF2TXT.pdb
+C:\Users\josep\OneDrive\WaterNut-Upgrade\WaterNut-Upgrade\WaterNut - Enterprise\Core.Common.PDF2TXT\bin\Debug\itextsharp.dll
+C:\Users\josep\OneDrive\WaterNut-Upgrade\WaterNut-Upgrade\WaterNut - Enterprise\Core.Common.PDF2TXT\bin\Debug\itextsharp.xml
+C:\Users\josep\OneDrive\WaterNut-Upgrade\WaterNut-Upgrade\WaterNut - Enterprise\Core.Common.PDF2TXT\obj\Debug\Core.Common.PDF2TXT.csprojAssemblyReference.cache
+C:\Users\josep\OneDrive\WaterNut-Upgrade\WaterNut-Upgrade\WaterNut - Enterprise\Core.Common.PDF2TXT\obj\Debug\Core.Common.PDF2TXT.csproj.CoreCompileInputs.cache
+C:\Users\josep\OneDrive\WaterNut-Upgrade\WaterNut-Upgrade\WaterNut - Enterprise\Core.Common.PDF2TXT\obj\Debug\Core.Common.PDF2TXT.csproj.CopyComplete
+C:\Users\josep\OneDrive\WaterNut-Upgrade\WaterNut-Upgrade\WaterNut - Enterprise\Core.Common.PDF2TXT\obj\Debug\Core.Common.PDF2TXT.dll
+C:\Users\josep\OneDrive\WaterNut-Upgrade\WaterNut-Upgrade\WaterNut - Enterprise\Core.Common.PDF2TXT\obj\Debug\Core.Common.PDF2TXT.pdb

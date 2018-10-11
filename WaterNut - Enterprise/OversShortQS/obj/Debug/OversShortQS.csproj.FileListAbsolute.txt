@@ -40,3 +40,15 @@ C:\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\OversShortQS\obj
 C:\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\OversShortQS\obj\Debug\OverShortsQS.dll
 C:\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\OversShortQS\obj\Debug\OverShortsQS.pdb
 C:\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\OversShortQS\obj\Debug\OversShortQS.csprojAssemblyReference.cache
+C:\Users\josep\OneDrive\WaterNut-Upgrade\WaterNut-Upgrade\WaterNut - Enterprise\OversShortQS\bin\Debug\OverShortsQS.dll.config
+C:\Users\josep\OneDrive\WaterNut-Upgrade\WaterNut-Upgrade\WaterNut - Enterprise\OversShortQS\bin\Debug\OverShortsQS.dll
+C:\Users\josep\OneDrive\WaterNut-Upgrade\WaterNut-Upgrade\WaterNut - Enterprise\OversShortQS\bin\Debug\OverShortsQS.pdb
+C:\Users\josep\OneDrive\WaterNut-Upgrade\WaterNut-Upgrade\WaterNut - Enterprise\OversShortQS\bin\Debug\EntityFramework.dll
+C:\Users\josep\OneDrive\WaterNut-Upgrade\WaterNut-Upgrade\WaterNut - Enterprise\OversShortQS\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\josep\OneDrive\WaterNut-Upgrade\WaterNut-Upgrade\WaterNut - Enterprise\OversShortQS\bin\Debug\EntityFramework.xml
+C:\Users\josep\OneDrive\WaterNut-Upgrade\WaterNut-Upgrade\WaterNut - Enterprise\OversShortQS\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\josep\OneDrive\WaterNut-Upgrade\WaterNut-Upgrade\WaterNut - Enterprise\OversShortQS\obj\Debug\OversShortQS.csprojAssemblyReference.cache
+C:\Users\josep\OneDrive\WaterNut-Upgrade\WaterNut-Upgrade\WaterNut - Enterprise\OversShortQS\obj\Debug\OversShortQS.csproj.CoreCompileInputs.cache
+C:\Users\josep\OneDrive\WaterNut-Upgrade\WaterNut-Upgrade\WaterNut - Enterprise\OversShortQS\obj\Debug\OversShortQS.csproj.CopyComplete
+C:\Users\josep\OneDrive\WaterNut-Upgrade\WaterNut-Upgrade\WaterNut - Enterprise\OversShortQS\obj\Debug\OverShortsQS.dll
+C:\Users\josep\OneDrive\WaterNut-Upgrade\WaterNut-Upgrade\WaterNut - Enterprise\OversShortQS\obj\Debug\OverShortsQS.pdb

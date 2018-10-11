@@ -166,7 +166,7 @@ namespace WaterNut.QuerySpace.CoreEntities.ViewModels
             var navexp = new StringBuilder();
             if (ViewIM7 == true)
             {
-                navexp.Append("|| DocumentType == \"IM7\"");
+                navexp.Append("|| DocumentType == \"IM7\" || DocumentType == \"OS7\"");
             }
             if (ViewEx9 == true)
             {

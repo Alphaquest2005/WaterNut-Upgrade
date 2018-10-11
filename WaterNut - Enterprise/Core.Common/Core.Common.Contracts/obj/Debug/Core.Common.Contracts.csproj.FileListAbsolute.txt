@@ -17,3 +17,10 @@ C:\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\Core.Common\Core
 \\VBOXSVR\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\Core.Common\Core.Common.Contracts\obj\Debug\Core.Common.Contracts.dll
 \\VBOXSVR\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\Core.Common\Core.Common.Contracts\obj\Debug\Core.Common.Contracts.pdb
 C:\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\Core.Common\Core.Common.Contracts\obj\Debug\Core.Common.Contracts.csprojAssemblyReference.cache
+C:\Users\josep\OneDrive\WaterNut-Upgrade\WaterNut-Upgrade\WaterNut - Enterprise\Core.Common\Core.Common.Contracts\bin\Debug\Core.Common.Contracts.dll.config
+C:\Users\josep\OneDrive\WaterNut-Upgrade\WaterNut-Upgrade\WaterNut - Enterprise\Core.Common\Core.Common.Contracts\bin\Debug\Core.Common.Contracts.dll
+C:\Users\josep\OneDrive\WaterNut-Upgrade\WaterNut-Upgrade\WaterNut - Enterprise\Core.Common\Core.Common.Contracts\bin\Debug\Core.Common.Contracts.pdb
+C:\Users\josep\OneDrive\WaterNut-Upgrade\WaterNut-Upgrade\WaterNut - Enterprise\Core.Common\Core.Common.Contracts\obj\Debug\Core.Common.Contracts.csprojAssemblyReference.cache
+C:\Users\josep\OneDrive\WaterNut-Upgrade\WaterNut-Upgrade\WaterNut - Enterprise\Core.Common\Core.Common.Contracts\obj\Debug\Core.Common.Contracts.csproj.CoreCompileInputs.cache
+C:\Users\josep\OneDrive\WaterNut-Upgrade\WaterNut-Upgrade\WaterNut - Enterprise\Core.Common\Core.Common.Contracts\obj\Debug\Core.Common.Contracts.dll
+C:\Users\josep\OneDrive\WaterNut-Upgrade\WaterNut-Upgrade\WaterNut - Enterprise\Core.Common\Core.Common.Contracts\obj\Debug\Core.Common.Contracts.pdb

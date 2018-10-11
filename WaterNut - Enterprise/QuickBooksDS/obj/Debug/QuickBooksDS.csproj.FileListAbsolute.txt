@@ -28,3 +28,9 @@ C:\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\QuickBooksDS\bin
 C:\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\QuickBooksDS\obj\Debug\QuickBooksDS.csproj.CoreCompileInputs.cache
 C:\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\QuickBooksDS\obj\Debug\QuickBooksDS.dll
 C:\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\QuickBooksDS\obj\Debug\QuickBooksDS.pdb
+C:\Users\josep\OneDrive\WaterNut-Upgrade\WaterNut-Upgrade\WaterNut - Enterprise\QuickBooksDS\bin\Debug\QuickBooksDS.dll.config
+C:\Users\josep\OneDrive\WaterNut-Upgrade\WaterNut-Upgrade\WaterNut - Enterprise\QuickBooksDS\bin\Debug\QuickBooksDS.dll
+C:\Users\josep\OneDrive\WaterNut-Upgrade\WaterNut-Upgrade\WaterNut - Enterprise\QuickBooksDS\bin\Debug\QuickBooksDS.pdb
+C:\Users\josep\OneDrive\WaterNut-Upgrade\WaterNut-Upgrade\WaterNut - Enterprise\QuickBooksDS\obj\Debug\QuickBooksDS.csproj.CoreCompileInputs.cache
+C:\Users\josep\OneDrive\WaterNut-Upgrade\WaterNut-Upgrade\WaterNut - Enterprise\QuickBooksDS\obj\Debug\QuickBooksDS.dll
+C:\Users\josep\OneDrive\WaterNut-Upgrade\WaterNut-Upgrade\WaterNut - Enterprise\QuickBooksDS\obj\Debug\QuickBooksDS.pdb

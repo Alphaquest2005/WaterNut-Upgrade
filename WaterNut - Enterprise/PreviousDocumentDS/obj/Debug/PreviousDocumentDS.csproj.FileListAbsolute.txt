@@ -29,3 +29,9 @@ C:\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\PreviousDocument
 C:\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\PreviousDocumentDS\obj\Debug\PreviousDocumentDS.csproj.CoreCompileInputs.cache
 C:\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\PreviousDocumentDS\obj\Debug\PreviousDocumentDS.dll
 C:\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\PreviousDocumentDS\obj\Debug\PreviousDocumentDS.pdb
+C:\Users\josep\OneDrive\WaterNut-Upgrade\WaterNut-Upgrade\WaterNut - Enterprise\PreviousDocumentDS\bin\Debug\PreviousDocumentDS.dll.config
+C:\Users\josep\OneDrive\WaterNut-Upgrade\WaterNut-Upgrade\WaterNut - Enterprise\PreviousDocumentDS\bin\Debug\PreviousDocumentDS.dll
+C:\Users\josep\OneDrive\WaterNut-Upgrade\WaterNut-Upgrade\WaterNut - Enterprise\PreviousDocumentDS\bin\Debug\PreviousDocumentDS.pdb
+C:\Users\josep\OneDrive\WaterNut-Upgrade\WaterNut-Upgrade\WaterNut - Enterprise\PreviousDocumentDS\obj\Debug\PreviousDocumentDS.csproj.CoreCompileInputs.cache
+C:\Users\josep\OneDrive\WaterNut-Upgrade\WaterNut-Upgrade\WaterNut - Enterprise\PreviousDocumentDS\obj\Debug\PreviousDocumentDS.dll
+C:\Users\josep\OneDrive\WaterNut-Upgrade\WaterNut-Upgrade\WaterNut - Enterprise\PreviousDocumentDS\obj\Debug\PreviousDocumentDS.pdb

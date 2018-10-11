@@ -31,3 +31,10 @@ C:\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\InventoryDS\obj\
 C:\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\InventoryDS\obj\Debug\InventoryDS.dll
 C:\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\InventoryDS\obj\Debug\InventoryDS.pdb
 C:\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\InventoryDS\obj\Debug\InventoryDS.csprojAssemblyReference.cache
+C:\Users\josep\OneDrive\WaterNut-Upgrade\WaterNut-Upgrade\WaterNut - Enterprise\InventoryDS\bin\Debug\InventoryDS.dll.config
+C:\Users\josep\OneDrive\WaterNut-Upgrade\WaterNut-Upgrade\WaterNut - Enterprise\InventoryDS\bin\Debug\InventoryDS.dll
+C:\Users\josep\OneDrive\WaterNut-Upgrade\WaterNut-Upgrade\WaterNut - Enterprise\InventoryDS\bin\Debug\InventoryDS.pdb
+C:\Users\josep\OneDrive\WaterNut-Upgrade\WaterNut-Upgrade\WaterNut - Enterprise\InventoryDS\obj\Debug\InventoryDS.csprojAssemblyReference.cache
+C:\Users\josep\OneDrive\WaterNut-Upgrade\WaterNut-Upgrade\WaterNut - Enterprise\InventoryDS\obj\Debug\InventoryDS.csproj.CoreCompileInputs.cache
+C:\Users\josep\OneDrive\WaterNut-Upgrade\WaterNut-Upgrade\WaterNut - Enterprise\InventoryDS\obj\Debug\InventoryDS.dll
+C:\Users\josep\OneDrive\WaterNut-Upgrade\WaterNut-Upgrade\WaterNut - Enterprise\InventoryDS\obj\Debug\InventoryDS.pdb

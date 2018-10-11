@@ -25,3 +25,13 @@ C:\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\InventoryQS\bin\
 C:\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\InventoryQS\bin\Debug\EntityFramework.xml
 C:\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\InventoryQS\obj\Debug\InventoryQS.csprojAssemblyReference.cache
 C:\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\InventoryQS\obj\Debug\InventoryQS.csproj.CopyComplete
+C:\Users\josep\OneDrive\WaterNut-Upgrade\WaterNut-Upgrade\WaterNut - Enterprise\InventoryQS\bin\Debug\InventoryQS.dll.config
+C:\Users\josep\OneDrive\WaterNut-Upgrade\WaterNut-Upgrade\WaterNut - Enterprise\InventoryQS\bin\Debug\InventoryQS.dll
+C:\Users\josep\OneDrive\WaterNut-Upgrade\WaterNut-Upgrade\WaterNut - Enterprise\InventoryQS\bin\Debug\InventoryQS.pdb
+C:\Users\josep\OneDrive\WaterNut-Upgrade\WaterNut-Upgrade\WaterNut - Enterprise\InventoryQS\bin\Debug\EntityFramework.dll
+C:\Users\josep\OneDrive\WaterNut-Upgrade\WaterNut-Upgrade\WaterNut - Enterprise\InventoryQS\bin\Debug\EntityFramework.xml
+C:\Users\josep\OneDrive\WaterNut-Upgrade\WaterNut-Upgrade\WaterNut - Enterprise\InventoryQS\obj\Debug\InventoryQS.csprojAssemblyReference.cache
+C:\Users\josep\OneDrive\WaterNut-Upgrade\WaterNut-Upgrade\WaterNut - Enterprise\InventoryQS\obj\Debug\InventoryQS.csproj.CoreCompileInputs.cache
+C:\Users\josep\OneDrive\WaterNut-Upgrade\WaterNut-Upgrade\WaterNut - Enterprise\InventoryQS\obj\Debug\InventoryQS.csproj.CopyComplete
+C:\Users\josep\OneDrive\WaterNut-Upgrade\WaterNut-Upgrade\WaterNut - Enterprise\InventoryQS\obj\Debug\InventoryQS.dll
+C:\Users\josep\OneDrive\WaterNut-Upgrade\WaterNut-Upgrade\WaterNut - Enterprise\InventoryQS\obj\Debug\InventoryQS.pdb

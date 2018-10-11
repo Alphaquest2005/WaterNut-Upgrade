@@ -30,3 +30,10 @@ C:\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\CoreEntities\bin
 C:\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\CoreEntities\obj\Debug\CoreEntities.csproj.CoreCompileInputs.cache
 C:\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\CoreEntities\obj\Debug\CoreEntities.dll
 C:\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\CoreEntities\obj\Debug\CoreEntities.pdb
+C:\Users\josep\OneDrive\WaterNut-Upgrade\WaterNut-Upgrade\WaterNut - Enterprise\CoreEntities\bin\Debug\CoreEntities.dll.config
+C:\Users\josep\OneDrive\WaterNut-Upgrade\WaterNut-Upgrade\WaterNut - Enterprise\CoreEntities\bin\Debug\CoreEntities.dll
+C:\Users\josep\OneDrive\WaterNut-Upgrade\WaterNut-Upgrade\WaterNut - Enterprise\CoreEntities\bin\Debug\CoreEntities.pdb
+C:\Users\josep\OneDrive\WaterNut-Upgrade\WaterNut-Upgrade\WaterNut - Enterprise\CoreEntities\obj\Debug\CoreEntities.csprojAssemblyReference.cache
+C:\Users\josep\OneDrive\WaterNut-Upgrade\WaterNut-Upgrade\WaterNut - Enterprise\CoreEntities\obj\Debug\CoreEntities.csproj.CoreCompileInputs.cache
+C:\Users\josep\OneDrive\WaterNut-Upgrade\WaterNut-Upgrade\WaterNut - Enterprise\CoreEntities\obj\Debug\CoreEntities.dll
+C:\Users\josep\OneDrive\WaterNut-Upgrade\WaterNut-Upgrade\WaterNut - Enterprise\CoreEntities\obj\Debug\CoreEntities.pdb

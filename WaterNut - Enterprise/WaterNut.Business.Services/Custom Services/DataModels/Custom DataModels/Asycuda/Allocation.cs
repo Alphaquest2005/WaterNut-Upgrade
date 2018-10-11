@@ -332,7 +332,7 @@ namespace WaterNut.DataSpace
                         .Include(x => x.SubItems)
                         .Include(x => x.xcuda_Goods_description)
                         .Where(x => (x.AsycudaDocument.CNumber != null || x.AsycudaDocument.IsManuallyAssessed == true) &&
-                                    (x.AsycudaDocument.Extended_customs_procedure == "7000" || x.AsycudaDocument.Extended_customs_procedure == "7100" ||
+                                    (x.AsycudaDocument.Extended_customs_procedure == "7000" || x.AsycudaDocument.Extended_customs_procedure == "7400" || x.AsycudaDocument.Extended_customs_procedure == "7100" ||
                                      x.AsycudaDocument.Extended_customs_procedure == "9000") &&
                                     x.AsycudaDocument.DoNotAllocate != true)
                         .Where(x => x.AsycudaDocument.AssessmentDate >= (BaseDataModel.Instance.CurrentApplicationSettings
@@ -752,7 +752,7 @@ namespace WaterNut.DataSpace
                     {
                         (BaseDataModel.Instance.CurrentApplicationSettings.OpeningStockDate.HasValue ? string.Format("AsycudaDocument.RegistrationDate >= \"{0}\"", BaseDataModel.Instance.CurrentApplicationSettings.OpeningStockDate) : "AsycudaDocument.RegistrationDate >= \"1/1/2010\"") ,
                         "DoNotAllocate == null || DoNotAllocate != true",
-                        "(AsycudaDocument.Extended_customs_procedure == \"7000\" || AsycudaDocument.Extended_customs_procedure == \"7100\" || AsycudaDocument.Extended_customs_procedure == \"9000\")",
+                        "(AsycudaDocument.Extended_customs_procedure == \"7000\" || AsycudaDocument.Extended_customs_procedure == \"7400\" || AsycudaDocument.Extended_customs_procedure == \"7100\" || AsycudaDocument.Extended_customs_procedure == \"9000\")",
                        //"SubItems.Count > 0",
                        // "AttributeOnlyAllocation == true"
                         //string.Format("EX.Precision_4.ToUpper() == \"{0}\"", attrib)
@@ -818,7 +818,7 @@ namespace WaterNut.DataSpace
                             new List<string>()
                             {
                                 "DoNotAllocate == null || DoNotAllocate != true",
-                                "(AsycudaDocument.Extended_customs_procedure == \"7000\" ||AsycudaDocument.Extended_customs_procedure == \"7100\" || AsycudaDocument.Extended_customs_procedure == \"9000\")",
+                                "(AsycudaDocument.Extended_customs_procedure == \"7000\" ||AsycudaDocument.Extended_customs_procedure == \"7400\" || AsycudaDocument.Extended_customs_procedure == \"7100\" || AsycudaDocument.Extended_customs_procedure == \"9000\")",
                                 "SubItems.Count == 0",
                                 "AttributeOnlyAllocation == true",
                                 string.Format("xcuda_Tarification.xcuda_HScode.Precision_4.ToUpper() == \"{0}\"", attrib)
@@ -830,7 +830,7 @@ namespace WaterNut.DataSpace
                 alst.AddRange((ctx.Getxcuda_ItemByExpressionLst(new List<string>()
                 {
                     "DoNotAllocate == null || DoNotAllocate != true",
-                    "(AsycudaDocument.Extended_customs_procedure == \"7000\" ||AsycudaDocument.Extended_customs_procedure == \"7100\" || AsycudaDocument.Extended_customs_procedure == \"9000\")",
+                    "(AsycudaDocument.Extended_customs_procedure == \"7000\" || AsycudaDocument.Extended_customs_procedure == \"7400\" ||AsycudaDocument.Extended_customs_procedure == \"7100\" || AsycudaDocument.Extended_customs_procedure == \"9000\")",
                    "SubItems.Count == 0",
                     "AttributeOnlyAllocation == null || AttributeOnlyAllocation != true",
                     string.Format("\"{0}\".Contains(xcuda_Tarification.xcuda_HScode.Precision_4.ToUpper())", salesDescrip)
@@ -963,7 +963,7 @@ namespace WaterNut.DataSpace
                     .Include(x => x.xcuda_Tarification.xcuda_Supplementary_unit)
                     .Include(x => x.SubItems)
                     .Where(x => (x.AsycudaDocument.CNumber != null || x.AsycudaDocument.IsManuallyAssessed == true) &&
-                                (x.AsycudaDocument.Extended_customs_procedure == "7000" || x.AsycudaDocument.Extended_customs_procedure == "7100" ||
+                                (x.AsycudaDocument.Extended_customs_procedure == "7000" || x.AsycudaDocument.Extended_customs_procedure == "7400" || x.AsycudaDocument.Extended_customs_procedure == "7100" ||
                                  x.AsycudaDocument.Extended_customs_procedure == "9000") &&
                                 // x.WarehouseError == null && 
                                  x.AsycudaDocument.DoNotAllocate != true )
@@ -1005,7 +1005,7 @@ namespace WaterNut.DataSpace
                 var lst = await ctx.Getxcuda_ItemByExpressionNav(
                     "All",
                     // "xcuda_Tarification.xcuda_HScode.Precision_4 == \"1360\"",
-                    new Dictionary<string, string>() { { "AsycudaDocument", (BaseDataModel.Instance.CurrentApplicationSettings.OpeningStockDate.HasValue ? string.Format("AssessmentDate >= \"{0}\" && ", BaseDataModel.Instance.CurrentApplicationSettings.OpeningStockDate) : "") + "(CNumber != null || IsManuallyAssessed == true) && (Extended_customs_procedure == \"7000\" ||Extended_customs_procedure == \"7100\" || Extended_customs_procedure == \"9000\") && DoNotAllocate != true" } }
+                    new Dictionary<string, string>() { { "AsycudaDocument", (BaseDataModel.Instance.CurrentApplicationSettings.OpeningStockDate.HasValue ? string.Format("AssessmentDate >= \"{0}\" && ", BaseDataModel.Instance.CurrentApplicationSettings.OpeningStockDate) : "") + "(CNumber != null || IsManuallyAssessed == true) && (Extended_customs_procedure == \"7000\" ||Extended_customs_procedure == \"7400\" ||Extended_customs_procedure == \"7100\" || Extended_customs_procedure == \"9000\") && DoNotAllocate != true" } }
                     , new List<string>() { "AsycudaDocument",
                         "xcuda_Tarification.xcuda_HScode", "xcuda_Tarification.xcuda_Supplementary_unit","SubItems", "xcuda_Goods_description",
                     }).ConfigureAwait(false);//"EX"

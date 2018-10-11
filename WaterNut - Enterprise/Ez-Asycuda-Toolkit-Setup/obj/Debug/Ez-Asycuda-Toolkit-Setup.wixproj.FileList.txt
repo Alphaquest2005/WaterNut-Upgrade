@@ -1,5 +1,7 @@
 C:\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\Ez-Asycuda-Toolkit-Setup\bin\Debug\Ez_Asycuda_Toolkit_Setup.exe
 C:\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\Ez-Asycuda-Toolkit-Setup\bin\Debug\Ez_Asycuda_Toolkit_Setup.wixpdb
+C:\Users\josep\OneDrive\WaterNut-Upgrade\WaterNut-Upgrade\WaterNut - Enterprise\Ez-Asycuda-Toolkit-Setup\bin\Debug\Ez_Asycuda_Toolkit_Setup.exe
+C:\Users\josep\OneDrive\WaterNut-Upgrade\WaterNut-Upgrade\WaterNut - Enterprise\Ez-Asycuda-Toolkit-Setup\bin\Debug\Ez_Asycuda_Toolkit_Setup.wixpdb
 obj\Debug\Bundle.wixobj
 obj\Debug\Ez-Asycuda-Toolkit-Setup.wixproj.BindContentsFileList.txt
 obj\Debug\Ez-Asycuda-Toolkit-Setup.wixproj.BindOutputsFileList.txt

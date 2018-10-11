@@ -1132,6 +1132,7 @@ namespace SalesDataQS.Business.Services
                 {
                     if (exp == "All" && navExp.Count == 0)
                     {
+                        if (!dbContext.SalesDataDetails.Any()) return 0;
                         return Convert.ToDecimal(dbContext.SalesDataDetails
 										.AsNoTracking()
                                         .Sum(field)??0);

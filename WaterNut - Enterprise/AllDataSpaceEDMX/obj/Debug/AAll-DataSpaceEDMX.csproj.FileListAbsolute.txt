@@ -17,3 +17,8 @@ C:\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\AllDataSpaceEDMX
 C:\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\AllDataSpaceEDMX\obj\Debug\AAll-DataSpaceEDMX.csproj.CoreCompileInputs.cache
 C:\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\AllDataSpaceEDMX\obj\Debug\AllDataSpaceEDMX.dll
 C:\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\AllDataSpaceEDMX\obj\Debug\AllDataSpaceEDMX.pdb
+C:\Users\josep\OneDrive\WaterNut-Upgrade\WaterNut-Upgrade\WaterNut - Enterprise\AllDataSpaceEDMX\bin\Debug\AllDataSpaceEDMX.dll
+C:\Users\josep\OneDrive\WaterNut-Upgrade\WaterNut-Upgrade\WaterNut - Enterprise\AllDataSpaceEDMX\bin\Debug\AllDataSpaceEDMX.pdb
+C:\Users\josep\OneDrive\WaterNut-Upgrade\WaterNut-Upgrade\WaterNut - Enterprise\AllDataSpaceEDMX\obj\Debug\AAll-DataSpaceEDMX.csproj.CoreCompileInputs.cache
+C:\Users\josep\OneDrive\WaterNut-Upgrade\WaterNut-Upgrade\WaterNut - Enterprise\AllDataSpaceEDMX\obj\Debug\AllDataSpaceEDMX.dll
+C:\Users\josep\OneDrive\WaterNut-Upgrade\WaterNut-Upgrade\WaterNut - Enterprise\AllDataSpaceEDMX\obj\Debug\AllDataSpaceEDMX.pdb

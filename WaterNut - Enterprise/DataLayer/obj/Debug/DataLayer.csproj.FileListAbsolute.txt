@@ -74,3 +74,15 @@ C:\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\DataLayer\obj\De
 \\VBOXSVR\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\DataLayer\obj\Debug\DataLayer.dll
 \\VBOXSVR\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\DataLayer\obj\Debug\DataLayer.pdb
 C:\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\DataLayer\obj\Debug\DataLayer.csprojAssemblyReference.cache
+C:\Users\josep\OneDrive\WaterNut-Upgrade\WaterNut-Upgrade\WaterNut - Enterprise\DataLayer\bin\Debug\DataLayer.dll.config
+C:\Users\josep\OneDrive\WaterNut-Upgrade\WaterNut-Upgrade\WaterNut - Enterprise\DataLayer\bin\Debug\DataLayer.dll
+C:\Users\josep\OneDrive\WaterNut-Upgrade\WaterNut-Upgrade\WaterNut - Enterprise\DataLayer\bin\Debug\DataLayer.pdb
+C:\Users\josep\OneDrive\WaterNut-Upgrade\WaterNut-Upgrade\WaterNut - Enterprise\DataLayer\bin\Debug\EntityFramework.dll
+C:\Users\josep\OneDrive\WaterNut-Upgrade\WaterNut-Upgrade\WaterNut - Enterprise\DataLayer\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\josep\OneDrive\WaterNut-Upgrade\WaterNut-Upgrade\WaterNut - Enterprise\DataLayer\bin\Debug\EntityFramework.xml
+C:\Users\josep\OneDrive\WaterNut-Upgrade\WaterNut-Upgrade\WaterNut - Enterprise\DataLayer\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\josep\OneDrive\WaterNut-Upgrade\WaterNut-Upgrade\WaterNut - Enterprise\DataLayer\obj\Debug\DataLayer.csprojAssemblyReference.cache
+C:\Users\josep\OneDrive\WaterNut-Upgrade\WaterNut-Upgrade\WaterNut - Enterprise\DataLayer\obj\Debug\DataLayer.csproj.CoreCompileInputs.cache
+C:\Users\josep\OneDrive\WaterNut-Upgrade\WaterNut-Upgrade\WaterNut - Enterprise\DataLayer\obj\Debug\DataLayer.csproj.CopyComplete
+C:\Users\josep\OneDrive\WaterNut-Upgrade\WaterNut-Upgrade\WaterNut - Enterprise\DataLayer\obj\Debug\DataLayer.dll
+C:\Users\josep\OneDrive\WaterNut-Upgrade\WaterNut-Upgrade\WaterNut - Enterprise\DataLayer\obj\Debug\DataLayer.pdb

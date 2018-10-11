@@ -64,8 +64,8 @@ namespace WaterNut.DataSpace
 	                alst.AddRange(ctx.Getxcuda_ItemByExpressionLst(
 	                    new List<string>()
 	                    {
-	                        "AsycudaDocument.DocumentType == \"IM7\" && AsycudaDocument.CNumber != null"
-	                    },
+                            "(AsycudaDocument.DocumentType == \"IM7\" || AsycudaDocument.DocumentType == \"OS7\") && AsycudaDocument.CNumber != null"
+                        },
 	                    new List<string>()
 	                    {
 	                        "SubItems",

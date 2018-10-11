@@ -241,7 +241,7 @@ namespace WaterNut.QuerySpace.AllocationQS.ViewModels
                 using (var ctx = new AsycudaDocumentRepository ())
                 {
                     var doctype = await ctx.GetAsycudaDocument(doc.ASYCUDA_Id.ToString()).ConfigureAwait(false);
-                    if (doctype.DocumentType == "IM7") return;
+                    if (doctype.DocumentType == "IM7" || doctype.DocumentType == "OS7") return;
 
                 }
 

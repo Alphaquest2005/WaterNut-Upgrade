@@ -875,7 +875,14 @@
 												</xs:sequence>
 											</xs:complexType>
 										</xs:element>
-										<xs:element minOccurs="0" name="Currency_name" type="xs:string" />
+                    <xs:element minOccurs="0" name="Currency_name">
+											<xs:complexType mixed="true">
+												<xs:sequence >
+													<xs:element minOccurs="0" name="null" />
+												</xs:sequence>
+											</xs:complexType>
+										</xs:element>
+										<!--<xs:element minOccurs="0" name="Currency_name" type="xs:string" />-->
 										<xs:element minOccurs="0" name="Currency_rate" type="xs:string" />
 									</xs:sequence>
 								</xs:complexType>
@@ -892,7 +899,14 @@
 												</xs:sequence>
 											</xs:complexType>
 										</xs:element>
-										<xs:element minOccurs="0" name="Currency_name" type="xs:string" />
+									  <xs:element minOccurs="0" name="Currency_name">
+									    <xs:complexType mixed="true">
+									      <xs:sequence >
+									        <xs:element minOccurs="0" name="null" />
+									      </xs:sequence>
+									    </xs:complexType>
+									  </xs:element>
+										<!--<xs:element minOccurs="0" name="Currency_name" type="xs:string" />-->
 										<xs:element minOccurs="0" name="Currency_rate" type="xs:string" />
 									</xs:sequence>
 								</xs:complexType>
@@ -926,7 +940,14 @@
 												</xs:sequence>
 											</xs:complexType>
 										</xs:element>
-										<xs:element minOccurs="0" name="Currency_name" type="xs:string" />
+									  <xs:element minOccurs="0" name="Currency_name">
+									    <xs:complexType mixed="true">
+									      <xs:sequence >
+									        <xs:element minOccurs="0" name="null" />
+									      </xs:sequence>
+									    </xs:complexType>
+									  </xs:element>
+										<!--<xs:element minOccurs="0" name="Currency_name" type="xs:string" />-->
 										<xs:element minOccurs="0" name="Currency_rate" type="xs:string" />
 									</xs:sequence>
 								</xs:complexType>
@@ -1073,8 +1094,22 @@
 												</xs:sequence>
 											</xs:complexType>
 										</xs:element>
-										<xs:element minOccurs="0" name="Kind_of_packages_code" type="xs:string" />
-										<xs:element minOccurs="0" name="Kind_of_packages_name" type="xs:string" />
+                    <xs:element minOccurs="0" name="Kind_of_packages_code">
+                      <xs:complexType mixed="true">
+                        <xs:sequence >
+                          <xs:element minOccurs="0" name="null" />
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element minOccurs="0" name="Kind_of_packages_name">
+                      <xs:complexType mixed="true">
+                        <xs:sequence >
+                          <xs:element minOccurs="0" name="null" />
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+										<!--<xs:element minOccurs="0" name="Kind_of_packages_code" type="xs:string" />
+										<xs:element minOccurs="0" name="Kind_of_packages_name" type="xs:string" />-->
 									</xs:sequence>
 								</xs:complexType>
 							</xs:element>
@@ -1111,8 +1146,22 @@
 										<xs:element minOccurs="0" name="HScode">
 											<xs:complexType mixed="true">
 												<xs:sequence >
-													<xs:element minOccurs="0" name="Commodity_code" type="xs:string" />
-													<xs:element minOccurs="0" name="Precision_1" type="xs:string" />
+                          <xs:element minOccurs="0" name="Commodity_code">
+                            <xs:complexType mixed="true">
+                              <xs:sequence >
+                                <xs:element minOccurs="0" name="null" />
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element minOccurs="0" name="Precision_1">
+                            <xs:complexType mixed="true">
+                              <xs:sequence >
+                                <xs:element minOccurs="0" name="null" />
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+													<!--<xs:element minOccurs="0" name="Commodity_code" type="xs:string" />
+													<xs:element minOccurs="0" name="Precision_1" type="xs:string" />-->
 													<xs:element minOccurs="0" name="Precision_2">
 														<xs:complexType mixed="true">
 															<xs:sequence >
@@ -1144,8 +1193,22 @@
 												</xs:sequence>
 											</xs:complexType>
 										</xs:element>
-										<xs:element minOccurs="0" name="Extended_customs_procedure" type="xs:string" />
-										<xs:element minOccurs="0" name="National_customs_procedure" type="xs:string" />
+                    <xs:element minOccurs="0" name="Extended_customs_procedure">
+                      <xs:complexType mixed="true">
+                        <xs:sequence >
+                          <xs:element minOccurs="0" name="null" />
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element minOccurs="0" name="National_customs_procedure">
+                      <xs:complexType mixed="true">
+                        <xs:sequence >
+                          <xs:element minOccurs="0" name="null" />
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+										<!--<xs:element minOccurs="0" name="Extended_customs_procedure" type="xs:string" />
+										<xs:element minOccurs="0" name="National_customs_procedure" type="xs:string" />-->
 									  <xs:element minOccurs="0" name="Quota">
 									    <xs:complexType mixed="true">
 									      <xs:sequence >
@@ -1217,7 +1280,14 @@
 							<xs:element minOccurs="0" name="Goods_description">
 								<xs:complexType mixed="true">
 									<xs:sequence >
-										<xs:element minOccurs="0" name="Country_of_origin_code" type="xs:string" />
+                    <xs:element minOccurs="0" name="Country_of_origin_code">
+                      <xs:complexType mixed="true">
+                        <xs:sequence >
+                          <xs:element minOccurs="0" name="null" />
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+										<!--<xs:element minOccurs="0" name="Country_of_origin_code" type="xs:string" />-->
 										<xs:element minOccurs="0" name="Country_of_origin_region">
 											<xs:complexType mixed="true">
 												<xs:sequence >

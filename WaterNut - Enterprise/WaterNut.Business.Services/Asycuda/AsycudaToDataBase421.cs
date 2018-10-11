@@ -480,15 +480,15 @@ namespace WaterNut.DataSpace.Asycuda
                 }
 
                 ads.Customs_Procedure = BaseDataModel.Instance.Customs_Procedures
-                                       .FirstOrDefault(cp => cp.National_customs_procedure == a.Item.FirstOrDefault().Tarification.National_customs_procedure 
-                                                    && cp.Extended_customs_procedure == a.Item.FirstOrDefault().Tarification.Extended_customs_procedure);
+                                       .FirstOrDefault(cp => cp.National_customs_procedure == a.Item.FirstOrDefault().Tarification.National_customs_procedure.Text.FirstOrDefault() 
+                                                    && cp.Extended_customs_procedure == a.Item.FirstOrDefault().Tarification.Extended_customs_procedure.Text.FirstOrDefault());
                 if (ads.Customs_Procedure == null)
                 {
                     var cp = new Customs_Procedure(true)
                         {
-                            Extended_customs_procedure = a.Item[0].Tarification.Extended_customs_procedure,
-                            National_customs_procedure = a.Item[0].Tarification.National_customs_procedure,
-                            Document_Type = ads.Document_Type,
+                            Extended_customs_procedure = a.Item[0].Tarification.Extended_customs_procedure.Text.FirstOrDefault(),
+                        National_customs_procedure = a.Item[0].Tarification.National_customs_procedure.Text.FirstOrDefault(),
+                        Document_Type = ads.Document_Type,
                             TrackingState = TrackingState.Added
                         };
                     //await DBaseDataModel.Instance.SaveCustoms_Procedure(cp).ConfigureAwait(false);
@@ -566,11 +566,13 @@ namespace WaterNut.DataSpace.Asycuda
           for (var i = 0; i < a.Item.Count; i++)
            // Parallel.For(0, a.Item.Count, i =>
             {
-                var ai = a.Item.ElementAt(i);
+               
+                        var ai = a.Item.ElementAt(i);
                 xcuda_Item di;
 
-                
-                di = da.DocumentItems.ElementAtOrDefault(i);
+                if (!ai.Tarification.HScode.Commodity_code.Text.Any()) continue;
+
+                    di = da.DocumentItems.ElementAtOrDefault(i);
                 
 
                 if (di == null)
@@ -622,7 +624,6 @@ namespace WaterNut.DataSpace.Asycuda
                // Save_Item_Valuation_item(di, ai).Wait();
 
                 
-
                 di.ImportComplete = true;
                //await DIBaseDataModel.Instance.Savexcuda_Item(di).ConfigureAwait(false);
                 if (UpdateItemsTariffCode)
@@ -645,20 +646,20 @@ namespace WaterNut.DataSpace.Asycuda
         {
             try
             {
-
+                if (!ai.Tarification.HScode.Commodity_code.Text.Any()) return;
 
                 using (var ctx = new InventoryDSContext())
                 {
                     var tariffCode = ctx.TariffCodes
                         .Include("TariffCategory.TariffCategoryCodeSuppUnits.TariffSupUnitLkp")
-                        .FirstOrDefault(x => x.TariffCodeName == ai.Tarification.HScode.Commodity_code);
+                        .FirstOrDefault(x => x.TariffCodeName == ai.Tarification.HScode.Commodity_code.Text.FirstOrDefault());
                         if(tariffCode == null)
                         tariffCode = new TariffCode(true)
                                      {
-                                         TariffCodeName = ai.Tarification.HScode.Commodity_code,
-                                         TariffCategory = ctx.TariffCategories.FirstOrDefault(x =>
+                                         TariffCodeName = ai.Tarification.HScode.Commodity_code.Text.FirstOrDefault(),
+                            TariffCategory = ctx.TariffCategories.FirstOrDefault(x =>
                                                               x.TariffCategoryCode == ai.Tarification.HScode
-                                                                  .Commodity_code.Substring(0, 4))
+                                                                  .Commodity_code.Text.FirstOrDefault().Substring(0, 4))
                                                           ,
                                          TrackingState = TrackingState.Added
 
@@ -669,7 +670,7 @@ namespace WaterNut.DataSpace.Asycuda
                         tariffCode.TariffCategory = new TariffCategory(true)
                         {
                             TariffCategoryCode =
-                                ai.Tarification.HScode.Commodity_code.Substring(0, 4),
+                                ai.Tarification.HScode.Commodity_code.Text.FirstOrDefault().Substring(0, 4),
                             Description = ai.Goods_description.Description_of_goods.Text.Any()?ai.Goods_description.Description_of_goods.Text[0]:"",
                         TrackingState = TrackingState.Added
                         };
@@ -786,10 +787,10 @@ namespace WaterNut.DataSpace.Asycuda
 
 
                         var tc = ctx.TariffCodes.FirstOrDefault(x =>
-                            x.TariffCodeName == ai.Tarification.HScode.Commodity_code);
+                            x.TariffCodeName == ai.Tarification.HScode.Commodity_code.Text.FirstOrDefault());
 
                         if (tc != null)
-                            iv.TariffCode = ai.Tarification.HScode.Commodity_code;
+                            iv.TariffCode = ai.Tarification.HScode.Commodity_code.Text.FirstOrDefault();
 
 
 
@@ -973,7 +974,7 @@ namespace WaterNut.DataSpace.Asycuda
                 di.xcuda_Goods_description = g;
             }
             g.Commercial_Description = ai.Goods_description.Commercial_Description.Text.FirstOrDefault();
-            g.Country_of_origin_code = ai.Goods_description.Country_of_origin_code;
+            g.Country_of_origin_code = ai.Goods_description.Country_of_origin_code.Text.FirstOrDefault();
             g.Description_of_goods = ai.Goods_description.Description_of_goods.Text.FirstOrDefault();
 
             //await DIBaseDataModel.Instance.Savexcuda_Goods_description(g).ConfigureAwait(false);
@@ -989,8 +990,8 @@ namespace WaterNut.DataSpace.Asycuda
 
             }
 
-            t.Extended_customs_procedure = ai.Tarification.Extended_customs_procedure;
-            t.National_customs_procedure = ai.Tarification.National_customs_procedure;
+            t.Extended_customs_procedure = ai.Tarification.Extended_customs_procedure.Text.FirstOrDefault();
+            t.National_customs_procedure = ai.Tarification.National_customs_procedure.Text.FirstOrDefault();
             if (ai.Tarification.Item_price != "")
                 t.Item_price = Convert.ToSingle(ai.Tarification.Item_price);
             if (ai.Tarification.Value_item.Text.Count > 0)
@@ -1096,8 +1097,8 @@ namespace WaterNut.DataSpace.Asycuda
                 t.xcuda_HScode = h;
             }
 
-            h.Commodity_code = ai.Tarification.HScode.Commodity_code;
-            h.Precision_1 = ai.Tarification.HScode.Precision_1;
+            h.Commodity_code = ai.Tarification.HScode.Commodity_code.Text.FirstOrDefault();
+            h.Precision_1 = ai.Tarification.HScode.Precision_1.Text.FirstOrDefault();
             if (ai.Tarification.HScode.Precision_4.Text.FirstOrDefault() != null)
             {
                 h.Precision_4 = ai.Tarification.HScode.Precision_4.Text.FirstOrDefault();
@@ -1130,9 +1131,9 @@ namespace WaterNut.DataSpace.Asycuda
                 p = new xcuda_Packages(true) { Item_Id = di.Item_Id, TrackingState = TrackingState.Added };
                 di.xcuda_Packages.Add(p);
             }
-            p.Kind_of_packages_code = ai.Packages.Kind_of_packages_code;
-            p.Kind_of_packages_name = ai.Packages.Kind_of_packages_name;
-            p.Number_of_packages = Convert.ToSingle(ai.Packages.Number_of_packages);
+            p.Kind_of_packages_code = ai.Packages.Kind_of_packages_code.Text.FirstOrDefault();
+            p.Kind_of_packages_name = ai.Packages.Kind_of_packages_name.Text.FirstOrDefault();
+            p.Number_of_packages = string.IsNullOrEmpty(ai.Packages.Number_of_packages)? 0 : Convert.ToSingle(ai.Packages.Number_of_packages);
 
             if (ai.Packages.Marks1_of_packages.Text.Count > 0)
                 p.Marks1_of_packages = ai.Packages.Marks1_of_packages.Text[0];
@@ -1266,7 +1267,7 @@ namespace WaterNut.DataSpace.Asycuda
             gf.Amount_foreign_currency = Convert.ToSingle(a.Valuation.Gs_external_freight.Amount_foreign_currency);
             gf.Amount_national_currency = Convert.ToSingle(a.Valuation.Gs_external_freight.Amount_national_currency);
             gf.Currency_code = a.Valuation.Gs_external_freight.Currency_code.Text.FirstOrDefault();
-            gf.Currency_name = a.Valuation.Gs_external_freight.Currency_name;
+            gf.Currency_name = a.Valuation.Gs_external_freight.Currency_name.Text.FirstOrDefault();
             gf.Currency_rate = Convert.ToSingle(a.Valuation.Gs_external_freight.Currency_rate);
 
 

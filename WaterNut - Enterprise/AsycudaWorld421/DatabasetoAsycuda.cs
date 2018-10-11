@@ -506,11 +506,11 @@ namespace Asycuda421
             var ai = new ASYCUDAItem();
 
             ai.Suppliers_link.Suppliers_link_code = "1";
-            ai.Tarification.HScode.Precision_1 = "00";
+            ai.Tarification.HScode.Precision_1.Text.Add("00");
 
             ai.Packages.Number_of_packages = "0";
-            ai.Packages.Kind_of_packages_code = "PK";
-            ai.Packages.Kind_of_packages_name = "Package";
+            ai.Packages.Kind_of_packages_code.Text.Add("PK");
+            ai.Packages.Kind_of_packages_name.Text.Add("Package");
             ai.Packages.Marks1_of_packages.Text.Add("Marks");
             ai.Packages.Marks2_of_packages.Text.Add("SAME");
 
@@ -519,9 +519,9 @@ namespace Asycuda421
             if (da.xcuda_ASYCUDA_ExtendedProperties.Customs_Procedure != null)
             {
                 if (da.xcuda_ASYCUDA_ExtendedProperties.Customs_Procedure.Extended_customs_procedure != null)
-                    ai.Tarification.Extended_customs_procedure = da.xcuda_ASYCUDA_ExtendedProperties.Customs_Procedure.Extended_customs_procedure;
+                    ai.Tarification.Extended_customs_procedure.Text.Add(da.xcuda_ASYCUDA_ExtendedProperties.Customs_Procedure.Extended_customs_procedure);
                 if (da.xcuda_ASYCUDA_ExtendedProperties.Customs_Procedure.Extended_customs_procedure != null)
-                    ai.Tarification.National_customs_procedure = da.xcuda_ASYCUDA_ExtendedProperties.Customs_Procedure.National_customs_procedure;
+                    ai.Tarification.National_customs_procedure.Text.Add(da.xcuda_ASYCUDA_ExtendedProperties.Customs_Procedure.National_customs_procedure);
             }
             ai.Tarification.Supplementary_unit.Add(new ASYCUDAItemTarificationSupplementary_unit());
             ai.Tarification.Supplementary_unit.Add(new ASYCUDAItemTarificationSupplementary_unit());
@@ -612,7 +612,7 @@ namespace Asycuda421
                 if (item.xcuda_Goods_description.Commercial_Description != null)
                     ai.Goods_description.Commercial_Description.Text.Add(CleanText(item.xcuda_Goods_description.Commercial_Description)); 
                 if (item.xcuda_Goods_description.Country_of_origin_code != null)
-                    ai.Goods_description.Country_of_origin_code = item.xcuda_Goods_description.Country_of_origin_code;
+                    ai.Goods_description.Country_of_origin_code.Text.Add(item.xcuda_Goods_description.Country_of_origin_code);
                 if (item.xcuda_Goods_description.Description_of_goods != null)
                     ai.Goods_description.Description_of_goods.Text.Add(item.xcuda_Goods_description.Description_of_goods);
             }
@@ -632,9 +632,9 @@ namespace Asycuda421
             if (item.xcuda_Tarification != null)
             {
                 if (item.xcuda_Tarification.Extended_customs_procedure != null)
-                    ai.Tarification.Extended_customs_procedure = item.xcuda_Tarification.Extended_customs_procedure;
+                    ai.Tarification.Extended_customs_procedure.Text.Add(item.xcuda_Tarification.Extended_customs_procedure);
                 if (item.xcuda_Tarification.National_customs_procedure != null)
-                    ai.Tarification.National_customs_procedure = item.xcuda_Tarification.National_customs_procedure;
+                    ai.Tarification.National_customs_procedure.Text.Add(item.xcuda_Tarification.National_customs_procedure);
                 if (item.xcuda_Tarification.Item_price != 0)
                     ai.Tarification.Item_price = Math.Round(item.xcuda_Tarification.Item_price, 2).ToString();
                 SaveHSCode(item, ai);
@@ -647,7 +647,7 @@ namespace Asycuda421
             if (item.xcuda_Tarification.xcuda_HScode != null)
             {
                 if (item.xcuda_Tarification.xcuda_HScode.Commodity_code != null)
-                    ai.Tarification.HScode.Commodity_code = item.xcuda_Tarification.xcuda_HScode.Commodity_code; // item.xcuda_Tarification.xcuda_HScode.Commodity_code;
+                    ai.Tarification.HScode.Commodity_code.Text.Add(item.xcuda_Tarification.xcuda_HScode.Commodity_code); // item.xcuda_Tarification.xcuda_HScode.Commodity_code;
                 // ai.Tarification.HScode.Precision_1 = item.xcuda_Tarification.xcuda_HScode.Precision_1;
                 if (item.xcuda_Tarification.xcuda_HScode.Precision_4 != null)
                     ai.Tarification.HScode.Precision_4.Text.Add(item.xcuda_Tarification.xcuda_HScode.Precision_4.Trim());

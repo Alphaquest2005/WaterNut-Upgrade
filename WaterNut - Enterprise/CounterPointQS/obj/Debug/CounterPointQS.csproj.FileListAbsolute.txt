@@ -19,3 +19,9 @@ C:\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\CounterPointQS\b
 C:\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\CounterPointQS\obj\Debug\CounterPointQS.csproj.CoreCompileInputs.cache
 C:\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\CounterPointQS\obj\Debug\CounterPointQS.dll
 C:\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\CounterPointQS\obj\Debug\CounterPointQS.pdb
+C:\Users\josep\OneDrive\WaterNut-Upgrade\WaterNut-Upgrade\WaterNut - Enterprise\CounterPointQS\bin\Debug\CounterPointQS.dll.config
+C:\Users\josep\OneDrive\WaterNut-Upgrade\WaterNut-Upgrade\WaterNut - Enterprise\CounterPointQS\bin\Debug\CounterPointQS.dll
+C:\Users\josep\OneDrive\WaterNut-Upgrade\WaterNut-Upgrade\WaterNut - Enterprise\CounterPointQS\bin\Debug\CounterPointQS.pdb
+C:\Users\josep\OneDrive\WaterNut-Upgrade\WaterNut-Upgrade\WaterNut - Enterprise\CounterPointQS\obj\Debug\CounterPointQS.csproj.CoreCompileInputs.cache
+C:\Users\josep\OneDrive\WaterNut-Upgrade\WaterNut-Upgrade\WaterNut - Enterprise\CounterPointQS\obj\Debug\CounterPointQS.dll
+C:\Users\josep\OneDrive\WaterNut-Upgrade\WaterNut-Upgrade\WaterNut - Enterprise\CounterPointQS\obj\Debug\CounterPointQS.pdb

@@ -146,7 +146,7 @@ namespace WaterNut.DataSpace
                     ctx.xcuda_Item
                                 
                                 .Where(x => x.AsycudaDocument.RegistrationDate <= (BaseDataModel.Instance.CurrentApplicationSettings.OpeningStockDate ?? DateTime.Now))
-                                .Where(x => x.AsycudaDocument.DocumentType == "IM7")
+                                .Where(x => x.AsycudaDocument.DocumentType == "IM7" || x.AsycudaDocument.DocumentType == "OS7")
                                 .Where(x => x.WarehouseError == null)
                                 .Where(x => x.xcuda_Tarification.Item_price > 0)
                                 .Where(x => x.xcuda_Tarification.xcuda_Supplementary_unit.Any())
@@ -397,7 +397,7 @@ namespace WaterNut.DataSpace
                         x =>
                             x.DisplayName ==
                             ((Exp == null || string.IsNullOrEmpty(Exp.Customs_Procedure))
-                                ? "9370-EXB"
+                                ? "9374-EXB"
                                 : Exp.Customs_Procedure) && x.Document_TypeId == dt.Document_TypeId);
 
             BaseDataModel.Instance.AttachCustomProcedure(cdoc, df);

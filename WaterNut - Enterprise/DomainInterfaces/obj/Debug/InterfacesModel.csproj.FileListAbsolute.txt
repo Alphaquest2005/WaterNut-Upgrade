@@ -25,3 +25,9 @@ C:\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\DomainInterfaces
 \\VBOXSVR\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\DomainInterfaces\obj\Debug\WaterNut.Interfaces.dll
 \\VBOXSVR\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\DomainInterfaces\obj\Debug\WaterNut.Interfaces.pdb
 C:\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\DomainInterfaces\obj\Debug\InterfacesModel.csprojAssemblyReference.cache
+C:\Users\josep\OneDrive\WaterNut-Upgrade\WaterNut-Upgrade\WaterNut - Enterprise\DomainInterfaces\bin\Debug\WaterNut.Interfaces.dll
+C:\Users\josep\OneDrive\WaterNut-Upgrade\WaterNut-Upgrade\WaterNut - Enterprise\DomainInterfaces\bin\Debug\WaterNut.Interfaces.pdb
+C:\Users\josep\OneDrive\WaterNut-Upgrade\WaterNut-Upgrade\WaterNut - Enterprise\DomainInterfaces\obj\Debug\InterfacesModel.csprojAssemblyReference.cache
+C:\Users\josep\OneDrive\WaterNut-Upgrade\WaterNut-Upgrade\WaterNut - Enterprise\DomainInterfaces\obj\Debug\InterfacesModel.csproj.CoreCompileInputs.cache
+C:\Users\josep\OneDrive\WaterNut-Upgrade\WaterNut-Upgrade\WaterNut - Enterprise\DomainInterfaces\obj\Debug\WaterNut.Interfaces.dll
+C:\Users\josep\OneDrive\WaterNut-Upgrade\WaterNut-Upgrade\WaterNut - Enterprise\DomainInterfaces\obj\Debug\WaterNut.Interfaces.pdb

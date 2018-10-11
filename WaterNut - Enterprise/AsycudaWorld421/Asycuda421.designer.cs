@@ -62,6 +62,8 @@ namespace Asycuda421
 
         private ASYCUDAVehicle_List vehicle_ListField;
 
+        private ASYCUDASW_scans_general_segment sW_scans_general_segmentField;
+
         private ObservableCollection<string> textField;
 
         private string idField;
@@ -71,6 +73,7 @@ namespace Asycuda421
         public ASYCUDA()
         {
             this.textField = new ObservableCollection<string>();
+            this.sW_scans_general_segmentField = new ASYCUDASW_scans_general_segment();
             this.vehicle_ListField = new ASYCUDAVehicle_List();
             this.supplier_documentsField = new ObservableCollection<ASYCUDASupplier_documents>();
             this.itemField = new ObservableCollection<ASYCUDAItem>();
@@ -515,6 +518,31 @@ namespace Asycuda421
                 {
                     this.vehicle_ListField = value;
                     this.OnPropertyChanged("Vehicle_List");
+                }
+            }
+        }
+
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public ASYCUDASW_scans_general_segment SW_scans_general_segment
+        {
+            get
+            {
+                return this.sW_scans_general_segmentField;
+            }
+            set
+            {
+                if ((this.sW_scans_general_segmentField != null))
+                {
+                    if ((sW_scans_general_segmentField.Equals(value) != true))
+                    {
+                        this.sW_scans_general_segmentField = value;
+                        this.OnPropertyChanged("SW_scans_general_segment");
+                    }
+                }
+                else
+                {
+                    this.sW_scans_general_segmentField = value;
+                    this.OnPropertyChanged("SW_scans_general_segment");
                 }
             }
         }
@@ -40941,7 +40969,7 @@ namespace Asycuda421
 
         private ASYCUDAValuationGs_external_freightCurrency_code currency_codeField;
 
-        private string currency_nameField;
+        private ASYCUDAValuationGs_external_freightCurrency_name currency_nameField;
 
         private string currency_rateField;
 
@@ -40952,6 +40980,7 @@ namespace Asycuda421
         public ASYCUDAValuationGs_external_freight()
         {
             this.textField = new ObservableCollection<string>();
+            this.currency_nameField = new ASYCUDAValuationGs_external_freightCurrency_name();
             this.currency_codeField = new ASYCUDAValuationGs_external_freightCurrency_code();
         }
 
@@ -41031,7 +41060,7 @@ namespace Asycuda421
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        public string Currency_name
+        public ASYCUDAValuationGs_external_freightCurrency_name Currency_name
         {
             get
             {
@@ -41648,6 +41677,310 @@ namespace Asycuda421
     [System.SerializableAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
+    [System.Runtime.Serialization.DataContractAttribute(Name = "ASYCUDAValuationGs_external_freightCurrency_name")]
+    public partial class ASYCUDAValuationGs_external_freightCurrency_name : System.ComponentModel.INotifyPropertyChanged
+    {
+
+        private object nullField;
+
+        private ObservableCollection<string> textField;
+
+        private static System.Xml.Serialization.XmlSerializer serializer;
+
+        public ASYCUDAValuationGs_external_freightCurrency_name()
+        {
+            this.textField = new ObservableCollection<string>();
+        }
+
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public object @null
+        {
+            get
+            {
+                return this.nullField;
+            }
+            set
+            {
+                if ((this.nullField != null))
+                {
+                    if ((nullField.Equals(value) != true))
+                    {
+                        this.nullField = value;
+                        this.OnPropertyChanged("null");
+                    }
+                }
+                else
+                {
+                    this.nullField = value;
+                    this.OnPropertyChanged("null");
+                }
+            }
+        }
+
+        [System.Xml.Serialization.XmlTextAttribute()]
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public ObservableCollection<string> Text
+        {
+            get
+            {
+                return this.textField;
+            }
+            set
+            {
+                if ((this.textField != null))
+                {
+                    if ((textField.Equals(value) != true))
+                    {
+                        this.textField = value;
+                        this.OnPropertyChanged("Text");
+                    }
+                }
+                else
+                {
+                    this.textField = value;
+                    this.OnPropertyChanged("Text");
+                }
+            }
+        }
+
+        private static System.Xml.Serialization.XmlSerializer Serializer
+        {
+            get
+            {
+                if ((serializer == null))
+                {
+                    serializer = new System.Xml.Serialization.XmlSerializer(typeof(ASYCUDAValuationGs_external_freightCurrency_name));
+                }
+                return serializer;
+            }
+        }
+
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+
+        public virtual void OnPropertyChanged(string propertyName)
+        {
+            System.ComponentModel.PropertyChangedEventHandler handler = this.PropertyChanged;
+            if ((handler != null))
+            {
+                handler(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+
+        #region Serialize/Deserialize
+        /// <summary>
+        /// Serializes current ASYCUDAValuationGs_external_freightCurrency_name object into an XML document
+        /// </summary>
+        /// <returns>string XML value</returns>
+        public virtual string Serialize(System.Text.Encoding encoding)
+        {
+            System.IO.StreamReader streamReader = null;
+            System.IO.MemoryStream memoryStream = null;
+            try
+            {
+                memoryStream = new System.IO.MemoryStream();
+                System.Xml.XmlWriterSettings xmlWriterSettings = new System.Xml.XmlWriterSettings();
+                xmlWriterSettings.Encoding = encoding;
+                System.Xml.XmlWriter xmlWriter = XmlWriter.Create(memoryStream, xmlWriterSettings);
+                Serializer.Serialize(xmlWriter, this);
+                memoryStream.Seek(0, System.IO.SeekOrigin.Begin);
+                streamReader = new System.IO.StreamReader(memoryStream);
+                return streamReader.ReadToEnd();
+            }
+            finally
+            {
+                if ((streamReader != null))
+                {
+                    streamReader.Dispose();
+                }
+                if ((memoryStream != null))
+                {
+                    memoryStream.Dispose();
+                }
+            }
+        }
+
+        public virtual string Serialize()
+        {
+            return Serialize(Encoding.UTF8);
+        }
+
+        /// <summary>
+        /// Deserializes workflow markup into an ASYCUDAValuationGs_external_freightCurrency_name object
+        /// </summary>
+        /// <param name="xml">string workflow markup to deserialize</param>
+        /// <param name="obj">Output ASYCUDAValuationGs_external_freightCurrency_name object</param>
+        /// <param name="exception">output Exception value if deserialize failed</param>
+        /// <returns>true if this XmlSerializer can deserialize the object; otherwise, false</returns>
+        public static bool Deserialize(string xml, out ASYCUDAValuationGs_external_freightCurrency_name obj, out System.Exception exception)
+        {
+            exception = null;
+            obj = default(ASYCUDAValuationGs_external_freightCurrency_name);
+            try
+            {
+                obj = Deserialize(xml);
+                return true;
+            }
+            catch (System.Exception ex)
+            {
+                exception = ex;
+                return false;
+            }
+        }
+
+        public static bool Deserialize(string xml, out ASYCUDAValuationGs_external_freightCurrency_name obj)
+        {
+            System.Exception exception = null;
+            return Deserialize(xml, out obj, out exception);
+        }
+
+        public static ASYCUDAValuationGs_external_freightCurrency_name Deserialize(string xml)
+        {
+            System.IO.StringReader stringReader = null;
+            try
+            {
+                stringReader = new System.IO.StringReader(xml);
+                return ((ASYCUDAValuationGs_external_freightCurrency_name)(Serializer.Deserialize(System.Xml.XmlReader.Create(stringReader))));
+            }
+            finally
+            {
+                if ((stringReader != null))
+                {
+                    stringReader.Dispose();
+                }
+            }
+        }
+
+        /// <summary>
+        /// Serializes current ASYCUDAValuationGs_external_freightCurrency_name object into file
+        /// </summary>
+        /// <param name="fileName">full path of outupt xml file</param>
+        /// <param name="exception">output Exception value if failed</param>
+        /// <returns>true if can serialize and save into file; otherwise, false</returns>
+        public virtual bool SaveToFile(string fileName, System.Text.Encoding encoding, out System.Exception exception)
+        {
+            exception = null;
+            try
+            {
+                SaveToFile(fileName, encoding);
+                return true;
+            }
+            catch (System.Exception e)
+            {
+                exception = e;
+                return false;
+            }
+        }
+
+        public virtual bool SaveToFile(string fileName, out System.Exception exception)
+        {
+            return SaveToFile(fileName, Encoding.UTF8, out exception);
+        }
+
+        public virtual void SaveToFile(string fileName)
+        {
+            SaveToFile(fileName, Encoding.UTF8);
+        }
+
+        public virtual void SaveToFile(string fileName, System.Text.Encoding encoding)
+        {
+            System.IO.StreamWriter streamWriter = null;
+            try
+            {
+                string xmlString = Serialize(encoding);
+                streamWriter = new System.IO.StreamWriter(fileName, false, Encoding.UTF8);
+                streamWriter.WriteLine(xmlString);
+                streamWriter.Close();
+            }
+            finally
+            {
+                if ((streamWriter != null))
+                {
+                    streamWriter.Dispose();
+                }
+            }
+        }
+
+        /// <summary>
+        /// Deserializes xml markup from file into an ASYCUDAValuationGs_external_freightCurrency_name object
+        /// </summary>
+        /// <param name="fileName">string xml file to load and deserialize</param>
+        /// <param name="obj">Output ASYCUDAValuationGs_external_freightCurrency_name object</param>
+        /// <param name="exception">output Exception value if deserialize failed</param>
+        /// <returns>true if this XmlSerializer can deserialize the object; otherwise, false</returns>
+        public static bool LoadFromFile(string fileName, System.Text.Encoding encoding, out ASYCUDAValuationGs_external_freightCurrency_name obj, out System.Exception exception)
+        {
+            exception = null;
+            obj = default(ASYCUDAValuationGs_external_freightCurrency_name);
+            try
+            {
+                obj = LoadFromFile(fileName, encoding);
+                return true;
+            }
+            catch (System.Exception ex)
+            {
+                exception = ex;
+                return false;
+            }
+        }
+
+        public static bool LoadFromFile(string fileName, out ASYCUDAValuationGs_external_freightCurrency_name obj, out System.Exception exception)
+        {
+            return LoadFromFile(fileName, Encoding.UTF8, out obj, out exception);
+        }
+
+        public static bool LoadFromFile(string fileName, out ASYCUDAValuationGs_external_freightCurrency_name obj)
+        {
+            System.Exception exception = null;
+            return LoadFromFile(fileName, out obj, out exception);
+        }
+
+        public static ASYCUDAValuationGs_external_freightCurrency_name LoadFromFile(string fileName)
+        {
+            return LoadFromFile(fileName, Encoding.UTF8);
+        }
+
+        public static ASYCUDAValuationGs_external_freightCurrency_name LoadFromFile(string fileName, System.Text.Encoding encoding)
+        {
+            System.IO.FileStream file = null;
+            System.IO.StreamReader sr = null;
+            try
+            {
+                file = new System.IO.FileStream(fileName, FileMode.Open, FileAccess.Read);
+                sr = new System.IO.StreamReader(file, encoding);
+                string xmlString = sr.ReadToEnd();
+                sr.Close();
+                file.Close();
+                return Deserialize(xmlString);
+            }
+            finally
+            {
+                if ((file != null))
+                {
+                    file.Dispose();
+                }
+                if ((sr != null))
+                {
+                    sr.Dispose();
+                }
+            }
+        }
+        #endregion
+
+        #region Clone method
+        /// <summary>
+        /// Create a clone of this ASYCUDAValuationGs_external_freightCurrency_name object
+        /// </summary>
+        public virtual ASYCUDAValuationGs_external_freightCurrency_name Clone()
+        {
+            return ((ASYCUDAValuationGs_external_freightCurrency_name)(this.MemberwiseClone()));
+        }
+        #endregion
+    }
+
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.3056.0")]
+    [System.SerializableAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
     [System.Runtime.Serialization.DataContractAttribute(Name = "ASYCUDAValuationGs_internal_freight")]
     public partial class ASYCUDAValuationGs_internal_freight : System.ComponentModel.INotifyPropertyChanged
     {
@@ -41658,7 +41991,7 @@ namespace Asycuda421
 
         private ASYCUDAValuationGs_internal_freightCurrency_code currency_codeField;
 
-        private string currency_nameField;
+        private ASYCUDAValuationGs_internal_freightCurrency_name currency_nameField;
 
         private string currency_rateField;
 
@@ -41669,6 +42002,7 @@ namespace Asycuda421
         public ASYCUDAValuationGs_internal_freight()
         {
             this.textField = new ObservableCollection<string>();
+            this.currency_nameField = new ASYCUDAValuationGs_internal_freightCurrency_name();
             this.currency_codeField = new ASYCUDAValuationGs_internal_freightCurrency_code();
         }
 
@@ -41748,7 +42082,7 @@ namespace Asycuda421
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        public string Currency_name
+        public ASYCUDAValuationGs_internal_freightCurrency_name Currency_name
         {
             get
             {
@@ -42357,6 +42691,310 @@ namespace Asycuda421
         public virtual ASYCUDAValuationGs_internal_freightCurrency_code Clone()
         {
             return ((ASYCUDAValuationGs_internal_freightCurrency_code)(this.MemberwiseClone()));
+        }
+        #endregion
+    }
+
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.3056.0")]
+    [System.SerializableAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
+    [System.Runtime.Serialization.DataContractAttribute(Name = "ASYCUDAValuationGs_internal_freightCurrency_name")]
+    public partial class ASYCUDAValuationGs_internal_freightCurrency_name : System.ComponentModel.INotifyPropertyChanged
+    {
+
+        private object nullField;
+
+        private ObservableCollection<string> textField;
+
+        private static System.Xml.Serialization.XmlSerializer serializer;
+
+        public ASYCUDAValuationGs_internal_freightCurrency_name()
+        {
+            this.textField = new ObservableCollection<string>();
+        }
+
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public object @null
+        {
+            get
+            {
+                return this.nullField;
+            }
+            set
+            {
+                if ((this.nullField != null))
+                {
+                    if ((nullField.Equals(value) != true))
+                    {
+                        this.nullField = value;
+                        this.OnPropertyChanged("null");
+                    }
+                }
+                else
+                {
+                    this.nullField = value;
+                    this.OnPropertyChanged("null");
+                }
+            }
+        }
+
+        [System.Xml.Serialization.XmlTextAttribute()]
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public ObservableCollection<string> Text
+        {
+            get
+            {
+                return this.textField;
+            }
+            set
+            {
+                if ((this.textField != null))
+                {
+                    if ((textField.Equals(value) != true))
+                    {
+                        this.textField = value;
+                        this.OnPropertyChanged("Text");
+                    }
+                }
+                else
+                {
+                    this.textField = value;
+                    this.OnPropertyChanged("Text");
+                }
+            }
+        }
+
+        private static System.Xml.Serialization.XmlSerializer Serializer
+        {
+            get
+            {
+                if ((serializer == null))
+                {
+                    serializer = new System.Xml.Serialization.XmlSerializer(typeof(ASYCUDAValuationGs_internal_freightCurrency_name));
+                }
+                return serializer;
+            }
+        }
+
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+
+        public virtual void OnPropertyChanged(string propertyName)
+        {
+            System.ComponentModel.PropertyChangedEventHandler handler = this.PropertyChanged;
+            if ((handler != null))
+            {
+                handler(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+
+        #region Serialize/Deserialize
+        /// <summary>
+        /// Serializes current ASYCUDAValuationGs_internal_freightCurrency_name object into an XML document
+        /// </summary>
+        /// <returns>string XML value</returns>
+        public virtual string Serialize(System.Text.Encoding encoding)
+        {
+            System.IO.StreamReader streamReader = null;
+            System.IO.MemoryStream memoryStream = null;
+            try
+            {
+                memoryStream = new System.IO.MemoryStream();
+                System.Xml.XmlWriterSettings xmlWriterSettings = new System.Xml.XmlWriterSettings();
+                xmlWriterSettings.Encoding = encoding;
+                System.Xml.XmlWriter xmlWriter = XmlWriter.Create(memoryStream, xmlWriterSettings);
+                Serializer.Serialize(xmlWriter, this);
+                memoryStream.Seek(0, System.IO.SeekOrigin.Begin);
+                streamReader = new System.IO.StreamReader(memoryStream);
+                return streamReader.ReadToEnd();
+            }
+            finally
+            {
+                if ((streamReader != null))
+                {
+                    streamReader.Dispose();
+                }
+                if ((memoryStream != null))
+                {
+                    memoryStream.Dispose();
+                }
+            }
+        }
+
+        public virtual string Serialize()
+        {
+            return Serialize(Encoding.UTF8);
+        }
+
+        /// <summary>
+        /// Deserializes workflow markup into an ASYCUDAValuationGs_internal_freightCurrency_name object
+        /// </summary>
+        /// <param name="xml">string workflow markup to deserialize</param>
+        /// <param name="obj">Output ASYCUDAValuationGs_internal_freightCurrency_name object</param>
+        /// <param name="exception">output Exception value if deserialize failed</param>
+        /// <returns>true if this XmlSerializer can deserialize the object; otherwise, false</returns>
+        public static bool Deserialize(string xml, out ASYCUDAValuationGs_internal_freightCurrency_name obj, out System.Exception exception)
+        {
+            exception = null;
+            obj = default(ASYCUDAValuationGs_internal_freightCurrency_name);
+            try
+            {
+                obj = Deserialize(xml);
+                return true;
+            }
+            catch (System.Exception ex)
+            {
+                exception = ex;
+                return false;
+            }
+        }
+
+        public static bool Deserialize(string xml, out ASYCUDAValuationGs_internal_freightCurrency_name obj)
+        {
+            System.Exception exception = null;
+            return Deserialize(xml, out obj, out exception);
+        }
+
+        public static ASYCUDAValuationGs_internal_freightCurrency_name Deserialize(string xml)
+        {
+            System.IO.StringReader stringReader = null;
+            try
+            {
+                stringReader = new System.IO.StringReader(xml);
+                return ((ASYCUDAValuationGs_internal_freightCurrency_name)(Serializer.Deserialize(System.Xml.XmlReader.Create(stringReader))));
+            }
+            finally
+            {
+                if ((stringReader != null))
+                {
+                    stringReader.Dispose();
+                }
+            }
+        }
+
+        /// <summary>
+        /// Serializes current ASYCUDAValuationGs_internal_freightCurrency_name object into file
+        /// </summary>
+        /// <param name="fileName">full path of outupt xml file</param>
+        /// <param name="exception">output Exception value if failed</param>
+        /// <returns>true if can serialize and save into file; otherwise, false</returns>
+        public virtual bool SaveToFile(string fileName, System.Text.Encoding encoding, out System.Exception exception)
+        {
+            exception = null;
+            try
+            {
+                SaveToFile(fileName, encoding);
+                return true;
+            }
+            catch (System.Exception e)
+            {
+                exception = e;
+                return false;
+            }
+        }
+
+        public virtual bool SaveToFile(string fileName, out System.Exception exception)
+        {
+            return SaveToFile(fileName, Encoding.UTF8, out exception);
+        }
+
+        public virtual void SaveToFile(string fileName)
+        {
+            SaveToFile(fileName, Encoding.UTF8);
+        }
+
+        public virtual void SaveToFile(string fileName, System.Text.Encoding encoding)
+        {
+            System.IO.StreamWriter streamWriter = null;
+            try
+            {
+                string xmlString = Serialize(encoding);
+                streamWriter = new System.IO.StreamWriter(fileName, false, Encoding.UTF8);
+                streamWriter.WriteLine(xmlString);
+                streamWriter.Close();
+            }
+            finally
+            {
+                if ((streamWriter != null))
+                {
+                    streamWriter.Dispose();
+                }
+            }
+        }
+
+        /// <summary>
+        /// Deserializes xml markup from file into an ASYCUDAValuationGs_internal_freightCurrency_name object
+        /// </summary>
+        /// <param name="fileName">string xml file to load and deserialize</param>
+        /// <param name="obj">Output ASYCUDAValuationGs_internal_freightCurrency_name object</param>
+        /// <param name="exception">output Exception value if deserialize failed</param>
+        /// <returns>true if this XmlSerializer can deserialize the object; otherwise, false</returns>
+        public static bool LoadFromFile(string fileName, System.Text.Encoding encoding, out ASYCUDAValuationGs_internal_freightCurrency_name obj, out System.Exception exception)
+        {
+            exception = null;
+            obj = default(ASYCUDAValuationGs_internal_freightCurrency_name);
+            try
+            {
+                obj = LoadFromFile(fileName, encoding);
+                return true;
+            }
+            catch (System.Exception ex)
+            {
+                exception = ex;
+                return false;
+            }
+        }
+
+        public static bool LoadFromFile(string fileName, out ASYCUDAValuationGs_internal_freightCurrency_name obj, out System.Exception exception)
+        {
+            return LoadFromFile(fileName, Encoding.UTF8, out obj, out exception);
+        }
+
+        public static bool LoadFromFile(string fileName, out ASYCUDAValuationGs_internal_freightCurrency_name obj)
+        {
+            System.Exception exception = null;
+            return LoadFromFile(fileName, out obj, out exception);
+        }
+
+        public static ASYCUDAValuationGs_internal_freightCurrency_name LoadFromFile(string fileName)
+        {
+            return LoadFromFile(fileName, Encoding.UTF8);
+        }
+
+        public static ASYCUDAValuationGs_internal_freightCurrency_name LoadFromFile(string fileName, System.Text.Encoding encoding)
+        {
+            System.IO.FileStream file = null;
+            System.IO.StreamReader sr = null;
+            try
+            {
+                file = new System.IO.FileStream(fileName, FileMode.Open, FileAccess.Read);
+                sr = new System.IO.StreamReader(file, encoding);
+                string xmlString = sr.ReadToEnd();
+                sr.Close();
+                file.Close();
+                return Deserialize(xmlString);
+            }
+            finally
+            {
+                if ((file != null))
+                {
+                    file.Dispose();
+                }
+                if ((sr != null))
+                {
+                    sr.Dispose();
+                }
+            }
+        }
+        #endregion
+
+        #region Clone method
+        /// <summary>
+        /// Create a clone of this ASYCUDAValuationGs_internal_freightCurrency_name object
+        /// </summary>
+        public virtual ASYCUDAValuationGs_internal_freightCurrency_name Clone()
+        {
+            return ((ASYCUDAValuationGs_internal_freightCurrency_name)(this.MemberwiseClone()));
         }
         #endregion
     }
@@ -43092,7 +43730,7 @@ namespace Asycuda421
 
         private ASYCUDAValuationGs_other_costCurrency_code currency_codeField;
 
-        private string currency_nameField;
+        private ASYCUDAValuationGs_other_costCurrency_name currency_nameField;
 
         private string currency_rateField;
 
@@ -43103,6 +43741,7 @@ namespace Asycuda421
         public ASYCUDAValuationGs_other_cost()
         {
             this.textField = new ObservableCollection<string>();
+            this.currency_nameField = new ASYCUDAValuationGs_other_costCurrency_name();
             this.currency_codeField = new ASYCUDAValuationGs_other_costCurrency_code();
         }
 
@@ -43182,7 +43821,7 @@ namespace Asycuda421
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        public string Currency_name
+        public ASYCUDAValuationGs_other_costCurrency_name Currency_name
         {
             get
             {
@@ -43791,6 +44430,310 @@ namespace Asycuda421
         public virtual ASYCUDAValuationGs_other_costCurrency_code Clone()
         {
             return ((ASYCUDAValuationGs_other_costCurrency_code)(this.MemberwiseClone()));
+        }
+        #endregion
+    }
+
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.3056.0")]
+    [System.SerializableAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
+    [System.Runtime.Serialization.DataContractAttribute(Name = "ASYCUDAValuationGs_other_costCurrency_name")]
+    public partial class ASYCUDAValuationGs_other_costCurrency_name : System.ComponentModel.INotifyPropertyChanged
+    {
+
+        private object nullField;
+
+        private ObservableCollection<string> textField;
+
+        private static System.Xml.Serialization.XmlSerializer serializer;
+
+        public ASYCUDAValuationGs_other_costCurrency_name()
+        {
+            this.textField = new ObservableCollection<string>();
+        }
+
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public object @null
+        {
+            get
+            {
+                return this.nullField;
+            }
+            set
+            {
+                if ((this.nullField != null))
+                {
+                    if ((nullField.Equals(value) != true))
+                    {
+                        this.nullField = value;
+                        this.OnPropertyChanged("null");
+                    }
+                }
+                else
+                {
+                    this.nullField = value;
+                    this.OnPropertyChanged("null");
+                }
+            }
+        }
+
+        [System.Xml.Serialization.XmlTextAttribute()]
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public ObservableCollection<string> Text
+        {
+            get
+            {
+                return this.textField;
+            }
+            set
+            {
+                if ((this.textField != null))
+                {
+                    if ((textField.Equals(value) != true))
+                    {
+                        this.textField = value;
+                        this.OnPropertyChanged("Text");
+                    }
+                }
+                else
+                {
+                    this.textField = value;
+                    this.OnPropertyChanged("Text");
+                }
+            }
+        }
+
+        private static System.Xml.Serialization.XmlSerializer Serializer
+        {
+            get
+            {
+                if ((serializer == null))
+                {
+                    serializer = new System.Xml.Serialization.XmlSerializer(typeof(ASYCUDAValuationGs_other_costCurrency_name));
+                }
+                return serializer;
+            }
+        }
+
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+
+        public virtual void OnPropertyChanged(string propertyName)
+        {
+            System.ComponentModel.PropertyChangedEventHandler handler = this.PropertyChanged;
+            if ((handler != null))
+            {
+                handler(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+
+        #region Serialize/Deserialize
+        /// <summary>
+        /// Serializes current ASYCUDAValuationGs_other_costCurrency_name object into an XML document
+        /// </summary>
+        /// <returns>string XML value</returns>
+        public virtual string Serialize(System.Text.Encoding encoding)
+        {
+            System.IO.StreamReader streamReader = null;
+            System.IO.MemoryStream memoryStream = null;
+            try
+            {
+                memoryStream = new System.IO.MemoryStream();
+                System.Xml.XmlWriterSettings xmlWriterSettings = new System.Xml.XmlWriterSettings();
+                xmlWriterSettings.Encoding = encoding;
+                System.Xml.XmlWriter xmlWriter = XmlWriter.Create(memoryStream, xmlWriterSettings);
+                Serializer.Serialize(xmlWriter, this);
+                memoryStream.Seek(0, System.IO.SeekOrigin.Begin);
+                streamReader = new System.IO.StreamReader(memoryStream);
+                return streamReader.ReadToEnd();
+            }
+            finally
+            {
+                if ((streamReader != null))
+                {
+                    streamReader.Dispose();
+                }
+                if ((memoryStream != null))
+                {
+                    memoryStream.Dispose();
+                }
+            }
+        }
+
+        public virtual string Serialize()
+        {
+            return Serialize(Encoding.UTF8);
+        }
+
+        /// <summary>
+        /// Deserializes workflow markup into an ASYCUDAValuationGs_other_costCurrency_name object
+        /// </summary>
+        /// <param name="xml">string workflow markup to deserialize</param>
+        /// <param name="obj">Output ASYCUDAValuationGs_other_costCurrency_name object</param>
+        /// <param name="exception">output Exception value if deserialize failed</param>
+        /// <returns>true if this XmlSerializer can deserialize the object; otherwise, false</returns>
+        public static bool Deserialize(string xml, out ASYCUDAValuationGs_other_costCurrency_name obj, out System.Exception exception)
+        {
+            exception = null;
+            obj = default(ASYCUDAValuationGs_other_costCurrency_name);
+            try
+            {
+                obj = Deserialize(xml);
+                return true;
+            }
+            catch (System.Exception ex)
+            {
+                exception = ex;
+                return false;
+            }
+        }
+
+        public static bool Deserialize(string xml, out ASYCUDAValuationGs_other_costCurrency_name obj)
+        {
+            System.Exception exception = null;
+            return Deserialize(xml, out obj, out exception);
+        }
+
+        public static ASYCUDAValuationGs_other_costCurrency_name Deserialize(string xml)
+        {
+            System.IO.StringReader stringReader = null;
+            try
+            {
+                stringReader = new System.IO.StringReader(xml);
+                return ((ASYCUDAValuationGs_other_costCurrency_name)(Serializer.Deserialize(System.Xml.XmlReader.Create(stringReader))));
+            }
+            finally
+            {
+                if ((stringReader != null))
+                {
+                    stringReader.Dispose();
+                }
+            }
+        }
+
+        /// <summary>
+        /// Serializes current ASYCUDAValuationGs_other_costCurrency_name object into file
+        /// </summary>
+        /// <param name="fileName">full path of outupt xml file</param>
+        /// <param name="exception">output Exception value if failed</param>
+        /// <returns>true if can serialize and save into file; otherwise, false</returns>
+        public virtual bool SaveToFile(string fileName, System.Text.Encoding encoding, out System.Exception exception)
+        {
+            exception = null;
+            try
+            {
+                SaveToFile(fileName, encoding);
+                return true;
+            }
+            catch (System.Exception e)
+            {
+                exception = e;
+                return false;
+            }
+        }
+
+        public virtual bool SaveToFile(string fileName, out System.Exception exception)
+        {
+            return SaveToFile(fileName, Encoding.UTF8, out exception);
+        }
+
+        public virtual void SaveToFile(string fileName)
+        {
+            SaveToFile(fileName, Encoding.UTF8);
+        }
+
+        public virtual void SaveToFile(string fileName, System.Text.Encoding encoding)
+        {
+            System.IO.StreamWriter streamWriter = null;
+            try
+            {
+                string xmlString = Serialize(encoding);
+                streamWriter = new System.IO.StreamWriter(fileName, false, Encoding.UTF8);
+                streamWriter.WriteLine(xmlString);
+                streamWriter.Close();
+            }
+            finally
+            {
+                if ((streamWriter != null))
+                {
+                    streamWriter.Dispose();
+                }
+            }
+        }
+
+        /// <summary>
+        /// Deserializes xml markup from file into an ASYCUDAValuationGs_other_costCurrency_name object
+        /// </summary>
+        /// <param name="fileName">string xml file to load and deserialize</param>
+        /// <param name="obj">Output ASYCUDAValuationGs_other_costCurrency_name object</param>
+        /// <param name="exception">output Exception value if deserialize failed</param>
+        /// <returns>true if this XmlSerializer can deserialize the object; otherwise, false</returns>
+        public static bool LoadFromFile(string fileName, System.Text.Encoding encoding, out ASYCUDAValuationGs_other_costCurrency_name obj, out System.Exception exception)
+        {
+            exception = null;
+            obj = default(ASYCUDAValuationGs_other_costCurrency_name);
+            try
+            {
+                obj = LoadFromFile(fileName, encoding);
+                return true;
+            }
+            catch (System.Exception ex)
+            {
+                exception = ex;
+                return false;
+            }
+        }
+
+        public static bool LoadFromFile(string fileName, out ASYCUDAValuationGs_other_costCurrency_name obj, out System.Exception exception)
+        {
+            return LoadFromFile(fileName, Encoding.UTF8, out obj, out exception);
+        }
+
+        public static bool LoadFromFile(string fileName, out ASYCUDAValuationGs_other_costCurrency_name obj)
+        {
+            System.Exception exception = null;
+            return LoadFromFile(fileName, out obj, out exception);
+        }
+
+        public static ASYCUDAValuationGs_other_costCurrency_name LoadFromFile(string fileName)
+        {
+            return LoadFromFile(fileName, Encoding.UTF8);
+        }
+
+        public static ASYCUDAValuationGs_other_costCurrency_name LoadFromFile(string fileName, System.Text.Encoding encoding)
+        {
+            System.IO.FileStream file = null;
+            System.IO.StreamReader sr = null;
+            try
+            {
+                file = new System.IO.FileStream(fileName, FileMode.Open, FileAccess.Read);
+                sr = new System.IO.StreamReader(file, encoding);
+                string xmlString = sr.ReadToEnd();
+                sr.Close();
+                file.Close();
+                return Deserialize(xmlString);
+            }
+            finally
+            {
+                if ((file != null))
+                {
+                    file.Dispose();
+                }
+                if ((sr != null))
+                {
+                    sr.Dispose();
+                }
+            }
+        }
+        #endregion
+
+        #region Clone method
+        /// <summary>
+        /// Create a clone of this ASYCUDAValuationGs_other_costCurrency_name object
+        /// </summary>
+        public virtual ASYCUDAValuationGs_other_costCurrency_name Clone()
+        {
+            return ((ASYCUDAValuationGs_other_costCurrency_name)(this.MemberwiseClone()));
         }
         #endregion
     }
@@ -49354,9 +50297,9 @@ namespace Asycuda421
 
         private ASYCUDAItemPackagesMarks2_of_packages marks2_of_packagesField;
 
-        private string kind_of_packages_codeField;
+        private ASYCUDAItemPackagesKind_of_packages_code kind_of_packages_codeField;
 
-        private string kind_of_packages_nameField;
+        private ASYCUDAItemPackagesKind_of_packages_name kind_of_packages_nameField;
 
         private ObservableCollection<string> textField;
 
@@ -49365,6 +50308,8 @@ namespace Asycuda421
         public ASYCUDAItemPackages()
         {
             this.textField = new ObservableCollection<string>();
+            this.kind_of_packages_nameField = new ASYCUDAItemPackagesKind_of_packages_name();
+            this.kind_of_packages_codeField = new ASYCUDAItemPackagesKind_of_packages_code();
             this.marks2_of_packagesField = new ASYCUDAItemPackagesMarks2_of_packages();
             this.marks1_of_packagesField = new ASYCUDAItemPackagesMarks1_of_packages();
         }
@@ -49445,7 +50390,7 @@ namespace Asycuda421
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        public string Kind_of_packages_code
+        public ASYCUDAItemPackagesKind_of_packages_code Kind_of_packages_code
         {
             get
             {
@@ -49470,7 +50415,7 @@ namespace Asycuda421
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        public string Kind_of_packages_name
+        public ASYCUDAItemPackagesKind_of_packages_name Kind_of_packages_name
         {
             get
             {
@@ -50358,6 +51303,614 @@ namespace Asycuda421
         public virtual ASYCUDAItemPackagesMarks2_of_packages Clone()
         {
             return ((ASYCUDAItemPackagesMarks2_of_packages)(this.MemberwiseClone()));
+        }
+        #endregion
+    }
+
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.3056.0")]
+    [System.SerializableAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
+    [System.Runtime.Serialization.DataContractAttribute(Name = "ASYCUDAItemPackagesKind_of_packages_code")]
+    public partial class ASYCUDAItemPackagesKind_of_packages_code : System.ComponentModel.INotifyPropertyChanged
+    {
+
+        private object nullField;
+
+        private ObservableCollection<string> textField;
+
+        private static System.Xml.Serialization.XmlSerializer serializer;
+
+        public ASYCUDAItemPackagesKind_of_packages_code()
+        {
+            this.textField = new ObservableCollection<string>();
+        }
+
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public object @null
+        {
+            get
+            {
+                return this.nullField;
+            }
+            set
+            {
+                if ((this.nullField != null))
+                {
+                    if ((nullField.Equals(value) != true))
+                    {
+                        this.nullField = value;
+                        this.OnPropertyChanged("null");
+                    }
+                }
+                else
+                {
+                    this.nullField = value;
+                    this.OnPropertyChanged("null");
+                }
+            }
+        }
+
+        [System.Xml.Serialization.XmlTextAttribute()]
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public ObservableCollection<string> Text
+        {
+            get
+            {
+                return this.textField;
+            }
+            set
+            {
+                if ((this.textField != null))
+                {
+                    if ((textField.Equals(value) != true))
+                    {
+                        this.textField = value;
+                        this.OnPropertyChanged("Text");
+                    }
+                }
+                else
+                {
+                    this.textField = value;
+                    this.OnPropertyChanged("Text");
+                }
+            }
+        }
+
+        private static System.Xml.Serialization.XmlSerializer Serializer
+        {
+            get
+            {
+                if ((serializer == null))
+                {
+                    serializer = new System.Xml.Serialization.XmlSerializer(typeof(ASYCUDAItemPackagesKind_of_packages_code));
+                }
+                return serializer;
+            }
+        }
+
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+
+        public virtual void OnPropertyChanged(string propertyName)
+        {
+            System.ComponentModel.PropertyChangedEventHandler handler = this.PropertyChanged;
+            if ((handler != null))
+            {
+                handler(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+
+        #region Serialize/Deserialize
+        /// <summary>
+        /// Serializes current ASYCUDAItemPackagesKind_of_packages_code object into an XML document
+        /// </summary>
+        /// <returns>string XML value</returns>
+        public virtual string Serialize(System.Text.Encoding encoding)
+        {
+            System.IO.StreamReader streamReader = null;
+            System.IO.MemoryStream memoryStream = null;
+            try
+            {
+                memoryStream = new System.IO.MemoryStream();
+                System.Xml.XmlWriterSettings xmlWriterSettings = new System.Xml.XmlWriterSettings();
+                xmlWriterSettings.Encoding = encoding;
+                System.Xml.XmlWriter xmlWriter = XmlWriter.Create(memoryStream, xmlWriterSettings);
+                Serializer.Serialize(xmlWriter, this);
+                memoryStream.Seek(0, System.IO.SeekOrigin.Begin);
+                streamReader = new System.IO.StreamReader(memoryStream);
+                return streamReader.ReadToEnd();
+            }
+            finally
+            {
+                if ((streamReader != null))
+                {
+                    streamReader.Dispose();
+                }
+                if ((memoryStream != null))
+                {
+                    memoryStream.Dispose();
+                }
+            }
+        }
+
+        public virtual string Serialize()
+        {
+            return Serialize(Encoding.UTF8);
+        }
+
+        /// <summary>
+        /// Deserializes workflow markup into an ASYCUDAItemPackagesKind_of_packages_code object
+        /// </summary>
+        /// <param name="xml">string workflow markup to deserialize</param>
+        /// <param name="obj">Output ASYCUDAItemPackagesKind_of_packages_code object</param>
+        /// <param name="exception">output Exception value if deserialize failed</param>
+        /// <returns>true if this XmlSerializer can deserialize the object; otherwise, false</returns>
+        public static bool Deserialize(string xml, out ASYCUDAItemPackagesKind_of_packages_code obj, out System.Exception exception)
+        {
+            exception = null;
+            obj = default(ASYCUDAItemPackagesKind_of_packages_code);
+            try
+            {
+                obj = Deserialize(xml);
+                return true;
+            }
+            catch (System.Exception ex)
+            {
+                exception = ex;
+                return false;
+            }
+        }
+
+        public static bool Deserialize(string xml, out ASYCUDAItemPackagesKind_of_packages_code obj)
+        {
+            System.Exception exception = null;
+            return Deserialize(xml, out obj, out exception);
+        }
+
+        public static ASYCUDAItemPackagesKind_of_packages_code Deserialize(string xml)
+        {
+            System.IO.StringReader stringReader = null;
+            try
+            {
+                stringReader = new System.IO.StringReader(xml);
+                return ((ASYCUDAItemPackagesKind_of_packages_code)(Serializer.Deserialize(System.Xml.XmlReader.Create(stringReader))));
+            }
+            finally
+            {
+                if ((stringReader != null))
+                {
+                    stringReader.Dispose();
+                }
+            }
+        }
+
+        /// <summary>
+        /// Serializes current ASYCUDAItemPackagesKind_of_packages_code object into file
+        /// </summary>
+        /// <param name="fileName">full path of outupt xml file</param>
+        /// <param name="exception">output Exception value if failed</param>
+        /// <returns>true if can serialize and save into file; otherwise, false</returns>
+        public virtual bool SaveToFile(string fileName, System.Text.Encoding encoding, out System.Exception exception)
+        {
+            exception = null;
+            try
+            {
+                SaveToFile(fileName, encoding);
+                return true;
+            }
+            catch (System.Exception e)
+            {
+                exception = e;
+                return false;
+            }
+        }
+
+        public virtual bool SaveToFile(string fileName, out System.Exception exception)
+        {
+            return SaveToFile(fileName, Encoding.UTF8, out exception);
+        }
+
+        public virtual void SaveToFile(string fileName)
+        {
+            SaveToFile(fileName, Encoding.UTF8);
+        }
+
+        public virtual void SaveToFile(string fileName, System.Text.Encoding encoding)
+        {
+            System.IO.StreamWriter streamWriter = null;
+            try
+            {
+                string xmlString = Serialize(encoding);
+                streamWriter = new System.IO.StreamWriter(fileName, false, Encoding.UTF8);
+                streamWriter.WriteLine(xmlString);
+                streamWriter.Close();
+            }
+            finally
+            {
+                if ((streamWriter != null))
+                {
+                    streamWriter.Dispose();
+                }
+            }
+        }
+
+        /// <summary>
+        /// Deserializes xml markup from file into an ASYCUDAItemPackagesKind_of_packages_code object
+        /// </summary>
+        /// <param name="fileName">string xml file to load and deserialize</param>
+        /// <param name="obj">Output ASYCUDAItemPackagesKind_of_packages_code object</param>
+        /// <param name="exception">output Exception value if deserialize failed</param>
+        /// <returns>true if this XmlSerializer can deserialize the object; otherwise, false</returns>
+        public static bool LoadFromFile(string fileName, System.Text.Encoding encoding, out ASYCUDAItemPackagesKind_of_packages_code obj, out System.Exception exception)
+        {
+            exception = null;
+            obj = default(ASYCUDAItemPackagesKind_of_packages_code);
+            try
+            {
+                obj = LoadFromFile(fileName, encoding);
+                return true;
+            }
+            catch (System.Exception ex)
+            {
+                exception = ex;
+                return false;
+            }
+        }
+
+        public static bool LoadFromFile(string fileName, out ASYCUDAItemPackagesKind_of_packages_code obj, out System.Exception exception)
+        {
+            return LoadFromFile(fileName, Encoding.UTF8, out obj, out exception);
+        }
+
+        public static bool LoadFromFile(string fileName, out ASYCUDAItemPackagesKind_of_packages_code obj)
+        {
+            System.Exception exception = null;
+            return LoadFromFile(fileName, out obj, out exception);
+        }
+
+        public static ASYCUDAItemPackagesKind_of_packages_code LoadFromFile(string fileName)
+        {
+            return LoadFromFile(fileName, Encoding.UTF8);
+        }
+
+        public static ASYCUDAItemPackagesKind_of_packages_code LoadFromFile(string fileName, System.Text.Encoding encoding)
+        {
+            System.IO.FileStream file = null;
+            System.IO.StreamReader sr = null;
+            try
+            {
+                file = new System.IO.FileStream(fileName, FileMode.Open, FileAccess.Read);
+                sr = new System.IO.StreamReader(file, encoding);
+                string xmlString = sr.ReadToEnd();
+                sr.Close();
+                file.Close();
+                return Deserialize(xmlString);
+            }
+            finally
+            {
+                if ((file != null))
+                {
+                    file.Dispose();
+                }
+                if ((sr != null))
+                {
+                    sr.Dispose();
+                }
+            }
+        }
+        #endregion
+
+        #region Clone method
+        /// <summary>
+        /// Create a clone of this ASYCUDAItemPackagesKind_of_packages_code object
+        /// </summary>
+        public virtual ASYCUDAItemPackagesKind_of_packages_code Clone()
+        {
+            return ((ASYCUDAItemPackagesKind_of_packages_code)(this.MemberwiseClone()));
+        }
+        #endregion
+    }
+
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.3056.0")]
+    [System.SerializableAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
+    [System.Runtime.Serialization.DataContractAttribute(Name = "ASYCUDAItemPackagesKind_of_packages_name")]
+    public partial class ASYCUDAItemPackagesKind_of_packages_name : System.ComponentModel.INotifyPropertyChanged
+    {
+
+        private object nullField;
+
+        private ObservableCollection<string> textField;
+
+        private static System.Xml.Serialization.XmlSerializer serializer;
+
+        public ASYCUDAItemPackagesKind_of_packages_name()
+        {
+            this.textField = new ObservableCollection<string>();
+        }
+
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public object @null
+        {
+            get
+            {
+                return this.nullField;
+            }
+            set
+            {
+                if ((this.nullField != null))
+                {
+                    if ((nullField.Equals(value) != true))
+                    {
+                        this.nullField = value;
+                        this.OnPropertyChanged("null");
+                    }
+                }
+                else
+                {
+                    this.nullField = value;
+                    this.OnPropertyChanged("null");
+                }
+            }
+        }
+
+        [System.Xml.Serialization.XmlTextAttribute()]
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public ObservableCollection<string> Text
+        {
+            get
+            {
+                return this.textField;
+            }
+            set
+            {
+                if ((this.textField != null))
+                {
+                    if ((textField.Equals(value) != true))
+                    {
+                        this.textField = value;
+                        this.OnPropertyChanged("Text");
+                    }
+                }
+                else
+                {
+                    this.textField = value;
+                    this.OnPropertyChanged("Text");
+                }
+            }
+        }
+
+        private static System.Xml.Serialization.XmlSerializer Serializer
+        {
+            get
+            {
+                if ((serializer == null))
+                {
+                    serializer = new System.Xml.Serialization.XmlSerializer(typeof(ASYCUDAItemPackagesKind_of_packages_name));
+                }
+                return serializer;
+            }
+        }
+
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+
+        public virtual void OnPropertyChanged(string propertyName)
+        {
+            System.ComponentModel.PropertyChangedEventHandler handler = this.PropertyChanged;
+            if ((handler != null))
+            {
+                handler(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+
+        #region Serialize/Deserialize
+        /// <summary>
+        /// Serializes current ASYCUDAItemPackagesKind_of_packages_name object into an XML document
+        /// </summary>
+        /// <returns>string XML value</returns>
+        public virtual string Serialize(System.Text.Encoding encoding)
+        {
+            System.IO.StreamReader streamReader = null;
+            System.IO.MemoryStream memoryStream = null;
+            try
+            {
+                memoryStream = new System.IO.MemoryStream();
+                System.Xml.XmlWriterSettings xmlWriterSettings = new System.Xml.XmlWriterSettings();
+                xmlWriterSettings.Encoding = encoding;
+                System.Xml.XmlWriter xmlWriter = XmlWriter.Create(memoryStream, xmlWriterSettings);
+                Serializer.Serialize(xmlWriter, this);
+                memoryStream.Seek(0, System.IO.SeekOrigin.Begin);
+                streamReader = new System.IO.StreamReader(memoryStream);
+                return streamReader.ReadToEnd();
+            }
+            finally
+            {
+                if ((streamReader != null))
+                {
+                    streamReader.Dispose();
+                }
+                if ((memoryStream != null))
+                {
+                    memoryStream.Dispose();
+                }
+            }
+        }
+
+        public virtual string Serialize()
+        {
+            return Serialize(Encoding.UTF8);
+        }
+
+        /// <summary>
+        /// Deserializes workflow markup into an ASYCUDAItemPackagesKind_of_packages_name object
+        /// </summary>
+        /// <param name="xml">string workflow markup to deserialize</param>
+        /// <param name="obj">Output ASYCUDAItemPackagesKind_of_packages_name object</param>
+        /// <param name="exception">output Exception value if deserialize failed</param>
+        /// <returns>true if this XmlSerializer can deserialize the object; otherwise, false</returns>
+        public static bool Deserialize(string xml, out ASYCUDAItemPackagesKind_of_packages_name obj, out System.Exception exception)
+        {
+            exception = null;
+            obj = default(ASYCUDAItemPackagesKind_of_packages_name);
+            try
+            {
+                obj = Deserialize(xml);
+                return true;
+            }
+            catch (System.Exception ex)
+            {
+                exception = ex;
+                return false;
+            }
+        }
+
+        public static bool Deserialize(string xml, out ASYCUDAItemPackagesKind_of_packages_name obj)
+        {
+            System.Exception exception = null;
+            return Deserialize(xml, out obj, out exception);
+        }
+
+        public static ASYCUDAItemPackagesKind_of_packages_name Deserialize(string xml)
+        {
+            System.IO.StringReader stringReader = null;
+            try
+            {
+                stringReader = new System.IO.StringReader(xml);
+                return ((ASYCUDAItemPackagesKind_of_packages_name)(Serializer.Deserialize(System.Xml.XmlReader.Create(stringReader))));
+            }
+            finally
+            {
+                if ((stringReader != null))
+                {
+                    stringReader.Dispose();
+                }
+            }
+        }
+
+        /// <summary>
+        /// Serializes current ASYCUDAItemPackagesKind_of_packages_name object into file
+        /// </summary>
+        /// <param name="fileName">full path of outupt xml file</param>
+        /// <param name="exception">output Exception value if failed</param>
+        /// <returns>true if can serialize and save into file; otherwise, false</returns>
+        public virtual bool SaveToFile(string fileName, System.Text.Encoding encoding, out System.Exception exception)
+        {
+            exception = null;
+            try
+            {
+                SaveToFile(fileName, encoding);
+                return true;
+            }
+            catch (System.Exception e)
+            {
+                exception = e;
+                return false;
+            }
+        }
+
+        public virtual bool SaveToFile(string fileName, out System.Exception exception)
+        {
+            return SaveToFile(fileName, Encoding.UTF8, out exception);
+        }
+
+        public virtual void SaveToFile(string fileName)
+        {
+            SaveToFile(fileName, Encoding.UTF8);
+        }
+
+        public virtual void SaveToFile(string fileName, System.Text.Encoding encoding)
+        {
+            System.IO.StreamWriter streamWriter = null;
+            try
+            {
+                string xmlString = Serialize(encoding);
+                streamWriter = new System.IO.StreamWriter(fileName, false, Encoding.UTF8);
+                streamWriter.WriteLine(xmlString);
+                streamWriter.Close();
+            }
+            finally
+            {
+                if ((streamWriter != null))
+                {
+                    streamWriter.Dispose();
+                }
+            }
+        }
+
+        /// <summary>
+        /// Deserializes xml markup from file into an ASYCUDAItemPackagesKind_of_packages_name object
+        /// </summary>
+        /// <param name="fileName">string xml file to load and deserialize</param>
+        /// <param name="obj">Output ASYCUDAItemPackagesKind_of_packages_name object</param>
+        /// <param name="exception">output Exception value if deserialize failed</param>
+        /// <returns>true if this XmlSerializer can deserialize the object; otherwise, false</returns>
+        public static bool LoadFromFile(string fileName, System.Text.Encoding encoding, out ASYCUDAItemPackagesKind_of_packages_name obj, out System.Exception exception)
+        {
+            exception = null;
+            obj = default(ASYCUDAItemPackagesKind_of_packages_name);
+            try
+            {
+                obj = LoadFromFile(fileName, encoding);
+                return true;
+            }
+            catch (System.Exception ex)
+            {
+                exception = ex;
+                return false;
+            }
+        }
+
+        public static bool LoadFromFile(string fileName, out ASYCUDAItemPackagesKind_of_packages_name obj, out System.Exception exception)
+        {
+            return LoadFromFile(fileName, Encoding.UTF8, out obj, out exception);
+        }
+
+        public static bool LoadFromFile(string fileName, out ASYCUDAItemPackagesKind_of_packages_name obj)
+        {
+            System.Exception exception = null;
+            return LoadFromFile(fileName, out obj, out exception);
+        }
+
+        public static ASYCUDAItemPackagesKind_of_packages_name LoadFromFile(string fileName)
+        {
+            return LoadFromFile(fileName, Encoding.UTF8);
+        }
+
+        public static ASYCUDAItemPackagesKind_of_packages_name LoadFromFile(string fileName, System.Text.Encoding encoding)
+        {
+            System.IO.FileStream file = null;
+            System.IO.StreamReader sr = null;
+            try
+            {
+                file = new System.IO.FileStream(fileName, FileMode.Open, FileAccess.Read);
+                sr = new System.IO.StreamReader(file, encoding);
+                string xmlString = sr.ReadToEnd();
+                sr.Close();
+                file.Close();
+                return Deserialize(xmlString);
+            }
+            finally
+            {
+                if ((file != null))
+                {
+                    file.Dispose();
+                }
+                if ((sr != null))
+                {
+                    sr.Dispose();
+                }
+            }
+        }
+        #endregion
+
+        #region Clone method
+        /// <summary>
+        /// Create a clone of this ASYCUDAItemPackagesKind_of_packages_name object
+        /// </summary>
+        public virtual ASYCUDAItemPackagesKind_of_packages_name Clone()
+        {
+            return ((ASYCUDAItemPackagesKind_of_packages_name)(this.MemberwiseClone()));
         }
         #endregion
     }
@@ -51288,9 +52841,9 @@ namespace Asycuda421
 
         private ASYCUDAItemTarificationPreference_code preference_codeField;
 
-        private string extended_customs_procedureField;
+        private ASYCUDAItemTarificationExtended_customs_procedure extended_customs_procedureField;
 
-        private string national_customs_procedureField;
+        private ASYCUDAItemTarificationNational_customs_procedure national_customs_procedureField;
 
         private ASYCUDAItemTarificationQuota quotaField;
 
@@ -51319,6 +52872,8 @@ namespace Asycuda421
             this.valuation_method_codeField = new ASYCUDAItemTarificationValuation_method_code();
             this.supplementary_unitField = new ObservableCollection<ASYCUDAItemTarificationSupplementary_unit>();
             this.quotaField = new ASYCUDAItemTarificationQuota();
+            this.national_customs_procedureField = new ASYCUDAItemTarificationNational_customs_procedure();
+            this.extended_customs_procedureField = new ASYCUDAItemTarificationExtended_customs_procedure();
             this.preference_codeField = new ASYCUDAItemTarificationPreference_code();
             this.hScodeField = new ASYCUDAItemTarificationHScode();
             this.tarification_dataField = new ASYCUDAItemTarificationTarification_data();
@@ -51400,7 +52955,7 @@ namespace Asycuda421
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        public string Extended_customs_procedure
+        public ASYCUDAItemTarificationExtended_customs_procedure Extended_customs_procedure
         {
             get
             {
@@ -51425,7 +52980,7 @@ namespace Asycuda421
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        public string National_customs_procedure
+        public ASYCUDAItemTarificationNational_customs_procedure National_customs_procedure
         {
             get
             {
@@ -52198,9 +53753,9 @@ namespace Asycuda421
     public partial class ASYCUDAItemTarificationHScode : System.ComponentModel.INotifyPropertyChanged
     {
 
-        private string commodity_codeField;
+        private ASYCUDAItemTarificationHScodeCommodity_code commodity_codeField;
 
-        private string precision_1Field;
+        private ASYCUDAItemTarificationHScodePrecision_1 precision_1Field;
 
         private ASYCUDAItemTarificationHScodePrecision_2 precision_2Field;
 
@@ -52218,10 +53773,12 @@ namespace Asycuda421
             this.precision_4Field = new ASYCUDAItemTarificationHScodePrecision_4();
             this.precision_3Field = new ASYCUDAItemTarificationHScodePrecision_3();
             this.precision_2Field = new ASYCUDAItemTarificationHScodePrecision_2();
+            this.precision_1Field = new ASYCUDAItemTarificationHScodePrecision_1();
+            this.commodity_codeField = new ASYCUDAItemTarificationHScodeCommodity_code();
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        public string Commodity_code
+        public ASYCUDAItemTarificationHScodeCommodity_code Commodity_code
         {
             get
             {
@@ -52246,7 +53803,7 @@ namespace Asycuda421
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        public string Precision_1
+        public ASYCUDAItemTarificationHScodePrecision_1 Precision_1
         {
             get
             {
@@ -52601,6 +54158,614 @@ namespace Asycuda421
         public virtual ASYCUDAItemTarificationHScode Clone()
         {
             return ((ASYCUDAItemTarificationHScode)(this.MemberwiseClone()));
+        }
+        #endregion
+    }
+
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.3056.0")]
+    [System.SerializableAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
+    [System.Runtime.Serialization.DataContractAttribute(Name = "ASYCUDAItemTarificationHScodeCommodity_code")]
+    public partial class ASYCUDAItemTarificationHScodeCommodity_code : System.ComponentModel.INotifyPropertyChanged
+    {
+
+        private object nullField;
+
+        private ObservableCollection<string> textField;
+
+        private static System.Xml.Serialization.XmlSerializer serializer;
+
+        public ASYCUDAItemTarificationHScodeCommodity_code()
+        {
+            this.textField = new ObservableCollection<string>();
+        }
+
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public object @null
+        {
+            get
+            {
+                return this.nullField;
+            }
+            set
+            {
+                if ((this.nullField != null))
+                {
+                    if ((nullField.Equals(value) != true))
+                    {
+                        this.nullField = value;
+                        this.OnPropertyChanged("null");
+                    }
+                }
+                else
+                {
+                    this.nullField = value;
+                    this.OnPropertyChanged("null");
+                }
+            }
+        }
+
+        [System.Xml.Serialization.XmlTextAttribute()]
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public ObservableCollection<string> Text
+        {
+            get
+            {
+                return this.textField;
+            }
+            set
+            {
+                if ((this.textField != null))
+                {
+                    if ((textField.Equals(value) != true))
+                    {
+                        this.textField = value;
+                        this.OnPropertyChanged("Text");
+                    }
+                }
+                else
+                {
+                    this.textField = value;
+                    this.OnPropertyChanged("Text");
+                }
+            }
+        }
+
+        private static System.Xml.Serialization.XmlSerializer Serializer
+        {
+            get
+            {
+                if ((serializer == null))
+                {
+                    serializer = new System.Xml.Serialization.XmlSerializer(typeof(ASYCUDAItemTarificationHScodeCommodity_code));
+                }
+                return serializer;
+            }
+        }
+
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+
+        public virtual void OnPropertyChanged(string propertyName)
+        {
+            System.ComponentModel.PropertyChangedEventHandler handler = this.PropertyChanged;
+            if ((handler != null))
+            {
+                handler(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+
+        #region Serialize/Deserialize
+        /// <summary>
+        /// Serializes current ASYCUDAItemTarificationHScodeCommodity_code object into an XML document
+        /// </summary>
+        /// <returns>string XML value</returns>
+        public virtual string Serialize(System.Text.Encoding encoding)
+        {
+            System.IO.StreamReader streamReader = null;
+            System.IO.MemoryStream memoryStream = null;
+            try
+            {
+                memoryStream = new System.IO.MemoryStream();
+                System.Xml.XmlWriterSettings xmlWriterSettings = new System.Xml.XmlWriterSettings();
+                xmlWriterSettings.Encoding = encoding;
+                System.Xml.XmlWriter xmlWriter = XmlWriter.Create(memoryStream, xmlWriterSettings);
+                Serializer.Serialize(xmlWriter, this);
+                memoryStream.Seek(0, System.IO.SeekOrigin.Begin);
+                streamReader = new System.IO.StreamReader(memoryStream);
+                return streamReader.ReadToEnd();
+            }
+            finally
+            {
+                if ((streamReader != null))
+                {
+                    streamReader.Dispose();
+                }
+                if ((memoryStream != null))
+                {
+                    memoryStream.Dispose();
+                }
+            }
+        }
+
+        public virtual string Serialize()
+        {
+            return Serialize(Encoding.UTF8);
+        }
+
+        /// <summary>
+        /// Deserializes workflow markup into an ASYCUDAItemTarificationHScodeCommodity_code object
+        /// </summary>
+        /// <param name="xml">string workflow markup to deserialize</param>
+        /// <param name="obj">Output ASYCUDAItemTarificationHScodeCommodity_code object</param>
+        /// <param name="exception">output Exception value if deserialize failed</param>
+        /// <returns>true if this XmlSerializer can deserialize the object; otherwise, false</returns>
+        public static bool Deserialize(string xml, out ASYCUDAItemTarificationHScodeCommodity_code obj, out System.Exception exception)
+        {
+            exception = null;
+            obj = default(ASYCUDAItemTarificationHScodeCommodity_code);
+            try
+            {
+                obj = Deserialize(xml);
+                return true;
+            }
+            catch (System.Exception ex)
+            {
+                exception = ex;
+                return false;
+            }
+        }
+
+        public static bool Deserialize(string xml, out ASYCUDAItemTarificationHScodeCommodity_code obj)
+        {
+            System.Exception exception = null;
+            return Deserialize(xml, out obj, out exception);
+        }
+
+        public static ASYCUDAItemTarificationHScodeCommodity_code Deserialize(string xml)
+        {
+            System.IO.StringReader stringReader = null;
+            try
+            {
+                stringReader = new System.IO.StringReader(xml);
+                return ((ASYCUDAItemTarificationHScodeCommodity_code)(Serializer.Deserialize(System.Xml.XmlReader.Create(stringReader))));
+            }
+            finally
+            {
+                if ((stringReader != null))
+                {
+                    stringReader.Dispose();
+                }
+            }
+        }
+
+        /// <summary>
+        /// Serializes current ASYCUDAItemTarificationHScodeCommodity_code object into file
+        /// </summary>
+        /// <param name="fileName">full path of outupt xml file</param>
+        /// <param name="exception">output Exception value if failed</param>
+        /// <returns>true if can serialize and save into file; otherwise, false</returns>
+        public virtual bool SaveToFile(string fileName, System.Text.Encoding encoding, out System.Exception exception)
+        {
+            exception = null;
+            try
+            {
+                SaveToFile(fileName, encoding);
+                return true;
+            }
+            catch (System.Exception e)
+            {
+                exception = e;
+                return false;
+            }
+        }
+
+        public virtual bool SaveToFile(string fileName, out System.Exception exception)
+        {
+            return SaveToFile(fileName, Encoding.UTF8, out exception);
+        }
+
+        public virtual void SaveToFile(string fileName)
+        {
+            SaveToFile(fileName, Encoding.UTF8);
+        }
+
+        public virtual void SaveToFile(string fileName, System.Text.Encoding encoding)
+        {
+            System.IO.StreamWriter streamWriter = null;
+            try
+            {
+                string xmlString = Serialize(encoding);
+                streamWriter = new System.IO.StreamWriter(fileName, false, Encoding.UTF8);
+                streamWriter.WriteLine(xmlString);
+                streamWriter.Close();
+            }
+            finally
+            {
+                if ((streamWriter != null))
+                {
+                    streamWriter.Dispose();
+                }
+            }
+        }
+
+        /// <summary>
+        /// Deserializes xml markup from file into an ASYCUDAItemTarificationHScodeCommodity_code object
+        /// </summary>
+        /// <param name="fileName">string xml file to load and deserialize</param>
+        /// <param name="obj">Output ASYCUDAItemTarificationHScodeCommodity_code object</param>
+        /// <param name="exception">output Exception value if deserialize failed</param>
+        /// <returns>true if this XmlSerializer can deserialize the object; otherwise, false</returns>
+        public static bool LoadFromFile(string fileName, System.Text.Encoding encoding, out ASYCUDAItemTarificationHScodeCommodity_code obj, out System.Exception exception)
+        {
+            exception = null;
+            obj = default(ASYCUDAItemTarificationHScodeCommodity_code);
+            try
+            {
+                obj = LoadFromFile(fileName, encoding);
+                return true;
+            }
+            catch (System.Exception ex)
+            {
+                exception = ex;
+                return false;
+            }
+        }
+
+        public static bool LoadFromFile(string fileName, out ASYCUDAItemTarificationHScodeCommodity_code obj, out System.Exception exception)
+        {
+            return LoadFromFile(fileName, Encoding.UTF8, out obj, out exception);
+        }
+
+        public static bool LoadFromFile(string fileName, out ASYCUDAItemTarificationHScodeCommodity_code obj)
+        {
+            System.Exception exception = null;
+            return LoadFromFile(fileName, out obj, out exception);
+        }
+
+        public static ASYCUDAItemTarificationHScodeCommodity_code LoadFromFile(string fileName)
+        {
+            return LoadFromFile(fileName, Encoding.UTF8);
+        }
+
+        public static ASYCUDAItemTarificationHScodeCommodity_code LoadFromFile(string fileName, System.Text.Encoding encoding)
+        {
+            System.IO.FileStream file = null;
+            System.IO.StreamReader sr = null;
+            try
+            {
+                file = new System.IO.FileStream(fileName, FileMode.Open, FileAccess.Read);
+                sr = new System.IO.StreamReader(file, encoding);
+                string xmlString = sr.ReadToEnd();
+                sr.Close();
+                file.Close();
+                return Deserialize(xmlString);
+            }
+            finally
+            {
+                if ((file != null))
+                {
+                    file.Dispose();
+                }
+                if ((sr != null))
+                {
+                    sr.Dispose();
+                }
+            }
+        }
+        #endregion
+
+        #region Clone method
+        /// <summary>
+        /// Create a clone of this ASYCUDAItemTarificationHScodeCommodity_code object
+        /// </summary>
+        public virtual ASYCUDAItemTarificationHScodeCommodity_code Clone()
+        {
+            return ((ASYCUDAItemTarificationHScodeCommodity_code)(this.MemberwiseClone()));
+        }
+        #endregion
+    }
+
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.3056.0")]
+    [System.SerializableAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
+    [System.Runtime.Serialization.DataContractAttribute(Name = "ASYCUDAItemTarificationHScodePrecision_1")]
+    public partial class ASYCUDAItemTarificationHScodePrecision_1 : System.ComponentModel.INotifyPropertyChanged
+    {
+
+        private object nullField;
+
+        private ObservableCollection<string> textField;
+
+        private static System.Xml.Serialization.XmlSerializer serializer;
+
+        public ASYCUDAItemTarificationHScodePrecision_1()
+        {
+            this.textField = new ObservableCollection<string>();
+        }
+
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public object @null
+        {
+            get
+            {
+                return this.nullField;
+            }
+            set
+            {
+                if ((this.nullField != null))
+                {
+                    if ((nullField.Equals(value) != true))
+                    {
+                        this.nullField = value;
+                        this.OnPropertyChanged("null");
+                    }
+                }
+                else
+                {
+                    this.nullField = value;
+                    this.OnPropertyChanged("null");
+                }
+            }
+        }
+
+        [System.Xml.Serialization.XmlTextAttribute()]
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public ObservableCollection<string> Text
+        {
+            get
+            {
+                return this.textField;
+            }
+            set
+            {
+                if ((this.textField != null))
+                {
+                    if ((textField.Equals(value) != true))
+                    {
+                        this.textField = value;
+                        this.OnPropertyChanged("Text");
+                    }
+                }
+                else
+                {
+                    this.textField = value;
+                    this.OnPropertyChanged("Text");
+                }
+            }
+        }
+
+        private static System.Xml.Serialization.XmlSerializer Serializer
+        {
+            get
+            {
+                if ((serializer == null))
+                {
+                    serializer = new System.Xml.Serialization.XmlSerializer(typeof(ASYCUDAItemTarificationHScodePrecision_1));
+                }
+                return serializer;
+            }
+        }
+
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+
+        public virtual void OnPropertyChanged(string propertyName)
+        {
+            System.ComponentModel.PropertyChangedEventHandler handler = this.PropertyChanged;
+            if ((handler != null))
+            {
+                handler(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+
+        #region Serialize/Deserialize
+        /// <summary>
+        /// Serializes current ASYCUDAItemTarificationHScodePrecision_1 object into an XML document
+        /// </summary>
+        /// <returns>string XML value</returns>
+        public virtual string Serialize(System.Text.Encoding encoding)
+        {
+            System.IO.StreamReader streamReader = null;
+            System.IO.MemoryStream memoryStream = null;
+            try
+            {
+                memoryStream = new System.IO.MemoryStream();
+                System.Xml.XmlWriterSettings xmlWriterSettings = new System.Xml.XmlWriterSettings();
+                xmlWriterSettings.Encoding = encoding;
+                System.Xml.XmlWriter xmlWriter = XmlWriter.Create(memoryStream, xmlWriterSettings);
+                Serializer.Serialize(xmlWriter, this);
+                memoryStream.Seek(0, System.IO.SeekOrigin.Begin);
+                streamReader = new System.IO.StreamReader(memoryStream);
+                return streamReader.ReadToEnd();
+            }
+            finally
+            {
+                if ((streamReader != null))
+                {
+                    streamReader.Dispose();
+                }
+                if ((memoryStream != null))
+                {
+                    memoryStream.Dispose();
+                }
+            }
+        }
+
+        public virtual string Serialize()
+        {
+            return Serialize(Encoding.UTF8);
+        }
+
+        /// <summary>
+        /// Deserializes workflow markup into an ASYCUDAItemTarificationHScodePrecision_1 object
+        /// </summary>
+        /// <param name="xml">string workflow markup to deserialize</param>
+        /// <param name="obj">Output ASYCUDAItemTarificationHScodePrecision_1 object</param>
+        /// <param name="exception">output Exception value if deserialize failed</param>
+        /// <returns>true if this XmlSerializer can deserialize the object; otherwise, false</returns>
+        public static bool Deserialize(string xml, out ASYCUDAItemTarificationHScodePrecision_1 obj, out System.Exception exception)
+        {
+            exception = null;
+            obj = default(ASYCUDAItemTarificationHScodePrecision_1);
+            try
+            {
+                obj = Deserialize(xml);
+                return true;
+            }
+            catch (System.Exception ex)
+            {
+                exception = ex;
+                return false;
+            }
+        }
+
+        public static bool Deserialize(string xml, out ASYCUDAItemTarificationHScodePrecision_1 obj)
+        {
+            System.Exception exception = null;
+            return Deserialize(xml, out obj, out exception);
+        }
+
+        public static ASYCUDAItemTarificationHScodePrecision_1 Deserialize(string xml)
+        {
+            System.IO.StringReader stringReader = null;
+            try
+            {
+                stringReader = new System.IO.StringReader(xml);
+                return ((ASYCUDAItemTarificationHScodePrecision_1)(Serializer.Deserialize(System.Xml.XmlReader.Create(stringReader))));
+            }
+            finally
+            {
+                if ((stringReader != null))
+                {
+                    stringReader.Dispose();
+                }
+            }
+        }
+
+        /// <summary>
+        /// Serializes current ASYCUDAItemTarificationHScodePrecision_1 object into file
+        /// </summary>
+        /// <param name="fileName">full path of outupt xml file</param>
+        /// <param name="exception">output Exception value if failed</param>
+        /// <returns>true if can serialize and save into file; otherwise, false</returns>
+        public virtual bool SaveToFile(string fileName, System.Text.Encoding encoding, out System.Exception exception)
+        {
+            exception = null;
+            try
+            {
+                SaveToFile(fileName, encoding);
+                return true;
+            }
+            catch (System.Exception e)
+            {
+                exception = e;
+                return false;
+            }
+        }
+
+        public virtual bool SaveToFile(string fileName, out System.Exception exception)
+        {
+            return SaveToFile(fileName, Encoding.UTF8, out exception);
+        }
+
+        public virtual void SaveToFile(string fileName)
+        {
+            SaveToFile(fileName, Encoding.UTF8);
+        }
+
+        public virtual void SaveToFile(string fileName, System.Text.Encoding encoding)
+        {
+            System.IO.StreamWriter streamWriter = null;
+            try
+            {
+                string xmlString = Serialize(encoding);
+                streamWriter = new System.IO.StreamWriter(fileName, false, Encoding.UTF8);
+                streamWriter.WriteLine(xmlString);
+                streamWriter.Close();
+            }
+            finally
+            {
+                if ((streamWriter != null))
+                {
+                    streamWriter.Dispose();
+                }
+            }
+        }
+
+        /// <summary>
+        /// Deserializes xml markup from file into an ASYCUDAItemTarificationHScodePrecision_1 object
+        /// </summary>
+        /// <param name="fileName">string xml file to load and deserialize</param>
+        /// <param name="obj">Output ASYCUDAItemTarificationHScodePrecision_1 object</param>
+        /// <param name="exception">output Exception value if deserialize failed</param>
+        /// <returns>true if this XmlSerializer can deserialize the object; otherwise, false</returns>
+        public static bool LoadFromFile(string fileName, System.Text.Encoding encoding, out ASYCUDAItemTarificationHScodePrecision_1 obj, out System.Exception exception)
+        {
+            exception = null;
+            obj = default(ASYCUDAItemTarificationHScodePrecision_1);
+            try
+            {
+                obj = LoadFromFile(fileName, encoding);
+                return true;
+            }
+            catch (System.Exception ex)
+            {
+                exception = ex;
+                return false;
+            }
+        }
+
+        public static bool LoadFromFile(string fileName, out ASYCUDAItemTarificationHScodePrecision_1 obj, out System.Exception exception)
+        {
+            return LoadFromFile(fileName, Encoding.UTF8, out obj, out exception);
+        }
+
+        public static bool LoadFromFile(string fileName, out ASYCUDAItemTarificationHScodePrecision_1 obj)
+        {
+            System.Exception exception = null;
+            return LoadFromFile(fileName, out obj, out exception);
+        }
+
+        public static ASYCUDAItemTarificationHScodePrecision_1 LoadFromFile(string fileName)
+        {
+            return LoadFromFile(fileName, Encoding.UTF8);
+        }
+
+        public static ASYCUDAItemTarificationHScodePrecision_1 LoadFromFile(string fileName, System.Text.Encoding encoding)
+        {
+            System.IO.FileStream file = null;
+            System.IO.StreamReader sr = null;
+            try
+            {
+                file = new System.IO.FileStream(fileName, FileMode.Open, FileAccess.Read);
+                sr = new System.IO.StreamReader(file, encoding);
+                string xmlString = sr.ReadToEnd();
+                sr.Close();
+                file.Close();
+                return Deserialize(xmlString);
+            }
+            finally
+            {
+                if ((file != null))
+                {
+                    file.Dispose();
+                }
+                if ((sr != null))
+                {
+                    sr.Dispose();
+                }
+            }
+        }
+        #endregion
+
+        #region Clone method
+        /// <summary>
+        /// Create a clone of this ASYCUDAItemTarificationHScodePrecision_1 object
+        /// </summary>
+        public virtual ASYCUDAItemTarificationHScodePrecision_1 Clone()
+        {
+            return ((ASYCUDAItemTarificationHScodePrecision_1)(this.MemberwiseClone()));
         }
         #endregion
     }
@@ -53817,6 +55982,614 @@ namespace Asycuda421
         public virtual ASYCUDAItemTarificationPreference_code Clone()
         {
             return ((ASYCUDAItemTarificationPreference_code)(this.MemberwiseClone()));
+        }
+        #endregion
+    }
+
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.3056.0")]
+    [System.SerializableAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
+    [System.Runtime.Serialization.DataContractAttribute(Name = "ASYCUDAItemTarificationExtended_customs_procedure")]
+    public partial class ASYCUDAItemTarificationExtended_customs_procedure : System.ComponentModel.INotifyPropertyChanged
+    {
+
+        private object nullField;
+
+        private ObservableCollection<string> textField;
+
+        private static System.Xml.Serialization.XmlSerializer serializer;
+
+        public ASYCUDAItemTarificationExtended_customs_procedure()
+        {
+            this.textField = new ObservableCollection<string>();
+        }
+
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public object @null
+        {
+            get
+            {
+                return this.nullField;
+            }
+            set
+            {
+                if ((this.nullField != null))
+                {
+                    if ((nullField.Equals(value) != true))
+                    {
+                        this.nullField = value;
+                        this.OnPropertyChanged("null");
+                    }
+                }
+                else
+                {
+                    this.nullField = value;
+                    this.OnPropertyChanged("null");
+                }
+            }
+        }
+
+        [System.Xml.Serialization.XmlTextAttribute()]
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public ObservableCollection<string> Text
+        {
+            get
+            {
+                return this.textField;
+            }
+            set
+            {
+                if ((this.textField != null))
+                {
+                    if ((textField.Equals(value) != true))
+                    {
+                        this.textField = value;
+                        this.OnPropertyChanged("Text");
+                    }
+                }
+                else
+                {
+                    this.textField = value;
+                    this.OnPropertyChanged("Text");
+                }
+            }
+        }
+
+        private static System.Xml.Serialization.XmlSerializer Serializer
+        {
+            get
+            {
+                if ((serializer == null))
+                {
+                    serializer = new System.Xml.Serialization.XmlSerializer(typeof(ASYCUDAItemTarificationExtended_customs_procedure));
+                }
+                return serializer;
+            }
+        }
+
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+
+        public virtual void OnPropertyChanged(string propertyName)
+        {
+            System.ComponentModel.PropertyChangedEventHandler handler = this.PropertyChanged;
+            if ((handler != null))
+            {
+                handler(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+
+        #region Serialize/Deserialize
+        /// <summary>
+        /// Serializes current ASYCUDAItemTarificationExtended_customs_procedure object into an XML document
+        /// </summary>
+        /// <returns>string XML value</returns>
+        public virtual string Serialize(System.Text.Encoding encoding)
+        {
+            System.IO.StreamReader streamReader = null;
+            System.IO.MemoryStream memoryStream = null;
+            try
+            {
+                memoryStream = new System.IO.MemoryStream();
+                System.Xml.XmlWriterSettings xmlWriterSettings = new System.Xml.XmlWriterSettings();
+                xmlWriterSettings.Encoding = encoding;
+                System.Xml.XmlWriter xmlWriter = XmlWriter.Create(memoryStream, xmlWriterSettings);
+                Serializer.Serialize(xmlWriter, this);
+                memoryStream.Seek(0, System.IO.SeekOrigin.Begin);
+                streamReader = new System.IO.StreamReader(memoryStream);
+                return streamReader.ReadToEnd();
+            }
+            finally
+            {
+                if ((streamReader != null))
+                {
+                    streamReader.Dispose();
+                }
+                if ((memoryStream != null))
+                {
+                    memoryStream.Dispose();
+                }
+            }
+        }
+
+        public virtual string Serialize()
+        {
+            return Serialize(Encoding.UTF8);
+        }
+
+        /// <summary>
+        /// Deserializes workflow markup into an ASYCUDAItemTarificationExtended_customs_procedure object
+        /// </summary>
+        /// <param name="xml">string workflow markup to deserialize</param>
+        /// <param name="obj">Output ASYCUDAItemTarificationExtended_customs_procedure object</param>
+        /// <param name="exception">output Exception value if deserialize failed</param>
+        /// <returns>true if this XmlSerializer can deserialize the object; otherwise, false</returns>
+        public static bool Deserialize(string xml, out ASYCUDAItemTarificationExtended_customs_procedure obj, out System.Exception exception)
+        {
+            exception = null;
+            obj = default(ASYCUDAItemTarificationExtended_customs_procedure);
+            try
+            {
+                obj = Deserialize(xml);
+                return true;
+            }
+            catch (System.Exception ex)
+            {
+                exception = ex;
+                return false;
+            }
+        }
+
+        public static bool Deserialize(string xml, out ASYCUDAItemTarificationExtended_customs_procedure obj)
+        {
+            System.Exception exception = null;
+            return Deserialize(xml, out obj, out exception);
+        }
+
+        public static ASYCUDAItemTarificationExtended_customs_procedure Deserialize(string xml)
+        {
+            System.IO.StringReader stringReader = null;
+            try
+            {
+                stringReader = new System.IO.StringReader(xml);
+                return ((ASYCUDAItemTarificationExtended_customs_procedure)(Serializer.Deserialize(System.Xml.XmlReader.Create(stringReader))));
+            }
+            finally
+            {
+                if ((stringReader != null))
+                {
+                    stringReader.Dispose();
+                }
+            }
+        }
+
+        /// <summary>
+        /// Serializes current ASYCUDAItemTarificationExtended_customs_procedure object into file
+        /// </summary>
+        /// <param name="fileName">full path of outupt xml file</param>
+        /// <param name="exception">output Exception value if failed</param>
+        /// <returns>true if can serialize and save into file; otherwise, false</returns>
+        public virtual bool SaveToFile(string fileName, System.Text.Encoding encoding, out System.Exception exception)
+        {
+            exception = null;
+            try
+            {
+                SaveToFile(fileName, encoding);
+                return true;
+            }
+            catch (System.Exception e)
+            {
+                exception = e;
+                return false;
+            }
+        }
+
+        public virtual bool SaveToFile(string fileName, out System.Exception exception)
+        {
+            return SaveToFile(fileName, Encoding.UTF8, out exception);
+        }
+
+        public virtual void SaveToFile(string fileName)
+        {
+            SaveToFile(fileName, Encoding.UTF8);
+        }
+
+        public virtual void SaveToFile(string fileName, System.Text.Encoding encoding)
+        {
+            System.IO.StreamWriter streamWriter = null;
+            try
+            {
+                string xmlString = Serialize(encoding);
+                streamWriter = new System.IO.StreamWriter(fileName, false, Encoding.UTF8);
+                streamWriter.WriteLine(xmlString);
+                streamWriter.Close();
+            }
+            finally
+            {
+                if ((streamWriter != null))
+                {
+                    streamWriter.Dispose();
+                }
+            }
+        }
+
+        /// <summary>
+        /// Deserializes xml markup from file into an ASYCUDAItemTarificationExtended_customs_procedure object
+        /// </summary>
+        /// <param name="fileName">string xml file to load and deserialize</param>
+        /// <param name="obj">Output ASYCUDAItemTarificationExtended_customs_procedure object</param>
+        /// <param name="exception">output Exception value if deserialize failed</param>
+        /// <returns>true if this XmlSerializer can deserialize the object; otherwise, false</returns>
+        public static bool LoadFromFile(string fileName, System.Text.Encoding encoding, out ASYCUDAItemTarificationExtended_customs_procedure obj, out System.Exception exception)
+        {
+            exception = null;
+            obj = default(ASYCUDAItemTarificationExtended_customs_procedure);
+            try
+            {
+                obj = LoadFromFile(fileName, encoding);
+                return true;
+            }
+            catch (System.Exception ex)
+            {
+                exception = ex;
+                return false;
+            }
+        }
+
+        public static bool LoadFromFile(string fileName, out ASYCUDAItemTarificationExtended_customs_procedure obj, out System.Exception exception)
+        {
+            return LoadFromFile(fileName, Encoding.UTF8, out obj, out exception);
+        }
+
+        public static bool LoadFromFile(string fileName, out ASYCUDAItemTarificationExtended_customs_procedure obj)
+        {
+            System.Exception exception = null;
+            return LoadFromFile(fileName, out obj, out exception);
+        }
+
+        public static ASYCUDAItemTarificationExtended_customs_procedure LoadFromFile(string fileName)
+        {
+            return LoadFromFile(fileName, Encoding.UTF8);
+        }
+
+        public static ASYCUDAItemTarificationExtended_customs_procedure LoadFromFile(string fileName, System.Text.Encoding encoding)
+        {
+            System.IO.FileStream file = null;
+            System.IO.StreamReader sr = null;
+            try
+            {
+                file = new System.IO.FileStream(fileName, FileMode.Open, FileAccess.Read);
+                sr = new System.IO.StreamReader(file, encoding);
+                string xmlString = sr.ReadToEnd();
+                sr.Close();
+                file.Close();
+                return Deserialize(xmlString);
+            }
+            finally
+            {
+                if ((file != null))
+                {
+                    file.Dispose();
+                }
+                if ((sr != null))
+                {
+                    sr.Dispose();
+                }
+            }
+        }
+        #endregion
+
+        #region Clone method
+        /// <summary>
+        /// Create a clone of this ASYCUDAItemTarificationExtended_customs_procedure object
+        /// </summary>
+        public virtual ASYCUDAItemTarificationExtended_customs_procedure Clone()
+        {
+            return ((ASYCUDAItemTarificationExtended_customs_procedure)(this.MemberwiseClone()));
+        }
+        #endregion
+    }
+
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.3056.0")]
+    [System.SerializableAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
+    [System.Runtime.Serialization.DataContractAttribute(Name = "ASYCUDAItemTarificationNational_customs_procedure")]
+    public partial class ASYCUDAItemTarificationNational_customs_procedure : System.ComponentModel.INotifyPropertyChanged
+    {
+
+        private object nullField;
+
+        private ObservableCollection<string> textField;
+
+        private static System.Xml.Serialization.XmlSerializer serializer;
+
+        public ASYCUDAItemTarificationNational_customs_procedure()
+        {
+            this.textField = new ObservableCollection<string>();
+        }
+
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public object @null
+        {
+            get
+            {
+                return this.nullField;
+            }
+            set
+            {
+                if ((this.nullField != null))
+                {
+                    if ((nullField.Equals(value) != true))
+                    {
+                        this.nullField = value;
+                        this.OnPropertyChanged("null");
+                    }
+                }
+                else
+                {
+                    this.nullField = value;
+                    this.OnPropertyChanged("null");
+                }
+            }
+        }
+
+        [System.Xml.Serialization.XmlTextAttribute()]
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public ObservableCollection<string> Text
+        {
+            get
+            {
+                return this.textField;
+            }
+            set
+            {
+                if ((this.textField != null))
+                {
+                    if ((textField.Equals(value) != true))
+                    {
+                        this.textField = value;
+                        this.OnPropertyChanged("Text");
+                    }
+                }
+                else
+                {
+                    this.textField = value;
+                    this.OnPropertyChanged("Text");
+                }
+            }
+        }
+
+        private static System.Xml.Serialization.XmlSerializer Serializer
+        {
+            get
+            {
+                if ((serializer == null))
+                {
+                    serializer = new System.Xml.Serialization.XmlSerializer(typeof(ASYCUDAItemTarificationNational_customs_procedure));
+                }
+                return serializer;
+            }
+        }
+
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+
+        public virtual void OnPropertyChanged(string propertyName)
+        {
+            System.ComponentModel.PropertyChangedEventHandler handler = this.PropertyChanged;
+            if ((handler != null))
+            {
+                handler(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+
+        #region Serialize/Deserialize
+        /// <summary>
+        /// Serializes current ASYCUDAItemTarificationNational_customs_procedure object into an XML document
+        /// </summary>
+        /// <returns>string XML value</returns>
+        public virtual string Serialize(System.Text.Encoding encoding)
+        {
+            System.IO.StreamReader streamReader = null;
+            System.IO.MemoryStream memoryStream = null;
+            try
+            {
+                memoryStream = new System.IO.MemoryStream();
+                System.Xml.XmlWriterSettings xmlWriterSettings = new System.Xml.XmlWriterSettings();
+                xmlWriterSettings.Encoding = encoding;
+                System.Xml.XmlWriter xmlWriter = XmlWriter.Create(memoryStream, xmlWriterSettings);
+                Serializer.Serialize(xmlWriter, this);
+                memoryStream.Seek(0, System.IO.SeekOrigin.Begin);
+                streamReader = new System.IO.StreamReader(memoryStream);
+                return streamReader.ReadToEnd();
+            }
+            finally
+            {
+                if ((streamReader != null))
+                {
+                    streamReader.Dispose();
+                }
+                if ((memoryStream != null))
+                {
+                    memoryStream.Dispose();
+                }
+            }
+        }
+
+        public virtual string Serialize()
+        {
+            return Serialize(Encoding.UTF8);
+        }
+
+        /// <summary>
+        /// Deserializes workflow markup into an ASYCUDAItemTarificationNational_customs_procedure object
+        /// </summary>
+        /// <param name="xml">string workflow markup to deserialize</param>
+        /// <param name="obj">Output ASYCUDAItemTarificationNational_customs_procedure object</param>
+        /// <param name="exception">output Exception value if deserialize failed</param>
+        /// <returns>true if this XmlSerializer can deserialize the object; otherwise, false</returns>
+        public static bool Deserialize(string xml, out ASYCUDAItemTarificationNational_customs_procedure obj, out System.Exception exception)
+        {
+            exception = null;
+            obj = default(ASYCUDAItemTarificationNational_customs_procedure);
+            try
+            {
+                obj = Deserialize(xml);
+                return true;
+            }
+            catch (System.Exception ex)
+            {
+                exception = ex;
+                return false;
+            }
+        }
+
+        public static bool Deserialize(string xml, out ASYCUDAItemTarificationNational_customs_procedure obj)
+        {
+            System.Exception exception = null;
+            return Deserialize(xml, out obj, out exception);
+        }
+
+        public static ASYCUDAItemTarificationNational_customs_procedure Deserialize(string xml)
+        {
+            System.IO.StringReader stringReader = null;
+            try
+            {
+                stringReader = new System.IO.StringReader(xml);
+                return ((ASYCUDAItemTarificationNational_customs_procedure)(Serializer.Deserialize(System.Xml.XmlReader.Create(stringReader))));
+            }
+            finally
+            {
+                if ((stringReader != null))
+                {
+                    stringReader.Dispose();
+                }
+            }
+        }
+
+        /// <summary>
+        /// Serializes current ASYCUDAItemTarificationNational_customs_procedure object into file
+        /// </summary>
+        /// <param name="fileName">full path of outupt xml file</param>
+        /// <param name="exception">output Exception value if failed</param>
+        /// <returns>true if can serialize and save into file; otherwise, false</returns>
+        public virtual bool SaveToFile(string fileName, System.Text.Encoding encoding, out System.Exception exception)
+        {
+            exception = null;
+            try
+            {
+                SaveToFile(fileName, encoding);
+                return true;
+            }
+            catch (System.Exception e)
+            {
+                exception = e;
+                return false;
+            }
+        }
+
+        public virtual bool SaveToFile(string fileName, out System.Exception exception)
+        {
+            return SaveToFile(fileName, Encoding.UTF8, out exception);
+        }
+
+        public virtual void SaveToFile(string fileName)
+        {
+            SaveToFile(fileName, Encoding.UTF8);
+        }
+
+        public virtual void SaveToFile(string fileName, System.Text.Encoding encoding)
+        {
+            System.IO.StreamWriter streamWriter = null;
+            try
+            {
+                string xmlString = Serialize(encoding);
+                streamWriter = new System.IO.StreamWriter(fileName, false, Encoding.UTF8);
+                streamWriter.WriteLine(xmlString);
+                streamWriter.Close();
+            }
+            finally
+            {
+                if ((streamWriter != null))
+                {
+                    streamWriter.Dispose();
+                }
+            }
+        }
+
+        /// <summary>
+        /// Deserializes xml markup from file into an ASYCUDAItemTarificationNational_customs_procedure object
+        /// </summary>
+        /// <param name="fileName">string xml file to load and deserialize</param>
+        /// <param name="obj">Output ASYCUDAItemTarificationNational_customs_procedure object</param>
+        /// <param name="exception">output Exception value if deserialize failed</param>
+        /// <returns>true if this XmlSerializer can deserialize the object; otherwise, false</returns>
+        public static bool LoadFromFile(string fileName, System.Text.Encoding encoding, out ASYCUDAItemTarificationNational_customs_procedure obj, out System.Exception exception)
+        {
+            exception = null;
+            obj = default(ASYCUDAItemTarificationNational_customs_procedure);
+            try
+            {
+                obj = LoadFromFile(fileName, encoding);
+                return true;
+            }
+            catch (System.Exception ex)
+            {
+                exception = ex;
+                return false;
+            }
+        }
+
+        public static bool LoadFromFile(string fileName, out ASYCUDAItemTarificationNational_customs_procedure obj, out System.Exception exception)
+        {
+            return LoadFromFile(fileName, Encoding.UTF8, out obj, out exception);
+        }
+
+        public static bool LoadFromFile(string fileName, out ASYCUDAItemTarificationNational_customs_procedure obj)
+        {
+            System.Exception exception = null;
+            return LoadFromFile(fileName, out obj, out exception);
+        }
+
+        public static ASYCUDAItemTarificationNational_customs_procedure LoadFromFile(string fileName)
+        {
+            return LoadFromFile(fileName, Encoding.UTF8);
+        }
+
+        public static ASYCUDAItemTarificationNational_customs_procedure LoadFromFile(string fileName, System.Text.Encoding encoding)
+        {
+            System.IO.FileStream file = null;
+            System.IO.StreamReader sr = null;
+            try
+            {
+                file = new System.IO.FileStream(fileName, FileMode.Open, FileAccess.Read);
+                sr = new System.IO.StreamReader(file, encoding);
+                string xmlString = sr.ReadToEnd();
+                sr.Close();
+                file.Close();
+                return Deserialize(xmlString);
+            }
+            finally
+            {
+                if ((file != null))
+                {
+                    file.Dispose();
+                }
+                if ((sr != null))
+                {
+                    sr.Dispose();
+                }
+            }
+        }
+        #endregion
+
+        #region Clone method
+        /// <summary>
+        /// Create a clone of this ASYCUDAItemTarificationNational_customs_procedure object
+        /// </summary>
+        public virtual ASYCUDAItemTarificationNational_customs_procedure Clone()
+        {
+            return ((ASYCUDAItemTarificationNational_customs_procedure)(this.MemberwiseClone()));
         }
         #endregion
     }
@@ -56649,7 +59422,7 @@ namespace Asycuda421
     public partial class ASYCUDAItemGoods_description : System.ComponentModel.INotifyPropertyChanged
     {
 
-        private string country_of_origin_codeField;
+        private ASYCUDAItemGoods_descriptionCountry_of_origin_code country_of_origin_codeField;
 
         private ASYCUDAItemGoods_descriptionCountry_of_origin_region country_of_origin_regionField;
 
@@ -56667,10 +59440,11 @@ namespace Asycuda421
             this.commercial_DescriptionField = new ASYCUDAItemGoods_descriptionCommercial_Description();
             this.description_of_goodsField = new ASYCUDAItemGoods_descriptionDescription_of_goods();
             this.country_of_origin_regionField = new ASYCUDAItemGoods_descriptionCountry_of_origin_region();
+            this.country_of_origin_codeField = new ASYCUDAItemGoods_descriptionCountry_of_origin_code();
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        public string Country_of_origin_code
+        public ASYCUDAItemGoods_descriptionCountry_of_origin_code Country_of_origin_code
         {
             get
             {
@@ -57025,6 +59799,310 @@ namespace Asycuda421
         public virtual ASYCUDAItemGoods_description Clone()
         {
             return ((ASYCUDAItemGoods_description)(this.MemberwiseClone()));
+        }
+        #endregion
+    }
+
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.3056.0")]
+    [System.SerializableAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
+    [System.Runtime.Serialization.DataContractAttribute(Name = "ASYCUDAItemGoods_descriptionCountry_of_origin_code")]
+    public partial class ASYCUDAItemGoods_descriptionCountry_of_origin_code : System.ComponentModel.INotifyPropertyChanged
+    {
+
+        private object nullField;
+
+        private ObservableCollection<string> textField;
+
+        private static System.Xml.Serialization.XmlSerializer serializer;
+
+        public ASYCUDAItemGoods_descriptionCountry_of_origin_code()
+        {
+            this.textField = new ObservableCollection<string>();
+        }
+
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public object @null
+        {
+            get
+            {
+                return this.nullField;
+            }
+            set
+            {
+                if ((this.nullField != null))
+                {
+                    if ((nullField.Equals(value) != true))
+                    {
+                        this.nullField = value;
+                        this.OnPropertyChanged("null");
+                    }
+                }
+                else
+                {
+                    this.nullField = value;
+                    this.OnPropertyChanged("null");
+                }
+            }
+        }
+
+        [System.Xml.Serialization.XmlTextAttribute()]
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public ObservableCollection<string> Text
+        {
+            get
+            {
+                return this.textField;
+            }
+            set
+            {
+                if ((this.textField != null))
+                {
+                    if ((textField.Equals(value) != true))
+                    {
+                        this.textField = value;
+                        this.OnPropertyChanged("Text");
+                    }
+                }
+                else
+                {
+                    this.textField = value;
+                    this.OnPropertyChanged("Text");
+                }
+            }
+        }
+
+        private static System.Xml.Serialization.XmlSerializer Serializer
+        {
+            get
+            {
+                if ((serializer == null))
+                {
+                    serializer = new System.Xml.Serialization.XmlSerializer(typeof(ASYCUDAItemGoods_descriptionCountry_of_origin_code));
+                }
+                return serializer;
+            }
+        }
+
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+
+        public virtual void OnPropertyChanged(string propertyName)
+        {
+            System.ComponentModel.PropertyChangedEventHandler handler = this.PropertyChanged;
+            if ((handler != null))
+            {
+                handler(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+
+        #region Serialize/Deserialize
+        /// <summary>
+        /// Serializes current ASYCUDAItemGoods_descriptionCountry_of_origin_code object into an XML document
+        /// </summary>
+        /// <returns>string XML value</returns>
+        public virtual string Serialize(System.Text.Encoding encoding)
+        {
+            System.IO.StreamReader streamReader = null;
+            System.IO.MemoryStream memoryStream = null;
+            try
+            {
+                memoryStream = new System.IO.MemoryStream();
+                System.Xml.XmlWriterSettings xmlWriterSettings = new System.Xml.XmlWriterSettings();
+                xmlWriterSettings.Encoding = encoding;
+                System.Xml.XmlWriter xmlWriter = XmlWriter.Create(memoryStream, xmlWriterSettings);
+                Serializer.Serialize(xmlWriter, this);
+                memoryStream.Seek(0, System.IO.SeekOrigin.Begin);
+                streamReader = new System.IO.StreamReader(memoryStream);
+                return streamReader.ReadToEnd();
+            }
+            finally
+            {
+                if ((streamReader != null))
+                {
+                    streamReader.Dispose();
+                }
+                if ((memoryStream != null))
+                {
+                    memoryStream.Dispose();
+                }
+            }
+        }
+
+        public virtual string Serialize()
+        {
+            return Serialize(Encoding.UTF8);
+        }
+
+        /// <summary>
+        /// Deserializes workflow markup into an ASYCUDAItemGoods_descriptionCountry_of_origin_code object
+        /// </summary>
+        /// <param name="xml">string workflow markup to deserialize</param>
+        /// <param name="obj">Output ASYCUDAItemGoods_descriptionCountry_of_origin_code object</param>
+        /// <param name="exception">output Exception value if deserialize failed</param>
+        /// <returns>true if this XmlSerializer can deserialize the object; otherwise, false</returns>
+        public static bool Deserialize(string xml, out ASYCUDAItemGoods_descriptionCountry_of_origin_code obj, out System.Exception exception)
+        {
+            exception = null;
+            obj = default(ASYCUDAItemGoods_descriptionCountry_of_origin_code);
+            try
+            {
+                obj = Deserialize(xml);
+                return true;
+            }
+            catch (System.Exception ex)
+            {
+                exception = ex;
+                return false;
+            }
+        }
+
+        public static bool Deserialize(string xml, out ASYCUDAItemGoods_descriptionCountry_of_origin_code obj)
+        {
+            System.Exception exception = null;
+            return Deserialize(xml, out obj, out exception);
+        }
+
+        public static ASYCUDAItemGoods_descriptionCountry_of_origin_code Deserialize(string xml)
+        {
+            System.IO.StringReader stringReader = null;
+            try
+            {
+                stringReader = new System.IO.StringReader(xml);
+                return ((ASYCUDAItemGoods_descriptionCountry_of_origin_code)(Serializer.Deserialize(System.Xml.XmlReader.Create(stringReader))));
+            }
+            finally
+            {
+                if ((stringReader != null))
+                {
+                    stringReader.Dispose();
+                }
+            }
+        }
+
+        /// <summary>
+        /// Serializes current ASYCUDAItemGoods_descriptionCountry_of_origin_code object into file
+        /// </summary>
+        /// <param name="fileName">full path of outupt xml file</param>
+        /// <param name="exception">output Exception value if failed</param>
+        /// <returns>true if can serialize and save into file; otherwise, false</returns>
+        public virtual bool SaveToFile(string fileName, System.Text.Encoding encoding, out System.Exception exception)
+        {
+            exception = null;
+            try
+            {
+                SaveToFile(fileName, encoding);
+                return true;
+            }
+            catch (System.Exception e)
+            {
+                exception = e;
+                return false;
+            }
+        }
+
+        public virtual bool SaveToFile(string fileName, out System.Exception exception)
+        {
+            return SaveToFile(fileName, Encoding.UTF8, out exception);
+        }
+
+        public virtual void SaveToFile(string fileName)
+        {
+            SaveToFile(fileName, Encoding.UTF8);
+        }
+
+        public virtual void SaveToFile(string fileName, System.Text.Encoding encoding)
+        {
+            System.IO.StreamWriter streamWriter = null;
+            try
+            {
+                string xmlString = Serialize(encoding);
+                streamWriter = new System.IO.StreamWriter(fileName, false, Encoding.UTF8);
+                streamWriter.WriteLine(xmlString);
+                streamWriter.Close();
+            }
+            finally
+            {
+                if ((streamWriter != null))
+                {
+                    streamWriter.Dispose();
+                }
+            }
+        }
+
+        /// <summary>
+        /// Deserializes xml markup from file into an ASYCUDAItemGoods_descriptionCountry_of_origin_code object
+        /// </summary>
+        /// <param name="fileName">string xml file to load and deserialize</param>
+        /// <param name="obj">Output ASYCUDAItemGoods_descriptionCountry_of_origin_code object</param>
+        /// <param name="exception">output Exception value if deserialize failed</param>
+        /// <returns>true if this XmlSerializer can deserialize the object; otherwise, false</returns>
+        public static bool LoadFromFile(string fileName, System.Text.Encoding encoding, out ASYCUDAItemGoods_descriptionCountry_of_origin_code obj, out System.Exception exception)
+        {
+            exception = null;
+            obj = default(ASYCUDAItemGoods_descriptionCountry_of_origin_code);
+            try
+            {
+                obj = LoadFromFile(fileName, encoding);
+                return true;
+            }
+            catch (System.Exception ex)
+            {
+                exception = ex;
+                return false;
+            }
+        }
+
+        public static bool LoadFromFile(string fileName, out ASYCUDAItemGoods_descriptionCountry_of_origin_code obj, out System.Exception exception)
+        {
+            return LoadFromFile(fileName, Encoding.UTF8, out obj, out exception);
+        }
+
+        public static bool LoadFromFile(string fileName, out ASYCUDAItemGoods_descriptionCountry_of_origin_code obj)
+        {
+            System.Exception exception = null;
+            return LoadFromFile(fileName, out obj, out exception);
+        }
+
+        public static ASYCUDAItemGoods_descriptionCountry_of_origin_code LoadFromFile(string fileName)
+        {
+            return LoadFromFile(fileName, Encoding.UTF8);
+        }
+
+        public static ASYCUDAItemGoods_descriptionCountry_of_origin_code LoadFromFile(string fileName, System.Text.Encoding encoding)
+        {
+            System.IO.FileStream file = null;
+            System.IO.StreamReader sr = null;
+            try
+            {
+                file = new System.IO.FileStream(fileName, FileMode.Open, FileAccess.Read);
+                sr = new System.IO.StreamReader(file, encoding);
+                string xmlString = sr.ReadToEnd();
+                sr.Close();
+                file.Close();
+                return Deserialize(xmlString);
+            }
+            finally
+            {
+                if ((file != null))
+                {
+                    file.Dispose();
+                }
+                if ((sr != null))
+                {
+                    sr.Dispose();
+                }
+            }
+        }
+        #endregion
+
+        #region Clone method
+        /// <summary>
+        /// Create a clone of this ASYCUDAItemGoods_descriptionCountry_of_origin_code object
+        /// </summary>
+        public virtual ASYCUDAItemGoods_descriptionCountry_of_origin_code Clone()
+        {
+            return ((ASYCUDAItemGoods_descriptionCountry_of_origin_code)(this.MemberwiseClone()));
         }
         #endregion
     }
@@ -74576,6 +77654,310 @@ namespace Asycuda421
         public virtual ASYCUDAVehicle_List Clone()
         {
             return ((ASYCUDAVehicle_List)(this.MemberwiseClone()));
+        }
+        #endregion
+    }
+
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.3056.0")]
+    [System.SerializableAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
+    [System.Runtime.Serialization.DataContractAttribute(Name = "ASYCUDASW_scans_general_segment")]
+    public partial class ASYCUDASW_scans_general_segment : System.ComponentModel.INotifyPropertyChanged
+    {
+
+        private object nullField;
+
+        private ObservableCollection<string> textField;
+
+        private static System.Xml.Serialization.XmlSerializer serializer;
+
+        public ASYCUDASW_scans_general_segment()
+        {
+            this.textField = new ObservableCollection<string>();
+        }
+
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public object @null
+        {
+            get
+            {
+                return this.nullField;
+            }
+            set
+            {
+                if ((this.nullField != null))
+                {
+                    if ((nullField.Equals(value) != true))
+                    {
+                        this.nullField = value;
+                        this.OnPropertyChanged("null");
+                    }
+                }
+                else
+                {
+                    this.nullField = value;
+                    this.OnPropertyChanged("null");
+                }
+            }
+        }
+
+        [System.Xml.Serialization.XmlTextAttribute()]
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public ObservableCollection<string> Text
+        {
+            get
+            {
+                return this.textField;
+            }
+            set
+            {
+                if ((this.textField != null))
+                {
+                    if ((textField.Equals(value) != true))
+                    {
+                        this.textField = value;
+                        this.OnPropertyChanged("Text");
+                    }
+                }
+                else
+                {
+                    this.textField = value;
+                    this.OnPropertyChanged("Text");
+                }
+            }
+        }
+
+        private static System.Xml.Serialization.XmlSerializer Serializer
+        {
+            get
+            {
+                if ((serializer == null))
+                {
+                    serializer = new System.Xml.Serialization.XmlSerializer(typeof(ASYCUDASW_scans_general_segment));
+                }
+                return serializer;
+            }
+        }
+
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+
+        public virtual void OnPropertyChanged(string propertyName)
+        {
+            System.ComponentModel.PropertyChangedEventHandler handler = this.PropertyChanged;
+            if ((handler != null))
+            {
+                handler(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+
+        #region Serialize/Deserialize
+        /// <summary>
+        /// Serializes current ASYCUDASW_scans_general_segment object into an XML document
+        /// </summary>
+        /// <returns>string XML value</returns>
+        public virtual string Serialize(System.Text.Encoding encoding)
+        {
+            System.IO.StreamReader streamReader = null;
+            System.IO.MemoryStream memoryStream = null;
+            try
+            {
+                memoryStream = new System.IO.MemoryStream();
+                System.Xml.XmlWriterSettings xmlWriterSettings = new System.Xml.XmlWriterSettings();
+                xmlWriterSettings.Encoding = encoding;
+                System.Xml.XmlWriter xmlWriter = XmlWriter.Create(memoryStream, xmlWriterSettings);
+                Serializer.Serialize(xmlWriter, this);
+                memoryStream.Seek(0, System.IO.SeekOrigin.Begin);
+                streamReader = new System.IO.StreamReader(memoryStream);
+                return streamReader.ReadToEnd();
+            }
+            finally
+            {
+                if ((streamReader != null))
+                {
+                    streamReader.Dispose();
+                }
+                if ((memoryStream != null))
+                {
+                    memoryStream.Dispose();
+                }
+            }
+        }
+
+        public virtual string Serialize()
+        {
+            return Serialize(Encoding.UTF8);
+        }
+
+        /// <summary>
+        /// Deserializes workflow markup into an ASYCUDASW_scans_general_segment object
+        /// </summary>
+        /// <param name="xml">string workflow markup to deserialize</param>
+        /// <param name="obj">Output ASYCUDASW_scans_general_segment object</param>
+        /// <param name="exception">output Exception value if deserialize failed</param>
+        /// <returns>true if this XmlSerializer can deserialize the object; otherwise, false</returns>
+        public static bool Deserialize(string xml, out ASYCUDASW_scans_general_segment obj, out System.Exception exception)
+        {
+            exception = null;
+            obj = default(ASYCUDASW_scans_general_segment);
+            try
+            {
+                obj = Deserialize(xml);
+                return true;
+            }
+            catch (System.Exception ex)
+            {
+                exception = ex;
+                return false;
+            }
+        }
+
+        public static bool Deserialize(string xml, out ASYCUDASW_scans_general_segment obj)
+        {
+            System.Exception exception = null;
+            return Deserialize(xml, out obj, out exception);
+        }
+
+        public static ASYCUDASW_scans_general_segment Deserialize(string xml)
+        {
+            System.IO.StringReader stringReader = null;
+            try
+            {
+                stringReader = new System.IO.StringReader(xml);
+                return ((ASYCUDASW_scans_general_segment)(Serializer.Deserialize(System.Xml.XmlReader.Create(stringReader))));
+            }
+            finally
+            {
+                if ((stringReader != null))
+                {
+                    stringReader.Dispose();
+                }
+            }
+        }
+
+        /// <summary>
+        /// Serializes current ASYCUDASW_scans_general_segment object into file
+        /// </summary>
+        /// <param name="fileName">full path of outupt xml file</param>
+        /// <param name="exception">output Exception value if failed</param>
+        /// <returns>true if can serialize and save into file; otherwise, false</returns>
+        public virtual bool SaveToFile(string fileName, System.Text.Encoding encoding, out System.Exception exception)
+        {
+            exception = null;
+            try
+            {
+                SaveToFile(fileName, encoding);
+                return true;
+            }
+            catch (System.Exception e)
+            {
+                exception = e;
+                return false;
+            }
+        }
+
+        public virtual bool SaveToFile(string fileName, out System.Exception exception)
+        {
+            return SaveToFile(fileName, Encoding.UTF8, out exception);
+        }
+
+        public virtual void SaveToFile(string fileName)
+        {
+            SaveToFile(fileName, Encoding.UTF8);
+        }
+
+        public virtual void SaveToFile(string fileName, System.Text.Encoding encoding)
+        {
+            System.IO.StreamWriter streamWriter = null;
+            try
+            {
+                string xmlString = Serialize(encoding);
+                streamWriter = new System.IO.StreamWriter(fileName, false, Encoding.UTF8);
+                streamWriter.WriteLine(xmlString);
+                streamWriter.Close();
+            }
+            finally
+            {
+                if ((streamWriter != null))
+                {
+                    streamWriter.Dispose();
+                }
+            }
+        }
+
+        /// <summary>
+        /// Deserializes xml markup from file into an ASYCUDASW_scans_general_segment object
+        /// </summary>
+        /// <param name="fileName">string xml file to load and deserialize</param>
+        /// <param name="obj">Output ASYCUDASW_scans_general_segment object</param>
+        /// <param name="exception">output Exception value if deserialize failed</param>
+        /// <returns>true if this XmlSerializer can deserialize the object; otherwise, false</returns>
+        public static bool LoadFromFile(string fileName, System.Text.Encoding encoding, out ASYCUDASW_scans_general_segment obj, out System.Exception exception)
+        {
+            exception = null;
+            obj = default(ASYCUDASW_scans_general_segment);
+            try
+            {
+                obj = LoadFromFile(fileName, encoding);
+                return true;
+            }
+            catch (System.Exception ex)
+            {
+                exception = ex;
+                return false;
+            }
+        }
+
+        public static bool LoadFromFile(string fileName, out ASYCUDASW_scans_general_segment obj, out System.Exception exception)
+        {
+            return LoadFromFile(fileName, Encoding.UTF8, out obj, out exception);
+        }
+
+        public static bool LoadFromFile(string fileName, out ASYCUDASW_scans_general_segment obj)
+        {
+            System.Exception exception = null;
+            return LoadFromFile(fileName, out obj, out exception);
+        }
+
+        public static ASYCUDASW_scans_general_segment LoadFromFile(string fileName)
+        {
+            return LoadFromFile(fileName, Encoding.UTF8);
+        }
+
+        public static ASYCUDASW_scans_general_segment LoadFromFile(string fileName, System.Text.Encoding encoding)
+        {
+            System.IO.FileStream file = null;
+            System.IO.StreamReader sr = null;
+            try
+            {
+                file = new System.IO.FileStream(fileName, FileMode.Open, FileAccess.Read);
+                sr = new System.IO.StreamReader(file, encoding);
+                string xmlString = sr.ReadToEnd();
+                sr.Close();
+                file.Close();
+                return Deserialize(xmlString);
+            }
+            finally
+            {
+                if ((file != null))
+                {
+                    file.Dispose();
+                }
+                if ((sr != null))
+                {
+                    sr.Dispose();
+                }
+            }
+        }
+        #endregion
+
+        #region Clone method
+        /// <summary>
+        /// Create a clone of this ASYCUDASW_scans_general_segment object
+        /// </summary>
+        public virtual ASYCUDASW_scans_general_segment Clone()
+        {
+            return ((ASYCUDASW_scans_general_segment)(this.MemberwiseClone()));
         }
         #endregion
     }

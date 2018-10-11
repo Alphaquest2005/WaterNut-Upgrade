@@ -153,7 +153,7 @@ namespace WaterNut.QuerySpace.CoreEntities.ViewModels
             
             if (ViewIm7 == true)
             {
-                viewres.Append(" || DocumentType == \"IM7\"");
+                viewres.Append(" || DocumentType == \"IM7\" || DocumentType == \"OS7\"");
             }
             if (ViewEx9 == true)
             {

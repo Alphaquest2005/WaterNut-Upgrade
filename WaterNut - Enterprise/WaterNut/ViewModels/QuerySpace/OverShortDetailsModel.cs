@@ -149,7 +149,7 @@ namespace WaterNut.QuerySpace.OversShortQS.ViewModels
         internal void ViewSuggestions(OverShortDetailsEX osd)
         {
             QuerySpace.CoreEntities.ViewModels.AsycudaDocumentItemsModel.Instance.vloader.FilterExpression =
-                string.Format("ItemNumber == \"{0}\" && DocumentType == \"IM7\"", osd.ItemNumber);
+                string.Format("ItemNumber == \"{0}\" && (DocumentType == \"IM7\"  || DocumentType == \"OS7\")", osd.ItemNumber);
 
             QuerySpace.CoreEntities.ViewModels.AsycudaDocumentItemsModel.Instance.AsycudaDocumentItems.OrderBy(
                 x => x.Data.AsycudaDocument.RegistrationDate - osd.OversShortEX.InvoiceDate);
