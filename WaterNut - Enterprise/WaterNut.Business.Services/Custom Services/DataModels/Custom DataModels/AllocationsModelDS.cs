@@ -279,7 +279,7 @@ namespace WaterNut.DataSpace
                                     .Where(x => x.EntryDataDetails.Sales != null
                                         && x.PreviousDocumentItem != null
                                         // && x.EntryDataDetails.ItemDescription.Contains("POLLEN-BR-B") // && x.PreviousItemEx.xcuda_Tarification.xcuda_HScode.Precision_4.Contains("DKR")// // 
-                                        && x.PreviousDocumentItem.AsycudaDocument.CNumber != null)
+                                        && (x.PreviousDocumentItem.AsycudaDocument.CNumber != null || x.PreviousDocumentItem.AsycudaDocument.IsManuallyAssessed == true))
                                      .AsEnumerable()
                                      .Where(x => (x.EntryDataDetails.Sales as Sales).DutyFreePaid == dfp)
                                      .OrderBy(x => x.EntryDataDetails.Sales.EntryDataDate).ThenBy(x => x.EntryDataDetails.EntryDataDetailsId).ToList();

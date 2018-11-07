@@ -465,7 +465,6 @@ C:\Users\josep\OneDrive\WaterNut-Upgrade\WaterNut-Upgrade\WaterNut - Enterprise\
 C:\Users\josep\OneDrive\WaterNut-Upgrade\WaterNut-Upgrade\WaterNut - Enterprise\WaterNut.Business.Services\bin\Debug\Newtonsoft.Json.dll
 C:\Users\josep\OneDrive\WaterNut-Upgrade\WaterNut-Upgrade\WaterNut - Enterprise\WaterNut.Business.Services\bin\Debug\Omu.ValueInjecter.dll
 C:\Users\josep\OneDrive\WaterNut-Upgrade\WaterNut-Upgrade\WaterNut - Enterprise\WaterNut.Business.Services\bin\Debug\ParallelExtensionsExtras.dll
-C:\Users\josep\OneDrive\WaterNut-Upgrade\WaterNut-Upgrade\WaterNut - Enterprise\WaterNut.Business.Services\bin\Debug\QuickBooks.dll
 C:\Users\josep\OneDrive\WaterNut-Upgrade\WaterNut-Upgrade\WaterNut - Enterprise\WaterNut.Business.Services\bin\Debug\Serialize.Linq.dll
 C:\Users\josep\OneDrive\WaterNut-Upgrade\WaterNut-Upgrade\WaterNut - Enterprise\WaterNut.Business.Services\bin\Debug\SimpleMvvmToolkit-Common.dll
 C:\Users\josep\OneDrive\WaterNut-Upgrade\WaterNut-Upgrade\WaterNut - Enterprise\WaterNut.Business.Services\bin\Debug\SimpleMvvmToolkit-WPF.dll
@@ -501,8 +500,6 @@ C:\Users\josep\OneDrive\WaterNut-Upgrade\WaterNut-Upgrade\WaterNut - Enterprise\
 C:\Users\josep\OneDrive\WaterNut-Upgrade\WaterNut-Upgrade\WaterNut - Enterprise\WaterNut.Business.Services\bin\Debug\WaterNut.Business.Entities.dll.config
 C:\Users\josep\OneDrive\WaterNut-Upgrade\WaterNut-Upgrade\WaterNut - Enterprise\WaterNut.Business.Services\bin\Debug\WaterNut.Data.pdb
 C:\Users\josep\OneDrive\WaterNut-Upgrade\WaterNut-Upgrade\WaterNut - Enterprise\WaterNut.Business.Services\bin\Debug\WaterNut.Data.dll.config
-C:\Users\josep\OneDrive\WaterNut-Upgrade\WaterNut-Upgrade\WaterNut - Enterprise\WaterNut.Business.Services\bin\Debug\QuickBooks.pdb
-C:\Users\josep\OneDrive\WaterNut-Upgrade\WaterNut-Upgrade\WaterNut - Enterprise\WaterNut.Business.Services\bin\Debug\QuickBooks.dll.config
 C:\Users\josep\OneDrive\WaterNut-Upgrade\WaterNut-Upgrade\WaterNut - Enterprise\WaterNut.Business.Services\bin\Debug\EntityFramework.xml
 C:\Users\josep\OneDrive\WaterNut-Upgrade\WaterNut-Upgrade\WaterNut - Enterprise\WaterNut.Business.Services\bin\Debug\EntityFramework.SqlServer.xml
 C:\Users\josep\OneDrive\WaterNut-Upgrade\WaterNut-Upgrade\WaterNut - Enterprise\WaterNut.Business.Services\bin\Debug\Microsoft.Expression.Interactions.xml

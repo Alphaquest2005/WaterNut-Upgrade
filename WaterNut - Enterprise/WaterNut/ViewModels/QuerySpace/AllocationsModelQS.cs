@@ -73,7 +73,7 @@ namespace WaterNut.QuerySpace.AllocationQS.ViewModels
             {
                 vloader.FilterExpression = string.Format("xBond_Item_Id == {0} || PreviousItem_Id == {0}", e.Data.Item_Id.ToString());
             }
-
+            
             AsycudaSalesAllocationsExs.Refresh();
             NotifyPropertyChanged(x => AsycudaSalesAllocationsExs);
         }

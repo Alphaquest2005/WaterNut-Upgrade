@@ -1,7 +1,7 @@
 ﻿<#@ include file="EF.Utility.CS.ttinclude"#>
-<#@ assembly name="C:\Prism\Core.Common\EntityFramework.dll"#>
+<#@ assembly name="C:\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\Core.Common\EntityFramework.dll"#>
 
-<#@ assembly name="C:\Prism\Core.Common\Microsoft.Data.Entity.Design.DatabaseGeneration.dll"#>
+<#@ assembly name="C:\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\Core.Common\Microsoft.Data.Entity.Design.DatabaseGeneration.dll"#>
 <#@ import namespace="Microsoft.Data.Entity.Design.DatabaseGeneration"#>
 <#@ import namespace="System.Text"#>
 <#@ import namespace="System.Linq"#>

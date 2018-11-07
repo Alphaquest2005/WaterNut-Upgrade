@@ -29,3 +29,18 @@ C:\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\Core.Common\T4 L
 C:\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\Core.Common\T4 Library\obj\Debug\T4 Library.csproj.CopyComplete
 C:\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\Core.Common\T4 Library\obj\Debug\T4 Library.dll
 C:\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\Core.Common\T4 Library\obj\Debug\T4 Library.pdb
+C:\Users\josep\OneDrive\WaterNut-Upgrade\WaterNut-Upgrade\WaterNut - Enterprise\Core.Common\T4 Library\bin\Debug\T4\DbContextMappings.tt
+C:\Users\josep\OneDrive\WaterNut-Upgrade\WaterNut-Upgrade\WaterNut - Enterprise\Core.Common\T4 Library\bin\Debug\T4\ObjectContexts.tt
+C:\Users\josep\OneDrive\WaterNut-Upgrade\WaterNut-Upgrade\WaterNut - Enterprise\Core.Common\T4 Library\bin\Debug\T4\Repositories\--BusinessRepository.tt
+C:\Users\josep\OneDrive\WaterNut-Upgrade\WaterNut-Upgrade\WaterNut - Enterprise\Core.Common\T4 Library\bin\Debug\T4\Repositories\ClientRepository.tt
+C:\Users\josep\OneDrive\WaterNut-Upgrade\WaterNut-Upgrade\WaterNut - Enterprise\Core.Common\T4 Library\bin\Debug\T4\Repository.tt
+C:\Users\josep\OneDrive\WaterNut-Upgrade\WaterNut-Upgrade\WaterNut - Enterprise\Core.Common\T4 Library\bin\Debug\T4 Library.dll.config
+C:\Users\josep\OneDrive\WaterNut-Upgrade\WaterNut-Upgrade\WaterNut - Enterprise\Core.Common\T4 Library\bin\Debug\T4 Library.dll
+C:\Users\josep\OneDrive\WaterNut-Upgrade\WaterNut-Upgrade\WaterNut - Enterprise\Core.Common\T4 Library\bin\Debug\T4 Library.pdb
+C:\Users\josep\OneDrive\WaterNut-Upgrade\WaterNut-Upgrade\WaterNut - Enterprise\Core.Common\T4 Library\bin\Debug\EntityFramework.dll
+C:\Users\josep\OneDrive\WaterNut-Upgrade\WaterNut-Upgrade\WaterNut - Enterprise\Core.Common\T4 Library\bin\Debug\EntityFramework.xml
+C:\Users\josep\OneDrive\WaterNut-Upgrade\WaterNut-Upgrade\WaterNut - Enterprise\Core.Common\T4 Library\obj\Debug\T4 Library.csprojAssemblyReference.cache
+C:\Users\josep\OneDrive\WaterNut-Upgrade\WaterNut-Upgrade\WaterNut - Enterprise\Core.Common\T4 Library\obj\Debug\T4 Library.csproj.CoreCompileInputs.cache
+C:\Users\josep\OneDrive\WaterNut-Upgrade\WaterNut-Upgrade\WaterNut - Enterprise\Core.Common\T4 Library\obj\Debug\T4 Library.csproj.CopyComplete
+C:\Users\josep\OneDrive\WaterNut-Upgrade\WaterNut-Upgrade\WaterNut - Enterprise\Core.Common\T4 Library\obj\Debug\T4 Library.dll
+C:\Users\josep\OneDrive\WaterNut-Upgrade\WaterNut-Upgrade\WaterNut - Enterprise\Core.Common\T4 Library\obj\Debug\T4 Library.pdb

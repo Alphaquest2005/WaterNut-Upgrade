@@ -191,3 +191,4 @@ C:\Users\josep\OneDrive\WaterNut-Upgrade\WaterNut-Upgrade\WaterNut - Enterprise\
 C:\Users\josep\OneDrive\WaterNut-Upgrade\WaterNut-Upgrade\WaterNut - Enterprise\WaterNut.Client.Contracts\obj\Debug\WaterNut.Client.Contracts.csproj.CopyComplete
 C:\Users\josep\OneDrive\WaterNut-Upgrade\WaterNut-Upgrade\WaterNut - Enterprise\WaterNut.Client.Contracts\obj\Debug\WaterNut.Client.Contracts.dll
 C:\Users\josep\OneDrive\WaterNut-Upgrade\WaterNut-Upgrade\WaterNut - Enterprise\WaterNut.Client.Contracts\obj\Debug\WaterNut.Client.Contracts.pdb
+C:\Users\josep\OneDrive\WaterNut-Upgrade\WaterNut-Upgrade\WaterNut - Enterprise\WaterNut.Client.Contracts\bin\Debug\EntityFramework.xml

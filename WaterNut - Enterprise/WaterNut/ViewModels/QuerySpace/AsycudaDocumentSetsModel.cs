@@ -35,6 +35,18 @@ namespace WaterNut.QuerySpace.CoreEntities.ViewModels
         private AsycudaDocumentSetsModel()
         {
             RegisterToReceiveMessages<AsycudaDocumentSetEx>(MessageToken.CurrentAsycudaDocumentSetExChanged, OnCurrentAsycudaDocumentSetExChanged2);
+            RegisterToReceiveMessages<AsycudaDocumentSetEx>(MessageToken.AsycudaDocumentSetExsChanged, OnAsycudaDocumentSetExsChanged2);
+        }
+
+        private async void OnAsycudaDocumentSetExsChanged2(object sender, NotificationEventArgs<AsycudaDocumentSetEx> e)
+        {
+            if (BaseViewModel.Instance.CurrentAsycudaDocumentSetEx != null)
+            {
+                AsycudaDocuments =
+                    await
+                        AsycudaDocumentRepository.Instance.GetAsycudaDocumentByAsycudaDocumentSetId(
+                            BaseViewModel.Instance.CurrentAsycudaDocumentSetEx.AsycudaDocumentSetId.ToString()).ConfigureAwait(false);
+            }
         }
 
         private async void OnCurrentAsycudaDocumentSetExChanged2(object sender, NotificationEventArgs<AsycudaDocumentSetEx> e)

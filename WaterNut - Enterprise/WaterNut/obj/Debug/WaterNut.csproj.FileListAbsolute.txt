@@ -712,7 +712,6 @@ C:\Users\josep\OneDrive\WaterNut-Upgrade\WaterNut-Upgrade\WaterNut - Enterprise\
 C:\Users\josep\OneDrive\WaterNut-Upgrade\WaterNut-Upgrade\WaterNut - Enterprise\WaterNut\bin\Debug\ParallelExtensionsExtras.dll
 C:\Users\josep\OneDrive\WaterNut-Upgrade\WaterNut-Upgrade\WaterNut - Enterprise\WaterNut\bin\Debug\PresentationCore.dll
 C:\Users\josep\OneDrive\WaterNut-Upgrade\WaterNut-Upgrade\WaterNut - Enterprise\WaterNut\bin\Debug\PresentationFramework.dll
-C:\Users\josep\OneDrive\WaterNut-Upgrade\WaterNut-Upgrade\WaterNut - Enterprise\WaterNut\bin\Debug\QuickBooks.dll
 C:\Users\josep\OneDrive\WaterNut-Upgrade\WaterNut-Upgrade\WaterNut - Enterprise\WaterNut\bin\Debug\Serialize.Linq.dll
 C:\Users\josep\OneDrive\WaterNut-Upgrade\WaterNut-Upgrade\WaterNut - Enterprise\WaterNut\bin\Debug\SimpleMvvmToolkit-Common.dll
 C:\Users\josep\OneDrive\WaterNut-Upgrade\WaterNut-Upgrade\WaterNut - Enterprise\WaterNut\bin\Debug\SimpleMvvmToolkit-WPF.dll
@@ -756,8 +755,6 @@ C:\Users\josep\OneDrive\WaterNut-Upgrade\WaterNut-Upgrade\WaterNut - Enterprise\
 C:\Users\josep\OneDrive\WaterNut-Upgrade\WaterNut-Upgrade\WaterNut - Enterprise\WaterNut\bin\Debug\WaterNut.Client.Services.dll.config
 C:\Users\josep\OneDrive\WaterNut-Upgrade\WaterNut-Upgrade\WaterNut - Enterprise\WaterNut\bin\Debug\WaterNut.Data.pdb
 C:\Users\josep\OneDrive\WaterNut-Upgrade\WaterNut-Upgrade\WaterNut - Enterprise\WaterNut\bin\Debug\WaterNut.Data.dll.config
-C:\Users\josep\OneDrive\WaterNut-Upgrade\WaterNut-Upgrade\WaterNut - Enterprise\WaterNut\bin\Debug\QuickBooks.pdb
-C:\Users\josep\OneDrive\WaterNut-Upgrade\WaterNut-Upgrade\WaterNut - Enterprise\WaterNut\bin\Debug\QuickBooks.dll.config
 C:\Users\josep\OneDrive\WaterNut-Upgrade\WaterNut-Upgrade\WaterNut - Enterprise\WaterNut\bin\Debug\EntityFramework.xml
 C:\Users\josep\OneDrive\WaterNut-Upgrade\WaterNut-Upgrade\WaterNut - Enterprise\WaterNut\bin\Debug\EntityFramework.SqlServer.xml
 C:\Users\josep\OneDrive\WaterNut-Upgrade\WaterNut-Upgrade\WaterNut - Enterprise\WaterNut\bin\Debug\Microsoft.Expression.Interactions.xml
@@ -852,5 +849,3 @@ C:\Users\josep\OneDrive\WaterNut-Upgrade\WaterNut-Upgrade\WaterNut - Enterprise\
 C:\Users\josep\OneDrive\WaterNut-Upgrade\WaterNut-Upgrade\WaterNut - Enterprise\WaterNut\obj\Debug\WaterNut.csproj.CopyComplete
 C:\Users\josep\OneDrive\WaterNut-Upgrade\WaterNut-Upgrade\WaterNut - Enterprise\WaterNut\obj\Debug\WaterNut.exe
 C:\Users\josep\OneDrive\WaterNut-Upgrade\WaterNut-Upgrade\WaterNut - Enterprise\WaterNut\obj\Debug\WaterNut.pdb
-C:\Users\josep\OneDrive\WaterNut-Upgrade\WaterNut-Upgrade\WaterNut - Enterprise\WaterNut\bin\Debug\Asycuda421.xsd
-C:\Users\josep\OneDrive\WaterNut-Upgrade\WaterNut-Upgrade\WaterNut - Enterprise\WaterNut\bin\Debug\Asycuda421.cs

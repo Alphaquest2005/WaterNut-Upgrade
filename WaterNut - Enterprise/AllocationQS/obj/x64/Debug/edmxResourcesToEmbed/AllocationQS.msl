@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="WaterNutDBModelStoreContainer" CdmEntityContainer="AllocationQS">
+    <EntitySetMapping Name="AsycudaSalesAllocationsExs">
+      <EntityTypeMapping TypeName="WaterNutDBModel.AsycudaSalesAllocationsEx">
+        <MappingFragment StoreEntitySet="AsycudaSalesAllocationsEx">
+          <ScalarProperty Name="SalesFactor" ColumnName="SalesFactor" />
+          <ScalarProperty Name="xQuantity" ColumnName="xQuantity" />
+          <ScalarProperty Name="pItemNumber" ColumnName="pItemNumber" />
+          <ScalarProperty Name="pTariffCode" ColumnName="pTariffCode" />
+          <ScalarProperty Name="CustomerName" ColumnName="CustomerName" />
+          <ScalarProperty Name="pExpiryDate" ColumnName="pExpiryDate" />
+          <ScalarProperty Name="Invalid" ColumnName="Invalid" />
+          <ScalarProperty Name="TariffCode" ColumnName="TariffCode" />
+          <ScalarProperty Name="xReferenceNumber" ColumnName="xReferenceNumber" />
+          <ScalarProperty Name="pReferenceNumber" ColumnName="pReferenceNumber" />
+          <ScalarProperty Name="SANumber" ColumnName="SANumber" />
+          <ScalarProperty Name="DoNotAllocatePreviousEntry" ColumnName="DoNotAllocatePreviousEntry" />
+          <ScalarProperty Name="DoNotAllocateSales" ColumnName="DoNotAllocateSales" />
+          <ScalarProperty Name="pIsAssessed" ColumnName="pIsAssessed" />
+          <ScalarProperty Name="TaxAmount" ColumnName="TaxAmount" />
+          <ScalarProperty Name="DutyLiability" ColumnName="DutyLiability" />
+          <ScalarProperty Name="Total_CIF_itm" ColumnName="Total_CIF_itm" />
+          <ScalarProperty Name="Cost" ColumnName="Cost" />
+          <ScalarProperty Name="pASYCUDA_Id" ColumnName="pASYCUDA_Id" />
+          <ScalarProperty Name="xASYCUDA_Id" ColumnName="xASYCUDA_Id" />
+          <ScalarProperty Name="pLineNumber" ColumnName="pLineNumber" />
+          <ScalarProperty Name="xRegistrationDate" ColumnName="xRegistrationDate" />
+          <ScalarProperty Name="xCNumber" ColumnName="xCNumber" />
+          <ScalarProperty Name="PiQuantity" ColumnName="PiQuantity" />
+          <ScalarProperty Name="pQtyAllocated" ColumnName="pQtyAllocated" />
+          <ScalarProperty Name="pQuantity" ColumnName="pQuantity" />
+          <ScalarProperty Name="pRegistrationDate" ColumnName="pRegistrationDate" />
+          <ScalarProperty Name="pCNumber" ColumnName="pCNumber" />
+          <ScalarProperty Name="DutyFreePaid" ColumnName="DutyFreePaid" />
+          <ScalarProperty Name="xBond_Item_Id" ColumnName="xBond_Item_Id" />
+          <ScalarProperty Name="EntryDataDetailsId" ColumnName="EntryDataDetailsId" />
+          <ScalarProperty Name="ItemDescription" ColumnName="ItemDescription" />
+          <ScalarProperty Name="ItemNumber" ColumnName="ItemNumber" />
+          <ScalarProperty Name="InvoiceNo" ColumnName="InvoiceNo" />
+          <ScalarProperty Name="SalesQtyAllocated" ColumnName="SalesQtyAllocated" />
+          <ScalarProperty Name="SalesQuantity" ColumnName="SalesQuantity" />
+          <ScalarProperty Name="InvoiceDate" ColumnName="InvoiceDate" />
+          <ScalarProperty Name="PreviousItem_Id" ColumnName="PreviousItem_Id" />
+          <ScalarProperty Name="xLineNumber" ColumnName="xLineNumber" />
+          <ScalarProperty Name="QtyAllocated" ColumnName="QtyAllocated" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="AllocatedValue" ColumnName="AllocatedValue" />
+          <ScalarProperty Name="TotalValue" ColumnName="TotalValue" />
+          <ScalarProperty Name="AllocationId" ColumnName="AllocationId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

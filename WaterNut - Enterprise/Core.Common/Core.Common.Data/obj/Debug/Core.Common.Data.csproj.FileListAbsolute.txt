@@ -141,3 +141,7 @@ C:\Users\josep\OneDrive\WaterNut-Upgrade\WaterNut-Upgrade\WaterNut - Enterprise\
 C:\Users\josep\OneDrive\WaterNut-Upgrade\WaterNut-Upgrade\WaterNut - Enterprise\Core.Common\Core.Common.Data\obj\Debug\Core.Common.Data.csproj.CopyComplete
 C:\Users\josep\OneDrive\WaterNut-Upgrade\WaterNut-Upgrade\WaterNut - Enterprise\Core.Common\Core.Common.Data\obj\Debug\Core.Common.Data.dll
 C:\Users\josep\OneDrive\WaterNut-Upgrade\WaterNut-Upgrade\WaterNut - Enterprise\Core.Common\Core.Common.Data\obj\Debug\Core.Common.Data.pdb
+C:\Users\josep\OneDrive\WaterNut-Upgrade\WaterNut-Upgrade\WaterNut - Enterprise\Core.Common\Core.Common.Data\bin\Debug\EntityFramework.dll
+C:\Users\josep\OneDrive\WaterNut-Upgrade\WaterNut-Upgrade\WaterNut - Enterprise\Core.Common\Core.Common.Data\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\josep\OneDrive\WaterNut-Upgrade\WaterNut-Upgrade\WaterNut - Enterprise\Core.Common\Core.Common.Data\bin\Debug\EntityFramework.xml
+C:\Users\josep\OneDrive\WaterNut-Upgrade\WaterNut-Upgrade\WaterNut - Enterprise\Core.Common\Core.Common.Data\bin\Debug\EntityFramework.SqlServer.xml

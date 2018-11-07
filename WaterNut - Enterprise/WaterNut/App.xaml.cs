@@ -6,6 +6,7 @@ using System.Collections.Generic;
 using System.ComponentModel.Composition.Hosting;
 using System.ComponentModel.Composition.Primitives;
 using System.Diagnostics;
+using System.Globalization;
 using System.Reflection;
 using System.Security.Permissions;
 using System.ServiceModel;
@@ -31,7 +32,7 @@ namespace WaterNut
 
             try
             {
-
+                CultureInfo.DefaultThreadCurrentCulture = new CultureInfo("en-US");
 
                 splash.Show(TimeSpan.FromSeconds(0));
                 Current.ShutdownMode = ShutdownMode.OnExplicitShutdown;

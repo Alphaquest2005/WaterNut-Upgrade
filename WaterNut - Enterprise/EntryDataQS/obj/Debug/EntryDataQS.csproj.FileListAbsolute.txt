@@ -26,7 +26,7 @@ C:\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\EntryDataQS\obj\
 C:\Users\josep\OneDrive\WaterNut-Upgrade\WaterNut-Upgrade\WaterNut - Enterprise\EntryDataQS\bin\Debug\EntryDataQS.dll.config
 C:\Users\josep\OneDrive\WaterNut-Upgrade\WaterNut-Upgrade\WaterNut - Enterprise\EntryDataQS\bin\Debug\EntryDataQS.dll
 C:\Users\josep\OneDrive\WaterNut-Upgrade\WaterNut-Upgrade\WaterNut - Enterprise\EntryDataQS\bin\Debug\EntryDataQS.pdb
-C:\Users\josep\OneDrive\WaterNut-Upgrade\WaterNut-Upgrade\WaterNut - Enterprise\EntryDataQS\obj\Debug\EntryDataQS.csprojAssemblyReference.cache
 C:\Users\josep\OneDrive\WaterNut-Upgrade\WaterNut-Upgrade\WaterNut - Enterprise\EntryDataQS\obj\Debug\EntryDataQS.csproj.CoreCompileInputs.cache
 C:\Users\josep\OneDrive\WaterNut-Upgrade\WaterNut-Upgrade\WaterNut - Enterprise\EntryDataQS\obj\Debug\EntryDataQS.dll
 C:\Users\josep\OneDrive\WaterNut-Upgrade\WaterNut-Upgrade\WaterNut - Enterprise\EntryDataQS\obj\Debug\EntryDataQS.pdb
+C:\Users\josep\OneDrive\WaterNut-Upgrade\WaterNut-Upgrade\WaterNut - Enterprise\EntryDataQS\obj\Debug\EntryDataQS.csprojAssemblyReference.cache

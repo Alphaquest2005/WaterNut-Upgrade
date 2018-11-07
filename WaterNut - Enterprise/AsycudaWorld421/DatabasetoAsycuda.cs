@@ -516,6 +516,8 @@ namespace Asycuda421
 
             ai.Valuation_item.Weight_itm.Gross_weight_itm = "1"; //(Decimal)ops.Quantity;
             ai.Valuation_item.Weight_itm.Net_weight_itm = "1"; //(Decimal)ops.Quantity;
+
+            ////////////////////// new upgrade dose not update based on first line so this is irrelevant
             if (da.xcuda_ASYCUDA_ExtendedProperties.Customs_Procedure != null)
             {
                 if (da.xcuda_ASYCUDA_ExtendedProperties.Customs_Procedure.Extended_customs_procedure != null)
@@ -632,9 +634,17 @@ namespace Asycuda421
             if (item.xcuda_Tarification != null)
             {
                 if (item.xcuda_Tarification.Extended_customs_procedure != null)
+                {
+                    ai.Tarification.Extended_customs_procedure.Text.Clear();
                     ai.Tarification.Extended_customs_procedure.Text.Add(item.xcuda_Tarification.Extended_customs_procedure);
+                }
+
                 if (item.xcuda_Tarification.National_customs_procedure != null)
+                {
+                    ai.Tarification.National_customs_procedure.Text.Clear();
                     ai.Tarification.National_customs_procedure.Text.Add(item.xcuda_Tarification.National_customs_procedure);
+                }
+
                 if (item.xcuda_Tarification.Item_price != 0)
                     ai.Tarification.Item_price = Math.Round(item.xcuda_Tarification.Item_price, 2).ToString();
                 SaveHSCode(item, ai);
@@ -710,9 +720,9 @@ namespace Asycuda421
             if (da.xcuda_Declarant != null)
             {
                 if (da.xcuda_Declarant.Declarant_code != null)
-                    a.Declarant.Declarant_code = da.xcuda_Declarant.Declarant_code;
+                    a.Declarant.Declarant_code.Text.Add(da.xcuda_Declarant.Declarant_code);
                 if (da.xcuda_Declarant.Declarant_name != null)
-                    a.Declarant.Declarant_name = da.xcuda_Declarant.Declarant_name;
+                    a.Declarant.Declarant_name.Text.Add(da.xcuda_Declarant.Declarant_name);
                 if (da.xcuda_Declarant.Declarant_representative != null)
                     a.Declarant.Declarant_representative.Text.Add(da.xcuda_Declarant.Declarant_representative);
                 if (da.xcuda_Declarant.Number != null)

@@ -82,8 +82,8 @@ namespace WaterNut.DataSpace
                 throw new ApplicationException("Filter string dose not contain 'Invoice Date'");
                 
             }
-            var realStartDate = DateTime.Parse(filterExp.Substring(filterExp.IndexOf("InvoiceDate >= ")+ "InvoiceDate >= ".Length + 1, 10));
-            var realEndDate = DateTime.Parse(filterExp.Substring(filterExp.IndexOf("InvoiceDate <= ") + "InvoiceDate <= ".Length + 1, 19));
+            var realStartDate = DateTime.Parse(filterExp.Substring(filterExp.IndexOf("InvoiceDate >= ")+ "InvoiceDate >= ".Length + 1, 10), CultureInfo.CurrentCulture);
+            var realEndDate = DateTime.Parse(filterExp.Substring(filterExp.IndexOf("InvoiceDate <= ") + "InvoiceDate <= ".Length + 1, 19), CultureInfo.CurrentCulture);
             DateTime startDate = realStartDate;
 
             while (startDate <= realEndDate)
@@ -716,35 +716,7 @@ GROUP BY AllocationsItemNameMapping.ItemNumber, SIM.QtySold, ISNULL(SEX.PiQuanti
                                     DateTime.Now);
                             
                     }
-                    //var res11 = pres.Where(exp).ToList();
-
-                    //var res33 = pres.Where(@"(EntryDataDetails.Sales.EntryDataDate >= ""12/01/2017"") 
-                    //                            && (EntryDataDetails.Sales.EntryDataDate <= ""12/31/2017"") 
-                    //                            && EntryDataDetails.ItemNumber.Contains(""15957665"") 
-                    //                            && (EntryDataDetails.Sales.TaxAmount == 0) 
-                    //                            && (PreviousItem_Id != null)
-                    //                            && (xEntryItem_Id == null || xEntryItem_Id == 0)
-                    //                            && (PreviousDocumentItem.IsAssessed == true) 
-                    //                            && (QtyAllocated != null && EntryDataDetailsId != null && EntryDataDetails.Cost > 0) 
-                    //                            && (PreviousDocumentItem.AsycudaDocument.RegistrationDate != DateTime.MinValue) 
-                    //                            && (PreviousDocumentItem.AsycudaDocument.CNumber != null) 
-                    //                            && (EntryDataDetails.InventoryItem.TariffCodes.Invalid != true) 
-                    //                            && (Status == null || Status == """") 
-                    //                            && (PreviousDocumentItem.AsycudaDocument.RegistrationDate >= ""5/22/2015 12:00:00 AM"" )
-                    //                            && (PreviousDocumentItem.AsycudaDocument.Extended_customs_procedure == ""7000"" )
-                    //                            && (PreviousDocumentItem.DoNotAllocate != true) 
-                    //                            && (PreviousDocumentItem.DoNotEX != true )
-                    //                            &&( PreviousDocumentItem.WarehouseError == null )
-                    //                            && (PreviousDocumentItem.AsycudaDocument.DocumentType == ""IM7"")
-                    //                                ").ToList();
-
-                    //var res22 = pres.Where(exp)
-                    //    .Where(
-                    //        x =>
-                    //            x.xEntryItem_Id == null &&
-                    //            x.PreviousDocumentItem.xcuda_Tarification.xcuda_Supplementary_unit.Any(ss => ss.IsFirstRow == true) &&
-                    //            x.PreviousDocumentItem.xcuda_Tarification.xcuda_Supplementary_unit.FirstOrDefault(ss => ss.IsFirstRow == true)
-                    //                .Suppplementary_unit_quantity != 0).ToList();
+                    
 
                     res = pres.Where(exp)
                         .Where(
@@ -797,7 +769,7 @@ GROUP BY AllocationsItemNameMapping.ItemNumber, SIM.QtySold, ISNULL(SEX.PiQuanti
                             Net_weight_itm = c.w.FirstOrDefault().Net_weight_itm ,
                             // Net_weight_itm = c.x.PreviousDocumentItem != null ? ctx.xcuda_Weight_itm.FirstOrDefault(q => q.Valuation_item_Id == x.PreviousItem_Id).Net_weight_itm: 0,
                             previousItems = c.x.PreviousDocumentItem.EntryPreviousItems.Select(y => y.xcuda_PreviousItem)
-                                    .Where(y => y.xcuda_Item.AsycudaDocument.CNumber != null && y.xcuda_Item.AsycudaDocument.Cancelled != true)
+                                    .Where(y => (y.xcuda_Item.AsycudaDocument.CNumber != null || y.xcuda_Item.AsycudaDocument.IsManuallyAssessed == true) && y.xcuda_Item.AsycudaDocument.Cancelled != true)
                                     .Select(z => new previousItems()
                                     {
                                         DutyFreePaid =

@@ -2500,9 +2500,9 @@ namespace Asycuda421
     public partial class ASYCUDAAssessment_notice : System.ComponentModel.INotifyPropertyChanged
     {
 
-        private ObservableCollection<object> registration_yearField;
+        private ASYCUDAAssessment_noticeRegistration_year registration_yearField;
 
-        private ObservableCollection<object> assessment_yearField;
+        private ASYCUDAAssessment_noticeAssessment_year assessment_yearField;
 
         private ObservableCollection<object> total_item_taxesField;
 
@@ -2529,13 +2529,12 @@ namespace Asycuda421
             this.statement_dateField = new ObservableCollection<object>();
             this.statement_numberField = new ASYCUDAAssessment_noticeStatement_number();
             this.total_item_taxesField = new ObservableCollection<object>();
-            this.assessment_yearField = new ObservableCollection<object>();
-            this.registration_yearField = new ObservableCollection<object>();
+            this.assessment_yearField = new ASYCUDAAssessment_noticeAssessment_year();
+            this.registration_yearField = new ASYCUDAAssessment_noticeRegistration_year();
         }
 
-        [System.Xml.Serialization.XmlElementAttribute("Registration_year")]
         [System.Runtime.Serialization.DataMemberAttribute()]
-        public ObservableCollection<object> Registration_year
+        public ASYCUDAAssessment_noticeRegistration_year Registration_year
         {
             get
             {
@@ -2559,9 +2558,8 @@ namespace Asycuda421
             }
         }
 
-        [System.Xml.Serialization.XmlElementAttribute("Assessment_year")]
         [System.Runtime.Serialization.DataMemberAttribute()]
-        public ObservableCollection<object> Assessment_year
+        public ASYCUDAAssessment_noticeAssessment_year Assessment_year
         {
             get
             {
@@ -2993,6 +2991,614 @@ namespace Asycuda421
         public virtual ASYCUDAAssessment_notice Clone()
         {
             return ((ASYCUDAAssessment_notice)(this.MemberwiseClone()));
+        }
+        #endregion
+    }
+
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.3056.0")]
+    [System.SerializableAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
+    [System.Runtime.Serialization.DataContractAttribute(Name = "ASYCUDAAssessment_noticeRegistration_year")]
+    public partial class ASYCUDAAssessment_noticeRegistration_year : System.ComponentModel.INotifyPropertyChanged
+    {
+
+        private object nullField;
+
+        private ObservableCollection<string> textField;
+
+        private static System.Xml.Serialization.XmlSerializer serializer;
+
+        public ASYCUDAAssessment_noticeRegistration_year()
+        {
+            this.textField = new ObservableCollection<string>();
+        }
+
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public object @null
+        {
+            get
+            {
+                return this.nullField;
+            }
+            set
+            {
+                if ((this.nullField != null))
+                {
+                    if ((nullField.Equals(value) != true))
+                    {
+                        this.nullField = value;
+                        this.OnPropertyChanged("null");
+                    }
+                }
+                else
+                {
+                    this.nullField = value;
+                    this.OnPropertyChanged("null");
+                }
+            }
+        }
+
+        [System.Xml.Serialization.XmlTextAttribute()]
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public ObservableCollection<string> Text
+        {
+            get
+            {
+                return this.textField;
+            }
+            set
+            {
+                if ((this.textField != null))
+                {
+                    if ((textField.Equals(value) != true))
+                    {
+                        this.textField = value;
+                        this.OnPropertyChanged("Text");
+                    }
+                }
+                else
+                {
+                    this.textField = value;
+                    this.OnPropertyChanged("Text");
+                }
+            }
+        }
+
+        private static System.Xml.Serialization.XmlSerializer Serializer
+        {
+            get
+            {
+                if ((serializer == null))
+                {
+                    serializer = new System.Xml.Serialization.XmlSerializer(typeof(ASYCUDAAssessment_noticeRegistration_year));
+                }
+                return serializer;
+            }
+        }
+
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+
+        public virtual void OnPropertyChanged(string propertyName)
+        {
+            System.ComponentModel.PropertyChangedEventHandler handler = this.PropertyChanged;
+            if ((handler != null))
+            {
+                handler(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+
+        #region Serialize/Deserialize
+        /// <summary>
+        /// Serializes current ASYCUDAAssessment_noticeRegistration_year object into an XML document
+        /// </summary>
+        /// <returns>string XML value</returns>
+        public virtual string Serialize(System.Text.Encoding encoding)
+        {
+            System.IO.StreamReader streamReader = null;
+            System.IO.MemoryStream memoryStream = null;
+            try
+            {
+                memoryStream = new System.IO.MemoryStream();
+                System.Xml.XmlWriterSettings xmlWriterSettings = new System.Xml.XmlWriterSettings();
+                xmlWriterSettings.Encoding = encoding;
+                System.Xml.XmlWriter xmlWriter = XmlWriter.Create(memoryStream, xmlWriterSettings);
+                Serializer.Serialize(xmlWriter, this);
+                memoryStream.Seek(0, System.IO.SeekOrigin.Begin);
+                streamReader = new System.IO.StreamReader(memoryStream);
+                return streamReader.ReadToEnd();
+            }
+            finally
+            {
+                if ((streamReader != null))
+                {
+                    streamReader.Dispose();
+                }
+                if ((memoryStream != null))
+                {
+                    memoryStream.Dispose();
+                }
+            }
+        }
+
+        public virtual string Serialize()
+        {
+            return Serialize(Encoding.UTF8);
+        }
+
+        /// <summary>
+        /// Deserializes workflow markup into an ASYCUDAAssessment_noticeRegistration_year object
+        /// </summary>
+        /// <param name="xml">string workflow markup to deserialize</param>
+        /// <param name="obj">Output ASYCUDAAssessment_noticeRegistration_year object</param>
+        /// <param name="exception">output Exception value if deserialize failed</param>
+        /// <returns>true if this XmlSerializer can deserialize the object; otherwise, false</returns>
+        public static bool Deserialize(string xml, out ASYCUDAAssessment_noticeRegistration_year obj, out System.Exception exception)
+        {
+            exception = null;
+            obj = default(ASYCUDAAssessment_noticeRegistration_year);
+            try
+            {
+                obj = Deserialize(xml);
+                return true;
+            }
+            catch (System.Exception ex)
+            {
+                exception = ex;
+                return false;
+            }
+        }
+
+        public static bool Deserialize(string xml, out ASYCUDAAssessment_noticeRegistration_year obj)
+        {
+            System.Exception exception = null;
+            return Deserialize(xml, out obj, out exception);
+        }
+
+        public static ASYCUDAAssessment_noticeRegistration_year Deserialize(string xml)
+        {
+            System.IO.StringReader stringReader = null;
+            try
+            {
+                stringReader = new System.IO.StringReader(xml);
+                return ((ASYCUDAAssessment_noticeRegistration_year)(Serializer.Deserialize(System.Xml.XmlReader.Create(stringReader))));
+            }
+            finally
+            {
+                if ((stringReader != null))
+                {
+                    stringReader.Dispose();
+                }
+            }
+        }
+
+        /// <summary>
+        /// Serializes current ASYCUDAAssessment_noticeRegistration_year object into file
+        /// </summary>
+        /// <param name="fileName">full path of outupt xml file</param>
+        /// <param name="exception">output Exception value if failed</param>
+        /// <returns>true if can serialize and save into file; otherwise, false</returns>
+        public virtual bool SaveToFile(string fileName, System.Text.Encoding encoding, out System.Exception exception)
+        {
+            exception = null;
+            try
+            {
+                SaveToFile(fileName, encoding);
+                return true;
+            }
+            catch (System.Exception e)
+            {
+                exception = e;
+                return false;
+            }
+        }
+
+        public virtual bool SaveToFile(string fileName, out System.Exception exception)
+        {
+            return SaveToFile(fileName, Encoding.UTF8, out exception);
+        }
+
+        public virtual void SaveToFile(string fileName)
+        {
+            SaveToFile(fileName, Encoding.UTF8);
+        }
+
+        public virtual void SaveToFile(string fileName, System.Text.Encoding encoding)
+        {
+            System.IO.StreamWriter streamWriter = null;
+            try
+            {
+                string xmlString = Serialize(encoding);
+                streamWriter = new System.IO.StreamWriter(fileName, false, Encoding.UTF8);
+                streamWriter.WriteLine(xmlString);
+                streamWriter.Close();
+            }
+            finally
+            {
+                if ((streamWriter != null))
+                {
+                    streamWriter.Dispose();
+                }
+            }
+        }
+
+        /// <summary>
+        /// Deserializes xml markup from file into an ASYCUDAAssessment_noticeRegistration_year object
+        /// </summary>
+        /// <param name="fileName">string xml file to load and deserialize</param>
+        /// <param name="obj">Output ASYCUDAAssessment_noticeRegistration_year object</param>
+        /// <param name="exception">output Exception value if deserialize failed</param>
+        /// <returns>true if this XmlSerializer can deserialize the object; otherwise, false</returns>
+        public static bool LoadFromFile(string fileName, System.Text.Encoding encoding, out ASYCUDAAssessment_noticeRegistration_year obj, out System.Exception exception)
+        {
+            exception = null;
+            obj = default(ASYCUDAAssessment_noticeRegistration_year);
+            try
+            {
+                obj = LoadFromFile(fileName, encoding);
+                return true;
+            }
+            catch (System.Exception ex)
+            {
+                exception = ex;
+                return false;
+            }
+        }
+
+        public static bool LoadFromFile(string fileName, out ASYCUDAAssessment_noticeRegistration_year obj, out System.Exception exception)
+        {
+            return LoadFromFile(fileName, Encoding.UTF8, out obj, out exception);
+        }
+
+        public static bool LoadFromFile(string fileName, out ASYCUDAAssessment_noticeRegistration_year obj)
+        {
+            System.Exception exception = null;
+            return LoadFromFile(fileName, out obj, out exception);
+        }
+
+        public static ASYCUDAAssessment_noticeRegistration_year LoadFromFile(string fileName)
+        {
+            return LoadFromFile(fileName, Encoding.UTF8);
+        }
+
+        public static ASYCUDAAssessment_noticeRegistration_year LoadFromFile(string fileName, System.Text.Encoding encoding)
+        {
+            System.IO.FileStream file = null;
+            System.IO.StreamReader sr = null;
+            try
+            {
+                file = new System.IO.FileStream(fileName, FileMode.Open, FileAccess.Read);
+                sr = new System.IO.StreamReader(file, encoding);
+                string xmlString = sr.ReadToEnd();
+                sr.Close();
+                file.Close();
+                return Deserialize(xmlString);
+            }
+            finally
+            {
+                if ((file != null))
+                {
+                    file.Dispose();
+                }
+                if ((sr != null))
+                {
+                    sr.Dispose();
+                }
+            }
+        }
+        #endregion
+
+        #region Clone method
+        /// <summary>
+        /// Create a clone of this ASYCUDAAssessment_noticeRegistration_year object
+        /// </summary>
+        public virtual ASYCUDAAssessment_noticeRegistration_year Clone()
+        {
+            return ((ASYCUDAAssessment_noticeRegistration_year)(this.MemberwiseClone()));
+        }
+        #endregion
+    }
+
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.3056.0")]
+    [System.SerializableAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
+    [System.Runtime.Serialization.DataContractAttribute(Name = "ASYCUDAAssessment_noticeAssessment_year")]
+    public partial class ASYCUDAAssessment_noticeAssessment_year : System.ComponentModel.INotifyPropertyChanged
+    {
+
+        private object nullField;
+
+        private ObservableCollection<string> textField;
+
+        private static System.Xml.Serialization.XmlSerializer serializer;
+
+        public ASYCUDAAssessment_noticeAssessment_year()
+        {
+            this.textField = new ObservableCollection<string>();
+        }
+
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public object @null
+        {
+            get
+            {
+                return this.nullField;
+            }
+            set
+            {
+                if ((this.nullField != null))
+                {
+                    if ((nullField.Equals(value) != true))
+                    {
+                        this.nullField = value;
+                        this.OnPropertyChanged("null");
+                    }
+                }
+                else
+                {
+                    this.nullField = value;
+                    this.OnPropertyChanged("null");
+                }
+            }
+        }
+
+        [System.Xml.Serialization.XmlTextAttribute()]
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public ObservableCollection<string> Text
+        {
+            get
+            {
+                return this.textField;
+            }
+            set
+            {
+                if ((this.textField != null))
+                {
+                    if ((textField.Equals(value) != true))
+                    {
+                        this.textField = value;
+                        this.OnPropertyChanged("Text");
+                    }
+                }
+                else
+                {
+                    this.textField = value;
+                    this.OnPropertyChanged("Text");
+                }
+            }
+        }
+
+        private static System.Xml.Serialization.XmlSerializer Serializer
+        {
+            get
+            {
+                if ((serializer == null))
+                {
+                    serializer = new System.Xml.Serialization.XmlSerializer(typeof(ASYCUDAAssessment_noticeAssessment_year));
+                }
+                return serializer;
+            }
+        }
+
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+
+        public virtual void OnPropertyChanged(string propertyName)
+        {
+            System.ComponentModel.PropertyChangedEventHandler handler = this.PropertyChanged;
+            if ((handler != null))
+            {
+                handler(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+
+        #region Serialize/Deserialize
+        /// <summary>
+        /// Serializes current ASYCUDAAssessment_noticeAssessment_year object into an XML document
+        /// </summary>
+        /// <returns>string XML value</returns>
+        public virtual string Serialize(System.Text.Encoding encoding)
+        {
+            System.IO.StreamReader streamReader = null;
+            System.IO.MemoryStream memoryStream = null;
+            try
+            {
+                memoryStream = new System.IO.MemoryStream();
+                System.Xml.XmlWriterSettings xmlWriterSettings = new System.Xml.XmlWriterSettings();
+                xmlWriterSettings.Encoding = encoding;
+                System.Xml.XmlWriter xmlWriter = XmlWriter.Create(memoryStream, xmlWriterSettings);
+                Serializer.Serialize(xmlWriter, this);
+                memoryStream.Seek(0, System.IO.SeekOrigin.Begin);
+                streamReader = new System.IO.StreamReader(memoryStream);
+                return streamReader.ReadToEnd();
+            }
+            finally
+            {
+                if ((streamReader != null))
+                {
+                    streamReader.Dispose();
+                }
+                if ((memoryStream != null))
+                {
+                    memoryStream.Dispose();
+                }
+            }
+        }
+
+        public virtual string Serialize()
+        {
+            return Serialize(Encoding.UTF8);
+        }
+
+        /// <summary>
+        /// Deserializes workflow markup into an ASYCUDAAssessment_noticeAssessment_year object
+        /// </summary>
+        /// <param name="xml">string workflow markup to deserialize</param>
+        /// <param name="obj">Output ASYCUDAAssessment_noticeAssessment_year object</param>
+        /// <param name="exception">output Exception value if deserialize failed</param>
+        /// <returns>true if this XmlSerializer can deserialize the object; otherwise, false</returns>
+        public static bool Deserialize(string xml, out ASYCUDAAssessment_noticeAssessment_year obj, out System.Exception exception)
+        {
+            exception = null;
+            obj = default(ASYCUDAAssessment_noticeAssessment_year);
+            try
+            {
+                obj = Deserialize(xml);
+                return true;
+            }
+            catch (System.Exception ex)
+            {
+                exception = ex;
+                return false;
+            }
+        }
+
+        public static bool Deserialize(string xml, out ASYCUDAAssessment_noticeAssessment_year obj)
+        {
+            System.Exception exception = null;
+            return Deserialize(xml, out obj, out exception);
+        }
+
+        public static ASYCUDAAssessment_noticeAssessment_year Deserialize(string xml)
+        {
+            System.IO.StringReader stringReader = null;
+            try
+            {
+                stringReader = new System.IO.StringReader(xml);
+                return ((ASYCUDAAssessment_noticeAssessment_year)(Serializer.Deserialize(System.Xml.XmlReader.Create(stringReader))));
+            }
+            finally
+            {
+                if ((stringReader != null))
+                {
+                    stringReader.Dispose();
+                }
+            }
+        }
+
+        /// <summary>
+        /// Serializes current ASYCUDAAssessment_noticeAssessment_year object into file
+        /// </summary>
+        /// <param name="fileName">full path of outupt xml file</param>
+        /// <param name="exception">output Exception value if failed</param>
+        /// <returns>true if can serialize and save into file; otherwise, false</returns>
+        public virtual bool SaveToFile(string fileName, System.Text.Encoding encoding, out System.Exception exception)
+        {
+            exception = null;
+            try
+            {
+                SaveToFile(fileName, encoding);
+                return true;
+            }
+            catch (System.Exception e)
+            {
+                exception = e;
+                return false;
+            }
+        }
+
+        public virtual bool SaveToFile(string fileName, out System.Exception exception)
+        {
+            return SaveToFile(fileName, Encoding.UTF8, out exception);
+        }
+
+        public virtual void SaveToFile(string fileName)
+        {
+            SaveToFile(fileName, Encoding.UTF8);
+        }
+
+        public virtual void SaveToFile(string fileName, System.Text.Encoding encoding)
+        {
+            System.IO.StreamWriter streamWriter = null;
+            try
+            {
+                string xmlString = Serialize(encoding);
+                streamWriter = new System.IO.StreamWriter(fileName, false, Encoding.UTF8);
+                streamWriter.WriteLine(xmlString);
+                streamWriter.Close();
+            }
+            finally
+            {
+                if ((streamWriter != null))
+                {
+                    streamWriter.Dispose();
+                }
+            }
+        }
+
+        /// <summary>
+        /// Deserializes xml markup from file into an ASYCUDAAssessment_noticeAssessment_year object
+        /// </summary>
+        /// <param name="fileName">string xml file to load and deserialize</param>
+        /// <param name="obj">Output ASYCUDAAssessment_noticeAssessment_year object</param>
+        /// <param name="exception">output Exception value if deserialize failed</param>
+        /// <returns>true if this XmlSerializer can deserialize the object; otherwise, false</returns>
+        public static bool LoadFromFile(string fileName, System.Text.Encoding encoding, out ASYCUDAAssessment_noticeAssessment_year obj, out System.Exception exception)
+        {
+            exception = null;
+            obj = default(ASYCUDAAssessment_noticeAssessment_year);
+            try
+            {
+                obj = LoadFromFile(fileName, encoding);
+                return true;
+            }
+            catch (System.Exception ex)
+            {
+                exception = ex;
+                return false;
+            }
+        }
+
+        public static bool LoadFromFile(string fileName, out ASYCUDAAssessment_noticeAssessment_year obj, out System.Exception exception)
+        {
+            return LoadFromFile(fileName, Encoding.UTF8, out obj, out exception);
+        }
+
+        public static bool LoadFromFile(string fileName, out ASYCUDAAssessment_noticeAssessment_year obj)
+        {
+            System.Exception exception = null;
+            return LoadFromFile(fileName, out obj, out exception);
+        }
+
+        public static ASYCUDAAssessment_noticeAssessment_year LoadFromFile(string fileName)
+        {
+            return LoadFromFile(fileName, Encoding.UTF8);
+        }
+
+        public static ASYCUDAAssessment_noticeAssessment_year LoadFromFile(string fileName, System.Text.Encoding encoding)
+        {
+            System.IO.FileStream file = null;
+            System.IO.StreamReader sr = null;
+            try
+            {
+                file = new System.IO.FileStream(fileName, FileMode.Open, FileAccess.Read);
+                sr = new System.IO.StreamReader(file, encoding);
+                string xmlString = sr.ReadToEnd();
+                sr.Close();
+                file.Close();
+                return Deserialize(xmlString);
+            }
+            finally
+            {
+                if ((file != null))
+                {
+                    file.Dispose();
+                }
+                if ((sr != null))
+                {
+                    sr.Dispose();
+                }
+            }
+        }
+        #endregion
+
+        #region Clone method
+        /// <summary>
+        /// Create a clone of this ASYCUDAAssessment_noticeAssessment_year object
+        /// </summary>
+        public virtual ASYCUDAAssessment_noticeAssessment_year Clone()
+        {
+            return ((ASYCUDAAssessment_noticeAssessment_year)(this.MemberwiseClone()));
         }
         #endregion
     }
@@ -14488,9 +15094,9 @@ namespace Asycuda421
     public partial class ASYCUDADeclarant : System.ComponentModel.INotifyPropertyChanged
     {
 
-        private string declarant_codeField;
+        private ASYCUDADeclarantDeclarant_code declarant_codeField;
 
-        private string declarant_nameField;
+        private ASYCUDADeclarantDeclarant_name declarant_nameField;
 
         private ASYCUDADeclarantDeclarant_representative declarant_representativeField;
 
@@ -14505,10 +15111,12 @@ namespace Asycuda421
             this.textField = new ObservableCollection<string>();
             this.referenceField = new ASYCUDADeclarantReference();
             this.declarant_representativeField = new ASYCUDADeclarantDeclarant_representative();
+            this.declarant_nameField = new ASYCUDADeclarantDeclarant_name();
+            this.declarant_codeField = new ASYCUDADeclarantDeclarant_code();
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        public string Declarant_code
+        public ASYCUDADeclarantDeclarant_code Declarant_code
         {
             get
             {
@@ -14533,7 +15141,7 @@ namespace Asycuda421
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        public string Declarant_name
+        public ASYCUDADeclarantDeclarant_name Declarant_name
         {
             get
             {
@@ -14863,6 +15471,614 @@ namespace Asycuda421
         public virtual ASYCUDADeclarant Clone()
         {
             return ((ASYCUDADeclarant)(this.MemberwiseClone()));
+        }
+        #endregion
+    }
+
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.3056.0")]
+    [System.SerializableAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
+    [System.Runtime.Serialization.DataContractAttribute(Name = "ASYCUDADeclarantDeclarant_code")]
+    public partial class ASYCUDADeclarantDeclarant_code : System.ComponentModel.INotifyPropertyChanged
+    {
+
+        private object nullField;
+
+        private ObservableCollection<string> textField;
+
+        private static System.Xml.Serialization.XmlSerializer serializer;
+
+        public ASYCUDADeclarantDeclarant_code()
+        {
+            this.textField = new ObservableCollection<string>();
+        }
+
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public object @null
+        {
+            get
+            {
+                return this.nullField;
+            }
+            set
+            {
+                if ((this.nullField != null))
+                {
+                    if ((nullField.Equals(value) != true))
+                    {
+                        this.nullField = value;
+                        this.OnPropertyChanged("null");
+                    }
+                }
+                else
+                {
+                    this.nullField = value;
+                    this.OnPropertyChanged("null");
+                }
+            }
+        }
+
+        [System.Xml.Serialization.XmlTextAttribute()]
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public ObservableCollection<string> Text
+        {
+            get
+            {
+                return this.textField;
+            }
+            set
+            {
+                if ((this.textField != null))
+                {
+                    if ((textField.Equals(value) != true))
+                    {
+                        this.textField = value;
+                        this.OnPropertyChanged("Text");
+                    }
+                }
+                else
+                {
+                    this.textField = value;
+                    this.OnPropertyChanged("Text");
+                }
+            }
+        }
+
+        private static System.Xml.Serialization.XmlSerializer Serializer
+        {
+            get
+            {
+                if ((serializer == null))
+                {
+                    serializer = new System.Xml.Serialization.XmlSerializer(typeof(ASYCUDADeclarantDeclarant_code));
+                }
+                return serializer;
+            }
+        }
+
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+
+        public virtual void OnPropertyChanged(string propertyName)
+        {
+            System.ComponentModel.PropertyChangedEventHandler handler = this.PropertyChanged;
+            if ((handler != null))
+            {
+                handler(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+
+        #region Serialize/Deserialize
+        /// <summary>
+        /// Serializes current ASYCUDADeclarantDeclarant_code object into an XML document
+        /// </summary>
+        /// <returns>string XML value</returns>
+        public virtual string Serialize(System.Text.Encoding encoding)
+        {
+            System.IO.StreamReader streamReader = null;
+            System.IO.MemoryStream memoryStream = null;
+            try
+            {
+                memoryStream = new System.IO.MemoryStream();
+                System.Xml.XmlWriterSettings xmlWriterSettings = new System.Xml.XmlWriterSettings();
+                xmlWriterSettings.Encoding = encoding;
+                System.Xml.XmlWriter xmlWriter = XmlWriter.Create(memoryStream, xmlWriterSettings);
+                Serializer.Serialize(xmlWriter, this);
+                memoryStream.Seek(0, System.IO.SeekOrigin.Begin);
+                streamReader = new System.IO.StreamReader(memoryStream);
+                return streamReader.ReadToEnd();
+            }
+            finally
+            {
+                if ((streamReader != null))
+                {
+                    streamReader.Dispose();
+                }
+                if ((memoryStream != null))
+                {
+                    memoryStream.Dispose();
+                }
+            }
+        }
+
+        public virtual string Serialize()
+        {
+            return Serialize(Encoding.UTF8);
+        }
+
+        /// <summary>
+        /// Deserializes workflow markup into an ASYCUDADeclarantDeclarant_code object
+        /// </summary>
+        /// <param name="xml">string workflow markup to deserialize</param>
+        /// <param name="obj">Output ASYCUDADeclarantDeclarant_code object</param>
+        /// <param name="exception">output Exception value if deserialize failed</param>
+        /// <returns>true if this XmlSerializer can deserialize the object; otherwise, false</returns>
+        public static bool Deserialize(string xml, out ASYCUDADeclarantDeclarant_code obj, out System.Exception exception)
+        {
+            exception = null;
+            obj = default(ASYCUDADeclarantDeclarant_code);
+            try
+            {
+                obj = Deserialize(xml);
+                return true;
+            }
+            catch (System.Exception ex)
+            {
+                exception = ex;
+                return false;
+            }
+        }
+
+        public static bool Deserialize(string xml, out ASYCUDADeclarantDeclarant_code obj)
+        {
+            System.Exception exception = null;
+            return Deserialize(xml, out obj, out exception);
+        }
+
+        public static ASYCUDADeclarantDeclarant_code Deserialize(string xml)
+        {
+            System.IO.StringReader stringReader = null;
+            try
+            {
+                stringReader = new System.IO.StringReader(xml);
+                return ((ASYCUDADeclarantDeclarant_code)(Serializer.Deserialize(System.Xml.XmlReader.Create(stringReader))));
+            }
+            finally
+            {
+                if ((stringReader != null))
+                {
+                    stringReader.Dispose();
+                }
+            }
+        }
+
+        /// <summary>
+        /// Serializes current ASYCUDADeclarantDeclarant_code object into file
+        /// </summary>
+        /// <param name="fileName">full path of outupt xml file</param>
+        /// <param name="exception">output Exception value if failed</param>
+        /// <returns>true if can serialize and save into file; otherwise, false</returns>
+        public virtual bool SaveToFile(string fileName, System.Text.Encoding encoding, out System.Exception exception)
+        {
+            exception = null;
+            try
+            {
+                SaveToFile(fileName, encoding);
+                return true;
+            }
+            catch (System.Exception e)
+            {
+                exception = e;
+                return false;
+            }
+        }
+
+        public virtual bool SaveToFile(string fileName, out System.Exception exception)
+        {
+            return SaveToFile(fileName, Encoding.UTF8, out exception);
+        }
+
+        public virtual void SaveToFile(string fileName)
+        {
+            SaveToFile(fileName, Encoding.UTF8);
+        }
+
+        public virtual void SaveToFile(string fileName, System.Text.Encoding encoding)
+        {
+            System.IO.StreamWriter streamWriter = null;
+            try
+            {
+                string xmlString = Serialize(encoding);
+                streamWriter = new System.IO.StreamWriter(fileName, false, Encoding.UTF8);
+                streamWriter.WriteLine(xmlString);
+                streamWriter.Close();
+            }
+            finally
+            {
+                if ((streamWriter != null))
+                {
+                    streamWriter.Dispose();
+                }
+            }
+        }
+
+        /// <summary>
+        /// Deserializes xml markup from file into an ASYCUDADeclarantDeclarant_code object
+        /// </summary>
+        /// <param name="fileName">string xml file to load and deserialize</param>
+        /// <param name="obj">Output ASYCUDADeclarantDeclarant_code object</param>
+        /// <param name="exception">output Exception value if deserialize failed</param>
+        /// <returns>true if this XmlSerializer can deserialize the object; otherwise, false</returns>
+        public static bool LoadFromFile(string fileName, System.Text.Encoding encoding, out ASYCUDADeclarantDeclarant_code obj, out System.Exception exception)
+        {
+            exception = null;
+            obj = default(ASYCUDADeclarantDeclarant_code);
+            try
+            {
+                obj = LoadFromFile(fileName, encoding);
+                return true;
+            }
+            catch (System.Exception ex)
+            {
+                exception = ex;
+                return false;
+            }
+        }
+
+        public static bool LoadFromFile(string fileName, out ASYCUDADeclarantDeclarant_code obj, out System.Exception exception)
+        {
+            return LoadFromFile(fileName, Encoding.UTF8, out obj, out exception);
+        }
+
+        public static bool LoadFromFile(string fileName, out ASYCUDADeclarantDeclarant_code obj)
+        {
+            System.Exception exception = null;
+            return LoadFromFile(fileName, out obj, out exception);
+        }
+
+        public static ASYCUDADeclarantDeclarant_code LoadFromFile(string fileName)
+        {
+            return LoadFromFile(fileName, Encoding.UTF8);
+        }
+
+        public static ASYCUDADeclarantDeclarant_code LoadFromFile(string fileName, System.Text.Encoding encoding)
+        {
+            System.IO.FileStream file = null;
+            System.IO.StreamReader sr = null;
+            try
+            {
+                file = new System.IO.FileStream(fileName, FileMode.Open, FileAccess.Read);
+                sr = new System.IO.StreamReader(file, encoding);
+                string xmlString = sr.ReadToEnd();
+                sr.Close();
+                file.Close();
+                return Deserialize(xmlString);
+            }
+            finally
+            {
+                if ((file != null))
+                {
+                    file.Dispose();
+                }
+                if ((sr != null))
+                {
+                    sr.Dispose();
+                }
+            }
+        }
+        #endregion
+
+        #region Clone method
+        /// <summary>
+        /// Create a clone of this ASYCUDADeclarantDeclarant_code object
+        /// </summary>
+        public virtual ASYCUDADeclarantDeclarant_code Clone()
+        {
+            return ((ASYCUDADeclarantDeclarant_code)(this.MemberwiseClone()));
+        }
+        #endregion
+    }
+
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.3056.0")]
+    [System.SerializableAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
+    [System.Runtime.Serialization.DataContractAttribute(Name = "ASYCUDADeclarantDeclarant_name")]
+    public partial class ASYCUDADeclarantDeclarant_name : System.ComponentModel.INotifyPropertyChanged
+    {
+
+        private object nullField;
+
+        private ObservableCollection<string> textField;
+
+        private static System.Xml.Serialization.XmlSerializer serializer;
+
+        public ASYCUDADeclarantDeclarant_name()
+        {
+            this.textField = new ObservableCollection<string>();
+        }
+
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public object @null
+        {
+            get
+            {
+                return this.nullField;
+            }
+            set
+            {
+                if ((this.nullField != null))
+                {
+                    if ((nullField.Equals(value) != true))
+                    {
+                        this.nullField = value;
+                        this.OnPropertyChanged("null");
+                    }
+                }
+                else
+                {
+                    this.nullField = value;
+                    this.OnPropertyChanged("null");
+                }
+            }
+        }
+
+        [System.Xml.Serialization.XmlTextAttribute()]
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public ObservableCollection<string> Text
+        {
+            get
+            {
+                return this.textField;
+            }
+            set
+            {
+                if ((this.textField != null))
+                {
+                    if ((textField.Equals(value) != true))
+                    {
+                        this.textField = value;
+                        this.OnPropertyChanged("Text");
+                    }
+                }
+                else
+                {
+                    this.textField = value;
+                    this.OnPropertyChanged("Text");
+                }
+            }
+        }
+
+        private static System.Xml.Serialization.XmlSerializer Serializer
+        {
+            get
+            {
+                if ((serializer == null))
+                {
+                    serializer = new System.Xml.Serialization.XmlSerializer(typeof(ASYCUDADeclarantDeclarant_name));
+                }
+                return serializer;
+            }
+        }
+
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+
+        public virtual void OnPropertyChanged(string propertyName)
+        {
+            System.ComponentModel.PropertyChangedEventHandler handler = this.PropertyChanged;
+            if ((handler != null))
+            {
+                handler(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+
+        #region Serialize/Deserialize
+        /// <summary>
+        /// Serializes current ASYCUDADeclarantDeclarant_name object into an XML document
+        /// </summary>
+        /// <returns>string XML value</returns>
+        public virtual string Serialize(System.Text.Encoding encoding)
+        {
+            System.IO.StreamReader streamReader = null;
+            System.IO.MemoryStream memoryStream = null;
+            try
+            {
+                memoryStream = new System.IO.MemoryStream();
+                System.Xml.XmlWriterSettings xmlWriterSettings = new System.Xml.XmlWriterSettings();
+                xmlWriterSettings.Encoding = encoding;
+                System.Xml.XmlWriter xmlWriter = XmlWriter.Create(memoryStream, xmlWriterSettings);
+                Serializer.Serialize(xmlWriter, this);
+                memoryStream.Seek(0, System.IO.SeekOrigin.Begin);
+                streamReader = new System.IO.StreamReader(memoryStream);
+                return streamReader.ReadToEnd();
+            }
+            finally
+            {
+                if ((streamReader != null))
+                {
+                    streamReader.Dispose();
+                }
+                if ((memoryStream != null))
+                {
+                    memoryStream.Dispose();
+                }
+            }
+        }
+
+        public virtual string Serialize()
+        {
+            return Serialize(Encoding.UTF8);
+        }
+
+        /// <summary>
+        /// Deserializes workflow markup into an ASYCUDADeclarantDeclarant_name object
+        /// </summary>
+        /// <param name="xml">string workflow markup to deserialize</param>
+        /// <param name="obj">Output ASYCUDADeclarantDeclarant_name object</param>
+        /// <param name="exception">output Exception value if deserialize failed</param>
+        /// <returns>true if this XmlSerializer can deserialize the object; otherwise, false</returns>
+        public static bool Deserialize(string xml, out ASYCUDADeclarantDeclarant_name obj, out System.Exception exception)
+        {
+            exception = null;
+            obj = default(ASYCUDADeclarantDeclarant_name);
+            try
+            {
+                obj = Deserialize(xml);
+                return true;
+            }
+            catch (System.Exception ex)
+            {
+                exception = ex;
+                return false;
+            }
+        }
+
+        public static bool Deserialize(string xml, out ASYCUDADeclarantDeclarant_name obj)
+        {
+            System.Exception exception = null;
+            return Deserialize(xml, out obj, out exception);
+        }
+
+        public static ASYCUDADeclarantDeclarant_name Deserialize(string xml)
+        {
+            System.IO.StringReader stringReader = null;
+            try
+            {
+                stringReader = new System.IO.StringReader(xml);
+                return ((ASYCUDADeclarantDeclarant_name)(Serializer.Deserialize(System.Xml.XmlReader.Create(stringReader))));
+            }
+            finally
+            {
+                if ((stringReader != null))
+                {
+                    stringReader.Dispose();
+                }
+            }
+        }
+
+        /// <summary>
+        /// Serializes current ASYCUDADeclarantDeclarant_name object into file
+        /// </summary>
+        /// <param name="fileName">full path of outupt xml file</param>
+        /// <param name="exception">output Exception value if failed</param>
+        /// <returns>true if can serialize and save into file; otherwise, false</returns>
+        public virtual bool SaveToFile(string fileName, System.Text.Encoding encoding, out System.Exception exception)
+        {
+            exception = null;
+            try
+            {
+                SaveToFile(fileName, encoding);
+                return true;
+            }
+            catch (System.Exception e)
+            {
+                exception = e;
+                return false;
+            }
+        }
+
+        public virtual bool SaveToFile(string fileName, out System.Exception exception)
+        {
+            return SaveToFile(fileName, Encoding.UTF8, out exception);
+        }
+
+        public virtual void SaveToFile(string fileName)
+        {
+            SaveToFile(fileName, Encoding.UTF8);
+        }
+
+        public virtual void SaveToFile(string fileName, System.Text.Encoding encoding)
+        {
+            System.IO.StreamWriter streamWriter = null;
+            try
+            {
+                string xmlString = Serialize(encoding);
+                streamWriter = new System.IO.StreamWriter(fileName, false, Encoding.UTF8);
+                streamWriter.WriteLine(xmlString);
+                streamWriter.Close();
+            }
+            finally
+            {
+                if ((streamWriter != null))
+                {
+                    streamWriter.Dispose();
+                }
+            }
+        }
+
+        /// <summary>
+        /// Deserializes xml markup from file into an ASYCUDADeclarantDeclarant_name object
+        /// </summary>
+        /// <param name="fileName">string xml file to load and deserialize</param>
+        /// <param name="obj">Output ASYCUDADeclarantDeclarant_name object</param>
+        /// <param name="exception">output Exception value if deserialize failed</param>
+        /// <returns>true if this XmlSerializer can deserialize the object; otherwise, false</returns>
+        public static bool LoadFromFile(string fileName, System.Text.Encoding encoding, out ASYCUDADeclarantDeclarant_name obj, out System.Exception exception)
+        {
+            exception = null;
+            obj = default(ASYCUDADeclarantDeclarant_name);
+            try
+            {
+                obj = LoadFromFile(fileName, encoding);
+                return true;
+            }
+            catch (System.Exception ex)
+            {
+                exception = ex;
+                return false;
+            }
+        }
+
+        public static bool LoadFromFile(string fileName, out ASYCUDADeclarantDeclarant_name obj, out System.Exception exception)
+        {
+            return LoadFromFile(fileName, Encoding.UTF8, out obj, out exception);
+        }
+
+        public static bool LoadFromFile(string fileName, out ASYCUDADeclarantDeclarant_name obj)
+        {
+            System.Exception exception = null;
+            return LoadFromFile(fileName, out obj, out exception);
+        }
+
+        public static ASYCUDADeclarantDeclarant_name LoadFromFile(string fileName)
+        {
+            return LoadFromFile(fileName, Encoding.UTF8);
+        }
+
+        public static ASYCUDADeclarantDeclarant_name LoadFromFile(string fileName, System.Text.Encoding encoding)
+        {
+            System.IO.FileStream file = null;
+            System.IO.StreamReader sr = null;
+            try
+            {
+                file = new System.IO.FileStream(fileName, FileMode.Open, FileAccess.Read);
+                sr = new System.IO.StreamReader(file, encoding);
+                string xmlString = sr.ReadToEnd();
+                sr.Close();
+                file.Close();
+                return Deserialize(xmlString);
+            }
+            finally
+            {
+                if ((file != null))
+                {
+                    file.Dispose();
+                }
+                if ((sr != null))
+                {
+                    sr.Dispose();
+                }
+            }
+        }
+        #endregion
+
+        #region Clone method
+        /// <summary>
+        /// Create a clone of this ASYCUDADeclarantDeclarant_name object
+        /// </summary>
+        public virtual ASYCUDADeclarantDeclarant_name Clone()
+        {
+            return ((ASYCUDADeclarantDeclarant_name)(this.MemberwiseClone()));
         }
         #endregion
     }
@@ -28682,9 +29898,9 @@ namespace Asycuda421
     public partial class ASYCUDAFinancialFinancial_transaction : System.ComponentModel.INotifyPropertyChanged
     {
 
-        private object code1Field;
+        private ASYCUDAFinancialFinancial_transactionCode1 code1Field;
 
-        private object code2Field;
+        private ASYCUDAFinancialFinancial_transactionCode2 code2Field;
 
         private ObservableCollection<string> textField;
 
@@ -28693,10 +29909,12 @@ namespace Asycuda421
         public ASYCUDAFinancialFinancial_transaction()
         {
             this.textField = new ObservableCollection<string>();
+            this.code2Field = new ASYCUDAFinancialFinancial_transactionCode2();
+            this.code1Field = new ASYCUDAFinancialFinancial_transactionCode1();
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        public object code1
+        public ASYCUDAFinancialFinancial_transactionCode1 code1
         {
             get
             {
@@ -28721,7 +29939,7 @@ namespace Asycuda421
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        public object code2
+        public ASYCUDAFinancialFinancial_transactionCode2 code2
         {
             get
             {
@@ -29001,6 +30219,614 @@ namespace Asycuda421
         public virtual ASYCUDAFinancialFinancial_transaction Clone()
         {
             return ((ASYCUDAFinancialFinancial_transaction)(this.MemberwiseClone()));
+        }
+        #endregion
+    }
+
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.3056.0")]
+    [System.SerializableAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
+    [System.Runtime.Serialization.DataContractAttribute(Name = "ASYCUDAFinancialFinancial_transactionCode1")]
+    public partial class ASYCUDAFinancialFinancial_transactionCode1 : System.ComponentModel.INotifyPropertyChanged
+    {
+
+        private object nullField;
+
+        private ObservableCollection<string> textField;
+
+        private static System.Xml.Serialization.XmlSerializer serializer;
+
+        public ASYCUDAFinancialFinancial_transactionCode1()
+        {
+            this.textField = new ObservableCollection<string>();
+        }
+
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public object @null
+        {
+            get
+            {
+                return this.nullField;
+            }
+            set
+            {
+                if ((this.nullField != null))
+                {
+                    if ((nullField.Equals(value) != true))
+                    {
+                        this.nullField = value;
+                        this.OnPropertyChanged("null");
+                    }
+                }
+                else
+                {
+                    this.nullField = value;
+                    this.OnPropertyChanged("null");
+                }
+            }
+        }
+
+        [System.Xml.Serialization.XmlTextAttribute()]
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public ObservableCollection<string> Text
+        {
+            get
+            {
+                return this.textField;
+            }
+            set
+            {
+                if ((this.textField != null))
+                {
+                    if ((textField.Equals(value) != true))
+                    {
+                        this.textField = value;
+                        this.OnPropertyChanged("Text");
+                    }
+                }
+                else
+                {
+                    this.textField = value;
+                    this.OnPropertyChanged("Text");
+                }
+            }
+        }
+
+        private static System.Xml.Serialization.XmlSerializer Serializer
+        {
+            get
+            {
+                if ((serializer == null))
+                {
+                    serializer = new System.Xml.Serialization.XmlSerializer(typeof(ASYCUDAFinancialFinancial_transactionCode1));
+                }
+                return serializer;
+            }
+        }
+
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+
+        public virtual void OnPropertyChanged(string propertyName)
+        {
+            System.ComponentModel.PropertyChangedEventHandler handler = this.PropertyChanged;
+            if ((handler != null))
+            {
+                handler(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+
+        #region Serialize/Deserialize
+        /// <summary>
+        /// Serializes current ASYCUDAFinancialFinancial_transactionCode1 object into an XML document
+        /// </summary>
+        /// <returns>string XML value</returns>
+        public virtual string Serialize(System.Text.Encoding encoding)
+        {
+            System.IO.StreamReader streamReader = null;
+            System.IO.MemoryStream memoryStream = null;
+            try
+            {
+                memoryStream = new System.IO.MemoryStream();
+                System.Xml.XmlWriterSettings xmlWriterSettings = new System.Xml.XmlWriterSettings();
+                xmlWriterSettings.Encoding = encoding;
+                System.Xml.XmlWriter xmlWriter = XmlWriter.Create(memoryStream, xmlWriterSettings);
+                Serializer.Serialize(xmlWriter, this);
+                memoryStream.Seek(0, System.IO.SeekOrigin.Begin);
+                streamReader = new System.IO.StreamReader(memoryStream);
+                return streamReader.ReadToEnd();
+            }
+            finally
+            {
+                if ((streamReader != null))
+                {
+                    streamReader.Dispose();
+                }
+                if ((memoryStream != null))
+                {
+                    memoryStream.Dispose();
+                }
+            }
+        }
+
+        public virtual string Serialize()
+        {
+            return Serialize(Encoding.UTF8);
+        }
+
+        /// <summary>
+        /// Deserializes workflow markup into an ASYCUDAFinancialFinancial_transactionCode1 object
+        /// </summary>
+        /// <param name="xml">string workflow markup to deserialize</param>
+        /// <param name="obj">Output ASYCUDAFinancialFinancial_transactionCode1 object</param>
+        /// <param name="exception">output Exception value if deserialize failed</param>
+        /// <returns>true if this XmlSerializer can deserialize the object; otherwise, false</returns>
+        public static bool Deserialize(string xml, out ASYCUDAFinancialFinancial_transactionCode1 obj, out System.Exception exception)
+        {
+            exception = null;
+            obj = default(ASYCUDAFinancialFinancial_transactionCode1);
+            try
+            {
+                obj = Deserialize(xml);
+                return true;
+            }
+            catch (System.Exception ex)
+            {
+                exception = ex;
+                return false;
+            }
+        }
+
+        public static bool Deserialize(string xml, out ASYCUDAFinancialFinancial_transactionCode1 obj)
+        {
+            System.Exception exception = null;
+            return Deserialize(xml, out obj, out exception);
+        }
+
+        public static ASYCUDAFinancialFinancial_transactionCode1 Deserialize(string xml)
+        {
+            System.IO.StringReader stringReader = null;
+            try
+            {
+                stringReader = new System.IO.StringReader(xml);
+                return ((ASYCUDAFinancialFinancial_transactionCode1)(Serializer.Deserialize(System.Xml.XmlReader.Create(stringReader))));
+            }
+            finally
+            {
+                if ((stringReader != null))
+                {
+                    stringReader.Dispose();
+                }
+            }
+        }
+
+        /// <summary>
+        /// Serializes current ASYCUDAFinancialFinancial_transactionCode1 object into file
+        /// </summary>
+        /// <param name="fileName">full path of outupt xml file</param>
+        /// <param name="exception">output Exception value if failed</param>
+        /// <returns>true if can serialize and save into file; otherwise, false</returns>
+        public virtual bool SaveToFile(string fileName, System.Text.Encoding encoding, out System.Exception exception)
+        {
+            exception = null;
+            try
+            {
+                SaveToFile(fileName, encoding);
+                return true;
+            }
+            catch (System.Exception e)
+            {
+                exception = e;
+                return false;
+            }
+        }
+
+        public virtual bool SaveToFile(string fileName, out System.Exception exception)
+        {
+            return SaveToFile(fileName, Encoding.UTF8, out exception);
+        }
+
+        public virtual void SaveToFile(string fileName)
+        {
+            SaveToFile(fileName, Encoding.UTF8);
+        }
+
+        public virtual void SaveToFile(string fileName, System.Text.Encoding encoding)
+        {
+            System.IO.StreamWriter streamWriter = null;
+            try
+            {
+                string xmlString = Serialize(encoding);
+                streamWriter = new System.IO.StreamWriter(fileName, false, Encoding.UTF8);
+                streamWriter.WriteLine(xmlString);
+                streamWriter.Close();
+            }
+            finally
+            {
+                if ((streamWriter != null))
+                {
+                    streamWriter.Dispose();
+                }
+            }
+        }
+
+        /// <summary>
+        /// Deserializes xml markup from file into an ASYCUDAFinancialFinancial_transactionCode1 object
+        /// </summary>
+        /// <param name="fileName">string xml file to load and deserialize</param>
+        /// <param name="obj">Output ASYCUDAFinancialFinancial_transactionCode1 object</param>
+        /// <param name="exception">output Exception value if deserialize failed</param>
+        /// <returns>true if this XmlSerializer can deserialize the object; otherwise, false</returns>
+        public static bool LoadFromFile(string fileName, System.Text.Encoding encoding, out ASYCUDAFinancialFinancial_transactionCode1 obj, out System.Exception exception)
+        {
+            exception = null;
+            obj = default(ASYCUDAFinancialFinancial_transactionCode1);
+            try
+            {
+                obj = LoadFromFile(fileName, encoding);
+                return true;
+            }
+            catch (System.Exception ex)
+            {
+                exception = ex;
+                return false;
+            }
+        }
+
+        public static bool LoadFromFile(string fileName, out ASYCUDAFinancialFinancial_transactionCode1 obj, out System.Exception exception)
+        {
+            return LoadFromFile(fileName, Encoding.UTF8, out obj, out exception);
+        }
+
+        public static bool LoadFromFile(string fileName, out ASYCUDAFinancialFinancial_transactionCode1 obj)
+        {
+            System.Exception exception = null;
+            return LoadFromFile(fileName, out obj, out exception);
+        }
+
+        public static ASYCUDAFinancialFinancial_transactionCode1 LoadFromFile(string fileName)
+        {
+            return LoadFromFile(fileName, Encoding.UTF8);
+        }
+
+        public static ASYCUDAFinancialFinancial_transactionCode1 LoadFromFile(string fileName, System.Text.Encoding encoding)
+        {
+            System.IO.FileStream file = null;
+            System.IO.StreamReader sr = null;
+            try
+            {
+                file = new System.IO.FileStream(fileName, FileMode.Open, FileAccess.Read);
+                sr = new System.IO.StreamReader(file, encoding);
+                string xmlString = sr.ReadToEnd();
+                sr.Close();
+                file.Close();
+                return Deserialize(xmlString);
+            }
+            finally
+            {
+                if ((file != null))
+                {
+                    file.Dispose();
+                }
+                if ((sr != null))
+                {
+                    sr.Dispose();
+                }
+            }
+        }
+        #endregion
+
+        #region Clone method
+        /// <summary>
+        /// Create a clone of this ASYCUDAFinancialFinancial_transactionCode1 object
+        /// </summary>
+        public virtual ASYCUDAFinancialFinancial_transactionCode1 Clone()
+        {
+            return ((ASYCUDAFinancialFinancial_transactionCode1)(this.MemberwiseClone()));
+        }
+        #endregion
+    }
+
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.3056.0")]
+    [System.SerializableAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
+    [System.Runtime.Serialization.DataContractAttribute(Name = "ASYCUDAFinancialFinancial_transactionCode2")]
+    public partial class ASYCUDAFinancialFinancial_transactionCode2 : System.ComponentModel.INotifyPropertyChanged
+    {
+
+        private object nullField;
+
+        private ObservableCollection<string> textField;
+
+        private static System.Xml.Serialization.XmlSerializer serializer;
+
+        public ASYCUDAFinancialFinancial_transactionCode2()
+        {
+            this.textField = new ObservableCollection<string>();
+        }
+
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public object @null
+        {
+            get
+            {
+                return this.nullField;
+            }
+            set
+            {
+                if ((this.nullField != null))
+                {
+                    if ((nullField.Equals(value) != true))
+                    {
+                        this.nullField = value;
+                        this.OnPropertyChanged("null");
+                    }
+                }
+                else
+                {
+                    this.nullField = value;
+                    this.OnPropertyChanged("null");
+                }
+            }
+        }
+
+        [System.Xml.Serialization.XmlTextAttribute()]
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public ObservableCollection<string> Text
+        {
+            get
+            {
+                return this.textField;
+            }
+            set
+            {
+                if ((this.textField != null))
+                {
+                    if ((textField.Equals(value) != true))
+                    {
+                        this.textField = value;
+                        this.OnPropertyChanged("Text");
+                    }
+                }
+                else
+                {
+                    this.textField = value;
+                    this.OnPropertyChanged("Text");
+                }
+            }
+        }
+
+        private static System.Xml.Serialization.XmlSerializer Serializer
+        {
+            get
+            {
+                if ((serializer == null))
+                {
+                    serializer = new System.Xml.Serialization.XmlSerializer(typeof(ASYCUDAFinancialFinancial_transactionCode2));
+                }
+                return serializer;
+            }
+        }
+
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+
+        public virtual void OnPropertyChanged(string propertyName)
+        {
+            System.ComponentModel.PropertyChangedEventHandler handler = this.PropertyChanged;
+            if ((handler != null))
+            {
+                handler(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+
+        #region Serialize/Deserialize
+        /// <summary>
+        /// Serializes current ASYCUDAFinancialFinancial_transactionCode2 object into an XML document
+        /// </summary>
+        /// <returns>string XML value</returns>
+        public virtual string Serialize(System.Text.Encoding encoding)
+        {
+            System.IO.StreamReader streamReader = null;
+            System.IO.MemoryStream memoryStream = null;
+            try
+            {
+                memoryStream = new System.IO.MemoryStream();
+                System.Xml.XmlWriterSettings xmlWriterSettings = new System.Xml.XmlWriterSettings();
+                xmlWriterSettings.Encoding = encoding;
+                System.Xml.XmlWriter xmlWriter = XmlWriter.Create(memoryStream, xmlWriterSettings);
+                Serializer.Serialize(xmlWriter, this);
+                memoryStream.Seek(0, System.IO.SeekOrigin.Begin);
+                streamReader = new System.IO.StreamReader(memoryStream);
+                return streamReader.ReadToEnd();
+            }
+            finally
+            {
+                if ((streamReader != null))
+                {
+                    streamReader.Dispose();
+                }
+                if ((memoryStream != null))
+                {
+                    memoryStream.Dispose();
+                }
+            }
+        }
+
+        public virtual string Serialize()
+        {
+            return Serialize(Encoding.UTF8);
+        }
+
+        /// <summary>
+        /// Deserializes workflow markup into an ASYCUDAFinancialFinancial_transactionCode2 object
+        /// </summary>
+        /// <param name="xml">string workflow markup to deserialize</param>
+        /// <param name="obj">Output ASYCUDAFinancialFinancial_transactionCode2 object</param>
+        /// <param name="exception">output Exception value if deserialize failed</param>
+        /// <returns>true if this XmlSerializer can deserialize the object; otherwise, false</returns>
+        public static bool Deserialize(string xml, out ASYCUDAFinancialFinancial_transactionCode2 obj, out System.Exception exception)
+        {
+            exception = null;
+            obj = default(ASYCUDAFinancialFinancial_transactionCode2);
+            try
+            {
+                obj = Deserialize(xml);
+                return true;
+            }
+            catch (System.Exception ex)
+            {
+                exception = ex;
+                return false;
+            }
+        }
+
+        public static bool Deserialize(string xml, out ASYCUDAFinancialFinancial_transactionCode2 obj)
+        {
+            System.Exception exception = null;
+            return Deserialize(xml, out obj, out exception);
+        }
+
+        public static ASYCUDAFinancialFinancial_transactionCode2 Deserialize(string xml)
+        {
+            System.IO.StringReader stringReader = null;
+            try
+            {
+                stringReader = new System.IO.StringReader(xml);
+                return ((ASYCUDAFinancialFinancial_transactionCode2)(Serializer.Deserialize(System.Xml.XmlReader.Create(stringReader))));
+            }
+            finally
+            {
+                if ((stringReader != null))
+                {
+                    stringReader.Dispose();
+                }
+            }
+        }
+
+        /// <summary>
+        /// Serializes current ASYCUDAFinancialFinancial_transactionCode2 object into file
+        /// </summary>
+        /// <param name="fileName">full path of outupt xml file</param>
+        /// <param name="exception">output Exception value if failed</param>
+        /// <returns>true if can serialize and save into file; otherwise, false</returns>
+        public virtual bool SaveToFile(string fileName, System.Text.Encoding encoding, out System.Exception exception)
+        {
+            exception = null;
+            try
+            {
+                SaveToFile(fileName, encoding);
+                return true;
+            }
+            catch (System.Exception e)
+            {
+                exception = e;
+                return false;
+            }
+        }
+
+        public virtual bool SaveToFile(string fileName, out System.Exception exception)
+        {
+            return SaveToFile(fileName, Encoding.UTF8, out exception);
+        }
+
+        public virtual void SaveToFile(string fileName)
+        {
+            SaveToFile(fileName, Encoding.UTF8);
+        }
+
+        public virtual void SaveToFile(string fileName, System.Text.Encoding encoding)
+        {
+            System.IO.StreamWriter streamWriter = null;
+            try
+            {
+                string xmlString = Serialize(encoding);
+                streamWriter = new System.IO.StreamWriter(fileName, false, Encoding.UTF8);
+                streamWriter.WriteLine(xmlString);
+                streamWriter.Close();
+            }
+            finally
+            {
+                if ((streamWriter != null))
+                {
+                    streamWriter.Dispose();
+                }
+            }
+        }
+
+        /// <summary>
+        /// Deserializes xml markup from file into an ASYCUDAFinancialFinancial_transactionCode2 object
+        /// </summary>
+        /// <param name="fileName">string xml file to load and deserialize</param>
+        /// <param name="obj">Output ASYCUDAFinancialFinancial_transactionCode2 object</param>
+        /// <param name="exception">output Exception value if deserialize failed</param>
+        /// <returns>true if this XmlSerializer can deserialize the object; otherwise, false</returns>
+        public static bool LoadFromFile(string fileName, System.Text.Encoding encoding, out ASYCUDAFinancialFinancial_transactionCode2 obj, out System.Exception exception)
+        {
+            exception = null;
+            obj = default(ASYCUDAFinancialFinancial_transactionCode2);
+            try
+            {
+                obj = LoadFromFile(fileName, encoding);
+                return true;
+            }
+            catch (System.Exception ex)
+            {
+                exception = ex;
+                return false;
+            }
+        }
+
+        public static bool LoadFromFile(string fileName, out ASYCUDAFinancialFinancial_transactionCode2 obj, out System.Exception exception)
+        {
+            return LoadFromFile(fileName, Encoding.UTF8, out obj, out exception);
+        }
+
+        public static bool LoadFromFile(string fileName, out ASYCUDAFinancialFinancial_transactionCode2 obj)
+        {
+            System.Exception exception = null;
+            return LoadFromFile(fileName, out obj, out exception);
+        }
+
+        public static ASYCUDAFinancialFinancial_transactionCode2 LoadFromFile(string fileName)
+        {
+            return LoadFromFile(fileName, Encoding.UTF8);
+        }
+
+        public static ASYCUDAFinancialFinancial_transactionCode2 LoadFromFile(string fileName, System.Text.Encoding encoding)
+        {
+            System.IO.FileStream file = null;
+            System.IO.StreamReader sr = null;
+            try
+            {
+                file = new System.IO.FileStream(fileName, FileMode.Open, FileAccess.Read);
+                sr = new System.IO.StreamReader(file, encoding);
+                string xmlString = sr.ReadToEnd();
+                sr.Close();
+                file.Close();
+                return Deserialize(xmlString);
+            }
+            finally
+            {
+                if ((file != null))
+                {
+                    file.Dispose();
+                }
+                if ((sr != null))
+                {
+                    sr.Dispose();
+                }
+            }
+        }
+        #endregion
+
+        #region Clone method
+        /// <summary>
+        /// Create a clone of this ASYCUDAFinancialFinancial_transactionCode2 object
+        /// </summary>
+        public virtual ASYCUDAFinancialFinancial_transactionCode2 Clone()
+        {
+            return ((ASYCUDAFinancialFinancial_transactionCode2)(this.MemberwiseClone()));
         }
         #endregion
     }

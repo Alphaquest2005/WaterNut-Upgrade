@@ -151,6 +151,7 @@ namespace WaterNut.QuerySpace.AllocationQS.ViewModels
 			vloader.FilterExpression = "All";
 			vloader.ClearNavigationExpression();
 			_AsycudaSalesAllocationsExs.Refresh();
+
 			NotifyPropertyChanged(x => this.AsycudaSalesAllocationsExs);
 		}
 

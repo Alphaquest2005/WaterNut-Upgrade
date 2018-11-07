@@ -1,0 +1,2 @@
+C:\Users\josep\OneDrive\WaterNut-Upgrade\WaterNut-Upgrade\WaterNut - Enterprise\Core.Common\Core.Common.Data\obj\x64\Debug\Core.Common.Data.csprojAssemblyReference.cache
+C:\Users\josep\OneDrive\WaterNut-Upgrade\WaterNut-Upgrade\WaterNut - Enterprise\Core.Common\Core.Common.Data\obj\x64\Debug\Core.Common.Data.csproj.CoreCompileInputs.cache

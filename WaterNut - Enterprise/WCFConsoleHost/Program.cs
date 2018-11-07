@@ -15,6 +15,7 @@ using System.ServiceModel;
 using System.Text;
 using System.Threading.Tasks;
 using System.ComponentModel.Composition;
+using System.Globalization;
 using System.Security.Permissions;
 
 namespace WCFConsoleHost
@@ -29,6 +30,8 @@ namespace WCFConsoleHost
         {
             try
             {
+                CultureInfo.DefaultThreadCurrentCulture = new CultureInfo("en-US");
+                CultureInfo.DefaultThreadCurrentUICulture = new CultureInfo("en-US");
 
                 FileIOPermission f2 = new FileIOPermission(FileIOPermissionAccess.Read, Environment.CurrentDirectory + "\\WaterNut-EnterpriseDB.mdf");
                 f2.AddPathList(FileIOPermissionAccess.Write | FileIOPermissionAccess.Read, Environment.CurrentDirectory + "\\WaterNut-EnterpriseDB.mdf");

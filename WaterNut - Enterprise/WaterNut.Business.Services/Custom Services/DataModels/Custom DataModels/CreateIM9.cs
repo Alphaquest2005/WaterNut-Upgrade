@@ -124,24 +124,7 @@ namespace WaterNut.DataSpace
 
             using (var ctx = new AllocationDSContext())
             {
-                //alst.AddRange(
-                //   await
-                //       ctx.xcuda_Item.Where(
-                //       (BaseDataModel.Instance.CurrentApplicationSettings.OpeningStockDate.HasValue ? string.Format("RegistrationDate <= \"{0}\" && ", BaseDataModel.Instance.CurrentApplicationSettings.OpeningStockDate) : "") +
-                //           "ItemQuantity > PiQuantity && CNumber != Null " +
-                //           "&& AsycudaDocument.DocumentType == \"IM7\" " +
-                //           // " && AsycudaDocument.DoNotAllocate != true" +
-                //           " && AsycudaDocument.Cancelled != true" +
-                //           " && WarehouseError == NULL" +
-                //           " && InvalidHSCode != true" +
-                //           " && Item_price != 0 && ItemQuantity != 0"
-                //          // + " && (LineNumber != 5 && LineNumber != 7)"
-                //          ,
-                //           new List<string>()
-                //           {
-                //                "AsycudaDocument",
-                //                "xcuda_Supplementary_unit"
-                //           }).ConfigureAwait(false));
+                
                 alst.AddRange(
                     ctx.xcuda_Item
                                 
@@ -152,7 +135,7 @@ namespace WaterNut.DataSpace
                                 .Where(x => x.xcuda_Tarification.xcuda_Supplementary_unit.Any())
                                 .Where(x => x.xcuda_Tarification.xcuda_Supplementary_unit.FirstOrDefault()
                                             .Suppplementary_unit_quantity > x.EntryPreviousItems.Select(y => y.xcuda_PreviousItem)
-                                                                                .Where(y => y.xcuda_Item.AsycudaDocument.CNumber != null)
+                                                                                .Where(y => y.xcuda_Item.AsycudaDocument.CNumber != null || y.xcuda_Item.AsycudaDocument.IsManuallyAssessed == true)
                                                                                 .Select(z => z.Suplementary_Quantity).DefaultIfEmpty(0).Sum())
                                 
                                 .Select(x => new AsycudaDocumentItemIM9()
@@ -162,10 +145,10 @@ namespace WaterNut.DataSpace
                                     Customs_clearance_office_code = x.AsycudaDocument.Customs_clearance_office_code,
                                     Country_of_origin_code = x.xcuda_Goods_description.Country_of_origin_code,
                                     PiQuantity = x.EntryPreviousItems.Select(y => y.xcuda_PreviousItem)
-                                                                                .Where(y => y.xcuda_Item.AsycudaDocument.CNumber != null)
+                                                                                .Where(y => y.xcuda_Item.AsycudaDocument.CNumber != null || y.xcuda_Item.AsycudaDocument.IsManuallyAssessed == true)
                                                                                 .Select(z => z.Suplementary_Quantity).DefaultIfEmpty(0).Sum(),
                                     PiWeight = x.EntryPreviousItems.Select(y => y.xcuda_PreviousItem)
-                                                                                .Where(y => y.xcuda_Item.AsycudaDocument.CNumber != null)
+                                                                                .Where(y => y.xcuda_Item.AsycudaDocument.CNumber != null || y.xcuda_Item.AsycudaDocument.IsManuallyAssessed == true)
                                                                                 .Select(z => z.Net_weight).DefaultIfEmpty(0).Sum(),
                                     ItemQuantity = (double)x.xcuda_Tarification.xcuda_Supplementary_unit.FirstOrDefault().Suppplementary_unit_quantity,
                                     Suppplementary_unit_code = x.xcuda_Tarification.xcuda_Supplementary_unit.FirstOrDefault().Suppplementary_unit_code,
@@ -192,75 +175,67 @@ namespace WaterNut.DataSpace
             try
             {
 
-            var alst = new ConcurrentQueue<IEnumerable<AsycudaDocumentItemIM9>>();
+                //var alst = new ConcurrentQueue<IEnumerable<AsycudaDocumentItemIM9>>();
 
 
-            //Parallel.ForEach(lst, new ParallelOptions() {MaxDegreeOfParallelism = Environment.ProcessorCount*4},//
-            //    docId =>
-            //    {
-            var res = new StringBuilder();
-            var enumerable = lst as IList<int> ?? lst.ToList();
-            foreach (var itm in enumerable)
-            {
-                res.Append(itm + ",");
-            }
+                //Parallel.ForEach(lst, new ParallelOptions() {MaxDegreeOfParallelism = Environment.ProcessorCount*4},//
+                //    docId =>
+                //    {
+                var res = new StringBuilder();
+                var enumerable = lst as IList<int> ?? lst.ToList();
+                foreach (var itm in enumerable)
+                {
+                    res.Append(itm + ",");
+                }
 
 
-            
-                    using (var ctx = new AllocationDSContext())
-                    {
-                //new List<string>()
-                //                               {
-                //                                   "AsycudaDocument",
-                //                                   "xcuda_Supplementary_unit"
-                //                               }
 
-                //string.Format("ItemQuantity > PiQuantity && CNumber != Null && " +
-                //                              (BaseDataModel.Instance.CurrentApplicationSettings.OpeningStockDate.HasValue ? string.Format("RegistrationDate <= \"{0}\" && ", BaseDataModel.Instance.CurrentApplicationSettings.OpeningStockDate) : "") +
-                //                              "AsycudaDocument.DocumentType == \"IM7\" && " +
-                //                              // "AsycudaDocument.DoNotAllocate != true && " +
-                //                              "AsycudaDocument.Cancelled != true && " +
-                //                              "\"{0}\".Contains(AsycudaDocument.ASYCUDA_Id.ToString())"));
-                        var str = res.ToString();
-                        alst.Enqueue(
+                using (var ctx = new AllocationDSContext())
+                {
+                    
+                    var str = res.ToString();
 
-                            ctx.xcuda_Item
-                                .Where(x => x.xcuda_Tarification.xcuda_Supplementary_unit.Any())
-                                .Where(x => x.xcuda_Tarification.xcuda_Supplementary_unit.FirstOrDefault()
-                                            .Suppplementary_unit_quantity > x.EntryPreviousItems.Select(y => y.xcuda_PreviousItem)
-                                                                                .Where(y => y.xcuda_Item.AsycudaDocument.CNumber != null)
-                                                                                .Select(z => z.Suplementary_Quantity).DefaultIfEmpty(0).Sum())
-                                .Where(x => str.Contains(x.AsycudaDocument.ASYCUDA_Id.ToString()))
-                                .Select(x => new AsycudaDocumentItemIM9()
-                                {
-                                    ItemNumber = x.xcuda_Tarification.xcuda_HScode.Precision_4,
-                                    CNumber = x.AsycudaDocument.CNumber,
-                                    Customs_clearance_office_code = x.AsycudaDocument.Customs_clearance_office_code,
-                                    Country_of_origin_code = x.xcuda_Goods_description.Country_of_origin_code,
-                                    PiQuantity = x.EntryPreviousItems.Select(y => y.xcuda_PreviousItem)
-                                                                                .Where(y => y.xcuda_Item.AsycudaDocument.CNumber != null)
-                                                                                .Select(z => z.Suplementary_Quantity).DefaultIfEmpty(0).Sum(),
-                                    PiWeight = x.EntryPreviousItems.Select(y => y.xcuda_PreviousItem)
-                                                                                .Where(y => y.xcuda_Item.AsycudaDocument.CNumber != null)
-                                                                                .Select(z => z.Net_weight).DefaultIfEmpty(0).Sum(),
-                                    ItemQuantity = (double)x.xcuda_Tarification.xcuda_Supplementary_unit.FirstOrDefault().Suppplementary_unit_quantity,
-                                    Suppplementary_unit_code = x.xcuda_Tarification.xcuda_Supplementary_unit.FirstOrDefault().Suppplementary_unit_code,
-                                    LineNumber = x.LineNumber,
-                                    AsycudaDocumentId = x.ASYCUDA_Id,
-                                    Commercial_Description = x.xcuda_Goods_description.Commercial_Description,
-                                    TariffCode = x.xcuda_Tarification.xcuda_HScode.Commodity_code,
-                                    Item_price = x.xcuda_Tarification.Item_price,
-                                    Net_weight = x.xcuda_Valuation_item.xcuda_Weight_itm.Net_weight_itm,
-                                    ItemId = x.Item_Id,
-                                    RegistrationDate = x.AsycudaDocument.RegistrationDate.Value,
-                                    Total_CIF_itm = x.xcuda_Valuation_item.Total_CIF_itm
-                                }).ToList());
-                    }
+
+                    var alst =
+
+                        ctx.xcuda_Item
+                            .Where(x => x.xcuda_Tarification.xcuda_Supplementary_unit.Any())
+                            .Where(x => str.Contains(x.AsycudaDocument.ASYCUDA_Id.ToString()))
+                            .Select(x => new AsycudaDocumentItemIM9()
+                            {
+                                ItemNumber = x.xcuda_Tarification.xcuda_HScode.Precision_4,
+                                CNumber = x.AsycudaDocument.CNumber,
+                                Customs_clearance_office_code = x.AsycudaDocument.Customs_clearance_office_code,
+                                Country_of_origin_code = x.xcuda_Goods_description.Country_of_origin_code,
+                                PiQuantity = x.EntryPreviousItems.Select(y => y.xcuda_PreviousItem)
+                                    .Where(y => y.xcuda_Item.AsycudaDocument.CNumber != null || y.xcuda_Item.AsycudaDocument.IsManuallyAssessed == true)
+                                    .Select(z => z.Suplementary_Quantity).DefaultIfEmpty(0).Sum(),
+                                PiWeight = x.EntryPreviousItems.Select(y => y.xcuda_PreviousItem)
+                                    .Where(y => y.xcuda_Item.AsycudaDocument.CNumber != null || y.xcuda_Item.AsycudaDocument.IsManuallyAssessed == true)
+                                    .Select(z => z.Net_weight).DefaultIfEmpty(0).Sum(),
+                                ItemQuantity = (double) x.xcuda_Tarification.xcuda_Supplementary_unit.FirstOrDefault(z => z.IsFirstRow == true)
+                                    .Suppplementary_unit_quantity,
+                                Suppplementary_unit_code = x.xcuda_Tarification.xcuda_Supplementary_unit
+                                    .FirstOrDefault(z => z.IsFirstRow == true).Suppplementary_unit_code??"",
+                                LineNumber = x.LineNumber,
+                                AsycudaDocumentId = x.ASYCUDA_Id,
+                                Commercial_Description = x.xcuda_Goods_description.Commercial_Description,
+                                TariffCode = x.xcuda_Tarification.xcuda_HScode.Commodity_code,
+                                Item_price = x.xcuda_Tarification.Item_price,
+                                Net_weight = x.xcuda_Valuation_item.xcuda_Weight_itm.Net_weight_itm,
+                                ItemId = x.Item_Id,
+                                RegistrationDate = x.AsycudaDocument.RegistrationDate.Value,
+                                Total_CIF_itm = x.xcuda_Valuation_item.Total_CIF_itm,
+                                SalesFactor = x.SalesFactor
+                            }).ToList();
+                    var ares = alst.OrderBy(x => x.LineNumber).ToList();
+                    AttachPackageInfo(ares);
+
+                    return ares;
+
+                }
                 //});
-            var ares = alst.SelectMany(x => x).OrderBy(x => x.LineNumber).ToList();
-            AttachPackageInfo(ares);
 
-            return ares;
             }
             catch (Exception)
             {
@@ -288,28 +263,14 @@ namespace WaterNut.DataSpace
 
             using (var ctx = new AllocationDSContext())
             {
-                //alst.Enqueue(
-
-                //    ctx.xcuda_Item(
-                //        string.Format("ItemQuantity > PiQuantity && CNumber != Null && " +
-                //                      (BaseDataModel.Instance.CurrentApplicationSettings.OpeningStockDate.HasValue ? string.Format("RegistrationDate <= \"{0}\" && ", BaseDataModel.Instance.CurrentApplicationSettings.OpeningStockDate) : "") +
-                //                      "AsycudaDocument.DocumentType == \"IM7\" && " +
-                //                    //  "AsycudaDocument.DoNotAllocate != true && " +
-                //                      "AsycudaDocument.Cancelled != true && " +
-                //                      "\"{0}\".Contains(Item_Id.ToString())", res),
-                //        new List<string>()
-                //                {
-                //                    "AsycudaDocument",
-                //                    "xcuda_Supplementary_unit"
-                //                }).Result);
-
+                
                 alst.Enqueue(
 
                            ctx.xcuda_Item
                                .Where(x => x.xcuda_Tarification.xcuda_Supplementary_unit.Any())
                                .Where(x => x.xcuda_Tarification.xcuda_Supplementary_unit.FirstOrDefault()
                                            .Suppplementary_unit_quantity > x.EntryPreviousItems.Select(y => y.xcuda_PreviousItem)
-                                                                               .Where(y => y.xcuda_Item.AsycudaDocument.CNumber != null)
+                                                                               .Where(y => y.xcuda_Item.AsycudaDocument.CNumber != null || y.xcuda_Item.AsycudaDocument.IsManuallyAssessed == true)
                                                                                .Select(z => z.Suplementary_Quantity).DefaultIfEmpty(0).Sum())
                                .Where(x => str.Contains(x.Item_Id.ToString()))
                                .Select(x => new AsycudaDocumentItemIM9()
@@ -319,10 +280,10 @@ namespace WaterNut.DataSpace
                                    Customs_clearance_office_code = x.AsycudaDocument.Customs_clearance_office_code,
                                    Country_of_origin_code = x.xcuda_Goods_description.Country_of_origin_code,
                                    PiQuantity = x.EntryPreviousItems.Select(y => y.xcuda_PreviousItem)
-                                                                                .Where(y => y.xcuda_Item.AsycudaDocument.CNumber != null)
+                                                                                .Where(y => y.xcuda_Item.AsycudaDocument.CNumber != null || y.xcuda_Item.AsycudaDocument.IsManuallyAssessed == true)
                                                                                 .Select(z => z.Suplementary_Quantity).DefaultIfEmpty(0).Sum(),
                                    PiWeight = x.EntryPreviousItems.Select(y => y.xcuda_PreviousItem)
-                                                                                .Where(y => y.xcuda_Item.AsycudaDocument.CNumber != null)
+                                                                                .Where(y => y.xcuda_Item.AsycudaDocument.CNumber != null || y.xcuda_Item.AsycudaDocument.IsManuallyAssessed == true)
                                                                                 .Select(z => z.Net_weight).DefaultIfEmpty(0).Sum(),
                                    ItemQuantity = (double)x.xcuda_Tarification.xcuda_Supplementary_unit.FirstOrDefault().Suppplementary_unit_quantity,
                                    Suppplementary_unit_code = x.xcuda_Tarification.xcuda_Supplementary_unit.FirstOrDefault().Suppplementary_unit_code,
@@ -412,6 +373,7 @@ namespace WaterNut.DataSpace
                 {
                     ItemNumber = ditm.ItemNumber,
                     ItemQuantity = Convert.ToDouble(ditm.ItemQuantity - ditm.PiQuantity),
+                    SalesFactor = ditm.SalesFactor,
                     xcuda_PreviousItem = new xcuda_PreviousItem(true)
                     {
                         TrackingState = TrackingState.Added,
@@ -462,10 +424,7 @@ namespace WaterNut.DataSpace
                 itm.xcuda_Tarification.xcuda_HScode.InventoryItems =
                     BaseDataModel.Instance.GetInventoryItem(x => x.ItemNumber == ditm.ItemNumber);
                 itm.xcuda_Goods_description.Country_of_origin_code = pitm.Goods_origin;
-                itm.xcuda_Previous_doc.Summary_declaration = String.Format("{0} {1} C {2} art. {3}",
-                    pitm.Prev_reg_cuo,
-                    pitm.Prev_reg_dat,
-                    pitm.Prev_reg_nbr, pitm.Previous_item_number);
+           
                 itm.xcuda_Valuation_item.xcuda_Weight_itm = new xcuda_Weight_itm(true)
                 {
                     TrackingState = TrackingState.Added
@@ -506,8 +465,10 @@ namespace WaterNut.DataSpace
                 //    var sup = ditm.xcuda_Supplementary_unit[1];
                     itm.xcuda_Tarification.Unordered_xcuda_Supplementary_unit.Add(new xcuda_Supplementary_unit(true)
                     {
+                        
                         Suppplementary_unit_code = ditm.Suppplementary_unit_code,
                         Suppplementary_unit_quantity = ditm.ItemQuantity,
+                        IsFirstRow = true,
                         TrackingState = TrackingState.Added
                     });
                 //}
@@ -546,5 +507,6 @@ namespace WaterNut.DataSpace
         public double PiWeight { get; set; }
         public string Country_of_origin_code { get; set; }
         public double Total_CIF_itm { get; set; }
+        public double SalesFactor { get; set; }
     }
 }

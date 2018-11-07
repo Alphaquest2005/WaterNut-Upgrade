@@ -138,3 +138,4 @@ C:\Users\josep\OneDrive\WaterNut-Upgrade\WaterNut-Upgrade\WaterNut - Enterprise\
 C:\Users\josep\OneDrive\WaterNut-Upgrade\WaterNut-Upgrade\WaterNut - Enterprise\WaterNut.Client.DTO\obj\Debug\WaterNut.Client.DTO.csproj.CopyComplete
 C:\Users\josep\OneDrive\WaterNut-Upgrade\WaterNut-Upgrade\WaterNut - Enterprise\WaterNut.Client.DTO\obj\Debug\WaterNut.Client.DTO.dll
 C:\Users\josep\OneDrive\WaterNut-Upgrade\WaterNut-Upgrade\WaterNut - Enterprise\WaterNut.Client.DTO\obj\Debug\WaterNut.Client.DTO.pdb
+C:\Users\josep\OneDrive\WaterNut-Upgrade\WaterNut-Upgrade\WaterNut - Enterprise\WaterNut.Client.DTO\bin\Debug\EntityFramework.xml

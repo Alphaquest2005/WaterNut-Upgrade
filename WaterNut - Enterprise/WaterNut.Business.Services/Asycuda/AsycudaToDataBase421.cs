@@ -782,24 +782,24 @@ namespace WaterNut.DataSpace.Asycuda
                         {
                             ItemNumber = ai.Tarification.HScode.Precision_4.Text.FirstOrDefault(),
                             Description = ai.Goods_description.Commercial_Description.Text.FirstOrDefault()??"",
+                            TariffCode = ai.Tarification.HScode.Commodity_code.Text.FirstOrDefault(),
                             TrackingState = TrackingState.Added
                         };
-
-
-                        var tc = ctx.TariffCodes.FirstOrDefault(x =>
-                            x.TariffCodeName == ai.Tarification.HScode.Commodity_code.Text.FirstOrDefault());
-
-                        if (tc != null)
-                            iv.TariffCode = ai.Tarification.HScode.Commodity_code.Text.FirstOrDefault();
-
-
-
+                        
                         ctx.ApplyChanges(iv);
                         ctx.SaveChanges();
 
-
+                        return iv;
 
                     }
+
+                    if (iv == null || !updateItemsTariffCode || iv.TariffCode == ai.Tarification.HScode.Commodity_code.Text.FirstOrDefault()) return iv;
+                    iv.StartTracking();
+                    iv.TariffCode = ai.Tarification.HScode.Commodity_code.Text.FirstOrDefault();
+                    
+                    ctx.ApplyChanges(iv);
+                    ctx.SaveChanges();
+
 
                     //include tarrifcode
                     return iv;
@@ -1546,9 +1546,9 @@ namespace WaterNut.DataSpace.Asycuda
                     //da.xcuda_Declarant.Add(d);
                 }
 
-                d.Declarant_name = a.Declarant.Declarant_name;
+                d.Declarant_name = a.Declarant.Declarant_name.Text.FirstOrDefault();
                 d.Declarant_representative = a.Declarant.Declarant_representative.Text.FirstOrDefault();
-                d.Declarant_code = a.Declarant.Declarant_code;
+                d.Declarant_code = a.Declarant.Declarant_code.Text.FirstOrDefault();
 
                 //if(a.Declarant.Reference.Number.Text.Count > 0)
                 d.Number = a.Declarant.Reference.Number.Text.FirstOrDefault();

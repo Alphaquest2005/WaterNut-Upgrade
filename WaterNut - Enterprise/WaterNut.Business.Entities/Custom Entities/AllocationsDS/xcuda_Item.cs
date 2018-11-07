@@ -55,7 +55,7 @@ namespace AllocationDS.Business.Entities
                     if (xcuda_Tarification != null && xcuda_Tarification.xcuda_Supplementary_unit != null)
                     {
                         var res =
-                            xcuda_Tarification.xcuda_Supplementary_unit.FirstOrDefault();
+                            xcuda_Tarification.xcuda_Supplementary_unit.FirstOrDefault(x => x.IsFirstRow == true);
                             //(x => x.Suppplementary_unit_code == "NMB");
                         return
                             Convert.ToDouble(

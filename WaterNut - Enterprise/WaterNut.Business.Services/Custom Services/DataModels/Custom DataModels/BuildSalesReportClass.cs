@@ -134,7 +134,7 @@ namespace WaterNut.DataSpace
 										    && z.xcuda_Item.AsycudaDocument.Cancelled != true
 											&& z.xcuda_Item.AsycudaDocument.DoNotAllocate != true
 											&& z.xcuda_Item.AsycudaDocument != null
-											&& z.xcuda_Item.AsycudaDocument.CNumber != null
+											&& (z.xcuda_Item.AsycudaDocument.CNumber != null || z.xcuda_Item.AsycudaDocument.IsManuallyAssessed == true)
                                             && z.xcuda_PreviousItem.xcuda_Item.AsycudaDocument.Extended_customs_procedure == (x.EntryDataDetails.Sales.TaxAmount == 0 ? "9070" : "4070"))
 									&& x.PreviousDocumentItem.AsycudaDocument != null
 									&& x.PreviousDocumentItem.AsycudaDocument.Cancelled != true)
@@ -724,7 +724,7 @@ namespace WaterNut.DataSpace
 			{
 				piLst =
 					(await
-						ctx.Getxcuda_PreviousItemByExpression("xcuda_Item.AsycudaDocument.CNumber != null && " + (BaseDataModel.Instance.CurrentApplicationSettings.OpeningStockDate.HasValue ? string.Format("xcuda_Item.AsycudaDocument.AssessmentDate >= \"{0}\"", BaseDataModel.Instance.CurrentApplicationSettings.OpeningStockDate) : "xcuda_Item.AsycudaDocument.AssessmentDate >= \"1/1/2010\""),
+						ctx.Getxcuda_PreviousItemByExpression("(xcuda_Item.AsycudaDocument.CNumber != null || xcuda_Item.AsycudaDocument.IsManuallyAssessed == true) && " + (BaseDataModel.Instance.CurrentApplicationSettings.OpeningStockDate.HasValue ? string.Format("xcuda_Item.AsycudaDocument.AssessmentDate >= \"{0}\"", BaseDataModel.Instance.CurrentApplicationSettings.OpeningStockDate) : "xcuda_Item.AsycudaDocument.AssessmentDate >= \"1/1/2010\""),
 							new List<string>() // && PreviousItem_Id == 294486
 							{
 								"xcuda_Item.AsycudaDocument",

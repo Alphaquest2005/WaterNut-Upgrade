@@ -33,4 +33,3 @@ C:\Users\josep\OneDrive\WaterNut-Upgrade\WaterNut-Upgrade\WaterNut - Enterprise\
 C:\Users\josep\OneDrive\WaterNut-Upgrade\WaterNut-Upgrade\WaterNut - Enterprise\DocumentItemDS\obj\Debug\DocumentItemDS.csproj.CoreCompileInputs.cache
 C:\Users\josep\OneDrive\WaterNut-Upgrade\WaterNut-Upgrade\WaterNut - Enterprise\DocumentItemDS\obj\Debug\DocumentItemDS.dll
 C:\Users\josep\OneDrive\WaterNut-Upgrade\WaterNut-Upgrade\WaterNut - Enterprise\DocumentItemDS\obj\Debug\DocumentItemDS.pdb
-C:\Users\josep\OneDrive\WaterNut-Upgrade\WaterNut-Upgrade\WaterNut - Enterprise\DocumentItemDS\obj\Debug\DocumentItemDS.csprojAssemblyReference.cache

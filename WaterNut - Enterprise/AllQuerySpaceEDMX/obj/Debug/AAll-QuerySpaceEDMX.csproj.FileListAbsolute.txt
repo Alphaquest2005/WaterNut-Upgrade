@@ -19,7 +19,6 @@ C:\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\AllQuerySpaceEDM
 C:\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\AllQuerySpaceEDMX\obj\Debug\AllQuerySpaceEDMX.pdb
 C:\Users\josep\OneDrive\WaterNut-Upgrade\WaterNut-Upgrade\WaterNut - Enterprise\AllQuerySpaceEDMX\bin\Debug\AllQuerySpaceEDMX.dll
 C:\Users\josep\OneDrive\WaterNut-Upgrade\WaterNut-Upgrade\WaterNut - Enterprise\AllQuerySpaceEDMX\bin\Debug\AllQuerySpaceEDMX.pdb
-C:\Users\josep\OneDrive\WaterNut-Upgrade\WaterNut-Upgrade\WaterNut - Enterprise\AllQuerySpaceEDMX\obj\Debug\AAll-QuerySpaceEDMX.csprojAssemblyReference.cache
 C:\Users\josep\OneDrive\WaterNut-Upgrade\WaterNut-Upgrade\WaterNut - Enterprise\AllQuerySpaceEDMX\obj\Debug\AAll-QuerySpaceEDMX.csproj.CoreCompileInputs.cache
 C:\Users\josep\OneDrive\WaterNut-Upgrade\WaterNut-Upgrade\WaterNut - Enterprise\AllQuerySpaceEDMX\obj\Debug\AllQuerySpaceEDMX.dll
 C:\Users\josep\OneDrive\WaterNut-Upgrade\WaterNut-Upgrade\WaterNut - Enterprise\AllQuerySpaceEDMX\obj\Debug\AllQuerySpaceEDMX.pdb

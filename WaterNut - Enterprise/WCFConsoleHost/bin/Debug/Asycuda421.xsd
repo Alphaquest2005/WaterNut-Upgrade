@@ -42,8 +42,22 @@
 				<xs:element minOccurs="0" name="Assessment_notice">
 					<xs:complexType mixed="true">
 						<xs:sequence >
-							<xs:element minOccurs="0" maxOccurs="unbounded" name="Registration_year" />
-						  <xs:element minOccurs="0" maxOccurs="unbounded" name="Assessment_year" />
+						  <xs:element minOccurs="0" name="Registration_year">
+						    <xs:complexType mixed="true">
+						      <xs:sequence >
+						        <xs:element minOccurs="0" name="null" />
+						      </xs:sequence>
+						    </xs:complexType>
+						  </xs:element>
+							<!--<xs:element minOccurs="0" maxOccurs="unbounded" name="Registration_year" />-->
+						  <xs:element minOccurs="0" name="Assessment_year">
+						    <xs:complexType mixed="true">
+						      <xs:sequence >
+						        <xs:element minOccurs="0" name="null" />
+						      </xs:sequence>
+						    </xs:complexType>
+						  </xs:element>
+						  <!--<xs:element minOccurs="0" maxOccurs="unbounded" name="Assessment_year" />-->
 						  <xs:element minOccurs="0" maxOccurs="unbounded" name="Total_item_taxes" />
 						  <xs:element minOccurs="0" name="Statement_number">
 						    <xs:complexType mixed="true">
@@ -309,8 +323,22 @@
 				<xs:element minOccurs="0" name="Declarant">
 					<xs:complexType mixed="true">
 						<xs:sequence >
-							<xs:element minOccurs="0" name="Declarant_code" type="xs:string" />
-							<xs:element minOccurs="0" name="Declarant_name" type="xs:string" />
+						  <xs:element minOccurs="0" name="Declarant_code">
+						    <xs:complexType mixed="true">
+						      <xs:sequence >
+						        <xs:element minOccurs="0" name="null" />
+						      </xs:sequence>
+						    </xs:complexType>
+						  </xs:element>
+						  <xs:element minOccurs="0" name="Declarant_name">
+						    <xs:complexType mixed="true">
+						      <xs:sequence >
+						        <xs:element minOccurs="0" name="null" />
+						      </xs:sequence>
+						    </xs:complexType>
+						  </xs:element>
+							<!--<xs:element minOccurs="0" name="Declarant_code" type="xs:string" />
+							<xs:element minOccurs="0" name="Declarant_name" type="xs:string" />-->
 
 							<xs:element minOccurs="0" name="Declarant_representative">
 								<xs:complexType mixed="true">
@@ -602,8 +630,22 @@
 							<xs:element minOccurs="0" name="Financial_transaction">
 								<xs:complexType mixed="true">
 									<xs:sequence >
-										<xs:element minOccurs="0" name="code1" />
-										<xs:element minOccurs="0" name="code2" />
+									  <xs:element minOccurs="0" name="code1">
+									    <xs:complexType mixed="true">
+									      <xs:sequence >
+									        <xs:element minOccurs="0" name="null" />
+									      </xs:sequence>
+									    </xs:complexType>
+									  </xs:element>
+									  <xs:element minOccurs="0" name="code2">
+									    <xs:complexType mixed="true">
+									      <xs:sequence >
+									        <xs:element minOccurs="0" name="null" />
+									      </xs:sequence>
+									    </xs:complexType>
+									  </xs:element>
+										<!--<xs:element minOccurs="0" name="code1" />-->
+										<!--<xs:element minOccurs="0" name="code2" />-->
 									</xs:sequence>
 								</xs:complexType>
 							</xs:element>

@@ -208,14 +208,6 @@
       <RefProjectOutputGroups>Binaries;Content;Satellites</RefProjectOutputGroups>
       <RefTargetDir>INSTALLFOLDER</RefTargetDir>
     </ProjectReference>
-    <ProjectReference Include="..\QuickBooks\QuickBooks.csproj">
-      <Name>QuickBooks</Name>
-      <Project>{e5687b36-6062-4112-ad35-5759cb1e507d}</Project>
-      <Private>True</Private>
-      <DoNotHarvest>True</DoNotHarvest>
-      <RefProjectOutputGroups>Binaries;Content;Satellites</RefProjectOutputGroups>
-      <RefTargetDir>INSTALLFOLDER</RefTargetDir>
-    </ProjectReference>
     <ProjectReference Include="..\SalesDataQS\SalesDataQS.csproj">
       <Name>SalesDataQS</Name>
       <Project>{5723bc92-b2cf-4b25-ba89-4e7ffdb28291}</Project>

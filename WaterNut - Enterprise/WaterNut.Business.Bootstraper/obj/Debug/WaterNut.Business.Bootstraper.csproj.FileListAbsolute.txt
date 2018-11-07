@@ -390,7 +390,6 @@ C:\Users\josep\OneDrive\WaterNut-Upgrade\WaterNut-Upgrade\WaterNut - Enterprise\
 C:\Users\josep\OneDrive\WaterNut-Upgrade\WaterNut-Upgrade\WaterNut - Enterprise\WaterNut.Business.Bootstraper\bin\Debug\Core.Common.UI.dll
 C:\Users\josep\OneDrive\WaterNut-Upgrade\WaterNut-Upgrade\WaterNut - Enterprise\WaterNut.Business.Bootstraper\bin\Debug\Omu.ValueInjecter.dll
 C:\Users\josep\OneDrive\WaterNut-Upgrade\WaterNut-Upgrade\WaterNut - Enterprise\WaterNut.Business.Bootstraper\bin\Debug\ParallelExtensionsExtras.dll
-C:\Users\josep\OneDrive\WaterNut-Upgrade\WaterNut-Upgrade\WaterNut - Enterprise\WaterNut.Business.Bootstraper\bin\Debug\QuickBooks.dll
 C:\Users\josep\OneDrive\WaterNut-Upgrade\WaterNut-Upgrade\WaterNut - Enterprise\WaterNut.Business.Bootstraper\bin\Debug\MoreLinq.dll
 C:\Users\josep\OneDrive\WaterNut-Upgrade\WaterNut-Upgrade\WaterNut - Enterprise\WaterNut.Business.Bootstraper\bin\Debug\Core.Common.PDF2TXT.dll
 C:\Users\josep\OneDrive\WaterNut-Upgrade\WaterNut-Upgrade\WaterNut - Enterprise\WaterNut.Business.Bootstraper\bin\Debug\Newtonsoft.Json.dll
@@ -426,8 +425,6 @@ C:\Users\josep\OneDrive\WaterNut-Upgrade\WaterNut-Upgrade\WaterNut - Enterprise\
 C:\Users\josep\OneDrive\WaterNut-Upgrade\WaterNut-Upgrade\WaterNut - Enterprise\WaterNut.Business.Bootstraper\bin\Debug\Core.Common.UI.dll.config
 C:\Users\josep\OneDrive\WaterNut-Upgrade\WaterNut-Upgrade\WaterNut - Enterprise\WaterNut.Business.Bootstraper\bin\Debug\Omu.ValueInjecter.xml
 C:\Users\josep\OneDrive\WaterNut-Upgrade\WaterNut-Upgrade\WaterNut - Enterprise\WaterNut.Business.Bootstraper\bin\Debug\ParallelExtensionsExtras.pdb
-C:\Users\josep\OneDrive\WaterNut-Upgrade\WaterNut-Upgrade\WaterNut - Enterprise\WaterNut.Business.Bootstraper\bin\Debug\QuickBooks.pdb
-C:\Users\josep\OneDrive\WaterNut-Upgrade\WaterNut-Upgrade\WaterNut - Enterprise\WaterNut.Business.Bootstraper\bin\Debug\QuickBooks.dll.config
 C:\Users\josep\OneDrive\WaterNut-Upgrade\WaterNut-Upgrade\WaterNut - Enterprise\WaterNut.Business.Bootstraper\bin\Debug\MoreLinq.xml
 C:\Users\josep\OneDrive\WaterNut-Upgrade\WaterNut-Upgrade\WaterNut - Enterprise\WaterNut.Business.Bootstraper\bin\Debug\Core.Common.PDF2TXT.pdb
 C:\Users\josep\OneDrive\WaterNut-Upgrade\WaterNut-Upgrade\WaterNut - Enterprise\WaterNut.Business.Bootstraper\bin\Debug\Newtonsoft.Json.xml

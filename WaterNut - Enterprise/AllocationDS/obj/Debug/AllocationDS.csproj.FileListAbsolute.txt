@@ -56,7 +56,6 @@ C:\Prism\GitRepositiory\WaterNut\WaterNut\WaterNut - Enterprise\AllocationDS\obj
 C:\Users\josep\OneDrive\WaterNut-Upgrade\WaterNut-Upgrade\WaterNut - Enterprise\AllocationDS\bin\Debug\AllocationDS.dll.config
 C:\Users\josep\OneDrive\WaterNut-Upgrade\WaterNut-Upgrade\WaterNut - Enterprise\AllocationDS\bin\Debug\AllocationDS.dll
 C:\Users\josep\OneDrive\WaterNut-Upgrade\WaterNut-Upgrade\WaterNut - Enterprise\AllocationDS\bin\Debug\AllocationDS.pdb
-C:\Users\josep\OneDrive\WaterNut-Upgrade\WaterNut-Upgrade\WaterNut - Enterprise\AllocationDS\obj\Debug\AllocationDS.csprojAssemblyReference.cache
 C:\Users\josep\OneDrive\WaterNut-Upgrade\WaterNut-Upgrade\WaterNut - Enterprise\AllocationDS\obj\Debug\AllocationDS.csproj.CoreCompileInputs.cache
 C:\Users\josep\OneDrive\WaterNut-Upgrade\WaterNut-Upgrade\WaterNut - Enterprise\AllocationDS\obj\Debug\AllocationDS.dll
 C:\Users\josep\OneDrive\WaterNut-Upgrade\WaterNut-Upgrade\WaterNut - Enterprise\AllocationDS\obj\Debug\AllocationDS.pdb

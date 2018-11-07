@@ -81,3 +81,9 @@ C:\prism\WaterNut - Enterprise\QuickBooks\obj\Debug\Interop.QBPOSFC3Lib.dll
 C:\prism\WaterNut - Enterprise\QuickBooks\obj\Debug\QuickBooks.csproj.ResolveComReference.cache
 C:\prism\WaterNut - Enterprise\QuickBooks\obj\Debug\QuickBooks.dll
 C:\prism\WaterNut - Enterprise\QuickBooks\obj\Debug\QuickBooks.pdb
+C:\Users\josep\OneDrive\WaterNut-Upgrade\WaterNut-Upgrade\WaterNut - Enterprise\QuickBooks\obj\Debug\QuickBooks.csprojAssemblyReference.cache
+C:\Users\josep\OneDrive\WaterNut-Upgrade\WaterNut-Upgrade\WaterNut - Enterprise\QuickBooks\obj\Debug\Interop.QBPOSFC3Lib.dll
+C:\Users\josep\OneDrive\WaterNut-Upgrade\WaterNut-Upgrade\WaterNut - Enterprise\QuickBooks\obj\Debug\QuickBooks.csproj.ResolveComReference.cache
+C:\Users\josep\OneDrive\WaterNut-Upgrade\WaterNut-Upgrade\WaterNut - Enterprise\QuickBooks\obj\Debug\QuickBooks.csproj.CoreCompileInputs.cache
+C:\Users\josep\OneDrive\WaterNut-Upgrade\WaterNut-Upgrade\WaterNut - Enterprise\QuickBooks\obj\Debug\QuickBooks.dll
+C:\Users\josep\OneDrive\WaterNut-Upgrade\WaterNut-Upgrade\WaterNut - Enterprise\QuickBooks\obj\Debug\QuickBooks.pdb

@@ -36,7 +36,6 @@ C:\Users\josep\OneDrive\WaterNut-Upgrade\WaterNut-Upgrade\WaterNut - Enterprise\
 C:\Users\josep\OneDrive\WaterNut-Upgrade\WaterNut-Upgrade\WaterNut - Enterprise\WaterNut.Client.CompositeEntities\bin\Debug\WaterNut.Client.CompositeEntities.pdb
 C:\Users\josep\OneDrive\WaterNut-Upgrade\WaterNut-Upgrade\WaterNut - Enterprise\WaterNut.Client.CompositeEntities\bin\Debug\Newtonsoft.Json.dll
 C:\Users\josep\OneDrive\WaterNut-Upgrade\WaterNut-Upgrade\WaterNut - Enterprise\WaterNut.Client.CompositeEntities\bin\Debug\Newtonsoft.Json.xml
-C:\Users\josep\OneDrive\WaterNut-Upgrade\WaterNut-Upgrade\WaterNut - Enterprise\WaterNut.Client.CompositeEntities\obj\Debug\WaterNut.Client.CompositeEntities.csprojAssemblyReference.cache
 C:\Users\josep\OneDrive\WaterNut-Upgrade\WaterNut-Upgrade\WaterNut - Enterprise\WaterNut.Client.CompositeEntities\obj\Debug\WaterNut.Client.CompositeEntities.csproj.CoreCompileInputs.cache
 C:\Users\josep\OneDrive\WaterNut-Upgrade\WaterNut-Upgrade\WaterNut - Enterprise\WaterNut.Client.CompositeEntities\obj\Debug\WaterNut.Client.CompositeEntities.csproj.CopyComplete
 C:\Users\josep\OneDrive\WaterNut-Upgrade\WaterNut-Upgrade\WaterNut - Enterprise\WaterNut.Client.CompositeEntities\obj\Debug\WaterNut.Client.CompositeEntities.dll

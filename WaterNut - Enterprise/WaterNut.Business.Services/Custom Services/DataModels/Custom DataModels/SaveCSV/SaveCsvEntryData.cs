@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
 using System.Threading.Tasks;
 using Core.Common.CSV;
@@ -266,7 +267,7 @@ namespace WaterNut.DataSpace
                     continue;
                 }
 
-                if ("ItemNumber|ITEM-#|Item Code".ToUpper().Contains(h.ToUpper()))
+                if ("ItemNumber|ITEM-#|Item Code|Product Code".ToUpper().Contains(h.ToUpper()))
                 {
                     mapping.Add("ItemNumber", i);
                     continue;
@@ -378,7 +379,7 @@ namespace WaterNut.DataSpace
                   var res = new CSVDataSummary()
                     {
                         EntryDataId = splits[mapping["EntryDataId"]],
-                        EntryDataDate = DateTime.Parse(string.IsNullOrEmpty(splits[mapping["EntryDataDate"]]) ? DateTime.MinValue.ToShortDateString() : splits[mapping["EntryDataDate"]]),
+                        EntryDataDate = DateTime.Parse(string.IsNullOrEmpty(splits[mapping["EntryDataDate"]]) ? DateTime.MinValue.ToShortDateString() : splits[mapping["EntryDataDate"]], CultureInfo.CurrentCulture),
                         ItemNumber = splits[mapping["ItemNumber"]],
                         ItemDescription = splits[mapping["ItemDescription"]],
                         Cost = !mapping.ContainsKey("Cost") ? 0 : Convert.ToSingle(string.IsNullOrEmpty(splits[mapping["Cost"]]) ? "0" : splits[mapping["Cost"]].Replace("$","")),

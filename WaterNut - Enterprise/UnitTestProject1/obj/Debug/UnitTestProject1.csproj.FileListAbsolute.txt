@@ -348,7 +348,6 @@ C:\Users\josep\OneDrive\WaterNut-Upgrade\WaterNut-Upgrade\WaterNut - Enterprise\
 C:\Users\josep\OneDrive\WaterNut-Upgrade\WaterNut-Upgrade\WaterNut - Enterprise\UnitTestProject1\bin\Debug\System.Linq.Dynamic.dll
 C:\Users\josep\OneDrive\WaterNut-Upgrade\WaterNut-Upgrade\WaterNut - Enterprise\UnitTestProject1\bin\Debug\Core.Common.UI.dll
 C:\Users\josep\OneDrive\WaterNut-Upgrade\WaterNut-Upgrade\WaterNut - Enterprise\UnitTestProject1\bin\Debug\ParallelExtensionsExtras.dll
-C:\Users\josep\OneDrive\WaterNut-Upgrade\WaterNut-Upgrade\WaterNut - Enterprise\UnitTestProject1\bin\Debug\QuickBooks.dll
 C:\Users\josep\OneDrive\WaterNut-Upgrade\WaterNut-Upgrade\WaterNut - Enterprise\UnitTestProject1\bin\Debug\MoreLinq.dll
 C:\Users\josep\OneDrive\WaterNut-Upgrade\WaterNut-Upgrade\WaterNut - Enterprise\UnitTestProject1\bin\Debug\Core.Common.PDF2TXT.dll
 C:\Users\josep\OneDrive\WaterNut-Upgrade\WaterNut-Upgrade\WaterNut - Enterprise\UnitTestProject1\bin\Debug\WaterNut.Client.DTO.dll
@@ -389,8 +388,6 @@ C:\Users\josep\OneDrive\WaterNut-Upgrade\WaterNut-Upgrade\WaterNut - Enterprise\
 C:\Users\josep\OneDrive\WaterNut-Upgrade\WaterNut-Upgrade\WaterNut - Enterprise\UnitTestProject1\bin\Debug\Core.Common.UI.pdb
 C:\Users\josep\OneDrive\WaterNut-Upgrade\WaterNut-Upgrade\WaterNut - Enterprise\UnitTestProject1\bin\Debug\Core.Common.UI.dll.config
 C:\Users\josep\OneDrive\WaterNut-Upgrade\WaterNut-Upgrade\WaterNut - Enterprise\UnitTestProject1\bin\Debug\ParallelExtensionsExtras.pdb
-C:\Users\josep\OneDrive\WaterNut-Upgrade\WaterNut-Upgrade\WaterNut - Enterprise\UnitTestProject1\bin\Debug\QuickBooks.pdb
-C:\Users\josep\OneDrive\WaterNut-Upgrade\WaterNut-Upgrade\WaterNut - Enterprise\UnitTestProject1\bin\Debug\QuickBooks.dll.config
 C:\Users\josep\OneDrive\WaterNut-Upgrade\WaterNut-Upgrade\WaterNut - Enterprise\UnitTestProject1\bin\Debug\MoreLinq.xml
 C:\Users\josep\OneDrive\WaterNut-Upgrade\WaterNut-Upgrade\WaterNut - Enterprise\UnitTestProject1\bin\Debug\Core.Common.PDF2TXT.pdb
 C:\Users\josep\OneDrive\WaterNut-Upgrade\WaterNut-Upgrade\WaterNut - Enterprise\UnitTestProject1\bin\Debug\WaterNut.Client.DTO.pdb

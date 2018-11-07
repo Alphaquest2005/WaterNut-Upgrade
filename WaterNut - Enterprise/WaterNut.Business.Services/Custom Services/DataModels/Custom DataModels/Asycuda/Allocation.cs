@@ -123,8 +123,9 @@ namespace WaterNut.DataSpace
             var t = 0;
             var exceptions = new ConcurrentQueue<Exception>();
             Parallel.ForEach(itemSets.Values
-                                     ///.Where(x => x.Key.Contains("1005H/GL"))
-                                   // .Where(x => "337493".Contains(x.Key))
+
+                                     // .Where(x => x.Key.Contains("FAA/SRTH34X10"))
+                                     // .Where(x => "337493".Contains(x.Key))
                                      //.Where(x => "FAA/SCPI18X112".Contains(x.ItemNumber))//SND/IVF1010MPSF,BRG/NAVICOTE-GL,
                                      , new ParallelOptions() { MaxDegreeOfParallelism = Environment.ProcessorCount *  1 }, itm => //.Where(x => x.ItemNumber == "AT18547")
              {
@@ -133,8 +134,8 @@ namespace WaterNut.DataSpace
                 try
             {
                     StatusModel.StatusUpdate();
-                var sales = itm.SalesList.OrderBy(x => x.Sales.EntryDataDate).ToList();
-                var asycudaItems = itm.EntriesList.OrderBy(x => x.AsycudaDocument.AssessmentDate).ToList();
+                var sales = itm.SalesList.OrderBy(x => x.Sales.EntryDataDate).ThenBy(x => x.EntryDataId).ThenByDescending(x => x.Quantity).ToList();
+                var asycudaItems = itm.EntriesList.OrderBy(x => x.AsycudaDocument.AssessmentDate).ThenBy(x => x.AsycudaDocument.RegistrationDate).ToList();
                     AllocateSalestoAsycudaByKey(sales, asycudaItems).Wait();
                         //.SalesList.Where(x => x.DoNotAllocate != true).ToList()
 
@@ -291,7 +292,7 @@ namespace WaterNut.DataSpace
                     var slst = new List<EntryDataDetails>(){g};
                     
                     if (slst.Any())
-                        AllocateSalestoAsycudaByKey(slst, alst).Wait();
+                        AllocateSalestoAsycudaByKey(slst.OrderByDescending(x => x.Quantity).ToList(), alst).Wait();
 
 
                     Debug.WriteLine(g.ItemDescription + " " + DateTime.Now.ToShortTimeString());
@@ -966,13 +967,15 @@ namespace WaterNut.DataSpace
                                 (x.AsycudaDocument.Extended_customs_procedure == "7000" || x.AsycudaDocument.Extended_customs_procedure == "7400" || x.AsycudaDocument.Extended_customs_procedure == "7100" ||
                                  x.AsycudaDocument.Extended_customs_procedure == "9000") &&
                                 // x.WarehouseError == null && 
+                                 (x.AsycudaDocument.Cancelled == null || x.AsycudaDocument.Cancelled == false) &&
                                  x.AsycudaDocument.DoNotAllocate != true )
                     .Where(x => x.AsycudaDocument.AssessmentDate >= (BaseDataModel.Instance.CurrentApplicationSettings
                                     .OpeningStockDate ?? DateTime.MinValue.Date))
                     .OrderBy(x => x.LineNumber)
                     .ToList();
 
-                
+                // var res2 = lst.Where(x => x.ItemNumber == "PRM/84101");
+
                 asycudaEntries = from s in lst.Where(x => x.ItemNumber != null)
                    // .Where(x => x.ItemNumber == itmnumber)
                     //       .Where(x => x.AsycudaDocument.CNumber != null).AsEnumerable()
@@ -992,6 +995,8 @@ namespace WaterNut.DataSpace
                                     .ToList()
                         };
             }
+
+           // var res = asycudaEntries.Where(x => x.Key == "PRM/84101");
             return asycudaEntries;
         }
 
@@ -1046,7 +1051,7 @@ namespace WaterNut.DataSpace
                         ctx.GetEntryDataDetailsByExpressionNav(//"ItemNumber == \"FAA/SCPI18X112\" &&" +
                                                                 (BaseDataModel.Instance.CurrentApplicationSettings.OpeningStockDate.HasValue ? string.Format("Sales.EntryDataDate >= \"{0}\" && ", BaseDataModel.Instance.CurrentApplicationSettings.OpeningStockDate) : "") +
                                                                "QtyAllocated != Quantity " +
-                                                               "&& Cost > 0 " +
+                                                               //"&& Cost > 0 " + --------Cost don't matter in allocations because it comes from previous doc
                                                                "&& DoNotAllocate != true", new Dictionary<string, string>()
                                                                {
                                                                    { "Sales", "INVNumber != null" }
@@ -1226,6 +1231,7 @@ namespace WaterNut.DataSpace
                             if (asycudaItmQtyToAllocate >= saleitmQtyToallocate || 
                             CurrentAsycudaItemIndex == asycudaEntries.Count - 1)
                         {
+                            
                             var ramt = await AllocateSaleItem(cAsycudaItm, saleitm, saleitmQtyToallocate, subitm).ConfigureAwait(false);
                             saleitmQtyToallocate = ramt;
                             if (ramt == 0) break;
@@ -1233,13 +1239,13 @@ namespace WaterNut.DataSpace
                             {
                                 if (i == 0)
                                 {
-                                    await AddExceptionAllocation(saleitm, "Returned More than Sold").ConfigureAwait(false);
+                                    if (CurrentSalesItemIndex == 0 && saleslst.Count == 1) await AddExceptionAllocation(saleitm, "Returned More than Sold").ConfigureAwait(false);
                                     break;
                                 }
 
                                 i -= 2;
-                            } 
-                        
+                            }
+
                         }
                         else
                         {
@@ -1308,6 +1314,7 @@ namespace WaterNut.DataSpace
         private double GetAsycudaItmQtyToAllocate(xcuda_Item cAsycudaItm, EntryDataDetails saleitm, out SubItems subitm)
         {
             double asycudaItmQtyToAllocate;
+            if (cAsycudaItm.SalesFactor == 0) cAsycudaItm.SalesFactor = 1;
             if (cAsycudaItm.SubItems.Any())
             {
                 subitm = cAsycudaItm.SubItems.FirstOrDefault(x => x.ItemNumber == saleitm.ItemNumber);
@@ -1423,12 +1430,12 @@ namespace WaterNut.DataSpace
                             }
                         if (dfp == "Duty Free")
                         {
-                            if (cAsycudaItm.DFQtyAllocated < mqty) mqty = cAsycudaItm.DFQtyAllocated;
+                            if (cAsycudaItm.DFQtyAllocated != 0 && cAsycudaItm.DFQtyAllocated < mqty) mqty = cAsycudaItm.DFQtyAllocated;
                             cAsycudaItm.DFQtyAllocated -= mqty / cAsycudaItm.SalesFactor;
                         }
                         else
                         {
-                            if (cAsycudaItm.DPQtyAllocated < mqty) mqty = cAsycudaItm.DPQtyAllocated;
+                            if (cAsycudaItm.DFQtyAllocated != 0 && cAsycudaItm.DPQtyAllocated < mqty) mqty = cAsycudaItm.DPQtyAllocated;
                             cAsycudaItm.DPQtyAllocated -= mqty / cAsycudaItm.SalesFactor;
                         }
 

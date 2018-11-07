@@ -395,6 +395,7 @@ namespace WaterNut.DataSpace
         {
 
             cdoc.Document.xcuda_Declarant.Number = ads.Declarant_Reference_Number + "-F" + cdoc.Document.xcuda_ASYCUDA_ExtendedProperties.FileNumber.ToString();
+            cdoc.Document.xcuda_Declarant.Declarant_code = CurrentApplicationSettings.DeclarantCode;
             cdoc.Document.xcuda_Identification.Manifest_reference_number = ads.Manifest_Number;
             cdoc.Document.xcuda_ASYCUDA_ExtendedProperties.AsycudaDocumentSetId = ads.AsycudaDocumentSetId;
 
@@ -540,21 +541,19 @@ namespace WaterNut.DataSpace
             var entryLineDatas = slst as IList<BaseDataModel.EntryLineData> ?? slst.ToList();
             StatusModel.StartStatusUpdate("Adding Entries to New Asycuda Document", entryLineDatas.Count());
             EntryData entryData = null;
-            if (perInvoice)
-            {
-                entryLineDatas = entryLineDatas.OrderBy(p => p.EntryData.EntryDataId).ToList();
-            }
-            else
-            {
+            
                 switch (CurrentApplicationSettings.OrderEntriesBy)
                 {
                     case "TariffCode":
                         entryLineDatas = entryLineDatas.OrderBy(p => p.InventoryItem.TariffCode).ToList();
                         break;
+                    case "Invoice":
+                        entryLineDatas = entryLineDatas.OrderBy(p => p.EntryData.EntryDataId).ToList();
+                        break;
                     default:
                         break;
                 }
-            }
+            
 
 
             var oldentryData = "";
@@ -731,8 +730,8 @@ namespace WaterNut.DataSpace
                 //    }).ConfigureAwait(false);
                
                
-
-                if (cdoc.Document.ASYCUDA_Id == 0) return;
+               // ------------------- took it out cuz i want to import generated documents
+               // if (cdoc.Document.ASYCUDA_Id == 0) return;
                
                     // prepare items for parrallel import
                     foreach (var item in cdoc.DocumentItems)
@@ -1438,7 +1437,7 @@ namespace WaterNut.DataSpace
                 using (var ctx = new CoreEntitiesContext())
                 {
                     var declarantCode = ctx.ApplicationSettings.First().DeclarantCode;
-                    var fileCode = a.Warehouse.Identification.Text.FirstOrDefault()?? a.Declarant.Declarant_code;
+                    var fileCode = a.Warehouse.Identification.Text.FirstOrDefault()?? a.Declarant.Declarant_code.Text.FirstOrDefault();
                     if (!fileCode.Contains(declarantCode))
                     {
                         throw new ApplicationException($"Could not import file - '{f} - The file is for another warehouse{fileCode}. While this Warehouse is {declarantCode}");
