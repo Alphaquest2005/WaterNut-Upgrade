@@ -1053,6 +1053,7 @@
 							<xs:element minOccurs="0" name="Prev_decl_item_number" type="xs:string" />
 							<xs:element minOccurs="0" name="Prev_decl_HS_code" type="xs:string" />
 							<xs:element minOccurs="0" name="Prev_decl_HS_prec" type="xs:string" />
+						  <xs:element minOccurs="0" name="Prev_decl_HS_spec" type="xs:string" />
 							<xs:element minOccurs="0" name="Prev_decl_country_origin" type="xs:string" />
 							<xs:element minOccurs="0" name="Prev_decl_number_packages" type="xs:string" />
 							<xs:element minOccurs="0" name="Prev_decl_weight" type="xs:string" />

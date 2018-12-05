@@ -40,3 +40,4 @@ C:\Users\josep\OneDrive\WaterNut-Upgrade\WaterNut-Upgrade\WaterNut - Enterprise\
 C:\Users\josep\OneDrive\WaterNut-Upgrade\WaterNut-Upgrade\WaterNut - Enterprise\WaterNut.Client.CompositeEntities\obj\Debug\WaterNut.Client.CompositeEntities.csproj.CopyComplete
 C:\Users\josep\OneDrive\WaterNut-Upgrade\WaterNut-Upgrade\WaterNut - Enterprise\WaterNut.Client.CompositeEntities\obj\Debug\WaterNut.Client.CompositeEntities.dll
 C:\Users\josep\OneDrive\WaterNut-Upgrade\WaterNut-Upgrade\WaterNut - Enterprise\WaterNut.Client.CompositeEntities\obj\Debug\WaterNut.Client.CompositeEntities.pdb
+C:\Users\josep\OneDrive\WaterNut-Upgrade\WaterNut-Upgrade\WaterNut - Enterprise\WaterNut.Client.CompositeEntities\obj\Debug\WaterNut.Client.CompositeEntities.csprojAssemblyReference.cache

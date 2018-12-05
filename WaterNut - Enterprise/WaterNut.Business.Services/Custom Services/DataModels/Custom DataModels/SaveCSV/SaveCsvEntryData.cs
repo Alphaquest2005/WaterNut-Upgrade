@@ -9,6 +9,7 @@ using EntryDataDS.Business.Entities;
 using EntryDataDS.Business.Services;
 using InventoryDS.Business.Entities;
 using InventoryDS.Business.Services;
+using MoreLinq;
 using TrackableEntities;
 using AsycudaDocumentSetEntryData = EntryDataDS.Business.Entities.AsycudaDocumentSetEntryData;
 
@@ -75,7 +76,7 @@ namespace WaterNut.DataSpace
                          //where supplier != null
                          select new
                          {
-                             e =
+                             EntryData =
                                  new
                                  {
                                      EntryDataId = g.Key.EntryDataId,
@@ -85,7 +86,7 @@ namespace WaterNut.DataSpace
                                      Tax = g.Sum(x => x.Tax),
                                      Supplier = supplier
                                  },
-                             d = g.Select(x => new  EntryDataDetails()
+                             EntryDataDetails = g.Select(x => new  EntryDataDetails()
                              {
                                  EntryDataId = x.EntryDataId,
                                  ItemNumber = x.ItemNumber.ToUpper(),
@@ -102,128 +103,151 @@ namespace WaterNut.DataSpace
                                  TotalWeight = x.TotalWeight,
                                  TotalFreight = x.TotalFreight,
                                  TotalInternalFreight = x.TotalInternalFreight
-                             })
+                             }),
+                             InventoryItems = g.DistinctBy(x => new {x.ItemNumber, x.ItemAlias}).Select(x => new {x.ItemNumber,x.ItemAlias})
                          }).ToList();
 
             if (ed == null) return true;
 
 
             List<EntryData> eLst = null;
-            
-            foreach (var item in ed)
-            {
-                // check Existing items
-                var olded = await GetEntryData(item.e.EntryDataId, item.e.EntryDataDate).ConfigureAwait(false);
-                    
-                if (olded != null)
+
+                foreach (var item in ed)
                 {
-                  
+                    // check Existing items
+                    var olded = await GetEntryData(item.EntryData.EntryDataId, item.EntryData.EntryDataDate).ConfigureAwait(false);
 
-                    switch (overWriteExisting)
+                    if (olded != null)
                     {
-                        case true:
-                            await ClearEntryDataDetails(olded).ConfigureAwait(false);
-                            await DeleteEntryData(olded).ConfigureAwait(false);
 
+
+                        switch (overWriteExisting)
+                        {
+                            case true:
+                                await ClearEntryDataDetails(olded).ConfigureAwait(false);
+                                await DeleteEntryData(olded).ConfigureAwait(false);
+
+                                break;
+                            case false:
+                                continue;
+
+                        }
+                    }
+
+
+                    switch (fileType)
+                    {
+                        case "Sales":
+
+                            var EDsale = new Sales(true)
+                            {
+                                EntryDataId = item.EntryData.EntryDataId,
+                                EntryDataDate = item.EntryData.EntryDataDate,
+                                INVNumber = item.EntryData.EntryDataId,
+                                TaxAmount = item.EntryData.Tax,
+                                CustomerName = item.EntryData.CustomerName,
+                                TrackingState = TrackingState.Added
+                            };
+                            EDsale.AsycudaDocumentSets.Add(new AsycudaDocumentSetEntryData(true)
+                            {
+                                AsycudaDocumentSetId = item.EntryData.AsycudaDocumentSetId,
+                                EntryDataId = item.EntryData.EntryDataId,
+                                TrackingState = TrackingState.Added
+                            });
+                            await CreateSales(EDsale).ConfigureAwait(false);
                             break;
-                        case false:
-                            continue;
-                
+                        case "PO":
+                            var EDpo = new PurchaseOrders(true)
+                            {
+                                EntryDataId = item.EntryData.EntryDataId,
+                                EntryDataDate = item.EntryData.EntryDataDate,
+                                PONumber = item.EntryData.EntryDataId,
+                                TrackingState = TrackingState.Added,
+                                TotalFreight = item.f.Sum(x => x.TotalFreight),
+                                TotalInternalFreight = item.f.Sum(x => x.TotalInternalFreight),
+                                TotalWeight = item.f.Sum(x => x.TotalWeight)
+                            };
+                            EDpo.AsycudaDocumentSets.Add(new AsycudaDocumentSetEntryData(true)
+                            {
+                                AsycudaDocumentSetId = item.EntryData.AsycudaDocumentSetId,
+                                EntryDataId = item.EntryData.EntryDataId,
+                                TrackingState = TrackingState.Added
+                            });
+                            await CreatePurchaseOrders(EDpo).ConfigureAwait(false);
+                            break;
+                        case "OPS":
+                            var EDops = new OpeningStock(true)
+                            {
+                                EntryDataId = item.EntryData.EntryDataId,
+                                EntryDataDate = item.EntryData.EntryDataDate,
+                                OPSNumber = item.EntryData.EntryDataId,
+                                TrackingState = TrackingState.Added,
+                                TotalFreight = item.f.Sum(x => x.TotalFreight),
+                                TotalInternalFreight = item.f.Sum(x => x.TotalInternalFreight),
+                                TotalWeight = item.f.Sum(x => x.TotalWeight)
+                            };
+                            EDops.AsycudaDocumentSets.Add(new AsycudaDocumentSetEntryData(true)
+                            {
+                                AsycudaDocumentSetId = item.EntryData.AsycudaDocumentSetId,
+                                EntryDataId = item.EntryData.EntryDataId,
+                                TrackingState = TrackingState.Added
+                            });
+                            await CreateOpeningStock(EDops).ConfigureAwait(false);
+                            break;
+                        default:
+                            throw new ApplicationException("Unknown FileType");
+                            return true;
                     }
-                }
 
+                    if (item.EntryDataDetails.Count() == 0) throw new ApplicationException(item.EntryData.EntryDataId + " has no details");
 
-                switch (fileType)
-                {
-                    case "Sales":
+                    var details = item.EntryDataDetails.ToList();
 
-                        var EDsale = new Sales(true)
-                        {
-                            EntryDataId = item.e.EntryDataId,
-                            EntryDataDate = item.e.EntryDataDate,
-                            INVNumber = item.e.EntryDataId,
-                            TaxAmount = item.e.Tax,
-                            CustomerName = item.e.CustomerName,
-                            TrackingState = TrackingState.Added
-                        };
-                        EDsale.AsycudaDocumentSets.Add(new AsycudaDocumentSetEntryData(true)
-                        {
-                            AsycudaDocumentSetId = item.e.AsycudaDocumentSetId,
-                            EntryDataId = item.e.EntryDataId,
-                            TrackingState = TrackingState.Added
-                        });
-                        await CreateSales(EDsale).ConfigureAwait(false);
-                        break;
-                    case "PO":
-                        var EDpo = new PurchaseOrders(true)
-                        {
-                            EntryDataId = item.e.EntryDataId,
-                            EntryDataDate = item.e.EntryDataDate,
-                            PONumber = item.e.EntryDataId,
-                            TrackingState = TrackingState.Added,
-                            TotalFreight = item.f.Sum(x => x.TotalFreight),
-                            TotalInternalFreight = item.f.Sum(x => x.TotalInternalFreight),
-                            TotalWeight = item.f.Sum(x => x.TotalWeight)
-                        };
-                        EDpo.AsycudaDocumentSets.Add(new AsycudaDocumentSetEntryData(true)
-                        {
-                            AsycudaDocumentSetId = item.e.AsycudaDocumentSetId,
-                            EntryDataId = item.e.EntryDataId,
-                            TrackingState = TrackingState.Added
-                        });
-                        await CreatePurchaseOrders(EDpo).ConfigureAwait(false);
-                        break;
-                    case "OPS":
-                        var EDops = new OpeningStock(true)
-                        {
-                            EntryDataId = item.e.EntryDataId,
-                            EntryDataDate = item.e.EntryDataDate,
-                            OPSNumber = item.e.EntryDataId,
-                            TrackingState = TrackingState.Added,
-                            TotalFreight = item.f.Sum(x => x.TotalFreight),
-                            TotalInternalFreight = item.f.Sum(x => x.TotalInternalFreight),
-                            TotalWeight = item.f.Sum(x => x.TotalWeight)
-                        };
-                        EDops.AsycudaDocumentSets.Add(new AsycudaDocumentSetEntryData(true)
-                        {
-                            AsycudaDocumentSetId = item.e.AsycudaDocumentSetId,
-                            EntryDataId = item.e.EntryDataId,
-                            TrackingState = TrackingState.Added
-                        });
-                        await CreateOpeningStock(EDops).ConfigureAwait(false);
-                        break;
-                    default:
-                        throw new ApplicationException("Unknown FileType");
-                        return true;
-                }
-
-                if (item.d.Count() == 0) throw new ApplicationException(item.e.EntryDataId + " has no details");
-
-                var details = item.d;
-
-                using (var ctx = new EntryDataDetailsService())
-                {
-                    foreach (var e in details)
+                    using (var ctx = new EntryDataDetailsService())
                     {
-                        await ctx.CreateEntryDataDetails(new EntryDataDetails(true)
+                        foreach (var e in details)
                         {
-                            EntryDataId = e.EntryDataId,
-                            ItemNumber = e.ItemNumber,
-                            ItemDescription = e.ItemDescription,
-                            Quantity = e.Quantity,
-                            Cost = e.Cost,
-                            Units = e.Units,
-                            TrackingState = TrackingState.Added,
-                            Freight = e.Freight,
-                            Weight = e.Weight,
-                            InternalFreight = e.InternalFreight,
-                        }).ConfigureAwait(false);
+                            await ctx.CreateEntryDataDetails(new EntryDataDetails(true)
+                            {
+                                EntryDataId = e.EntryDataId,
+                                ItemNumber = e.ItemNumber,
+                                ItemDescription = e.ItemDescription,
+                                Quantity = e.Quantity,
+                                Cost = e.Cost,
+                                Units = e.Units,
+                                TrackingState = TrackingState.Added,
+                                Freight = e.Freight,
+                                Weight = e.Weight,
+                                InternalFreight = e.InternalFreight,
+                            }).ConfigureAwait(false);
+                        }
                     }
-                }
-            }
 
-            
-            return false;
+                    using (var ctx = new InventoryItemAliaService())
+                    {
+                        var existingAliases = await ctx.GetInventoryItemAlias().ConfigureAwait(false);
+                        var res = existingAliases.ToList();
+                        foreach (var e in item.InventoryItems.Where(x => !string.IsNullOrEmpty(x.ItemAlias) && x.ItemAlias != x.ItemNumber).ToList())
+                        {
+
+                            if (res.FirstOrDefault(x =>
+                                    x.ItemNumber == e.ItemNumber && x.AliasName == e.ItemAlias) == null)
+                            {
+                                await ctx.CreateInventoryItemAlia(new InventoryItemAlia(true)
+                                {
+                                    ItemNumber = e.ItemNumber,
+                                    AliasName = e.ItemAlias
+                                }).ConfigureAwait(false);
+                            }
+                        }
+                    }
+
+                }
+
+
+
+
+                return false;
             }
             catch (Exception)
             {
@@ -273,7 +297,7 @@ namespace WaterNut.DataSpace
                     continue;
                 }
 
-                if ("DESCRIPTION|MEMO|Item Description".ToUpper().Contains(h.ToUpper()))
+                if ("DESCRIPTION|MEMO|Item Description|ItemDescription".ToUpper().Contains(h.ToUpper()))
                 {
                     mapping.Add("ItemDescription", i);
                     continue;
@@ -285,8 +309,13 @@ namespace WaterNut.DataSpace
                     continue;
                 }
 
+                if ("Customs SKU|ItemAlias".ToUpper().Contains(h.ToUpper()))
+                {
+                    mapping.Add("ItemAlias", i);
+                    continue;
+                }
 
-                if ("PRICE|COST|Sales Price".ToUpper().Contains(h.ToUpper()))
+                if ("PRICE|COST".ToUpper().Contains(h.ToUpper()))
                 {
                     mapping.Add("Cost", i);
                     continue;
@@ -381,7 +410,8 @@ namespace WaterNut.DataSpace
                         EntryDataId = splits[mapping["EntryDataId"]],
                         EntryDataDate = DateTime.Parse(string.IsNullOrEmpty(splits[mapping["EntryDataDate"]]) ? DateTime.MinValue.ToShortDateString() : splits[mapping["EntryDataDate"]], CultureInfo.CurrentCulture),
                         ItemNumber = splits[mapping["ItemNumber"]],
-                        ItemDescription = splits[mapping["ItemDescription"]],
+                        ItemAlias = mapping.ContainsKey("ItemAlias") ? splits[mapping["ItemAlias"]] : "",
+                      ItemDescription = splits[mapping["ItemDescription"]],
                         Cost = !mapping.ContainsKey("Cost") ? 0 : Convert.ToSingle(string.IsNullOrEmpty(splits[mapping["Cost"]]) ? "0" : splits[mapping["Cost"]].Replace("$","")),
                         Quantity = Convert.ToSingle(splits[mapping["Quantity"]]),
                         Units = mapping.ContainsKey("Units") ? splits[mapping["Units"]] : "",
@@ -416,6 +446,7 @@ namespace WaterNut.DataSpace
             public string EntryDataId { get; set; }
             public DateTime EntryDataDate { get; set; }
             public string ItemNumber { get; set; }
+            public string ItemAlias { get; set; }
             public string ItemDescription { get; set; }
             public Single Quantity { get; set; }
             public Single Cost { get; set; }

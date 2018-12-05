@@ -48459,6 +48459,8 @@ namespace Asycuda421
 
         private string prev_decl_HS_precField;
 
+        private string prev_decl_HS_specField;
+
         private string prev_decl_country_originField;
 
         private string prev_decl_number_packagesField;
@@ -48659,6 +48661,31 @@ namespace Asycuda421
                 {
                     this.prev_decl_HS_precField = value;
                     this.OnPropertyChanged("Prev_decl_HS_prec");
+                }
+            }
+        }
+
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string Prev_decl_HS_spec
+        {
+            get
+            {
+                return this.prev_decl_HS_specField;
+            }
+            set
+            {
+                if ((this.prev_decl_HS_specField != null))
+                {
+                    if ((prev_decl_HS_specField.Equals(value) != true))
+                    {
+                        this.prev_decl_HS_specField = value;
+                        this.OnPropertyChanged("Prev_decl_HS_spec");
+                    }
+                }
+                else
+                {
+                    this.prev_decl_HS_specField = value;
+                    this.OnPropertyChanged("Prev_decl_HS_spec");
                 }
             }
         }
